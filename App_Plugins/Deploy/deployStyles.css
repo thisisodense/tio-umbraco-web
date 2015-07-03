@@ -1,0 +1,300 @@
+/*RESTORE*/
+.restore .cta {
+	padding: 0;
+	border: none;
+	margin-top: 60px;
+}
+
+.restore .cta-disabled{
+	opacity: 0.4;
+}
+
+.restore .cta .button {
+	padding: 14px 48px;
+}
+
+.restore .cta small {
+	margin-left: 20px;
+}
+
+.restore .cta small span {
+	font-size: 13px;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.restore .cta small a {
+	display: inline-block;
+	font-size: 13px;
+	color: #fff;
+}
+
+.restore li {
+	list-style: none;
+}
+
+.restore .login {
+	overflow: hidden;
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 50px 0 0;
+}
+
+.restore li .input {
+	position: relative;
+	width: 45%;
+	float: left;
+}
+
+.restore li .input:first-child {
+	margin-right: 9%;
+	margin-left: 1%;
+}
+
+.restore li p {
+	margin: 20px 0 0;
+}
+
+.restore label {
+	position: absolute;
+	top: -20px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+.restore .input input[type="text"],
+.restore .input input[type="password"] {
+		padding: 16px 8px;
+		width: 100%;
+		font-size: 16px;
+		font-family: 'Open Sans', sans-serif;
+		border: 2px solid transparent;
+	}
+
+.restore .input input[type="text"]:focus,
+.restore .input input[type="password"]:focus {
+		outline: none;
+		border-color: #2e99f4;
+	}
+
+.restore input.ng-invalid.ng-touched {
+    	background-color: #FA787E;
+  	}
+
+.restore .json {
+		text-align: left;
+		padding: 15px;
+		margin: 30px 0;
+		background: rgba(0,0,0, .23);
+		overflow: hidden;
+	}
+
+.restore .json pre { 
+		overflow: auto;
+		word-wrap: normal;
+		white-space: pre;
+		font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+		font-size: 14px;
+		line-height: 1.5
+	}
+
+
+/*DEPLOY*/
+.deployModal label {
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.deployModal label input {
+	transform: translate(0, -3px);
+	-moz-transform: translate(0, -3px);
+	-webkit-transform: translate(0, -3px);
+}
+
+.deployModal ul {
+	margin-bottom: 30px;
+}
+
+.deployModal li {
+	font-size: 13px;
+}
+
+.deployModal li + li {
+	margin-top: 8px;
+}
+
+.deployList {
+	margin-bottom: 30px;
+}
+
+.deployList p {
+	margin-bottom: 0;
+}
+
+.deployList li {
+	font-size: 13px;
+	position: relative;
+	list-style: none;
+}
+
+.deployList li:before {
+	border: 1px solid #85C5E7;
+	border-radius: 50%;
+	content: '';
+	display: inline-block;
+	height: 4px;
+	left: -18px;
+	position: absolute;
+	top: 8px;
+	width: 4px;
+}
+
+.deployList.deployProblems li:before {
+	border: 1px solid #FF4340;
+	border-radius: 50%;
+	content: '';
+	display: inline-block;
+	height: 4px;
+	left: -18px;
+	position: absolute;
+	top: 8px;
+	width: 4px;
+}
+
+.deployModal .btn-link {
+	font-size: 14px;
+}
+
+.deployModal p + p {
+	margin-top: 10px;
+}
+
+.deployModal li br + small {
+	margin-top: 10px;
+	display: block;
+}
+
+.deployOutput h5 {
+	font-size: 16px;
+	text-transform: none;
+}
+
+.deployDone h5, .tab-content .deployModal .deployDone h5 {
+	color: #37C75F;
+}
+
+.deployProblems h5 {
+	color: #FF4340;
+}
+
+
+.deployOutput button {
+	margin-top: 30px;
+}
+
+
+.tab-content .deployModal h5 {
+	font-size: 20px;
+	color: black;
+}
+
+.tab-content .deployModal h5 + p {
+	font-size: 14px;
+}
+
+.tab-content .deployModal br + small {
+	margin-top: 2px;
+	margin-left: 22px;
+	opacity: .7;
+}
+
+.tab-content .deployModal button + br + small {
+	margin-left: 0;
+	margin-top: 15px;
+}
+
+.tab-content .deployModal .icon-check {
+	font-size: 12px;
+	margin-right: 5px;
+	color: #85C5E7;
+}
+
+
+@media (max-width: 768px) {
+	
+	.restore .login {
+		overflow: hidden;
+		max-width: 85%;
+		margin: 0 auto;
+		padding: 50px 0 0;
+	}
+
+	.input label {
+		font-size: 11px;
+	}
+
+	.restore li .input {
+		position: relative;
+		width: 100%;
+		float: none;
+	}
+
+	.restore li .input:first-child {
+		margin: 0 0 45px 0;
+	}
+
+	.restore .cta small {
+		display: block;
+		margin-top: 20px;
+	}
+
+	.restore .cta small span {
+		display: none;
+	}
+
+	.restore .cta .button {
+		padding: 18px 88px;
+	}
+
+	.json {
+		box-sizing: border-box;
+	}
+
+	.json pre {
+		word-wrap: break-word;
+		white-space: normal;
+		word-break: break-all;
+	}
+
+}
+
+/* Progres bar */
+.progress-deploy{
+	background-image: none  !important;
+	border-radius: 0px !important;
+	border: none  !important;
+	box-shadow: none !important;
+	height: 10px;
+}
+
+.progress-deploy .bar{
+	background: #2e8aea !important;
+	box-shadow: none !important;
+	height: 10px;
+
+	-webkit-transition: width .6s ease;
+     -moz-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+
+.restore-deploy{
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.restore-deploy .bar{
+	background: #fff !important;
+}

@@ -1,0 +1,200 @@
+<div class="umb-dialog" ng-controller="Concorde.DeployDialogController">
+
+  <div class="umb-pane">
+    <ul class="deployModal unstyled" ng-switch="step">
+      <li ng-switch-default>
+
+        <div ng-if="deployment">
+          <h5>Deploy {{nodeName}} from {{environment.source}} to {{environment.destination}}</h5>
+
+          <p>Should all pages below {{nodeName}} be included in the deploy, or is it only 
+            "<em>{{nodeName}}</em>" you want 
+            to deploy to {{environment.destination}}?</p>
+
+            <hr />
+
+            <label>
+              <input type="checkbox" ng-model="deployment.includeDescendants" /> 
+              Include all pages below "<em>{{nodeName}}</em>"
+            </label>
+
+            <button prevent-default class="btn btn-primary" ng-click="queue(deployment, true)">Deploy</button>
+          </div>
+        </li>
+
+
+        <li ng-switch-when="current-queue">
+         <h5>Your deployment queue</h5>
+
+         <div ng-repeat="provider in manifest.Providers">
+           <p><strong>{{providerName(provider.Id).name}}</strong></p>
+          
+           <ul class="unstyled">
+            <li ng-if="provider.IncludeAll">
+               <i class="icon-check"></i> Including all items
+            </li>
+
+            <li ng-repeat="entry in provider.Items">
+              <i class="icon-check"></i> {{entry.Name}} <br/>
+              <small class="smallwith" ng-if="entry.IncludeChildren"> including descendants</small>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn" ng-click="package()" prevent-default>Deploy queue</button> 
+        <a href class="btn btn-link" ng-click="clear()">Clear</a> 
+      </li>
+
+
+      <li ng-switch-when="working">
+        <h5>{{currentTask.description}}</h5>
+         
+        <div class="progress progress-deploy">
+          <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
+        </div>
+
+        <small>{{currentTask.currentActivity}}</small>    
+
+        <hr />
+      </li>
+
+
+
+    <li ng-switch-when="pre-collect">
+      <h5>Getting your content ready to be deployed</h5>
+
+      <p>We will collect all your changes, and all the things they need to function properly, then we will
+        compare these changes with {{environment.destination}} - so we ensure only new content will be deployed</p>
+
+        <div class="progress progress-deploy">
+          <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
+        </div>
+
+        <small>{{currentTask.currentActivity}}</small>     
+      </li>
+
+
+
+      <li class="deployOutput deployList deployProblems" ng-switch-when="problems">
+        <h5>Deploy is not possible</h5>
+
+        <p> 
+            This website is out of sync with the <em>{{environment.destination}}</em> website you are trying to transfer to.
+
+            That means that important components have been updated here or on the <em>{{environment.destination}}</em> website, but the changes have not been synced between the 2 websites.
+        </p>
+
+        <hr/>
+
+        <div ng-repeat="(key, value) in manifest.notAllowed">
+          <p><strong>{{providerName(key).name}}</strong></p>
+          <ul>
+            <li ng-repeat="item in value">{{item.Name}} has been modified</li>
+          </ul>
+        </div>
+
+        <p>To solve this problem, open your git console, and ensure that all changes have been pulled from <em>{{environment.destination}}</em> and that all your local changes have been committed and pushed.
+        </p>
+
+        <p>Git commands:</p>
+<pre>
+/> git pull
+/> git add .
+/> git commit -am "My local changes"
+/> git push
+</pre>
+
+        <button prevent-default class="btn btn-primary" ng-click="package(deployment)">Retry</button>
+        </li>
+
+
+
+        <li ng-switch-when="empty">
+          <h5>No new changes</h5>
+          <p>Everything is up to date, so no need to deploy</p>
+
+          <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Ok</button>
+        </li>
+
+
+        <li ng-switch-when="empty-queue">
+          <h5>Your deployment queue</h5>
+          <p>The queue is currently empty, everything has been deployed already - to add new items to the queue right click content in the tree on the left and select "queue for deployment"</p>
+
+          <button prevent-default class="btn btn-primary" ng-click="reloadQueue()">Reload queue</button>
+        </li>
+
+
+        <li class="deployOutput deployProblems" ng-switch-when="error">
+          <h5>Something went wrong :(</h5>
+          <p>The changes could not be deployed, here are some technical information that might shed light on wht</p>
+
+          <pre>{{currentTask | json}}</pre>     
+
+          <button class="btn" prevent-default ng-click="nav.hideDialog()">Close</button>
+        </li>     
+
+
+        <li class="deployOutput deployList" ng-switch-when="collect">
+          <h5>Ready to deploy to {{environment.destination}}</h5>
+
+          <p>
+            The following components need to be deployed along with {{nodeName}} for everything to function
+            properly, this can be due to dependencies, references and the structure of your website.
+          </p>
+
+          <hr/> 
+
+          <div ng-repeat="(key, value) in manifest.deployment">
+            <p><strong>{{providerName(key).name}}</strong></p>
+            <ul>
+              <li ng-repeat="item in value">
+                {{item.Name}}
+              </li>
+            </ul>
+          </div>
+
+
+          <button class="btn btn-primary" prevent-default ng-click="deploy()">Deploy everything now</button>
+          <br/>
+          <small>This will deploy {{manifest.deployement.length}} items to the website at {{environment.url}} </small>
+        </li>  
+
+
+        <li ng-switch-when="deploy">
+          <h5>Deploying...</h5>
+          <p>Please hang on as changes are collected and deployed to {{environment.destination}}</p>
+
+          <div class="progress progress-deploy">
+              <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
+          </div>
+
+          <small>{{currentTask.currentActivity}}</small>
+        </li>
+
+        <li class="deployOutput deployDone" ng-switch-when="done">
+          <h5>Deployment complete</h5>
+          <p>Everything was packaged and sent to the website at 
+            <a target="_blank" href="{{environment.url}}">{{environment.url}}</a> 
+          </p>
+
+          <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Okay</button>
+          <button ng-if="onDashboard" class="btn" prevent-default ng-click="clear()">Okay</button>
+        </li>
+        
+
+        <li class="deployOutput deployDone" ng-switch-when="restored">
+          <h5>Restore complete</h5>
+          <p>
+              Umbraco has downloaded the lates content and media, and restored all the underlying components of the 
+              website. All types, templates and other dependencies have been updated in this process. 
+          </p>
+
+          <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Okay</button>
+          <button ng-if="onDashboard" class="btn" prevent-default ng-click="clear()">Okay</button>
+        </li>
+
+      </ul>
+    </div>    
+
+  </div>

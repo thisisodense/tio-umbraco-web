@@ -1,0 +1,100 @@
+﻿<div ng-controller="Concorde.QueueDashboardController">
+  
+    <ul class="unstyled" ng-switch="step">
+        
+        <li ng-switch-default>
+               <h4>Your deployment queue</h4>
+
+               <div ng-repeat="provider in manifest.Providers">
+                 <h5>{{providerName(provider.Id).name}}</h5>
+                 <span ng-if="provider.IncludeAll"><i class="icon-check"></i> Including all items</span> 
+
+                 <ul class="unstyled">
+                    <li ng-repeat="entry in provider.Items">
+                        <i class="icon-check"></i> {{entry.Name}} <br/>
+                        <small ng-if="entry.IncludeChildren"> including descendants</small>
+                    </li>
+                 </ul>
+               </div>
+
+              <button class="btn" ng-click="package()" prevent-default>Deploy queue</button> 
+              <a href class="btn btn-link" ng-click="clear()">Clear</a> 
+        </li>
+
+
+        <li ng-switch-when="working">
+           <h4>Deploying your changes</h4>
+           <p>Deploying {{currentTask.done}} of {{currentTask.total}}</p>
+           
+           <div style="overflow: hidden; padding: 20px 0 20px 0">
+                <div class="umb-loader"></div> 
+           </div>
+
+           <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>    
+        
+            <hr />
+
+            <pre>{{currentTask | json}}</pre>
+        </li>
+
+
+        <li ng-switch-when="error">
+            <pre>{{currentTask | json}}</pre>
+        </li>
+
+        <li ng-switch-when="problems">
+            <h4>Deploy is not possible</h4>
+            <p>Goshdarnit! - you currently cannot deploy this - because your local website is out of date
+                with the remote website you are trying to deploy to
+            </p>
+
+            <p>Please ensure that the following components on {{environment.destination}} are identical to this website - then click retry</p>
+
+            <hr/>
+
+            <div ng-repeat="(key, value) in manifest.notAllowed">
+                <p><strong>{{providerName(key).name}}</strong></p>
+                <ul>
+                  <li ng-repeat="item in value">{{item.Name}}</li>
+                </ul>
+            </div>
+
+            <button prevent-default class="btn btn-primary" ng-click="package(deployment)">Retry</button>
+        </li>
+
+        <li ng-switch-when="empty">
+              <h5>No queued changes</h5>
+              <p>Everything is up to date, so no need to deploy</p>
+        </li>
+
+        <li ng-switch-when="collect">
+              <h5>Ready to deploy to {{environment.destination}}</h5>
+              
+              <p>
+                The following items needs to be deployed for everything to function
+                properly, this can be due to dependencies, references and the structure of your website.
+              </p>
+
+              <hr/> 
+
+              <div ng-repeat="(key, value) in manifest.deployment">
+                  <p><strong>{{providerName(key).name}}</strong></p>
+                  <ul>
+                    <li ng-repeat="item in value">
+                      {{item.Name}}
+                    </li>
+                  </ul>
+              </div>
+              
+              <button class="btn btn-primary" prevent-default ng-click="deploy()">Deploy everything now</button>
+              <br/>
+              <small>This will deploy {{manifest.deployement.length}} items to the website at {{environment.url}} </small>
+          </li>  
+
+        <li ng-switch-when="done">
+            <h4>Deployment complete</h4>
+            <button class="btn" ng-click="step = ''">Ok</button>
+        </li>
+    </ul>
+    
+</div>

@@ -23,8 +23,6 @@
     <DLRScript>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</DLRScript>
     <Properties />
     <RefreshRate>0</RefreshRate>
-    <RenderContent>false</RenderContent>
+    <RenderContent>true</RenderContent>
     <UseInEditor>false</UseInEditor>
-    <UserControl />
-    <Xslt />
 </Macro>

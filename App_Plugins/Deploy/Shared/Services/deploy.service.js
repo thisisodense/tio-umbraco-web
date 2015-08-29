@@ -10,7 +10,7 @@
             return $http.post(baseUrl + "AddToManifest", model);
         },
 
-        "package": function () {
+        package : function(){
 			return $http.post(baseUrl + "Package");
         },
 
@@ -63,7 +63,7 @@
                return $http.get(baseUrl + "CurrentTaskStatus");
             }
         },
-
+        
 
         environment : function(){
             return $http.get(baseUrl + "Environment");
@@ -100,6 +100,19 @@
             };
 
         return collection[guid];
+
+/*
+        //unuesed provider guids
+        //Relations
+        public static Guid relationItemProviderGuid = new Guid("d8e6ad82-e73a-11df-9492-0800200c9a66");
+        public static Guid relationTypeItemProviderGuid = new Guid("d8e6ad90-e73a-11df-9492-0800200c9a66");
+       
+        //Tags
+        public static Guid tagRelationsProviderGuid = new Guid("e0472599-e73b-11df-9492-0800200c9a66");
+        
+        //Access
+        public static Guid accessItemProviderGuid = new Guid("4362c4fb-8e23-4cdb-a611-786f48ea5ae7");
+	*/
 
         }
 

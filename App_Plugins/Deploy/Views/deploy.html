@@ -127,18 +127,11 @@
 
         <li class="deployOutput deployProblems" ng-switch-when="error">
           <h5>Something went wrong :(</h5>
-          <p>Here is some technical information that might help shed some light on whats happened:</p>
-        
-          <pre>{{currentTask | json}}</pre>
-            
-            <p class="alert alert-error alert-block"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
-            <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
-            <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
-            <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
+          <p>The changes could not be deployed, here are some technical information that might shed light on wht</p>
 
-            <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Close</button>
-            
-            <button ng-if="onDashboard" prevent-default class="btn btn-primary" ng-click="reloadQueue()">Reload queue</button>
+          <pre>{{currentTask | json}}</pre>     
+
+          <button class="btn" prevent-default ng-click="nav.hideDialog()">Close</button>
         </li>     
 
 

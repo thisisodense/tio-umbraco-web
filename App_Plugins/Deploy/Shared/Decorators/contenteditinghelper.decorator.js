@@ -1,5 +1,7 @@
 var contentEditingHelperDecorator = function($delegate, deployService, navigationService, editorState) {
 
+    var funkyFunc = 
+
     $delegate.configureContentEditorButtons = (function() {
         var cached_function = $delegate.configureContentEditorButtons;
         return function() {

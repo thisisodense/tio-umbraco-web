@@ -1,0 +1,11 @@
+﻿<Language xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>en</Id>
+        <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>English</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <CultureAlias>en</CultureAlias>
+</Language>

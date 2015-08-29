@@ -1,0 +1,42 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "CharLimitText",
+			name: "Limited Textbox Mutiple",
+			editor: {
+				view: "~/App_Plugins/CharLimit/charlimit.textbox.editor.html"
+			},
+			prevalues: {
+				fields: [
+					{
+						label: "Number of charachters",
+						description: "Character limit for the datatype",
+						key: "limit",
+						view: "number"
+					}
+				]
+			}
+		},
+		{
+			alias: "CharLimitInput",
+			name: "Limited Textbox Single Line",
+			editor: {
+				view: "~/App_Plugins/CharLimit/charlimit.input.editor.html"
+			},
+			prevalues: {
+				fields: [
+					{
+						label: "Number of charachters",
+						description: "Character limit for the datatype",
+						key: "limit",
+						view: "number"
+					}
+				]
+			}
+		}
+	],
+
+	javascript: [
+		"~/App_Plugins/CharLimit/charlimit.controller.js"
+	]
+}

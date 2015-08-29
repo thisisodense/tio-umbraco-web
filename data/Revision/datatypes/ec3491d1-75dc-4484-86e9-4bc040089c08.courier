@@ -1,0 +1,20 @@
+﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>ec3491d1-75dc-4484-86e9-4bc040089c08</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Textbox 140</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>CharLimitText</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>limit</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>140</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>ec3491d1-75dc-4484-86e9-4bc040089c08</UniqueID>
+</DataType>

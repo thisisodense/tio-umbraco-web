@@ -1,0 +1,29 @@
+﻿@using System.Web.Mvc.Html
+
+@inherits ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.RecommendationModel>
+@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = " - " + Model.HeadLine;
+}
+
+@section meta {
+    <meta property="og:title" content="@Model.HeadLine" />
+    <meta property="og:description" content="@Model.Body" />
+    <meta property="fb:app_id" content="550180138336430" />
+    <meta property="og:url" content="@Url.Action("Recommendation", "Recommendations", new { id = Model.Id, name = Model.HeadLine }, Request.Url.Scheme)" />
+    <meta property="og:image" content="@Model.ImageUrl" />
+    <meta property="og:type" content="article" />
+}
+
+@section writername {
+    @if (Model != null && !Model.IsGuestWriter)
+    {
+        <span class="writer">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action("Recommendations", "Recommendations")#@Model.WriterName"> @Model.WriterName</a>
+    }
+    else
+    {
+        <span class="writer">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
+    }
+}
+
+@Html.DisplayForModel()

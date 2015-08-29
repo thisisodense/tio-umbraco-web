@@ -1,0 +1,23 @@
+﻿@using System.Web.Mvc.Html;
+
+@inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.RecommendationsModel>
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section writername {
+    @if (Model.Recommendations.Any())
+    {
+        if (!Model.HaveGuestWriter)
+        {
+            <span class="writer">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href=")#@Model.MainWriterName"> @Model.MainWriterName</a>
+        }
+        else
+        {
+            <span class="writer">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.GuestRecommendation.WriterUrl"> @Model.GuestRecommendation.WriterName</a>
+        }
+    }
+}
+
+@Html.DisplayFor(model => model.Recommendations, new { RecommendationModel = Model })

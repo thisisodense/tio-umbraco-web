@@ -1,0 +1,168 @@
+﻿@using System.Web.Optimization
+@using Models = ThisIsOdense.Website.Models
+@using System.Web.Mvc.Html
+@using Library.Mvc.Extensions;
+
+@inherits ThisIsOdense.Mvc.Core.ThisIsOdenseTemplatePage
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @RenderSection("meta", required: false)
+    <title>This Is Odense : @Umbraco.GetDictionaryValue("Sker der noget i Odense?") : @ViewBag.Title</title>
+    <meta name="description" content="@Umbraco.GetDictionaryValue("Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.")" />
+    <meta name="google-site-verification" content="KWuVtTgiI6bFBjvqOlEcprkQFgInsv1hVF2dDtlh-0Y" />
+    <meta name="p:domain_verify" content="7c5681ad9a1afde465ff7dabacbb9f21" />
+    @Styles.Render(Models.Constants.Css.General)
+    @Scripts.Render(Models.Constants.Js.Moderinzr)
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-44277431-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link rel="icon" type="image/png" href="@Url.Content("~/favicon.png")" />
+    <link rel="alternate" type="application/rss+xml" title="Rss feed" href="@(Site.IsEnglish ? "/en/feed" : "/feed")" />
+    <link rel="apple-touch-icon" sizes="57x57" href="@Url.Content("~/Content/images/apple_icon_57x57_png")" />
+    <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Content/images/apple_icon_72x72_png)")" />
+    <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Content/images/apple_icon_114x114_png)")" />
+    <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/Content/images/apple_icon_144x144_png)")" />
+</head>
+<body>
+    @Html.Hidden("IsEnglish", Site.IsEnglish)
+    <div class="content">
+        <h1><a href="\"><img src="@Url.Content("~/Content/images/logo.png")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></h1>
+        <span class="tip"><a href="mailto:tip@thisisodense.dk">@Umbraco.GetDictionaryValue("TIP OS!")</a></span>
+        <div>
+            @if (Site.IsEnglish)
+            {
+                <a href="@(Url.Action(Html.GetRouteDataValue<string>("action"), Html.GetRouteDataValue<string>("controller"), new { lang = "da", id = Html.GetRouteDataValue<string>("id") }))"><img class="flag" src="@Url.Content("~/Content/images/dk.png")" /></a>
+            }
+            else
+            {
+                <a href="@(Url.Action(Html.GetRouteDataValue<string>("action"), Html.GetRouteDataValue<string>("controller"), new { lang = "en", id = Html.GetRouteDataValue<string>("id") }))"><img class="flag" src="@Url.Content("~/Content/images/en.png")" /></a>
+            }
+            <br style="clear:both;" />
+        </div>
+        <hr />
+        <div class="writerContent">@RenderSection("writername", false)</div>
+        <br style="clear:both;" />
+        @RenderBody()
+        <footer>
+            <a href="@Url.Action("Index", "About")">Om This Is Odense</a> // <a href="https://twitter.com/ThisIsOdense" target="_blank">Twitter</a> // <a href="http://instagram.com/thisisodense" target="_blank">Instagram</a> // <a href="https://www.facebook.com/ThisIsOdense" target="_blank">Facebook</a>
+            <br style="clear:both;" />
+            <hr class="bigspace" />
+            <div class="linkContainer">
+                <h2>@Umbraco.GetDictionaryValue("SE OGSÅ"):</h2><h3>@Umbraco.GetDictionaryValue("ANDRE WEBSIDER OG GUIDES TIL OPLEVELSER I ODENSE")</h3>
+                <br style="clear:both;" />
+                <br />
+                <div class="links">
+                    <a class="link1" href="http://sommerglaede.dk/category/ugensoplevelser" target="_blank">
+                        <img src="@Url.Content("~/Content/images/sommerglaede.png")" title="Ugens oplevelser på sommerglæde.dk" alt="Ugens oplevelser på sommerglæde.dk">
+                        Søren Sommerglæde
+                    </a>
+                    <a class="link2" href="http://oplev.odense.dk" target="_blank">
+                        <img src="@Url.Content("~/Content/images/oplevodense.png")" title="Oplev Odense" alt="Oplev Odense" />
+                        Oplev Odense
+                    </a>
+                    <a class="link3" href="http://inmediasres.nu" target="_blank">
+                        <img src="@Url.Content("~/Content/images/inmediasres.png")" title="In Medias Res - Magasin for unge om byliv og kultur i Odense" alt="In Medias Res - Magasin for unge om byliv og kultur i Odense" />
+                        In Medias Res
+                    </a>
+                    <a class="link4" href="http://www.visitodense.com/ln-int/funen/events/whats-odense" target="_blank">
+                        <img src="@Url.Content("~/Content/images/visitodense_0.png")" title="Visit Odense" alt="Visit Odense" />
+                        Visit Odense
+                    </a>
+                    <a class="link5" href="https://www.facebook.com/StudiebyenOdense" target="_blank">
+                        <img src="@Url.Content("~/Content/images/studieby.png")" title="Studiebyen Odense - Fede tips til studerende" alt="Studiebyen Odense - Fede tips til studerende" />
+                        Studiebyen Odense
+                    </a>
+                    <a class="link6" href="http://instagram.com/mitodense" target="_blank">
+                        <img src="@Url.Content("~/Content/images/mitodense.png")" title="#MitOdense på Instagram" alt="#MitOdense på Instagram" />
+                        #MitOdense på Instagram
+                    </a>
+                    <br style="clear:both;" />
+                </div>
+            </div>
+            <hr class="bigspace" />
+            <div>
+                <div class="fb-like-box" data-width="714" data-href="https://www.facebook.com/ThisIsOdense" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render(Models.Constants.Js.Jquery, Models.Constants.Js.General, Models.Constants.Js.JqueryUI)
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+        window.fbAsyncInit = function () {
+            // init the FB JS SDK
+            FB.init({
+                appId: 550180138336430,                        // App ID from the app dashboard
+                status: true,                                 // Check Facebook Login status
+                xfbml: true                                  // Look for social plugins on the page
+            });
+
+            FB.Event.subscribe('xfbml.render', function () {
+                //var fbComments = $(".fb-comments");
+                //$.each(fbComments, function (index, value) {
+                //    var $value = $(value);
+                //    var span = $value.find("span:first");
+                //    var iframe = $value.find("iframe");
+                //    var height = (span.css("height").replace("px", "") - 50) + "px";
+                //    span.css("height", height);
+                //    iframe.css("height", height);
+                //    debugger;
+                //});
+
+            })
+        };
+
+        // Load the SDK asynchronously
+        (function () {
+            // If we've already installed the SDK, we're done
+            if (document.getElementById('facebook-jssdk')) { return; }
+
+            // Get the first script element, which we'll use to find the parent node
+            var firstScriptElement = document.getElementsByTagName('script')[0];
+
+            // Create a new script element and set its id
+            var facebookJS = document.createElement('script');
+            facebookJS.id = 'facebook-jssdk';
+
+            // Set the new script's source to the source of the Facebook JS SDK
+            facebookJS.src = '//connect.facebook.net/@(Site.IsEnglish ? "en_US" : "da_DK")/all.js';
+
+            // Insert the Facebook JS SDK into the DOM
+            firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+        }());
+    </script>
+    <script type="text/javascript">
+        addToHomescreen();
+        addthisevent.settings({
+            mouse: false,
+            css: false,
+            outlook: { show: true, text: "Outlook Calendar" },
+            google: { show: true, text: "Google Calendar" },
+            yahoo: { show: true, text: "Yahoo Calendar" },
+            ical: { show: true, text: "iCal Calendar" },
+            hotmail: { show: true, text: "Hotmail Calendar" },
+            facebook: { show: true, text: "Facebook Calendar" }
+        });
+    </script>
+    <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52b5ce6258abe637"></script>
+</body>
+</html>

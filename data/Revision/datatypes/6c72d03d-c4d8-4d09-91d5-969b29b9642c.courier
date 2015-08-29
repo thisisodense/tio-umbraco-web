@@ -1,0 +1,14 @@
+﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>6c72d03d-c4d8-4d09-91d5-969b29b9642c</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>OpeningHours</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Ntext</DataBaseDataType>
+    <PropertyEditorAlias>Ubolt.OpeningHours</PropertyEditorAlias>
+    <Prevalues />
+    <UniqueID>6c72d03d-c4d8-4d09-91d5-969b29b9642c</UniqueID>
+</DataType>

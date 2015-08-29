@@ -1,0 +1,55 @@
+﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>0cb8264f-0485-4ab7-b11e-3faf42a3e402</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Dropdown event types</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.DropDown</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>0</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>Teater</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>1</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>Koncert</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>2</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>Udstilling</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>3</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>Festival</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>4</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>Konference/Messe</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>5</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>Andet</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>6</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>Comedy</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>7</Alias>
+            <SortOrder>8</SortOrder>
+            <Value>Film</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>0cb8264f-0485-4ab7-b11e-3faf42a3e402</UniqueID>
+</DataType>

@@ -1,0 +1,37 @@
+﻿<DictionaryItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.</Id>
+        <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Translations>
+        <Translation>
+            <CultureAlias>en</CultureAlias>
+            <Value>Weekly recommendations for great experiences in Odense. In English. Every Monday. All year round.</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>da</CultureAlias>
+            <Value>Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.</Value>
+        </Translation>
+    </Translations>
+</DictionaryItem>

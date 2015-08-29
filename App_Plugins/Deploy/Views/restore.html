@@ -4,13 +4,13 @@
     <ul class="deployModal unstyled" ng-switch="step">
 
       <li ng-switch-default>
-          
+
           <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">
-          
+
           Restore your website from
 
           <div class="btn-group">
-            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#" 
+            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#"
                 style="font-size: 17.5px; padding-left: 0; padding-top: 1px">
               {{environment.destination}} <span class="caret"></span>
             </a>
@@ -33,9 +33,11 @@
             <strong style="font-weight: bold; color: #000;">Notice:</strong> Downloading and restoring will take a bit of time to do, meanwhile you cannot change or deploy any content.
           </p>
 
-          <button prevent-default class="btn btn-primary" ng-click="restore()">Download and restore</button>
+          <button prevent-default class="btn btn-primary"
+                    ng-disabled="environment.destination ===''"
+                    ng-click="restore()">Download and restore</button>
       </li>
-      
+
 
       <li ng-switch-when="working">
         <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Restore not allowed</h4>
@@ -57,16 +59,27 @@
 
       <li ng-switch-when="restoring">
         <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">{{currentTask.description}}</h4>
-        
+
         <p style="font-size: 12px; font-weight: 600;">{{currentTask.done}} of {{currentTask.total}}</p>
 
         <div class="progress progress-deploy">
           <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
         </div>
 
-        <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>  
+        <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>
 
       </li>
+
+        <li ng-switch-when="error">
+            <h4>Something went wrong :(</h4>
+            <p>Here is some technical information that might help shed some light on whats happened:</p>
+
+            <p class="alert alert-error alert-block"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
+            <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
+            <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
+            <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
+
+        </li>
 
 
       </ul>

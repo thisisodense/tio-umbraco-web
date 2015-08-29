@@ -1,0 +1,22 @@
+﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>WriterRepository</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Writer repository</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>WriterRepository</Alias>
+    <AllowedChildDocumentTypes>
+        <string>Writer</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates />
+    <Description />
+    <Icon>icon-users</Icon>
+    <Properties />
+    <Tabs />
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

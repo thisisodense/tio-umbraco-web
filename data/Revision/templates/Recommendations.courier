@@ -1,0 +1,35 @@
+﻿<Template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Layout</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Master template: Layout</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Recommendations</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Recommendations</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/Recommendations.cshtml</ExtractToPath>
+            <Hash>8c58788c0ae8178dd8e9517f9e656105</Hash>
+            <Name>~/views/Recommendations.cshtml</Name>
+            <PackageFromPath>~/views/Recommendations.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/Recommendations.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Recommendations</Alias>
+    <MasterPagePath>~/masterpages/Recommendations.master</MasterPagePath>
+    <ParentTemplateAlias>Layout</ParentTemplateAlias>
+    <ParentTemplateId>1050</ParentTemplateId>
+    <Id>1052</Id>
+</Template>

@@ -1,0 +1,220 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Dropdown Location Categories</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.DropDownMultiple</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>15</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>Drinking</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>36</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>The Latin Quarter</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>1</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>Cafés</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>13</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>Sights</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>29</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>Activities</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>43</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>Habour &amp; Nørrebro</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>32</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>Summer in Odense</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>34</Alias>
+            <SortOrder>8</SortOrder>
+            <Value>Places to stay</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>47</Alias>
+            <SortOrder>9</SortOrder>
+            <Value>Free of charge</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>35</Alias>
+            <SortOrder>10</SortOrder>
+            <Value>With Children</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>25</Alias>
+            <SortOrder>11</SortOrder>
+            <Value>Eating</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>27</Alias>
+            <SortOrder>12</SortOrder>
+            <Value>What's new?</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>66</Alias>
+            <SortOrder>13</SortOrder>
+            <Value>Centrum</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>65</Alias>
+            <SortOrder>14</SortOrder>
+            <Value>On a budget</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>45</Alias>
+            <SortOrder>15</SortOrder>
+            <Value>First time in Odense</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>44</Alias>
+            <SortOrder>16</SortOrder>
+            <Value>The Tinderbox Route</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>26</Alias>
+            <SortOrder>17</SortOrder>
+            <Value>Top Picks</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>14</Alias>
+            <SortOrder>18</SortOrder>
+            <Value>Shopping</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>39</Alias>
+            <SortOrder>19</SortOrder>
+            <Value>Østerbro</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>21</Alias>
+            <SortOrder>20</SortOrder>
+            <Value>Parks &amp; Nature</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>42</Alias>
+            <SortOrder>21</SortOrder>
+            <Value>Along The River</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>46</Alias>
+            <SortOrder>22</SortOrder>
+            <Value>Like a local</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>55</Alias>
+            <SortOrder>23</SortOrder>
+            <Value>Culture</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>30</Alias>
+            <SortOrder>24</SortOrder>
+            <Value>Art</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>40</Alias>
+            <SortOrder>25</SortOrder>
+            <Value>Vesterbro</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>5</Alias>
+            <SortOrder>26</SortOrder>
+            <Value>Nightlife</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>17</Alias>
+            <SortOrder>27</SortOrder>
+            <Value>Museums</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>37</Alias>
+            <SortOrder>28</SortOrder>
+            <Value>Brandts Klædefabrik</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>4</Alias>
+            <SortOrder>29</SortOrder>
+            <Value>Fashion</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>18</Alias>
+            <SortOrder>30</SortOrder>
+            <Value>Theatre</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>38</Alias>
+            <SortOrder>31</SortOrder>
+            <Value>H.C. Andersen Kvarteret</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>16</Alias>
+            <SortOrder>32</SortOrder>
+            <Value>Music</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>33</Alias>
+            <SortOrder>33</SortOrder>
+            <Value>Winter in Odense</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>31</Alias>
+            <SortOrder>34</SortOrder>
+            <Value>Gastro</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>8</Alias>
+            <SortOrder>35</SortOrder>
+            <Value>Restaurants</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>23</Alias>
+            <SortOrder>36</SortOrder>
+            <Value>Reading</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>48</Alias>
+            <SortOrder>37</SortOrder>
+            <Value>High Quality</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>41</Alias>
+            <SortOrder>38</SortOrder>
+            <Value>Gågaden</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>64</Alias>
+            <SortOrder>39</SortOrder>
+            <Value>Take Away</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>28</Alias>
+            <SortOrder>40</SortOrder>
+            <Value>Clubbing</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>20</Alias>
+            <SortOrder>41</SortOrder>
+            <Value>Bakery</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>c281c13f-8c09-4b8e-848b-576d865155a8</UniqueID>
+</DataType>

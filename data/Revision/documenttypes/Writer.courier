@@ -1,0 +1,131 @@
+﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Writer</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Writer</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>Writer</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <Description />
+    <Icon>icon-user</Icon>
+    <Properties>
+        <ContentTypeProperty>
+            <Alias>background</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Background</Name>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>email</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Email</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>image</Alias>
+            <DataTypeDefinitionId>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Image</Name>
+            <SortOrder>4</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>interests</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Interests</Name>
+            <SortOrder>6</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>name</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Name</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>oldId</Alias>
+            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>OldId</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Info</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>show</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Show</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>title</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Title</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>Writer</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Content</Text>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Writer</ContentTypeAlias>
+            <SortOrder>1</SortOrder>
+            <Text>Info</Text>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

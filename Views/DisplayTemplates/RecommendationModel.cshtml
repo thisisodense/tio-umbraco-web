@@ -1,0 +1,204 @@
+﻿@using Library.Mvc.Extensions;
+@using ThisIsOdense.Website.Models;
+@using ThisIsOdense.Mvc.Core;
+@using Library.Tools;
+@using Const = ThisIsOdense.Website.Models;
+
+@inherits BaseViewPage<RecommendationModel>
+
+@helper  GetOccurs(RecommendationModel model)
+{
+    if (!Model.IsCurrent)
+    {
+            <text>
+                @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
+                @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
+                @if (Model.EndDate.HasValue)
+                {
+                    <text>
+                        -
+                        @Html.FirstCharToUpper(Model.EndDate.Value.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Value.Day)
+                        @string.Format("{0}.", Model.EndDate.Value.ToString("MMMM").Substring(0, 3))
+                    </text>
+                }
+                @Model.StartDate.Year
+            </text>
+    }
+    else
+    {
+            <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime.HasValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
+    }
+}
+
+@helper GetTicketsUrlText(RecommendationModel model)
+{
+    if (!string.IsNullOrEmpty(model.TicketUrl))
+    {
+            <text>
+                | <a class="buyTickets" href="@Model.TicketUrl" target="_blank">@Umbraco.GetDictionaryValue("Køb billet her")</a>
+            </text>
+    }
+}
+
+@helper GetWriterName()
+{
+    if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
+    {
+        <span>| @Umbraco.GetDictionaryValue("Skrevet af:") @Model.WriterName</span>
+    }
+}
+
+@if (!Model.IsDetails && Model.HaveGuestWriter && Model.IsFirstRecommendation)
+{
+    <div class="writerContent" style="margin-top:10px;margin-bottom:10px;">
+        <span class="writer">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action("")#@Model.MainWriter">@Model.MainWriter</a>
+    </div>
+}
+
+<article class="@(Model.IsGuestWriter ? "guestWriter" : "")">
+    <div class="addthisevent">
+        @if (Model.IsCurrent)
+        {
+            <div class="date">
+                <span class="mon">@(Model.IsEnglish ? Html.FirstCharToUpper(Model.GetDate().ToString("ddd", new System.Globalization.CultureInfo("en-GB"))) : Html.FirstCharToUpper(Model.GetDate().ToString("dddd").Substring(0, 3)))</span>
+                <span class="day">@Model.GetDate().Day</span>
+            </div>
+        }
+        <div class="desc">
+            <p>
+                <strong class="hed">@Model.HeadLine</strong>
+                <span class="des">@Model.SubHeader</span>
+            </p>
+        </div>
+        <span class="_start">@Model.StartDate.ToLocalTime().Date.ToShortDateString() @Model.StartTime.ToLongTimeString()</span>
+        <span class="_end">@(Model.EndDate.HasValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime.HasValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
+        <span class="_zonecode">40</span>
+        <span class="_summary">@Model.HeadLine)</span>
+        <span class="_description">@Model.SubHeader</span>
+        <span class="_location">@Model.Location.Address</span>
+        <span class="_organizer">@Model.Organizer</span>
+        @*<span class="_organizer_email">Organizer e-mail</span>*@
+        <span class="_all_day_event">false</span>
+        <span class="_date_format">DD-MM-YYYY</span>
+        <div class="addthis_toolbox addthis_default_style">
+            @for (int i = 1; i <= 3; i++)
+            {
+                <a class="addthis_button_preferred_@i"
+                addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         }, 
+                                         Request.Url.Scheme)"
+                addthis:title="@Model.HeadLine"
+                addthis:description="@Model.SubHeader">
+                </a>
+            }
+            <a class="addthis_counter addthis_bubble_style"
+               addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         }, 
+                                         Request.Url.Scheme)"
+               addthis:title="@Model.HeadLine"
+               addthis:description="@Model.SubHeader">
+            </a>
+        </div>
+    </div>
+
+    <img class="articleImg" src="@Model.ImageUrl" alt="@Model.HeadLine" title="@Model.HeadLine" />
+
+    <div class="info arrow">
+        @Umbraco.GetDictionaryValue(Model.EventType) | @GetOccurs(Model) | @Model.Location.Address | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr. @GetTicketsUrlText(Model) @GetWriterName()
+    </div>
+
+    @if (!Model.IsDetails)
+    {
+        <div class="readmorelink">
+            @if (string.IsNullOrWhiteSpace(Model.Body) && Model.IsEnglish)
+            {
+                <a href="@Model.LinkToEvent" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
+            }
+            else
+            {
+                <a href="javascript:void(0)">@Umbraco.GetDictionaryValue("Læs anbefaling")</a>
+            }
+        </div>
+    }
+    <br style="clear:both;" />
+    @if ((Model.IsEnglish && !string.IsNullOrWhiteSpace(Model.Body)) || !Model.IsEnglish)
+    {
+        <div class="readmore @(Model.IsDetails ? "" : "hide")">
+            <div>@Umbraco.GetDictionaryValue("Sted"): @Model.Location.Address</div>
+            <div>@Umbraco.GetDictionaryValue("Arrangør"): @Model.Organizer</div>
+            @if (Model.DoorOpens.HasValue)
+            {
+                <div>@Umbraco.GetDictionaryValue("Døre åbnes"): @Model.DoorOpens.Value.ToLocalTime().ToString("HH:mm")</div>
+            }
+
+            @Html.Raw(Model.Body)
+
+            <div class="fb-comments"
+                 data-width="@(Model.IsGuestWriter ? "695" : "714")"
+                 data-height="100"
+                 data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         }, 
+                                         Request.Url.Scheme)"
+                 data-numposts="5"
+                 data-colorscheme="light">
+            </div>
+            <br style="clear:both" /><br />
+            <a href="@Model.LinkToEvent" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
+
+            <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         }, 
+                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
+
+            @if (Model.IsDetails)
+            {
+                <a class="right" href="\">@Umbraco.GetDictionaryValue("Til forsiden")</a>
+            }
+            else
+            {
+                <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
+            }
+
+            <br style="clear:both" />
+        </div>
+    }
+    else
+    {
+        if (Model.IsDetails)
+        {
+            <div class="readmore @(Model.IsDetails ? "" : "hide")">
+                <a href="@Model.LinkToEvent" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
+                <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         }, 
+                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
+                <a class="right" href="\">@Umbraco.GetDictionaryValue("Til forsiden")</a>
+                <br style="clear:both" />
+            </div>
+        }
+    }
+</article>
+<hr />

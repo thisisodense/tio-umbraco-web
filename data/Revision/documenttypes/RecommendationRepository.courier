@@ -1,0 +1,22 @@
+﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dependencies />
+    <ItemId>
+        <Id>RecommendationRepository</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Recommendation repository</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>RecommendationRepository</Alias>
+    <AllowedChildDocumentTypes>
+        <string>Recommendation</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates />
+    <Description />
+    <Icon>icon-bulleted-list</Icon>
+    <Properties />
+    <Tabs />
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>true</IsContainer>
+</DocumentType>

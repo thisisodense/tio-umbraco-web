@@ -1,0 +1,45 @@
+﻿@inherits ThisIsOdense.Mvc.Core.BaseViewPage<dynamic>
+
+@using System.Web.Mvc;
+@using System.Web.Mvc.Html;
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section scripts {
+    <script src="~/scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    <script>
+        $(function () {
+            var status = $.connection.importHub;
+            var statusContainer = $("#status");
+
+            status.client.status = function (status)
+            {
+                $("<li></li>").text(status).appendTo(statusContainer);
+            };
+
+            $.connection.hub.start();
+
+            $("form").submit(function (event) {
+                event.preventDefault();
+                var url = this.action;
+                $.post(url);
+            });
+        });
+    </script>
+}
+
+@using (Html.BeginForm("ImportRecommendationsAndWriters", "Import", FormMethod.Post))
+{
+    <button type="submit">Start Import recommendations</button>
+}
+
+@using (Html.BeginForm("ImportLocations", "Import", FormMethod.Post))
+{
+    <input type="submit" value="Start Ímport locations"/>
+}
+
+<ul id="status"></ul>

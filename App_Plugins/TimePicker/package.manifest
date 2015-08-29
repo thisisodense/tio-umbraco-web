@@ -1,0 +1,78 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "TimePIcker",
+			name: "Timepicker",
+			editor: {
+				view: "~/App_PLugins/TimePicker/timepicker.editor.html"
+			},
+			prevalues: {
+				fields: [
+					{
+						label: "Modal",
+						description: "Show Picker in a modal",
+						key: "modal",
+						view: "boolean"
+					},
+					{
+						label: "Widget",
+						description: "Don't show the widget",
+						key: "widget",
+						view: "boolean"
+					},
+					{
+						label: "Minute step",
+						description: "Specify a step for the minute field",
+						key: "minuteStep",
+						view: "number"
+					},
+					{
+						label: "Show seconds",
+						description: "Show the seconds field",
+						key: "showSeconds",
+						view: "boolean"
+					},
+					{
+						label: "Second step",
+						description: "secondStep",
+						key: "secondStep",
+						view: "number"
+					},
+					{
+						label: "24 hour mode",
+						description: "Use 24hr mode",
+						key: "showMeridian",
+						view: "boolean"
+					},
+					{
+						label: "Hide Inputs",
+						description: "Hide the text inputs in the widget",
+						key: "showInputs",
+						view: "boolean"
+					},
+					{
+						label: "Disable focus",
+						description: "Disables the input from focusing. This is useful for touch screen devices that display a keyboard on input focus.",
+						key: "disableFocus",
+						view: "boolean"
+					},
+					{
+						label: "Disable mouse wheel",
+						description: "Disables the input from changing on mousewheel events",
+						key: "disableMouse",
+						view: "boolean"
+					},
+					{
+						label: "Modal backdrop",
+						description: "Show modal backdrop",
+						key: "modalBackdrop",
+						view: "boolean"
+					}
+				]
+			}
+		}
+	],
+	javascript: [
+		"~/App_Plugins/TimePicker/timepicker.controller.js"
+	]
+}

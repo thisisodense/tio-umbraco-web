@@ -1,4 +1,4 @@
-﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -16,6 +16,15 @@
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: 6c72d03d-c4d8-4d09-91d5-969b29b9642c</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -182,7 +191,7 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <Alias>tags</Alias>
-            <DataTypeDefinitionId>b6b73142-b9c1-4bf8-a16d-e1c23320b549</DataTypeDefinitionId>
+            <DataTypeDefinitionId>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Tags</Name>

@@ -1,4 +1,4 @@
-﻿<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<Macro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies />
     <ItemId>
         <Id>FormsRenderScripts</Id>
@@ -23,8 +23,6 @@
     <DLRScript>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</DLRScript>
     <Properties />
     <RefreshRate>0</RefreshRate>
-    <RenderContent>false</RenderContent>
+    <RenderContent>true</RenderContent>
     <UseInEditor>false</UseInEditor>
-    <UserControl />
-    <Xslt />
 </Macro>

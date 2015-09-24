@@ -1,10 +1,10 @@
-﻿<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<Macro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies />
     <ItemId>
         <Id>FormsRenderForm</Id>
         <ProviderId>2ab40e30-e292-11df-85ca-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Insert Form</Name>
+    <Name>Insert form</Name>
     <ItemType>Item</ItemType>
     <Resources>
         <Resource>
@@ -31,7 +31,5 @@
     </Properties>
     <RefreshRate>0</RefreshRate>
     <RenderContent>true</RenderContent>
-    <UseInEditor>true</UseInEditor>
-    <UserControl />
-    <Xslt />
+    <UseInEditor>false</UseInEditor>
 </Macro>

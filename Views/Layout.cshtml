@@ -20,6 +20,7 @@
     <meta name="google-site-verification" content="KWuVtTgiI6bFBjvqOlEcprkQFgInsv1hVF2dDtlh-0Y" />
     <meta name="p:domain_verify" content="7c5681ad9a1afde465ff7dabacbb9f21" />
     @Styles.Render(Models.Constants.Css.General)
+    @RenderSection("styles", required: false)
     @Scripts.Render(Models.Constants.Js.Moderinzr)
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -38,26 +39,31 @@
     <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Content/images/apple_icon_72x72_png)")" />
     <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Content/images/apple_icon_114x114_png)")" />
     <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/Content/images/apple_icon_144x144_png)")" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
     @Html.Hidden("IsEnglish", Site.IsEnglish)
     <div class="content">
         <h1><a href="\"><img src="@Url.Content("~/Content/images/logo.png")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></h1>
-        <span class="tip"><a href="mailto:tip@thisisodense.dk">@Umbraco.GetDictionaryValue("TIP OS!")</a></span>
-        <div>
-            @if (Site.IsEnglish)
-            {
-                <a href="@(Url.Action(Html.GetRouteDataValue<string>("action"), Html.GetRouteDataValue<string>("controller"), new { lang = "da", id = Html.GetRouteDataValue<string>("id") }))"><img class="flag" src="@Url.Content("~/Content/images/dk.png")" /></a>
-            }
-            else
-            {
-                <a href="@(Url.Action(Html.GetRouteDataValue<string>("action"), Html.GetRouteDataValue<string>("controller"), new { lang = "en", id = Html.GetRouteDataValue<string>("id") }))"><img class="flag" src="@Url.Content("~/Content/images/en.png")" /></a>
-            }
+        <div class="navigation">
+            <a class="flag" href="@Url.Action(Html.GetRouteDataValue<string>("action"),
+                                 Html.GetRouteDataValue<string>("controller"),
+                                 new
+                                 {
+                                     lang = (Site.IsEnglish ? "da" : "en"),
+                                     id = Html.GetRouteDataValue<string>("id")
+                                 })">
+                <img src="@Url.Content("~/Content/images/" + (Site.IsEnglish ? "dk" : "en") + ".png")" />
+            </a>
+            <ul class="topNavigation">
+                <li class="@Html.IsActive(Url.Action("Recommendations", "Recommendations"))"><a href="/">EVENTS</a></li>
+                <li id="places" class="@Html.IsActive(Url.Action("Locations", "Locations"))"><a href="@Url.Action("Locations", "Locations")">PLACES</a></li>
+            </ul>
             <br style="clear:both;" />
         </div>
-        <hr />
+        <hr style="margin-top:9px;" class="@Html.Hide(Url.Action("Locations", "Locations"))" />
         <div class="writerContent">@RenderSection("writername", false)</div>
-        <br style="clear:both;" />
+        <br class="@Html.Hide(Url.Action("Locations", "Locations"))" style="clear:both;" />
         @RenderBody()
         <footer>
             <a href="@Url.Action("Index", "About")">Om This Is Odense</a> // <a href="https://twitter.com/ThisIsOdense" target="_blank">Twitter</a> // <a href="http://instagram.com/thisisodense" target="_blank">Instagram</a> // <a href="https://www.facebook.com/ThisIsOdense" target="_blank">Facebook</a>
@@ -112,7 +118,8 @@
             FB.init({
                 appId: 550180138336430,                        // App ID from the app dashboard
                 status: true,                                 // Check Facebook Login status
-                xfbml: true                                  // Look for social plugins on the page
+                xfbml: true,                                  // Look for social plugins on the page
+                version: 'v2.3'
             });
 
             FB.Event.subscribe('xfbml.render', function () {

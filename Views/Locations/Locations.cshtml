@@ -1,0 +1,35 @@
+﻿@using System.Web.Mvc.Html;
+@using System.Web.Optimization;
+@using Models = ThisIsOdense.Website.Models
+@using Library.Tools
+
+@inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.LocationsModel>
+
+@section scripts {
+    <script type="text/javascript" async src="//maps.googleapis.com/maps/api/js?key=AIzaSyBGRlN8YlS3_aiGIkVQyquZvTDjEtDVf5Q"></script>
+    @Scripts.Render(Models.Constants.Js.Locations)
+}
+
+@section styles {
+    @Styles.Render(Models.Constants.Css.Locations)
+}
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<nav class="category-picker">
+    @foreach(var tag in Model.Tags)
+    {
+        @Html.ActionLink(tag.Text, "locations", "locations", 
+               new { category = tag.Text }, 
+               new { @class = "category" })
+
+        if (Model.Tags.Last().GetHashCode() != tag.GetHashCode())
+        {
+            <text>//</text>
+        }
+}
+</nav>
+
+@Html.DisplayFor(model => model.Locations)

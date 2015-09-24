@@ -1,0 +1,282 @@
+//Variables
+$color-eating: #aab79e;
+$color-drinking: #72a5a0;
+$color-culture: #8d978e;
+$color-shopping: #988299;
+$color-sights: #988299;
+$break-small: 480px;
+$break-large: 768px;
+
+//Navigation
+/*.topNavigation {
+	li {
+		display: inline-block;
+
+		&.active {
+  			a {
+				text-decoration: underline;
+  				color: black;
+  			}
+  		}
+	}
+	a {
+		font-size: 20pt;
+  		text-transform: uppercase;
+  		color: darkgrey;
+  		text-decoration: none;
+			
+  		&:hover {
+  			color: black;
+  		}
+
+  		&:first-child {
+  			margin-right: 20px;
+  		}
+	}
+}*/
+
+// Filtering
+.category-picker {
+    margin-top: 5px;
+
+    a {
+        display: inline-block;
+    }
+
+    .category {
+        font-size: 14pt;
+        padding-top: 6px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.current {
+            text-decoration: underline;
+        }
+
+        @media (max-width: $break-large) {
+            font-size: 12pt;
+        }
+
+        @media (max-width: $break-small) {
+            font-size: 10pt;
+            padding-top: 5px;
+        }
+    }
+}
+
+.map {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.appliedFilter {
+    margin-top: 60px;
+}
+
+#target {
+    max-width:714px;
+}
+
+// Places
+.place {
+    font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        content: "\a0";
+        display: block;
+        visibility: hidden;
+        padding: 2px 0;
+        line-height: 1px;
+        border-right: 3px solid whitesmoke;
+    }
+
+    /*&:hover {
+        .placeHeader, .placeInfo, .readmore.hide {
+            background-color: whitesmoke;
+        }
+
+        &:before {
+            //visibility: visible;
+        }
+    }*/
+
+    .articleImg {
+        margin-bottom: 0;
+        margin-top:5px;
+    }
+
+    .placeInfo, .readmore {
+        margin-bottom: 5px;
+    }
+
+    .readmore {
+        float: right;
+    }
+
+    &.show {
+        .readmore {
+            display: none;
+        }
+
+        .readmore.hide {
+            display: block;
+            margin-top: -5px;
+            // background-color: whitesmoke;
+        }
+    }
+
+    .openingHours {
+        clear: both;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .day {
+            color: #666;
+            min-width: 40px;
+            display: inline-block;
+        }
+
+        .time:after {
+            display: inline-block;
+            content: "|";
+        }
+
+        .time:last-child:after {
+            content: "";
+        }
+    }
+}
+
+.placeHeader {
+    width: 100%;
+    min-height: 27px;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    padding-top: 10px;
+    font-size: 27px;
+    line-height: 100%;
+    color: #333;
+    text-transform: uppercase;
+
+    .desc {
+        width: 90%;
+        min-height: 60px;
+        float: left;
+
+        @media (max-width: $break-large) {
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        p {
+            margin: 0;
+            display: block;
+            text-align: left;
+            font-size: 12px;
+            color: #666;
+            padding: 7px 0 0 10px;
+            line-height: 110%;
+        }
+
+        .hed {
+            width: 100%;
+            min-height: 27px;
+            display: block;
+            font-weight: 900;
+            overflow: hidden;
+            margin-bottom: 3px;
+            font-size: 27px;
+            line-height: 100%;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .des {
+            width: 83%;
+            min-height: 28px;
+            display: block;
+            overflow: hidden;
+            text-transform: uppercase;
+            font-size: 13px;
+
+            @media(max-width: $break-large) {
+                width: 100%;
+            }
+
+            @media(max-width: $break-small) {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .mapCategory {
+        width: 10%;
+        height: 47px;
+        float: left;
+        margin-top: 12px;
+        border-radius: 2px;
+
+        .fa {
+            display: block;
+            text-align: center;
+
+            &:before {
+                display: inline-block;
+                font-size: 20px;
+                line-height: 45px;
+                color: white;
+            }
+        }
+
+        &.Eating {
+            background-color: $color-eating;
+
+            .fa:before {
+                content: "\f0f5";
+            }
+        }
+
+        &.Drinking {
+            background-color: $color-drinking;
+
+            .fa:before {
+                content: "\f000";
+            }
+        }
+
+        &.Culture {
+            background-color: $color-culture;
+
+            .fa:before {
+                content: "\f001";
+            }
+        }
+
+        &.Shopping {
+            background-color: $color-shopping;
+
+            .fa:before {
+                content: "\f07a";
+            }
+        }
+
+        &.Sights {
+            background-color: $color-sights;
+
+            .fa:before {
+                content: "\f18c";
+            }
+        }
+    }
+}

@@ -1,2 +1,2 @@
-﻿<%@ Application Inherits="Umbraco.Web.UmbracoApplication" Language="C#" %>
+﻿<%@ Application Inherits="ThisIsOdense.Website.MvcApplication" Language="C#" %>
           

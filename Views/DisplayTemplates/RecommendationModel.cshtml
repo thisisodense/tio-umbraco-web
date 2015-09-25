@@ -75,7 +75,7 @@
         <span class="_zonecode">40</span>
         <span class="_summary">@Model.HeadLine)</span>
         <span class="_description">@Model.SubHeader</span>
-        <span class="_location">@Model.Location.Address</span>
+        <span class="_location">@(Model.Location != null ? Model.Location.Address : "")</span>
         <span class="_organizer">@Model.Organizer</span>
         @*<span class="_organizer_email">Organizer e-mail</span>*@
         <span class="_all_day_event">false</span>

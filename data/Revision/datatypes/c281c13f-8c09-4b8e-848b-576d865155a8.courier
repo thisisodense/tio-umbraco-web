@@ -1,0 +1,40 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Dropdown Location Categories</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.DropDownMultiple</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>5</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>Drinking</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>4</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>Sights, Parks, Nature &amp; Activities</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>3</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>Shopping</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>2</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>Culture</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>1</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>Eating</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>c281c13f-8c09-4b8e-848b-576d865155a8</UniqueID>
+</DataType>

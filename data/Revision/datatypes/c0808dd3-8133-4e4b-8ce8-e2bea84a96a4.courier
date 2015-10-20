@@ -1,0 +1,51 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>c0808dd3-8133-4e4b-8ce8-e2bea84a96a4</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>List View - Content</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>pageSize</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>10</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>SortOrder</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>asc</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>includeProperties</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>[&#xD;
+  {&#xD;
+    "alias": "sortOrder",&#xD;
+    "header": "Sort order",&#xD;
+    "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "updateDate",&#xD;
+    "header": "Last edited",&#xD;
+    "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "owner",&#xD;
+    "header": "Created by",&#xD;
+    "isSystem": 1&#xD;
+  }&#xD;
+]</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>c0808dd3-8133-4e4b-8ce8-e2bea84a96a4</UniqueID>
+</DataType>

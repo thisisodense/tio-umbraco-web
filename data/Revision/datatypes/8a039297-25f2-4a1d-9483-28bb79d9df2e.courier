@@ -1,4 +1,4 @@
-﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>8a039297-25f2-4a1d-9483-28bb79d9df2e</Id>
@@ -43,6 +43,11 @@
     "alias": "endDate",&#xD;
     "isSystem": 0,&#xD;
     "header": "Slut dato"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "location",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Sted"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

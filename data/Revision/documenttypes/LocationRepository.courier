@@ -1,4 +1,4 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>LocationRepository</Id>
@@ -18,5 +18,5 @@
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
     <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>false</IsContainer>
+    <IsContainer>true</IsContainer>
 </DocumentType>

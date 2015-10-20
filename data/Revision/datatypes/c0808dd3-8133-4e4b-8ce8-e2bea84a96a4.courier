@@ -43,6 +43,11 @@
     "alias": "owner",&#xD;
     "header": "Created by",&#xD;
     "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "url",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "url"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

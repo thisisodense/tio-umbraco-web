@@ -9,6 +9,42 @@
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
     <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
-    <Prevalues />
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>pageSize</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>10</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>SortOrder</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>asc</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>includeProperties</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>[&#xD;
+  {&#xD;
+    "alias": "sortOrder",&#xD;
+    "header": "Sort order",&#xD;
+    "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "updateDate",&#xD;
+    "header": "Last edited",&#xD;
+    "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "contentTypeAlias",&#xD;
+    "isSystem": 1&#xD;
+  }&#xD;
+]</Value>
+        </DataTypePrevalue>
+    </Prevalues>
     <UniqueID>f4714650-05af-4a3d-8fa2-bccdced9793e</UniqueID>
 </DataType>

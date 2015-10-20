@@ -13,7 +13,7 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>1</SortOrder>
-            <Value>10</Value>
+            <Value>600</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
@@ -43,11 +43,6 @@
     "alias": "endDate",&#xD;
     "isSystem": 0,&#xD;
     "header": "Slut dato"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "location",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Sted"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

@@ -43,6 +43,11 @@
     "alias": "endDate",&#xD;
     "isSystem": 0,&#xD;
     "header": "Slut dato"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "location",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Sted"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

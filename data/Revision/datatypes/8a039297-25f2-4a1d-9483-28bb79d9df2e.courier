@@ -18,12 +18,12 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>CreateDate</Value>
+            <Value>VersionDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>desc</Value>
+            <Value>asc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
@@ -48,6 +48,21 @@
     "alias": "location",&#xD;
     "isSystem": 0,&#xD;
     "header": "Sted"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "title",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "title"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "header",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "header"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "headline",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "headline"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

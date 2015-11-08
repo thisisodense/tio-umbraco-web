@@ -48,21 +48,6 @@
     "alias": "location",&#xD;
     "isSystem": 0,&#xD;
     "header": "Sted"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "title",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "title"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "header",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "header"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "headline",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "headline"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

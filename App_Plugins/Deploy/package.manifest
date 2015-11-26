@@ -1,12 +1,13 @@
 ﻿{
-	javascript:[
-		"/app_plugins/deploy/shared/services/deploy.service.js",
-		"/app_plugins/deploy/shared/services/taskman.service.js",
-		"/app_plugins/deploy/shared/decorators/contenteditinghelper.decorator.js",
-		"/app_plugins/deploy/views/deploy.controller.js",
-		"/app_plugins/deploy/views/queue.controller.js",
-		"/app_plugins/deploy/views/restore.controller.js"
-	],
+    javascript: [
+        "/app_plugins/deploy/shared/directives/deployProblems.directive.js",
+        "/app_plugins/deploy/shared/services/deploy.service.js",
+        "/app_plugins/deploy/shared/services/taskman.service.js",
+        "/app_plugins/deploy/shared/decorators/contenteditinghelper.decorator.js",
+        "/app_plugins/deploy/views/deploy.controller.js",
+        "/app_plugins/deploy/views/queue.controller.js",
+        "/app_plugins/deploy/views/restore.controller.js"
+    ],
 	css:[
 		"/app_plugins/deploy/deployStyles.css"
 	]

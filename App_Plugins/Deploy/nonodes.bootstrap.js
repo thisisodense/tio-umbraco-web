@@ -3,8 +3,27 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 	.controller("Umbraco.NoNodes.Controller", function($scope, $q, $timeout, deployService){
 
 		//generic logging for errors
-	    function _err(){
-	    	//we need to handle the error here... 
+	    function handleError(err){
+	        //TODO: we need to handle the error correctly here... 
+
+	        if (err && err.data) {
+	            //need to set it to .data because this handles the error
+	            //bubbling up from $http and from the taskman event
+	            err = err.data;
+	        }
+
+	        if (err) {
+	            var msg = {
+	                message: err.Message,
+	                exception: err.ExceptionMessage,
+	                type: err.ExceptionType,
+	                stack: err.StackTrace
+	            }
+	            $scope.currentTask.exception = msg;
+	        }
+	        else {
+	            $scope.currentTask.exception = err;
+	        }
 	    }
 
 		$scope.remoteContent = function(login, password){
@@ -22,12 +41,15 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 		            $scope.monitorCurrentTask().then(function(){ 
 		                $scope.step = "restoreData";
 		                $scope.restoreData();
-		            }, _err);
+		            }, handleError);
 	    	})
-	    	.error( function(err){
+	    	.error(function (err) {
+
 				$scope.authErrorLogin = login;	    		
 	    		$scope.authError = true;
 	    		$scope.submitting = false;
+
+	    		handleError(err);
 	    	});
 	    };
 
@@ -46,9 +68,9 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 	            $scope.monitorCurrentTask().then(function(){ 
 	                $scope.step = "done";
 	                $scope.ready = true;
-	            }, _err);
+	            }, handleError);
 
-	    	}).error(_err);
+	    	}).error(handleError);
 	    };
 
 

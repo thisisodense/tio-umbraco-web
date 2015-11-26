@@ -94,8 +94,8 @@
 
 .restore .json pre { 
 		overflow: auto;
-		word-wrap: normal;
-		white-space: pre;
+		white-space: pre-wrap;
+        word-wrap: break-word;
 		font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 		font-size: 14px;
 		line-height: 1.5

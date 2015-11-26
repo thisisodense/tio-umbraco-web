@@ -1,0 +1,25 @@
+<div>
+    <h5>Deploy is not possible</h5>
+
+    <p>
+        This website is out of sync with the <em>{{environment.destination}}</em> website you are trying to transfer to.
+
+        That means that important components have been updated here or on the <em>{{environment.destination}}</em> website, but the changes have not been synced between the 2 websites.
+    </p>
+
+    <hr />
+
+    <div ng-transclude></div>
+
+    <p>
+        To solve this problem, open your git console, and ensure that all changes have been pulled from <em>{{environment.destination}}</em> and that all your local changes have been committed and pushed.
+    </p>
+
+    <p>Git commands:</p>
+    <pre>
+    /> git pull
+    /> git add .
+    /> git commit -am "My local changes"
+    /> git push
+    </pre>
+</div>

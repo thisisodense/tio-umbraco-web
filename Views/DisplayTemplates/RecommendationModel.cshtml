@@ -134,7 +134,7 @@
     @if ((Model.IsEnglish && !string.IsNullOrWhiteSpace(Model.Body)) || !Model.IsEnglish)
     {
         <div class="readmore @(Model.IsDetails ? "" : "hide")">
-            <div>@Umbraco.GetDictionaryValue("Sted"): @Model.Location.Address</div>
+            <div>@Umbraco.GetDictionaryValue("Sted"): @Model.Location.Title</div>
             <div>@Umbraco.GetDictionaryValue("Arrangør"): @Model.Organizer</div>
             @if (Model.DoorOpens.HasValue)
             {

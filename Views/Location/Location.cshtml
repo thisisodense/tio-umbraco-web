@@ -1,0 +1,30 @@
+﻿@using Models = ThisIsOdense.Website.Models;
+@using System.Web.Mvc.Html
+@using Library.Tools;
+@using System.Web.Optimization;
+
+@inherits ThisIsOdense.Mvc.Core.BaseViewPage<Models.LocationModel>
+@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = " - " + Model.Title;
+}
+
+@section scripts {
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBGRlN8YlS3_aiGIkVQyquZvTDjEtDVf5Q"></script>
+    @Scripts.Render(Models.Constants.Js.Locations)
+}
+
+@section styles {
+    @Styles.Render(Models.Constants.Css.Locations)
+}
+
+@section meta {
+    <meta property="og:title" content="@Model.Title" />
+    <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
+    <meta property="fb:app_id" content="550180138336430" />
+    <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
+    <meta property="og:image" content="@Model.Image" />
+    <meta property="og:type" content="article" />
+}
+
+@Html.DisplayForModel()

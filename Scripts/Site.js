@@ -1,17 +1,5 @@
 ﻿$(function () {
-    $(".date").on("click", function (event) {
-        event.preventDefault();
-        toggleReadmore($(this).closest("article"));
-    });
-    $(".readmorelink").on("click", function (event) {
-        event.preventDefault();
-        toggleReadmore($(this).closest("article"));
-    });
-    $(".readlesslink").on("click", function (event) {
-        event.preventDefault();
-        toggleReadmore($(this).closest("article"));
-    });
-    $(".articleImg").on("click", function (event) {
+    $(".articleImg, .readlesslink, .readmorelink, .date").on("click", function (event) {
         event.preventDefault();
         toggleReadmore($(this).closest("article"));
     });

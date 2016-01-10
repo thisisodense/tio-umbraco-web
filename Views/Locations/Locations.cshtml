@@ -1,12 +1,11 @@
 ﻿@using System.Web.Mvc.Html;
 @using System.Web.Optimization;
 @using Models = ThisIsOdense.Website.Models
-@using Library.Tools
 
 @inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.LocationsModel>
 
 @section scripts {
-    <script type="text/javascript" async src="//maps.googleapis.com/maps/api/js?key=AIzaSyBGRlN8YlS3_aiGIkVQyquZvTDjEtDVf5Q"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBGRlN8YlS3_aiGIkVQyquZvTDjEtDVf5Q"></script>
     @Scripts.Render(Models.Constants.Js.Locations)
 }
 
@@ -31,5 +30,5 @@
         }
 }
 </nav>
-
+<hr />
 @Html.DisplayFor(model => model.Locations)

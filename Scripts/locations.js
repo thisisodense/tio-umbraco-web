@@ -1,64 +1,6 @@
 /// <reference path="../typings/mustache/mustache.d.ts"/>
 /// <reference path="../typings/jquery/jquery.d.ts"/>
 $(document).ready(function () {
-
-    var target = $("#target");
-
-    // Place read more
-    target.on("click", ".place", function () {
-        var $this = $(this);
-        var titel = $this.attr("data-title");
-        var geo = $this.attr("data-geo").split(",");
-        var icon = $this.attr("data-icon");
-
-        target.find(".place").removeClass("show");
-        $this.addClass("show");
-
-        $('html, body').animate({
-            scrollTop: $this.offset().top
-        }, 300);
-
-        mapOptions.center = new google.maps.LatLng(geo[0], geo[1]);
-        initializeMap($this.find(".map")[0], titel, icon);
-    });
-
-    // Google maps
-    var initialLocation;
-    var browserSupportFlag = new Boolean();
-
-    function initializeMap(thisMap, titel, icon) {
-        var map = new google.maps.Map(thisMap, mapOptions);
-
-        var ctaLayer = new google.maps.KmlLayer({
-            // Kvarterer.kmz is also in the assets folder
-            url: 'https://dl.dropboxusercontent.com/u/14093460/Kvarterer.kmz',
-            preserveViewport: true
-        });
-        ctaLayer.setMap(map);
-
-        var image = "/content/images/" + icon + ".png";
-        var marker = new google.maps.Marker({
-            position: mapOptions.center,
-            map: map,
-            animation: google.maps.Animation.DROP,
-            title: titel,
-            icon: image
-        });
-
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-
-                var user = new google.maps.Marker({
-                    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-                    map: map,
-                    title: 'You are here'
-                });
-            });
-        } else {
-            console.log("Geolocation not available");/* geolocation IS NOT available */
-        }
-    }
-
     var mapOptions = {
         zoom: 15,
         center: new google.maps.LatLng(55.395558, 10.383385),
@@ -89,4 +31,67 @@ $(document).ready(function () {
           { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#2ba47e" }] }
         ]
     };
+
+    var isDetails = $("#isDetails").val();
+
+    if (isDetails) {
+        var article = $("article");
+        var titel = article.attr("data-title");
+        var geo = article.attr("data-geo").split(";");
+        var icon = article.attr("data-icon");
+
+        mapOptions.center = new google.maps.LatLng(geo[0], geo[1]);
+        initializeMap(article.find(".map")[0], titel, icon);
+    }
+
+    // Place read more
+    $(".articleImg, .readlesslink, .readmorelink, .date").on("click", function () {
+        var article = $(this).closest("article");
+        var titel = article.attr("data-title");
+        var geo = article.attr("data-geo").split(";");
+        var icon = article.attr("data-icon");
+
+        mapOptions.center = new google.maps.LatLng(geo[0], geo[1]);
+        initializeMap(article.find(".map")[0], titel, icon);
+    });
+
+    // Google maps
+    var initialLocation;
+    var browserSupportFlag = new Boolean();
+
+    function initializeMap(thisMap, titel, icon) {
+        var map = new google.maps.Map(thisMap, mapOptions);
+
+        var ctaLayer = new google.maps.KmlLayer({
+            // Kvarterer.kmz is also in the assets folder
+            url: 'https://dl.dropboxusercontent.com/u/14093460/Kvarterer.kmz',
+            preserveViewport: true
+        });
+        ctaLayer.setMap(map);
+
+        var image = "/content/images/" + icon + ".png";
+
+        var marker = new google.maps.Marker({
+            position: mapOptions.center,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: titel,
+            icon: image
+        });
+
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var user = new google.maps.Marker({
+                    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    map: map,
+                    title: 'You are here'
+                });
+            });
+        } else {
+            console.log("Geolocation not available");/* geolocation IS NOT available */
+        }
+    }
+
+   
 });

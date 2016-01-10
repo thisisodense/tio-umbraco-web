@@ -47,6 +47,7 @@ $break-large: 768px;
         font-size: 14pt;
         padding-top: 6px;
         cursor: pointer;
+        text-decoration:none;
 
         &:hover {
             text-decoration: underline;
@@ -100,6 +101,10 @@ $break-large: 768px;
         border-right: 3px solid whitesmoke;
     }
 
+    .articleImg {
+        margin-top:5px;
+    }
+
     /*&:hover {
         .placeHeader, .placeInfo, .readmore.hide {
             background-color: whitesmoke;
@@ -109,11 +114,6 @@ $break-large: 768px;
             //visibility: visible;
         }
     }*/
-
-    .articleImg {
-        margin-bottom: 0;
-        margin-top:5px;
-    }
 
     .placeInfo, .readmore {
         margin-bottom: 5px;

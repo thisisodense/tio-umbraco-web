@@ -35,9 +35,14 @@
     "isSystem": 1&#xD;
   },&#xD;
   {&#xD;
+    "alias": "name",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Name"&#xD;
+  },&#xD;
+  {&#xD;
     "alias": "writer",&#xD;
     "isSystem": 0,&#xD;
-    "header": "Skribent"&#xD;
+    "header": "writer"&#xD;
   },&#xD;
   {&#xD;
     "alias": "published",&#xD;

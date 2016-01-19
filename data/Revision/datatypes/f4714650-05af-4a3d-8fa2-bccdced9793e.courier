@@ -18,30 +18,40 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>SortOrder</Value>
+            <Value>VersionDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>asc</Value>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
             <SortOrder>4</SortOrder>
             <Value>[&#xD;
   {&#xD;
-    "alias": "sortOrder",&#xD;
-    "header": "Sort order",&#xD;
-    "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "updateDate",&#xD;
     "header": "Last edited",&#xD;
     "isSystem": 1&#xD;
   },&#xD;
   {&#xD;
-    "alias": "contentTypeAlias",&#xD;
+    "alias": "writer",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Skribent"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "published",&#xD;
     "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "geoLocation",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "GeoLocation"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "image",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Billede"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

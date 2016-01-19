@@ -1,5 +1,15 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Dependencies />
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>8a039297-25f2-4a1d-9483-28bb79d9df2e</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 8a039297-25f2-4a1d-9483-28bb79d9df2e</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
     <ItemId>
         <Id>RecommendationRepository</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
@@ -13,10 +23,11 @@
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
     <Description />
-    <Icon>icon-bulleted-list</Icon>
+    <Icon>icon-calendar-alt</Icon>
     <Properties />
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>78d88ced-e6d4-44d6-a53e-edcfdaa1d680</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>true</IsContainer>
 </DocumentType>

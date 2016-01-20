@@ -1,8 +1,8 @@
 ﻿@using System.Web.Mvc.Html
 @using Library.Tools;
-@using ThisIsOdense.Website.Models;
+@using Models = ThisIsOdense.Website.Models;
 
-@inherits ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.RecommendationModel>
+@inherits ThisIsOdense.Mvc.Core.BaseViewPage<Models.RecommendationModel>
 @{
     Layout = "~/Views/Layout.cshtml";
     ViewBag.Title = " - " + Model.HeadLine;
@@ -12,7 +12,7 @@
     <meta property="og:title" content="@Model.HeadLine" />
     <meta property="og:description" content="@Model.Body" />
     <meta property="fb:app_id" content="550180138336430" />
-    <meta property="og:url" content="@Url.Action(Constants.Controllers.Recommendation.NAME, Constants.Controllers.Recommendation.Actions.RECOMMENDATION, new { id = Model.Id, name = Model.HeadLine.ToSeoUrl() }, Request.Url.Scheme)" />
+    <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION, new { id = Model.Id, name = Model.HeadLine.ToSeoUrl() }, Request.Url.Scheme)" />
     <meta property="og:image" content="@Model.ImageUrl" />
     <meta property="og:type" content="article" />
 }
@@ -20,7 +20,7 @@
 @section writername {
     @if (Model != null && !Model.IsGuestWriter)
     {
-        <span class="writer">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action(Constants.Controllers.Recommendation.NAME, Constants.Controllers.Recommendation.Actions.RECOMMENDATION)#@Model.WriterName"> @Model.WriterName</a>
+        <span class="writer">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION)#@Model.WriterName"> @Model.WriterName</a>
     }
     else
     {

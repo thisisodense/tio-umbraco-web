@@ -56,44 +56,40 @@
 }
 
 <article class="@(Model.IsGuestWriter ? "guestWriter" : "")">
-    <div class="addthisevent">
+    <div class="top @(Model.IsCurrent ? "" : "no-p-padding")">
         @if (Model.IsCurrent)
         {
-            <div class="date">
-                <span class="mon">@(Model.IsEnglish ? Html.FirstCharToUpper(Model.GetDate().ToString("ddd", new System.Globalization.CultureInfo("en-GB"))) : Html.FirstCharToUpper(Model.GetDate().ToString("dddd").Substring(0, 3)))</span>
-                <span class="day">@Model.GetDate().Day</span>
+            <div class="addthisevent">
+                <div class="date">
+                    <span class="mon">@(Model.IsEnglish ? Html.FirstCharToUpper(Model.GetDate().ToString("ddd", new System.Globalization.CultureInfo("en-GB"))) : Html.FirstCharToUpper(Model.GetDate().ToString("dddd").Substring(0, 3)))</span>
+                    <span class="day">@Model.GetDate().Day</span>
+                </div>
+                <span class="_start">@Model.StartDate.ToLocalTime().Date.ToShortDateString() @Model.StartTime.ToLongTimeString()</span>
+                <span class="_end">@(Model.EndDate.HasValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime.HasValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
+                <span class="_zonecode">40</span>
+                <span class="_summary">@Model.HeadLine)</span>
+                <span class="_description">@Model.SubHeader</span>
+                <span class="_location">@(Model.Location != null ? Model.Location.Address : "")</span>
+                <span class="_organizer">@Model.Organizer</span>
+                @*<span class="_organizer_email">Organizer e-mail</span>*@
+                <span class="_all_day_event">false</span>
+                <span class="_date_format">DD-MM-YYYY</span>
             </div>
         }
-        <div class="desc">
-            <p>
-                <strong class="hed">@Model.HeadLine</strong>
-                <span class="des">@Model.SubHeader</span>
-            </p>
-        </div>
-        <span class="_start">@Model.StartDate.ToLocalTime().Date.ToShortDateString() @Model.StartTime.ToLongTimeString()</span>
-        <span class="_end">@(Model.EndDate.HasValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime.HasValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
-        <span class="_zonecode">40</span>
-        <span class="_summary">@Model.HeadLine)</span>
-        <span class="_description">@Model.SubHeader</span>
-        <span class="_location">@(Model.Location != null ? Model.Location.Address : "")</span>
-        <span class="_organizer">@Model.Organizer</span>
-        @*<span class="_organizer_email">Organizer e-mail</span>*@
-        <span class="_all_day_event">false</span>
-        <span class="_date_format">DD-MM-YYYY</span>
         <div class="addthis_toolbox addthis_default_style">
             @for (int i = 1; i <= 3; i++)
             {
                 <a class="addthis_button_preferred_@i"
-                addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                   addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
                                          Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
                                          new
                                          {
                                            id = Model.GetId(),
                                            name = Model.HeadLine.ToSeoUrl()
-                                         }, 
+                                         },
                                          Request.Url.Scheme)"
-                addthis:title="@Model.HeadLine"
-                addthis:description="@Model.SubHeader">
+                   addthis:title="@Model.HeadLine"
+                   addthis:description="@Model.SubHeader">
                 </a>
             }
             <a class="addthis_counter addthis_bubble_style"
@@ -103,12 +99,19 @@
                                          {
                                            id = Model.GetId(),
                                            name = Model.HeadLine.ToSeoUrl()
-                                         }, 
+                                         },
                                          Request.Url.Scheme)"
                addthis:title="@Model.HeadLine"
                addthis:description="@Model.SubHeader">
             </a>
         </div>
+        <div class="desc">
+            <p>
+                <strong class="hed">@Model.HeadLine</strong>
+                <span class="des">@Model.SubHeader</span>
+            </p>
+        </div>
+        <br style="clear:both"/>
     </div>
 
     <img class="articleImg" src="@Model.ImageUrl" alt="@Model.HeadLine" title="@Model.HeadLine" />

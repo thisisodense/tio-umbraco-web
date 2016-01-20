@@ -103,6 +103,7 @@ article {
         min-height: 60px;
         float: left;
         position: relative;
+        cursor:pointer;
     }
 
         article .desc p {
@@ -518,6 +519,7 @@ a:active, a:link, a:visited {
     position: absolute;
     right: 0px;
     bottom: 5px;
+    z-index:5000;
     width: 94px;
 }
 

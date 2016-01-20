@@ -1,5 +1,5 @@
 ﻿$(function () {
-    $(".articleImg, .readlesslink, .readmorelink, .date").on("click", function (event) {
+    $(".articleImg, .readlesslink, .readmorelink, .desc").on("click", function (event) {
         event.preventDefault();
         toggleReadmore($(this).closest("article"));
     });

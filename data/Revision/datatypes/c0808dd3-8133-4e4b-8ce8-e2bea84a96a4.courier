@@ -18,7 +18,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>SortOrder</Value>
+            <Value>VersionDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>

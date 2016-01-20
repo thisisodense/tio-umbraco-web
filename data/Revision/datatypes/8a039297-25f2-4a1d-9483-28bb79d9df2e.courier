@@ -13,17 +13,17 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>1</SortOrder>
-            <Value>50</Value>
+            <Value>25</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>Published</Value>
+            <Value>CreateDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>asc</Value>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
@@ -48,6 +48,11 @@
     "alias": "location",&#xD;
     "isSystem": 0,&#xD;
     "header": "Sted"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "writer",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Skribent"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

@@ -47,6 +47,11 @@
     "alias": "geoLocation",&#xD;
     "isSystem": 0,&#xD;
     "header": "GeoLocation"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "categories",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Kategori"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

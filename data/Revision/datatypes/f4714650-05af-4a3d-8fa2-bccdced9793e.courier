@@ -43,6 +43,11 @@
     "alias": "categories",&#xD;
     "isSystem": 0,&#xD;
     "header": "Kategori"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "korrekturlaestOgFaerdig",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Korrekturlæst og færdig"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

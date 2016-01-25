@@ -69,6 +69,7 @@
     <Icon>.sprTreeFolder</Icon>
     <Properties>
         <ContentTypeProperty>
+            <UniqueId>8c64eae0-4f2f-6413-f52c-33b66457b3c6</UniqueId>
             <Alias>address</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -79,6 +80,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>13dcba17-c67f-d9b3-5703-ecde9a4d9dc3</UniqueId>
             <Alias>categories</Alias>
             <DataTypeDefinitionId>c281c13f-8c09-4b8e-848b-576d865155a8</DataTypeDefinitionId>
             <Description />
@@ -89,6 +91,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>351b87e1-d7b7-4d60-fd87-ee83077c3960</UniqueId>
             <Alias>email</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -99,6 +102,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>49c433e8-57d1-9d83-207d-b9a5fe07c50a</UniqueId>
             <Alias>geoLocation</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -109,6 +113,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>8d45f6e0-8438-e30f-96be-3b1591ef211b</UniqueId>
             <Alias>hashtags</Alias>
             <DataTypeDefinitionId>b6b73142-b9c1-4bf8-a16d-e1c23320b549</DataTypeDefinitionId>
             <Description />
@@ -119,6 +124,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>ab23c7da-72eb-9af8-694e-3f838e418c33</UniqueId>
             <Alias>image</Alias>
             <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
             <Description />
@@ -129,6 +135,18 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>a64a5920-5900-e4d7-52f8-96f3c9bad4b6</UniqueId>
+            <Alias>korrekturlaestOgFaerdig</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Korrekturlæst og færdig</Name>
+            <SortOrder>17</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>cced01f6-7119-4155-750b-13c1537e852e</UniqueId>
             <Alias>longdescription</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
@@ -139,6 +157,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>31b55700-8861-d392-3540-7dd9f7ff098e</UniqueId>
             <Alias>longdescriptionenglish</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
@@ -149,6 +168,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>566f74d7-f559-d34d-087e-ef9cc54f280e</UniqueId>
             <Alias>oldid</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -159,6 +179,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>e5aa4eb3-6660-b707-4799-fed4c30197c8</UniqueId>
             <Alias>openinghours</Alias>
             <DataTypeDefinitionId>6c72d03d-c4d8-4d09-91d5-969b29b9642c</DataTypeDefinitionId>
             <Description />
@@ -169,6 +190,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>12a906ea-f173-48dd-e110-09a271ae3c22</UniqueId>
             <Alias>phonenumber</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -179,6 +201,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>74d3623b-cbb7-9ebc-a154-9950ac55081c</UniqueId>
             <Alias>shortdescription</Alias>
             <DataTypeDefinitionId>c6bac0dd-4ab9-45b1-8e30-e4b619ee5da3</DataTypeDefinitionId>
             <Description />
@@ -189,6 +212,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>21316abc-82e6-bf48-8561-b0c88ef9d16f</UniqueId>
             <Alias>shortdescriptionenglish</Alias>
             <DataTypeDefinitionId>c6bac0dd-4ab9-45b1-8e30-e4b619ee5da3</DataTypeDefinitionId>
             <Description />
@@ -199,6 +223,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>6e553f75-0e98-b254-7915-eb0f55465048</UniqueId>
             <Alias>tags</Alias>
             <DataTypeDefinitionId>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</DataTypeDefinitionId>
             <Description />
@@ -209,6 +234,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>3070c7d9-e8f5-513f-cddc-a1dfa1c75558</UniqueId>
             <Alias>title</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -219,6 +245,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>13f2f114-f25d-1c88-a9d6-912328b1f565</UniqueId>
             <Alias>url</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -229,6 +256,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>db638a68-13d9-9da5-3129-63c02e1e62bb</UniqueId>
             <Alias>writer</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
@@ -252,6 +280,7 @@
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>db23b057-dd1d-48bf-8de4-f7ead50b3989</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
 </DocumentType>

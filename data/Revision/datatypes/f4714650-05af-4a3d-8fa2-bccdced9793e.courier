@@ -43,11 +43,6 @@
     "alias": "categories",&#xD;
     "isSystem": 0,&#xD;
     "header": "Kategori"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "image",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Billede"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

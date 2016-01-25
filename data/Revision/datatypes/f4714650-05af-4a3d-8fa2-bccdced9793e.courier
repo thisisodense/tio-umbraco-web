@@ -40,10 +40,6 @@
     "header": "writer"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "published",&#xD;
-    "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "geoLocation",&#xD;
     "isSystem": 0,&#xD;
     "header": "GeoLocation"&#xD;

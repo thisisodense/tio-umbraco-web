@@ -97,7 +97,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -141,7 +141,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Korrekturlæst og færdig</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -152,7 +152,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>LongDescription</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -163,7 +163,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>LongDescriptionEnglish</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -196,7 +196,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>PhoneNumber</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -207,7 +207,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>ShortDescription</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -218,7 +218,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>ShortDescriptionEnglish</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -251,7 +251,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Url</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

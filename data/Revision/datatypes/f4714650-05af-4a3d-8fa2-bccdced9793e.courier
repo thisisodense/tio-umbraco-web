@@ -13,7 +13,7 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>1</SortOrder>
-            <Value>10</Value>
+            <Value>20</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>

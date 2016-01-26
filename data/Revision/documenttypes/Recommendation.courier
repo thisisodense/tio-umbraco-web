@@ -88,7 +88,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Doors open</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -99,7 +99,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>End date</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -110,7 +110,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>End time</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -121,7 +121,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Event type</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -143,7 +143,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline</Name>
-            <SortOrder>1</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -154,7 +154,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
-            <SortOrder>2</SortOrder>
+            <SortOrder>3</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -176,7 +176,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -187,7 +187,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>20</SortOrder>
+            <SortOrder>19</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -198,7 +198,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link to event</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -220,7 +220,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Location</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -264,7 +264,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Organizer</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -275,7 +275,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Price</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -286,7 +286,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Start date</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -297,7 +297,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Start Time</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -308,7 +308,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader</Name>
-            <SortOrder>3</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -319,7 +319,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>21</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -330,7 +330,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Summary</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -352,7 +352,7 @@
             <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2,200 tegn.</Description>
             <Mandatory>false</Mandatory>
             <Name>Summary for Instagram</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -363,7 +363,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -374,7 +374,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>21</SortOrder>
+            <SortOrder>20</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -396,7 +396,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

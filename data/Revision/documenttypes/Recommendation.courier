@@ -329,7 +329,7 @@
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Anbefaling</Name>
+            <Name>Recommendation</Name>
             <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

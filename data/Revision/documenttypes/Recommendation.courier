@@ -307,7 +307,7 @@
             <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Underoverskrift</Name>
+            <Name>Subheader</Name>
             <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

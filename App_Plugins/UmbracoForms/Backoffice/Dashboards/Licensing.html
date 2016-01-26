@@ -48,6 +48,19 @@
         </div>
 
 
+        <div class="row-fluid" ng-if="!status.state">
+            <div class="span8">
+                <h3>Thank you for trying out Umbraco Forms</h3>
+                <p>To continue using Umbraco forms, you must purchase a license, or use an existing license</p>
+            </div>
+
+            <div class="span4 umb-db-form-action">
+                <button class="btn btn-primary btn-blue" ng-click="status.state = 'buy'">Buy license</button><br/>
+                <a class="btn btn-link btn-tiny" ng-click="status.state = 'use'">Configure existing license</a>
+            </div>
+        </div>
+
+
         <div ng-if="status.state === 'buy'">
 
             <h3>Buying a license</h3>

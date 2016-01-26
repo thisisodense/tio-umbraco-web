@@ -1,4 +1,4 @@
-﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>0cb8264f-0485-4ab7-b11e-3faf42a3e402</Id>
@@ -49,6 +49,11 @@
             <Alias>7</Alias>
             <SortOrder>8</SortOrder>
             <Value>Film</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>8</Alias>
+            <SortOrder>9</SortOrder>
+            <Value>Marked</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>0cb8264f-0485-4ab7-b11e-3faf42a3e402</UniqueID>

@@ -97,7 +97,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Doors open</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -174,7 +174,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>23</SortOrder>
+            <SortOrder>24</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -185,7 +185,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>19</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -196,7 +196,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>20</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -207,7 +207,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link to event</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -284,7 +284,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Price</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -317,7 +317,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -328,7 +328,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
-            <SortOrder>21</SortOrder>
+            <SortOrder>22</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -339,7 +339,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Recommendation</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -350,7 +350,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Recommendation English</Name>
-            <SortOrder>22</SortOrder>
+            <SortOrder>23</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -361,7 +361,7 @@
             <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2.000 tegn.</Description>
             <Mandatory>false</Mandatory>
             <Name>Uddrag til Instagram</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -372,7 +372,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -383,7 +383,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>20</SortOrder>
+            <SortOrder>21</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -394,7 +394,7 @@
             <Description>Brug stedets faste åbningstider i stedet for start- og sluttid</Description>
             <Mandatory>false</Mandatory>
             <Name>Use opening hours</Name>
-            <SortOrder>24</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

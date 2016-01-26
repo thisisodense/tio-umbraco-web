@@ -346,6 +346,17 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>5683a0b2-83c8-be0e-eea7-ece614a01870</UniqueId>
+            <Alias>summaryForInstagram</Alias>
+            <DataTypeDefinitionId>c6bac0dd-4ab9-45b1-8e30-e4b619ee5da3</DataTypeDefinitionId>
+            <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2,200 tegn.</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Summary for Instagram</Name>
+            <SortOrder>23</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>238763a3-3239-f847-c1cd-0d588cbbc1aa</UniqueId>
             <Alias>ticketUrl</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>

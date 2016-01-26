@@ -41,7 +41,7 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesControlle
 	    }
 	};
 
-	$scope.hiddenFields = [0,1,2];
+	$scope.hiddenFields = [2];
 	$scope.toggleSelection = function toggleSelection(field) {
 	    var idx = $scope.hiddenFields.indexOf(field);
 

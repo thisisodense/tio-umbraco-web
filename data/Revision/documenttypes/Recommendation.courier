@@ -165,7 +165,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>20</SortOrder>
+            <SortOrder>23</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -176,7 +176,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>21</SortOrder>
+            <SortOrder>19</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -187,7 +187,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>22</SortOrder>
+            <SortOrder>20</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -341,7 +341,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Summary English</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>22</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -352,7 +352,7 @@
             <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2,200 tegn.</Description>
             <Mandatory>false</Mandatory>
             <Name>Summary for Instagram</Name>
-            <SortOrder>23</SortOrder>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -374,7 +374,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>21</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

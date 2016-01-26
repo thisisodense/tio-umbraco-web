@@ -55,6 +55,11 @@
             <SortOrder>9</SortOrder>
             <Value>Marked</Value>
         </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>9</Alias>
+            <SortOrder>10</SortOrder>
+            <Value>Foredrag/debat</Value>
+        </DataTypePrevalue>
     </Prevalues>
     <UniqueID>0cb8264f-0485-4ab7-b11e-3faf42a3e402</UniqueID>
 </DataType>

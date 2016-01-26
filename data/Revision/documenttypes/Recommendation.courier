@@ -369,7 +369,7 @@
             <UniqueId>238763a3-3239-f847-c1cd-0d588cbbc1aa</UniqueId>
             <Alias>ticketUrl</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
+            <Description>Indsæt direkte link til billetsalget</Description>
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
             <SortOrder>14</SortOrder>

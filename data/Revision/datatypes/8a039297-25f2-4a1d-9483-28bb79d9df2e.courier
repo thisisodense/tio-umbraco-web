@@ -50,9 +50,14 @@
     "header": "Sted"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "image",&#xD;
+    "alias": "organizer",&#xD;
     "isSystem": 0,&#xD;
-    "header": "Billede"&#xD;
+    "header": "Arrangør"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "writer",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Skribent"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

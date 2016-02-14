@@ -129,7 +129,7 @@
             <Name>Video</Name>
             <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation>url</Validation>
+            <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>

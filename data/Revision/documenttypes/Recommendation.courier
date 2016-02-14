@@ -1,4 +1,4 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -48,6 +48,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -82,6 +91,7 @@
     <Icon>icon-article</Icon>
     <Properties>
         <ContentTypeProperty>
+            <UniqueId>27f5a647-871f-196d-6a67-498c2fbdcaec</UniqueId>
             <Alias>doorsOpen</Alias>
             <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
             <Description />
@@ -92,36 +102,40 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>04028593-bfa8-39b7-61ce-f8f57efd1e98</UniqueId>
             <Alias>endDate</Alias>
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>End date</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>6080b0e6-3af5-5b18-726c-127d412a15cd</UniqueId>
             <Alias>endTime</Alias>
             <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>End time</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>9c9faedd-f68f-e4a9-8ab0-20b50347e280</UniqueId>
             <Alias>eventType</Alias>
             <DataTypeDefinitionId>0cb8264f-0485-4ab7-b11e-3faf42a3e402</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Event type</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>f26c40cd-0f47-b288-8c27-68dcbd8e4334</UniqueId>
             <Alias>guestWriter</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
@@ -132,46 +146,73 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>a7ef59a1-83df-a9c8-1888-698e23025135</UniqueId>
             <Alias>headline</Alias>
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline</Name>
-            <SortOrder>1</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>headlineEnglish</Alias>
-            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Headline English</Name>
             <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>a7d8b1c2-bb13-d4fe-3779-a45b55fb7215</UniqueId>
+            <Alias>headlineEnglish</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Headline English</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>cd6d7633-2a61-ec41-7480-8ef02b3ef429</UniqueId>
             <Alias>image</Alias>
             <DataTypeDefinitionId>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>24</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>5791a913-7b91-5c45-e74f-50b3f1f0d1d7</UniqueId>
+            <Alias>klarTilKorrektur</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til korrektur</Name>
+            <SortOrder>19</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>0ce7ec58-e1d2-4abf-dae6-f55dd0aa4cc0</UniqueId>
+            <Alias>klarTilOversaettelse</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til oversættelse</Name>
+            <SortOrder>20</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>77ceb0a0-bf8f-f96b-fc85-d2554b6f420b</UniqueId>
             <Alias>linkToEvent</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link to event</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>296c5bbf-c970-492b-7d6d-4c93051f81ed</UniqueId>
             <Alias>linkToGuestWriter</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -182,16 +223,18 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>c89743a0-7175-74d2-3b63-3eb0cca4163b</UniqueId>
             <Alias>location</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Location</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>27c9a25a-6491-88a2-1b77-40d046709d2b</UniqueId>
             <Alias>nameOfGuestWriter</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -202,6 +245,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>0a1758e6-c275-8bff-a721-648e21a7f83a</UniqueId>
             <Alias>oldId</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
             <Description />
@@ -212,6 +256,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>1bfed7b1-dc07-d38c-92b9-a6c2588f9975</UniqueId>
             <Alias>oldimage</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -222,96 +267,139 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>f4b56c1e-46f8-4890-bdaa-ca5b59662a17</UniqueId>
             <Alias>organizer</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Organizer</Name>
-            <SortOrder>5</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>price</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Price</Name>
-            <SortOrder>7</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>startDate</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Start date</Name>
-            <SortOrder>8</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>startTime</Alias>
-            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Start Time</Name>
-            <SortOrder>10</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>subheader</Alias>
-            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Subheader</Name>
-            <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <Alias>subheaderEnglish</Alias>
-            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Subheader English</Name>
             <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>084cb584-8df8-0678-efe4-fe1e241b59b6</UniqueId>
+            <Alias>price</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Price</Name>
+            <SortOrder>13</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>3bfb4300-16a9-ff64-5b60-4cfa0de08e06</UniqueId>
+            <Alias>startDate</Alias>
+            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Start date</Name>
+            <SortOrder>7</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>ced881e8-da2d-a859-355f-43b9127157c9</UniqueId>
+            <Alias>startTime</Alias>
+            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Start Time</Name>
+            <SortOrder>9</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>86f56b7a-8207-9428-e07c-60fe588db61e</UniqueId>
+            <Alias>subheader</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Subheader</Name>
+            <SortOrder>16</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e6024fe2-e0cf-cb7a-5365-8861d960d235</UniqueId>
+            <Alias>subheaderEnglish</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Subheader English</Name>
+            <SortOrder>22</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>b3e6efb1-b3ff-813e-ec7a-a6eb2434367f</UniqueId>
             <Alias>summary</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Summary</Name>
+            <Name>Recommendation</Name>
             <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>1a1398de-512b-bd26-722e-ef7961607867</UniqueId>
             <Alias>summaryEnglish</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Summary English</Name>
+            <Name>Recommendation English</Name>
+            <SortOrder>23</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>5683a0b2-83c8-be0e-eea7-ece614a01870</UniqueId>
+            <Alias>summaryForInstagram</Alias>
+            <DataTypeDefinitionId>aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</DataTypeDefinitionId>
+            <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2.000 tegn.</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Uddrag til Instagram</Name>
             <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>238763a3-3239-f847-c1cd-0d588cbbc1aa</UniqueId>
             <Alias>ticketUrl</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
+            <Description>Indsæt direkte link til billetsalget</Description>
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>5d545547-a388-fe5a-1a52-dcc1c5db315c</UniqueId>
+            <Alias>translator</Alias>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Translator</Name>
+            <SortOrder>21</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>41e3e0ec-faac-6578-e6b5-af61849dab08</UniqueId>
+            <Alias>useOpeningHours</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description>Brug stedets faste åbningstider i stedet for start- og sluttid</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Use opening hours</Name>
+            <SortOrder>11</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2e813411-cd32-c33e-f4d0-9c2bb8111b7a</UniqueId>
             <Alias>weekNumber</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
             <Description />
@@ -322,12 +410,13 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>da8a914c-e1d6-d3df-0cd6-f8f863be7cc8</UniqueId>
             <Alias>writer</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -350,6 +439,7 @@
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>f7f52cdd-a22a-480e-8eb5-a800a8438230</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
 </DocumentType>

@@ -13,12 +13,12 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>1</SortOrder>
-            <Value>10</Value>
+            <Value>20</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>VersionDate</Value>
+            <Value>Published</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
@@ -40,18 +40,14 @@
     "header": "writer"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "published",&#xD;
-    "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "geoLocation",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "GeoLocation"&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "categories",&#xD;
     "isSystem": 0,&#xD;
     "header": "Kategori"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "korrekturlaestOgFaerdig",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Korrekturlæst og færdig"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

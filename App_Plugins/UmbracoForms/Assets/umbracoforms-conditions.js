@@ -2,13 +2,13 @@
 (function (uf) {
     var conditions = uf.conditions || {},
         operators = conditions.operators || {
-            Is: function(value, expected) {
-                return value === expected;
+            Is: function (value, expected) {
+                return (value || "") === expected;
             },
-            IsNot: function(value, unexpected) {
-                return value !== unexpected;
+            IsNot: function (value, unexpected) {
+                return (value || "") !== unexpected;
             },
-            GreaterThen: function(value, limit) {
+            GreaterThen: function (value, limit) {
                 return parseInt(value) > parseInt(limit);
             },
             LessThen: function(value, limit) {

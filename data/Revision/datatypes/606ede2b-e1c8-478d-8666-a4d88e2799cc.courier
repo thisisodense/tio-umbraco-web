@@ -13,7 +13,18 @@
         <DataTypePrevalue>
             <Alias>crops</Alias>
             <SortOrder>1</SortOrder>
-            <Value>[]</Value>
+            <Value>[&#xD;
+  {&#xD;
+    "alias": "recommendationCrop",&#xD;
+    "width": 714,&#xD;
+    "height": 280&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "writerCrop",&#xD;
+    "width": 238,&#xD;
+    "height": 357&#xD;
+  }&#xD;
+]</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>606ede2b-e1c8-478d-8666-a4d88e2799cc</UniqueID>

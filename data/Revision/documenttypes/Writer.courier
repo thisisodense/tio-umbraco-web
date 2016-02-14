@@ -1,4 +1,4 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -33,6 +33,7 @@
     <Icon>icon-user</Icon>
     <Properties>
         <ContentTypeProperty>
+            <UniqueId>bb5e8e1c-701b-5b0b-f5b0-81000696fd9d</UniqueId>
             <Alias>background</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
@@ -43,6 +44,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>46423181-dc5e-e73f-44c7-ba4b240b110e</UniqueId>
             <Alias>email</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -53,6 +55,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>ff69ff2b-9c01-afef-66ec-69a8f6e4fe0f</UniqueId>
             <Alias>image</Alias>
             <DataTypeDefinitionId>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</DataTypeDefinitionId>
             <Description />
@@ -63,6 +66,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>366a30fd-31a9-b130-db0a-85b813e29fdc</UniqueId>
             <Alias>interests</Alias>
             <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
@@ -73,6 +77,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>bd14458d-3f03-ae0e-d699-d41a4ac5c806</UniqueId>
             <Alias>name</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -83,6 +88,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>90993a9e-6461-4bfa-e864-b8046e0864c6</UniqueId>
             <Alias>oldId</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
             <Description />
@@ -93,6 +99,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>917ec55f-c87e-f30f-8312-a243e19afbcf</UniqueId>
             <Alias>show</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
@@ -103,6 +110,7 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>4fa882b1-c175-a0b4-d064-7de8baaa16cc</UniqueId>
             <Alias>title</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
@@ -111,6 +119,17 @@
             <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>687b5f5e-71d3-009c-57d4-6b1147c47461</UniqueId>
+            <Alias>writerVideo</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description>Indsæt link til din video fra facebooksiden</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Video</Name>
+            <SortOrder>7</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation>url</Validation>
         </ContentTypeProperty>
     </Properties>
     <Tabs>
@@ -126,6 +145,7 @@
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>d28fbb0c-e526-4383-bd3a-34b69c496fb8</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
 </DocumentType>

@@ -685,7 +685,7 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesControlle
 	    }
 	};
 
-	$scope.hiddenFields = [0,1,2];
+	$scope.hiddenFields = [2];
 	$scope.toggleSelection = function toggleSelection(field) {
 	    var idx = $scope.hiddenFields.indexOf(field);
 
@@ -1119,6 +1119,8 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.Dialogs.Workflow
 	        });
 	    };
 	});
+
+
 angular.module("umbraco")
 .controller("UmbracoForms.Editors.PreValueSource.DeleteController",
 	function ($scope, preValueSourceResource, navigationService, treeService) {
@@ -2092,6 +2094,7 @@ angular.module("umbraco.directives")
                 // *********************************************
 
                 scope.editForm = function (form, section) {
+                    dialogService.closeAll();
                     dialogService.open(
                         {
                             template: "/app_plugins/UmbracoForms/Backoffice/Form/dialogs/formsettings.html",

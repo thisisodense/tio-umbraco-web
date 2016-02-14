@@ -1,0 +1,56 @@
+﻿@using System.Web.Mvc.Html;
+@using System.Web.Optimization;
+@using Models = ThisIsOdense.Website.Models
+
+@inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.WritersModel>
+
+@section scripts {
+    @Scripts.Render(Models.Constants.Js.General)
+}
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+<article>
+    <h2>Om This Is Odense</h2>
+    <p>Hvad har du af planer i denne uge? Hvad sker der i dag?</p>
+    <p>Der er mange der spørger. På kollegierne, i lejlighederne og ude i parcelhusene. Der kigges på hinanden, på nettet og i aviserne - sker der noget? og i så fald hvor og hvornår?</p>
+    <br />
+    <p>Vi har savnet en tjeneste der samler arrangementer på tværs af aktører, og som viser bredden og begejstringen i det odenseanske byliv.</p>
+    <p>Derfor har vi lavet This is Odense: en helt igennem subjektiv guide til fem gode begivenheder hver uge.</p>
+    <br />
+    <p>Guiden skrives på skift af kompetente skribenter med vidt forskellig baggrund og smag, men hvis vigtigste kvalifikation er en god portion nysgerrighed, samt lysten til at finde de spændende arrangementer frem, og servere dem for dig på overskuelig vis.</p>
+    <br />
+    <p>Så tag os i hånden med ud på opdagelse i Odense. Vi er den kærlige anbefaling. Et lille skub eller en velment lussing. Et drag over nakken eller et kys på munden. </p>
+    <br />
+    <p>Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.</p>
+</article>
+<article>
+    <h2>Manifest</h2>
+    <p>Hvorfor This Is Odense?</p>
+    <br />
+    <p>Odense vokser og det samme gør Odenses by og kulturliv. Ikke bare I omfang, men også i kvalitet. Den øgede mangfoldighed skaber behov for et filter der åbenbarer, prioriterer og leder på rette vej. Det filter er vi.</p>
+    <br />
+    <p>Selvom stadig flere odenseanere gerne vil bruge, opleve og mærke deres by, skriger koncert- og festivalarrangører, kuratorer, eventmagere og andre udbydere på flere brugere. Derfor er der behov for et link. Det link er vi.</p>
+    <br />
+    <p>Der findes ingen speciel sløv odenseansk mentalitet. Men der mangler til gengæld en formidlingstjeneste der giver dig det lette overblik over ugens relevante begivenheder, gør det med høj kvalitet og gør det pålideligt og fast. Den tjeneste er vi.</p>
+    <br />
+    <p>Vi er en gruppe af bylivsinteresserede odenseanere der på skift vil håndplukke fem begivenheder fra den kommende uges odenseanske oplevelseslandskab og præsentere dem for dig. Det vil vi gøre med indlevelse, kvalitet og blik for overskueligheden.</p>
+    <br />
+    <p>Hver mandag kl. 12.30.</p>
+    <br />
+    <p>Vi håber I vil tage vel imod os,</p>
+    <p>ThisIsOdense.dk</p>
+</article>
+<article>
+    <h2>Kontakt</h2>
+    <p>Send dine tips til: <a href="mailto:tip@thisodense.dk">tip@thisisodense.dk</a></p>
+    <p>Øvrig kontakt: <a href="mailto:thisisodense@thisisodense.dk">thisisodense@thisisodense.dk</a></p>
+    <p>Besøg os på facebook: <a href="http://www.facebook.com/ThisIsOdense">www.facebook.com/ThisIsOdense</a></p>
+    <p>Følg os på <a href="https://twitter.com/ThisIsOdense">Twitter</a> og <a href="http://instagram.com/thisisodense">Instagram</a></p>
+</article>
+<div class="writers">
+    @Html.DisplayFor(model => model.Writers)
+    <br style="clear:both"/>
+</div>
+

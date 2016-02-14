@@ -1,0 +1,16 @@
+﻿@using System.Web.Mvc.Html;
+@using System.Web.Optimization;
+@using Models = ThisIsOdense.Website.Models
+@inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.WriterModel>
+
+<div class="writer">
+    <img src="@Model.Image" title="@Model.Name" alt="@Model.Name"/>
+    <div class="writerOverlay">
+        <div class="writerContent">
+            <div class="writerName">@Model.Name</div>
+            <div class="writerTitle">@Model.Title</div>
+            <div class="writerBackground">@Html.Raw(Model.Background)</div>
+            <div class="writerInterest">@Html.Raw(Model.Interests)</div>
+        </div>
+    </div>
+</div>

@@ -286,13 +286,56 @@ footer {
     margin: 30px 0;
 }
 
+.writers {
+    margin-top:10px;
+}
+
 .writer {
-    font-style: italic;
+    width:33%;
+    float:left;
+    position:relative;
+}
+
+.writer img {
+    width:100%;
+}
+
+.writerBackground {
+    word-wrap: break-word;
+}
+
+.writerName {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.writerTitle {
+    padding:5px;
 }
 
 .writerContent {
     font-size: 10pt;
-    float: right;
+    color:whitesmoke;
+    padding:5px;
+}
+
+.writerOverlay {
+    opacity:0;
+    background-color:#00C4AF;
+    position:absolute;
+    width:95%;
+    height:95%;
+    margin:auto;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.writerOverlay:hover {
+    opacity:0.8;
 }
 
 /*.date {
@@ -348,7 +391,6 @@ a:active, a:link, a:visited {
 
 /*Addthis*/
 .addthisevent-drop {
-    min-height: 73px;
     float: left;
     display: inline-block;
     position: relative;
@@ -600,13 +642,20 @@ a:active, a:link, a:visited {
         margin-bottom: 5px;
     }
 
-    .addthisevent-drop .desc .des {
+    .top .desc .des {
         font-size: 11px;
+    }
+
+    .writer {
+        width:100% !important;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .writer {
+        width:50%;
+    }
     .logo {
         width: 180px;
     }
@@ -633,17 +682,17 @@ a:active, a:link, a:visited {
         display: none !important;
     }
 
-    .addthisevent-drop {
+    .top {
         padding-bottom: 5px;
         margin-bottom: 5px;
     }
 
-        .addthisevent-drop .desc {
+        .top .desc {
             width: 90%;
             word-wrap: break-word;
         }
 
-            .addthisevent-drop .desc .des {
+            .top .desc .des {
                 width: 100%;
             }
 }

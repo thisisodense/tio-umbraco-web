@@ -3,10 +3,10 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Id>
+                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Name>
+            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -57,11 +57,11 @@
         <ContentTypeProperty>
             <UniqueId>ff69ff2b-9c01-afef-66ec-69a8f6e4fe0f</UniqueId>
             <Alias>image</Alias>
-            <DataTypeDefinitionId>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</DataTypeDefinitionId>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

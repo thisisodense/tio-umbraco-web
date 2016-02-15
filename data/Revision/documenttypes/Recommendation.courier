@@ -21,15 +21,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -164,17 +155,6 @@
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
             <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>cd6d7633-2a61-ec41-7480-8ef02b3ef429</UniqueId>
-            <Alias>image</Alias>
-            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>image</Name>
-            <SortOrder>24</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

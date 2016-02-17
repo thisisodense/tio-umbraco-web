@@ -23,6 +23,11 @@
     "alias": "writerCrop",&#xD;
     "width": 238,&#xD;
     "height": 357&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "recommendationCrop",&#xD;
+    "width": 714,&#xD;
+    "height": 264&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

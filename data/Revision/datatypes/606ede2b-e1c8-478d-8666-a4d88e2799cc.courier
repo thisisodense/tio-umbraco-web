@@ -15,7 +15,7 @@
             <SortOrder>1</SortOrder>
             <Value>[&#xD;
   {&#xD;
-    "alias": "recommendationCrop",&#xD;
+    "alias": "locationCrop",&#xD;
     "width": 714,&#xD;
     "height": 280&#xD;
   },&#xD;

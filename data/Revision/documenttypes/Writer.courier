@@ -134,7 +134,7 @@
         <ContentTypeProperty>
             <UniqueId>687b5f5e-71d3-009c-57d4-6b1147c47461</UniqueId>
             <Alias>writerVideo</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description>Indsæt link til din video fra facebooksiden</Description>
             <Mandatory>false</Mandatory>
             <Name>Video</Name>

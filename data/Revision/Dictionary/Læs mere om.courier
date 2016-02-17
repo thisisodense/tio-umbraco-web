@@ -8,6 +8,14 @@
             </ItemId>
             <ForceHashCheck>false</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>Læs mere om</Id>
@@ -20,6 +28,10 @@
         <Translation>
             <CultureAlias>da</CultureAlias>
             <Value>Læs mere om</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>en</CultureAlias>
+            <Value>Read more about</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

@@ -39,7 +39,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Background</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -61,7 +61,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -72,7 +72,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Interests</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -138,7 +138,8 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Skribent siden</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -148,7 +149,7 @@
             <Description>Indsæt link til din video fra facebooksiden</Description>
             <Mandatory>false</Mandatory>
             <Name>Video</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

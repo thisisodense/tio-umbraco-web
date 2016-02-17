@@ -1,5 +1,14 @@
 ﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies />
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
     <ItemId>
         <Id>Ons</Id>
         <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
@@ -7,5 +16,10 @@
     <Name>Ons</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Translations />
+    <Translations>
+        <Translation>
+            <CultureAlias>da</CultureAlias>
+            <Value>Ons</Value>
+        </Translation>
+    </Translations>
 </DictionaryItem>

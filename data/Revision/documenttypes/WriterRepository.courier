@@ -1,5 +1,15 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Dependencies />
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
     <ItemId>
         <Id>WriterRepository</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
@@ -14,9 +24,21 @@
     <AllowedTemplates />
     <Description />
     <Icon>icon-users</Icon>
-    <Properties />
+    <Properties>
+        <ContentTypeProperty>
+            <UniqueId>b3f53ed4-aeae-28d5-6747-2db3e2142735</UniqueId>
+            <Alias>about</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>About</Name>
+            <SortOrder>0</SortOrder>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>0886af4c-977e-4c11-8644-db41af83fcdd</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
 </DocumentType>

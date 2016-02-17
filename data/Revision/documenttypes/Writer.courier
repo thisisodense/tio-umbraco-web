@@ -3,10 +3,10 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Id>
+                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 1df9f033-e6d4-451f-b8d2-e0cbc50a836f</Name>
+            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -39,7 +39,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Background</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -57,11 +57,11 @@
         <ContentTypeProperty>
             <UniqueId>ff69ff2b-9c01-afef-66ec-69a8f6e4fe0f</UniqueId>
             <Alias>image</Alias>
-            <DataTypeDefinitionId>1df9f033-e6d4-451f-b8d2-e0cbc50a836f</DataTypeDefinitionId>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -72,7 +72,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Interests</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -99,6 +99,17 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>3c73ce88-c168-a478-1d5f-5f024c1533fa</UniqueId>
+            <Alias>personligtLink</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Personligt link</Name>
+            <SortOrder>4</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>917ec55f-c87e-f30f-8312-a243e19afbcf</UniqueId>
             <Alias>show</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
@@ -121,15 +132,26 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>da51fb44-c86d-f26b-7e23-40b909d8ec38</UniqueId>
+            <Alias>writerSince</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Skribent siden</Name>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>687b5f5e-71d3-009c-57d4-6b1147c47461</UniqueId>
             <Alias>writerVideo</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description>Indsæt link til din video fra facebooksiden</Description>
             <Mandatory>false</Mandatory>
             <Name>Video</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation>url</Validation>
+            <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>

@@ -15,7 +15,7 @@
             <SortOrder>1</SortOrder>
             <Value>[&#xD;
   {&#xD;
-    "alias": "recommendationCrop",&#xD;
+    "alias": "locationCrop",&#xD;
     "width": 714,&#xD;
     "height": 280&#xD;
   },&#xD;
@@ -23,6 +23,11 @@
     "alias": "writerCrop",&#xD;
     "width": 238,&#xD;
     "height": 357&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "recommendationCrop",&#xD;
+    "width": 714,&#xD;
+    "height": 264&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

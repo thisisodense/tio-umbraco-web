@@ -48,6 +48,11 @@
     "alias": "korrekturlaestOgFaerdig",&#xD;
     "isSystem": 0,&#xD;
     "header": "Korrekturlæst og færdig"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "image",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Billede"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

@@ -201,16 +201,8 @@ hr.bigspace {
     width: 119px;
 }
 
-a.buyTickets:visited, a.buyTickets:link {
-    text-decoration: none;
-}
-
 .hide {
     display: none;
-}
-
-a.buyTickets:hover {
-    text-decoration: underline;
 }
 
 h1 {
@@ -259,7 +251,15 @@ img.articleImg {
 
 
 .info {
-    font-style: italic;
+  font-style: italic;
+}
+
+.info a:visited, .info a:link {
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
 }
 
 .tip {
@@ -308,21 +308,39 @@ footer {
     font-size: 1.5em;
     width: 100%;
     text-align: center;
+    text-transform:uppercase;
+}
+
+.writerOfWeek {
+    font-style: italic;
 }
 
 .writerTitle {
-    padding:5px;
+    padding:10px 0 5px 0;
+    text-transform:uppercase;
+}
+
+.writerDetails p {
+    padding:10px 0 10px 0;
 }
 
 .writerContent {
     font-size: 10pt;
     color:whitesmoke;
     padding:5px;
+    height:89%;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+.writerOverlay .readmorelink {
+    color:whitesmoke;
+    padding-right:5px;
 }
 
 .writerOverlay {
     opacity:0;
-    background-color:#00C4AF;
+    background-color:#00C4AE;
     position:absolute;
     width:95%;
     height:95%;
@@ -366,7 +384,6 @@ a:active, a:link, a:visited {
 
     .readmore div, .readmore p {
         line-height: 12pt;
-        font-size: 9pt;
     }
 
     .readmore.hide {

@@ -35,7 +35,7 @@
     if (!string.IsNullOrEmpty(model.TicketUrl))
     {
             <text>
-                | <a class="buyTickets" href="@Model.TicketUrl" target="_blank">@Umbraco.GetDictionaryValue("Køb billet her")</a>
+                | <a href="@Model.TicketUrl" target="_blank">@Umbraco.GetDictionaryValue("Køb billet her")</a>
             </text>
     }
 }
@@ -50,8 +50,8 @@
 
 @if (!Model.IsDetails && Model.HaveGuestWriter && Model.IsFirstRecommendation)
 {
-    <div class="writerContent" style="margin-top:10px;margin-bottom:10px;">
-        <span class="writer">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action("")#@Model.MainWriter">@Model.MainWriter</a>
+    <div style="float:right;margin-top:10px;margin-bottom:10px;">
+        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action("")#@Model.MainWriter">@Model.MainWriter</a>
     </div>
 }
 
@@ -117,8 +117,8 @@
     <img class="articleImg" src="@Model.ImageUrl" alt="@Model.HeadLine" title="@Model.HeadLine" />
 
     <div class="info arrow">
-        @Umbraco.GetDictionaryValue(Model.EventType) | @GetOccurs(Model) | @Model.Location.Address | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr. @GetTicketsUrlText(Model) @GetWriterName()
-    </div>
+        @Umbraco.GetDictionaryValue(Model.EventType) | @GetOccurs(Model) | <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Address</a> | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr. @GetTicketsUrlText(Model) @GetWriterName()
+</div>
 
     @if (!Model.IsDetails)
     {
@@ -137,16 +137,16 @@
     @if ((Model.IsEnglish && !string.IsNullOrWhiteSpace(Model.Body)) || !Model.IsEnglish)
     {
         <div class="readmore @(Model.IsDetails ? "" : "hide")">
-            <div>@Umbraco.GetDictionaryValue("Sted"): @Model.Location.Title</div>
+            <div>@Umbraco.GetDictionaryValue("Sted"): <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Title</a></div>
             <div>@Umbraco.GetDictionaryValue("Arrangør"): @Model.Organizer</div>
             @if (Model.DoorOpens.HasValue)
             {
                 <div>@Umbraco.GetDictionaryValue("Døre åbnes"): @Model.DoorOpens.Value.ToLocalTime().ToString("HH:mm")</div>
             }
 
-            @Html.Raw(Model.Body)
+                    @Html.Raw(Model.Body)
 
-            <div class="fb-comments"
+                    <div class="fb-comments"
                  data-width="@(Model.IsGuestWriter ? "695px" : "714px")"
                  data-height="100"
                  data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,

@@ -27,5 +27,7 @@
     <meta property="og:image" content="@Model.Image" />
     <meta property="og:type" content="article" />
 }
-
+@section writername {
+    <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="#@Model.WriterName"> @Model.WriterName</a>
+}
 @Html.DisplayForModel()

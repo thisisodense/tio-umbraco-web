@@ -1,0 +1,52 @@
+﻿
+@using Models = ThisIsOdense.Website.Models;
+@using System.Web.Mvc.Html
+@using Library.Tools;
+@using System.Web.Optimization;
+
+
+@inherits ThisIsOdense.Mvc.Core.BaseViewPage<Models.WriterModel>
+@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = " - " + Model.Name;
+}
+
+@section scripts {
+}
+
+@section styles {
+}
+
+@section meta {
+    @*<meta property="og:title" content="@Model.Title" />
+    <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
+    <meta property="fb:app_id" content="550180138336430" />
+    <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
+    <meta property="og:image" content="@Model.Image" />
+    <meta property="og:type" content="article" />*@
+}
+
+<article class="writerDetails">
+    <div class="placeHeader">
+        <div class="desc">
+            <p>
+                <strong class="hed">@Model.Name</strong>
+                <span class="des">@Model.Title</span>
+            </p>
+        </div>
+    </div>
+    <img class="articleImg" src="@Model.DetailImage" alt="@Model.Name" />
+    <div class="placeInfo">
+        <div class="info arrow">Skribent siden @Model.WriterSince | @Model.NumberOfRecommendation anbefalinger</div>
+    </div>
+    <br />
+    @Html.Raw(Model.Background)
+    @Html.Raw(Model.Interests)
+    <br />
+    @Html.Raw(Model.WriterVideo)
+    <div>
+        <a style="float:left" href="@Model.Link">@Umbraco.GetDictionaryValue("Læs mere om") @Model.Name</a>
+        <a style="float:right" href="/om">Se hele holdet bag TIO</a>
+    </div>
+    
+</article>

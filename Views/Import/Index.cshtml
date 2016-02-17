@@ -42,4 +42,9 @@
     <input type="submit" value="Start Ímport locations"/>
 }
 
+@using (Html.BeginForm("DeleteAllMedia", "Import", FormMethod.Post))
+{
+    <input type="submit" value="Delete all media"/>
+}
+
 <ul id="status"></ul>

@@ -20,11 +20,11 @@
 @section writername {
     @if (Model != null && !Model.IsGuestWriter)
     {
-        <span class="writer">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION)#@Model.WriterName"> @Model.WriterName</a>
+        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION)#@Model.WriterName"> @Model.WriterName</a>
     }
     else
     {
-        <span class="writer">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
+        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
     }
 }
 

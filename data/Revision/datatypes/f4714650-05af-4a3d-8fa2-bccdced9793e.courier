@@ -48,6 +48,11 @@
     "alias": "korrekturlaestOgFaerdig",&#xD;
     "isSystem": 0,&#xD;
     "header": "Korrekturlæst og færdig"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "PlacesToGoin2015",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Places 2015"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

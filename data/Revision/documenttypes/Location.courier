@@ -102,6 +102,17 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>d74f3c06-9188-23ad-eb79-5f7116168238</UniqueId>
+            <Alias>fromRecommendation</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Tidligere anbefalet af TIO</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Info</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>49c433e8-57d1-9d83-207d-b9a5fe07c50a</UniqueId>
             <Alias>geoLocation</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
@@ -198,6 +209,28 @@
             <Name>PhoneNumber</Name>
             <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>a774b74d-bd62-a6e7-833c-2276e75c681e</UniqueId>
+            <Alias>PlacesToGoin2015</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Places To Go in 2015</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Info</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>1ab41399-56b8-59bb-5589-7ff2e976a092</UniqueId>
+            <Alias>placesToGoIn2016</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Places To Go in 2016</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>

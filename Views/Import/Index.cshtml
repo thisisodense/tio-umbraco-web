@@ -47,4 +47,10 @@
     <input type="submit" value="Delete all media"/>
 }
 
+@using (Html.BeginForm("DeleteDuplicatedRecommendations", "Import", FormMethod.Post))
+{
+    <input type="submit" value="Delete duplicated recommendations" />
+}
+
+
 <ul id="status"></ul>

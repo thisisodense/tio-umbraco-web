@@ -3,60 +3,83 @@
 
 @inherits BaseViewPage<LocationModel>
 
-<article class="place" data-title="@Model.Title" data-geo="@Model.GeoLocation.Replace(',','.')" data-icon="@Model.Categories.FirstOrDefault()">
-    <input type="hidden" value="@Model.IsDetails" id="isDetails"/>
-    <div class="toggleShow">
-        <div class="placeHeader">
-            <div data-test="@string.Join(",", @Model.Categories)" class="mapCategory @Model.Categories.FirstOrDefault()"><i class="fa"></i></div>
-            <div class="desc">
-                <p>
-                    <strong class="hed">@Model.Title</strong>
-                    <span class="des">@Model.ShortDescription</span>
-                </p>
+@if (Model.ShowAsSimple && Model.IsDetails)
+{
+    <article class="place" data-title="@Model.Title" data-geo="@Model.GeoLocation.Replace(',','.')" data-icon="@Model.Categories.FirstOrDefault()">
+        <input type="hidden" value="@Model.IsDetails" id="isDetails" />
+        <div class="toggleShow">
+            <div class="placeHeader">
+                <div class="desc simple">
+                    <p>
+                        <strong class="hed">@Model.Title</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="map" style="width: 100%; height: 200px"></div>
+            <div class="placeInfo">
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address</div>
             </div>
         </div>
-        <img class="articleImg" src="@Model.Image" alt="@Model.Title" />
-        <div class="placeInfo">
-            <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address</div>
-            @if (Model.IsDetails == false)
-            {
-                <div class="readmore">
-                    <a href="javascript:void(0)" class="readmorelink">@Umbraco.GetDictionaryValue("Læs mere")</a>
+    </article>
+}
+else
+{
+    <article class="place" data-title="@Model.Title" data-geo="@Model.GeoLocation.Replace(',','.')" data-icon="@Model.Categories.FirstOrDefault()">
+        <input type="hidden" value="@Model.IsDetails" id="isDetails" />
+        <div class="toggleShow">
+            <div class="placeHeader">
+                <div data-test="@string.Join(",", @Model.Categories)" class="mapCategory @Model.Categories.FirstOrDefault()"><i class="fa"></i></div>
+                <div class="desc">
+                    <p>
+                        <strong class="hed">@Model.Title</strong>
+                        <span class="des">@Model.ShortDescription</span>
+                    </p>
                 </div>
-                <br style="clear:both" />
-            }
+            </div>
+            <img class="articleImg" src="@Model.Image" alt="@Model.Title" />
+            <div class="placeInfo">
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address</div>
+                @if (Model.IsDetails == false)
+                {
+                    <div class="readmore">
+                        <a href="javascript:void(0)" class="readmorelink">@Umbraco.GetDictionaryValue("Læs mere")</a>
+                    </div>
+                    <br style="clear:both" />
+                }
+            </div>
         </div>
-    </div>
 
-    <div class="readmore @(Model.IsDetails ? "" : "hide")">
-        @Html.Raw(Model.LongDescription)
+        <div class="readmore @(Model.IsDetails ? "" : "hide")">
+            @Html.Raw(Model.LongDescription)
 
-        @if (Model.OpeningHoursAreTheSame)
-        {
-             <ul class="openingHours">
-                 <li>@Model.SimpleOpeningHours</li>
-             </ul>
-           
-        }
-        else
-        {
-            <ul class="openingHours">
-                <li><span class="day">@Umbraco.GetDictionaryValue("Man"): </span><span class="time">@Model.Openings.Monday.From - @Model.Openings.Monday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Tir"): </span><span class="time">@Model.Openings.Tuesday.From - @Model.Openings.Tuesday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Ons"): </span><span class="time">@Model.Openings.Wednesday.From - @Model.Openings.Wednesday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Tor"): </span><span class="time">@Model.Openings.Thursday.From - @Model.Openings.Thursday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Fre"): </span><span class="time">@Model.Openings.Friday.From - @Model.Openings.Friday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Lør"): </span><span class="time">@Model.Openings.Saturday.From - @Model.Openings.Saturday.Till</span></li>
-                <li><span class="day">@Umbraco.GetDictionaryValue("Søn"): </span><span class="time">@Model.Openings.Sunday.From - @Model.Openings.Sunday.Till</span></li>
-            </ul>
+            @if (Model.OpeningHoursAreTheSame)
+            {
+                <ul class="openingHours">
+                    <li>@Model.SimpleOpeningHours</li>
+                </ul>
 
-        }
-        
+            }
+            else
+            {
+                <ul class="openingHours">
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Man"): </span><span class="time">@Model.Openings.Monday.From - @Model.Openings.Monday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Tir"): </span><span class="time">@Model.Openings.Tuesday.From - @Model.Openings.Tuesday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Ons"): </span><span class="time">@Model.Openings.Wednesday.From - @Model.Openings.Wednesday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Tor"): </span><span class="time">@Model.Openings.Thursday.From - @Model.Openings.Thursday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Fre"): </span><span class="time">@Model.Openings.Friday.From - @Model.Openings.Friday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Lør"): </span><span class="time">@Model.Openings.Saturday.From - @Model.Openings.Saturday.Till</span></li>
+                    <li><span class="day">@Umbraco.GetDictionaryValue("Søn"): </span><span class="time">@Model.Openings.Sunday.From - @Model.Openings.Sunday.Till</span></li>
+                </ul>
 
-        <a href="@Model.Url" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til sted")</a>
-        <a href='@("http://maps.google.com/maps?f=d&daddr=" + @Model.Address + "&zoom=13")' class="right" target="_blank">@Umbraco.GetDictionaryValue("Find vej")</a>
+            }
+
+
+            <a href="@Model.Url" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til sted")</a>
+            <a href='@("http://maps.google.com/maps?f=d&daddr=" + @Model.Address + "&zoom=13")' class="right" target="_blank">@Umbraco.GetDictionaryValue("Find vej")</a>
+            <br style="clear:both" />
+            <div class="map" style="width: 100%; height: 200px"></div>
+        </div>
         <br style="clear:both" />
-        <div class="map" style="width: 100%; height: 200px"></div>
-    </div>
-    <br style="clear:both" />
-</article>
+    </article>
+}
+

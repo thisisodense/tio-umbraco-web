@@ -9,9 +9,10 @@
         <div class="writerContent">
             <div class="writerName">@Model.Name</div>
             <div class="writerTitle">@Model.Title</div>
-            <div class="writerBackground">@Html.Raw(Model.Background)</div>
-            <div class="writerInterest">@Html.Raw(Model.Interests)</div>
+            @Html.Raw(Model.Background)
+            <br />
+            @Html.Raw(Model.Interests)
         </div>
-        <a class="readmorelink" href="#">@Umbraco.GetDictionaryValue("Læs mere")</a>
+        <a class="readmorelinkActive" href="@Url.Action(Models.Constants.Controllers.Writer.Actions.WRITER, Models.Constants.Controllers.Writer.NAME, new { id = Model.Id })">@Umbraco.GetDictionaryValue("Læs mere")</a>
     </div>
 </div>

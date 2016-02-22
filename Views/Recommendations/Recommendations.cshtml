@@ -11,10 +11,10 @@
     {
         if (!Model.HaveGuestWriter)
         {
-            <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"):</span><a href="#@Model.MainWriterName"> @Model.MainWriterName</a>
-        }
-        else
-        {
+            <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"):</span><a href="@Url.Action("Writer", "Writer", new { id = Model.MainWriterId })"> @Model.MainWriterName</a>
+                                                                                                   }
+            else
+            {
             <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.GuestRecommendation.WriterUrl">@Model.GuestRecommendation.WriterName</a>
         }
     }

@@ -18,12 +18,12 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>Published</Value>
+            <Value>SortOrder</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>desc</Value>
+            <Value>asc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>

@@ -40,11 +40,6 @@
     "header": "writer"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "categories",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Kategori"&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "PlacesToGoin2015",&#xD;
     "isSystem": 0,&#xD;
     "header": "Places 2015"&#xD;

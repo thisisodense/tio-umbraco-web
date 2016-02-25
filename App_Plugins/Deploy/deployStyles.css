@@ -177,11 +177,6 @@
 	display: block;
 }
 
-.deployOutput h5 {
-	font-size: 16px;
-	text-transform: none;
-}
-
 .deployDone h5, .tab-content .deployModal .deployDone h5 {
 	color: #37C75F;
 }

@@ -77,9 +77,9 @@
                 <li ng-switch-default>
                     
                     <form novalidate>
-                        <h1>Restore from umbraco.com</h1>
+                        <h1>Restore from Umbraco as a Service</h1>
 
-                        <p>Login to pull down the latest content from umbraco.com</p>
+                        <p>Login to pull down the latest content from Umbraco as a Service</p>
 
                         <div class="login">
                         
@@ -107,7 +107,7 @@
                  </li>
 
                 <li ng-switch-when="remoteContent">
-                    <h1>Downloading content from umbraco.com...</h1>
+                    <h1>Downloading content from Umbraco as a Service...</h1>
                     
                     <p>{{currentTask.done}} of {{currentTask.total}} downloaded</p>
                     

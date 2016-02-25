@@ -1,5 +1,6 @@
 ﻿{
     javascript: [
+        "/app_plugins/deploy/shared/directives/showDetails.directive.js",
         "/app_plugins/deploy/shared/directives/deployProblems.directive.js",
         "/app_plugins/deploy/shared/services/deploy.service.js",
         "/app_plugins/deploy/shared/services/taskman.service.js",

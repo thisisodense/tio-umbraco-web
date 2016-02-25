@@ -24,9 +24,9 @@
                 $scope.errors = err.errors;
             }
         }
-        
+
     }
-    
+
     //handle task manager updates
     var onTaskUpDate = function(event, task){
         $scope.currentTask = task;
@@ -123,9 +123,6 @@
 
     };
 
-
-
-
     //package the collected items in the manifest
     $scope.package = function () {
 
@@ -190,6 +187,8 @@
 
         $scope.environment = response.data;
 
+        $scope.ui = getUiObject($scope.environment);
+
         //on init, check if a task is running already
         if (taskManService.currentTask && !taskManService.currentTask.complete) {
             $scope.currentTask = taskManService.currentTask;
@@ -224,6 +223,23 @@
 
     }, handleError);
 
-    
+    function getUiObject(environment) {
+      var ui = {
+        isDebug: environment.debug === true,
+        isLocalEnvironment: environment.localEnvironment === true,
+        userType: environment.userType,
+        settingsSection: false,
+        developerSection: false,
+      };
+      for (i = 0; i < environment.userAllowedSections.length; i++) {
+        var allowedSection = environment.userAllowedSections[i];
+        if (allowedSection === 'developer') {
+          ui.developerSection = true;
+        } else if (allowedSection === 'settings') {
+          ui.settingsSection = true;
+        }
+      }
+      return ui;
+    }
 
 });

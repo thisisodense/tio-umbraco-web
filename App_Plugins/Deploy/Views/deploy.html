@@ -1,5 +1,4 @@
 <div class="umb-dialog" ng-controller="Concorde.DeployDialogController">
-
     <div class="umb-pane">
         <ul class="deployModal unstyled" ng-switch="step">
             <li ng-switch-default>
@@ -118,17 +117,27 @@
 
             <li class="deployOutput deployProblems" ng-switch-when="exception">
                 <h5>Something went wrong :(</h5>
-                <p>Here is some technical information that might help shed some light on whats happened:</p>
+                <p>An error occurred while transferring the selected content, so the deployment could not finish.</p>
+                <p>If you are an editor then please contact your developers or admins with the technical details listed below for help in resolving the issue.</p>
+                <br />
+                <p>Developers can refer to this documentation for further assistance: <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Error/" target="_blank">Troubleshooting deploy errors</a></p>
+                <br />
+                <a href="#" prevent-default show-details="#details-view">Click to expand the technical details below to see exactly what went wrong</a>
+                
+                <div class="hide" id="details-view">
+                    <h4>Details:</h4>
+                    <p>Here is some technical information that might help shed some light on whats happened:</p>
 
-                <pre>{{currentTask | json}}</pre>
+                    <pre>{{currentTask | json}}</pre>
 
-                <p class="text-error"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
-                <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
-                <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
-                <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
-
+                    <p class="text-error"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
+                    <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
+                    <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
+                    <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
+                </div>
+                
+                <br/>
                 <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Close</button>
-
                 <button ng-if="onDashboard" prevent-default class="btn btn-primary" ng-click="reloadQueue()">Reload queue</button>
             </li>
 
@@ -195,5 +204,5 @@
 
         </ul>
     </div>
-
+    <!--<small><pre>{{ui | json}}</pre></small>-->
 </div>

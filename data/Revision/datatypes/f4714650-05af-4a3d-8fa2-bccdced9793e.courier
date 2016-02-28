@@ -45,6 +45,11 @@
     "header": "Places 2015"&#xD;
   },&#xD;
   {&#xD;
+    "alias": "fromRecommendation",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "fromRecom"&#xD;
+  },&#xD;
+  {&#xD;
     "alias": "tags",&#xD;
     "isSystem": 0,&#xD;
     "header": "Tags"&#xD;
@@ -53,4 +58,5 @@
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>f4714650-05af-4a3d-8fa2-bccdced9793e</UniqueID>
+    <ParentContainerId xsi:nil="true" />
 </DataType>

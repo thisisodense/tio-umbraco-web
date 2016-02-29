@@ -30,6 +30,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>9da27505-2fb0-448d-a477-07b0780a9243</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9da27505-2fb0-448d-a477-07b0780a9243</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -286,6 +295,17 @@
             <Name>Price</Name>
             <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2595c527-b7fe-cd99-9c85-e1fae4c84471</UniqueId>
+            <Alias>socialposts</Alias>
+            <DataTypeDefinitionId>9da27505-2fb0-448d-a477-07b0780a9243</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>SocialPosts</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>SocialPosts</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>

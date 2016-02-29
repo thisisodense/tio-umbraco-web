@@ -1,6 +1,7 @@
 ﻿@using System.Web.Mvc.Html;
 @using System.Web.Optimization;
 @using Models = ThisIsOdense.Website.Models
+@using Library.Tools
 
 @inherits  ThisIsOdense.Mvc.Core.BaseViewPage<ThisIsOdense.Website.Models.LocationsModel>
 
@@ -21,7 +22,7 @@
     @foreach(var tag in Model.Tags)
     {
         @Html.ActionLink(tag.Text, "locations", "locations", 
-               new { category = tag.Text }, 
+               new { tagId = tag.Id, tag = tag.Text.ToSeoUrl() }, 
                new { @class = "category" })
 
         if (Model.Tags.Last().GetHashCode() != tag.GetHashCode())

@@ -426,20 +426,31 @@
             <ContentTypeAlias>Recommendation</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Recommendation</ContentTypeAlias>
             <SortOrder>3</SortOrder>
             <Text>Guest Writer</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Recommendation</ContentTypeAlias>
             <SortOrder>2</SortOrder>
             <Text>Info</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Recommendation</ContentTypeAlias>
+            <SortOrder>3</SortOrder>
+            <Text>SocialPosts</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
     <UniqueId>f7f52cdd-a22a-480e-8eb5-a800a8438230</UniqueId>
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,f7f52cdd-a22a-480e-8eb5-a800a8438230</PathGuids>
 </DocumentType>

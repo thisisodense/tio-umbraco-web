@@ -18,7 +18,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>Published</Value>
+            <Value>CreateDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
@@ -63,4 +63,5 @@
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>8a039297-25f2-4a1d-9483-28bb79d9df2e</UniqueID>
+    <ParentContainerId xsi:nil="true" />
 </DataType>

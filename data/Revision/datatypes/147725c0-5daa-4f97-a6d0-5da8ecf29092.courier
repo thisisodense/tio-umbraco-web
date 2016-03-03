@@ -13,7 +13,7 @@
         <DataTypePrevalue>
             <Alias>modal</Alias>
             <SortOrder>1</SortOrder>
-            <Value>0</Value>
+            <Value>1</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>widget</Alias>

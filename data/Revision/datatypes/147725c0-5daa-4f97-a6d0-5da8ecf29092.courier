@@ -1,4 +1,4 @@
-﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>147725c0-5daa-4f97-a6d0-5da8ecf29092</Id>
@@ -17,7 +17,7 @@
         <DataTypePrevalue>
             <Alias>widget</Alias>
             <SortOrder>2</SortOrder>
-            <Value>1</Value>
+            <Value>0</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>minuteStep</Alias>
@@ -34,7 +34,7 @@
         <DataTypePrevalue>
             <Alias>showMeridian</Alias>
             <SortOrder>6</SortOrder>
-            <Value>1</Value>
+            <Value>0</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>showInputs</Alias>
@@ -54,4 +54,5 @@
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>147725c0-5daa-4f97-a6d0-5da8ecf29092</UniqueID>
+    <ParentContainerId xsi:nil="true" />
 </DataType>

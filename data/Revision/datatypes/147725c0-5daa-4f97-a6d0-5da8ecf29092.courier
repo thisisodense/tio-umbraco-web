@@ -18,7 +18,7 @@
         <DataTypePrevalue>
             <Alias>widget</Alias>
             <SortOrder>2</SortOrder>
-            <Value>1</Value>
+            <Value>0</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>minuteStep</Alias>

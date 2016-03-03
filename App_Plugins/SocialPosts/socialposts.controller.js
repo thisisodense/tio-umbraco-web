@@ -1,6 +1,6 @@
 ﻿angular.module("umbraco")
     .controller("My.SocialPostsController",
-    function ($scope, contentResource, editorState, contentEditingHelper) {
+    function ($scope, contentResource, editorState, contentEditingHelper, dictionanyResource) {
         var findProperty = function (properties, alias) {
             return _.find(properties, function (property) { return property.alias === alias }).value;
         }
@@ -25,6 +25,11 @@
             var eventType = _.find(properties, function (property) { return property.alias === 'eventType' });
 
             $scope.eventType = eventType.config.items[eventTypeId].value;
+           
+            dictionanyResource.getTranslation($scope.eventType, 'en').then(function (value) {
+                $scope.eventTypeEN = JSON.parse(value.data);
+            });
+
             $scope.linkToEvent = findProperty(properties, 'linkToEvent');
             $scope.ticketUrl = findProperty(properties, 'ticketUrl');
             $scope.summary = findProperty(properties, 'summary');
@@ -42,7 +47,7 @@
                     title: findProperty(locationProperties, 'title'),
                     url: findProperty(locationProperties, 'url'),
                     address: findProperty(locationProperties, 'address'),
-
+                    hashtags: '#' + findProperty(locationProperties, 'tags').split(',').join('#')
                 };
             });
         });

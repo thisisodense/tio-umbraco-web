@@ -6,6 +6,9 @@
         }
 
         var convertTimeformat = function (time) {
+            if (time == "")
+                return time;
+
             var hours = Number(time.match(/^(\d+)/)[1]);
             var minutes = Number(time.match(/:(\d+)/)[1]);
             var AMPM = time.match(/\s(.*)$/)[1];

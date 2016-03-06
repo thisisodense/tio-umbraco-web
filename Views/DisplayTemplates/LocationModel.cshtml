@@ -1,5 +1,7 @@
 ﻿@using ThisIsOdense.Website.Models;
 @using ThisIsOdense.Mvc.Core;
+@using Const = ThisIsOdense.Website.Models;
+@using Library.Tools;
 
 @inherits BaseViewPage<LocationModel>
 
@@ -7,7 +9,7 @@
 {
     if (!Model.IsDetails)
     {
-            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") @Model.WriterName</span>
+            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
     }
 }
 
@@ -17,6 +19,35 @@
         <input type="hidden" value="@Model.IsDetails" id="isDetails" />
         <div class="toggleShow">
             <div class="placeHeader">
+                <div class="addthis_toolbox addthis_default_style simple">
+                    @for (int i = 1; i <= 2; i++)
+                    {
+                        <a class="addthis_button_preferred_@i"
+                           addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                         Const.Constants.Controllers.Location.Actions.LOCATION,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Title.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                           addthis:title="@Model.Title"
+                           addthis:description="@Model.ShortDescription">
+                        </a>
+                    }
+                    <a class="addthis_counter addthis_bubble_style"
+                       addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                         Const.Constants.Controllers.Location.Actions.LOCATION,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Title.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                       addthis:title="@Model.Title"
+                       addthis:description="@Model.ShortDescription">
+                    </a>
+                </div>
                 <div class="desc simple">
                     <p>
                         <strong class="hed">@Model.Title</strong>
@@ -25,7 +56,7 @@
             </div>
             <div class="map" style="width: 100%; height: 200px"></div>
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName()</div> 
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @(Model.TimesRecommended > 0 ? " | " + Umbraco.GetDictionaryValue("Recommended") + " " + Model.TimesRecommended : "")</div> 
             </div>
         </div>
     </article>
@@ -36,6 +67,35 @@ else
         <input type="hidden" value="@Model.IsDetails" id="isDetails" />
         <div class="toggleShow">
             <div class="placeHeader">
+                <div class="addthis_toolbox addthis_default_style">
+                    @for (int i = 1; i <= 2; i++)
+                    {
+                        <a class="addthis_button_preferred_@i"
+                           addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                         Const.Constants.Controllers.Location.Actions.LOCATION,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Title.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                           addthis:title="@Model.Title"
+                           addthis:description="@Model.ShortDescription">
+                        </a>
+                    }
+                    <a class="addthis_counter addthis_bubble_style"
+                       addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                         Const.Constants.Controllers.Location.Actions.LOCATION,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Title.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                       addthis:title="@Model.Title"
+                       addthis:description="@Model.ShortDescription">
+                    </a>
+                </div>
                 <div data-test="@string.Join(",", @Model.Categories)" class="mapCategory @Model.Categories.FirstOrDefault()"><i class="fa"></i></div>
                 <div class="desc">
                     <p>
@@ -46,7 +106,7 @@ else
             </div>
             <img class="articleImg" src="@Model.Image" alt="@Model.Title" />
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName()</div>
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName() @(Model.TimesRecommended > 0 ? " | " + Umbraco.GetDictionaryValue("Recommended") + " " + Model.TimesRecommended : "")</div>
                 @if (Model.IsDetails == false)
                 {
                     <div class="readmore">

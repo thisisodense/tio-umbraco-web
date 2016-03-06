@@ -44,14 +44,14 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
 {
 if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
 {
-        <span>| @Umbraco.GetDictionaryValue("Skrevet af:") @Model.WriterName</span>
+        <span>| @Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
 }
 }
 
 @if (!Model.IsDetails && Model.HaveGuestWriter && Model.IsFirstRecommendation)
 {
     <div style="float:right;margin-top:10px;margin-bottom:10px;">
-        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId })">@Model.MainWriter</a>
+        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.MainWriterId, name = Model.MainWriter.ToSeoUrl() })">@Model.MainWriter</a>
     </div>
 }
 

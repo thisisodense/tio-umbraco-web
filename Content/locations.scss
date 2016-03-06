@@ -37,6 +37,7 @@ $break-large: 768px;
 
 // Filtering
 .category-picker {
+    font-family:"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
     margin-top: 5px;
 
     a {
@@ -88,6 +89,8 @@ $break-large: 768px;
     cursor: pointer;
     margin: 0;
 
+    
+
     &:before {
         position: absolute;
         top: 0;
@@ -121,6 +124,7 @@ $break-large: 768px;
 
     .readmore {
         float: right;
+        width:100%;
     }
 
     &.show {
@@ -168,6 +172,17 @@ $break-large: 768px;
     line-height: 100%;
     color: #333;
     text-transform: uppercase;
+    position:relative;
+
+    .addthis_toolbox {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:11px;
+        bottom:-3px;
+    }
+
+    .addthis_toolbox.simple {
+        bottom:-8px;
+    }
 
     .desc {
         width: 90%;

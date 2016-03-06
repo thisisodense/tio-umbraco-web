@@ -4,7 +4,25 @@
         var findProperty = function (properties, alias) {
             return _.find(properties, function (property) { return property.alias === alias }).value;
         }
+
+        var convertTimeformat = function (time) {
+            var hours = Number(time.match(/^(\d+)/)[1]);
+            var minutes = Number(time.match(/:(\d+)/)[1]);
+            var AMPM = time.match(/\s(.*)$/)[1];
+            if (AMPM == "pm" && hours < 12) hours = hours + 12;
+            if (AMPM == "am" && hours == 12) hours = hours - 12;
+            var sHours = hours.toString();
+            var sMinutes = minutes.toString();
+            if (hours < 10) sHours = "0" + sHours;
+            if (minutes < 10) sMinutes = "0" + sMinutes;
+            return (sHours + ":" + sMinutes);
+        }
+
         var id = editorState.current.id;
+
+        if (id == 0)
+            return;
+
         var content = contentResource.getById(id).then(function (content) {
             var properties = contentEditingHelper.getAllProps(content);
             $scope.id = id;
@@ -16,8 +34,8 @@
             $scope.price = findProperty(properties, 'price');
             $scope.startDate = findProperty(properties, 'startDate');
             $scope.endDate = findProperty(properties, 'endDate');
-            $scope.startTime = findProperty(properties, 'startTime');
-            $scope.endTime = findProperty(properties, 'endTime');
+            $scope.startTime = convertTimeformat(findProperty(properties, 'startTime'));
+            $scope.endTime = convertTimeformat(findProperty(properties, 'endTime'));
             $scope.doorsOpen = findProperty(properties, 'doorsOpen');
             $scope.summaryForInstagram = findProperty(properties, 'summaryForInstagram');
 
@@ -40,14 +58,23 @@
                 $scope.writerName = writer.name;
             });
 
+            var translatorId = findProperty(properties, 'translator');
+
+            if (translatorId) {
+                contentResource.getById(translatorId).then(function (translator) {
+                    $scope.translatorName = translator.name;
+                });
+            }
+
             var locationId = findProperty(properties, 'location');
             contentResource.getById(locationId).then(function (location) {
                 var locationProperties = contentEditingHelper.getAllProps(location);
+   
                 $scope.location = {
                     title: findProperty(locationProperties, 'title'),
                     url: findProperty(locationProperties, 'url'),
                     address: findProperty(locationProperties, 'address'),
-                    hashtags: '#' + findProperty(locationProperties, 'tags').split(',').join('#')
+                    hashtags: findProperty(locationProperties, 'hashtags')
                 };
             });
         });

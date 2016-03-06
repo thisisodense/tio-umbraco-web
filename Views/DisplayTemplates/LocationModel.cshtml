@@ -56,7 +56,7 @@
             </div>
             <div class="map" style="width: 100%; height: 200px"></div>
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @(Model.TimesRecommended > 0 ? " | " + Umbraco.GetDictionaryValue("Recommended") + " " + Model.TimesRecommended : "")</div> 
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended") : "")</div> 
             </div>
         </div>
     </article>
@@ -106,7 +106,7 @@ else
             </div>
             <img class="articleImg" src="@Model.Image" alt="@Model.Title" />
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName() @(Model.TimesRecommended > 0 ? " | " + Umbraco.GetDictionaryValue("Recommended") + " " + Model.TimesRecommended : "")</div>
+                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName() @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " +  Umbraco.GetDictionaryValue("Recommended") : "")</div>
                 @if (Model.IsDetails == false)
                 {
                     <div class="readmore">

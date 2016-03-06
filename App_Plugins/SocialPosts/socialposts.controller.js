@@ -5,22 +5,6 @@
             return _.find(properties, function (property) { return property.alias === alias }).value;
         }
 
-        var convertTimeformat = function (time) {
-            if (time == "")
-                return time;
-
-            var hours = Number(time.match(/^(\d+)/)[1]);
-            var minutes = Number(time.match(/:(\d+)/)[1]);
-            var AMPM = time.match(/\s(.*)$/)[1];
-            if (AMPM == "pm" && hours < 12) hours = hours + 12;
-            if (AMPM == "am" && hours == 12) hours = hours - 12;
-            var sHours = hours.toString();
-            var sMinutes = minutes.toString();
-            if (hours < 10) sHours = "0" + sHours;
-            if (minutes < 10) sMinutes = "0" + sMinutes;
-            return (sHours + ":" + sMinutes);
-        }
-
         var id = editorState.current.id;
 
         if (id == 0)
@@ -37,8 +21,8 @@
             $scope.price = findProperty(properties, 'price');
             $scope.startDate = findProperty(properties, 'startDate');
             $scope.endDate = findProperty(properties, 'endDate');
-            $scope.startTime = convertTimeformat(findProperty(properties, 'startTime'));
-            $scope.endTime = convertTimeformat(findProperty(properties, 'endTime'));
+            $scope.startTime = findProperty(properties, 'startTime');
+            $scope.endTime = findProperty(properties, 'endTime');
             $scope.doorsOpen = findProperty(properties, 'doorsOpen');
             $scope.summaryForInstagram = findProperty(properties, 'summaryForInstagram');
 

@@ -14,15 +14,23 @@
 
     for (var attr in $scope.model.config) {
         var value = $scope.model.config[attr];
-        console.log(attr);
+
         if (value != null) {
-            if(attr[0]==="minuteStep" || attr[0]==="secondStep"){
+            if(attr ==="minuteStep" || attr === "secondStep"){
                 value = parseInt(value);
             }
+
+            if (attr === "showMeridian") {
+                if (value === "1") {
+                    value = false;
+                } else {
+                    value = true;
+                }
+            }
+
             attrs[attr] = value;
         }
     }
-    console.log(attrs);
 
     assetsService.load(['/App_Plugins/TimePicker/bootstrap-timepicker.min.js']).then(function () {
         

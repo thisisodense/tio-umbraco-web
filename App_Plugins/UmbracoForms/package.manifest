@@ -1,13 +1,15 @@
-{
-  propertyEditors: [
-        {
-            alias: "UmbracoForms.FormPicker",
-            name: "Form Picker",
-			isParameterEditor: true,
-            editor: {
-            view: "~/App_Plugins/UmbracoForms/Backoffice/PropertyEditors/formpicker.html"
-            }
-        }
+{  
+  "propertyEditors": [
+    {      
+      "alias": "UmbracoForms.FormPicker",
+      "name": "Form Picker",
+      "isParameterEditor": true,
+      "group": "Pickers",
+      "icon": "icon-autofill",
+      "editor": {
+        "view": "~/App_Plugins/UmbracoForms/Backoffice/PropertyEditors/formpicker.html"
+      }
+    }
   ],
   "css": [
     "~/App_Plugins/UmbracoForms/css/umbraco.forms.css",

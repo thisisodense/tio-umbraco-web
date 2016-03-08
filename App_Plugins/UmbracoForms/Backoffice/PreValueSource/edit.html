@@ -1,6 +1,6 @@
 ﻿<form name="preValueSourceForm"
       ng-controller="UmbracoForms.Editors.PreValueSource.EditController"
-      ng-show="loaded"
+      ng-show="loaded && security.userSecurity.managePreValueSources"
       ng-submit="save()"
       val-form-manager>
     <umb-panel>

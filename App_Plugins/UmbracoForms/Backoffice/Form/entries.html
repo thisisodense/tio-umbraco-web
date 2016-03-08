@@ -1,6 +1,6 @@
 <form novalidate name="contentForm"
       ng-controller="UmbracoForms.Editors.Form.EntriesController"
-      ng-show="loaded"
+      ng-show="loaded && (security.userSecurity.manageForms && hasAccessToCurrentForm)"
       ng-submit="save()">
     <umb-panel>
         <umb-header>
@@ -22,8 +22,7 @@
 
                         <input type="text" placeholder="Filter entries..." ng-model="filter.filter" class="pull-left"/>
 
-                        <div ng-model="filter" umb-forms-date-range-picker class="date-filter pull-left">
-                        </div>
+                        <div ng-model="filter" umb-forms-date-range-picker class="date-filter pull-left"></div>
                         
                         <label ng-repeat="recordState in states">
                             <input type="checkbox"

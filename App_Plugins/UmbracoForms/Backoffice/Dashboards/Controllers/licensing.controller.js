@@ -69,6 +69,12 @@ angular.module("umbraco")
             updatesResource.getUpdateStatus().then(function(response){
                 $scope.version = response.data;
             });
+
+            updatesResource.getVersion().then(function (response) {
+                $scope.currentVersion = response.data;
+            });
+
+
         };
 
         $scope.upgrade = function(){

@@ -1,6 +1,5 @@
-﻿angular.module("umbraco").controller("UmbracoForms.Editors.PreValueSource.EditController",
+﻿angular.module("umbraco").controller("UmbracoForms.Editors.PreValueSource.EditController", function ($scope, $routeParams, preValueSourceResource, editorState, notificationsService, navigationService, userService, securityResource) {
 
-function ($scope, $routeParams, preValueSourceResource, editorState, notificationsService, navigationService) {
     if ($routeParams.create) {
         //we are creating so get an empty data type item
         preValueSourceResource.getScaffold()
@@ -18,6 +17,39 @@ function ($scope, $routeParams, preValueSourceResource, editorState, notificatio
 		    editorState.set($scope.form);
 		});
     } else {
+
+        //On load/init of 'editing' a prevalue source then
+        //Let's check & get the current user's form security
+        var currentUserId = null;
+
+        userService.getCurrentUser().then(function (response) {
+            currentUserId = response.id;
+
+            //Now we can make a call to form securityResource
+            securityResource.getByUserId(currentUserId).then(function (response) {
+                $scope.security = response.data;
+
+                //Check if we have access to current form OR manage forms has been disabled
+                if (!$scope.security.userSecurity.managePreValueSources) {
+
+                    //Show error notification
+                    notificationsService.error("Access Denied", "You do not have access to edit Prevalue sources");
+
+                    //Resync tree so that it's removed & hides
+                    navigationService.syncTree({ tree: "prevaluesource", path: ['-1'], forceReload: true, activate: false }).then(function (response) {
+
+                        //Response object contains node object & activate bool
+                        //Can then reload the root node -1 for this tree 'Forms Folder'
+                        navigationService.reloadNode(response.node);
+                    });
+
+                    //Don't need to wire anything else up
+                    return;
+                }
+            });
+        });
+
+
         //we are editing so get the content item from the server
         preValueSourceResource.getByGuid($routeParams.id)
         .then(function (response) {
@@ -32,7 +64,8 @@ function ($scope, $routeParams, preValueSourceResource, editorState, notificatio
                     $scope.loaded = true;
                 });
 
-            
+            //As we are editing an item we can highlight it in the tree
+            navigationService.syncTree({ tree: "prevaluesource", path: [String($routeParams.id)], forceReload: false });
            
             //set a shared state
             editorState.set($scope.preValueSource);

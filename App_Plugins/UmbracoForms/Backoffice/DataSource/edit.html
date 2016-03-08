@@ -1,6 +1,6 @@
 ﻿<form name="dataSourceForm"
       ng-controller="UmbracoForms.Editors.DataSource.EditController"
-      ng-show="loaded"
+      ng-show="loaded && security.userSecurity.manageDataSources"
       ng-submit="save()"
       val-form-manager>
     <umb-panel>

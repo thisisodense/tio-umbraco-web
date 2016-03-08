@@ -7,7 +7,7 @@
 
 <input type="hidden" id="fsConditions_@Model.FormClientId" value='@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.FieldsetConditions))' />
 <input type="hidden" id="fieldConditions_@Model.FormClientId" value='@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.FieldConditions))' />
-<input type="hidden" id="values_@Model.FormClientId" value="@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Pages.SelectMany(p => p.Fieldsets).SelectMany(fs => fs.Containers).SelectMany(c => c.Fields).ToDictionary(f => f.Id, f => f.Value)))" />
+<input type="hidden" id="values_@Model.FormClientId" value='@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Pages.SelectMany(p => p.Fieldsets).SelectMany(fs => fs.Containers).SelectMany(c => c.Fields).ToDictionary(f => f.Id, f => f.Value)))' />
 <script type="text/javascript">
     var contourDateFormat = "@Html.ConvertDateFormat()";
 </script>
@@ -15,12 +15,12 @@
 <script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms-conditions.js")" type="text/javascript"></script>
 
 <script type="text/javascript">
-    (function ($, formId, formName) {
+    (function ($, formId) {
         var contourFieldValues,
             recordValues = JSON.parse($("#values_" + formId).val()),
             fsConditions = JSON.parse($("#fsConditions_" + formId).val()),
             fieldConditions = JSON.parse($("#fieldConditions_" + formId).val()),
-            form = $("#contour_form_" + formName);
+            form = $("#contour_form_" + formId);
 
         $(function () {
             $(".contourPage input, .contourPage textarea, .contourPage select", form).change(function () {
@@ -94,6 +94,6 @@
             });
         }
 
-    }(jQuery, '@Model.FormClientId', '@Model.FormName.Replace(" ", "")'));
+    }(jQuery, '@Model.FormClientId'));
 
 </script>

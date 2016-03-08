@@ -1,6 +1,6 @@
 ﻿<form novalidate name="contentForm"
       ng-controller="UmbracoForms.Editors.Form.EditController"
-      ng-show="ready"
+      ng-show="ready && (security.userSecurity.manageForms && hasAccessToCurrentForm)"
       ng-submit="save()"
       val-form-manager>
     <umb-panel>
@@ -30,7 +30,7 @@
                             <li class="action"><a href ng-click="editForm(form, 'submission')"><i class="icon icon-check"></i> <span class="menu-label">On submit</span></a></li>
 
                             <li class="action sep" ng-if="saved"><a ng-href="{{entriesUrl}}"><i class="icon icon-inbox-full"></i> <span class="menu-label">Entries</span></a></li>
-                            <li class="action" ng-if="saved"><a ng-href="{{workflowsUrl}}"><i class="icon icon-mindmap"></i> <span class="menu-label">Workflows</span></a></li>
+                            <li class="action" ng-if="saved && security.userSecurity.manageWorkflows"><a ng-href="{{workflowsUrl}}"><i class="icon icon-mindmap"></i> <span class="menu-label">Workflows</span></a></li>
                         </ul>
 
                     </div>

@@ -300,17 +300,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>2685d40c-a7fa-dc65-0982-aa570e250173</UniqueId>
-            <Alias>startTime</Alias>
-            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Start Time</Name>
-            <SortOrder>9</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>9d0e8e83-4798-b900-88c2-a90e9f8fde5c</UniqueId>
             <Alias>subheader</Alias>
             <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>

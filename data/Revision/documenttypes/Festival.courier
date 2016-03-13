@@ -294,7 +294,7 @@
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Start date</Name>
+            <Name>Næste startdato</Name>
             <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

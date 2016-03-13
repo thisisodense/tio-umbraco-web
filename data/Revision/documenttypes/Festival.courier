@@ -119,7 +119,8 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Festival Kategori</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -140,7 +141,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>24</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -151,7 +152,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link festivalens hjemmeside</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -162,7 +163,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Primære location</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -173,7 +174,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Organizer</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>3</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -184,7 +185,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Pris for partoutbillet</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -217,7 +218,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -228,7 +229,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
-            <SortOrder>22</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -239,7 +240,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Beskrivelse</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -250,7 +251,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Description English</Name>
-            <SortOrder>23</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -261,7 +262,7 @@
             <Description>Indsæt direkte link til billetsalget</Description>
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -272,7 +273,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>21</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

@@ -135,6 +135,17 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
+            <Alias>festivalName</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Festival name</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>eadd888c-e197-6f4b-a33d-9a96c30dc0c5</UniqueId>
             <Alias>guestWriter</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
@@ -143,17 +154,6 @@
             <Name>Guest writer</Name>
             <SortOrder>0</SortOrder>
             <TabCaption>Guest Writer</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>91e1c724-74ea-804f-6379-b3c3307c8307</UniqueId>
-            <Alias>headline</Alias>
-            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Headline</Name>
-            <SortOrder>2</SortOrder>
-            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -414,7 +414,7 @@
             <Alias>weekNumber</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
             <Description />
-            <Mandatory>true</Mandatory>
+            <Mandatory>false</Mandatory>
             <Name>Week</Name>
             <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>

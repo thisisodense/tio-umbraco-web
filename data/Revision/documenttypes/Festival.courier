@@ -157,17 +157,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>c93e5cda-f949-545f-a9d4-b752c8bb1b1b</UniqueId>
-            <Alias>headlineEnglish</Alias>
-            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Headline English</Name>
-            <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>f5bfa267-e55b-275f-e46f-62f8371dc5b0</UniqueId>
             <Alias>image</Alias>
             <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>

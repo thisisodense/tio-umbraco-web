@@ -159,17 +159,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>a1adeb9e-01b5-08c8-2e70-96e3981f2dc7</UniqueId>
-            <Alias>nameOfGuestWriter</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Name of guest writer</Name>
-            <SortOrder>1</SortOrder>
-            <TabCaption>Guest Writer</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>936c85a7-fcdf-2477-2c58-62e0f403a752</UniqueId>
             <Alias>oldId</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>

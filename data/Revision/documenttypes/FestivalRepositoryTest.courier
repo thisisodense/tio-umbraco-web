@@ -1,15 +1,5 @@
 ﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>FestivalRepositoryTest</Id>
-                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Template: FestivalRepositoryTest</Name>
-            <ForceHashCheck>false</ForceHashCheck>
-        </Dependency>
-    </Dependencies>
+    <Dependencies />
     <ItemId>
         <Id>FestivalRepositoryTest</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
@@ -21,10 +11,7 @@
     <AllowedChildDocumentTypes>
         <string>Festival</string>
     </AllowedChildDocumentTypes>
-    <AllowedTemplates>
-        <string>FestivalRepositoryTest</string>
-    </AllowedTemplates>
-    <DefaultTemplate>FestivalRepositoryTest</DefaultTemplate>
+    <AllowedTemplates />
     <Description />
     <Icon>.sprTreeFolder</Icon>
     <Properties />

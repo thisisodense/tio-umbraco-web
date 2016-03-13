@@ -296,12 +296,6 @@
         </Tab>
         <Tab>
             <ContentTypeAlias>Festival</ContentTypeAlias>
-            <SortOrder>3</SortOrder>
-            <Text>Guest Writer</Text>
-            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
-        </Tab>
-        <Tab>
-            <ContentTypeAlias>Festival</ContentTypeAlias>
             <SortOrder>2</SortOrder>
             <Text>Info</Text>
             <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>

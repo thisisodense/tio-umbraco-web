@@ -78,6 +78,17 @@
     <Icon>icon-flag-alt</Icon>
     <Properties>
         <ContentTypeProperty>
+            <UniqueId>12a75f1a-ac5c-9ff6-f42d-69c17e9d4682</UniqueId>
+            <Alias>days</Alias>
+            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Dage</Name>
+            <SortOrder>18</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>cf244898-83be-bcc7-4892-e19c82ee223a</UniqueId>
             <Alias>endDate</Alias>
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>

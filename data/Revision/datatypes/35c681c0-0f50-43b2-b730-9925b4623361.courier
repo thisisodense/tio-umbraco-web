@@ -9,7 +9,44 @@
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
     <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
-    <Prevalues />
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>pageSize</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>50</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>Name</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>asc</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>includeProperties</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>[&#xD;
+  {&#xD;
+    "alias": "weekNumber",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Uge"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "startDate",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Startdato"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "eventType",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Type"&#xD;
+  }&#xD;
+]</Value>
+        </DataTypePrevalue>
+    </Prevalues>
     <UniqueID>35c681c0-0f50-43b2-b730-9925b4623361</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

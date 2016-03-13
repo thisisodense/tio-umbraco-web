@@ -39,15 +39,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>Recommendation</Id>
-                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Template: Recommendation</Name>
-            <ForceHashCheck>false</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -86,7 +77,6 @@
         <string>Recommendation</string>
         <string>Recommendations</string>
     </AllowedTemplates>
-    <DefaultTemplate>Recommendation</DefaultTemplate>
     <Description />
     <Icon>icon-flag-alt</Icon>
     <Properties>

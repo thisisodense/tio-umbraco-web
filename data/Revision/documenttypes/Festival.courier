@@ -115,17 +115,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>eadd888c-e197-6f4b-a33d-9a96c30dc0c5</UniqueId>
-            <Alias>guestWriter</Alias>
-            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Guest writer</Name>
-            <SortOrder>0</SortOrder>
-            <TabCaption>Guest Writer</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>f5bfa267-e55b-275f-e46f-62f8371dc5b0</UniqueId>
             <Alias>image</Alias>
             <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>

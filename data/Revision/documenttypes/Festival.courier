@@ -137,17 +137,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>d25370b4-58b7-5ca9-efa4-5a336f5b4c6d</UniqueId>
-            <Alias>klarTilOversaettelse</Alias>
-            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Klar til oversættelse</Name>
-            <SortOrder>20</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>25bb9d2f-ceb4-f38c-845a-c8ebd31b0b1f</UniqueId>
             <Alias>linkToEvent</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>

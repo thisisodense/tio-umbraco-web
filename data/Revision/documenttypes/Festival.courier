@@ -88,7 +88,7 @@
     </AllowedTemplates>
     <DefaultTemplate>Recommendation</DefaultTemplate>
     <Description />
-    <Icon>icon-article</Icon>
+    <Icon>icon-flag-alt</Icon>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>9bf9d6c1-68e1-dc80-7f58-1c4873b95845</UniqueId>

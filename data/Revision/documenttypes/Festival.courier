@@ -241,7 +241,7 @@
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Price</Name>
+            <Name>Pris for partoutbillet</Name>
             <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

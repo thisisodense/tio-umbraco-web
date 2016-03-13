@@ -48,6 +48,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: c281c13f-8c09-4b8e-848b-576d865155a8</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -101,6 +110,16 @@
             <Name>Primære type oplevelse</Name>
             <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2c93704a-d1e4-27d0-9deb-cce08c18a323</UniqueId>
+            <Alias>festivalKategori</Alias>
+            <DataTypeDefinitionId>c281c13f-8c09-4b8e-848b-576d865155a8</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Festival Kategori</Name>
+            <SortOrder>0</SortOrder>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>

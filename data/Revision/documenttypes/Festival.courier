@@ -159,17 +159,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>2269065b-60ce-4046-0b3c-2e5c340fa60c</UniqueId>
-            <Alias>oldimage</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>OldImage</Name>
-            <SortOrder>1</SortOrder>
-            <TabCaption>Info</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>e4f7a236-f1bf-e139-6d10-47ee589ef531</UniqueId>
             <Alias>organizer</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>

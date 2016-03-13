@@ -1,0 +1,467 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>0cb8264f-0485-4ab7-b11e-3faf42a3e402</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 0cb8264f-0485-4ab7-b11e-3faf42a3e402</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>147725c0-5daa-4f97-a6d0-5da8ecf29092</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 147725c0-5daa-4f97-a6d0-5da8ecf29092</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>9da27505-2fb0-448d-a477-07b0780a9243</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9da27505-2fb0-448d-a477-07b0780a9243</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9e47630e-c2df-431c-ba01-c4c65148b98d</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Recommendation</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Recommendation</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ec3491d1-75dc-4484-86e9-4bc040089c08</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ec3491d1-75dc-4484-86e9-4bc040089c08</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Festival</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Festival</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>Festival</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates>
+        <string>Recommendation</string>
+        <string>Recommendations</string>
+    </AllowedTemplates>
+    <DefaultTemplate>Recommendation</DefaultTemplate>
+    <Description />
+    <Icon>icon-article</Icon>
+    <Properties>
+        <ContentTypeProperty>
+            <UniqueId>9bf9d6c1-68e1-dc80-7f58-1c4873b95845</UniqueId>
+            <Alias>doorsOpen</Alias>
+            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Doors open</Name>
+            <SortOrder>12</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>cf244898-83be-bcc7-4892-e19c82ee223a</UniqueId>
+            <Alias>endDate</Alias>
+            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>End date</Name>
+            <SortOrder>8</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>6dc51937-d797-97be-f456-08fa3c66e71b</UniqueId>
+            <Alias>endTime</Alias>
+            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>End time</Name>
+            <SortOrder>10</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>a6a5f4a8-6e52-9588-286d-ef12af71b17b</UniqueId>
+            <Alias>eventType</Alias>
+            <DataTypeDefinitionId>0cb8264f-0485-4ab7-b11e-3faf42a3e402</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Event type</Name>
+            <SortOrder>6</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>eadd888c-e197-6f4b-a33d-9a96c30dc0c5</UniqueId>
+            <Alias>guestWriter</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Guest writer</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>91e1c724-74ea-804f-6379-b3c3307c8307</UniqueId>
+            <Alias>headline</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Headline</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>c93e5cda-f949-545f-a9d4-b752c8bb1b1b</UniqueId>
+            <Alias>headlineEnglish</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Headline English</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>f5bfa267-e55b-275f-e46f-62f8371dc5b0</UniqueId>
+            <Alias>image</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Image</Name>
+            <SortOrder>24</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>1efb3a9e-e6c2-1ab5-0ae2-d3db2ea4ae10</UniqueId>
+            <Alias>klarTilKorrektur</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til korrektur</Name>
+            <SortOrder>19</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>d25370b4-58b7-5ca9-efa4-5a336f5b4c6d</UniqueId>
+            <Alias>klarTilOversaettelse</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til oversættelse</Name>
+            <SortOrder>20</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>25bb9d2f-ceb4-f38c-845a-c8ebd31b0b1f</UniqueId>
+            <Alias>linkToEvent</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Link to event</Name>
+            <SortOrder>15</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>c1ee94f6-1420-154e-2417-f00fe832ce43</UniqueId>
+            <Alias>linkToGuestWriter</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Link to guest writer</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>c1c3874c-131f-c1b3-2c85-8d94855b0eb2</UniqueId>
+            <Alias>location</Alias>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Location</Name>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>a1adeb9e-01b5-08c8-2e70-96e3981f2dc7</UniqueId>
+            <Alias>nameOfGuestWriter</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Name of guest writer</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>936c85a7-fcdf-2477-2c58-62e0f403a752</UniqueId>
+            <Alias>oldId</Alias>
+            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>OldId</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Info</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2269065b-60ce-4046-0b3c-2e5c340fa60c</UniqueId>
+            <Alias>oldimage</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>OldImage</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Info</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e4f7a236-f1bf-e139-6d10-47ee589ef531</UniqueId>
+            <Alias>organizer</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Organizer</Name>
+            <SortOrder>4</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>92bc348f-69a5-08b1-e8fd-e5d34846e7e1</UniqueId>
+            <Alias>price</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Price</Name>
+            <SortOrder>13</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>4937758a-e055-8dc3-e8bc-b58b8995a4e4</UniqueId>
+            <Alias>socialposts</Alias>
+            <DataTypeDefinitionId>9da27505-2fb0-448d-a477-07b0780a9243</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>SocialPosts</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>SocialPosts</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>87593280-1cc8-14d7-82dc-205e8be09730</UniqueId>
+            <Alias>startDate</Alias>
+            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Start date</Name>
+            <SortOrder>7</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2685d40c-a7fa-dc65-0982-aa570e250173</UniqueId>
+            <Alias>startTime</Alias>
+            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Start Time</Name>
+            <SortOrder>9</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>9d0e8e83-4798-b900-88c2-a90e9f8fde5c</UniqueId>
+            <Alias>subheader</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Subheader</Name>
+            <SortOrder>16</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>61b04067-4db9-8ffb-6eb5-6c521f017514</UniqueId>
+            <Alias>subheaderEnglish</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Subheader English</Name>
+            <SortOrder>22</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>dc90a61e-440d-ccb3-c13a-412c8601ef30</UniqueId>
+            <Alias>summary</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Recommendation</Name>
+            <SortOrder>17</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>4f86ef12-70bc-3aa7-adf3-8be80cf64e3d</UniqueId>
+            <Alias>summaryEnglish</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Recommendation English</Name>
+            <SortOrder>23</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>cf4b34ee-4a2a-08b8-eb04-e162f90dd249</UniqueId>
+            <Alias>summaryForInstagram</Alias>
+            <DataTypeDefinitionId>c6bac0dd-4ab9-45b1-8e30-e4b619ee5da3</DataTypeDefinitionId>
+            <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2.000 tegn.</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Uddrag til Instagram</Name>
+            <SortOrder>18</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>5b4c44e2-f1da-370e-6105-25b2e4ce0789</UniqueId>
+            <Alias>ticketUrl</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description>Indsæt direkte link til billetsalget</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Ticket Url</Name>
+            <SortOrder>14</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>219d507d-fe24-eab8-2396-1852846c6920</UniqueId>
+            <Alias>translator</Alias>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Translator</Name>
+            <SortOrder>21</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>d8c95c8a-0e2a-3596-a08b-0f1cfc624790</UniqueId>
+            <Alias>useOpeningHours</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description>Brug stedets faste åbningstider i stedet for start- og sluttid</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Use opening hours</Name>
+            <SortOrder>11</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e215647e-3878-2023-9f55-4f6fb368afc4</UniqueId>
+            <Alias>weekNumber</Alias>
+            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>true</Mandatory>
+            <Name>Week</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>0ced46f9-e27d-daba-9187-ee7ebb29b361</UniqueId>
+            <Alias>writer</Alias>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Writer</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <SortOrder>1</SortOrder>
+            <Text>Content</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <SortOrder>3</SortOrder>
+            <Text>Guest Writer</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <SortOrder>2</SortOrder>
+            <Text>Info</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <SortOrder>3</SortOrder>
+            <Text>SocialPosts</Text>
+            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>7272a88b-ec64-4162-aad7-1abd5d8aed52</UniqueId>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,7272a88b-ec64-4162-aad7-1abd5d8aed52</PathGuids>
+</DocumentType>

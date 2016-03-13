@@ -84,7 +84,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Næste slutdato</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -95,7 +95,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Primære type oplevelse</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -106,7 +106,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Festival Kategori</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -117,7 +117,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Festival name</Name>
-            <SortOrder>2</SortOrder>
+            <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -139,7 +139,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link festivalens hjemmeside</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -150,7 +150,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Primære location</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>3</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -161,7 +161,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Organizer</Name>
-            <SortOrder>3</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -172,7 +172,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Pris for partoutbillet</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -194,7 +194,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Næste startdato</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -249,7 +249,7 @@
             <Description>Indsæt direkte link til billetsalget</Description>
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -271,7 +271,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Week</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -282,7 +282,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
-            <SortOrder>1</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

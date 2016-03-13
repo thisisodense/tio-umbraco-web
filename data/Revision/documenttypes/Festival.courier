@@ -366,17 +366,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>d8c95c8a-0e2a-3596-a08b-0f1cfc624790</UniqueId>
-            <Alias>useOpeningHours</Alias>
-            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
-            <Description>Brug stedets faste åbningstider i stedet for start- og sluttid</Description>
-            <Mandatory>false</Mandatory>
-            <Name>Use opening hours</Name>
-            <SortOrder>11</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>e215647e-3878-2023-9f55-4f6fb368afc4</UniqueId>
             <Alias>weekNumber</Alias>
             <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>

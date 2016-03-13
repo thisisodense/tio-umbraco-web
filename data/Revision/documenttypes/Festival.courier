@@ -107,7 +107,7 @@
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>End date</Name>
+            <Name>Næste slutdato</Name>
             <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

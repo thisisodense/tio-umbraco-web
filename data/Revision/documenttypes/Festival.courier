@@ -12,15 +12,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>147725c0-5daa-4f97-a6d0-5da8ecf29092</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 147725c0-5daa-4f97-a6d0-5da8ecf29092</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -90,17 +81,6 @@
     <Description />
     <Icon>icon-flag-alt</Icon>
     <Properties>
-        <ContentTypeProperty>
-            <UniqueId>9bf9d6c1-68e1-dc80-7f58-1c4873b95845</UniqueId>
-            <Alias>doorsOpen</Alias>
-            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Doors open</Name>
-            <SortOrder>12</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>cf244898-83be-bcc7-4892-e19c82ee223a</UniqueId>
             <Alias>endDate</Alias>

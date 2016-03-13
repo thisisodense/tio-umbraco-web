@@ -113,17 +113,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>6dc51937-d797-97be-f456-08fa3c66e71b</UniqueId>
-            <Alias>endTime</Alias>
-            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>End time</Name>
-            <SortOrder>10</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>a6a5f4a8-6e52-9588-286d-ef12af71b17b</UniqueId>
             <Alias>eventType</Alias>
             <DataTypeDefinitionId>0cb8264f-0485-4ab7-b11e-3faf42a3e402</DataTypeDefinitionId>

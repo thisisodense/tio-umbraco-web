@@ -73,10 +73,7 @@
     <Resources />
     <Alias>Festival</Alias>
     <AllowedChildDocumentTypes />
-    <AllowedTemplates>
-        <string>Recommendation</string>
-        <string>Recommendations</string>
-    </AllowedTemplates>
+    <AllowedTemplates />
     <Description />
     <Icon>icon-flag-alt</Icon>
     <Properties>

@@ -329,11 +329,10 @@ footer {
     font-size: 10pt;
     color:whitesmoke;
     padding:5px;
-    height:87%;
+    height:89%;
     width:100%;
     overflow:hidden;
     text-overflow:ellipsis;
-    box-sizing:border-box;
 }
 
 .writerOverlay .readmorelink {

@@ -32,7 +32,7 @@
 
         $.validator.unobtrusive.adapters.addBool("regex", "umbracoforms_regex");
 
-        $('input[type=submit]').not('.cancel').click(function (evt) {
+        $('.contour input[type=submit]').not('.cancel').click(function (evt) {
             evt.preventDefault();
             var self = $(this);
             var frm = self.closest('form');

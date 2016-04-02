@@ -25,7 +25,7 @@ else
     if (Model.RenderMode == "full" || Model.RenderMode == "form")
     {
 
-         <div id="contour_form_@{@Model.FormName.Replace(" ", "")}" class="contour @Model.CssClass">
+         <div id="contour_form_@Model.FormClientId" class="contour @Model.CssClass">
 
              @using (Html.BeginUmbracoForm<Umbraco.Forms.Web.Controllers.UmbracoFormsController>("HandleForm"))
              {
@@ -33,9 +33,10 @@ else
                  @Html.HiddenFor(x => Model.FormName)
                  @Html.HiddenFor(x => Model.RecordId)
                  @Html.HiddenFor(x => Model.PreviousClicked)
-
+ 
                  <input type="hidden" name="FormStep" value="@Model.FormStep" />
-
+                 <input type="hidden" name="RecordState" value="@Model.RecordState"/>
+                 
                  <div class="contourPage">
                 
                      @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false)
@@ -119,12 +120,12 @@ else
                                  }
                                  if (Model.IsLastPage)
                                  {
-                                     <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submit"/>
+                                     <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn"/>
                                  }
                              }
                              else
                              {
-                                 <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submit"/>
+                                 <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn"/>
                              }
                          </div>
                      </div>

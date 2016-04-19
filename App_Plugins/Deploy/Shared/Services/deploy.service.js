@@ -30,6 +30,15 @@
             return $http.get(baseUrl + "ClearQueue");
         },
 
+        //pull item from remote site and returns array of differences
+        compareItemToRemote: function (item, environment) {
+            if (!environment) {
+                environment = "";
+            }
+
+            return $http.get(baseUrl + "CompareItemToRemote?id=" + item.Id + "_" + item.ProviderId + "&environment=" + environment);
+        },
+
         //restore services
 
         //Pull and restore in one go, this can only run from within backoffice
@@ -39,6 +48,11 @@
                 environment = "";
             }
             return $http.get(baseUrl + "PullAndRestoreRemoteContent?environment=" + environment);
+        },
+
+        //Restore content from existing files on disk
+        restoreContentFromDisk: function () {
+            return $http.get(baseUrl + "RestoreWebSite");
         },
 
         pullRemoteContent : function(login, password){
@@ -78,17 +92,17 @@
 
         	//Data types
             var collection = {
-            	"e0472592-e73b-11df-9492-0800200c9a66" : {name: "Data types"},
+            	"e0472592-e73b-11df-9492-0800200c9a66" : {name: "Data types", supportCompare : true},
             	"d8e6ad86-e73a-11df-9492-0800200c9a66" : {name: "Dictionary items"},
             	"d8e6ad83-e73a-11df-9492-0800200c9a66" : {name: "Documents"},
-            	"d8e6ad84-e73a-11df-9492-0800200c9a66" : {name: "Document types"},
+            	"d8e6ad84-e73a-11df-9492-0800200c9a66" : {name: "Document types", supportCompare : true},
             	"e0472595-e73b-11df-9492-0800200c9a66" : {name: "Domains"},
             	"2ab3b250-e28d-11df-85ca-0800200c9a66" : {name: "Files"},
             	"d8e6ad80-e73a-11df-9492-0800200c9a66" : {name: "Folders"},
             	"d8e6ad81-e73a-11df-9492-0800200c9a66" : {name: "Languages"},
             	"2ab40e30-e292-11df-85ca-0800200c9a66" : {name: "Macros"},
             	"d8e6ad87-e73a-11df-9492-0800200c9a66" : {name: "Media items"},
-            	"d8e6ad88-e73a-11df-9492-0800200c9a66" : {name: "Media types"},
+            	"d8e6ad88-e73a-11df-9492-0800200c9a66" : {name: "Media types", supportCompare : true},
                 "4715aa16-fa35-426f-bb67-674043557875" : {name: "Member Groups"},
                 "9bbce930-5deb-4775-bbc6-4e4e94dfa0db" : {name: "Member types"},
                 "e0472594-e73b-11df-9492-0800200c9a66" : {name: "Content data"},

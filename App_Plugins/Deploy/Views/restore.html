@@ -1,88 +1,121 @@
 <div class="umb-dialog" ng-controller="Concorde.RestoreDialogController">
 
-  <div class="umb-pane">
-    <ul class="deployModal unstyled" ng-switch="step">
+    <div class="umb-pane">
+        <ul class="deployModal unstyled" ng-switch="step">
 
-      <li ng-switch-default>
+            <li ng-switch-default>
 
-          <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">
 
-          Restore your website from
+                    Restore your website from
 
-          <div class="btn-group">
-            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#"
-                style="font-size: 17.5px; padding-left: 0; padding-top: 1px">
-              {{environment.destination}} <span class="caret"></span>
-            </a>
+                    <div class="btn-group">
+                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#"
+                           style="font-size: 17.5px; padding-left: 0; padding-top: 1px">
+                            {{environment.destination}} <span class="caret"></span>
+                        </a>
 
-            <ul class="dropdown-menu">
-              <!-- dropdown menu links -->
-              <li ng-repeat="env in environment.available">
-                  <a href ng-click="changeDestination(env)"><i class="icon icon-server-alt"></i> {{env.name}}</a>
-              </li>
-            </ul>
+                        <ul class="dropdown-menu">
+                            <!-- dropdown menu links -->
+                            <li ng-repeat="env in environment.available">
+                                <a href ng-click="changeDestination(env)"><i class="icon icon-server-alt"></i> {{env.name}}</a>
+                            </li>
+                        </ul>
 
-          </div>
-          </h4>
+                    </div>
+                </h4>
 
-          <p>
-            This will download the latest changes from <em>{{environment.destination}}</em> and apply them to your local site. This includes changes to content, media, files and all the underlying data such as document types.
-          </p>
+                <p>
+                    This will download the latest changes from <em>{{environment.destination}}</em> and apply them to your local site. This includes changes to content, media, files and all the underlying data such as document types.
+                </p>
 
-          <p style="margin-top: 15px; margin-bottom: 30px;">
-            <strong style="font-weight: bold; color: #000;">Notice:</strong> Downloading and restoring will take a bit of time to do, meanwhile you cannot change or deploy any content.
-          </p>
+                <p style="margin-top: 15px; margin-bottom: 30px;">
+                    <strong style="font-weight: bold; color: #000;">Notice:</strong> Downloading and restoring will take a bit of time to do, meanwhile you cannot change or deploy any content.
+                </p>
 
-          <button prevent-default class="btn btn-primary"
-                    ng-disabled="environment.destination ===''"
-                    ng-click="restore()">Download and restore</button>
-      </li>
+                <button prevent-default class="btn btn-primary"
+                        ng-disabled="environment.destination ===''"
+                        ng-click="restore()">
+                    Download and restore
+                </button>
 
+            </li>
 
-      <li ng-switch-when="working">
-        <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Restore not allowed</h4>
-        <p>
-            You have other tasks running at the moment, so you cannot restore your website right now. Let these tasks finish and try again.
-        </p>
-      </li>
+            <li ng-switch-when="pendingrestore">
 
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">
+                    Restore your website
+                </h4>
 
-      <li ng-switch-when="restored">
-        <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Restore complete</h4>
-        <p>
-            Everything has been restored, please refresh your browser to ensure everything is up to date.
-        </p>
+                <p>You already have a pending restore waiting to be applied.</p>
+                <p>This will apply the pending changes to your site without redownloading.</p>
+                
+                <p style="margin-top: 15px; margin-bottom: 30px;">
+                    <strong style="font-weight: bold; color: #000;">Notice:</strong> You can also choose to skip the pending restore and fetch everything from the source again.
+                </p>
 
-        <button class="btn btn-primary" prevent-default ng-click="nav.hideDialog()">Okay</button>
-      </li>
+                <button prevent-default class="btn btn-primary"
+                        ng-click="restoreContentFromDisk()">
+                    Restore pending changes
+                </button>
 
+                <button prevent-default class="btn btn-secondary"
+                        ng-click="skipPendingRestore()">
+                    Skip pending restore
+                </button>
 
-      <li ng-switch-when="restoring">
-        <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">{{currentTask.description}}</h4>
+            </li>
 
-        <p style="font-size: 12px; font-weight: 600;">{{currentTask.done}} of {{currentTask.total}}</p>
+            <li ng-switch-when="noenvironments">
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Nowhere to restore from</h4>
+                <p>
+                    The current environment is the end destionation for deployments. There isn't any environments to restore from.
+                </p>
 
-        <div class="progress progress-deploy">
-          <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
-        </div>
+                <button class="btn btn-primary" prevent-default ng-click="nav.hideDialog()">Close</button>
+            </li>
 
-        <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>
+            <li ng-switch-when="working">
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Restore not allowed</h4>
+                <p>
+                    You have other tasks running at the moment, so you cannot restore your website right now. Let these tasks finish and try again.
+                </p>
+            </li>
 
-      </li>
+            <li ng-switch-when="restored">
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">Restore complete</h4>
+                <p>
+                    Everything has been restored, please refresh your browser to ensure everything is up to date.
+                </p>
 
-        <li ng-switch-when="error">
-            <h4>Something went wrong :(</h4>
-            <p>Here is some technical information that might help shed some light on whats happened:</p>
+                <button class="btn btn-primary" prevent-default ng-click="nav.hideDialog()">Okay</button>
+            </li>
 
-            <p class="alert alert-error alert-block"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
-            <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
-            <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
-            <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
+            <li ng-switch-when="restoring">
+                <h4 style="margin-bottom: 15px; color: #000; font-weight: 500;">{{currentTask.description}}</h4>
 
-        </li>
+                <p style="font-size: 12px; font-weight: 600;">{{currentTask.done}} of {{currentTask.total}}</p>
 
+                <div class="progress progress-deploy">
+                    <div class="bar" style="width: {{ (currentTask.done / currentTask.total) * 100 }}%;"></div>
+                </div>
 
-      </ul>
+                <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>
+
+            </li>
+
+            <li ng-switch-when="error">
+                <h4>Something went wrong :(</h4>
+                <p>Here is some technical information that might help shed some light on whats happened:</p>
+
+                <p class="alert alert-error alert-block"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
+                <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
+                <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
+                <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
+
+            </li>
+
+        </ul>
 
     </div>
 </div>

@@ -97,8 +97,8 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Doors open</Name>
-            <SortOrder>12</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -174,7 +174,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>24</SortOrder>
+            <SortOrder>23</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -185,7 +185,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -196,7 +196,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>20</SortOrder>
+            <SortOrder>19</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -207,7 +207,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Link to event</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -251,7 +251,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>OldId</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>1</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -262,7 +262,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>OldImage</Name>
-            <SortOrder>1</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -284,7 +284,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Price</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -328,7 +328,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -339,7 +339,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
-            <SortOrder>22</SortOrder>
+            <SortOrder>21</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -350,7 +350,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Recommendation</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -361,7 +361,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Recommendation English</Name>
-            <SortOrder>23</SortOrder>
+            <SortOrder>22</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -372,7 +372,7 @@
             <Description>Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2.000 tegn.</Description>
             <Mandatory>false</Mandatory>
             <Name>Uddrag til Instagram</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -383,7 +383,7 @@
             <Description>Indsæt direkte link til billetsalget</Description>
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -394,7 +394,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>21</SortOrder>
+            <SortOrder>20</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -459,9 +459,10 @@
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>f7f52cdd-a22a-480e-8eb5-a800a8438230</UniqueId>
+    <UniqueId>2f272dfc-e7ae-4de0-b26b-447754cccb5c</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1,f7f52cdd-a22a-480e-8eb5-a800a8438230</PathGuids>
+    <PathGuids>-1,2f272dfc-e7ae-4de0-b26b-447754cccb5c</PathGuids>
 </DocumentType>

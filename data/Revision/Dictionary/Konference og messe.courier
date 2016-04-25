@@ -8,6 +8,22 @@
             </ItemId>
             <ForceHashCheck>false</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>Konference og messe</Id>
@@ -17,5 +33,14 @@
     <ItemType>Item</ItemType>
     <Resources />
     <Parent>Konference/Messe</Parent>
-    <Translations />
+    <Translations>
+        <Translation>
+            <CultureAlias>da</CultureAlias>
+            <Value>Konference og messe</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>en</CultureAlias>
+            <Value>Conference and trade fair</Value>
+        </Translation>
+    </Translations>
 </DictionaryItem>

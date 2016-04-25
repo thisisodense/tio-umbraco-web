@@ -8,6 +8,22 @@
             </ItemId>
             <ForceHashCheck>false</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>Foredrag og debat</Id>
@@ -17,5 +33,14 @@
     <ItemType>Item</ItemType>
     <Resources />
     <Parent>Foredrag/debat</Parent>
-    <Translations />
+    <Translations>
+        <Translation>
+            <CultureAlias>da</CultureAlias>
+            <Value>Foredrag og debat</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>en</CultureAlias>
+            <Value>Talk and debate</Value>
+        </Translation>
+    </Translations>
 </DictionaryItem>

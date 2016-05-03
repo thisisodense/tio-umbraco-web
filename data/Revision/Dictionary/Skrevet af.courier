@@ -1,4 +1,4 @@
-﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<DictionaryItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -18,20 +18,20 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Skrevet af:</Id>
+        <Id>Skrevet af</Id>
         <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Skrevet af:</Name>
+    <Name>Skrevet af</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Translations>
         <Translation>
-            <CultureAlias>da</CultureAlias>
-            <Value>Skrevet af:</Value>
+            <CultureAlias>en</CultureAlias>
+            <Value>Written by</Value>
         </Translation>
         <Translation>
-            <CultureAlias>en</CultureAlias>
-            <Value>Written by:</Value>
+            <CultureAlias>da</CultureAlias>
+            <Value>Skrevet af</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

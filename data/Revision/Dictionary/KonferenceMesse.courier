@@ -1,4 +1,4 @@
-﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<DictionaryItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -31,7 +31,7 @@
         </Translation>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Konference og messe</Value>
+            <Value>Konference/Messe</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

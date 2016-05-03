@@ -33,7 +33,7 @@
         <DataTypePrevalue>
             <Alias>4</Alias>
             <SortOrder>5</SortOrder>
-            <Value>Konference/Messe</Value>
+            <Value>Konference og messe</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>5</Alias>
@@ -58,7 +58,7 @@
         <DataTypePrevalue>
             <Alias>9</Alias>
             <SortOrder>10</SortOrder>
-            <Value>Foredrag/debat</Value>
+            <Value>Foredrag og debat</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>10</Alias>
@@ -67,4 +67,5 @@
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>0cb8264f-0485-4ab7-b11e-3faf42a3e402</UniqueID>
+    <ParentContainerId xsi:nil="true" />
 </DataType>

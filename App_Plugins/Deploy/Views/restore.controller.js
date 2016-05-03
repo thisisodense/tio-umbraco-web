@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("Concorde.RestoreDialogController", function ($scope, deployService, taskManService,  $q, $timeout) {
+angular.module("umbraco").controller("Concorde.RestoreDialogController", function ($scope, deployService, taskManService, $q, $timeout) {
 
     $scope.error = {};
 
@@ -23,23 +23,33 @@ angular.module("umbraco").controller("Concorde.RestoreDialogController", functio
     var alternativeTarget = undefined;
 
     //fetch environment meta data
-    deployService.environment().then(function(response){
+    deployService.environment().then(function (response) {
         $scope.environment = response.data;
 
         //if there is no destination - but are available envs - pick the first one
-        if($scope.environment.destination === "" && $scope.environment.available.length > 0){
+        if ($scope.environment.destination === "" && $scope.environment.available.length > 0) {
             $scope.changeDestination($scope.environment.available[0]);
+        }
+        // if theres no environments to deploy to, we show a message in stead
+        else if ($scope.environment.available.length === 0) {
+            $scope.step = "noenvironments";
+        }
+        
+        if (!$scope.environment.allowRestoreDialog) {
+            $scope.step = "noenvironments";
+        } else if ($scope.environment.pendingRestoreAvailable == true) {
+            $scope.step = "pendingrestore";
         }
 
     }, handleError);
 
     //handle task manager updates
-    var onTaskUpDate = function(event, task){
+    var onTaskUpDate = function (event, task) {
         $scope.currentTask = task;
     };
 
     //handle task completion
-    var onTaskComplete = function(event, task){
+    var onTaskComplete = function (event, task) {
         $scope.currentTask = task;
         $scope.step = "restored";
     };
@@ -68,25 +78,33 @@ angular.module("umbraco").controller("Concorde.RestoreDialogController", functio
     );
 
     //on init, check if a task is running already
-    if(taskManService.currentTask){
-    	$scope.currentTask = taskManService.currentTask;
+    if (taskManService.currentTask) {
+        $scope.currentTask = taskManService.currentTask;
 
-    	//if its one of our custom tasks, its part of the restore
-    	if($scope.currentTask.name.indexOf("Concorde") >= 0){
-    		$scope.step = "restoring";
-    	}else{
-    		$scope.step = "working";
-    	}
+        //if its one of our custom tasks, its part of the restore
+        if ($scope.currentTask.name.indexOf("Concorde") >= 0) {
+            $scope.step = "restoring";
+        } else {
+            $scope.step = "working";
+        }
     }
 
-    $scope.changeDestination = function(env){
+    $scope.changeDestination = function (env) {
         $scope.environment.destination = env.name;
         alternativeTarget = env.name;
     };
 
-    $scope.restore = function(){
+    $scope.restore = function () {
         deployService.pullAndRestoreRemoteContent(alternativeTarget).error(handleError);
-    	$scope.step = "restoring";
+        $scope.step = "restoring";
     };
 
+    $scope.skipPendingRestore = function() {
+        $scope.step = "";
+    };
+
+    $scope.restoreContentFromDisk = function() {
+        deployService.restoreContentFromDisk().error(handleError);
+        $scope.step = "restoring";
+    };
 });

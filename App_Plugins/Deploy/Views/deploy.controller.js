@@ -138,11 +138,29 @@
     	}).error(handleError);
     };
 
+    //compare item to its remote version
+    $scope.showCompareDetails = function (item) {
+
+        deployService.compareItemToRemote(item).success(function(response) {
+            item.comparison = response;
+        });
+
+    };
+
     //show the items packaged by courier
     $scope.showPackagedItems = function(){
         //if the task is completed
         //load the deployment
-        deployService.getDeployment().success( function(response){
+        deployService.getDeployment().success( function(response) {
+
+            //iterate through all the returned data for better view
+            var notallowed = [];
+            angular.forEach(response.notAllowed, function(value, key) {
+                var provider = deployService.itemProviderName(key);
+                provider.items = value;
+                notallowed.push(provider);
+                response.notAllowed = notallowed;
+            });
 
             $scope.manifest = response;
 
@@ -186,7 +204,6 @@
     deployService.environment().then(function (response) {
 
         $scope.environment = response.data;
-
         $scope.ui = getUiObject($scope.environment);
 
         //on init, check if a task is running already

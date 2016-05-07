@@ -1,0 +1,37 @@
+﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Comedy</Id>
+        <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Comedy</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Translations>
+        <Translation>
+            <CultureAlias>da</CultureAlias>
+            <Value>Comedy</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>en</CultureAlias>
+            <Value>Comedy</Value>
+        </Translation>
+    </Translations>
+</DictionaryItem>

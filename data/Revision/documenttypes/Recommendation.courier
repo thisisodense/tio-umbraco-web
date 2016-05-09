@@ -151,7 +151,7 @@
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Headline</Name>
+            <Name>Overskrift</Name>
             <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

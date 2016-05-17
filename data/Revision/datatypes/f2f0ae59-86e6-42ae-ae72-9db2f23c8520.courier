@@ -23,17 +23,12 @@
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>asc</Value>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
             <SortOrder>4</SortOrder>
             <Value>[&#xD;
-  {&#xD;
-    "alias": "title",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Navn"&#xD;
-  },&#xD;
   {&#xD;
     "alias": "placesToGoIn2016",&#xD;
     "isSystem": 0,&#xD;

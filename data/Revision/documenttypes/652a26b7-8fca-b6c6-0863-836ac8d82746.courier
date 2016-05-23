@@ -20,7 +20,7 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Writer</Id>
+        <Id>652a26b7-8fca-b6c6-0863-836ac8d82746</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>Writer</Name>
@@ -159,15 +159,20 @@
             <ContentTypeAlias>Writer</ContentTypeAlias>
             <SortOrder>0</SortOrder>
             <Text>Content</Text>
+            <UniqueId>b8c8bcdf-01aa-2c69-3901-476ee0166d2e</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Writer</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Info</Text>
+            <UniqueId>79693134-9272-8111-34cd-a246e7203707</UniqueId>
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>d28fbb0c-e526-4383-bd3a-34b69c496fb8</UniqueId>
+    <UniqueId>652a26b7-8fca-b6c6-0863-836ac8d82746</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,652a26b7-8fca-b6c6-0863-836ac8d82746</PathGuids>
 </DocumentType>

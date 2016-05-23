@@ -11,7 +11,7 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Recommendations</Id>
+        <Id>abbc9904-ce50-ed8e-64e7-24715dc6f52d</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>Home</Name>
@@ -59,13 +59,14 @@
             <ContentTypeAlias>Recommendations</ContentTypeAlias>
             <SortOrder>0</SortOrder>
             <Text>Meta</Text>
-            <UniqueId>00000000-0000-0000-0000-000000000000</UniqueId>
+            <UniqueId>890fb0f0-85cd-f757-dc19-2d64cefebb50</UniqueId>
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>02bba10e-36f5-479c-b968-6bd9811b05bc</UniqueId>
+    <UniqueId>abbc9904-ce50-ed8e-64e7-24715dc6f52d</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>true</AllowAtRoot>
     <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1</PathGuids>
+    <PathGuids>-1,abbc9904-ce50-ed8e-64e7-24715dc6f52d</PathGuids>
 </DocumentType>

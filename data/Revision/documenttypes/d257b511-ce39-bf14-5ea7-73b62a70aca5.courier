@@ -11,7 +11,7 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>RecommendationRepository</Id>
+        <Id>d257b511-ce39-bf14-5ea7-73b62a70aca5</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>Recommendation repository</Name>
@@ -27,7 +27,10 @@
     <Properties />
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>78d88ced-e6d4-44d6-a53e-edcfdaa1d680</UniqueId>
+    <UniqueId>d257b511-ce39-bf14-5ea7-73b62a70aca5</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>true</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,d257b511-ce39-bf14-5ea7-73b62a70aca5</PathGuids>
 </DocumentType>

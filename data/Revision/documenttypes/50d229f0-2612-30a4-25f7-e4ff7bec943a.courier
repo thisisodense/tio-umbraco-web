@@ -56,7 +56,7 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Location</Id>
+        <Id>50d229f0-2612-30a4-25f7-e4ff7bec943a</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>Location</Name>
@@ -305,15 +305,20 @@
             <ContentTypeAlias>Location</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
+            <UniqueId>e9410766-8013-6ca2-6443-388ce5cdba65</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Location</ContentTypeAlias>
             <SortOrder>2</SortOrder>
             <Text>Info</Text>
+            <UniqueId>932b6f97-53cd-3ff2-fadb-955347271692</UniqueId>
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>db23b057-dd1d-48bf-8de4-f7ead50b3989</UniqueId>
+    <UniqueId>50d229f0-2612-30a4-25f7-e4ff7bec943a</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,50d229f0-2612-30a4-25f7-e4ff7bec943a</PathGuids>
 </DocumentType>

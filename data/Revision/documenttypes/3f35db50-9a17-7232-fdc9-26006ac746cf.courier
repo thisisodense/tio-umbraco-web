@@ -1,0 +1,36 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>35c681c0-0f50-43b2-b730-9925b4623361</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 35c681c0-0f50-43b2-b730-9925b4623361</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>3f35db50-9a17-7232-fdc9-26006ac746cf</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Festival repository [test]</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>FestivalRepositoryTest</Alias>
+    <AllowedChildDocumentTypes>
+        <string>Festival</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates />
+    <Description />
+    <Icon>icon-flag-alt</Icon>
+    <Properties />
+    <Tabs />
+    <Thumbnail>folder.png</Thumbnail>
+    <UniqueId>3f35db50-9a17-7232-fdc9-26006ac746cf</UniqueId>
+    <MasterDocumentTypes />
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>true</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,3f35db50-9a17-7232-fdc9-26006ac746cf</PathGuids>
+</DocumentType>

@@ -1,15 +1,15 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
-        <Id>6c72d03d-c4d8-4d09-91d5-969b29b9642c</Id>
+        <Id>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>OpeningHours</Name>
+    <Name>True/false</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <DataBaseDataType>Ntext</DataBaseDataType>
-    <PropertyEditorAlias>Ubolt.OpeningHours</PropertyEditorAlias>
+    <DataBaseDataType>Integer</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.TrueFalse</PropertyEditorAlias>
     <Prevalues />
-    <UniqueID>6c72d03d-c4d8-4d09-91d5-969b29b9642c</UniqueID>
+    <UniqueID>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

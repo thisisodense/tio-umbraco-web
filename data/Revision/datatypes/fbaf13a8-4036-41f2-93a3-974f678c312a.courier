@@ -1,15 +1,15 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
-        <Id>6c72d03d-c4d8-4d09-91d5-969b29b9642c</Id>
+        <Id>fbaf13a8-4036-41f2-93a3-974f678c312a</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>OpeningHours</Name>
+    <Name>Checkbox list</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <DataBaseDataType>Ntext</DataBaseDataType>
-    <PropertyEditorAlias>Ubolt.OpeningHours</PropertyEditorAlias>
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.CheckBoxList</PropertyEditorAlias>
     <Prevalues />
-    <UniqueID>6c72d03d-c4d8-4d09-91d5-969b29b9642c</UniqueID>
+    <UniqueID>fbaf13a8-4036-41f2-93a3-974f678c312a</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

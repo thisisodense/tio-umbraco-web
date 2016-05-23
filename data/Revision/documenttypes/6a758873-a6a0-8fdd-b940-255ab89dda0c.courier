@@ -3,33 +3,34 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>35c681c0-0f50-43b2-b730-9925b4623361</Id>
+                <Id>f4714650-05af-4a3d-8fa2-bccdced9793e</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 35c681c0-0f50-43b2-b730-9925b4623361</Name>
+            <Name>Datatype: f4714650-05af-4a3d-8fa2-bccdced9793e</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>FestivalRepositoryTest</Id>
+        <Id>6a758873-a6a0-8fdd-b940-255ab89dda0c</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Festival repository [test]</Name>
+    <Name>Location repository</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>FestivalRepositoryTest</Alias>
+    <Alias>LocationRepository</Alias>
     <AllowedChildDocumentTypes>
-        <string>Festival</string>
+        <string>Location</string>
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
     <Description />
-    <Icon>icon-flag-alt</Icon>
+    <Icon>.sprTreeFolder</Icon>
     <Properties />
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>40fdd448-5624-4a38-8219-9c085f28d9f8</UniqueId>
+    <UniqueId>6a758873-a6a0-8fdd-b940-255ab89dda0c</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>true</IsContainer>
     <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1,40fdd448-5624-4a38-8219-9c085f28d9f8</PathGuids>
+    <PathGuids>-1,6a758873-a6a0-8fdd-b940-255ab89dda0c</PathGuids>
 </DocumentType>

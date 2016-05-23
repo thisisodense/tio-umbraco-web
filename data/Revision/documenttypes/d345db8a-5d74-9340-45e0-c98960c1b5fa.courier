@@ -11,7 +11,7 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>WriterRepository</Id>
+        <Id>d345db8a-5d74-9340-45e0-c98960c1b5fa</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>Writer repository</Name>
@@ -38,7 +38,10 @@
     </Properties>
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>0886af4c-977e-4c11-8644-db41af83fcdd</UniqueId>
+    <UniqueId>d345db8a-5d74-9340-45e0-c98960c1b5fa</UniqueId>
+    <MasterDocumentTypes />
     <AllowAtRoot>false</AllowAtRoot>
     <IsContainer>false</IsContainer>
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,d345db8a-5d74-9340-45e0-c98960c1b5fa</PathGuids>
 </DocumentType>

@@ -1,4 +1,4 @@
-﻿<DataType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
@@ -17,4 +17,5 @@
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>9e47630e-c2df-431c-ba01-c4c65148b98d</UniqueID>
+    <ParentContainerId xsi:nil="true" />
 </DataType>

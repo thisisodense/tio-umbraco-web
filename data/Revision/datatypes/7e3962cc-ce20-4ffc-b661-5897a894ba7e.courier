@@ -1,26 +1,21 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
-        <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
+        <Id>7e3962cc-ce20-4ffc-b661-5897a894ba7e</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>WebTags</Name>
+    <Name>Multiple Media Picker</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
-    <PropertyEditorAlias>Umbraco.Tags</PropertyEditorAlias>
+    <PropertyEditorAlias>Umbraco.MultipleMediaPicker</PropertyEditorAlias>
     <Prevalues>
         <DataTypePrevalue>
-            <Alias>group</Alias>
-            <SortOrder>1</SortOrder>
-            <Value>WebTags</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>storageType</Alias>
-            <SortOrder>2</SortOrder>
-            <Value>Csv</Value>
+            <Alias>multiPicker</Alias>
+            <SortOrder>0</SortOrder>
+            <Value>1</Value>
         </DataTypePrevalue>
     </Prevalues>
-    <UniqueID>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</UniqueID>
+    <UniqueID>7e3962cc-ce20-4ffc-b661-5897a894ba7e</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

@@ -1,10 +1,10 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
-        <Id>c0808dd3-8133-4e4b-8ce8-e2bea84a96a4</Id>
+        <Id>f4714650-05af-4a3d-8fa2-bccdced9793e</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>List View - Content</Name>
+    <Name>List View - LocationRepository</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
@@ -13,40 +13,50 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>1</SortOrder>
-            <Value>50</Value>
+            <Value>20</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>2</SortOrder>
-            <Value>VersionDate</Value>
+            <Value>Published</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
             <SortOrder>3</SortOrder>
-            <Value>asc</Value>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
             <SortOrder>4</SortOrder>
             <Value>[&#xD;
   {&#xD;
-    "alias": "sortOrder",&#xD;
-    "header": "Sort order",&#xD;
-    "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "updateDate",&#xD;
     "header": "Last edited",&#xD;
     "isSystem": 1&#xD;
   },&#xD;
   {&#xD;
-    "alias": "owner",&#xD;
-    "header": "Created by",&#xD;
-    "isSystem": 1&#xD;
+    "alias": "writer",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "writer"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "PlacesToGoin2015",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Places 2015"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "fromRecommendation",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Fra Anbef."&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "tags",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Tags"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>
     </Prevalues>
-    <UniqueID>c0808dd3-8133-4e4b-8ce8-e2bea84a96a4</UniqueID>
+    <UniqueID>f4714650-05af-4a3d-8fa2-bccdced9793e</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

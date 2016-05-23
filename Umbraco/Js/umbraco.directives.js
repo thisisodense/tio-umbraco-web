@@ -1,6 +1,6 @@
 /*! umbraco
  * https://github.com/umbraco/umbraco-cms/
- * Copyright (c) 2015 Umbraco HQ;
+ * Copyright (c) 2016 Umbraco HQ;
  * Licensed MIT
  */
 
@@ -78,36 +78,45 @@ angular.module("umbraco.directives")
 
 angular.module("umbraco.directives")
     .directive('umbAutoResize', function($timeout) {
+        return {
+            require: "^?umbTabs",
+            link: function(scope, element, attr, tabsCtrl) {
+                var domEl = element[0];
+                var update = function(force) {
+                    if (force === true) {
+                        element.height(0);
+                    }
 
-        return function(scope, element, attr){
-            var domEl = element[0];
-            var update = function(force) {
+                    if (domEl.scrollHeight !== domEl.clientHeight) {
+                        element.height(domEl.scrollHeight);
+                    }
+                };
+                var blur = function() {
+                    update(true);
+                };
 
-                if(force === true){
-                    element.height(0);
+                element.bind('keyup keydown keypress change', update);
+                element.bind('blur', blur);
+
+                $timeout(function() {
+                    update(true);
+                }, 200);
+
+
+                //listen for tab changes
+                if (tabsCtrl != null) {
+                    tabsCtrl.onTabShown(function(args) {
+                        update();
+                    });
                 }
 
-                if(domEl.scrollHeight !== domEl.clientHeight){
-                    element.height(domEl.scrollHeight);
-                }
-            };
-
-            element.bind('keyup keydown keypress change', update);
-            element.bind('blur', function(){ update(true); });
-
-            $timeout(function() {
-                update(true);
-            }, 200);
-
-
-            //I hate bootstrap tabs
-            $('a[data-toggle="tab"]').on('shown', update);
-
-            scope.$on('$destroy', function() {
-                $('a[data-toggle="tab"]').unbind("shown", update);
-            });
-    };
-});
+                scope.$on('$destroy', function () {
+                    element.unbind('keyup keydown keypress change', update);
+                    element.unbind('blur', blur);
+                });
+            }
+        };
+    });
 
 /*
 example usage: <textarea json-edit="myObject" rows="8" class="form-control"></textarea>
@@ -642,7 +651,7 @@ angular.module("umbraco.directives")
                         if(scope.configuration && scope.configuration.stylesheets){
                             angular.forEach(scope.configuration.stylesheets, function(stylesheet, key){
 
-                                    stylesheets.push("/css/" + stylesheet + ".css");
+                                    stylesheets.push(Umbraco.Sys.ServerVariables.umbracoSettings.cssPath + "/" + stylesheet + ".css");
                                     await.push(stylesheetResource.getRulesByName(stylesheet).then(function (rules) {
                                         angular.forEach(rules, function (rule) {
                                           var r = {};
@@ -651,6 +660,9 @@ angular.module("umbraco.directives")
                                               r.inline = "span";
                                               r.classes = rule.selector.substring(1);
                                           }else if (rule.selector[0] === "#") {
+                                              //Even though this will render in the style drop down, it will not actually be applied
+                                              // to the elements, don't think TinyMCE even supports this and it doesn't really make much sense
+                                              // since only one element can have one id.
                                               r.inline = "span";
                                               r.attributes = { id: rule.selector.substring(1) };
                                           }else {
@@ -689,6 +701,31 @@ angular.module("umbraco.directives")
 
 
                             if (tinyMceConfig.customConfig) {
+								
+								//if there is some custom config, we need to see if the string value of each item might actually be json and if so, we need to
+                                // convert it to json instead of having it as a string since this is what tinymce requires
+                                for (var i in tinyMceConfig.customConfig) {
+                                    var val = tinyMceConfig.customConfig[i];
+                                    if (val) {
+                                        val = val.toString().trim();
+                                        if (val.detectIsJson()) {
+                                            try {
+                                                tinyMceConfig.customConfig[i] = JSON.parse(val);
+                                                //now we need to check if this custom config key is defined in our baseline, if it is we don't want to
+                                                //overwrite the baseline config item if it is an array, we want to concat the items in the array, otherwise
+                                                //if it's an object it will overwrite the baseline
+                                                if (angular.isArray(baseLineConfigObj[i]) && angular.isArray(tinyMceConfig.customConfig[i])) {
+                                                    //concat it and below this concat'd array will overwrite the baseline in angular.extend
+                                                    tinyMceConfig.customConfig[i] = baseLineConfigObj[i].concat(tinyMceConfig.customConfig[i]);
+                                                }
+                                            }
+                                            catch (e) {
+                                                //cannot parse, we'll just leave it
+                                            }
+                                        }
+                                    }
+                                }
+ 
                                 angular.extend(baseLineConfigObj, tinyMceConfig.customConfig);
                             }
 
@@ -818,7 +855,7 @@ angular.module("umbraco.directives")
                                 });
 
                                 editor.on('ObjectResized', function (e) {
-                                    var qs = "?width=" + e.width + "px&height=" + e.height + "px";
+                                    var qs = "?width=" + e.width + "&height=" + e.height;
                                     var srcAttr = $(e.target).attr("src");
                                     var path = srcAttr.split("?")[0];
                                     $(e.target).attr("data-mce-src", path + qs);
@@ -962,34 +999,6 @@ angular.module("umbraco.directives")
 });
 /**
 * @ngdoc directive
-* @name umbraco.directives.directive:umbAvatar
-* @restrict E
-**/
-function avatarDirective() {
-    return {
-        restrict: "E",    // restrict to an element
-        replace: true,   // replace the html element with the template
-        templateUrl: 'views/directives/umb-avatar.html',
-        scope: {
-            name: '@',
-            email: '@',
-            hash: '@'
-        },
-        link: function(scope, element, attr, ctrl) {
-
-            scope.$watch("hash", function (val) {
-                //set the gravatar url
-                scope.gravatar = "//www.gravatar.com/avatar/" + val + "?s=40";
-            });
-            
-        }
-    };
-}
-
-angular.module('umbraco.directives').directive("umbAvatar", avatarDirective);
-
-/**
-* @ngdoc directive
 * @name umbraco.directives.directive:umbProperty
 * @restrict E
 **/
@@ -1034,8 +1043,16 @@ angular.module("umbraco.directives.html")
             }
         };
     });
+/**
+* @ngdoc directive
+* @name umbraco.directives.directive:umbHeader 
+* @restrict E
+* @function
+* @description 
+* The header on an editor that contains tabs using bootstrap tabs - THIS IS OBSOLETE, use umbTabHeader instead
+**/
 angular.module("umbraco.directives")
-.directive('umbHeader', function($parse, $timeout){
+.directive('umbHeader', function ($parse, $timeout) {
     return {
         restrict: 'E',
         replace: true,
@@ -1047,50 +1064,13 @@ angular.module("umbraco.directives")
             tabs: "="
         },
         link: function (scope, iElement, iAttrs) {
-
-            var maxTabs = 4;
-
-            function collectFromDom(activeTab){
-                var $panes = $('div.tab-content');
-                
-                angular.forEach($panes.find('.tab-pane'), function (pane, index) {
-                    var $this = angular.element(pane);
-
-                    var id = $this.attr("rel");
-                    var label = $this.attr("label");
-                    var tab = {id: id, label: label, active: false};
-                    if(!activeTab){
-                        tab.active = true;
-                        activeTab = tab;
-                    }
-
-                    if ($this.attr("rel") === String(activeTab.id)) {
-                        $this.addClass('active');
-                    }
-                    else {
-                        $this.removeClass('active');
-                    }
-                    
-                    if(label){
-                            scope.visibleTabs.push(tab);
-                    }
-
-                });
-
-                $('.nav-pills, .nav-tabs').tabdrop();
-            }
-
+            
             scope.showTabs = iAttrs.tabs ? true : false;
             scope.visibleTabs = [];
-            scope.overflownTabs = [];
 
-            $timeout(function () {
-                collectFromDom(undefined);
-            }, 500);
-
-            //when the tabs change, we need to hack the planet a bit and force the first tab content to be active,
-            //unfortunately twitter bootstrap tabs is not playing perfectly with angular.
-            scope.$watch("tabs", function (newValue, oldValue) {
+            //since tabs are loaded async, we need to put a watch on them to determine
+            // when they are loaded, then we can close the watch
+            var tabWatch = scope.$watch("tabs", function (newValue, oldValue) {
 
                 angular.forEach(newValue, function(val, index){
                         var tab = {id: val.id, label: val.label};
@@ -1100,16 +1080,25 @@ angular.module("umbraco.directives")
                 //don't process if we cannot or have already done so
                 if (!newValue) {return;}
                 if (!newValue.length || newValue.length === 0){return;}
-                
-                var activeTab = _.find(newValue, function (item) {
-                    return item.active;
-                });
-
+               
                 //we need to do a timeout here so that the current sync operation can complete
                 // and update the UI, then this will fire and the UI elements will be available.
                 $timeout(function () {
-                    collectFromDom(activeTab);
-                }, 500);
+
+                    //use bootstrap tabs API to show the first one
+                    iElement.find(".nav-tabs a:first").tab('show');
+
+                    //enable the tab drop
+                    iElement.find('.nav-pills, .nav-tabs').tabdrop();
+
+                    //ensure to destroy tabdrop (unbinds window resize listeners)
+                    scope.$on('$destroy', function () {
+                        iElement.find('.nav-pills, .nav-tabs').tabdrop("destroy");
+                    });
+
+                    //stop watching now
+                    tabWatch();
+                }, 200);
                 
             });
         }
@@ -1217,13 +1206,58 @@ angular.module("umbraco.directives.html")
 * @restrict E
 **/
 angular.module("umbraco.directives")
-.directive('umbTab', function(){
-	return {
+.directive('umbTab', function ($parse, $timeout) {
+    return {
 		restrict: 'E',
-		replace: true,
-		transclude: 'true',
-		templateUrl: 'views/directives/umb-tab.html'
-	};
+		replace: true,		
+        transclude: 'true',
+		templateUrl: 'views/directives/umb-tab.html'		
+    };
+});
+/**
+* @ngdoc directive
+* @name umbraco.directives.directive:umbTabs 
+* @restrict A
+* @description Used to bind to bootstrap tab events so that sub directives can use this API to listen to tab changes
+**/
+angular.module("umbraco.directives")
+.directive('umbTabs', function () {
+    return {
+		restrict: 'A',
+		controller: function ($scope, $element, $attrs) {
+            
+		    var callbacks = [];
+		    this.onTabShown = function(cb) {
+		        callbacks.push(cb);
+		    };
+
+            function tabShown(event) {
+
+                var curr = $(event.target);         // active tab
+                var prev = $(event.relatedTarget);  // previous tab
+
+                for (var c in callbacks) {
+                    callbacks[c].apply(this, [{current: curr, previous: prev}]);
+                }
+            }
+
+		    //NOTE: it MUST be done this way - binding to an ancestor element that exists
+		    // in the DOM to bind to the dynamic elements that will be created.
+		    // It would be nicer to create this event handler as a directive for which child
+		    // directives can attach to.
+            $element.on('shown', '.nav-tabs a', tabShown);
+
+		    //ensure to unregister
+            $scope.$on('$destroy', function () {
+		        $element.off('shown', '.nav-tabs a', tabShown);
+
+		        for (var c in callbacks) {
+		            delete callbacks[c];
+		        }
+		        callbacks = null;
+		    });
+		}
+    };
 });
 /**
 * @ngdoc directive
@@ -1602,6 +1636,13 @@ function umbImageFolder($rootScope, assetsService, $timeout, $log, umbRequestHel
                         found.completed = true;
                     }
 
+                    //Show notifications!!!!
+                    if (data.result && data.result.notifications && angular.isArray(data.result.notifications)) {
+                        for (var n = 0; n < data.result.notifications.length; n++) {
+                            notificationsService.showNotification(data.result.notifications[n]);
+                        }
+                    }
+
                     //when none are left resync everything
                     var remaining = _.filter(scope.files, function (file) { return file.completed !== true; });
                     if (remaining.length === 0) {
@@ -1963,6 +2004,113 @@ function umbImageUploadProgress($rootScope, assetsService, $timeout, $log, umbRe
 angular.module("umbraco.directives").directive('umbImageUploadProgress', umbImageUploadProgress);
 /**
 * @ngdoc directive
+* @name umbraco.directives.directive:navResize
+* @restrict A
+ * 
+ * @description
+ * Handles how the navigation responds to window resizing and controls how the draggable resize panel works
+**/
+angular.module("umbraco.directives")
+    .directive('navResize', function (appState, eventsService, windowResizeListener) {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs, ctrl) {
+
+                var minScreenSize = 1100;
+                var resizeEnabled = false;
+
+                function setTreeMode() {
+                    appState.setGlobalState("showNavigation", appState.getGlobalState("isTablet") === false);
+                }
+
+                function enableResize() {
+                    //only enable when the size is correct and it's not already enabled
+                    if (!resizeEnabled && appState.getGlobalState("isTablet") === false) {
+                        element.resizable(
+                        {
+                            containment: $("#mainwrapper"),
+                            autoHide: true,
+                            handles: "e",
+                            alsoResize: ".navigation-inner-container",
+                            resize: function(e, ui) {
+                                var wrapper = $("#mainwrapper");
+                                var contentPanel = $("#contentwrapper");
+                                var apps = $("#applications");
+                                var bottomBar = contentPanel.find(".umb-bottom-bar");
+                                var navOffeset = $("#navOffset");
+
+                                var leftPanelWidth = ui.element.width() + apps.width();
+
+                                contentPanel.css({ left: leftPanelWidth });
+                                bottomBar.css({ left: leftPanelWidth });
+
+                                navOffeset.css({ "margin-left": ui.element.outerWidth() });
+                            },
+                            stop: function (e, ui) {
+                             
+                            }
+                        });
+
+                        resizeEnabled = true;
+                    }
+                }
+
+                function resetResize() {
+                    if (resizeEnabled) {
+                        //kill the resize
+                        element.resizable("destroy");
+
+                        element.css("width", "");
+                        var navInnerContainer = element.find(".navigation-inner-container");
+                        navInnerContainer.css("width", "");
+                        $("#contentwrapper").css("left", "");
+                        $("#navOffset").css("margin-left", "");
+
+                        resizeEnabled = false;
+                    }
+                }
+
+                var evts = [];
+
+                //Listen for global state changes
+                evts.push(eventsService.on("appState.globalState.changed", function (e, args) {
+                    if (args.key === "showNavigation") {
+                        if (args.value === false) {
+                            resetResize();
+                        }
+                        else {
+                            enableResize();
+                        }
+                    }
+                }));
+
+                var resizeCallback = function(size) {
+                    //set the global app state
+                    appState.setGlobalState("isTablet", (size.width <= minScreenSize));
+                    setTreeMode();
+                };
+
+                windowResizeListener.register(resizeCallback);
+
+                //ensure to unregister from all events and kill jquery plugins
+                scope.$on('$destroy', function () {
+                    windowResizeListener.unregister(resizeCallback);
+                    for (var e in evts) {
+                        eventsService.unsubscribe(evts[e]);                        
+                    }
+                    var navInnerContainer = element.find(".navigation-inner-container");
+                    navInnerContainer.resizable("destroy");
+                });
+
+                //init
+                //set the global app state
+                appState.setGlobalState("isTablet", ($(window).width() <= minScreenSize));
+                setTreeMode();
+            }
+        };
+    });
+/**
+* @ngdoc directive
 * @name umbraco.directives.directive:umbItemSorter
 * @function
 * @element ANY
@@ -2154,7 +2302,7 @@ angular.module('umbraco.directives').directive("umbLogin", loginDirective);
 * @name umbraco.directives.directive:umbNavigation
 * @restrict E
 **/
-function leftColumnDirective() {
+function umbNavigationDirective() {
     return {
         restrict: "E",    // restrict to an element
         replace: true,   // replace the html element with the template
@@ -2162,17 +2310,27 @@ function leftColumnDirective() {
     };
 }
 
-angular.module('umbraco.directives').directive("umbNavigation", leftColumnDirective);
-
+angular.module('umbraco.directives').directive("umbNavigation", umbNavigationDirective);
 /**
  * @ngdoc directive
  * @name umbraco.directives.directive:umbNotifications
  */
-function notificationDirective() {
+function notificationDirective(notificationsService) {
     return {
         restrict: "E",    // restrict to an element
         replace: true,   // replace the html element with the template
-        templateUrl: 'views/directives/umb-notifications.html'
+        templateUrl: 'views/directives/umb-notifications.html',
+        link: function (scope, element, attr, ctrl) {
+
+            //subscribes to notifications in the notification service
+            scope.notifications = notificationsService.current;
+            scope.$watch('notificationsService.current', function (newVal, oldVal, scope) {
+                if (newVal) {
+                    scope.notifications = newVal;
+                }
+            });
+
+        }
     };
 }
 
@@ -2231,14 +2389,16 @@ angular.module("umbraco.directives")
             restrict: 'E',
             replace: true,        
             templateUrl: 'views/directives/umb-property.html',
-
+            link: function(scope) {
+                scope.propertyAlias = Umbraco.Sys.ServerVariables.isDebuggingEnabled === true ? scope.property.alias : null;
+            },
             //Define a controller for this directive to expose APIs to other directives
             controller: function ($scope, $timeout) {
                
                 var self = this;
 
                 //set the API properties/methods
-
+                
                 self.property = $scope.property;
                 self.setPropertyError = function(errorMsg) {
                     $scope.property.propertyErrorMessage = errorMsg;
@@ -2342,14 +2502,24 @@ function sectionsDirective($timeout, $window, navigationService, treeService, se
 				navigationService.showHelpDialog();
 			};
 
-			scope.sectionClick = function (section) {
+			scope.sectionClick = function (event, section) {
+
+			    if (event.ctrlKey ||
+			        event.shiftKey ||
+			        event.metaKey || // apple
+			        (event.button && event.button === 1) // middle click, >IE9 + everyone else
+			    ) {
+			        return;
+			    }
+
+
 			    if (navigationService.userDialog) {
 			        navigationService.userDialog.close();
 			    }
 			    if (navigationService.helpDialog) {
 			        navigationService.helpDialog.close();
 			    }
-			    
+
 			    navigationService.hideSearch();
 			    navigationService.showTree(section.alias);
 			    $location.path("/" + section.alias);
@@ -2590,8 +2760,8 @@ function umbTreeDirective($compile, $log, $q, $rootScope, treeService, notificat
                     function doLoad(tree) {
                         var childrenAndSelf = [tree].concat(tree.children);
                         scope.activeTree = _.find(childrenAndSelf, function (node) {
-                            if(node && node.metaData){
-                                return node.metaData.treeAlias === treeAlias;
+                            if(node && node.metaData && node.metaData.treeAlias) {
+                                return node.metaData.treeAlias.toUpperCase() === treeAlias.toUpperCase();
                             }
                             return false;
                         });
@@ -2838,11 +3008,10 @@ angular.module("umbraco.directives")
         template: '<li ng-class="{\'current\': (node == currentNode)}" on-right-click="altSelect(node, $event)">' +
             '<div ng-class="getNodeCssClass(node)" ng-swipe-right="options(node, $event)" >' +
             //NOTE: This ins element is used to display the search icon if the node is a container/listview and the tree is currently in dialog
-            //'<ins ng-if="tree.enablelistviewsearch && node.metaData.isContainer" class="umb-tree-node-search icon-search" ng-click="searchNode(node, $event)" alt="searchAltText"></ins>' +            
-            '<ins style="width:18px;"></ins>' +
-            '<ins ng-class="{\'icon-navigation-right\': !node.expanded, \'icon-navigation-down\': node.expanded}" ng-click="load(node)"></ins>' +
-            '<i class="icon umb-tree-icon sprTree"></i>' +
-            '<a ng-click="select(node, $event)"></a>' +
+            //'<ins ng-if="tree.enablelistviewsearch && node.metaData.isContainer" class="umb-tree-node-search icon-search" ng-click="searchNode(node, $event)" alt="searchAltText"></ins>' + 
+            '<ins ng-class="{\'icon-navigation-right\': !node.expanded, \'icon-navigation-down\': node.expanded}" ng-click="load(node)">&nbsp;</ins>' +
+            '<i class="icon umb-tree-icon sprTree" ng-click="select(node, $event)"></i>' +
+            '<a href="#/{{node.routePath}}" ng-click="select(node, $event)"></a>' +
             //NOTE: These are the 'option' elipses
             '<a class="umb-options" ng-click="options(node, $event)"><i></i><i></i><i></i></a>' +
             '<div ng-show="node.loading" class="l"><div></div></div>' +
@@ -2888,7 +3057,7 @@ angular.module("umbraco.directives")
                 icon.addClass(node.cssClass);
                 icon.attr("title", node.routePath);
 
-                element.find("a:first").html(node.name);
+                element.find("a:first").text(node.name);
 
                 if (!node.menuUrl) {
                     element.find("a.umb-options").remove();
@@ -2950,8 +3119,17 @@ angular.module("umbraco.directives")
               and emits it as a treeNodeSelect element if there is a callback object
               defined on the tree
             */
-            scope.select = function(n, ev) {
+            scope.select = function (n, ev) {
+                if (ev.ctrlKey ||
+                    ev.shiftKey ||
+                    ev.metaKey || // apple
+                    (ev.button && ev.button === 1) // middle click, >IE9 + everyone else
+                ) {
+                    return;
+                }
+
                 emitEvent("treeNodeSelect", { element: element, tree: scope.tree, node: n, event: ev });
+                ev.preventDefault();
             };
 
             /**
@@ -3144,7 +3322,7 @@ function treeSearchResults() {
 }
 angular.module('umbraco.directives').directive("umbTreeSearchResults", treeSearchResults);
 /**
-* @description Utillity directives for key and field events
+* @description Utility directives for key and field events
 **/
 angular.module('umbraco.directives')
 
@@ -3345,21 +3523,31 @@ angular.module("umbraco.directives")
             link: function (scope, element, attrs, ctrl) {
                 var active = false;
                 var fn = $parse(attrs.delayedMouseleave);
-                element.on("mouseleave", function(event) {
-                    var callback = function() {
-                        fn(scope, {$event:event});
+
+                function mouseLeave(event) {
+                    var callback = function () {
+                        fn(scope, { $event: event });
                     };
 
                     active = false;
-                    $timeout(function(){
-                        if(active === false){
+                    $timeout(function () {
+                        if (active === false) {
                             scope.$apply(callback);
                         }
                     }, 650);
-                });
+                }
 
-                element.on("mouseenter", function(event, args){
+                function mouseEnter(event, args){
                     active = true;
+                }
+
+                element.on("mouseleave", mouseLeave);
+                element.on("mouseenter", mouseEnter);
+
+                //unbind!!
+                scope.$on('$destroy', function () {
+                    element.off("mouseleave", mouseLeave);
+                    element.off("mouseenter", mouseEnter);
                 });
             }
         };
@@ -3368,49 +3556,80 @@ angular.module("umbraco.directives")
 /**
 * @ngdoc directive
 * @name umbraco.directives.directive:umbPanel
-* @restrict E
+* @description This is used for the editor buttons to ensure they are displayed correctly if the horizontal overflow of the editor
+ * exceeds the height of the window
 **/
 angular.module("umbraco.directives.html")
-	.directive('detectFold', function($timeout, $log){
-		return {
+	.directive('detectFold', function ($timeout, $log, windowResizeListener) {
+	    return {
+            require: "^?umbTabs",
 			restrict: 'A',
-			link: function (scope, el, attrs) {
-				
-				var state = false,
-					parent = $(".umb-panel-body"),
-					winHeight = $(window).height(),
-					calculate = _.throttle(function(){
-						if(el && el.is(":visible") && !el.hasClass("umb-bottom-bar")){
-							//var parent = el.parent();
-							var hasOverflow = parent.innerHeight() < parent[0].scrollHeight;
-							//var belowFold = (el.offset().top + el.height()) > winHeight;
-							if(hasOverflow){
-								el.addClass("umb-bottom-bar");
-							}
-						}
-						return state;
-					}, 1000);
+			link: function (scope, el, attrs, tabsCtrl) {
 
-				scope.$watch(calculate, function(newVal, oldVal) {
-					if(newVal !== oldVal){
-						if(newVal){
-							el.addClass("umb-bottom-bar");
-						}else{
-							el.removeClass("umb-bottom-bar");
-						}	
-					}
-				});
+			    var firstRun = false;
+			    var parent = $(".umb-panel-body");
+			    var winHeight = $(window).height();
+			    var calculate = function () {
+			        if (el && el.is(":visible") && !el.hasClass("umb-bottom-bar")) {
 
-				$(window).bind("resize", function () {
-				   winHeight = $(window).height();
-				   el.removeClass("umb-bottom-bar");
-				   state = false;
-				   calculate();
-				});
+			            //now that the element is visible, set the flag in a couple of seconds, 
+			            // this will ensure that loading time of a current tab get's completed and that
+			            // we eventually stop watching to save on CPU time
+			            $timeout(function() {
+			                firstRun = true;
+			            }, 4000);
 
-				$('a[data-toggle="tab"]').on('shown', function (e) {
-					calculate();
-				});
+			            //var parent = el.parent();
+			            var hasOverflow = parent.innerHeight() < parent[0].scrollHeight;
+			            //var belowFold = (el.offset().top + el.height()) > winHeight;
+			            if (hasOverflow) {
+			                el.addClass("umb-bottom-bar");
+
+			                //I wish we didn't have to put this logic here but unfortunately we 
+			                // do. This needs to calculate the left offest to place the bottom bar
+			                // depending on if the left column splitter has been moved by the user
+                            // (based on the nav-resize directive)
+			                var wrapper = $("#mainwrapper");
+			                var contentPanel = $("#leftcolumn").next();
+			                var contentPanelLeftPx = contentPanel.css("left");
+
+			                el.css({ left: contentPanelLeftPx });
+			            }
+			        }
+			        return firstRun;
+			    };
+
+			    var resizeCallback = function(size) {
+			        winHeight = size.height;
+			        el.removeClass("umb-bottom-bar");
+			        calculate();
+			    };
+
+			    windowResizeListener.register(resizeCallback);
+
+			    //Only execute the watcher if this tab is the active (first) tab on load, otherwise there's no reason to execute
+			    // the watcher since it will be recalculated when the tab changes!
+                if (el.closest(".umb-tab-pane").index() === 0) {
+                    //run a watcher to ensure that the calculation occurs until it's firstRun but ensure
+                    // the calculations are throttled to save a bit of CPU
+                    var listener = scope.$watch(_.throttle(calculate, 1000), function (newVal, oldVal) {
+                        if (newVal !== oldVal) {
+                            listener();
+                        }
+                    });
+                }
+
+			    //listen for tab changes
+                if (tabsCtrl != null) {
+                    tabsCtrl.onTabShown(function (args) {
+                        calculate();
+                    });
+                }
+			    
+			    //ensure to unregister
+			    scope.$on('$destroy', function() {
+			        windowResizeListener.unregister(resizeCallback);			       
+			    });
 			}
 		};
 	});
@@ -3478,7 +3697,9 @@ angular.module("umbraco.directives").directive('focusWhen', function ($timeout) 
         link: function (scope, elm, attrs, ctrl) {
             attrs.$observe("focusWhen", function (newValue) {
                 if (newValue === "true") {
-                    elm.focus();
+                    $timeout(function() {
+                        elm.focus();
+                    });
                 }
             });
         }

@@ -83,11 +83,6 @@
     "alias": "writer",&#xD;
     "isSystem": 0,&#xD;
     "header": "Skribent"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "name",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Navn"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

@@ -3,6 +3,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>4a9cc1ba-4803-4c03-9bb3-be339d1651cf</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 4a9cc1ba-4803-4c03-9bb3-be339d1651cf</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -16,6 +25,15 @@
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: 6c72d03d-c4d8-4d09-91d5-969b29b9642c</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9be58c0e-d083-4fcc-a1e8-d34be2214c1b</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -66,7 +84,7 @@
     <AllowedChildDocumentTypes />
     <AllowedTemplates />
     <Description />
-    <Icon>.sprTreeFolder</Icon>
+    <Icon>icon-folder</Icon>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>8c64eae0-4f2f-6413-f52c-33b66457b3c6</UniqueId>
@@ -98,6 +116,25 @@
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
             <SortOrder>13</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>b4fd8c39-7bf4-4dd9-898e-c7525c37bdfb</UniqueId>
+            <Alias>fotograf</Alias>
+            <DataTypeDefinitionId>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>Fotograf</Name>
+            <SortOrder>17</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>945dfe80-4e51-4eb9-b6ad-71becf527b58</UniqueId>
+            <Alias>fotografURL</Alias>
+            <DataTypeDefinitionId>4a9cc1ba-4803-4c03-9bb3-be339d1651cf</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>Fotograf URL</Name>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

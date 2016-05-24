@@ -1,0 +1,20 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Location - Fotograf - Limited Textbox Single Line</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>CharLimitInput</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>limit</Alias>
+            <SortOrder>1</SortOrder>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

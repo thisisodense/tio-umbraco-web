@@ -55,11 +55,6 @@
             <SortOrder>6</SortOrder>
             <Value>[&#xD;
   {&#xD;
-    "alias": "address",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Adresse"&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "placesToGoIn2016",&#xD;
     "isSystem": 0,&#xD;
     "header": "Byguide 2016"&#xD;
@@ -68,11 +63,6 @@
     "alias": "updateDate",&#xD;
     "header": "Last edited",&#xD;
     "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "tags",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Tags"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

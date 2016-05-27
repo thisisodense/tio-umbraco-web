@@ -65,14 +65,9 @@
     "header": "Byguide 2016"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "updateDate",&#xD;
-    "header": "Last edited",&#xD;
-    "isSystem": 1&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "categories",&#xD;
+    "alias": "email",&#xD;
     "isSystem": 0,&#xD;
-    "header": "Kategori"&#xD;
+    "header": "Email"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

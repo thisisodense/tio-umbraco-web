@@ -68,6 +68,11 @@
     "alias": "email",&#xD;
     "isSystem": 0,&#xD;
     "header": "Email"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "location",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "id"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

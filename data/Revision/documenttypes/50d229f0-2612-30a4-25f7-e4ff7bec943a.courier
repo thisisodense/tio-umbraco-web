@@ -3,15 +3,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>4a9cc1ba-4803-4c03-9bb3-be339d1651cf</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 4a9cc1ba-4803-4c03-9bb3-be339d1651cf</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -30,19 +21,19 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</Id>
+                <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 9be58c0e-d083-4fcc-a1e8-d34be2214c1b</Name>
+            <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
+                <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
+            <Name>Datatype: 9e47630e-c2df-431c-ba01-c4c65148b98d</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -122,7 +113,7 @@
         <ContentTypeProperty>
             <UniqueId>b4fd8c39-7bf4-4dd9-898e-c7525c37bdfb</UniqueId>
             <Alias>fotograf</Alias>
-            <DataTypeDefinitionId>9be58c0e-d083-4fcc-a1e8-d34be2214c1b</DataTypeDefinitionId>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Fotograf</Name>
             <SortOrder>17</SortOrder>
@@ -131,7 +122,7 @@
         <ContentTypeProperty>
             <UniqueId>945dfe80-4e51-4eb9-b6ad-71becf527b58</UniqueId>
             <Alias>fotografURL</Alias>
-            <DataTypeDefinitionId>4a9cc1ba-4803-4c03-9bb3-be339d1651cf</DataTypeDefinitionId>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Fotograf URL</Name>
             <SortOrder>18</SortOrder>

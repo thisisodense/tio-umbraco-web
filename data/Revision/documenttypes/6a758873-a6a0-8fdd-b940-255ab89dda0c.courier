@@ -23,7 +23,7 @@
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
     <Description />
-    <Icon>.sprTreeFolder</Icon>
+    <Icon>icon-folder</Icon>
     <Properties />
     <Tabs />
     <Thumbnail>folder.png</Thumbnail>

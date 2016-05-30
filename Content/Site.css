@@ -438,6 +438,7 @@ a:active, a:link, a:visited {
         position: absolute;
         right: 0;
         bottom: 5px;
+        font-size:10pt;
         z-index:10000;
     }
     

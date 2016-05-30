@@ -11,23 +11,48 @@
     <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
     <Prevalues>
         <DataTypePrevalue>
-            <Alias>pageSize</Alias>
+            <Alias>displayAtTabNumber</Alias>
             <SortOrder>1</SortOrder>
+            <Value>1</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>pageSize</Alias>
+            <SortOrder>2</SortOrder>
             <Value>50</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
-            <SortOrder>2</SortOrder>
-            <Value>VersionDate</Value>
+            <SortOrder>3</SortOrder>
+            <Value>Name</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
-            <SortOrder>3</SortOrder>
+            <SortOrder>4</SortOrder>
             <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
+            <Alias>layouts</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>[&#xD;
+  {&#xD;
+    "name": "List",&#xD;
+    "path": "views/propertyeditors/listview/layouts/list/list.html",&#xD;
+    "icon": "icon-list",&#xD;
+    "isSystem": 1,&#xD;
+    "selected": true&#xD;
+  },&#xD;
+  {&#xD;
+    "name": "Grid",&#xD;
+    "path": "views/propertyeditors/listview/layouts/grid/grid.html",&#xD;
+    "icon": "icon-thumbnails-small",&#xD;
+    "isSystem": 1,&#xD;
+    "selected": true&#xD;
+  }&#xD;
+]</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
             <Alias>includeProperties</Alias>
-            <SortOrder>4</SortOrder>
+            <SortOrder>6</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "alias": "placesToGoIn2016",&#xD;
@@ -40,6 +65,17 @@
     "isSystem": 1&#xD;
   }&#xD;
 ]</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>bulkActionPermissions</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>{&#xD;
+  "allowBulkPublish": true,&#xD;
+  "allowBulkUnpublish": true,&#xD;
+  "allowBulkCopy": true,&#xD;
+  "allowBulkMove": true,&#xD;
+  "allowBulkDelete": true&#xD;
+}</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>f2f0ae59-86e6-42ae-ae72-9db2f23c8520</UniqueID>

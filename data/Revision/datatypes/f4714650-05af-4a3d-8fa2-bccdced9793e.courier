@@ -23,7 +23,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>3</SortOrder>
-            <Value>VersionDate</Value>
+            <Value>Name</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
@@ -58,11 +58,6 @@
     "alias": "address",&#xD;
     "isSystem": 0,&#xD;
     "header": "Adresse"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "placesToGoIn2016",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Byguide 2016"&#xD;
   },&#xD;
   {&#xD;
     "alias": "email",&#xD;

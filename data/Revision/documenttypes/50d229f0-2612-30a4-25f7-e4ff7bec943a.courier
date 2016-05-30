@@ -1,5 +1,14 @@
-﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>40aff69c-4bdd-4fa1-833b-bdb3080422a9</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 40aff69c-4bdd-4fa1-833b-bdb3080422a9</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
@@ -66,7 +75,7 @@
     <AllowedChildDocumentTypes />
     <AllowedTemplates />
     <Description />
-    <Icon>.sprTreeFolder</Icon>
+    <Icon>icon-folder</Icon>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>8c64eae0-4f2f-6413-f52c-33b66457b3c6</UniqueId>
@@ -256,6 +265,15 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>361770ac-fc17-43bd-a104-cd96d9f8fe79</UniqueId>
+            <Alias>socialPostsForLocations</Alias>
+            <DataTypeDefinitionId>40aff69c-4bdd-4fa1-833b-bdb3080422a9</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>SocialPostsForLocations</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>SocialPosts</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>6e553f75-0e98-b254-7915-eb0f55465048</UniqueId>
             <Alias>tags</Alias>
             <DataTypeDefinitionId>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</DataTypeDefinitionId>
@@ -312,6 +330,12 @@
             <SortOrder>2</SortOrder>
             <Text>Info</Text>
             <UniqueId>932b6f97-53cd-3ff2-fadb-955347271692</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Location</ContentTypeAlias>
+            <SortOrder>3</SortOrder>
+            <Text>SocialPosts</Text>
+            <UniqueId>5e4fa6d3-aeaf-4f69-9fcb-65424cc96734</UniqueId>
         </Tab>
     </Tabs>
     <Thumbnail>folder.png</Thumbnail>

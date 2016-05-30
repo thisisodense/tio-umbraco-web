@@ -20,7 +20,7 @@
 }
 
 @section meta {
-    <meta property="og:title" content="@Html.Raw(Model.Title)" />
+    <meta property="og:title" content="@Model.Title" />
     <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
     <meta property="fb:app_id" content="550180138336430" />
     <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />

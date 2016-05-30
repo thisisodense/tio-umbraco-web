@@ -1,0 +1,43 @@
+﻿<div ng-controller="My.SocialPostsForLocationsController">
+    <h2>FB-billedetekst</h2>
+    <p>
+        {{title}}
+        <br />
+        {{shortDescription}}
+    </p>
+    <p>Læs anbefalingen på: www.thisisodense.dk/place/{{id}}</p>
+    <p>{{categories.join(', ')}} | {{address}} {{phoneNumber ? '|  Tlf.' + phoneNumber : ''}} {{fotograf ? '|  Photo: ' + fotograf : ''}}</p>
+    <p>-------</p>
+    <p>
+        {{title}}
+        <br />
+        {{shortDescriptionEnglish}}
+    </p>
+    <p>Read more: http://www.thisisodense.dk/en/place/{{id}}</p>
+    <p>{{categories.join(', ')}} | {{address}} {{phoneNumber ? '|  Tlf.' + phoneNumber : ''}}</p>
+    <h2>FB-opslagstekst</h2>
+    <p>**SLET* http://www.thisisodense.dk/place/{{id}} *SLET**</p>
+    <p ng-bind-html="longDescription"></p>
+    <p>-------</p>
+    <p>{{title}}</p>
+    <p>{{categories.join(', ')}} | {{address}} {{phoneNumber ? '|  Tlf.' + phoneNumber : ''}}</p>
+    <p>{{url}}</p>
+    <p>
+        Skrevet af {{writerName}}, der er skribent på This Is Odense. Læs hele vores byguide på www.thisisodense.dk/places
+    </p>
+    <br />
+    <p>▼▼▼ ENGLISH ▼▼▼</p>
+    <br />
+    <p ng-bind-html="longDescriptionEnglish"></p>
+    <p>-------</p>
+    <p>{{title}}</p>
+    <p>{{categories.join(', ')}} | {{address}} {{phoneNumber ? '|  Tlf.' + phoneNumber : ''}}</p>
+    <p>{{url}}</p>
+    <p>Written by {{writerName}}. Read all our full city guide at www.thisisodense.dk/en/places</p>
+    <h2>IG-opslagstekst</h2>
+    <p ng-bind-html="longDescription"></p>
+    <p>
+        Find {{title}} på {{address}} og læs mere på {{url}}
+    </p>
+    <p>Læs anbefalingen på: http://www.thisisodense.dk/place/{{id}} {{hashtags}} #odense #thisisodense #mitodense</p>
+</div>

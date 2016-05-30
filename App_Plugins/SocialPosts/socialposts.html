@@ -1,12 +1,18 @@
 ﻿<div ng-controller="My.SocialPostsController">
     <h2>FB-billedetekst</h2>
-    <p>{{headline}}</p>
-    <p>{{subheader}}</p>
+    <p>
+       {{headline}}
+        <br />
+       {{subheader}}
+    </p>
     <p>Læs anbefalingen på: www.thisisodense.dk/{{id}}</p>
     <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.address}} | {{price}} kr.</p>
     <p>-------</p>
-    <p>{{headlineEnglish}}</p>
-    <p>{{subheaderEnglish}}</p>
+    <p>
+        {{headlineEnglish}}
+        <br />
+        {{subheaderEnglish}}
+    </p>
     <p>Read more: http://www.thisisodense.dk/en/{{id}}</p>
     <p>{{eventTypeEN}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.address}} | {{price}} kr.</p>
     <h2>FB-opslagstekst</h2>
@@ -20,7 +26,9 @@
     <p>
         Skrevet af {{writerName}}, der er skribent på This Is Odense. Læs alle vores fem anbefalinger på www.thisisodense.dk
     </p>
-    <h3>▼▼▼ENGLISH▼▼▼</h3>
+    <br />
+    <p>▼▼▼ ENGLISH ▼▼▼</p>
+    <br />
     <p ng-bind-html="summaryEnglish"></p>
     <p>-------</p>
     <p>{{headlineEnglish}}</p>
@@ -33,5 +41,5 @@
     <p>
         Oplev {{headline}} fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}. {{organizer}} åbner dørene på {{location.title}} kl. {{doorsOpen}}.
     </p>
-    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/{{id}} {{location.hashtags}}</p>
+    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/{{id}} {{location.hashtags}} #odense #thisisodense #mitodense</p>
 </div>

@@ -76,35 +76,7 @@ if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
                 <span class="_date_format">DD-MM-YYYY</span>
             </div>
         }
-        <div class="addthis_toolbox addthis_default_style">
-            @for (int i = 1; i <= 2; i++)
-            {
-                <a class="addthis_button_preferred_@i"
-                   addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
-                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
-                                         new
-                                         {
-                                           id = Model.GetId(),
-                                           name = Model.HeadLine.ToSeoUrl()
-                                         },
-                                         Request.Url.Scheme)"
-                   addthis:title="@Model.HeadLine"
-                   addthis:description="@Model.SubHeader">
-                </a>
-            }
-            <a class="addthis_counter addthis_bubble_style"
-               addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
-                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
-                                         new
-                                         {
-                                           id = Model.GetId(),
-                                           name = Model.HeadLine.ToSeoUrl()
-                                         },
-                                         Request.Url.Scheme)"
-               addthis:title="@Model.HeadLine"
-               addthis:description="@Model.SubHeader">
-            </a>
-        </div>
+        <div class="addthis_sharing_toolbox"></div>
         <div class="desc">
             <p>
                 <strong class="hed">@Model.HeadLine</strong>
@@ -117,7 +89,7 @@ if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
     <img class="articleImg" src="@Model.ImageUrl" alt="@Model.HeadLine" title="@Model.HeadLine" />
 
     <div class="info arrow">
-        @Umbraco.GetDictionaryValue(Model.EventType) | @GetOccurs(Model) | <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Address</a> | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr. @GetTicketsUrlText(Model) @GetWriterName()
+        @(string.IsNullOrEmpty(Model.EventType)?"":Umbraco.GetDictionaryValue(Model.EventType)) | @GetOccurs(Model) | <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Address</a> | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr. @GetTicketsUrlText(Model) @GetWriterName()
     </div>
 
     @if (!Model.IsDetails)

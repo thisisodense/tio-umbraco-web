@@ -9,8 +9,8 @@
 }
 
 @section meta {
-    <meta property="og:title" content="@Html.Raw(Model.HeadLine)" />
-    <meta property="og:description" content="@Html.Raw(Model.SubHeader)" />
+    <meta property="og:title" content="@Model.HeadLine" />
+    <meta property="og:description" content="@Model.Body" />
     <meta property="fb:app_id" content="550180138336430" />
     <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION, new { id = Model.Id, name = Model.HeadLine.ToSeoUrl() }, Request.Url.Scheme)" />
     <meta property="og:image" content="@Model.ImageUrl" />

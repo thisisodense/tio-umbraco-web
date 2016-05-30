@@ -4,23 +4,13 @@
         <Id>FormsRenderScripts</Id>
         <ProviderId>2ab40e30-e292-11df-85ca-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Render Forms Scripts</Name>
+    <Name>FormsRenderScripts</Name>
     <ItemType>Item</ItemType>
-    <Resources>
-        <Resource>
-            <ExtractToPath>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</ExtractToPath>
-            <Hash>9b520becca96406c4e6b1e447192ee5f</Hash>
-            <Name>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</Name>
-            <PackageFromPath>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</PackageFromPath>
-            <TemporaryStoragePath>/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</TemporaryStoragePath>
-            <VirtualResource>false</VirtualResource>
-            <NotFound>false</NotFound>
-        </Resource>
-    </Resources>
+    <Resources />
     <Alias>FormsRenderScripts</Alias>
     <CacheByPage>false</CacheByPage>
     <CachePersonalized>false</CachePersonalized>
-    <DLRScript>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</DLRScript>
+    <DLRScript />
     <Properties />
     <RefreshRate>0</RefreshRate>
     <RenderContent>true</RenderContent>

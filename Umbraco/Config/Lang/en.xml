@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
   <creator>
     <name>The Umbraco community</name>
@@ -36,6 +36,11 @@
     <key alias="toPublish">Send to publication</key>
     <key alias="translate">Translate</key>
     <key alias="update">Update</key>
+    <key alias="defaultValue">Default value</key>
+    <key alias="exportContourForm">Export form</key>
+    <key alias="importContourForm">Import form</key>
+    <key alias="archiveContourForm">Archive form</key>
+    <key alias="unarchiveContourForm">Unarchive form</key>
     <key alias="defaultValue">Default value</key>
   </area>
   <area alias="assignDomain">
@@ -171,7 +176,7 @@
   <area alias="media">
     <key alias="clickToUpload">Click to upload</key>
     <key alias="dropFilesHere">Drop your files here...</key>
-	<key alias="urls">Link to media</key>
+    <key alias="urls">Link to media</key>
     <key alias="orClickHereToUpload">or click here to choose files</key>
     <key alias="onlyAllowedFiles">Only allowed file types are</key>
     <key alias="maxFileSize">Max file size is</key>
@@ -245,18 +250,13 @@
     <key alias="treepicker">Pick item</key>
     <key alias="viewCacheItem">View Cache Item</key>
     <key alias="createFolder">Create folder...</key>
-
     <key alias="relateToOriginalLabel">Relate to original</key>
     <key alias="theFriendliestCommunity">The friendliest community</key>
-
     <key alias="linkToPage">Link to page</key>
-
     <key alias="openInNewWindow">Opens the linked document in a new window or tab</key>
     <key alias="openInFullBody">Opens the linked document in the full body of the window</key>
     <key alias="openInParentFrame">Opens the linked document in the parent frame</key>
-
     <key alias="linkToMedia">Link to media</key>
-
     <key alias="selectMedia">Select media</key>
     <key alias="selectIcon">Select icon</key>
     <key alias="selectItem">Select item</key>
@@ -266,19 +266,14 @@
     <key alias="selectMember">Select member</key>
     <key alias="selectMemberGroup">Select member group</key>
     <key alias="noIconsFound">No icons were found</key>
-
     <key alias="noMacroParams">There are no parameters for this macro</key>
-
     <key alias="externalLoginProviders">External login providers</key>
     <key alias="exceptionDetail">Exception Details</key>
     <key alias="stacktrace">Stacktrace</key>
     <key alias="innerException">Inner Exception</key>
-
     <key alias="linkYour">Link your</key>
     <key alias="unLinkYour">Un-Link your</key>
-
     <key alias="account">account</key>
-
     <key alias="selectEditor">Select editor</key>
   </area>
   <area alias="dictionaryItem">
@@ -482,7 +477,6 @@
     <key alias="move">Move</key>
     <key alias="embed">Embed</key>
   </area>
-
   <area alias="colors">
     <key alias="black">Black</key>
     <key alias="green">Green</key>
@@ -491,26 +485,20 @@
     <key alias="blue">Blue</key>
     <key alias="red">Red</key>
   </area>
-
   <area alias="shortcuts">
-      <key alias="addTab">Add tab</key>
-      <key alias="addProperty">Add property</key>
-      <key alias="addEditor">Add editor</key>
-      <key alias="addTemplate">Add template</key>
-      <key alias="addChildNode">Add child node</key>
-      <key alias="addChild">Add child</key>
-
-      <key alias="editDataType">Edit data type</key>
-
-      <key alias="navigateSections">Navigate sections</key>
-
-      <key alias="shortcut">Shortcuts</key>
-      <key alias="showShortcuts">show shortcuts</key>
-
-      <key alias="toggleListView">Toggle list view</key>
-      <key alias="toggleAllowAsRoot">Toggle allow as root</key>
+    <key alias="addTab">Add tab</key>
+    <key alias="addProperty">Add property</key>
+    <key alias="addEditor">Add editor</key>
+    <key alias="addTemplate">Add template</key>
+    <key alias="addChildNode">Add child node</key>
+    <key alias="addChild">Add child</key>
+    <key alias="editDataType">Edit data type</key>
+    <key alias="navigateSections">Navigate sections</key>
+    <key alias="shortcut">Shortcuts</key>
+    <key alias="showShortcuts">show shortcuts</key>
+    <key alias="toggleListView">Toggle list view</key>
+    <key alias="toggleAllowAsRoot">Toggle allow as root</key>
   </area>
-
   <area alias="graphicheadline">
     <key alias="backgroundcolor">Background colour</key>
     <key alias="bold">Bold</key>
@@ -518,7 +506,6 @@
     <key alias="font">Font</key>
     <key alias="text">Text</key>
   </area>
-
   <area alias="headers">
     <key alias="page">Page</key>
   </area>
@@ -782,11 +769,9 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="paSimpleHelp">If you just want to setup simple protection using a single login and password</key>
   </area>
   <area alias="publish">
-    <key alias="contentPublishedFailedAwaitingRelease">
-      <![CDATA[
+    <key alias="contentPublishedFailedAwaitingRelease"><![CDATA[
       %0% could not be published because the item is scheduled for release.
-    ]]>
-    </key>
+    ]]></key>
     <key alias="contentPublishedFailedExpired"><![CDATA[
       %0% could not be published because the item has expired.
     ]]></key>
@@ -852,6 +837,7 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="help" version="7.0">Help</key>
     <key alias="forms">Forms</key>
     <key alias="analytics">Analytics</key>
+    <key alias="forms">Forms</key>
   </area>
   <area alias="help">
     <key alias="goTo">go to</key>
@@ -888,8 +874,8 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="sortPleaseWait"><![CDATA[ Please wait. Items are being sorted, this can take a while.<br/> <br/> Do not close this window during sorting]]></key>
   </area>
   <area alias="speechBubbles">
-	<key alias="validationFailedHeader">Validation</key>
-	<key alias="validationFailedMessage">Validation errors must be fixed before the item can be saved</key>
+    <key alias="validationFailedHeader">Validation</key>
+    <key alias="validationFailedMessage">Validation errors must be fixed before the item can be saved</key>
     <key alias="operationFailedHeader">Failed</key>
     <key alias="invalidUserPermissionsText">Insufficient user permissions, could not complete the operation</key>
     <key alias="operationCancelledHeader">Cancelled</key>
@@ -981,15 +967,12 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="addElement">Add content</key>
     <key alias="dropElement">Drop content</key>
     <key alias="settingsApplied">Settings applied</key>
-
     <key alias="contentNotAllowed">This content is not allowed here</key>
     <key alias="contentAllowed">This content is allowed here</key>
-
     <key alias="clickToEmbed">Click to embed</key>
     <key alias="clickToInsertImage">Click to insert image</key>
     <key alias="placeholderImageCaption">Image caption...</key>
     <key alias="placeholderWriteHere">Write here...</key>
-
     <key alias="gridLayouts">Grid Layouts</key>
     <key alias="gridLayoutsDetail">Layouts are the overall work area for the grid editor, usually you only need one or two different layouts</key>
     <key alias="addGridLayout">Add Grid Layout</key>
@@ -998,18 +981,13 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="rowConfigurationsDetail">Rows are predefined cells arranged horizontally</key>
     <key alias="addRowConfiguration">Add row configuration</key>
     <key alias="addRowConfigurationDetail">Adjust the row by setting cell widths and adding additional cells</key>
-
     <key alias="columns">Columns</key>
     <key alias="columnsDetails">Total combined number of columns in the grid layout</key>
-
     <key alias="settings">Settings</key>
     <key alias="settingsDetails">Configure what settings editors can change</key>
-
     <key alias="styles">Styles</key>
     <key alias="stylesDetails">Configure what styling editors can change</key>
-
     <key alias="settingDialogDetails">Settings will only save if the entered json configuration is valid</key>
-
     <key alias="allowAllEditors">Allow all editors</key>
     <key alias="allowAllRowConfigurations">Allow all row configurations</key>
     <key alias="setAsDefault">Set as default</key>
@@ -1017,69 +995,50 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="chooseDefault">Choose default</key>
     <key alias="areAdded">are added</key>
   </area>
-
   <area alias="contentTypeEditor">
-
-      <key alias="compositions">Compositions</key>
-      <key alias="noTabs">You have not added any tabs</key>
-      <key alias="addNewTab">Add new tab</key>
-      <key alias="addAnotherTab">Add another tab</key>
-      <key alias="inheritedFrom">Inherited from</key>
-      <key alias="addProperty">Add property</key>
-      <key alias="requiredLabel">Required label</key>
-
-      <key alias="enableListViewHeading">Enable list view</key>
-      <key alias="enableListViewDescription">Configures the content item to show a sortable and searchable list of its children, the children will not be shown in the tree</key>
-
-      <key alias="allowedTemplatesHeading">Allowed Templates</key>
-      <key alias="allowedTemplatesDescription">Choose which templates editors are allowed to use on content of this type</key>
-
-      <key alias="allowAsRootHeading">Allow as root</key>
-      <key alias="allowAsRootDescription">Allow editors to create content of this type in the root of the content tree</key>
-      <key alias="allowAsRootCheckbox">Yes - allow content of this type in the root</key>
-
-      <key alias="childNodesHeading">Allowed child node types</key>
-      <key alias="childNodesDescription">Allow content of the specified types to be created underneath content of this type</key>
-
-      <key alias="chooseChildNode">Choose child node</key>
-
-      <key alias="compositionsDescription">Inherit tabs and properties from an existing document type. New tabs will be added to the current document type or merged if a tab with an identical name exists.</key>
-      <key alias="compositionInUse">This content type is used in a composition, and therefore cannot be composed itself.</key>
-      <key alias="noAvailableCompositions">There are no content types available to use as a composition.</key>
-
-      <key alias="availableEditors">Available editors</key>
-      <key alias="reuse">Reuse</key>
-      <key alias="editorSettings">Editor settings</key>
-
-      <key alias="configuration">Configuration</key>
-
-      <key alias="yesDelete">Yes, delete</key>
-
-      <key alias="movedUnderneath">was moved underneath</key>
-      <key alias="copiedUnderneath">was copied underneath</key>
-      <key alias="folderToMove">Select the folder to move</key>
-      <key alias="folderToCopy">Select the folder to copy</key>
-      <key alias="structureBelow">to in the tree structure below</key>
-
-      <key alias="allDocumentTypes">All Document types</key>
-      <key alias="allDocuments">All Documents</key>
-      <key alias="allMediaItems">All media items</key>
-
-      <key alias="usingThisDocument">using this document type will be deleted permanently, please confirm you want to delete these as well.</key>
-      <key alias="usingThisMedia">using this media type will be deleted permanently, please confirm you want to delete these as well.</key>
-      <key alias="usingThisMember">using this member type will be deleted permanently, please confirm you want to delete these as well</key>
-
-      <key alias="andAllDocuments">and all documents using this type</key>
-      <key alias="andAllMediaItems">and all media items using this type</key>
-      <key alias="andAllMembers">and all members using this type</key>
-
-      <key alias="thisEditorUpdateSettings">using this editor will get updated with the new settings</key>
-
-      <key alias="memberCanEdit">Member can edit</key>
-      <key alias="showOnMemberProfile">Show on member profile</key>
-
+    <key alias="compositions">Compositions</key>
+    <key alias="noTabs">You have not added any tabs</key>
+    <key alias="addNewTab">Add new tab</key>
+    <key alias="addAnotherTab">Add another tab</key>
+    <key alias="inheritedFrom">Inherited from</key>
+    <key alias="addProperty">Add property</key>
+    <key alias="requiredLabel">Required label</key>
+    <key alias="enableListViewHeading">Enable list view</key>
+    <key alias="enableListViewDescription">Configures the content item to show a sortable and searchable list of its children, the children will not be shown in the tree</key>
+    <key alias="allowedTemplatesHeading">Allowed Templates</key>
+    <key alias="allowedTemplatesDescription">Choose which templates editors are allowed to use on content of this type</key>
+    <key alias="allowAsRootHeading">Allow as root</key>
+    <key alias="allowAsRootDescription">Allow editors to create content of this type in the root of the content tree</key>
+    <key alias="allowAsRootCheckbox">Yes - allow content of this type in the root</key>
+    <key alias="childNodesHeading">Allowed child node types</key>
+    <key alias="childNodesDescription">Allow content of the specified types to be created underneath content of this type</key>
+    <key alias="chooseChildNode">Choose child node</key>
+    <key alias="compositionsDescription">Inherit tabs and properties from an existing document type. New tabs will be added to the current document type or merged if a tab with an identical name exists.</key>
+    <key alias="compositionInUse">This content type is used in a composition, and therefore cannot be composed itself.</key>
+    <key alias="noAvailableCompositions">There are no content types available to use as a composition.</key>
+    <key alias="availableEditors">Available editors</key>
+    <key alias="reuse">Reuse</key>
+    <key alias="editorSettings">Editor settings</key>
+    <key alias="configuration">Configuration</key>
+    <key alias="yesDelete">Yes, delete</key>
+    <key alias="movedUnderneath">was moved underneath</key>
+    <key alias="copiedUnderneath">was copied underneath</key>
+    <key alias="folderToMove">Select the folder to move</key>
+    <key alias="folderToCopy">Select the folder to copy</key>
+    <key alias="structureBelow">to in the tree structure below</key>
+    <key alias="allDocumentTypes">All Document types</key>
+    <key alias="allDocuments">All Documents</key>
+    <key alias="allMediaItems">All media items</key>
+    <key alias="usingThisDocument">using this document type will be deleted permanently, please confirm you want to delete these as well.</key>
+    <key alias="usingThisMedia">using this media type will be deleted permanently, please confirm you want to delete these as well.</key>
+    <key alias="usingThisMember">using this member type will be deleted permanently, please confirm you want to delete these as well</key>
+    <key alias="andAllDocuments">and all documents using this type</key>
+    <key alias="andAllMediaItems">and all media items using this type</key>
+    <key alias="andAllMembers">and all members using this type</key>
+    <key alias="thisEditorUpdateSettings">using this editor will get updated with the new settings</key>
+    <key alias="memberCanEdit">Member can edit</key>
+    <key alias="showOnMemberProfile">Show on member profile</key>
   </area>
-
   <area alias="templateEditor">
     <key alias="alternativeField">Alternative field</key>
     <key alias="alternativeText">Alternative Text</key>
@@ -1242,11 +1201,11 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="sessionExpires" version="7.0">Session expires in</key>
   </area>
   <area alias="validation">
-      <key alias="validation">Validation</key>
-      <key alias="validateAsEmail">Validate as email</key>
-      <key alias="validateAsNumber">Validate as a number</key>
-      <key alias="validateAsUrl">Validate as a Url</key>
-      <key alias="enterCustomValidation">...or enter a custom validation</key>
-      <key alias="fieldIsMandatory">Field is mandatory</key>
+    <key alias="validation">Validation</key>
+    <key alias="validateAsEmail">Validate as email</key>
+    <key alias="validateAsNumber">Validate as a number</key>
+    <key alias="validateAsUrl">Validate as a Url</key>
+    <key alias="enterCustomValidation">...or enter a custom validation</key>
+    <key alias="fieldIsMandatory">Field is mandatory</key>
   </area>
 </language>

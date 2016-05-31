@@ -306,6 +306,15 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>91881b19-a460-4ff8-aa6d-ceb62b74e06b</UniqueId>
+            <Alias>translatedBy</Alias>
+            <DataTypeDefinitionId>2b24165f-9782-4aa3-b459-1de4a4d21f60</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>Translated by</Name>
+            <SortOrder>19</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>13f2f114-f25d-1c88-a9d6-912328b1f565</UniqueId>
             <Alias>url</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>

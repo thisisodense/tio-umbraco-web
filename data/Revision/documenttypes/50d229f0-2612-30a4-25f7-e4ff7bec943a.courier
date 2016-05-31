@@ -106,7 +106,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -116,7 +116,7 @@
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Fotograf</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>18</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -125,7 +125,7 @@
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Fotograf URL</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>19</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -158,7 +158,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Hashtags</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -169,7 +169,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -224,7 +224,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>OpeningHours</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -235,7 +235,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>PhoneNumber</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -311,7 +311,7 @@
             <DataTypeDefinitionId>2b24165f-9782-4aa3-b459-1de4a4d21f60</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Translated by</Name>
-            <SortOrder>19</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -321,7 +321,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Url</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

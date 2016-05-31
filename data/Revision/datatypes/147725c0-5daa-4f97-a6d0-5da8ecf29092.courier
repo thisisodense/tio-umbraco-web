@@ -52,7 +52,7 @@
         <DataTypePrevalue>
             <Alias>modalBackdrop</Alias>
             <SortOrder>10</SortOrder>
-            <Value>1</Value>
+            <Value>0</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>147725c0-5daa-4f97-a6d0-5da8ecf29092</UniqueID>

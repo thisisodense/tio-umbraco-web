@@ -1,4 +1,4 @@
-﻿<DocumentType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -34,6 +34,15 @@
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9e47630e-c2df-431c-ba01-c4c65148b98d</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -106,9 +115,27 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>2a764561-749b-4dd0-b7a0-2b5a741ff7a8</UniqueId>
+            <Alias>fotograf</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>Fotograf</Name>
+            <SortOrder>18</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>3f84c370-2e45-4f2b-84df-459487c452df</UniqueId>
+            <Alias>fotografURL</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>FotografURL</Name>
+            <SortOrder>19</SortOrder>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>d74f3c06-9188-23ad-eb79-5f7116168238</UniqueId>
@@ -139,7 +166,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Hashtags</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>15</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -150,7 +177,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>17</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -205,7 +232,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>OpeningHours</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>16</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -216,7 +243,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>PhoneNumber</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -296,13 +323,22 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>6b4cf2ab-9427-4876-b568-6ec7ef656e61</UniqueId>
+            <Alias>translatedBy</Alias>
+            <DataTypeDefinitionId>2b24165f-9782-4aa3-b459-1de4a4d21f60</DataTypeDefinitionId>
+            <Mandatory>false</Mandatory>
+            <Name>TranslatedBy</Name>
+            <SortOrder>11</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>13f2f114-f25d-1c88-a9d6-912328b1f565</UniqueId>
             <Alias>url</Alias>
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Url</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

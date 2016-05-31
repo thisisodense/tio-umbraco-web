@@ -23,7 +23,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>3</SortOrder>
-            <Value>SortOrder</Value>
+            <Value>VersionDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>
@@ -60,24 +60,9 @@
     "isSystem": 1&#xD;
   },&#xD;
   {&#xD;
-    "alias": "writer",&#xD;
+    "alias": "placesToGoIn2016",&#xD;
     "isSystem": 0,&#xD;
-    "header": "writer"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "PlacesToGoin2015",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Places 2015"&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "fromRecommendation",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Fra Anbef."&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "tags",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Tags"&#xD;
+    "header": "Byguide 2016"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

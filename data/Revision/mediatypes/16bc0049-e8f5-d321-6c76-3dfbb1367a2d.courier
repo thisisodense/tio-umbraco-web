@@ -29,7 +29,7 @@
     <Icon>icon-picture</Icon>
     <Thumbnail>icon-picture</Thumbnail>
     <Alias>Image</Alias>
-    <IsContainer>false</IsContainer>
+    <IsContainer>true</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>16bc0049-e8f5-d321-6c76-3dfbb1367a2d</UniqueId>
     <AllowedChildMediaTypes />
@@ -40,7 +40,7 @@
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Size</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>3</SortOrder>
             <TabCaption>Image</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -49,7 +49,7 @@
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Type</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>1</SortOrder>
             <TabCaption>Image</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -58,7 +58,7 @@
             <DataTypeDefinitionId>84c6b441-31df-4ffe-b67e-67d5bc3ae65a</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Upload image</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Image</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -76,7 +76,7 @@
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>Width</Name>
-            <SortOrder>0</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Image</TabCaption>
         </ContentTypeProperty>
     </Properties>

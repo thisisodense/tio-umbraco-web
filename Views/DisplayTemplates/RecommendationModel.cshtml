@@ -76,7 +76,19 @@ if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
                 <span class="_date_format">DD-MM-YYYY</span>
             </div>
         }
-        <div class="addthis_sharing_toolbox"></div>
+        <div 
+             class="addthis_sharing_toolbox"
+             addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+             addthis:title="@Model.HeadLine"
+             addthis:description="@Model.SubHeader">
+        </div>
         <div class="desc">
             <p>
                 <strong class="hed">@Model.HeadLine</strong>

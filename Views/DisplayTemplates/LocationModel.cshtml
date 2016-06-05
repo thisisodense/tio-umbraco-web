@@ -27,7 +27,18 @@
         <input type="hidden" value="@Model.IsDetails" id="isDetails" />
         <div class="toggleShow">
             <div class="placeHeader">
-                <div class="addthis_sharing_toolbox"></div>
+                <div class="addthis_sharing_toolbox"
+                     addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                    Const.Constants.Controllers.Location.Actions.LOCATION,
+                                    new
+                                    {
+                                    id = Model.Id,
+                                    name = Model.Title.ToSeoUrl()
+                                    },
+                                    Request.Url.Scheme)"
+                    addthis:title="@Model.Title"
+                    addthis:description="@Model.ShortDescription">
+                </div>
                 <div class="desc simple">
                     <p>
                         <strong class="hed">@Model.Title</strong>
@@ -47,7 +58,17 @@ else
         <input type="hidden" value="@Model.IsDetails" id="isDetails" />
         <div class="toggleShow">
             <div class="placeHeader">
-                <div class="addthis_sharing_toolbox"></div>
+                <div class="addthis_sharing_toolbox"
+                     addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                         Const.Constants.Controllers.Location.Actions.LOCATION,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Title.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                           addthis:title="@Model.Title"
+                           addthis:description="@Model.ShortDescription"></div>
                 <div data-test="@string.Join(",", @Model.Categories)" class="mapCategory @Model.Categories.FirstOrDefault()"><i class="fa"></i></div>
                 <div class="desc">
                     <p>

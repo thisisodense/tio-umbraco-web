@@ -325,7 +325,7 @@
         <ContentTypeProperty>
             <UniqueId>f17b608a-ee25-47cd-8804-43f7647d65e3</UniqueId>
             <Alias>translatedBy</Alias>
-            <DataTypeDefinitionId>2b24165f-9782-4aa3-b459-1de4a4d21f60</DataTypeDefinitionId>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Mandatory>false</Mandatory>
             <Name>translatedBy</Name>
             <SortOrder>11</SortOrder>

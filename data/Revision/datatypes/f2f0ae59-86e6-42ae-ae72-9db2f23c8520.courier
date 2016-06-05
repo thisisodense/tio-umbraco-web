@@ -23,7 +23,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>3</SortOrder>
-            <Value>Name</Value>
+            <Value>VersionDate</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>

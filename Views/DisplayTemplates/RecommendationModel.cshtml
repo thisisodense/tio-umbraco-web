@@ -78,6 +78,15 @@ if (!Model.IsDetails && Model.MainWriter != Model.WriterName)
         }
         <div 
              class="addthis_sharing_toolbox"
+             data-title="@Model.HeadLine"
+             data-url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
+                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
+                                         new
+                                         {
+                                           id = Model.GetId(),
+                                           name = Model.HeadLine.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
              addthis:url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
                                          Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
                                          new

@@ -28,6 +28,15 @@
         <div class="toggleShow">
             <div class="placeHeader">
                 <div class="addthis_sharing_toolbox"
+                     data-title="@Model.Title"
+                     data-url="@Url.Action(Const.Constants.Controllers.Location.NAME,
+                                    Const.Constants.Controllers.Location.Actions.LOCATION,
+                                    new
+                                    {
+                                    id = Model.Id,
+                                    name = Model.Title.ToSeoUrl()
+                                    },
+                                    Request.Url.Scheme)"
                      addthis:url="@Url.Action(Const.Constants.Controllers.Location.NAME,
                                     Const.Constants.Controllers.Location.Actions.LOCATION,
                                     new

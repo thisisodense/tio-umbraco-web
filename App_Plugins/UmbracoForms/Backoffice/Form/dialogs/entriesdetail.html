@@ -2,15 +2,17 @@
     <div class="umb-panel-body no-header with-footer">
 
         <div class="umb-forms-settings">
-            <h5>Record with id: {{dialogOptions.row.id}}</h5>
+            <h5>
+                Record with id: {{dialogOptions.row.id}}<br/>
+                <small>Unique id: {{dialogOptions.row.uniqueId}}</small>
+            </h5>
             <div class="umb-property">
                 <div class="control-group umb-control-group">
 
                     <div class="control-row"
-                        ng-repeat="field in dialogOptions.row.fields track by $index"
-                        ng-init="fieldSchema = dialogOptions.schema[$index]"
-                        ng-show="dialogOptions.hiddenFields.indexOf($index) === -1"
-                        >
+                         ng-repeat="field in dialogOptions.row.fields track by $index"
+                         ng-init="fieldSchema = dialogOptions.schema[$index]"
+                         ng-show="dialogOptions.hiddenFields.indexOf($index) === -1">
 
                         <label class="control-label">{{fieldSchema.name}}</label>
 
@@ -22,7 +24,7 @@
                             </div>
                         </div>
 
-                        <hr />
+                        <hr/>
                     </div>
 
                 </div>

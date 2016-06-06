@@ -83,7 +83,7 @@ else
                                                 }
 
                                                 <div>
-                                                    @Html.Partial(FieldViewResolver.GetFieldView(Model.FormId.ToString(), f.FieldTypeName, f.Caption), f)
+                                                    @Html.Partial(FieldViewResolver.GetFieldView(Model.FormId.ToString(), f.FieldType.FieldTypeViewName, f.Caption), f)
                                                     @if (Model.ShowFieldValidaton)
                                                     {
                                                         @Html.ValidationMessage(f.Id)

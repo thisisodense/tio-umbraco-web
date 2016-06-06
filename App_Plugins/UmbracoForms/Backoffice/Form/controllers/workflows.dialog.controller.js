@@ -80,14 +80,12 @@
         }
 
 	    var save = function() {
-	        console.log('save');
 	        //set settings
 	        $scope.workflow.settings = {};
 	        angular.forEach($scope.workflow.$type.settings, function (setting) {
 	            var key = setting.alias;
 	            var value = setting.value;
 	            $scope.workflow.settings[key] = value;
-	            console.log("set setting " + key + ":" + value);
 	        });
 	        //validate settings
 	        workflowResource.validateSettings($scope.workflow)

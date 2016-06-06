@@ -107,7 +107,7 @@
                  </li>
 
                 <li ng-switch-when="remoteContent">
-                    <h1>Downloading content from Umbraco as a Service...</h1>
+                    <h1>Downloading content from <br/>Umbraco as a Service...</h1>
                     
                     <p>{{currentTask.done}} of {{currentTask.total}} downloaded</p>
                     

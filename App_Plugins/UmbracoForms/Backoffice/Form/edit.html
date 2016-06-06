@@ -1,62 +1,57 @@
-﻿<form novalidate name="contentForm"
-      ng-controller="UmbracoForms.Editors.Form.EditController"
-      ng-show="ready && (security.userSecurity.manageForms && hasAccessToCurrentForm)"
-      ng-submit="save()"
-      val-form-manager>
-    <umb-panel>
+﻿<div
+    ng-controller="UmbracoForms.Editors.Form.EditController"
+    ng-show="(hasAccessToCurrentForm && security.userSecurity.manageForms)"
+    class="umb-forms">
 
+    <umb-load-indicator
+        ng-if="page.loading">
+    </umb-load-indicator>
 
-        <umb-header>
-            <div class="span7">
-                <umb-content-name
-                    placeholder="@placeholders_entername"
-                    ng-model="form.name"/>
-            </div>
+    <form
+        name="formsForm"
+        novalidate
+        val-form-manager>
 
-            <div class="span5">
-                <div class="btn-toolbar pull-right umb-btn-toolbar">
+        <umb-editor-view ng-if="!page.loading && displayEditor">
 
-                    <div class="btn-group">
-                        <!-- options button -->
-                        <a class="btn" href="#" prevent-default="" data-toggle="dropdown">
-                            <localize key="general_actions">Actions</localize>
-                            <span class="caret"></span>
-                        </a>
+            <umb-editor-header
+                name="form.name"
+                hide-alias="true"
+                hide-description="true"
+                hide-icon="true"
+                navigation="page.navigation">
+            </umb-editor-header>
 
-                        <!-- actions -->
-                        <ul class="dropdown-menu umb-actions" role="menu" aria-labelledby="dLabel">
-                            <li class="action"><a href ng-click="editForm(form, 'validation')"><i class="icon icon-filter-arrows"></i> <span class="menu-label">Validation</span></a></li>
-                            <li class="action"><a href ng-click="editForm(form, 'styling')"><i class="icon icon-brush"></i> <span class="menu-label">Styling</span></a></li>
-                            <li class="action"><a href ng-click="editForm(form, 'submission')"><i class="icon icon-check"></i> <span class="menu-label">On submit</span></a></li>
+            <umb-editor-container>
 
-                            <li class="action sep" ng-if="saved"><a ng-href="{{entriesUrl}}"><i class="icon icon-inbox-full"></i> <span class="menu-label">Entries</span></a></li>
-                            <li class="action" ng-if="saved && security.userSecurity.manageWorkflows"><a ng-href="{{workflowsUrl}}"><i class="icon icon-mindmap"></i> <span class="menu-label">Workflows</span></a></li>
-                        </ul>
+                <umb-editor-sub-views
+                    ng-if="!page.loading"
+                    sub-views="page.navigation"
+                    model="form">
+                </umb-editor-sub-views>
 
-                    </div>
+            </umb-editor-container>
 
-                </div>
-            </div>
-        </umb-header>
+            <umb-editor-footer>
 
+                <umb-editor-footer-content-right>
 
-        <div class="umb-panel-body umb-scrollable row-fluid">
-            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                    <umb-button
+                        type="button"
+                        action="save()"
+                        state="page.saveButtonState"
+                        button-style="success"
+                        shortcut="ctrl+s"
+                        label="Save"
+                        label-key="buttons_save">
+                    </umb-button>
 
-                <div class="umb-pane">
-                    <umb-forms-designer ng-if="ready" form="form" currentPage="currentPage" fieldtypes="fieldtypes" prevaluesources="prevaluesources" />
-                </div>
+                </umb-editor-footer-content-right>
 
+            </umb-editor-footer>
 
-                <div class="umb-tab-buttons" style="padding-left:15px" detect-fold>
-                    <div class="btn-group">
-                        <button data-hotkey="ctrl+s" class="btn btn-success">
-                            <localize key="buttons_save">Save</localize>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </umb-editor-view>
 
-    </umb-panel>
-</form>
+    </form>
+
+</div>

@@ -6,6 +6,8 @@
 @grayDark:              #343434;
 @gray:                  #555;
 @grayLight:             #d9d9d9;
+@grayMild:              #aeaeae;
+@grayLightish:          #ececec;
 @grayLighter:           #f8f8f8;
 
 
@@ -22,6 +24,38 @@
 @purple:                #7a43b6;
 
 
+// Forms colors
+@blueLight:             #F5F9FD;
+@blueLightHover:        #E8F1FB;
+
+
+// Global classes
+
+input.umb-forms__hacky-hidden-field {
+    opacity: 0;
+    cursor: default;
+}
+
+.umb-forms .umb-panel-header .umb-sub-views-nav {
+    margin-top: 25px;
+}
+
+.control-row.-margin-bottom {
+    margin-bottom: 10px;
+}
+
+.control-label.-block {
+    display: block;
+}
+
+.radio.-block {
+    display: block;
+}
+
+.radio.-no-indent {
+    padding-left: 0;
+}
+
 .usky-grid .help-text i.icon{
     font-size: 16px;
 }
@@ -34,11 +68,16 @@
     margin-left: -22px;
 }
 
+select.-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 //Inline editors
 .umb-forms-designer .inline-editor{
     background: transparent;
-    border: 1px dashed transparent;
+    border: 2px solid transparent;
     resize: none;
     overflow: hidden;
     max-width: 400px;
@@ -48,10 +87,26 @@
 
 .umb-forms-designer .inline-editor.prevalue{
     display:inline;
+    margin: 0;
 }
 
-.umb-forms-designer .inline-editor:hover, .umb-forms-designer .inline-editor:active  {
-    border-bottom: 1px dashed #999;
+.umb-form-prevalue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.umb-form-prevalue small {
+    color: @gray;
+}
+
+.umb-forms-designer .inline-editor:hover,
+.umb-forms-designer .inline-editor:focus  {
+    border-bottom-color: @blue;
+}
+
+.umb-forms-designer .inline-editor::-webkit-input-placeholder {
+    color: #909090;
 }
 
 .umb-forms-designer .inline-editor.page-name{
@@ -99,7 +154,7 @@
     min-height: 100px;
 }
 
-//Empty container placeholder
+// Empty container placeholder
 .umb-forms-designer .umb-forms-placeholder{
     text-align: center;
     padding: 30px;
@@ -197,20 +252,64 @@
     text-align: center;
 }
 
-.umb-forms-rule, .umb-forms-newrule{
-    padding-top:10px;
-    padding-left:15px;
+.umb-forms-designer .checkbox {
+    padding-left: 0px;
+
+    font-size: 13px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        margin: 0 5px 0 0;
+    }
 }
 
-.umb-forms-designer .checkbox{
-    padding-left:0px;
+.umb-forms-designer input[type="file"] {
+    display: flex;
 }
-@import "umbraco.forms.entries.less";
 
-@import "umbraco.forms.dashboards.less";
+.umb-forms__member {
+    display: flex;
+    align-items: flex-start;
+}
 
-@import "umbraco.gridview.less";
+.umb-forms__member p {
+    margin: 0;
+}
 
-@import "umbraco.forms.fonts.less";
+.umb-forms__member-edit {
+    margin-top: -25px;
+    margin-left: auto;
 
-@import "umbraco.forms.workflows.less";
+    color: @blue;
+
+    font-size: 13px;
+
+    &:hover {
+        color: @blueDark;
+    }
+
+}
+
+
+// Form search
+.form-search {
+    margin-right: 5px;
+}
+
+// Imports
+@import 'umb-forms-entries.less';
+@import 'umb-forms-dashboard.less';
+@import 'umb-forms-gridview.less';
+@import 'umb-forms-form.less';
+@import 'umb-forms-fonts.less';
+@import 'umb-forms-workflows.less';
+@import 'umb-forms-workflow.less';
+@import 'umb-forms-empty.less';
+@import 'umb-forms-buttons.less';
+@import 'umb-forms-conditions.less';
+@import 'umb-forms-mappings.less';
+@import 'umb-forms-savenode.less';

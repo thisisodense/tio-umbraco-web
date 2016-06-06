@@ -12,12 +12,9 @@
     }
   ],
   "css": [
-    "~/App_Plugins/UmbracoForms/css/umbraco.forms.css",
-    "~/App_Plugins/UmbracoForms/Assets/daterangepicker/daterangepicker.css"
+    "~/App_Plugins/UmbracoForms/css/umbraco.forms.css"
   ],
   "javascript": [
-    "~/App_Plugins/UmbracoForms/js/umbraco.forms.js",
-    "~/App_Plugins/UmbracoForms/Assets/daterangepicker/daterangepicker.js",
-    "~/App_Plugins/UmbracoForms/Assets/moment/moment.min.js"
+    "~/App_Plugins/UmbracoForms/js/umbraco.forms.js"
   ]
 }

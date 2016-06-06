@@ -1,7 +1,7 @@
 ﻿angular.module("umbraco").controller("UmbracoForms.Editors.Form.EditController",
 
-function ($scope, $routeParams, formResource, editorState, dialogService, formService, notificationsService, contentEditingHelper, formHelper, navigationService, userService, securityResource) {
-    
+function ($scope, $routeParams, formResource, editorState, dialogService, formService, notificationsService, contentEditingHelper, formHelper, navigationService, userService, securityResource, localizationService, workflowResource) {
+
     //On load/init of 'editing' a form then
     //Let's check & get the current user's form security
     var currentUserId = null;
@@ -9,6 +9,23 @@ function ($scope, $routeParams, formResource, editorState, dialogService, formSe
 
     //By default set to have access (in case we do not find the current user's per indivudal form security item)
     $scope.hasAccessToCurrentForm = true;
+
+    $scope.displayEditor = true;
+
+    $scope.page = {};
+
+    $scope.page.navigation = [
+    {
+        "name": localizationService.localize("general_design"),
+        "icon": "icon-document-dashed-line",
+        "view": "/App_Plugins/UmbracoForms/Backoffice/Form/views/design/design.html",
+        "active": true
+    },
+    {
+        "name": "Settings",
+        "icon": "icon-settings",
+        "view": "/App_Plugins/UmbracoForms/Backoffice/Form/views/settings/settings.html"
+    }];
 
     userService.getCurrentUser().then(function (response) {
         currentUserId = response.id;
@@ -53,21 +70,10 @@ function ($scope, $routeParams, formResource, editorState, dialogService, formSe
     if ($routeParams.create) {
 
 		//we are creating so get an empty data type item
-	    formResource.getScaffold($routeParams.template)
+	    //formResource.getScaffold($routeParams.template)
+        formResource.getScaffoldWithWorkflows($routeParams.template)
 	        .then(function(response) {
 	            $scope.form = response.data;
-				$scope.currentPage = {};
-
-	            formResource.getPrevalueSources()
-	                .then(function(resp){
-	                    $scope.prevaluesources = resp.data;
-	            });
-
-				formResource.getAllFieldTypesWithSettings()
-					.then(function (resp) {
-						$scope.fieldtypes = resp.data;
-						$scope.ready = true;
-					});
 
 				//set a shared state
 				editorState.set($scope.form);
@@ -80,32 +86,40 @@ function ($scope, $routeParams, formResource, editorState, dialogService, formSe
 
 
 		//we are editing so get the content item from the server
-		formResource.getByGuid($routeParams.id)
+        formResource.getWithWorkflowsByGuid($routeParams.id)
 			.then(function (response) {
 
 			    //As we are editing an item we can highlight it in the tree
 			    navigationService.syncTree({ tree: "form", path: [String($routeParams.id)], forceReload: false });
 
-
 				$scope.form = response.data;
 				$scope.saved = true;
-                
-				formResource.getPrevalueSources()
-	                .then(function (resp) {
-	                    $scope.prevaluesources = resp.data;
-	                });
 
-				formResource.getAllFieldTypesWithSettings()
-					.then(function (resp) {
-						$scope.fieldtypes = resp.data;
-						$scope.ready = true;
-					});
+                // this should be removed in next major version
+                angular.forEach($scope.form.pages, function(page){
+                    angular.forEach(page.fieldSets, function(fieldSet){
+                        angular.forEach(fieldSet.containers, function(container){
+                            angular.forEach(container.fields, function(field){
+                                field.removePrevalueEditor = true;
+                            });
+                        });
+                    });
+                });
 
 				//set a shared state
 				editorState.set($scope.form);
-			});
+			}, function(reason) {
+                //Includes ExceptionMessage, StackTrace etc from the WebAPI
+                var jsonErrorResponse = reason.data;
+                
+                //Show notification message, a sticky Error message
+                notificationsService.add({ headline: "Unable to load form", message: jsonErrorResponse.ExceptionMessage, type: 'error', sticky: true  });
+                
+                //Hide the entire form UI
+                $scope.displayEditor = false;
+            });
 
-        
+
 	}
 
 	$scope.editForm = function(form, section){
@@ -119,13 +133,14 @@ function ($scope, $routeParams, formResource, editorState, dialogService, formSe
 	};
 
 	$scope.save = function(){
-
 	    if (formHelper.submitForm({ scope: $scope })) {
+
+            $scope.page.saveButtonState = "busy";
+
 	        //make sure we set correct widths on all containers
 	        formService.syncContainerWidths($scope.form);
 
-	        formResource.save($scope.form).then(function (response) {
-
+            formResource.saveWithWorkflows($scope.form).then(function (response) {
 	            formHelper.resetForm({ scope: $scope });
 
 	            contentEditingHelper.handleSuccessfulSave({
@@ -134,20 +149,27 @@ function ($scope, $routeParams, formResource, editorState, dialogService, formSe
 	            });
 
 	            $scope.ready = true;
-	            //$scope.form = response.data;
 
 	            //set a shared state
 	            editorState.set($scope.form);
 
+	            $scope.page.saveButtonState = "success";
 	            navigationService.syncTree({ tree: "form", path: [String($scope.form.id)], forceReload: true });
-
 	            notificationsService.success("Form saved", "");
 
 	        }, function (err) {
-	            notificationsService.error("Form Failed to save", err.data.Message);
+
+                contentEditingHelper.handleSaveError({
+                        redirectOnFailure: false,
+                        err: err
+                    });
+
+                $scope.page.saveButtonState = "error";
+
+
 	        });
 	    }
-	    
+
 	};
 
 

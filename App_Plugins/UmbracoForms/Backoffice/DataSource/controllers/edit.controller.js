@@ -1,5 +1,36 @@
 ﻿angular.module("umbraco").controller("UmbracoForms.Editors.DataSource.EditController", function ($scope, $routeParams, dataSourceResource, editorState, notificationsService, dialogService, navigationService, userService, securityResource) {
     
+    //On load/init of 'editing' a prevalue source then
+    //Let's check & get the current user's form security
+    var currentUserId = null;
+
+    userService.getCurrentUser().then(function (response) {
+        currentUserId = response.id;
+
+        //Now we can make a call to form securityResource
+        securityResource.getByUserId(currentUserId).then(function (response) {
+            $scope.security = response.data;
+
+            //Check if we have access to current form OR manage forms has been disabled
+            if (!$scope.security.userSecurity.manageDataSources) {
+
+                //Show error notification
+                notificationsService.error("Access Denied", "You do not have access to edit Datasources");
+
+                //Resync tree so that it's removed & hides
+                navigationService.syncTree({ tree: "datasource", path: ['-1'], forceReload: true, activate: false }).then(function (response) {
+
+                    //Response object contains node object & activate bool
+                    //Can then reload the root node -1 for this tree 'Forms Folder'
+                    navigationService.reloadNode(response.node);
+                });
+
+                //Don't need to wire anything else up
+                return;
+            }
+        });
+    });
+
     if ($routeParams.create) {
 	    //we are creating so get an empty data type item
 	    dataSourceResource.getScaffold().then(function (response) {
@@ -17,38 +48,7 @@
 		});
     }
     else {
-            
-        //On load/init of 'editing' a prevalue source then
-        //Let's check & get the current user's form security
-        var currentUserId = null;
-
-        userService.getCurrentUser().then(function (response) {
-            currentUserId = response.id;
-
-            //Now we can make a call to form securityResource
-            securityResource.getByUserId(currentUserId).then(function (response) {
-                $scope.security = response.data;
-
-                //Check if we have access to current form OR manage forms has been disabled
-                if (!$scope.security.userSecurity.manageDataSources) {
-
-                    //Show error notification
-                    notificationsService.error("Access Denied", "You do not have access to edit Datasources");
-
-                    //Resync tree so that it's removed & hides
-                    navigationService.syncTree({ tree: "datasource", path: ['-1'], forceReload: true, activate: false }).then(function (response) {
-
-                        //Response object contains node object & activate bool
-                        //Can then reload the root node -1 for this tree 'Forms Folder'
-                        navigationService.reloadNode(response.node);
-                    });
-
-                    //Don't need to wire anything else up
-                    return;
-                }
-            });
-        });
-
+       
 	        //we are editing so get the content item from the server
 	        dataSourceResource.getByGuid($routeParams.id)
             .then(function (response) {

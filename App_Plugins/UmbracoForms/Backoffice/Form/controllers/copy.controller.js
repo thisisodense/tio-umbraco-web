@@ -1,18 +1,10 @@
 angular.module("umbraco").controller("UmbracoForms.Editors.Form.CopyController",function ($scope, formResource, navigationService) {
 
-    //console.log('currentNode', $scope.currentNode);
-    //console.log('currentNode parent', $scope.currentNode.parent());
-
 	    //Copy Function run from button on click
 	    $scope.copyForm = function (formId) {
-	        //console.log('Form ID to copy is'  + formId + 'with new name:' + $scope.newFormName);
-
 
 	        //Perform copy in formResource
 	        formResource.copy(formId, $scope.newFormName).then(function (response) {
-
-	            //console.log('response', response);
-	            //console.log('response.data', response.data);
 
 	            var newFormId = response.data.id;
 

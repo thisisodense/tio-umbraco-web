@@ -1,7 +1,62 @@
-﻿angular.module("umbraco.services").factory("deployService", function ($http) {
+﻿angular.module("umbraco.services").factory("deployService", function ($http, $injector) {
 
 	var baseUrl = "/umbraco/backoffice/api/Deploy/";
 	var localBaseUrl = "/umbraco/api/LocalRestore/";
+
+	var itemProviders = {
+	    "4362c4fb-8e23-4cdb-a611-786f48ea5ae7": { name: "Access entries" },
+	    "e0472592-e73b-11df-9492-0800200c9a66": { name: "Data types", supportCompare: true },
+	    "d8e6ad86-e73a-11df-9492-0800200c9a66": { name: "Dictionary items" },
+	    "d8e6ad83-e73a-11df-9492-0800200c9a66": { name: "Documents"},
+	    "d8e6ad84-e73a-11df-9492-0800200c9a66": { name: "Document types", supportCompare: true },
+	    "e0472595-e73b-11df-9492-0800200c9a66": { name: "Domains" },
+	    "2ab3b250-e28d-11df-85ca-0800200c9a66": { name: "Files" },
+	    "d8e6ad80-e73a-11df-9492-0800200c9a66": { name: "Folders" },
+	    "d8e6ad81-e73a-11df-9492-0800200c9a66": { name: "Languages" },
+	    "2ab40e30-e292-11df-85ca-0800200c9a66": { name: "Macros" },
+	    "d8e6ad87-e73a-11df-9492-0800200c9a66": { name: "Media items" },
+	    "d8e6ad88-e73a-11df-9492-0800200c9a66": { name: "Media types", supportCompare: true },
+	    "4715aa16-fa35-426f-bb67-674043557875": { name: "Member Groups" },
+	    "9bbce930-5deb-4775-bbc6-4e4e94dfa0db": { name: "Member types" },
+	    "e0472594-e73b-11df-9492-0800200c9a66": { name: "Content data" },
+	    "e047259a-e73b-11df-9492-0800200c9a66": { name: "Media data" },
+	    "e0472596-e73b-11df-9492-0800200c9a66": { name: "Stylesheets" },
+	    "e0472590-e73b-11df-9492-0800200c9a66": { name: "Tags" },
+	    "e0472599-e73b-11df-9492-0800200c9a66": { name: "Tags" },
+	    "25867200-e67e-11df-9492-0800200c9a66": { name: "Templates" }
+	};
+
+    var getItemProviders = function() {
+        $http.get(baseUrl + "GetItemProviders")
+            .success(function(providers) {
+                angular.forEach(providers,
+                    function(provider) {
+                        if (itemProviders[provider.id] === undefined) {
+                            itemProviders[provider.id] = { name: provider.name };
+                        }
+                    });
+            });
+    };
+
+    // this ensures that if we are already logged in, the ItemProviders are updated from backend.
+    // the script file can be loaded while you are not logged in, so to avoid 401's we need to do this check
+    if ($injector.has("userService")) {
+        var userService = $injector.get("userService");
+        userService.isAuthenticated()
+        .then(function () {
+            getItemProviders();
+        });
+    }
+    
+    // we want to ensure these are updated on authenticating, since it seems the service is not always
+    // reloaded upon login if it has already been loaded earlier
+    if ($injector.has("eventsService")) {
+        var eventsService = $injector.get("eventsService");
+        eventsService.on("app.authenticated",
+        function () {
+            getItemProviders();
+        });
+    }
 
     return {
 
@@ -88,34 +143,8 @@
             return $http.get(baseUrl + "TaskManagerStatus");
         },
 
-        itemProviderName : function(guid){
-
-        	//Data types
-            var collection = {
-            	"e0472592-e73b-11df-9492-0800200c9a66" : {name: "Data types", supportCompare : true},
-            	"d8e6ad86-e73a-11df-9492-0800200c9a66" : {name: "Dictionary items"},
-            	"d8e6ad83-e73a-11df-9492-0800200c9a66" : {name: "Documents"},
-            	"d8e6ad84-e73a-11df-9492-0800200c9a66" : {name: "Document types", supportCompare : true},
-            	"e0472595-e73b-11df-9492-0800200c9a66" : {name: "Domains"},
-            	"2ab3b250-e28d-11df-85ca-0800200c9a66" : {name: "Files"},
-            	"d8e6ad80-e73a-11df-9492-0800200c9a66" : {name: "Folders"},
-            	"d8e6ad81-e73a-11df-9492-0800200c9a66" : {name: "Languages"},
-            	"2ab40e30-e292-11df-85ca-0800200c9a66" : {name: "Macros"},
-            	"d8e6ad87-e73a-11df-9492-0800200c9a66" : {name: "Media items"},
-            	"d8e6ad88-e73a-11df-9492-0800200c9a66" : {name: "Media types", supportCompare : true},
-                "4715aa16-fa35-426f-bb67-674043557875" : {name: "Member Groups"},
-                "9bbce930-5deb-4775-bbc6-4e4e94dfa0db" : {name: "Member types"},
-                "e0472594-e73b-11df-9492-0800200c9a66" : {name: "Content data"},
-                "e047259a-e73b-11df-9492-0800200c9a66" : {name: "Media data"},
-                "e0472596-e73b-11df-9492-0800200c9a66" : {name: "Stylesheets"},
-                "e0472590-e73b-11df-9492-0800200c9a66" : {name: "Tags"},
-                "e0472599-e73b-11df-9492-0800200c9a66" : {name: "Tags"},
-                "25867200-e67e-11df-9492-0800200c9a66" : {name: "Templates"}
-            };
-
-        return collection[guid];
-
+        itemProviderName : function(guid) {
+            return itemProviders[guid];
         }
-
     };
 });

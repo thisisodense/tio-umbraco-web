@@ -20,7 +20,6 @@ function performDependencyChecks(formId){
         
         //Ensure umbracoForm is not null
         if(umbracoForm) {
-            var parentNode = umbracoForm.parentNode;
             
             //Check for jQuery
             if (typeof jQuery == 'undefined') {
@@ -41,7 +40,7 @@ function performDependencyChecks(formId){
 			}
 			if(errorMessage !== "") {
 				errorElement.innerHTML = errorMessage + '<br/> <a href="https://our.umbraco.org/documentation/products/umbracoforms/developer/Prepping-Frontend/" target="_blank" style="text-decoration:underline; color:#fff;">See Umbraco Forms Documentation</a>';
-                parentNode.replaceChild(errorElement, umbracoForm);
+                umbracoForm.insertBefore(errorElement, umbracoForm.childNodes[0]);
 			}
         }
     }

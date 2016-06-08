@@ -54,6 +54,15 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.WorkflowsControl
                 //As we are editing an item we can highlight it in the tree
                 navigationService.syncTree({ tree: "form", path: [String($routeParams.id), String($routeParams.id) + "_workflows"], forceReload: true });
 
+            }, function(reason) {
+                //Includes ExceptionMessage, StackTrace etc from the WebAPI
+                var jsonErrorResponse = reason.data;
+                
+                //Show notification message, a sticky Error message
+                notificationsService.add({ headline: "Unable to load form", message: jsonErrorResponse.ExceptionMessage, type: 'error', sticky: true  });
+                
+                //Hide the entire workflows UI
+                $scope.loaded = false;
             });
 
         $scope.sortableOptions = {

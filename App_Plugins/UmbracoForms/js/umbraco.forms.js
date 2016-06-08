@@ -1834,6 +1834,15 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.WorkflowsControl
                 //As we are editing an item we can highlight it in the tree
                 navigationService.syncTree({ tree: "form", path: [String($routeParams.id), String($routeParams.id) + "_workflows"], forceReload: true });
 
+            }, function(reason) {
+                //Includes ExceptionMessage, StackTrace etc from the WebAPI
+                var jsonErrorResponse = reason.data;
+                
+                //Show notification message, a sticky Error message
+                notificationsService.add({ headline: "Unable to load form", message: jsonErrorResponse.ExceptionMessage, type: 'error', sticky: true  });
+                
+                //Hide the entire workflows UI
+                $scope.loaded = false;
             });
 
         $scope.sortableOptions = {
@@ -4350,6 +4359,58 @@ angular.module("umbraco.directives")
             }
         };
     });
+angular.module("umbraco.directives")
+    .directive('umbFormsLegacyContentPicker', function (dialogService, entityResource, iconHelper) {
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: '/App_Plugins/UmbracoForms/directives/umb-forms-legacy-content-picker.html',
+        require: "ngModel",
+        link: function (scope, element, attr, ctrl) {
+
+            ctrl.$render = function() {
+                var val = parseInt(ctrl.$viewValue);
+
+                if (!isNaN(val) && angular.isNumber(val) && val > 0) {
+
+                    entityResource.getById(val, "Document").then(function(item) {
+                        item.icon = iconHelper.convertFromLegacyIcon(item.icon);
+                        scope.node = item;
+                    });
+                }
+            };
+
+            scope.openContentPicker = function () {
+                var d = dialogService.treePicker({
+                    section: "content",
+                    treeAlias: "content",
+                    multiPicker: false,
+                    callback: populate
+                });
+            };
+
+            scope.clear = function () {
+                scope.id = undefined;
+                scope.node = undefined;
+                updateModel(0);
+            };
+
+            function populate(item) {
+                scope.clear();
+                item.icon = iconHelper.convertFromLegacyIcon(item.icon);
+                scope.node = item;
+                scope.id = item.id;
+                updateModel(item.id);
+            }
+
+            function updateModel(id) {
+                ctrl.$setViewValue(id);
+                
+            }
+        }
+    };
+});
+
 angular.module("umbraco.directives")
     .directive('umbFormsOverlay', function () {
         return {

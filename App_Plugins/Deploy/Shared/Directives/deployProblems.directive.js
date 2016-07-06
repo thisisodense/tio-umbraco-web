@@ -4,6 +4,9 @@
             transclude: true,
             restrict: 'E',
             replace: true,
-            templateUrl: '/app_plugins/deploy/views/problems.html'            
+            templateUrl: '/app_plugins/deploy/views/problems.html',
+            scope: {
+                isLocalEnvironment: "="
+            }            
         };
     });

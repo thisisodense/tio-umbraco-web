@@ -1,0 +1,286 @@
+<ul class="deployModal unstyled" ng-switch="vm.deploystep">
+    <li ng-switch-default>
+        <h4 class="umb-infobox-title">No pending changes</h4>
+
+        <p>The queue is currently empty, everything has been transfered already - to add new items to the
+            queue right click content in the tree on the left and select "queue for transfer"</p>
+
+        <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()">Reload queue</button>
+    </li>
+
+    <li ng-switch-when="current-queue">
+
+        <h4 class="umb-infobox-title">
+            <ng-pluralize count="vm.editorChanges"
+                                    when="{'0': 'no pending content changes',
+                                        '1': '1 content change ready to send to the ',
+                                        'other': '{} content changes ready to send to the '}">
+            </ng-pluralize>{{vm.environment.destination}} workspace
+        </h4>
+
+        <p>Content changes have been queued for transfer, these changes can be transfered directly from here</p>
+
+        <div ng-class="{'fadeout-element': !showDetails && vm.editorChanges > 1}">
+            <div ng-repeat="provider in vm.manifest.Providers">
+                <p><strong>{{provider.name}}</strong></p>
+
+                <ul class="unstyled">
+                    <li ng-if="provider.IncludeAll">
+                        <i class="icon-check"></i> Including all items
+                    </li>
+
+                    <li ng-repeat="entry in provider.Items">
+                        <i class="icon-check"></i> {{entry.Name}} <br />
+                        <small class="smallwith" ng-if="entry.IncludeChildren"> including all pages below it</small>
+                    </li>
+                </ul>
+            </div>
+
+            <a href ng-hide="showDetails || vm.editorChanges < 2"
+                ng-click="showDetails = true" class="btn btn-link toggle-link">
+                <i class="icon-navigation-vertical"></i> See all changes...
+            </a>
+        </div>
+
+        <button class="umb-era-button -blue" ng-click="package()" prevent-default>Send changes to the {{vm.environment.destination}} workspace</button>
+
+        <a href class="btn btn-link" ng-click="clear()">Clear queue</a>
+    </li>
+
+    <li ng-switch-when="working">
+        <h4 class="umb-infobox-title">{{vm.currentTask.description}}</h4>
+
+        <div class="progress progress-deploy">
+            <div class="bar" style="width: {{ (vm.currentTask.done / vm.currentTask.total) * 100 }}%;"></div>
+        </div>
+
+        <small>{{vm.currentTask.currentActivity}}</small>
+
+        <hr />
+    </li>
+
+
+    <li ng-switch-when="pre-collect">
+        <h4 class="umb-infobox-title">Getting your content ready to be transfered</h4>
+
+        <p>
+            We will collect all your changes, and all the things they need to function properly, then we will
+            compare these changes with the <strong>{{vm.environment.destination}}</strong> workspace - so we ensure only new content will be deployed
+        </p>
+
+        <div class="progress progress-deploy">
+            <div class="bar" style="width: {{ (vm.currentTask.done / vm.currentTask.total) * 100 }}%;"></div>
+        </div>
+
+        <small>{{vm.currentTask.currentActivity}}</small>
+    </li>
+
+
+   <li class="deployOutput" ng-switch-when="problems">
+
+        <h5>Transfer is not possible</h5>
+        <p class="umb-abstract">
+            We cannot transfer your content changes, because the
+            <strong>{{vm.environment.destination}}</strong> workspace has not received the latest development changes.
+        </p>
+
+        <p>
+            If you are an editor then please contact your developers or admins and have them update the destination
+            environment before continuing with another content deployment.
+        </p>
+
+        <hr/>
+
+        <ul class="unstyled list-icons">
+            <li ng-if="vm.user.isLocalEnvironment">
+                <i class="icon icon-book-alt-2"></i>
+                <a
+                    href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Local/"
+                    target="_blank">
+                    Read developer documentation on troubleshooting schema problems
+                </a>
+            </li>
+
+            <li ng-if="!vm.user.isLocalEnvironment">
+                <i class="icon icon-book-alt-2"></i>
+                <a
+                    href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Remote/"
+                    target="_blank">
+                    Read developer documentation on troubleshooting schema problems
+                </a>
+            </li>
+
+            <li ng-hide="showDetails">
+                <i class="icon icon-search blue"></i>
+                <a href
+                prevent-default
+                ng-click="showDetails = true">Click to see below to see exactly what is out of sync</a>
+            </li>
+        </ul>
+
+        <div ng-show="showDetails" id="details-view">
+            <h4>Blocking changes:</h4>
+            <p>These development changes are blocking your content transfer,
+                <a target="_blank"
+                class="btn btn-link" ng-href="{{'http://umbraco.io/project/' + vm.environment.name}}">
+                <i class="icon-umb-deploy"></i> Go to umbraco.io to transfer them to the <strong>{{vm.environment.destination}}</strong> workspace
+                </a>
+            </p>
+
+            <div ng-repeat="provider in vm.manifest.notAllowed">
+                <p><strong>{{provider.name}}</strong>
+                </p>
+
+                <ul class="deployProblems">
+                    <li ng-repeat="item in provider.items">
+                        {{item.name}} is out of sync<br/>
+                        <ul ng-if="item.issues">
+                            <li ng-repeat="issue in item.issues">
+                                <span ng-show="issue.title">
+                                {{issue.title}}
+                                <small>{{issue.description}}</small>
+                            </span>
+                                <span ng-hide="issue.title">
+                                {{issue.property}} has been changed
+                                <small>The field '{{issue.property}}' has a different value on the remote website</small>
+                            </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button prevent-default class="umb-era-button -blue" ng-click="package(deployment)">Retry</button>
+
+    </li>
+
+
+    <li class="deployOutput deployList deployProblems" ng-switch-when="errors">
+
+       <deploy-problems is-local-environment="vm.user.isLocalEnvironment">
+            <ul>
+                <li ng-repeat="error in vm.errors">{{error}}</li>
+            </ul>
+        </deploy-problems>
+
+        <button prevent-default class="umb-era-button -blue" ng-click="package(deployment)">Retry</button>
+    </li>
+
+    <li ng-switch-when="empty">
+        <h4 class="umb-infobox-title">No new changes</h4>
+        <p>Everything is up to date, so no need to transfer any changes</p>
+    </li>
+
+
+    <li class="deployOutput deployProblems" ng-switch-when="exception">
+
+        <h4 class="umb-infobox-title">It was not possible to transfer changes</h4>
+        <p>An error occurred while transferring the selected changes, so the transfer could not finish.</p>
+        <p>If you are an editor then please contact your developers or admins with the technical details listed below for help in resolving the issue.</p>
+
+        <ul class="unstyled list-icons">
+            <li>
+                <i class="icon icon-book-alt-2"></i>
+                <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Error/"
+                target="_blank">Troubleshooting deploy errors</a></p>
+            </li>
+
+            <li ng-if="!isLocalEnvironment">
+                <i class="icon icon-book-alt-2"></i>
+                <a
+                    href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Remote/"
+                    target="_blank">
+                    Read developer documentation on troubleshooting schema problems
+                </a>
+            </li>
+
+            <li ng-hide="showDetails">
+                <i class="icon icon-search blue"></i>
+                <a href
+                prevent-default
+                ng-click="showDetails = true">
+                    Click to expand the technical details below to see exactly what went wrong</a>
+            </li>
+        </ul>
+
+        <div ng-if="showDetails">
+            <h4>Details:</h4>
+            <p>Here is some technical information that might help shed some light on whats happened:</p>
+
+            <p class="text-error"><strong>Message:&nbsp;</strong><small>{{vm.error.message}}</small></p>
+            <p><strong>Exception Message:&nbsp;</strong><small>{{vm.error.exceptionMessage}}</small></p>
+            <p><strong>Exception Type:&nbsp;</strong><small>{{vm.error.type}}</small></p>
+            <p><strong>Stack Trace:&nbsp;</strong><small>{{vm.error.stackTrace}}</small></p>
+
+            <pre>{{vm.currentTask | json}}</pre>
+        </div>
+
+        <br/>
+
+        <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()">Reload queue</button>
+    </li>
+
+
+    <li class="deployOutput deployList" ng-switch-when="collect">
+        <h4 class="umb-infobox-title">Ready to transfer changes to {{vm.environment.destination}}</h4>
+
+        <p>
+            The following changes need to be included for everything to function
+            properly, this can be due to dependencies, references and the structure of your website.
+        </p>
+
+        <hr />
+
+        <div ng-repeat="(key, value) in vm.manifest.deployment">
+            <p><strong>{{providerName(key).name}}</strong></p>
+            <ul>
+                <li ng-repeat="item in value">
+                    {{item.Name}}
+                </li>
+            </ul>
+        </div>
+
+
+        <button class="umb-era-button -blue" prevent-default ng-click="deploy()">Transfer everything now</button>
+
+        <br />
+
+        <small>This will transfer {{vm.manifest.deployement.length}} changes to the {{vm.environment.destination}} workspace </small>
+    </li>
+
+
+    <li ng-switch-when="deploy">
+        <h5>Transfering changes...</h5>
+        <p>Please hang on as changes are collected and transfered to {{vm.environment.destination}}</p>
+
+        <div class="progress progress-deploy">
+            <div class="bar" style="width: {{ (vm.currentTask.done / vm.currentTask.total) * 100 }}%;"></div>
+        </div>
+
+        <small>{{vm.currentTask.currentActivity}}</small>
+    </li>
+
+    <li class="deployOutput deployDone" ng-switch-when="done">
+        <h5>Transfer complete</h5>
+        <p>
+            Everything was packaged and sent to the {{vm.environment.destination}} workspace at
+            <a target="_blank" href="{{environment.url}}">{{environment.url}}</a>
+        </p>
+
+        <button class="umb-era-button -blue" prevent-default ng-click="clear()">Okay</button>
+    </li>
+
+
+    <li class="deployOutput deployDone" ng-switch-when="restored">
+        <h5>Restore complete</h5>
+        <p>
+            Umbraco has downloaded the latest content and media, and restored all the underlying components of the
+            website. All types, templates and other dependencies have been updated in this process.
+        </p>
+
+        <button class="umb-era-button -blue" prevent-default ng-click="clear()">Okay</button>
+    </li>
+
+</ul>

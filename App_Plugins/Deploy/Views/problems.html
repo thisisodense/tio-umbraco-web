@@ -1,7 +1,7 @@
 <div>
-    <h5>Deploy is not possible</h5>
+    <h5>Transfer is not possible</h5>
     <p class="umb-abstract">
-        The deployment cannot continue because the destination doesn't appear up-to-date.
+        We cannot transfer your content changes continue because the destination doesn't appear up-to-date.
     </p>
 
     <p>
@@ -12,7 +12,7 @@
     <hr/>
 
     <ul class="unstyled list-icons">
-        <li ng-if="ui.isLocalEnvironment">
+        <li ng-if="isLocalEnvironment">
             <i class="icon icon-book-alt-2"></i>
             <a 
                 href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Local/"
@@ -21,7 +21,7 @@
             </a>
         </li>
 
-        <li ng-if="!ui.isLocalEnvironment">
+        <li ng-if="!isLocalEnvironment">
             <i class="icon icon-book-alt-2"></i>
             <a
                 href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Remote/"
@@ -39,8 +39,8 @@
     </ul>
 
     <div ng-show="showDetails" id="details-view">
-        <h4>Details:</h4>
-        <p>Changed items blocking your deployment:</p>
+        <h4>Blocking changes:</h4>
+        <p>These items are blocking your content transfer, <a target="_blank" href="http://umbraco.io">Go to umbraco.io to transfer them to the workspace</a> </p>
 
         <div ng-transclude></div>
     </div>

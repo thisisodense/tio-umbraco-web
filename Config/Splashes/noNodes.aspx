@@ -154,6 +154,7 @@
 
 </section>
 
+<script type="text/javascript" src="/umbraco/lib/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/umbraco/lib/angular/1.1.5/angular.min.js"></script>
 <script type="text/javascript" src="/app_plugins/deploy/nonodes.bootstrap.js"></script>
 <script type="text/javascript" src="/app_plugins/deploy/shared/services/deploy.service.js"></script>

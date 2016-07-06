@@ -1,189 +1,313 @@
-<div class="umb-dialog" ng-controller="Concorde.DeployDialogController">
-    <div class="umb-pane">
-        <ul class="deployModal unstyled" ng-switch="step">
+<div ng-controller="Concorde.FlowController as vm">
 
-            <li ng-switch-default>
-                <div ng-if="deployment">
-                    <h5>Deploy {{nodeName}} from {{environment.source}} to {{environment.destination}}</h5>
-                    <p>
-                        Should all pages below {{nodeName}} be included in the deploy, or is it only
-                        "<em>{{nodeName}}</em>" you want
-                        to deploy to {{environment.destination}}?
-                    </p>
-                    <hr/>
-                    <label>
-                        <input type="checkbox" ng-model="deployment.includeDescendants"/>
-                        Include all pages below "<em>{{nodeName}}</em>"
-                    </label>
-                    <button prevent-default class="btn btn-primary" ng-click="queue(deployment, true)">Deploy</button>
-                </div>
-            </li>
+    <starter-kit-selector
+        show="vm.showStarterKitSelector"
+        on-select-starter-kit="vm.selectStarterKit">
+    </starter-kit-selector>
 
-            <li ng-switch-when="current-queue">
-                <h5>Your deployment queue</h5>
-                <div ng-repeat="provider in manifest.Providers">
-                    <p><strong>{{providerName(provider.Id).name}}</strong>
-                    </p>
-                    <ul class="unstyled">
-                        <li ng-if="provider.IncludeAll">
-                            <i class="icon-check"></i> Including all items
-                        </li>
-                        <li ng-repeat="entry in provider.Items">
-                            <i class="icon-check"></i> {{entry.Name}} <br/>
-                            <small class="smallwith" ng-if="entry.IncludeChildren"> including descendants</small>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn" ng-click="package()" prevent-default>Deploy queue</button>
-                <a href class="btn btn-link" ng-click="clear()">Clear</a>
-            </li>
+    <umb-editor-sub-header>
 
-            <li ng-switch-when="working">
-                <h5>{{currentTask.description}}</h5>
-                <div class="progress progress-deploy">
-                    <div class="bar" style="width: { {(currentTask.done /currentTask.total)* 100}}% ; "></div>
-                </div>
-                <small>{{currentTask.currentActivity}}</small>
-                <hr/>
-            </li>
+        <umb-editor-sub-header-content-right>
 
-            <li ng-switch-when="pre-collect">
-                <h5>Getting your content ready to be deployed</h5>
-                <p>
-                    We will collect all your changes, and all the things they need to function properly, then we will
-                    compare these changes with {{environment.destination}} - so we ensure only new content will be deployed
-                </p>
-                <div class="progress progress-deploy">
-                    <div class="bar" style="width: { {(currentTask.done /currentTask.total)* 100}}% ; "></div>
-                </div>
-                <small>{{currentTask.currentActivity}}</small>
-            </li>
+            <umb-button
+                type="button"
+                button-style="link"
+                label="Open {{vm.environment.name}} on Umbraco.io"
+                icon="icon-umb-deploy"
+                action="vm.openWorkspace()">
+            </umb-button>
 
-            <li class="deployOutput deployList deployError" ng-switch-when="problems">
-                <deploy-problems>
-                    <div ng-repeat="provider in manifest.notAllowed">
-                        <p><strong>{{provider.name}}</strong>
-                        </p>
-                        <ul class="deployProblems">
-                            <li ng-repeat="item in provider.items">
-                                {{item.name}} is out of sync<br/>
-                                <ul ng-if="item.issues">
-                                    <li ng-repeat="issue in item.issues">
-                                        <span ng-show="issue.title">
-                                        {{issue.title}}
-                                        <small>{{issue.description}}</small>
-                                    </span>
-                                        <span ng-hide="issue.title">
-                                        {{issue.property}} has been changed
-                                        <small>The field '{{issue.property}}' has a different value on the remote website</small>
-                                    </span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+            <div class="btn-group umb-button-group dropdown">
+
+                <umb-button
+                    type="button"
+                    button-style="link"
+                    label="Help and documentation"
+                    icon="icon-help-alt"
+                    action="vm.openDocumentation()">
+                </umb-button>
+
+                <a class="btn btn-link dropdown-toggle umb-button-group__toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </a>
+
+                <ul aria-labelledby="dLabel" class="dropdown-menu bottom-up umb-button-group__sub-buttons -align-right" role="menu" ng-class="{'-align-right': float === 'right'}">
+                    <li><a target="_blank" href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Getting-Started/">Getting Started</a></li>
+                    <li><a target="_blank" href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Set-Up/">Set up a Project</a></li>
+                    <li><a target="_blank" href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Deployment/">Deployment</a></li>
+                    <li><a target="_blank" href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/">Troubleshooting</a></li>
+                </ul>
+            </div>
+
+        </umb-editor-sub-header-content-right>
+
+    </umb-editor-sub-header>
+
+    <div class="fitted-container" display="relative">
+
+        <div class="workspaces-flow">
+
+            <div class="workspace local"
+                ng-class="{
+                            '-show-message': vm.activeWorkspace.type === 'local',
+                            '-active': vm.user.isLocalEnvironment,
+                            '-inactive': vm.user.seenConnection
+                           }">
+            
+                <!-- there is always a arrow, when not deploying, this indicates direction and flow of deploys -->
+               <div class="flow-arrow" ng-hide="vm.workspaceMessage === 'deploy'"></div>
+
+
+               <!-- Local arrow, either steps once or twice, due to the add env step -->
+               <div class="flow-arrow" ng-class="{'-to-next': !vm.showAddEnvironment}" 
+                    ng-if="vm.user.isLocalEnvironment && vm.workspaceMessage === 'deploy'">
+                   <div class="bar" ng-style="{width: vm.currentTask !== null ? '0' : ((vm.currentTask.done / vm.currentTask.total) * 100) + '%' }"></div>
+                   
+               </div>
+
+                <a href ng-click="showLocalMessage($event)">
+
+                    <div class="symbol"><i class="icon-pc"></i></div>
+
+                    <h4><strong>Local</strong></h4>
+                    <small ng-hide="vm.user.isLocalEnvironment">Work locally</small>
+
+                    <span ng-if="vm.user.isLocalEnvironment" class="current-workspace">
+                        <ng-pluralize count="vm.editorChanges"
+                                        when="{'0': 'Current workspace',
+                                            '1': '1 change',
+                                            'other': '{} changes'}">
+                        </ng-pluralize>
+                    </span>
+
+                </a>
+
+                <div class="workspace-arrow"></div>
+            </div>
+
+            <div class="workspace inactive" ng-if="vm.showAddEnvironment"
+                ng-class="{'-show-message': vm.activeWorkspace.type === 'add'}">
+
+                <a href ng-click="showAddMessage($event)">
+                    <div class="symbol"><i class="icon-add"></i></div>
+                    <h4>Add...</h4>
+                    <small>Add a workspace</small>
+                </a>
+
+                <div class="workspace-arrow"></div>
+            </div>
+
+
+            <div class="workspace"
+                    ng-class="{'-show-message': vm.activeWorkspace.type === workspace.type,
+                                '-active': workspace.current}"
+                    ng-repeat="workspace in vm.environment.configured">
+
+                    <!-- this can always only be onestep, so always to-next -->
+                    <div class="flow-arrow -to-next" 
+                        ng-if="workspace.current && vm.workspaceMessage === 'deploy' && showFlowArrow()">
+                            <div class="bar" ng-style="{width: vm.currentTask !== null ? '0' : ((vm.currentTask.done / vm.currentTask.total) * 100) + '%' }"></div>
                     </div>
-                </deploy-problems>
-                <button prevent-default class="btn btn-primary" ng-click="package(deployment)">Retry</button>
-            </li>
 
-            <li class="deployOutput deployList deployError" ng-switch-when="errors">
-                <deploy-problems>
-                    <ul class="deployProblems">
-                        <li ng-repeat="error in errors">{{error}}</li>
-                    </ul>
-                </deploy-problems>
-                <button prevent-default class="btn btn-primary" ng-click="package(deployment)">Retry</button>
-            </li>
+                    <a href ng-click="showWorkspaceMessage($event, workspace)">
 
-            <li ng-switch-when="empty">
-                <h5>No new changes</h5>
-                <p>Everything is up to date, so no need to deploy</p>
-                <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Ok</button>
-            </li>
+                        <div class="symbol"><i class="icon-globe-alt"></i></div>
+                        <h4><strong>{{workspace.name}}</strong></h4>
 
-            <li ng-switch-when="empty-queue">
-                <h5>Your deployment queue</h5>
-                <p>The queue is currently empty, everything has been deployed already - to add new items to the queue right click content in the tree on the left and select "queue for deployment"</p>
-                <button prevent-default class="btn btn-primary" ng-click="reloadQueue()">Reload queue</button>
-            </li>
+                        <small ng-hide="workspace.current">{{workspace.name}} Workspace</small>
 
-            <li class="deployOutput deployError" ng-switch-when="exception">
-                <h5>Something went wrong :(</h5>
-                <p>An error occurred while transferring the selected content, so the deployment could not finish.</p>
-                <p>If you are an editor then please contact your developers or admins with the technical details listed below for help in resolving the issue.</p>
-                <br/>
-                <p>Developers can refer to this documentation for further assistance: <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Error/" target="_blank">Troubleshooting deploy errors</a>
+                        <span ng-if="workspace.current" class="current-workspace">
+                            <ng-pluralize count="vm.editorChanges"
+                                            when="{'0': 'Current workspace',
+                                                '1': '1 change',
+                                                'other': '{} changes'}">
+                            </ng-pluralize>
+                        </span>
+                    </a>
+
+                    <div class="workspace-arrow"></div>
+            </div>
+
+        </div>
+  </div>
+
+  <div class="workspace-message" ng-switch="vm.workspaceMessage">
+
+        <div class="umb-infobox" ng-switch-when="deploy">
+            <div
+                class="umb-infobox-content"
+                ng-include="'/app_plugins/deploy/views/flow-deploy.html'">
+            </div>
+        </div>
+
+        <div class="umb-infobox" ng-switch-when="add-workspace">
+            <div class="umb-infobox-content">
+                <h4 class="umb-infobox-title">Add a workspace</h4>
+                <p>Add a private workspace where you and your team can test
+                    changes before they are sent to the Live website.
                 </p>
-                <br/>
-                <a href="#" prevent-default show-details="#details-view">Click to expand the technical details below to see exactly what went wrong</a>
-                <div class="hide" id="details-view">
-                    <h4>Details:</h4>
-                    <p>Here is some technical information that might help shed some light on whats happened:</p>
-                    <p class="text-error"><strong>Message:&nbsp;</strong><small>{{error.message}}</small>
-                    </p>
-                    <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small>
-                    </p>
-                    <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small>
-                    </p>
-                    <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small>
-                    </p>
-                    <pre>{{currentTask | json}}</pre>
-                </div>
-                <br/>
-                <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Close</button>
-                <button ng-if="onDashboard" prevent-default class="btn btn-primary" ng-click="reloadQueue()">Reload queue</button>
-            </li>
 
-            <li class="deployOutput deployList" ng-switch-when="collect">
-                <h5>Ready to deploy to {{environment.destination}}</h5>
                 <p>
-                    The following components need to be deployed along with {{nodeName}} for everything to function
-                    properly, this can be due to dependencies, references and the structure of your website.
+                    After the workspace is added, all changes from your local machine is sent to the testing workspace
                 </p>
-                <hr/>
-                <div ng-repeat="(key, value) in manifest.deployment">
-                    <p><strong>{{providerName(key).name}}</strong>
-                    </p>
-                    <ul class="deployItems">
-                        <li ng-repeat="item in value">
-                            {{item.Name}}
+
+                <br>
+
+                <button ng-click="vm.openAddEnvironment()" class="umb-era-button -blue">Add workspace</button>
+            </div>
+        </div>
+
+        <div class="umb-infobox" ng-switch-when="config">
+
+            <div class="umb-infobox-content row">
+
+                <div class="span6">
+                    <h4 class="umb-infobox-title">View website</h4>
+
+                    <p>Open the website or Umbraco backoffice in a new window</p>
+
+                    <ul class="unstyled">
+                        <li>
+                            <a class="btn btn-link" target="_blank" ng-href="{{vm.activeWorkspace.url}}">
+                            <i class="icon-layout blue"></i>
+                            View website</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link" target="_blank" ng-href="{{vm.activeWorkspace.url +'/umbraco'}}">
+                            <i class="icon-settings-alt blue"></i>
+                            Open umbraco backoffice</a>
                         </li>
                     </ul>
+
                 </div>
-                <button class="btn btn-primary" prevent-default ng-click="deploy()">Deploy everything now</button>
-                <br/>
-                <small>This will deploy {{manifest.deployement.length}} items to the website at {{environment.url}} </small>
-            </li>
 
-            <li ng-switch-when="deploy">
-                <h5>Deploying...</h5>
-                <p>Please hang on as changes are collected and deployed to {{environment.destination}}</p>
-                <div class="progress progress-deploy">
-                    <div class="bar" style="width: { {(currentTask.done /currentTask.total)* 100}}% ; "></div>
+                <div class="span6">
+
+                    <h4 class="umb-infobox-title">Manage Workspace</h4>
+
+                    <p>Manage workspace settings on umbraco.io, there you can invite team members, assign
+                        hostnames, adjust security and
+
+                    <ul class="unstyled">
+                        <li>
+                            <a class="btn btn-link" target="_blank" ng-href="{{'https://umbraco.io/project/' + vm.environment.alias}}">
+                            <i class="icon-umb-deploy blue"></i>
+                            Open {{vm.environment.name}} on Umbraco.io</a>
+                        </li>
+                    </ul>
+
                 </div>
-                <small>{{currentTask.currentActivity}}</small>
-            </li>
 
-            <li class="deployOutput deployDone" ng-switch-when="done">
-                <h5>Deployment complete</h5>
-                <p>
-                    Everything was packaged and sent to the website at
-                    <a target="_blank" href="{{environment.url}}">{{environment.url}}</a>
-                </p>
-                <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Okay</button>
-                <button ng-if="onDashboard" class="btn" prevent-default ng-click="clear()">Okay</button>
-            </li>
 
-            <li class="deployOutput deployDone" ng-switch-when="restored">
-                <h5>Restore complete</h5>
-                <p>
-                    Umbraco has downloaded the lates content and media, and restored all the underlying components of the
-                    website. All types, templates and other dependencies have been updated in this process.
-                </p>
-                <button ng-if="!onDashboard" class="btn" prevent-default ng-click="nav.hideDialog()">Okay</button>
-                <button ng-if="onDashboard" class="btn" prevent-default ng-click="clear()">Okay</button>
-            </li>
+            </div>
 
-        </ul>
+        </div>
+
+        <div class="umb-infobox" ng-switch-when="connection">
+
+            <div class="umb-infobox-content">
+
+                <h4 class="umb-infobox-title">Start working with your website locally</h4>
+                <p>Makes your changes locally and easily send them to uaas, choose how to work</p>
+
+
+                <div class="connection-options">
+                    <a href ng-click="show = 'vs'">
+                        <i class="icon-infinity"></i>
+                        <small>Use Visual Studio</small>
+                    </a>
+
+                    <a href ng-click="show = 'cli'">
+                        <i class="icon-terminal"></i>
+                        <small>Use Grunt or Gulp</small>
+                    </a>
+
+                    <a href ng-click="show = 'git'">
+                        <i class="icon-forms-github"></i>
+                        <small>Connect with git</small>
+                    </a>
+
+                    </div>
+
+
+                    <div ng-switch="show" class="connection-instructions">
+                        <div ng-switch-when="git">
+                            
+                            <h4>Git Clone</h4>
+                            <p>Use a git client like source tree or git kraken to clone 
+                                your uaas workspace, use the git url below</p>
+                            
+                            <p>
+                                <pre>{{vm.environment.configured[0].git}}</pre>
+                            </p>
+
+                            <p>This will pull down all your website files to your local machine, you can now make local changes 
+                                and push them back to umbraco as a service when they are ready to go live, using nothing but a standard git client</p>
+                            <hr>
+
+                            <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Set-Up/Working-Locally/" 
+                                target="_blank" class="btn btn-link"><i class="icon icon-help-alt"></i> Get detailed git instructions</a>
+                        </div>
+
+                        <div ng-switch-when="vs">
+                            <h4>Work locally with Visual Studio</h4>
+                            <p>For developers who use Visual Studio and Umbraco with code from external projects, 
+                                we offer a integration script which will connect your code repository with the 
+                                umbraco as a service website.
+                            </p>
+
+                            <p>
+                                Umbraco Core Developer Sebastiaan Janssen has written a detailed blogpost on his 
+                                <a href="https://cultiv.nl/blog/visual-studio-and-umbraco-as-a-service/" target="_blank">
+                                website</a> to help you get started with Visual Studio and Umbraco as a service
+                            </p>
+
+                            <hr>    
+                            <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Set-Up/Working-With-Visual-Studio/" 
+                                target="_blank" class="btn btn-link"><i class="icon icon-help-alt"></i> Get detailed instructions</a>
+                        </div>
+
+                        <div ng-switch-when="cli">
+                            <h4>Work locally with Grunt or Gulp</h4>
+<p>Umbraco as a service provides a fast way to syncronise design changes, directly from your local machine, it works by
+    running a node.js command, which will connect to your remote website and start syncing file changes. 
+    For a fast view on how your changes will be applied, a local browser window will show changes as they sync</p>
+
+<h4>1. Make a initial git clone of your site</h4>
+<p>Use a git client like source tree or git kraken to clone 
+                                your uaas workspace, use the git url below</p>
+
+<p>
+    <pre>{{vm.environment.configured[0].git}}</pre>
+</p>
+
+<h4>2. Install the node.js module</h4>
+<p>Run the below command in a terminal, to instal the node.js module, this will make a command called 'uaas' available in your terminal</p>
+<p>
+    <pre>npm install uaas-cli -g</pre>
+</p>
+
+<h4>3. Run the uaas command and sync changes</h4>
+<p>
+    Open a terminal in the root folder of your cloned website, then run the command:
+    </p>
+    <p>
+        <pre>uaas watch</pre>
+    </p>
+    <p>
+        Follow onscreen instructions to authenticate and start making changes to your local files
+        - a browser window will open and display changes as they are applied to your website.
+    </p>
+      
+      <hr/>
+
+ <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Set-Up/Working-With-Uaas-Cli/" 
+    target="_blank" class="btn btn-link"><i class="icon icon-help-alt"></i> Get detailed instructions</a>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
     </div>
 </div>

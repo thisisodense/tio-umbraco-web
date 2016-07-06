@@ -2,8 +2,8 @@
 
 	var baseUrl = "/umbraco/backoffice/api/Deploy/";
 	var localBaseUrl = "/umbraco/api/LocalRestore/";
-
-	var itemProviders = {
+    
+    var itemProviders = {
 	    "4362c4fb-8e23-4cdb-a611-786f48ea5ae7": { name: "Access entries" },
 	    "e0472592-e73b-11df-9492-0800200c9a66": { name: "Data types", supportCompare: true },
 	    "d8e6ad86-e73a-11df-9492-0800200c9a66": { name: "Dictionary items" },
@@ -57,12 +57,20 @@
             getItemProviders();
         });
     }
-
-    return {
+    
+    var service = {
+        //eventing so dialogs can track changes
+        events: $({}),
 
         //deployment services
         addToManifest : function(model){
-            return $http.post(baseUrl + "AddToManifest", model);
+            var retval = $http.post(baseUrl + "AddToManifest", model);
+            retval.then(function(){
+                service.events.trigger("change");
+                service.events.trigger("add", model);    
+            });
+            
+            return retval;
         },
 
         "package": function () {
@@ -78,10 +86,14 @@
         },
 
         deployQueue: function () {
+            service.events.trigger("change");
+            service.events.trigger("deploy");
         	return $http.get(baseUrl + "DeployQueue");
         },
 
         clearQueue: function () {
+            service.events.trigger("change");
+            service.events.trigger("clear");
             return $http.get(baseUrl + "ClearQueue");
         },
 
@@ -147,4 +159,7 @@
             return itemProviders[guid];
         }
     };
+    
+    return service;
+
 });

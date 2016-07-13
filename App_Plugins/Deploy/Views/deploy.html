@@ -14,8 +14,15 @@
                 button-style="link"
                 label="Open {{vm.environment.name}} on Umbraco.io"
                 icon="icon-umb-deploy"
-                action="vm.openWorkspace()">
+                action="vm.openWorkspace()"
+                ng-if="!vm.legacyDashboard">
             </umb-button>
+
+            <a href class="btn btn-link"
+               ng-click="vm.openWorkspace()"
+               ng-if="vm.legacyDashboard">
+                Open {{vm.environment.name}} on Umbraco.io
+            </a>
 
             <div class="btn-group umb-button-group dropdown">
 
@@ -24,8 +31,14 @@
                     button-style="link"
                     label="Help and documentation"
                     icon="icon-help-alt"
-                    action="vm.openDocumentation()">
+                    action="vm.openDocumentation()"
+                    ng-if="!vm.legacyDashboard">
                 </umb-button>
+
+                <a href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/" target="_blank" class="btn btn-link"
+                   ng-if="vm.legacyDashboard">
+                    Help and documentation
+                </a>
 
                 <a class="btn btn-link dropdown-toggle umb-button-group__toggle" data-toggle="dropdown">
                     <span class="caret"></span>

@@ -1,13 +1,12 @@
 (function() {
     'use strict';
 
-    function StarterKitSelector($compile, $timeout, packageResource, localStorageService) {
+    function StarterKitSelector($compile, $timeout, packageResource) {
 
         function link(scope, el, attr, ctrl) {
 			
             scope.installStarterKit = false;
             scope.installStatus = "";
-            scope.starterKitLocalStorageKey = "umbStarterKit";
             scope.starterkitName = "";
             
             scope.selectStarterKit = function(starterKitName) {
@@ -15,7 +14,6 @@
             };
             
             scope.startInstall = function() {
-				
 				var starterKitName = scope.starterkitName;
 				
                 if(starterKitName !== "blank") {
@@ -80,7 +78,6 @@
                     }
                 });
             }
-
         }
 
         var directive = {
@@ -95,7 +92,6 @@
         };
 
         return directive;
-
     }
 
     angular.module('umbraco.directives').directive('starterKitSelector', StarterKitSelector);

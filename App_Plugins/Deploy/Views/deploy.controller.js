@@ -1,8 +1,7 @@
-angular.module("umbraco").controller("Concorde.FlowController", function($scope, deployService, contentResource, taskManService, localStorageService, packageResource, $cookieStore, $location) {
+angular.module("umbraco").controller("Concorde.FlowController", function($scope, deployService, contentResource, taskManService, packageResource, $cookieStore, $location) {
 
     var vm = this;
     var subscribed = false;
-    var starterKitLocalStorageKey = "umbStarterKit";
     vm.showStarterKitSelector = true;
     vm.hasChanges = false;
     vm.editorChanges = 0;
@@ -21,7 +20,7 @@ angular.module("umbraco").controller("Concorde.FlowController", function($scope,
     //handling the arrow
     vm.deploying = false;
     vm.deployingToNext = false; //used to indicate if local is deploying to live or dev
-
+    vm.legacyDashboard = Umbraco.Sys.ServerVariables.application.version !== undefined && (Umbraco.Sys.ServerVariables.application.version.startsWith('7.3') || Umbraco.Sys.ServerVariables.application.version.startsWith('7.2'));
 
     function init() {
         openStarterKitSelector();
@@ -34,24 +33,26 @@ angular.module("umbraco").controller("Concorde.FlowController", function($scope,
             return;
         }
 
-        var starterKit = localStorageService.get(starterKitLocalStorageKey);
-
-        if(starterKit) {
+        //Check localStorage for selected starterKit even though
+        //the ?dashboard=starter querystring is present
+        if (localStorage.starterKit) {
             vm.showStarterKitSelector = false;
         } else {
-
             //only show the message if there is no content
-            contentResource.getChildren(-1).then(function(response){
-                if(!response.items || response.items.length === 0){
+            contentResource.getChildren(-1).then(function (response) {
+                if (!response.items || response.items.length === 0) {
                     vm.showStarterKitSelector = true;
                 }
             });
         }
     }
 
-    function selectStarterKit(starterkitName){
-	    var url = window.location.href + "?init=true";
-        localStorageService.set(starterKitLocalStorageKey, starterkitName);
+    function selectStarterKit(starterkitName) {
+        //Set the starterkit name in localStorage so we know
+        //not to show the overlay/selector again.
+        localStorage.starterKit = starterkitName;
+        //TODO Fix this - currently doesn't seem to remove the querystring
+        $location.search('dashboard', null);
         window.location.reload(true);
     }
 

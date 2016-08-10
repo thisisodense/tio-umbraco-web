@@ -1,4 +1,4 @@
-﻿<Template xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>Layout</Id>
@@ -9,7 +9,7 @@
     <Resources>
         <Resource>
             <ExtractToPath>~/views/Layout.cshtml</ExtractToPath>
-            <Hash>20c1aa9d7474eef773c68631730cc6f0</Hash>
+            <Hash>24b0e278de3747c8f3a51d165d73323d</Hash>
             <Name>~/views/Layout.cshtml</Name>
             <PackageFromPath>~/views/Layout.cshtml</PackageFromPath>
             <TemporaryStoragePath>/views/Layout.cshtml</TemporaryStoragePath>
@@ -20,5 +20,5 @@
     <Alias>Layout</Alias>
     <MasterPagePath>~/masterpages/Layout.master</MasterPagePath>
     <ParentTemplateId>0</ParentTemplateId>
-    <Id>1050</Id>
+    <Id>1053</Id>
 </Template>

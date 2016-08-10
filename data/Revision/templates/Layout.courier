@@ -9,7 +9,7 @@
     <Resources>
         <Resource>
             <ExtractToPath>~/views/Layout.cshtml</ExtractToPath>
-            <Hash>24b0e278de3747c8f3a51d165d73323d</Hash>
+            <Hash>4ad2054732e5119dfefd3a27b9451284</Hash>
             <Name>~/views/Layout.cshtml</Name>
             <PackageFromPath>~/views/Layout.cshtml</PackageFromPath>
             <TemporaryStoragePath>/views/Layout.cshtml</TemporaryStoragePath>

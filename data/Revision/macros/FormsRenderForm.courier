@@ -1,4 +1,4 @@
-﻿<Macro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>FormsRenderForm</Id>
@@ -6,12 +6,29 @@
     </ItemId>
     <Name>FormsRenderForm</Name>
     <ItemType>Item</ItemType>
-    <Resources />
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/Views/MacroPartials/InsertUmbracoForm.cshtml</ExtractToPath>
+            <Hash>15f77019399bc33714622a105508dc77</Hash>
+            <Name>~/Views/MacroPartials/InsertUmbracoForm.cshtml</Name>
+            <PackageFromPath>~/Views/MacroPartials/InsertUmbracoForm.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/Views/MacroPartials/InsertUmbracoForm.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
     <Alias>FormsRenderForm</Alias>
     <CacheByPage>false</CacheByPage>
     <CachePersonalized>false</CachePersonalized>
-    <DLRScript />
-    <Properties />
+    <DLRScript>~/Views/MacroPartials/InsertUmbracoForm.cshtml</DLRScript>
+    <Properties>
+        <MacroProperty>
+            <Alias>FormGuid</Alias>
+            <Name>Choose a form</Name>
+            <EditorAlias>UmbracoForms.FormPicker</EditorAlias>
+            <SortOrder>0</SortOrder>
+        </MacroProperty>
+    </Properties>
     <RefreshRate>0</RefreshRate>
     <RenderContent>true</RenderContent>
     <UseInEditor>false</UseInEditor>

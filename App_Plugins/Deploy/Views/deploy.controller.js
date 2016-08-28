@@ -16,6 +16,7 @@ angular.module("umbraco").controller("Concorde.FlowController", function($scope,
     vm.deploystep = "";
     vm.openWorkspace = openWorkspace;
     vm.openAddEnvironment = openAddEnvironment;
+    vm.openDocumentation = openDocumentation;
 
     //handling the arrow
     vm.deploying = false;

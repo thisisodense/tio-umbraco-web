@@ -825,7 +825,7 @@
     text-transform: capitalize;
 
     height: 38px;
-    line-height: 38px;
+    line-height: 1;
 
 
     max-width: 100%;

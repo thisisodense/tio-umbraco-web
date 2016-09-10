@@ -1,10 +1,8 @@
-﻿@using Models = ThisIsOdense.Website.Models;
-@using System.Web.Mvc.Html
+﻿@using Models = TIO.Core.Models;
 @using Library.Tools;
-@using System.Web.Optimization;
 
 
-@inherits ThisIsOdense.Mvc.Core.BaseViewPage<Models.LocationModel>
+@inherits TIO.Mvc.Core.BaseViewPage<Models.LocationModel>
 @{
     Layout = "~/Views/Layout.cshtml";
     ViewBag.Title = " - " + Model.Title;

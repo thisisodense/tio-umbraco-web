@@ -21,12 +21,15 @@ _ReSharper*/
 [Bb]uild[Ll]og.*
 *.[Pp]ublish.xml
 *.suo
+*.refresh
 [sS]ource
 [sS]andbox
 *.vs10x
 *.orig
 *.[Dd]ot[Ss]ettings
 *.js.map
+.DS_Store
+._.DS_Store
 deploy.cmd
 
 bin/NativeBinaries/*

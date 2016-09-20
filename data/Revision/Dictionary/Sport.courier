@@ -1,0 +1,11 @@
+﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>Sport</Id>
+        <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Sport</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Translations />
+</DictionaryItem>

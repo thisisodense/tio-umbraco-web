@@ -99,7 +99,7 @@
 
                         <div class="cta" ng-class="{'cta-disabled': submitting}">
                             <input type="submit" ng-disabled="submitting" class="button" ng-click="remoteContent(login, password)" value="Restore" />
-                            <small><span>or</span> <a href ng-click="restoreData()">Skip downloading</a></small>
+                            <small><span>or</span> <a href ng-click="skipRestore()">Skip downloading</a></small>
                         </div>
 
                     </form>
@@ -135,6 +135,17 @@
                     <h1>Ready to rock n' roll!</h1>
                     
                     <p>Everything has been restored and is ready for use, click below to open the backoffice</p>
+                    
+                        
+                    <div class="cta" ng-if="ready">
+                        <a href="<%= IOHelper.ResolveUrl(SystemDirectories.Umbraco) %>" class="button">Open Umbraco</a>
+                    </div>
+                </li>
+                
+                <li ng-switch-when="doneSkippedRestore">
+                    <h1>Ready to rock n' roll!</h1>
+                    
+                    <p>Click below to open the backoffice</p>
                     
                         
                     <div class="cta" ng-if="ready">

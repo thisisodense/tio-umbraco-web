@@ -10,6 +10,27 @@
         <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()">Reload queue</button>
     </li>
 
+    <li ng-switch-when="singlenode">
+        <div ng-if="vm.deployment">
+            <h5>Deploy {{vm.nodeName}} from {{vm.environment.source}} to {{vm.environment.destination}}</h5>
+            <p>
+                Should all pages below {{vm.nodeName}} be included in the deploy, or is it only
+                "<em>{{vm.nodeName}}</em>" you want
+                to deploy to {{vm.environment.destination}}?
+            </p>
+            
+            <hr/>
+            <p>
+                <label>
+                    <input type="checkbox" ng-model="vm.deployment.includeDescendants"/>
+                    Include all pages below "<em>{{vm.nodeName}}</em>"
+                </label>
+            </p>
+
+            <button prevent-default class="umb-era-button -blue" ng-click="vm.queue(vm.deployment, true)">Deploy</button>
+        </div>
+    </li>
+
     <li ng-switch-when="current-queue">
 
         <h4 class="umb-infobox-title">
@@ -81,6 +102,7 @@
     <li class="deployOutput" ng-switch-when="problems">
 
         <h5>Transfer is not possible</h5>
+
         <p class="umb-abstract">
             We cannot transfer your content changes, because the
             <strong>{{vm.environment.destination}}</strong> workspace has not received the latest development changes.
@@ -222,15 +244,12 @@
             <pre>{{vm.currentTask | json}}</pre>
         </div>
 
-        <br />
-
-        <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()">Reload queue</button>
     </li>
 
 
     <li class="deployOutput deployList" ng-switch-when="collect">
         <h4 class="umb-infobox-title">Ready to transfer changes to {{vm.environment.destination}}</h4>
-
+    
         <p>
             The following changes need to be included for everything to function
             properly, this can be due to dependencies, references and the structure of your website.

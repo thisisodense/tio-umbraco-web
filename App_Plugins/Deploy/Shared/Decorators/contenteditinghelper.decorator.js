@@ -1,4 +1,4 @@
-var contentEditingHelperDecorator = function($delegate, deployService, navigationService, editorState) {
+var contentEditingHelperDecorator = function($delegate, appState, deployService, navigationService, editorState) {
 
     $delegate.configureContentEditorButtons = (function() {
         var cached_function = $delegate.configureContentEditorButtons;
@@ -11,15 +11,21 @@ var contentEditingHelperDecorator = function($delegate, deployService, navigatio
                                 labelKey: "Deploy",
                                 hotKey: "ctrl+d",
                                 handler: function(){
-                                                
+
+                                                //getting the current tree node to open the dialog against.
+                                                var node = appState.getTreeState("selectedNode");
+                                                if(!node){
+                                                    node = editorState.current;
+                                                }
+
                                                 navigationService.showDialog({
                                                     action:{
                                                         name: "Deploy",
                                                         metaData:{
-                                                            actionView: "../app_plugins/deploy/views/deploy.html"
+                                                            actionView: "../app_plugins/deploy/views/deploy-singlenode.html"
                                                         }
                                                     },
-                                                    node: editorState.current
+                                                    node: node
                                                 });
                                             }
                                 

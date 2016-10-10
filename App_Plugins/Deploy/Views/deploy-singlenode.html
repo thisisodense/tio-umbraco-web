@@ -1,0 +1,17 @@
+﻿<div class="umb-dialog" ng-controller="Concorde.DeploySingleNodeController as vm">
+    <div class="umb-dialog-body">
+        <div class="umb-pane">
+
+            <!-- flow-deploy requires vm.deploystep to be available in parent scope... -->
+            <div ng-include="'/app_plugins/deploy/views/flow-deploy.html'">
+            </div>
+
+        </div>
+    </div>
+    <div class="umb-dialog-footer btn-toolbar umb-btn-toolbar" ng-hide="success">
+        <a class="btn btn-link ng-scope" ng-click="nav.hideDialog()">
+            <localize key="general_close" class="ng-isolate-scope ng-scope">Close</localize>
+        </a>
+    </div>
+
+</div>

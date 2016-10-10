@@ -7,6 +7,7 @@
         "/app_plugins/deploy/shared/services/taskman.service.js",
         "/app_plugins/deploy/shared/decorators/contenteditinghelper.decorator.js",
         "/app_plugins/deploy/views/deploy.controller.js",
+        "/app_plugins/deploy/views/deploy-singlenode.controller.js",
         "/app_plugins/deploy/views/queue.controller.js",
         "/app_plugins/deploy/views/restore.controller.js"
     ],

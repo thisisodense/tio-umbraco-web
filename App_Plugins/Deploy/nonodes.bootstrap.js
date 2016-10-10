@@ -53,6 +53,10 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 	    	});
 	    };
 
+        $scope.skipRestore = function() {
+            $scope.step = "doneSkippedRestore";
+            $scope.ready = true;
+        };
 
 	    $scope.restoreData = function(){
 			

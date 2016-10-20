@@ -1189,7 +1189,7 @@
             Gets the current request cache to persist the values between handlers
             </summary>
         </member>
-        <member name="M:Umbraco.Web.Editors.RedirectUrlManagementController.IsEnabled">
+        <member name="M:Umbraco.Web.Editors.RedirectUrlManagementController.GetEnableState">
             <summary>
             Returns true/false of whether redirect tracking is enabled or not
             </summary>
@@ -3126,7 +3126,7 @@
         </member>
         <member name="M:Umbraco.Web.Editors.ContentController.PostSort(Umbraco.Web.Models.ContentEditing.ContentSortOrder)">
             <summary>
-            Change the sort order for media
+            Change the sort order for content
             </summary>
             <param name="sorted"></param>
             <returns></returns>
@@ -4795,7 +4795,7 @@
             <returns></returns>
             <remarks>
             If the membership provider installed is the umbraco membership provider, then we will allow changing the username, however if
-            the membership provider is a custom one, we cannot allow chaning the username because MembershipProvider's do not actually natively 
+            the membership provider is a custom one, we cannot allow chaning the username because MembershipProvider's do not actually natively
             allow that.
             </remarks>
         </member>
@@ -4814,7 +4814,7 @@
             </summary>
             <remarks>
             This also ensures that the IsLocked out property is readonly when the member is not locked out - this is because
-            an admin cannot actually set isLockedOut = true, they can only unlock. 
+            an admin cannot actually set isLockedOut = true, they can only unlock.
             </remarks>
         </member>
         <member name="T:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver">
@@ -6179,6 +6179,17 @@
             <param name="app"></param>
             <param name="explicitPaths"></param>
             <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Security.Identity.AuthenticationOptionsExtensions.SetSignInChallengeResultCallback(Microsoft.Owin.Security.AuthenticationOptions,System.Func{Microsoft.Owin.IOwinContext,Microsoft.Owin.Security.AuthenticationProperties})">
+            <summary>
+            When trying to implement an Azure AD B2C provider or other OAuth provider that requires a customized Challenge Result in order to work then
+            this must be used.
+            </summary>
+            <param name="authOptions"></param>
+            <param name="authProperties"></param>
+            <remarks>
+            See: http://issues.umbraco.org/issue/U4-7353
+            </remarks>
         </member>
         <member name="M:Umbraco.Web.Security.Identity.AuthenticationOptionsExtensions.SetExternalSignInAutoLinkOptions(Microsoft.Owin.Security.AuthenticationOptions,Umbraco.Web.Security.Identity.ExternalSignInAutoLinkOptions)">
             <summary>
@@ -11758,18 +11769,7 @@
             Allows developers to add custom variables on parsing
             </summary>
         </member>
-        <member name="T:Umbraco.Web.Strategies.Migrations.RebuildMediaXmlCacheAfterUpgrade">
-             <summary>
-             This will execute after upgrading to rebuild the xml cache
-             </summary>
-             <remarks>
-             This cannot execute as part of a db migration since we need access to the services/repos.
-            
-             This will execute for specific versions -
-            
-             * If current is less than or equal to 7.0.0
-             </remarks>
-        </member>
+        <!-- Badly formed XML comment ignored for member "T:Umbraco.Web.Strategies.Migrations.RebuildXmlCachesAfterUpgrade" -->
         <member name="T:Umbraco.Web.Strategies.PublicAccessEventHandler">
             <summary>
             Used to ensure that the public access data file is kept up to date properly
@@ -13189,7 +13189,7 @@
         </member>
         <member name="M:Umbraco.Web.Editors.MediaController.GetEmpty(System.String,System.Int32)">
             <summary>
-            Gets an empty content item for the 
+            Gets an empty content item for the
             </summary>
             <param name="contentTypeAlias"></param>
             <param name="parentId"></param>
@@ -13237,7 +13237,7 @@
             Moves an item to the recycle bin, if it is already there then it will permanently delete it
             </summary>
             <param name="id"></param>
-            <returns></returns> 
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Web.Editors.MediaController.PostMove(Umbraco.Web.Models.ContentEditing.MoveOrCopy)">
             <summary>
@@ -13250,7 +13250,7 @@
             <summary>
             Saves content
             </summary>
-            <returns></returns>        
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Web.Editors.MediaController.MapPropertyValues``1(Umbraco.Web.Models.ContentEditing.ContentBaseItemSave{``0})">
             <summary>
@@ -13289,7 +13289,7 @@
         </member>
         <member name="M:Umbraco.Web.Editors.MediaController.CheckPermissions(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.Membership.IUser,Umbraco.Core.Services.IMediaService,System.Int32,Umbraco.Core.Models.IMedia)">
             <summary>
-            Performs a permissions check for the user to check if it has access to the node based on 
+            Performs a permissions check for the user to check if it has access to the node based on
             start node and/or permissions for the node
             </summary>
             <param name="storage">The storage to add the content item to so it can be reused</param>
@@ -20588,12 +20588,6 @@
             the response should use the specified code and description. The code and description will or will
             not be used, in due time.</remarks>
         </member>
-        <member name="F:Umbraco.Web.Routing.PublishedContentRequest._cacheability">
-            <summary>
-            Gets or sets the <c>System.Web.HttpCacheability</c>
-            </summary>
-            <remarks>Is set to <c>System.Web.HttpCacheability.Private</c>  by default, which is the ASP.NET default.</remarks>
-        </member>
         <member name="F:Umbraco.Web.Routing.PublishedContentRequest._cacheExtensions">
             <summary>
             Gets or sets a list of Extensions to append to the Response.Cache object
@@ -20750,6 +20744,11 @@
             </summary>
             <remarks>Does not actually set the http response status description, only registers that the response
             should use the specified description. The description will or will not be used, in due time.</remarks>
+        </member>
+        <member name="P:Umbraco.Web.Routing.PublishedContentRequest.Cacheability">
+            <summary>
+            Gets or sets the <c>System.Web.HttpCacheability</c>
+            </summary>
         </member>
         <member name="T:Umbraco.Web.Routing.RoutingContext">
             <summary>
@@ -29837,15 +29836,6 @@
         <member name="F:umbraco.cms.presentation.user.PermissionEditor.JsInclude1">
             <summary>
             JsInclude1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:umbraco.cms.presentation.user.PermissionEditor.JsInclude2">
-            <summary>
-            JsInclude2 control.
             </summary>
             <remarks>
             Auto-generated field.

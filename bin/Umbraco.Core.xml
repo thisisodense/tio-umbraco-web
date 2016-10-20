@@ -2592,6 +2592,11 @@
             Guid for a DataType object.
             </summary>
         </member>
+        <member name="F:Umbraco.Core.Constants.ObjectTypes.DocumentGuid">
+            <summary>
+            Guid for a Document object.
+            </summary>
+        </member>
         <member name="F:Umbraco.Core.Constants.ObjectTypes.DocumentTypeGuid">
             <summary>
             Guid for a Document Type object.
@@ -3652,6 +3657,16 @@
         <member name="P:Umbraco.Core.Events.MigrationEventArgs.Migrations">
             <summary>
             Returns all migrations that were used in the migration runner
+            </summary>
+        </member>
+        <member name="P:Umbraco.Core.Events.MigrationEventArgs.ConfiguredSemVersion">
+            <summary>
+            Gets the origin version of the migration, i.e. the one that is currently installed.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Core.Events.MigrationEventArgs.TargetSemVersion">
+            <summary>
+            Gets the target version of the migration.
             </summary>
         </member>
         <member name="M:Umbraco.Core.Events.PublishEventArgs`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Boolean,Umbraco.Core.Events.EventMessages)">
@@ -13713,6 +13728,15 @@
             <param name="media"></param>
             <returns></returns>
         </member>
+        <member name="M:Umbraco.Core.Models.UserExtensions.IsAdmin(Umbraco.Core.Models.Membership.IUser)">
+            <summary>
+            Determines whether this user is an admin.
+            </summary>
+            <param name="user"></param>
+            <returns>
+            	<c>true</c> if this user is admin; otherwise, <c>false</c>.
+            </returns>
+        </member>
         <member name="T:Umbraco.Core.NetworkHelper">
             <summary>
             Currently just used to get the machine name in med trust and to format a machine name for use with file names
@@ -15642,6 +15666,21 @@
             Represents a repository for doing CRUD operations for <see cref="T:Umbraco.Core.Models.IContent"/>
             </summary>
         </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.VersionableRepositoryBase`2.GetAllVersions(System.Int32)">
+            <summary>
+            Gets a list of all versions for an <see cref="!:TEntity"/> ordered so latest is first
+            </summary>
+            <param name="id">Id of the <see cref="!:TEntity"/> to retrieve versions from</param>
+            <returns>An enumerable list of the same <see cref="!:TEntity"/> object with different versions</returns>
+        </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.VersionableRepositoryBase`2.GetVersionIds(System.Int32,System.Int32)">
+            <summary>
+            Gets a list of all version Ids for the given content item ordered so latest is first
+            </summary>
+            <param name="id"></param>
+            <param name="maxRows">The maximum number of rows to return</param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Core.Persistence.Repositories.VersionableRepositoryBase`2.PerformDeleteVersion(System.Int32,System.Guid)">
             <summary>
             Protected method to execute the delete statements for removing a single version for a TEntity item.
@@ -15744,10 +15783,18 @@
         </member>
         <member name="M:Umbraco.Core.Persistence.Repositories.IRepositoryVersionable`2.GetAllVersions(System.Int32)">
             <summary>
-            Gets a list of all versions for an <see cref="!:TEntity"/>.
+            Gets a list of all versions for an <see cref="!:TEntity"/> ordered so latest is first
             </summary>
             <param name="id">Id of the <see cref="!:TEntity"/> to retrieve versions from</param>
             <returns>An enumerable list of the same <see cref="!:TEntity"/> object with different versions</returns>
+        </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.IRepositoryVersionable`2.GetVersionIds(System.Int32,System.Int32)">
+            <summary>
+            Gets a list of all version Ids for the given content item
+            </summary>
+            <param name="id"></param>
+            <param name="maxRows">The maximum number of rows to return</param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Core.Persistence.Repositories.IRepositoryVersionable`2.GetByVersion(System.Guid)">
             <summary>
@@ -21096,6 +21143,14 @@
             <param name="id"></param>
             <returns>An Enumerable list of <see cref="T:Umbraco.Core.Models.IContent"/> objects</returns>
         </member>
+        <member name="M:Umbraco.Core.Services.IContentService.GetVersionIds(System.Int32,System.Int32)">
+            <summary>
+            Gets a list of all version Ids for the given content item ordered so latest is first
+            </summary>
+            <param name="id"></param>
+            <param name="maxRows">The maximum number of rows to return</param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Core.Services.IContentService.GetRootContent">
             <summary>
             Gets a collection of <see cref="T:Umbraco.Core.Models.IContent"/> objects, which reside at the first level / root
@@ -21629,6 +21684,14 @@
             </summary>
             <param name="id"></param>
             <returns>An Enumerable list of <see cref="T:Umbraco.Core.Models.IContent"/> objects</returns>
+        </member>
+        <member name="M:Umbraco.Core.Services.ContentService.GetVersionIds(System.Int32,System.Int32)">
+            <summary>
+            Gets a list of all version Ids for the given content item ordered so latest is first
+            </summary>
+            <param name="id"></param>
+            <param name="maxRows">The maximum number of rows to return</param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Core.Services.ContentService.GetAncestors(System.Int32)">
             <summary>
@@ -27279,6 +27342,13 @@
             Currently this will only work for Content entities!
             </remarks>
         </member>
+        <member name="M:Umbraco.Core.Services.NotificationService.GetPreviousVersion(System.Int32)">
+            <summary>
+            Gets the previous version to the latest version of the content item if there is one
+            </summary>
+            <param name="contentId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Core.Services.NotificationService.SendNotifications(Umbraco.Core.Models.Membership.IUser,System.Collections.Generic.IEnumerable{Umbraco.Core.Models.EntityBase.IUmbracoEntity},System.String,System.String,System.Web.HttpContextBase,System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String},System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String})">
             <summary>
             Sends the notifications for the specified user regarding the specified node and action.
@@ -27354,14 +27424,14 @@
             <param name="action">The action letter - note: this is a string for future compatibility</param>
             <returns></returns>
         </member>
-        <member name="M:Umbraco.Core.Services.NotificationService.SendNotification(Umbraco.Core.Models.Membership.IUser,Umbraco.Core.Models.Membership.IUser,Umbraco.Core.Models.IContent,System.Collections.Generic.IEnumerable{Umbraco.Core.Models.IContent},System.String,System.Web.HttpContextBase,System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String},System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String})">
+        <member name="M:Umbraco.Core.Services.NotificationService.CreateNotificationRequest(Umbraco.Core.Models.Membership.IUser,Umbraco.Core.Models.Membership.IUser,Umbraco.Core.Models.IContentBase,Umbraco.Core.Models.IContentBase,System.String,System.Web.HttpContextBase,System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String},System.Func{Umbraco.Core.Models.Membership.IUser,System.String[],System.String})">
             <summary>
             Sends the notification
             </summary>
             <param name="performingUser"></param>
             <param name="mailingUser"></param>
             <param name="content"></param>
-            <param name="allVersions"></param>
+            <param name="oldDoc"></param>
             <param name="actionName">The action readable name - currently an action is just a single letter, this is the name associated with the letter </param>
             <param name="http"></param>
             <param name="createSubject">Callback to create the mail subject</param>
@@ -30951,6 +31021,15 @@
             Boots up the Umbraco application
             </summary>
         </member>
+        <member name="M:Umbraco.Core.UmbracoApplicationBase.CurrentDomainOnAssemblyResolve(System.Object,System.ResolveEventArgs)">
+            <summary>
+            Called when an assembly can't be resolved. In here we can do magic with the assembly name and try loading another.
+            This is used for loading a signed assembly of AutoMapper (v. 3.1+) without having to recompile old code.
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Core.UmbracoApplicationBase.Application_Start(System.Object,System.EventArgs)">
             <summary>
             Initializes the Umbraco application
@@ -32513,7 +32592,7 @@
             <param name="node">The child node to sort.</param>
             <param name="orderBy">A function returning the value to order the nodes by.</param>
             <returns>A value indicating whether sorting was needed.</returns>
-            <remarks>Assuming all nodes but <paramref name="node"/> are sorted, this will move the node to 
+            <remarks>Assuming all nodes but <paramref name="node"/> are sorted, this will move the node to
             the right position without moving all the nodes (as SortNodes would do) - should improve perfs.</remarks>
         </member>
         <member name="M:Umbraco.Core.XmlHelper.ImportXmlNodeFromText(System.String,System.Xml.XmlDocument@)">
@@ -32557,6 +32636,16 @@
             <param name="parent">The node to set or create the child text node on</param>
             <param name="name">The node name.</param>
             <param name="value">The node value.</param>
+            <returns>a XmlNode</returns>
+        </member>
+        <member name="M:Umbraco.Core.XmlHelper.SetInnerXmlNode(System.Xml.XmlDocument,System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            Sets or creates an Xml node from its inner Xml.
+            </summary>
+            <param name="xd">The xmldocument.</param>
+            <param name="parent">The node to set or create the child text node on</param>
+            <param name="name">The node name.</param>
+            <param name="value">The node inner Xml.</param>
             <returns>a XmlNode</returns>
         </member>
         <member name="M:Umbraco.Core.XmlHelper.AddCDataNode(System.Xml.XmlDocument,System.String,System.String)">

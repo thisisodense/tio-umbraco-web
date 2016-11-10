@@ -1,104 +1,152 @@
 angular.module("umbraco.services").factory("taskManService",
 	function ($timeout, $rootScope, deployService) {
 
-	    var service = {
-	        events: $({}),
+	    var subscribers = [];
 
-	        currentTask: undefined,
-	        latestTask: undefined,
-	        active: false,
-	        subscribers: 0,
+	    function listen(listener, continueOnUpdate, continueOnNull) {	        
+
+	        listener.active = true;
+
+            var check = function (interval) {
+                //only continue if listener is active
+                if (listener.active === true) {
+                    $timeout(function () {
+                        
+                        //only perform the http request if the user is logged in
+                        deployService.taskStatus(listener.taskId).then(function (response) {
+
+                            response = response.data;
+
+                            if (response !== "null" && listener.active) {
+                                
+                                if (response.complete) {
+                                    unlisten(listener);
+                                    listener.onComplete(response);
+                                }
+                                else if (response.error) {
+                                    unlisten(listener);
+                                    //NOTE: Pretty sure this will never happen - errors are handled with proper error handling
+                                    listener.onError(response);
+                                }
+                                else {
+                                    listener.onUpdate(response);
+
+                                    if (continueOnUpdate === true) {
+                                        //keep checking
+                                        check(interval);
+                                    }
+                                    else {
+                                        unlisten(listener);
+                                    }
+                                    
+                                }
+                            }
+                            else if (continueOnNull === true && listener.active === true) {
+                                //keep checking
+                                check(interval);
+                            }
+
+                        }, function (err) {
+                            listener.onError(err);
+                            unlisten(listener);
+                        });
+
+                    }, interval);
+                }
+            };
+
+	        //activate the service to start the monitor loop
+            check(2000);
+        }
+
+        function unlisten(listener) {
+            if (!listener) {
+                throw "listener parameter is empty";
+            }
             
-	        subscribe: function () {
-	            service.subscribers++;
+            listener.active = false;
 
-	            //turn on the monitoring on first subscription
-	            if (service.active === false) {
-	                service.monitorTaskmanager();
-	            }
+            var index = _.indexOf(subscribers, listener);
+            if (index >= 0) {
+                subscribers.splice(index, 1);
+            }
+	       
+        }
+
+	    var service = {
+	        
+            /**
+             *  Stops the polling and removes the subscriber count - used to shutdown (i.e. user logs off)
+             * @returns {} 
+             */
+            stop: function() {
+                _.each(subscribers, function(s) {
+                        unlisten(s);
+                    });
+            },
+
+            /**
+             * Waits until a new task is added
+             * @returns {} 
+             */
+            wait: function() {
+                var listener = {
+                    taskId: undefined,
+                    active: false,
+                    start: function () {
+                        listen(listener, false, true);
+                    },
+                    //these should be set the by user using this method
+                    onComplete: function (args) {
+                    },
+                    onUpdate: function (args) {
+                    },
+                    onError: function (args) {
+                    }
+                };
+
+                subscribers.push(listener);
+
+                return listener;
+            },
+
+            /**
+             * Subscribe to a specific taskid, returns an objects with callbacks to listen to activity
+             * @param {} taskId 
+             * @returns {} 
+             */
+	        subscribe: function (taskId) {
+                if (!taskId) {
+                    throw "taskId parameter is empty";
+                }
+
+                var listener = {
+                    taskId: taskId,
+                    active: false,
+                    start: function() {
+                        listen(listener, true, false);
+                    },
+                    //these should be set the by user using this method
+                    onComplete:function(args) {                        
+                    },
+                    onUpdate: function (args) {                        
+                    },
+                    onError: function (args) {                        
+                    }
+                };
+
+                subscribers.push(listener);
+                
+                return listener;
 	        },
 
-	        unsubscribe: function () {
-
-	            service.subscribers--;
-	            
-	            //this will turn of all polling
-	            if (service.subscribers <= 0) {
-	                service.active = false;
-	                service.subscribers = 0;
-	            }
-	        },
-
-	        monitorTaskmanager: function () {
-
-	            var check = function () {
-	                $timeout(function () {
-
-	                    //only perform the http request if the user is logged in
-	                    deployService.taskStatus().success(function (response) {
-
-	                        if (response === "null" && service.currentTask !== undefined && service.currentTask !== null) {
-                                //TODO: This shouldn't happen... but it seems to keep happening. In c# this would be because there
-                                // is no more processed tasks in the collection but that shouldn't be the case.
-                                // In this case, we're going to need to show the error screen with a custom error
-
-                                service.events.trigger("error", {
-                                    message: "An error occurred",
-                                    exceptionMessage: "Could not capture the latest deployment status. In most cases your data will have been deployed.",
-                                    type: "",
-                                    stackTrace: ""
-                                });
-                                service.currentTask = undefined;
-                            }
-                            else {
-                                //if response id is not equal to current task or current state
-
-                                if (response !== "null" && !_.isEqual(response, service.latestTask)) {
-                                    service.events.trigger("task-update", response);
-
-                                    if (!service.currentTask || service.currentTask.id !== response.id) {
-                                        service.events.trigger("task-new", response);
-                                    }
-
-                                    service.currentTask = response;
-
-                                    //the task is out of the current tasks queue
-                                    if (response.complete) {
-                                        service.latestTask = response;
-                                        service.currentTask = undefined;
-
-                                        //it is our current task list because its done
-                                        //NOTE: If a task had an error it would be handed by the error hander since
-                                        // the request would return an error status.
-                                        service.events.trigger("task-complete", response);
-                                    }
-                                    else if(response.error) {
-                                        service.events.trigger("error", response);
-                                    }
-                                }
-
-                                //keep checking if active
-                                if (service.active === true) {
-                                    check();
-                                }
-                            }
-
-
-	                    }).error(function (err) {
-
-	                        service.events.trigger("error", err);
-	                        service.currentTask = undefined;
-	                    });
-
-	                }, 2000);
-	            };
-
-	            //only start the loop if it is not already active
-	            if (service.active === false) {
-	                //activate the service to start the monitor loop
-	                service.active = true;
-	                check(2000);
-	            }
+            /**
+             *  Stops all polling for the listener
+             * @param {} listener 
+             * @returns {} 
+             */
+	        unsubscribe: function (listener) {
+	            unlisten(listener);
 	        }
 	    };
 
@@ -108,6 +156,6 @@ angular.module("umbraco.services").factory("taskManService",
 
 	    //happens on logout / timeout
 	    eventsService.on("app.notAuthenticated", function () {
-	        taskManService.subscribers = 0;
+	        taskManService.stop();
 	    });
 	});

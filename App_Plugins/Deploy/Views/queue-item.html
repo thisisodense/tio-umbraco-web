@@ -1,0 +1,21 @@
+<div>
+    <h5>Queue <em>{{nodeName}}</em> for deployment to {{environment.destination}}</h5>
+
+    <p>This will put <em>{{nodeName}}</em> in the queue for the next deployment, nothing will be transfered yet</p>
+
+    <div ng-if="hasChildren">
+        <p>
+            Should all pages below <em>{{nodeName}}</em> be included in the deploy, or is it only
+            <em>{{nodeName}}</em> you want to deploy to {{environment.destination}}?
+        </p>
+
+        <hr />
+
+        <label>
+            <input type="checkbox" ng-model="deployment.includeDescendants" />
+            Include all pages below "<em>{{nodeName}}</em>"
+        </label>
+    </div>
+    <br/>
+    <button prevent-default class="btn btn-primary" ng-click="queue(deployment)">Queue</button>
+</div>

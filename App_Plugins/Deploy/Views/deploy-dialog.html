@@ -1,0 +1,29 @@
+<div ng-controller="Concorde.DeployDialogController as vm" ng-cloak>
+    <div class="umb-dialog-body">
+        <div class="umb-pane" ng-switch="vm.step">
+            
+            <div ng-switch-default>
+                <queue-item ng-if="vm.currentNode" 
+                            current-node="vm.currentNode" 
+                            on-queued="vm.onQueued(response)" 
+                            environment="vm.environment"
+                            package-queue="true">
+                </queue-item>
+            </div>
+
+            <div ng-switch-when="queued">
+                <flow-deploy current-task="vm.currentTask"
+                             environment="vm.environment"
+                             user="vm.user"
+                             on-ok="nav.hideDialog()"
+                             is-dialog="true">
+                </flow-deploy>
+            </div>
+        </div>
+    </div>    
+    <div class="umb-dialog-footer btn-toolbar umb-btn-toolbar" ng-hide="success">
+        <a class="btn btn-link ng-scope" ng-click="nav.hideDialog()">
+            <localize key="general_close" class="ng-isolate-scope ng-scope">Close</localize>
+        </a>
+    </div>
+</div>

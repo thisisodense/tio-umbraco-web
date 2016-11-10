@@ -22,9 +22,10 @@ var contentEditingHelperDecorator = function($delegate, appState, deployService,
                                                     action:{
                                                         name: "Deploy",
                                                         metaData:{
-                                                            actionView: "../app_plugins/deploy/views/deploy-singlenode.html"
+                                                            actionView: "../app_plugins/deploy/views/deploy-dialog.html",
+                                                            dialogMode: true
                                                         }
-                                                    },
+                                                    },                                                    
                                                     node: node
                                                 });
                                             }

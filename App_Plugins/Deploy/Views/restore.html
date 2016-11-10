@@ -1,5 +1,4 @@
 <div class="umb-dialog" ng-controller="Concorde.RestoreDialogController">
-
     <div class="umb-pane">
         <ul class="deployModal unstyled" ng-switch="step">
 
@@ -103,16 +102,13 @@
                 <small style="font-size: 12px; font-weight: 600;">{{currentTask.currentActivity}}</small>
 
             </li>
+            
+            <li class="deployOutput deployError" ng-switch-when="errors">
+                <unhandled-deploy-exception message="error.currentActivity" exception="error.description" stack="error.exception" additional-errors="error.errors" />
+            </li>
 
-            <li ng-switch-when="error">
-                <h4>Something went wrong :(</h4>
-                <p>Here is some technical information that might help shed some light on whats happened:</p>
-
-                <p class="alert alert-error alert-block"><strong>Message:&nbsp;</strong><small>{{error.message}}</small></p>
-                <p><strong>Exception Message:&nbsp;</strong><small>{{error.exceptionMessage}}</small></p>
-                <p><strong>Exception Type:&nbsp;</strong><small>{{error.type}}</small></p>
-                <p><strong>Stack Trace:&nbsp;</strong><small>{{error.stackTrace}}</small></p>
-
+            <li class="deployOutput deployError" ng-switch-when="exception">
+                <unhandled-deploy-exception message="error.message" exception="error.exceptionMessage" stack="error.stackTrace" />
             </li>
 
         </ul>

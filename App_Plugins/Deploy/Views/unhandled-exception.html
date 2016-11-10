@@ -1,0 +1,47 @@
+<div>
+    <h4 class="umb-infobox-title">It was not possible to transfer changes</h4>
+    <p>An error occurred while transferring the selected changes, so the transfer could not finish.</p>
+    <p>If you are an editor then please contact your developers or admins with the technical details listed below for help in resolving the issue.</p>
+    
+    <ul class="unstyled list-icons">
+        <li>
+            <i class="icon icon-book-alt-2"></i>
+            <a href="https://our.umbraco.org/documentation/Umbraco-Cloud/Troubleshooting/Content-Deploy-Error/"
+               target="_blank">Troubleshooting deploy errors</a>
+        </li>
+
+        <li ng-if="!isLocalEnvironment">
+            <i class="icon icon-book-alt-2"></i>
+            <a href="https://our.umbraco.org/documentation/Umbraco-Cloud/Troubleshooting/Content-Deploy-Schema/Remote/"
+               target="_blank">
+                Read developer documentation on troubleshooting schema problems
+            </a>
+        </li>
+
+        <li ng-hide="showDetails">
+            <i class="icon icon-search blue"></i>
+            <a href
+               prevent-default
+               ng-click="showDetails = true">
+                Click to expand the technical details below to see exactly what went wrong
+            </a>
+        </li>
+    </ul>
+    
+    <div ng-if="showDetails">
+        <h4>Details:</h4>
+        <p>Here is some technical information that might help shed some light on whats happened:</p>
+
+        <p class="text-error"><strong>{{message}}</strong></p>
+        <p><strong>Error:&nbsp;</strong><small>{{exception}}</small></p>
+        <p><strong>Details:&nbsp;</strong><small>{{stack}}</small></p>
+
+        <ul ng-show="additionalErrors">
+            <li ng-repeat="e in additionalErrors track by $index">
+                {{e}}
+            </li>
+        </ul>
+
+    </div>
+
+</div>    

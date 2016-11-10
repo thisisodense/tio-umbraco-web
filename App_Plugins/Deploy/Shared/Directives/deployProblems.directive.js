@@ -6,7 +6,9 @@
             replace: true,
             templateUrl: '/app_plugins/deploy/views/problems.html',
             scope: {
-                isLocalEnvironment: "="
+                isLocalEnvironment: "=",
+                destinationName: "=",
+                environmentAlias: "="
             }            
         };
     });

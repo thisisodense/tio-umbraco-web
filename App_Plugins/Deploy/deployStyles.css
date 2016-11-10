@@ -58,6 +58,10 @@
 }
 
 
+.error {
+    margin: 10px;
+}
+
 /* Seperator arrow */
 
 .seperator-arrow {
@@ -418,14 +422,23 @@
 	}
 
 .restore .json pre {
-		overflow: auto;
-		white-space: pre-wrap;
-        word-wrap: break-word;
-		font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-		font-size: 14px;
-		line-height: 1.5
-	}
+	overflow: auto;
+	white-space: pre-wrap;
+    word-wrap: break-word;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	font-size: 14px;
+    line-height: 1.5;
+    color: #d3d3d3;
+}
 
+.restore .json a {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.restore .json code {
+    color: #d3d3d3;
+}
 
 /*DEPLOY*/
 .deployModal label {
@@ -488,6 +501,7 @@
 	top: 8px;
 	width: 4px;
 }
+
 
 .deployModal .btn-link {
 	font-size: 14px;
@@ -618,7 +632,6 @@
 		white-space: normal;
 		word-break: break-all;
 	}
-
 }
 
 /* Progres bar */
@@ -918,9 +931,10 @@
 	line-height: 1.6;
 }
 
-.umb-infobox-title {
+.umb-infobox .umb-infobox-title {
 	font-weight: bold;
 	color: black;
+    text-transform: inherit;    
 }
 
 /* Current workspace */
@@ -944,7 +958,9 @@
 .-to-next .flow-arrow, .flow-arrow.-to-next {
 	width: 80%;
 }
-
+.flow-arrow.complete:after {
+    border-left-color: #2e8aea !important;
+}
 
 @media (min-width: 768px) {
 	.workspace {

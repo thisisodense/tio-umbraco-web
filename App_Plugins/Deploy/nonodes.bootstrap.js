@@ -2,54 +2,47 @@ angular.module("umbraco.services", []);
 angular.module("umbraco.nonodes", ["umbraco.services"])
 	.controller("Umbraco.NoNodes.Controller", function($scope, $q, $timeout, deployService){
 
-		//generic logging for errors
-	    function handleError(err){
-	        //TODO: we need to handle the error correctly here... 
-
-	        if (err && err.data) {
-	            //need to set it to .data because this handles the error
-	            //bubbling up from $http and from the taskman event
-	            err = err.data;
-	        }
-
-	        if (err) {
-	            var msg = {
-	                message: err.Message,
-	                exception: err.ExceptionMessage,
-	                type: err.ExceptionType,
-	                stack: err.StackTrace
-	            }
-	            $scope.currentTask.exception = msg;
-	        }
-	        else {
-	            $scope.currentTask.exception = err;
-	        }
+		//handling of errors during restore
+	    function handleException(err) {
+            if (err.status === 500) {
+                //this is a ysod/unhandled exception
+                $scope.currentTask.exception = {
+                    currentActivity: err.data.Message,
+                    description: err.data.ExceptionMessage,
+                    exception: err.data.StackTrace
+                }
+            }
+            else {
+                $scope.currentTask.exception = err.data;
+            }
 	    }
+
+        $scope.showTrace = function(obj) {
+            obj.traceVisible = true;
+        }
 
 		$scope.remoteContent = function(login, password){
 
 			$scope.submitting = true;
 
-	    	deployService.pullRemoteContentToLocal(login, password).success(function(response){
+		    deployService.pullRemoteContentToLocal(login, password).then(function (response) {
 					$scope.authError = false;
 					$scope.step = "remoteContent";
 
 		            //we get a task back
-		            $scope.currentTask = response;
+		            $scope.currentTask = response.data;
 
 		            //keep monitoring till its done
 		            $scope.monitorCurrentTask().then(function(){ 
 		                $scope.step = "restoreData";
 		                $scope.restoreData();
-		            }, handleError);
-	    	})
-	    	.error(function (err) {
+		            }, handleException);
+	    	}, function(err) {
 
+                //could not auth
 				$scope.authErrorLogin = login;	    		
 	    		$scope.authError = true;
 	    		$scope.submitting = false;
-
-	    		handleError(err);
 	    	});
 	    };
 
@@ -63,18 +56,18 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 	    	$scope.step = "restoreWebsite";
 	    	$scope.ready = false;
 
-	    	deployService.restoreWebSiteToLocal().success(function(response){
+	    	deployService.restoreWebSiteToLocal().then(function(response){
 	    		
 	            //we get a task back
-	            $scope.currentTask = response;
+	            $scope.currentTask = response.data;
 
 	            //keep monitoring till its done
 	            $scope.monitorCurrentTask().then(function(){ 
 	                $scope.step = "done";
 	                $scope.ready = true;
-	            }, handleError);
+	            }, handleException);
 
-	    	}).error(handleError);
+	    	});
 	    };
 
 
@@ -83,25 +76,34 @@ angular.module("umbraco.nonodes", ["umbraco.services"])
 	        var deferred = $q.defer();
 	        var check = function () {
 	            $timeout(function () {
-	                deployService.taskStatus($scope.currentTask.id).success(function (response) {
+	                deployService.taskStatus($scope.currentTask.id).then(function (response) {
 
-	                    $scope.currentTask = response;
+	                    //"null" is returned when the server returns a null task status
+	                    // we don't want to overwrite our current status with that.
+	                    // It will become null if the current task id is lost in the remote tracking
+                        // task list. In this case
+                        if (response.data !== "null") {
+                            $scope.currentTask = response.data;
+                        }
+                        //the task is out of the current tasks queue
+                        if (response.data.complete) {
 
-	                    //the task is out of the current tasks queue
-	                    if (response.complete) {
+                            //it is out of the current task list because its either done or has an error
+                            if (response.data.error) {
+                                deferred.reject(response);
+                            }
+                            else {
+                                deferred.resolve(response);
+                            }
 
-	                        //it is out of the current task list because its either done or has an error
-	                        if (response.error) {
-	                            deferred.reject(response);
-	                        } else {
-	                            deferred.resolve(response);
-	                        }
-
-	                    } else {
-	                        //if not complete, keep checking
-	                        check();
-	                    }
-	                }).error(function (err) {
+                        }
+                        else {
+                            //if not complete, keep checking
+                            check();
+                        }
+                        
+	                    
+	                }, function(err) {
 	                    deferred.reject(err);
 	                });
 	            }, 1000);

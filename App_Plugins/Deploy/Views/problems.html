@@ -1,7 +1,12 @@
 <div>
     <h5>Transfer is not possible</h5>
-    <p class="umb-abstract">
-        We cannot transfer your content changes continue because the destination doesn't appear up-to-date.
+    
+    <p class="umb-abstract" ng-if="!destinationName">
+        We cannot transfer your content changes because the destination doesn't appear up-to-date.
+    </p>
+    <p class="umb-abstract" ng-if="destinationName">
+        We cannot transfer your content changes, because the
+        <strong>{{destinationName}}</strong> workspace has not received the latest development changes.
     </p>
 
     <p>
@@ -15,7 +20,7 @@
         <li ng-if="isLocalEnvironment">
             <i class="icon icon-book-alt-2"></i>
             <a 
-                href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Local/"
+                href="https://our.umbraco.org/Documentation/Umbraco-Cloud/Troubleshooting/Content-Deploy-Schema/Local/"
                 target="_blank">
                 Read developer documentation on troubleshooting schema problems
             </a>
@@ -24,7 +29,7 @@
         <li ng-if="!isLocalEnvironment">
             <i class="icon icon-book-alt-2"></i>
             <a
-                href="https://our.umbraco.org/documentation/Umbraco-as-a-Service/Troubleshooting/Content-Deploy-Schema/Remote/"
+                href="https://our.umbraco.org/Documentation/Umbraco-Cloud/Troubleshooting/Content-Deploy-Schema/Remote/"
                 target="_blank">
                 Read developer documentation on troubleshooting schema problems
             </a>
@@ -40,7 +45,20 @@
 
     <div ng-show="showDetails" id="details-view">
         <h4>Blocking changes:</h4>
-        <p>These items are blocking your content transfer, <a target="_blank" href="http://umbraco.io">Go to umbraco.io to transfer them to the workspace</a> </p>
+        <p ng-if="!environmentAlias">
+            These items are blocking your content transfer, <a target="_blank" href="http://umbraco.io">Go to umbraco.io to transfer them to the workspace</a>
+        </p>        
+        
+        <p ng-if="environmentAlias && destinationName">
+            The development changes below are are blocking your content transfer.
+            <a ng-if="!isLocalEnvironment" target="_blank"
+               ng-href="{{'http://umbraco.io/project/' + environmentAlias}}">
+                Go to umbraco.io to transfer them to the <strong>{{destinationName}}</strong> workspace
+            </a>
+            <span ng-if="isLocalEnvironment">
+                Make sure to commit and push these changes to the the <strong>{{destinationName}}</strong> workspace, before transferring the content.
+            </span>
+        </p>
 
         <div ng-transclude></div>
     </div>

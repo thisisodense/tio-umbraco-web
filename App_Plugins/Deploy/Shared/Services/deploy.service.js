@@ -65,36 +65,41 @@
         //deployment services
         addToManifest : function(model){
             var retval = $http.post(baseUrl + "AddToManifest", model);
-            retval.then(function(){
-                service.events.trigger("change");
-                service.events.trigger("add", model);    
+            retval.then(function(response){
+                service.events.trigger("add", response);
             });
-            
             return retval;
         },
 
-        "package": function () {
-			return $http.post(baseUrl + "Package");
+        "package": function (queueId) {
+            return $http.post(baseUrl + "Package?queueId=" + queueId);
         },
 
-        getDeployment: function () {
-        	return $http.get(baseUrl + "GetDeployment");
+        getDeployment: function (queueId) {
+            return $http.get(baseUrl + "GetDeployment?queueId=" + queueId);
         },
 
-        getManifest: function () {
-            return $http.get(baseUrl + "GetManifest");
+        getManifest: function (queueId) {
+            if (queueId) {
+                return $http.get(baseUrl + "GetManifest?queueId=" + queueId);
+            }
+            else {
+                return $http.get(baseUrl + "GetManifest?queueId=");
+            }
         },
 
-        deployQueue: function () {
-            service.events.trigger("change");
-            service.events.trigger("deploy");
-        	return $http.get(baseUrl + "DeployQueue");
+        deployQueue: function (queueId) {
+            return $http.post(baseUrl + "DeployQueue?queueId=" + queueId);
         },
 
-        clearQueue: function () {
-            service.events.trigger("change");
-            service.events.trigger("clear");
-            return $http.get(baseUrl + "ClearQueue");
+        clearQueue: function (queueId) {
+            if (queueId) {
+                return $http.post(baseUrl + "ClearQueue?queueId=" + queueId);
+            }
+            else {
+                return $http.post(baseUrl + "ClearQueue?queueId=");
+            }
+            
         },
 
         //pull item from remote site and returns array of differences
@@ -114,12 +119,12 @@
             if(!environment){
                 environment = "";
             }
-            return $http.get(baseUrl + "PullAndRestoreRemoteContent?environment=" + environment);
+            return $http.post(baseUrl + "PullAndRestoreRemoteContent?environment=" + environment);
         },
 
         //Restore content from existing files on disk
         restoreContentFromDisk: function () {
-            return $http.get(baseUrl + "RestoreWebSite");
+            return $http.post(baseUrl + "RestoreWebSite");
         },
 
         pullRemoteContent : function(login, password){
@@ -133,27 +138,22 @@
 
         //this require a local request to authenticate
         restoreWebSiteToLocal : function(){
-            return $http.get(localBaseUrl + "RestoreWebSite");
+            return $http.post(localBaseUrl + "RestoreWebSite");
         },
 
         //share services
         taskStatus : function(sessionId){
             if(sessionId){
         	   return $http.get(baseUrl + "TaskStatus?id=" + sessionId);
-            }else{
+            }
+            else {
                return $http.get(baseUrl + "CurrentTaskStatus");
             }
         },
-
-
+        
         environment : function(){
             return $http.get(baseUrl + "Environment");
-        },
-
-
-        taskManagerStatus: function (sessionId) {
-            return $http.get(baseUrl + "TaskManagerStatus");
-        },
+        },    
 
         itemProviderName : function(guid) {
             return itemProviders[guid];

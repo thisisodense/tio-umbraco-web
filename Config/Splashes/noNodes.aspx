@@ -77,9 +77,9 @@
                 <li ng-switch-default>
                     
                     <form novalidate>
-                        <h1>Restore from Umbraco as a Service</h1>
+                        <h1>Restore from Umbraco Cloud</h1>
 
-                        <p>Login to pull down the latest content from Umbraco as a Service</p>
+                        <p>Login to pull down the latest content from Umbraco Cloud</p>
 
                         <div class="login">
                         
@@ -91,11 +91,10 @@
                             <div class="input">
                                 <label>Password</label>
                                 <input type="password" ng-model="password" required />
-                            </div>
-
-                            <div class="error" ng-if="authError">Could not authenticate user '{{authErrorLogin}}'</div>
+                            </div>                            
                         </div>
-
+                        
+                        <div class="error" ng-if="authError">Could not authenticate user '{{authErrorLogin}}'</div>
 
                         <div class="cta" ng-class="{'cta-disabled': submitting}">
                             <input type="submit" ng-disabled="submitting" class="button" ng-click="remoteContent(login, password)" value="Restore" />
@@ -107,7 +106,7 @@
                  </li>
 
                 <li ng-switch-when="remoteContent">
-                    <h1>Downloading content from <br/>Umbraco as a Service...</h1>
+                    <h1>Downloading content from <br/>Umbraco Cloud...</h1>
                     
                     <p>{{currentTask.done}} of {{currentTask.total}} downloaded</p>
                     
@@ -128,7 +127,7 @@
                     <div style="overflow: hidden; padding: 20px 0 20px 0">
                         <div class="umb-loader"></div> 
                     </div>
-
+                    <small>{{currentTask.currentActivity}}</small>
                 </li>
 
                  <li ng-switch-when="done">
@@ -156,7 +155,16 @@
 
 
             <div ng-if="currentTask.exception" class="json">
-               <pre>{{currentTask.exception | json}}</pre>
+                <h5>{{currentTask.exception.currentActivity}}</h5>
+                <ul>
+                    <li><em>Error:&nbsp;&nbsp;</em><code>{{currentTask.exception.description}}</code></li>                    
+                    <li>
+                        <em>Details:&nbsp;&nbsp;</em>
+                        <a href="#" ng-click="showTrace(currentTask.exception)" ng-hide="currentTask.exception.traceVisible === true">Show</a>
+                        <pre ng-show="currentTask.exception.traceVisible === true">{{currentTask.exception.exception}}</pre>
+                    </li>
+                </ul>
+               
             </div>
 
 

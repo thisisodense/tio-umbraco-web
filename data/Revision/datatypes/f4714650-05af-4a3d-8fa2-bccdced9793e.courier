@@ -21,18 +21,8 @@
             <Value>20</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
-            <Alias>orderBy</Alias>
-            <SortOrder>3</SortOrder>
-            <Value>VersionDate</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>orderDirection</Alias>
-            <SortOrder>4</SortOrder>
-            <Value>desc</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
             <Alias>layouts</Alias>
-            <SortOrder>5</SortOrder>
+            <SortOrder>3</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "name": "List",&#xD;
@@ -52,7 +42,7 @@
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
-            <SortOrder>6</SortOrder>
+            <SortOrder>4</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "alias": "updateDate",&#xD;
@@ -63,8 +53,23 @@
     "alias": "placesToGoIn2016",&#xD;
     "isSystem": 0,&#xD;
     "header": "Byguide 2016"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "categories",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Kategori"&#xD;
   }&#xD;
 ]</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>name</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>bulkActionPermissions</Alias>

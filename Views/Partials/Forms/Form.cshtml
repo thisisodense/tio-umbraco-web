@@ -29,6 +29,8 @@ else
 
              @using (Html.BeginUmbracoForm<Umbraco.Forms.Web.Controllers.UmbracoFormsController>("HandleForm"))
              {
+                 @Html.AntiForgeryToken()
+
                  <input type="hidden" name="FormId" value="@Model.FormId" />
                  @Html.HiddenFor(x => Model.FormName)
                  @Html.HiddenFor(x => Model.RecordId)
@@ -134,6 +136,14 @@ else
              }
          </div>
 
+    }
+
+    if (Model.CurrentPage.PartialViewFiles.Any())
+    {
+        foreach (var partial in Model.CurrentPage.PartialViewFiles)
+        {
+            @Html.Partial(partial.Value)
+        }
     }
 
     if (Model.RenderMode == "full" || Model.RenderMode == "script")

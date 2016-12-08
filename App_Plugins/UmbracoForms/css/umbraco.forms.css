@@ -250,10 +250,10 @@ select.-full-width {
 .umb-forms-entries-actions .arrow {
   left: 10%;
 }
-.umb-forms-entries .date-filter {
+.umb-forms-entries .date-range-filter {
   padding: 0 5px;
 }
-.umb-forms-entries .date-filter span {
+.umb-forms-entries .date-range-filter span {
   color: #555555;
   font-size: 12px;
 }

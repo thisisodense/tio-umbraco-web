@@ -37,7 +37,7 @@
                             umb-forms-date-range-picker
                             on-change="vm.datePickerChange"
                             user-locale="{{vm.userLocale}}"
-                            class="date-filter pull-left">
+                            class="date-range-filter pull-left">
                         </div>
 
                         <!-- Checkboxes for Post Moderation -->
@@ -144,7 +144,7 @@
                                                 </div>
                                                 <div ng-switch-when="date">
                                                     <!-- TODO: Get the users locale & determine best time format for date filter -->
-                                                    {{ field | date : 'dd MMM yy @ HH:mm:ss' }}
+                                                    {{ field | momentDateTimeZone : 'LLL' }}
                                                 </div>
                                                 <div ng-switch-default>
                                                     {{ field | truncate:20:true }}

@@ -11,16 +11,16 @@
             GreaterThen: function (value, limit) {
                 return parseInt(value) > parseInt(limit);
             },
-            LessThen: function(value, limit) {
+            LessThen: function (value, limit) {
                 return parseInt(value) < parseInt(limit);
             },
-            StartsWith: function(value, criteria) {
+            StartsWith: function (value, criteria) {
                 return value && value.indexOf(criteria) === 0;
             },
-            EndsWith: function(value, criteria) {
+            EndsWith: function (value, criteria) {
                 return value && value.indexOf(criteria) === value.length - criteria.length;
             },
-            Contains: function(value, criteria) {
+            Contains: function (value, criteria) {
                 return value && value.indexOf(criteria) > -1;
             }
         };
@@ -58,7 +58,7 @@
             }
         }
 
-        function evaluateCondition(condition) {
+        function evaluateCondition(id, condition) {
             // This was once pretty. Now it needs refactoring again. :)
 
             var any = condition.logicType === "Any",
@@ -72,17 +72,21 @@
             for (i = 0; i < condition.rules.length; i++) {
                 rule = condition.rules[i];
 
-                if (fieldsetVisibilities[rule.fieldset] !== undefined) {
+                if (id === rule.field || id === rule.fieldsetId) {
+                    throw new Error("Field or fieldset " + id + " has a condition on itself.");
+                }
+
+                if (fieldsetVisibilities[rule.fieldsetId] !== undefined) {
                     continue;
                 }
 
-                if (fsConditions[rule.fieldset]) {
-                    fieldsetVisibilities[rule.fieldset] = isVisible(rule.fieldset, fsConditions[rule.fieldset]);
-                    if (!fieldsetVisibilities[rule.fieldset]) {
+                if (fsConditions[rule.fieldsetId]) {
+                    fieldsetVisibilities[rule.fieldsetId] = isVisible(rule.fieldsetId, fsConditions[rule.fieldsetId]);
+                    if (!fieldsetVisibilities[rule.fieldsetId]) {
                         hasHiddenFieldset = true;
                     }
                 } else {
-                    fieldsetVisibilities[rule.fieldset] = true;
+                    fieldsetVisibilities[rule.fieldsetId] = true;
                 }
             }
 
@@ -93,9 +97,7 @@
             for (i = 0; i < condition.rules.length; i++) {
                 rule = condition.rules[i];
 
-                console.log("looking up fs vis for " + rule.fieldset + " - " + fieldsetVisibilities[rule.fieldset] + "\n");
-
-                if (fieldsetVisibilities[rule.fieldset]) {
+                if (fieldsetVisibilities[rule.fieldsetId]) {
                     success = evaluateRule(condition.rules[i]);
                 } else {
                     success = false;
@@ -114,9 +116,9 @@
         function evaluateConditionVisibility(id, condition) {
             var show = condition.actionType === "Show",
                 cachedResult = cachedResults[id],
-                success = cachedResult === undefined ?
-                    evaluateCondition(condition) :
-                    cachedResult,
+                success = cachedResult === undefined
+                    ? (cachedResults[id] = evaluateCondition(id, condition))
+                    : cachedResult,
                 visible = !(success ^ show);
             return visible;
         }
@@ -128,7 +130,8 @@
             return true;
         }
 
-        function handleCondition(element, id, condition) {
+        function handleCondition(element, id, condition, type) {
+            console.log(type + " " + id);
             var shouldShow = isVisible(id, condition);
             if (shouldShow) {
                 console.log("showing " + id + "\n");
@@ -140,11 +143,11 @@
         }
 
         for (fsId in fsConditions) {
-            handleCondition($("#" + fsId), fsId, fsConditions[fsId]);
+            handleCondition($("#" + fsId), fsId, fsConditions[fsId], "Fieldset");
         }
 
         for (fieldId in fieldConditions) {
-            handleCondition($("#" + fieldId).closest(".contourField"), fieldId, fieldConditions[fieldId]);
+            handleCondition($("#" + fieldId).closest(".contourField"), fieldId, fieldConditions[fieldId], "Field");
         }
     }
 

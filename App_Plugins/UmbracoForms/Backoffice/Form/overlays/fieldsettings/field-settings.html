@@ -1,6 +1,5 @@
 <div class="content-type-editor-dialog edit-property-settings" ng-controller="UmbracoForms.Overlays.FieldSettingsOverlay as vm">
 
-
     <!-- Name -->
     <div class="umb-control-group control-group">
         <textarea
@@ -159,7 +158,7 @@
                         <div class="umb-forms__select">
                             <select
                                 ng-model="rule.field"
-                                ng-options="field.id as field.caption for field in model.fields"
+                                ng-options="field.id as field.caption for field in vm.fieldConditions"
                                 ng-change="vm.conditionFieldSelected(rule.field, rule)"
                                 ng-init="vm.conditionFieldSelected(rule.field, rule)">
                                 <option value="">Select field</option>

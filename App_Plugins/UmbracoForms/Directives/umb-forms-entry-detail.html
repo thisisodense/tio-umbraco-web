@@ -16,19 +16,14 @@
 
     <div class="umb-forms-entry-sidebar">
 
-        <!--
-        TODO: Why is date filter adding 1hr, is there some weird summer GMT offset or something<br/>
-        2016-05-10T15:00:34.973Z
-        --->
-
         <div class="umb-control-group -no-border">
-            <label class="control-label">Submitted on</label>
-            <div>{{entry.created | date : 'dd MMM yyyy, HH:mm' }}</div>
+            <label class="control-label">Submitted</label>
+            <div title="{{entry.created  | momentDateTimeZone : 'LLL' }}">{{entry.created | relativeDate }}</div>
         </div>
 
         <div class="umb-control-group -no-border" ng-if="entry.updated !== entry.created">
-            <label class="control-label">Updated on</label>
-            <div>{{entry.updated | date : 'dd MMM yyyy, HH:mm'}}</div>
+            <label class="control-label">Updated</label>
+            <div title="{{entry.updated  | momentDateTimeZone : 'LLL' }}">{{entry.updated | relativeDate }}</div>
         </div>
 
         <div class="umb-control-group -no-border">

@@ -35,7 +35,11 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.DocumentMapperCo
 	        $scope.doctype = value.doctype;
 	        $scope.nameField = value.nameField;
 	        $scope.nameStaticValue = value.nameStaticValue;
-	        $scope.properties = value.properties;
+
+			//Need to merge the fields (fetch everytime we load in case of renames or new properties added or removed)
+			pickerResource.updateMappedProperties($scope.doctype, value.properties).then(function (response) {
+				$scope.properties = response.data;
+	        });
 	    }
 
 	    pickerResource.getAllDocumentTypesWithAlias().then(function (response) {
@@ -64,6 +68,7 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.DocumentMapperCo
 	        $scope.setting.value = JSON.stringify(val);
 	    };
 	});
+
 angular.module("umbraco").controller("UmbracoForms.SettingTypes.FieldMapperController",
 	function ($scope, $routeParams, pickerResource) {
 
@@ -338,7 +343,7 @@ angular.module("umbraco")
 
 angular.module("umbraco")
 .controller("UmbracoForms.Dashboards.LicensingController",
-    function ($scope, $location, $routeParams, $cookieStore, formResource, licensingResource, updatesResource, notificationsService, userService, utilityService) {
+    function ($scope, $location, $routeParams, $cookieStore, formResource, licensingResource, updatesResource, notificationsService, userService, utilityService, securityResource) {
 
         $scope.overlay = {
             show: false,
@@ -352,8 +357,24 @@ angular.module("umbraco")
             $cookieStore.put("umbPackageInstallId", "");
         }
 
-        //if not initial install, but still do not have forms
+        //Default for canManageForms is false
+        //Need a record in security to ensure user has access to edit/create forms
+        $scope.userCanManageForms = false;
+
+        //Get Current User - To Check if the user Type is Admin
+        userService.getCurrentUser().then(function (response) {
+            $scope.currentUser = response;
+            $scope.isAdminUser = response.userType.toLowerCase() === "admin";
+
+            securityResource.getByUserId($scope.currentUser.id).then(function (response) {
+                $scope.userCanManageForms = response.data.userSecurity.manageForms;
+            });
+        });
+
+        //if not initial install, but still do not have forms - display a message
         if (!$scope.overlay.show) {
+
+            //Check if we have any forms created yet - by chekcing number of items back from JSON response
             formResource.getOverView().then(function (response) {
                 if (response.data.length === 0) {
                     $scope.overlay.show = true;
@@ -404,13 +425,6 @@ angular.module("umbraco")
                 $scope.status = response.data;
             });
 
-
-            //Get Current User - To Check if the user Type is Admin
-            userService.getCurrentUser().then(function (response) {
-                $scope.currentUser = response;
-                $scope.isAdminUser = response.userType.toLowerCase() === "admin";
-            });
-
             updatesResource.getUpdateStatus().then(function (response) {
                 $scope.version = response.data;
             });
@@ -420,7 +434,7 @@ angular.module("umbraco")
             });
 
 
-        };
+        };        
 
         $scope.upgrade = function () {
 
@@ -445,6 +459,13 @@ angular.module("umbraco")
 
         $scope.create = function () {
             
+            //Let's tripple check the user is of the userType Admin
+            if (!$scope.userCanManageForms) {
+                //The user is not an admin & should have not hit this method but if they hack the UI they could potnetially see the UI perhaps?
+                notificationsService.error("Insufficient Permissions", "You do not have permissions to create & manage forms");
+                return;
+            }
+
             //Get the current umbraco version we are using
             var umbracoVersion = Umbraco.Sys.ServerVariables.application.version;
             
@@ -1264,7 +1285,8 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesControlle
 		form: $routeParams.id,
 		sortBy: "created",
 		sortOrder: "descending",
-		states: ["Approved","Submitted"]
+		states: ["Approved","Submitted"],
+		localTimeOffset: new Date().getTimezoneOffset()
 	};
 
 	$scope.records = [];
@@ -1700,7 +1722,7 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesControlle
 });
 
 angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesSettingsController",
-    function($scope, $log, $timeout, exportResource){
+    function($scope, $log, $timeout, exportResource, utilityService){
 
        //The Form ID is found in the filter object we pass into the dialog
        var formId = $scope.dialogOptions.filter.form;
@@ -1711,7 +1733,15 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesSettingsC
 
         $scope.export = function(type, filter){
             filter.exportType = type.id;
-            
+			
+			//Check if we need to do server time offset to the date we are displaying
+			var serverTimeNeedsOffsetting = utilityService.serverTimeNeedsOffsetting();
+			
+			if(serverTimeNeedsOffsetting) {
+				// Use the localOffset to correct the server times with the client browser's offset
+				filter.localTimeOffset = new Date().getTimezoneOffset();
+			}
+			
             exportResource.generateExport(filter).then(function(response){
 
                 var url = exportResource.getExportUrl(response.data.formId, response.data.fileName);
@@ -2182,6 +2212,23 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.Dialogs.Workflow
         vm.addConditionRule = addConditionRule;
         vm.getPrevalues = getPrevalues;
         vm.conditionFieldSelected = conditionFieldSelected;
+
+        //Creating duplicate of the fields array on the model
+        //As the select for the conditions needs to ensure it does not include itself
+       
+        //Need to use angular.copy() otherwise when we remove item in fieldConditions its data-binding back down to the original model.fields
+        vm.fieldConditions = angular.copy($scope.model.fields);
+
+        //Trying not to use _underscore.js
+        //Loop over array until we find the item where the ID matches & remove object from the array
+        for (var i =0; i < vm.fieldConditions.length; i++){
+            if (vm.fieldConditions[i].id === $scope.model.field.id) {
+                vm.fieldConditions.splice(i,1);
+                break;
+            }
+        }
+            
+
 
         function activate() {
             vm.actionTypes = formService.getActionTypes();
@@ -2673,8 +2720,6 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Security.EditControll
     };
 
 });
-
-
 
 angular.module("umbraco")
 .controller("UmbracoForms.Editors.PreValueSource.DeleteController",
@@ -3188,6 +3233,15 @@ function pickerResource($http) {
         },
         getAllProperties: function (doctypeAlias) {
             return $http.get(apiRoot + "GetAllProperties?doctypeAlias=" + doctypeAlias);
+        },
+        updateMappedProperties: function(doctypeAlias, currentSavedProperties){
+
+            var dataToPost = {
+                "doctypeAlias": doctypeAlias,
+                "currentProperties": currentSavedProperties
+            };
+
+            return $http.post(apiRoot + "PostUpdateMappedProperties", dataToPost);
         }
 
     };
@@ -5000,9 +5054,36 @@ angular.module('umbraco.services').factory('formService', formService);
             return 0;
         }
 
+        function serverTimeNeedsOffsetting(){
+            //Check if we need to do server time offset to the date we are displaying
+            var needsOffsetting = false;
+            var serverOffset = 0;
+
+            //Check we have a serverTimeOffset in the Umbraco global JS object
+            if (Umbraco.Sys.ServerVariables.application.serverTimeOffset !== undefined) {
+
+                // C# server offset 
+                // Will return something like 120
+                serverOffset = Umbraco.Sys.ServerVariables.application.serverTimeOffset;
+
+                //Current local user's date/time offset in JS
+                // Will return something like -120
+                var localOffset = new Date().getTimezoneOffset();
+
+                // If these aren't equal then offsetting is needed
+                // note the minus in front of serverOffset needed 
+                // because C# and javascript return the inverse offset
+                needsOffsetting = (-serverOffset !== localOffset);
+            }
+
+            return needsOffsetting;
+        }
+
+
         var service = {
 
-            compareVersions: compareVersions
+            compareVersions: compareVersions,
+            serverTimeNeedsOffsetting: serverTimeNeedsOffsetting
 
         };
 
@@ -5049,4 +5130,31 @@ angular.module('umbraco.filters').filter('truncate', function() {
         return input;
     };
   
+});
+angular.module('umbraco.filters').filter('momentDateTimeZone', function($filter) {
+
+    return function (input, momentFormat) {
+		  var parseDate = moment.utc(input);
+		  return parseDate.format(momentFormat);
+    };
+
+});
+
+angular.module('umbraco.filters').filter('relativeDate', function($filter) {
+
+     return function (input) {
+        
+        var now = moment();
+        //Hack: Removing the Z so that moment doesn't apply an offset to the time when parsing it
+        var parseDate = moment(input.replace("Z", ""));
+        
+        //Check the date is valid
+        if(parseDate.isValid() === false){
+            //Parse the value through the default date filter with the value & setting the param/format to medium {{ value | date:'medium' }}
+            return $filter('date')(input, 'medium');
+        }
+
+        return parseDate.from(now);;
+    };
+
 });

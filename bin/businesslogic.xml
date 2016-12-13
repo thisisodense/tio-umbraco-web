@@ -594,8 +594,9 @@
         </member>
         <member name="P:umbraco.BasePages.BasePage.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="P:umbraco.BasePages.BasePage.ApplicationContext">
             <summary>

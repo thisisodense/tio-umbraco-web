@@ -619,11 +619,6 @@
             Deletes this instance.
             </summary>
         </member>
-        <member name="P:umbraco.cms.businesslogic.datatype.DefaultData.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
-        </member>
         <member name="P:umbraco.cms.businesslogic.datatype.DefaultData.Value">
             <summary>
             Gets or sets the value.
@@ -809,11 +804,6 @@
             </summary>
             <param name="Id">The internal id.</param>
         </member>
-        <member name="P:umbraco.cms.businesslogic.packager.Package.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
-        </member>
         <member name="T:umbraco.cms.businesslogic.packager.standardPackageActions.addApplication">
             <summary>
             This class implements the IPackageAction Interface, used to execute code when packages are installed.
@@ -944,8 +934,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.propertytype.PropertyTypeGroup.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="M:umbraco.cms.businesslogic.Tags.Tag.RemoveTag(System.Int32)">
             <summary>
@@ -988,11 +979,6 @@
             </summary>
             <param name="nodeId">The node id.</param>
             <returns></returns>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.Tags.Tag.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
         </member>
         <member name="T:umbraco.cms.businesslogic.task.Tasks">
             <summary>
@@ -1418,8 +1404,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.CMSNode.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="P:umbraco.cms.businesslogic.CMSNode.HasChildren">
             <summary>
@@ -2468,11 +2455,6 @@
             <param name="DataType">The DataType to be parsed</param>
             <param name="DisplayTextBox">Whether to use the default text box</param>
         </member>
-        <member name="P:umbraco.cms.businesslogic.datatype.DefaultPreValueEditor.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
-        </member>
         <member name="T:umbraco.cms.businesslogic.datatype.controls.Factory">
             <summary>
             IDataType factory, handles the registering and retrieval of IDatatypes.
@@ -2524,11 +2506,6 @@
             </summary>
             <param name="dataTypeDefId"></param>
             <returns></returns>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.Dictionary.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
         </member>
         <member name="P:umbraco.cms.businesslogic.Dictionary.getTopMostItems">
             <summary>
@@ -2683,8 +2660,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.language.Language.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="P:umbraco.cms.businesslogic.language.Language.getAll">
             <summary>
@@ -2775,8 +2753,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.language.Item.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="T:umbraco.cms.businesslogic.macro.Macro">
             <summary>
@@ -2844,11 +2823,6 @@
             </summary>
             <param name="alias">The alias of the macro</param>
             <returns>If the macro with the given alias exists, it returns the macro, else null</returns>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.macro.Macro.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
         </member>
         <member name="P:umbraco.cms.businesslogic.macro.Macro.Id">
             <summary>
@@ -2990,11 +2964,6 @@
             <param name="name">Userfriendly MacroProperty name</param>
             <param name="editorAlias">The Alias of the parameter editor</param>
         </member>
-        <member name="P:umbraco.cms.businesslogic.macro.MacroProperty.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
-        </member>
         <member name="P:umbraco.cms.businesslogic.macro.MacroProperty.SortOrder">
             <summary>
             The sortorder
@@ -3054,11 +3023,6 @@
             Constructor
             </summary>
             <param name="Alias">The alias of the MacroPropertyType</param>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.macro.MacroPropertyType.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
         </member>
         <member name="P:umbraco.cms.businesslogic.macro.MacroPropertyType.Id">
             <summary>
@@ -4779,11 +4743,6 @@
             Used to persist object changes to the database. In Version3.0 it's just a stub for future compatibility
             </summary>
         </member>
-        <member name="P:umbraco.cms.businesslogic.propertytype.PropertyType.SqlHelper">
-            <summary>
-            Unused, please do not use
-            </summary>
-        </member>
         <member name="P:umbraco.cms.businesslogic.propertytype.PropertyType.TabId">
             <summary>
             Setting the tab id is not meant to be used directly in code. Use the ContentType SetTabOnPropertyType method instead
@@ -4797,11 +4756,6 @@
             <summary>
             Property class encapsulates property factory, ensuring that the work
             with umbraco generic properties stays nice and easy..
-            </summary>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.property.Property.SqlHelper">
-            <summary>
-            Unused, please do not use
             </summary>
         </member>
         <member name="M:umbraco.cms.businesslogic.RecycleBin.#ctor(System.Guid,umbraco.cms.businesslogic.RecycleBin.RecycleBinType)">
@@ -4857,11 +4811,6 @@
         <member name="M:umbraco.cms.businesslogic.relation.Relation.Save">
             <summary>
             Used to persist object changes to the database
-            </summary>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.relation.Relation.SqlHelper">
-            <summary>
-            Unused, please do not use
             </summary>
         </member>
         <member name="T:umbraco.cms.businesslogic.relation.RelationType">
@@ -4996,8 +4945,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.task.Task.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="M:umbraco.cms.businesslogic.task.TaskType.Delete">
             <summary>
@@ -5014,11 +4964,6 @@
         <member name="P:umbraco.cms.businesslogic.task.TaskType.Tasks">
             <summary>
             All tasks associated with this task type
-            </summary>
-        </member>
-        <member name="P:umbraco.cms.businesslogic.task.TaskType.SqlHelper">
-            <summary>
-            Unused, please do not use
             </summary>
         </member>
         <member name="T:umbraco.cms.businesslogic.template.Template">
@@ -6514,8 +6459,9 @@
         </member>
         <member name="P:umbraco.cms.businesslogic.workflow.Notification.SqlHelper">
             <summary>
-            Unused, please do not use
+            Gets the SQL helper.
             </summary>
+            <value>The SQL helper.</value>
         </member>
         <member name="T:umbraco.cms.helpers.url">
             <summary>

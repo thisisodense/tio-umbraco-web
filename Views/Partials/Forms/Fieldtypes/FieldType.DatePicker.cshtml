@@ -15,6 +15,6 @@
         }
     }
 }
-<input type="text" name="@Model.Name" id="@Model.Id" class="datepickerfield" value="@val"
-@{if (Model.Mandatory) {<text> data-val="true" data-val-required="@Model.RequiredErrorMessage"</text>}}
-/>
+
+<input type="hidden" name="@Model.Name" id="@Model.Id" class="datepickerfieldshadow" value="@val" />
+<input type="text" name="@Model.Name" id="@(Model.Id)_1" class="datepickerfield" value="@val" @{if (Model.Mandatory) { <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text> }} />

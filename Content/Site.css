@@ -328,9 +328,9 @@ footer {
 .writerContent {
     font-size: 10pt;
     color:whitesmoke;
-    padding:5px;
     height:89%;
-    width:100%;
+    padding: 3%;
+    width: 94%;
     overflow:hidden;
     text-overflow:ellipsis;
 }
@@ -358,10 +358,6 @@ footer {
     bottom:0;
     right:0;
     transition: opacity 0.5s ease-in-out;
-}
-
-.writerOverlay:hover {
-    opacity:0.8;
 }
 
 /*.date {

@@ -360,6 +360,12 @@ footer {
     transition: opacity 0.5s ease-in-out;
 }
 
+.writerOverlay:hover {
+    opacity:0.8;
+    cursor: pointer;
+}
+
+
 /*.date {
     display: block;
     float: left;

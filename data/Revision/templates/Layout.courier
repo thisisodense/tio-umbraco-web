@@ -9,12 +9,9 @@
     <Resources>
         <Resource>
             <ExtractToPath>~/views/Layout.cshtml</ExtractToPath>
-            <Hash>4ad2054732e5119dfefd3a27b9451284</Hash>
             <Name>~/views/Layout.cshtml</Name>
             <PackageFromPath>~/views/Layout.cshtml</PackageFromPath>
             <TemporaryStoragePath>/views/Layout.cshtml</TemporaryStoragePath>
-            <VirtualResource>false</VirtualResource>
-            <NotFound>false</NotFound>
         </Resource>
     </Resources>
     <Alias>Layout</Alias>

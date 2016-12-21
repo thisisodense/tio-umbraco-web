@@ -2,11 +2,6 @@
 @using Models = TIO.Core.Models
 @using Library.Mvc.Extensions;
 
-@using Umbraco.Core;
-@using Umbraco.Core.Models;
-@using Umbraco.Core.Services;
-@using Microsoft.CSharp.RuntimeBinder;
-
 @inherits TIO.Mvc.Core.ThisIsOdenseTemplatePage
 @{
     Layout = null;
@@ -46,41 +41,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-@if (Request["pomfrit"] == "1")
-    {
-        IContentService cs = ApplicationContext.Current.Services.ContentService;
-
-        var rootContent = cs.GetRootContent().Where(x => x.Name == "Home").FirstOrDefault();
-        var recomedationsRoot = rootContent.Descendants().Where(x => x.ContentType.Alias == "RecommendationRepository").FirstOrDefault();
-
-        int wer = 0;
-        foreach (IContent r in recomedationsRoot.Children())
-        {
-            IPublishedContent c = Umbraco.TypedContent(r.Id);
-
-            var imageUrl = r.GetValue(TIO.Core.Models.Constants.Recommendation.Properties.IMAGE_URL);
-
-            if (imageUrl != null && !string.IsNullOrEmpty(imageUrl.ToString()))
-            {
-                try
-                {
-                    c.GetCropUrl(TIO.Core.Models.Constants.Recommendation.Properties.IMAGE_URL, TIO.Core.Models.Constants.Crop.RECOMMENDATION_IMAGE);
-                }
-                catch (RuntimeBinderException rbe)
-                {
-                    if (rbe.Message.IndexOf("'Umbraco.Web.Models.ImageCropFocalPoint' does not contain a definition for 'right'") > -1)
-                    {
-                        string imageJson = r.GetValue(TIO.Core.Models.Constants.Recommendation.Properties.IMAGE_URL).ToString();
-
-                        r.SetValue(TIO.Core.Models.Constants.Recommendation.Properties.IMAGE_URL, imageJson.Replace("\"right\"", "\"top\""));
-                        cs.SaveAndPublishWithStatus(r);
-                        wer++;
-                    }
-                }
-            }
-        }
-        <h1>Antal rettelser: @wer</h1>
-    }
     @Html.Hidden("IsEnglish", Site.IsEnglish)
     <div class="content">
         <h1><a href="@Url.Action("Recommendations", "Recommendations")"><img src="@Url.Content("~/Content/images/logo.png")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></h1>

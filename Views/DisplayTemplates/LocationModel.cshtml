@@ -110,27 +110,15 @@ else
         <div class="readmore @(Model.IsDetails ? "" : "hide")">
             @Html.Raw(Model.LongDescription)
 
-            @if (Model.OpeningHoursAreTheSame)
+            @if(Model.SimpleOpeningHours.Count() > 0)
             {
                 <ul class="openingHours">
-                    <li>@Model.SimpleOpeningHours</li>
+                    @foreach(var openingHour in Model.SimpleOpeningHours)
+                    {
+                        <li><span class="day">@openingHour.Key: </span><span class="time">@openingHour.Value</span></li>
+                    }
                 </ul>
-
             }
-            else
-            {
-                <ul class="openingHours">
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Man"): </span><span class="time">@Model.Openings.Monday.From - @Model.Openings.Monday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Tir"): </span><span class="time">@Model.Openings.Tuesday.From - @Model.Openings.Tuesday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Ons"): </span><span class="time">@Model.Openings.Wednesday.From - @Model.Openings.Wednesday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Tor"): </span><span class="time">@Model.Openings.Thursday.From - @Model.Openings.Thursday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Fre"): </span><span class="time">@Model.Openings.Friday.From - @Model.Openings.Friday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Lør"): </span><span class="time">@Model.Openings.Saturday.From - @Model.Openings.Saturday.Till</span></li>
-                    <li><span class="day">@Umbraco.GetDictionaryValue("Søn"): </span><span class="time">@Model.Openings.Sunday.From - @Model.Openings.Sunday.Till</span></li>
-                </ul>
-
-            }
-
 
             <a href="@Model.Url" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til sted")</a>
             <a href='@("http://maps.google.com/maps?f=d&daddr=" + @Model.Address + "&zoom=13")' class="right" target="_blank">@Umbraco.GetDictionaryValue("Find vej")</a>

@@ -1,0 +1,59 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>e68bbd40-10a6-46f9-ad27-d65b502bc1b6</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>MultiNode TreePicker - Writer</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.MultiNodeTreePicker</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>startNode</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>{"type":"content","id":"e68bbd40-10a6-46f9-ad27-d65b502bc1b6","query":null}</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>filter</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>Writer</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>minNumber</Alias>
+            <SortOrder>3</SortOrder>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>maxNumber</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>1</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>showOpenButton</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>0</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>showEditButton</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>0</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>showPathOnHover</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>0</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

@@ -57,6 +57,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -80,11 +89,13 @@
     <Name>Location</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>Location</Alias>
-    <AllowedChildDocumentTypes />
-    <AllowedTemplates />
-    <Description />
     <Icon>icon-folder</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>Location</Alias>
+    <Description />
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>50d229f0-2612-30a4-25f7-e4ff7bec943a</UniqueId>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>8c64eae0-4f2f-6413-f52c-33b66457b3c6</UniqueId>
@@ -123,6 +134,7 @@
             <UniqueId>948d7eca-346d-47d3-aa60-5fdddf58026d</UniqueId>
             <Alias>fotograf</Alias>
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Fotograf</Name>
             <SortOrder>18</SortOrder>
@@ -132,6 +144,7 @@
             <UniqueId>74896a14-fdd0-414e-aba1-5a902b91021d</UniqueId>
             <Alias>fotografURL</Alias>
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>FotografURL</Name>
             <SortOrder>19</SortOrder>
@@ -295,6 +308,7 @@
             <UniqueId>361770ac-fc17-43bd-a104-cd96d9f8fe79</UniqueId>
             <Alias>socialPostsForLocations</Alias>
             <DataTypeDefinitionId>40aff69c-4bdd-4fa1-833b-bdb3080422a9</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>SocialPostsForLocations</Name>
             <SortOrder>0</SortOrder>
@@ -325,9 +339,10 @@
         <ContentTypeProperty>
             <UniqueId>f17b608a-ee25-47cd-8804-43f7647d65e3</UniqueId>
             <Alias>translatedBy</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
-            <Name>translatedBy</Name>
+            <Name>Translator</Name>
             <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
@@ -345,7 +360,7 @@
         <ContentTypeProperty>
             <UniqueId>db638a68-13d9-9da5-3129-63c02e1e62bb</UniqueId>
             <Alias>writer</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
@@ -374,11 +389,9 @@
             <UniqueId>5e4fa6d3-aeaf-4f69-9fcb-65424cc96734</UniqueId>
         </Tab>
     </Tabs>
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>50d229f0-2612-30a4-25f7-e4ff7bec943a</UniqueId>
-    <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,50d229f0-2612-30a4-25f7-e4ff7bec943a</PathGuids>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <MasterDocumentTypes />
 </DocumentType>

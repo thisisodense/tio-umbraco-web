@@ -13,6 +13,16 @@
     }
 }
 
+@helper GetTranslatorName()
+{
+    bool isEnglish = Request.RawUrl.IndexOf("/en/", StringComparison.InvariantCultureIgnoreCase) > -1;
+    if (!Model.IsDetails && Model.TranslatorId > 0 && isEnglish)
+    {
+        <span>| @Umbraco.GetDictionaryValue("Oversat af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.TranslatorId, name = Model.TranslatorName.ToSeoUrl() })">@Model.TranslatorName</a></span>
+    }
+}
+
+
 @helper GetFotografName()
 {
     if (string.IsNullOrEmpty(Model.Fotograf) == false && string.IsNullOrEmpty(Model.FotografURL) == false)
@@ -56,7 +66,12 @@
             </div>
             <div class="map" style="width: 100%; height: 200px"></div>
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetFotografName() @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")</div> 
+                <div class="info arrow">
+                    @Umbraco.GetDictionaryValue(string.Join(",", Model.Categories))
+                    | @Model.Address
+                    @GetFotografName()
+                    @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")
+                </div> 
             </div>
         </div>
     </article>
@@ -96,7 +111,14 @@ else
             </div>
             <img class="articleImg" src="@Model.Image" alt="@Model.Title" />
             <div class="placeInfo">
-                <div class="info arrow">@Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) | @Model.Address @GetWriterName() @GetFotografName() @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")</div>
+                <div class="info arrow">
+                    @Umbraco.GetDictionaryValue(string.Join(",", Model.Categories))
+                    | @Model.Address
+                    @GetWriterName()
+                    @GetTranslatorName()
+                    @GetFotografName()
+                    @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")
+                </div>
                 @if (Model.IsDetails == false)
                 {
                     <div class="readmore">

@@ -42,7 +42,7 @@
     @Html.Raw(Model.WriterVideo)
     <div style="margin-top:10px;">
         <a style="float:left" href="@Model.Link">@Umbraco.GetDictionaryValue("Læs mere om") @Model.Name</a>
-        <a style="float:right" href="/om">Se hele holdet bag TIO</a>
+        <a style="float:right" href="@Url.Action("About", "About")#writers">Se hele holdet bag TIO</a>
         <br style="clear:both" />
     </div>
 </article>

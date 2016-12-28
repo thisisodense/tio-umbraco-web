@@ -27,7 +27,7 @@
         <DataTypePrevalue>
             <Alias>filter</Alias>
             <SortOrder>2</SortOrder>
-            <Value>Writer</Value>
+            <Value />
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>minNumber</Alias>

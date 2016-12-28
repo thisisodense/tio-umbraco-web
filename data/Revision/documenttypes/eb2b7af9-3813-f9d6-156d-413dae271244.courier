@@ -397,7 +397,7 @@
         <ContentTypeProperty>
             <UniqueId>5d545547-a388-fe5a-1a52-dcc1c5db315c</UniqueId>
             <Alias>translator</Alias>
-            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>

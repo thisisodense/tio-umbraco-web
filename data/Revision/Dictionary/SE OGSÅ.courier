@@ -11,14 +11,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>en-US</Id>
-                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <ForceHashCheck>false</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>en</Id>
                 <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -40,10 +32,6 @@
         <Translation>
             <CultureAlias>da</CultureAlias>
             <Value>SE OGSÅ</Value>
-        </Translation>
-        <Translation>
-            <CultureAlias>en-US</CultureAlias>
-            <Value>test</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

@@ -1,9 +1,17 @@
-﻿<DictionaryItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
                 <Id>da</Id>
+                <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>en-US</Id>
                 <ProviderId>d8e6ad81-e73a-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <ForceHashCheck>false</ForceHashCheck>
@@ -32,6 +40,10 @@
         <Translation>
             <CultureAlias>da</CultureAlias>
             <Value>SE OGSÅ</Value>
+        </Translation>
+        <Translation>
+            <CultureAlias>en-US</CultureAlias>
+            <Value>test</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

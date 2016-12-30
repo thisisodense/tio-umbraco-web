@@ -47,13 +47,27 @@
     <div class="content">
         <h1><a href="@Url.Action("Recommendations", "Recommendations")"><img src="@Url.Content("~/Content/images/logo.png")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></h1>
         <div class="navigation">
-            <a class="flag" href="@Url.Action(Html.GetRouteDataValue<string>("action"),
+            @{
+                string newLangUrl = Url.Action(Html.GetRouteDataValue<string>("action"),
                                  Html.GetRouteDataValue<string>("controller"),
                                  new
                                  {
                                      lang = (Site.IsEnglish ? "da" : "en"),
                                      id = Html.GetRouteDataValue<string>("id")
-                                 })">
+                                 });
+
+                string currentUrl = Request.RawUrl;
+                if (currentUrl.IndexOf("/da/", StringComparison.InvariantCultureIgnoreCase) > -1)
+                {
+                    newLangUrl = currentUrl.Replace("/da/", "/en/", StringComparison.InvariantCultureIgnoreCase);
+                }
+                else if (currentUrl.IndexOf("/en/", StringComparison.InvariantCultureIgnoreCase) > -1)
+                {
+                    newLangUrl = currentUrl.Replace("/en/", "/da/", StringComparison.InvariantCultureIgnoreCase);
+                }
+            }
+            
+            <a class="flag" href="@newLangUrl">
                 <img src="@Url.Content("~/Content/images/" + (Site.IsEnglish ? "dk" : "en") + ".png")" />
             </a>
             <ul class="topNavigation">

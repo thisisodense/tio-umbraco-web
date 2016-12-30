@@ -13,7 +13,7 @@ if (!Model.IsCurrent)
         <text>
             @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
             @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
-            @if (Model.EndDate.HasValue)
+            @if (Model.EndDate.HasValue && Model.EndDate != Model.StartDate)
             {
                 <text>
                     -

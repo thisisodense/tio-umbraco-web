@@ -42,22 +42,20 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
 
 @helper GetWriterName()
 {
-    if (!Model.IsDetails)
+    <text>|</text>
+    if (Model.MainWriter != Model.WriterName)
     {
-        if(Model.MainWriter != Model.WriterName)
-        { 
-            <span>@Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
-        }
-        else
-        {
-            <span>@Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.MainWriterId, name = Model.MainWriter.ToSeoUrl() })">@Model.MainWriter</a></span>
-        }
+        <span>@Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
+    }
+    else
+    {
+        <span>@Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.MainWriterId, name = Model.MainWriter.ToSeoUrl() })">@Model.MainWriter</a></span>
     }
 }
 
 @helper GetTranslatorName()
 {
-    if (!Model.IsDetails && Model.TranslatorId > 0 && Model.IsEnglish)
+    if (Model.TranslatorId > 0 && Model.IsEnglish)
     {
             <span>| @Umbraco.GetDictionaryValue("Oversat af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.TranslatorId, name = Model.TranslatorName.ToSeoUrl() })">@Model.TranslatorName</a></span>
     }
@@ -133,7 +131,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
             <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Address</a>
     }
     | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr.
-    @GetTicketsUrlText(Model)<br />
+    @GetTicketsUrlText(Model)
     @GetWriterName()
     @GetTranslatorName()
 </div>

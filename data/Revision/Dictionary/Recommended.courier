@@ -31,7 +31,7 @@
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Recommended</Value>
+            <Value>recommendations</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

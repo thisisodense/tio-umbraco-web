@@ -32,6 +32,7 @@
         <DataTypePrevalue>
             <Alias>minNumber</Alias>
             <SortOrder>3</SortOrder>
+            <Value>0</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>maxNumber</Alias>

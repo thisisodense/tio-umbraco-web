@@ -27,11 +27,11 @@
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Lukket</Value>
+            <Value> -</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Closed</Value>
+            <Value> -</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

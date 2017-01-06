@@ -23,7 +23,7 @@
         <DataTypePrevalue>
             <Alias>startNodeId</Alias>
             <SortOrder>3</SortOrder>
-            <Value>1063</Value>
+            <Value />
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>showPathOnHover</Alias>

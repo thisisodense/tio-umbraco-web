@@ -21,15 +21,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>9da27505-2fb0-448d-a477-07b0780a9243</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 9da27505-2fb0-448d-a477-07b0780a9243</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -71,11 +62,13 @@
     <Name>Festival</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>Festival</Alias>
-    <AllowedChildDocumentTypes />
-    <AllowedTemplates />
-    <Description />
     <Icon>icon-flag-alt</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>Festival</Alias>
+    <Description />
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>12a75f1a-ac5c-9ff6-f42d-69c17e9d4682</UniqueId>
@@ -188,17 +181,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>4937758a-e055-8dc3-e8bc-b58b8995a4e4</UniqueId>
-            <Alias>socialposts</Alias>
-            <DataTypeDefinitionId>9da27505-2fb0-448d-a477-07b0780a9243</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>SocialPosts</Name>
-            <SortOrder>0</SortOrder>
-            <TabCaption>SocialPosts</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>87593280-1cc8-14d7-82dc-205e8be09730</UniqueId>
             <Alias>startDate</Alias>
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
@@ -305,24 +287,10 @@
             <Text>Content</Text>
             <UniqueId>d4914fff-0068-2a1d-0214-29b5057cbf5f</UniqueId>
         </Tab>
-        <Tab>
-            <ContentTypeAlias>Festival</ContentTypeAlias>
-            <SortOrder>2</SortOrder>
-            <Text>Info</Text>
-            <UniqueId>e7eaf2e0-5b51-d2b8-f354-98afc3dd9729</UniqueId>
-        </Tab>
-        <Tab>
-            <ContentTypeAlias>Festival</ContentTypeAlias>
-            <SortOrder>3</SortOrder>
-            <Text>SocialPosts</Text>
-            <UniqueId>f0c95d7b-17ef-6455-6ab5-5e5f55dce660</UniqueId>
-        </Tab>
     </Tabs>
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
-    <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,827414b6-c2a8-5007-93e3-6849de92e3d5</PathGuids>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <MasterDocumentTypes />
 </DocumentType>

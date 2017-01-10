@@ -731,9 +731,5 @@ a:active, a:link, a:visited {
             }
 }
 
-.fb-like-box-w { padding-left: 107px; background-color:#e9ebee; border: 5px solid #e9ebee;
-}
-
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
-    width: 100% !important;
-}
+.fb-like-box-w { text-align:center; background-color:#e9ebee; border: 5px solid #e9ebee; border-width: 5px 0; }
+.fb-page { margin: 0 auto;}

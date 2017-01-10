@@ -39,6 +39,7 @@
             <div class="placeHeader">
                 <div class="addthis_sharing_toolbox"
                      data-title="@Model.Title"
+                     data-media="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.Image)"
                      data-url="@Url.Action(Const.Constants.Controllers.Location.NAME,
                                     Const.Constants.Controllers.Location.Actions.LOCATION,
                                     new
@@ -83,6 +84,7 @@ else
         <div class="toggleShow">
             <div class="placeHeader">
                 <div class="addthis_sharing_toolbox"
+                     data-media="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.Image)"
                      data-url="@Url.Action(Const.Constants.Controllers.Location.NAME,
                                     Const.Constants.Controllers.Location.Actions.LOCATION,
                                     new

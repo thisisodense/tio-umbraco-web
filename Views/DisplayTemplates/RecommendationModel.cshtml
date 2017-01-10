@@ -92,6 +92,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
         <div 
              class="addthis_sharing_toolbox"
              data-title="@Model.HeadLine"
+             data-media="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.ImageUrl)"
              data-url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
                                          Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
                                          new

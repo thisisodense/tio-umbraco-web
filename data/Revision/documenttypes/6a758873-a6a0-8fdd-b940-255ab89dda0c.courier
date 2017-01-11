@@ -17,20 +17,20 @@
     <Name>Location repository</Name>
     <ItemType>Item</ItemType>
     <Resources />
+    <Icon>icon-folder</Icon>
+    <Thumbnail>folder.png</Thumbnail>
     <Alias>LocationRepository</Alias>
+    <Description />
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>6a758873-a6a0-8fdd-b940-255ab89dda0c</UniqueId>
+    <Properties />
+    <Tabs />
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,6a758873-a6a0-8fdd-b940-255ab89dda0c</PathGuids>
     <AllowedChildDocumentTypes>
         <string>Location</string>
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
-    <Description />
-    <Icon>icon-folder</Icon>
-    <Properties />
-    <Tabs />
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>6a758873-a6a0-8fdd-b940-255ab89dda0c</UniqueId>
     <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>true</IsContainer>
-    <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1,6a758873-a6a0-8fdd-b940-255ab89dda0c</PathGuids>
 </DocumentType>

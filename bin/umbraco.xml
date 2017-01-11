@@ -11404,12 +11404,13 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Umbraco.Web.PublishedCache.XmlPublishedCache.RoutesCache.Store(System.Int32,System.String)">
+        <member name="M:Umbraco.Web.PublishedCache.XmlPublishedCache.RoutesCache.Store(System.Int32,System.String,System.Boolean)">
             <summary>
             Stores a route for a node.
             </summary>
             <param name="nodeId">The node identified.</param>
             <param name="route">The route.</param>
+            <param name="trust">A value indicating whether the value can be trusted for inbound routing.</param>
         </member>
         <member name="M:Umbraco.Web.PublishedCache.XmlPublishedCache.RoutesCache.GetRoute(System.Int32)">
             <summary>
@@ -15711,6 +15712,11 @@
             </summary>
             <param name="webRoutingSection"></param>
             <param name="pcr">The content request.</param>
+        </member>
+        <member name="M:Umbraco.Web.Routing.PublishedContentRequestEngine.TryRouteRequest">
+            <summary>
+            Tries to route the request.
+            </summary>
         </member>
         <member name="M:Umbraco.Web.Routing.PublishedContentRequestEngine.PrepareRequest">
             <summary>

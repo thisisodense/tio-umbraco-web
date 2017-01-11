@@ -1563,6 +1563,16 @@
             A wrapper for StringEnumerator since it doesn't explicitly implement IEnumerable
             </summary>
         </member>
+        <member name="T:Umbraco.Core.Configuration.UmbracoSettings.UmbracoConfigurationElement">
+            <summary>
+            Base class with shared helper methods
+            </summary>
+        </member>
+        <member name="F:Umbraco.Core.Configuration.UmbracoSettings.UmbracoConfigurationElement._rawElements">
+            <summary>
+            Used so the RawElement types are not re-created every time they are accessed
+            </summary>
+        </member>
         <member name="P:Umbraco.Core.Configuration.UmbracoSettings.IImagingAutoFillUploadField.Alias">
             <summary>
             Allow setting internally so we can create a default
@@ -2800,6 +2810,11 @@
             <remarks>
             One per AppDomain, represents the Umbraco database
             </remarks>
+        </member>
+        <member name="F:Umbraco.Core.DatabaseContext.ConnectionCheckMinutes">
+            <summary>
+            The number of minutes to throttle the checks to CanConnect
+            </summary>
         </member>
         <member name="M:Umbraco.Core.DatabaseContext.#ctor(Umbraco.Core.Persistence.IDatabaseFactory,Umbraco.Core.Logging.ILogger,Umbraco.Core.Persistence.SqlSyntax.SqlSyntaxProviders)">
             <summary>
@@ -12064,6 +12079,30 @@
             </summary>
             <param name="locker">The object to lock.</param>
             <remarks>Should always be used within a using block.</remarks>
+        </member>
+        <member name="M:Umbraco.Core.Models.UmbracoEntityExtensions.ValidatePathWithException(Umbraco.Core.Models.Rdbms.NodeDto)">
+            <summary>
+            Does a quick check on the entity's set path to ensure that it's valid and consistent
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Core.Models.UmbracoEntityExtensions.ValidatePath(Umbraco.Core.Models.EntityBase.IUmbracoEntity)">
+            <summary>
+            Does a quick check on the entity's set path to ensure that it's valid and consistent
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Core.Models.UmbracoEntityExtensions.EnsureValidPath``1(``0,Umbraco.Core.Logging.ILogger,System.Func{``0,``0},System.Action{``0})">
+            <summary>
+            This will validate the entity's path and if it's invalid it will fix it, if fixing is required it will recursively 
+            check and fix all ancestors if required.
+            </summary>
+            <param name="entity"></param>
+            <param name="logger"></param>
+            <param name="getParent">A callback specified to retrieve the parent entity of the entity</param>
+            <param name="update">A callback specified to update a fixed entity</param>
         </member>
         <member name="T:Umbraco.Core.Packaging.IPackageExtraction">
             <summary>
@@ -23124,6 +23163,12 @@
             <param name="content"><see cref="T:Umbraco.Core.Models.IContent"/> item to retrieve Descendants from</param>
             <returns>An Enumerable list of <see cref="T:Umbraco.Core.Models.IContent"/> objects</returns>
         </member>
+        <member name="M:Umbraco.Core.Services.ContentService.QuickUpdate(Umbraco.Core.Models.IContent)">
+            <summary>
+            Hack: This is used to fix some data if an entity's properties are invalid/corrupt
+            </summary>
+            <param name="content"></param>
+        </member>
         <member name="M:Umbraco.Core.Services.ContentService.PublishWithChildrenDo(Umbraco.Core.Models.IContent,System.Int32,System.Boolean)">
             <summary>
             Publishes a <see cref="T:Umbraco.Core.Models.IContent"/> object and all its children
@@ -27767,6 +27812,12 @@
             <param name="parentTrashed">Indicates whether the Parent is trashed or not</param>
             <param name="eventInfo">Used to track the objects to be used in the move event</param>
             <returns>Collection of updated <see cref="T:Umbraco.Core.Models.IMedia"/> objects</returns>
+        </member>
+        <member name="M:Umbraco.Core.Services.MediaService.QuickUpdate(Umbraco.Core.Models.IMedia)">
+            <summary>
+            Hack: This is used to fix some data if an entity's properties are invalid/corrupt
+            </summary>
+            <param name="media"></param>
         </member>
         <member name="E:Umbraco.Core.Services.MediaService.DeletingVersions">
             <summary>

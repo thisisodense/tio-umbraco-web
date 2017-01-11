@@ -475,7 +475,7 @@
             </remarks>
             <param name="nodeId">ID of the node to delete</param>
         </member>
-        <member name="F:UmbracoExamine.UmbracoContentIndexer.PublishedQuery">
+        <member name="F:UmbracoExamine.UmbracoContentIndexer._publishedQuery">
             <summary>
             This is a static query, it's parameters don't change so store statically
             </summary>

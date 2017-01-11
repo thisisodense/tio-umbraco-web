@@ -21,7 +21,7 @@
     <Thumbnail>folder.png</Thumbnail>
     <Alias>LocationRepository</Alias>
     <Description />
-    <IsContainer>true</IsContainer>
+    <IsContainer>false</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>6a758873-a6a0-8fdd-b940-255ab89dda0c</UniqueId>
     <Properties />

@@ -17,20 +17,20 @@
     <Name>Recommendation repository</Name>
     <ItemType>Item</ItemType>
     <Resources />
+    <Icon>icon-calendar-alt</Icon>
+    <Thumbnail>folder.png</Thumbnail>
     <Alias>RecommendationRepository</Alias>
+    <Description />
+    <IsContainer>true</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>d257b511-ce39-bf14-5ea7-73b62a70aca5</UniqueId>
+    <Properties />
+    <Tabs />
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,d257b511-ce39-bf14-5ea7-73b62a70aca5</PathGuids>
     <AllowedChildDocumentTypes>
         <string>Recommendation</string>
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
-    <Description />
-    <Icon>icon-calendar-alt</Icon>
-    <Properties />
-    <Tabs />
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>d257b511-ce39-bf14-5ea7-73b62a70aca5</UniqueId>
     <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>true</IsContainer>
-    <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1,d257b511-ce39-bf14-5ea7-73b62a70aca5</PathGuids>
 </DocumentType>

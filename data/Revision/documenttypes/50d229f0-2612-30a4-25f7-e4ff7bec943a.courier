@@ -57,6 +57,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -329,8 +338,8 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>f17b608a-ee25-47cd-8804-43f7647d65e3</UniqueId>
-            <Alias>translatedBy</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Alias>translatorLocation</Alias>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
@@ -350,8 +359,8 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>db638a68-13d9-9da5-3129-63c02e1e62bb</UniqueId>
-            <Alias>writer</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Alias>writerLocation</Alias>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>

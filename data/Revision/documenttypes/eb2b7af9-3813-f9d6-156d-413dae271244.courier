@@ -57,10 +57,28 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>e1a8a778-59a6-4a30-87e3-9590097a5758</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: e1a8a778-59a6-4a30-87e3-9590097a5758</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -222,8 +240,8 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>c89743a0-7175-74d2-3b63-3eb0cca4163b</UniqueId>
-            <Alias>location</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Alias>locationRecommendation</Alias>
+            <DataTypeDefinitionId>e1a8a778-59a6-4a30-87e3-9590097a5758</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Location</Name>
@@ -387,8 +405,8 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>5d545547-a388-fe5a-1a52-dcc1c5db315c</UniqueId>
-            <Alias>translator</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Alias>translatorRecommendation</Alias>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
@@ -420,8 +438,8 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>da8a914c-e1d6-d3df-0cd6-f8f863be7cc8</UniqueId>
-            <Alias>writer</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Alias>writerRecommendation</Alias>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>

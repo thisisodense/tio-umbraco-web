@@ -12,7 +12,10 @@
     <meta property="og:description" content="@Model.SubHeader" />
     <meta property="fb:app_id" content="550180138336430" />
     <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Recommendation.NAME, Models.Constants.Controllers.Recommendation.Actions.RECOMMENDATION, new { id = Model.Id, name = Model.HeadLine.ToSeoUrl() }, Request.Url.Scheme)" />
-    <meta property="og:image" content="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.ImageUrl)" />
+    @if (!string.IsNullOrEmpty(Model.ImageFacebookUrl))
+    {
+        <meta property="og:image" content="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.ImageFacebookUrl)" />
+    }
     <meta property="og:type" content="article" />
 }
 

@@ -23,7 +23,12 @@
     <meta property="og:description" content="@Model.ShortDescription" />
     <meta property="fb:app_id" content="550180138336430" />
     <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
-    <meta property="og:image" content="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.Image)" />
+    
+    @if(!string.IsNullOrEmpty(Model.ImageFacebook))
+    {
+        <meta property="og:image" content="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.ImageFacebook)" />
+    }
+    
     <meta property="og:type" content="article" />
 }
 @section writername {

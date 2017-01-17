@@ -26,11 +26,13 @@
     <Name>Writer</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>Writer</Alias>
-    <AllowedChildDocumentTypes />
-    <AllowedTemplates />
-    <Description />
     <Icon>icon-user</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>Writer</Alias>
+    <Description />
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>652a26b7-8fca-b6c6-0863-836ac8d82746</UniqueId>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>bb5e8e1c-701b-5b0b-f5b0-81000696fd9d</UniqueId>
@@ -40,7 +42,7 @@
             <Mandatory>false</Mandatory>
             <Name>Background</Name>
             <SortOrder>6</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -51,7 +53,7 @@
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
             <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -62,7 +64,7 @@
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
             <SortOrder>9</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -73,7 +75,7 @@
             <Mandatory>false</Mandatory>
             <Name>Interests</Name>
             <SortOrder>7</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -84,7 +86,7 @@
             <Mandatory>false</Mandatory>
             <Name>Name</Name>
             <SortOrder>2</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -106,7 +108,7 @@
             <Mandatory>false</Mandatory>
             <Name>Personligt link</Name>
             <SortOrder>4</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -117,7 +119,7 @@
             <Mandatory>false</Mandatory>
             <Name>Show</Name>
             <SortOrder>1</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -128,7 +130,7 @@
             <Mandatory>false</Mandatory>
             <Name>Title</Name>
             <SortOrder>0</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -139,7 +141,7 @@
             <Mandatory>false</Mandatory>
             <Name>Skribent siden</Name>
             <SortOrder>5</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -150,29 +152,27 @@
             <Mandatory>false</Mandatory>
             <Name>Video</Name>
             <SortOrder>8</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Writer</TabCaption>
             <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>
         <Tab>
             <ContentTypeAlias>Writer</ContentTypeAlias>
-            <SortOrder>0</SortOrder>
-            <Text>Content</Text>
-            <UniqueId>b8c8bcdf-01aa-2c69-3901-476ee0166d2e</UniqueId>
-        </Tab>
-        <Tab>
-            <ContentTypeAlias>Writer</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Info</Text>
             <UniqueId>79693134-9272-8111-34cd-a246e7203707</UniqueId>
         </Tab>
+        <Tab>
+            <ContentTypeAlias>Writer</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Writer</Text>
+            <UniqueId>b8c8bcdf-01aa-2c69-3901-476ee0166d2e</UniqueId>
+        </Tab>
     </Tabs>
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>652a26b7-8fca-b6c6-0863-836ac8d82746</UniqueId>
-    <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,652a26b7-8fca-b6c6-0863-836ac8d82746</PathGuids>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <MasterDocumentTypes />
 </DocumentType>

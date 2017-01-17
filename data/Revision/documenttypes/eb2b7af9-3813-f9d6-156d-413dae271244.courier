@@ -125,7 +125,7 @@
             <Mandatory>false</Mandatory>
             <Name>End date</Name>
             <SortOrder>8</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -136,7 +136,7 @@
             <Mandatory>false</Mandatory>
             <Name>End time</Name>
             <SortOrder>10</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -147,7 +147,7 @@
             <Mandatory>false</Mandatory>
             <Name>Event type</Name>
             <SortOrder>6</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -169,7 +169,7 @@
             <Mandatory>false</Mandatory>
             <Name>Overskrift</Name>
             <SortOrder>2</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -180,7 +180,7 @@
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
             <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -191,7 +191,7 @@
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
             <SortOrder>22</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -202,7 +202,7 @@
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
             <SortOrder>18</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -213,7 +213,7 @@
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
             <SortOrder>19</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -224,7 +224,7 @@
             <Mandatory>false</Mandatory>
             <Name>Link to event</Name>
             <SortOrder>13</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -246,7 +246,7 @@
             <Mandatory>false</Mandatory>
             <Name>Location</Name>
             <SortOrder>5</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -290,7 +290,7 @@
             <Mandatory>false</Mandatory>
             <Name>Organizer</Name>
             <SortOrder>4</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -301,7 +301,7 @@
             <Mandatory>false</Mandatory>
             <Name>Price</Name>
             <SortOrder>11</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -323,7 +323,7 @@
             <Mandatory>false</Mandatory>
             <Name>Start date</Name>
             <SortOrder>7</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -334,7 +334,7 @@
             <Mandatory>false</Mandatory>
             <Name>Start Time</Name>
             <SortOrder>9</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -345,7 +345,7 @@
             <Mandatory>false</Mandatory>
             <Name>Underoverskrift</Name>
             <SortOrder>14</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -356,7 +356,7 @@
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
             <SortOrder>15</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -367,7 +367,7 @@
             <Mandatory>false</Mandatory>
             <Name>Anbefaling</Name>
             <SortOrder>16</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -378,7 +378,7 @@
             <Mandatory>false</Mandatory>
             <Name>Recommendation English</Name>
             <SortOrder>21</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -389,7 +389,7 @@
             <Mandatory>false</Mandatory>
             <Name>Uddrag til Instagram</Name>
             <SortOrder>17</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -400,7 +400,7 @@
             <Mandatory>false</Mandatory>
             <Name>Ticket Url</Name>
             <SortOrder>12</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -411,7 +411,7 @@
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
             <SortOrder>20</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -433,7 +433,7 @@
             <Mandatory>true</Mandatory>
             <Name>Week</Name>
             <SortOrder>0</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -444,17 +444,11 @@
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
             <SortOrder>1</SortOrder>
-            <TabCaption>Content</TabCaption>
+            <TabCaption>Recommendation</TabCaption>
             <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>
-        <Tab>
-            <ContentTypeAlias>Recommendation</ContentTypeAlias>
-            <SortOrder>1</SortOrder>
-            <Text>Content</Text>
-            <UniqueId>bb5a0ad4-4da5-5636-6f7d-0fbae6b851e6</UniqueId>
-        </Tab>
         <Tab>
             <ContentTypeAlias>Recommendation</ContentTypeAlias>
             <SortOrder>3</SortOrder>
@@ -466,6 +460,12 @@
             <SortOrder>2</SortOrder>
             <Text>Info</Text>
             <UniqueId>8035df0d-3889-12b2-c811-8bb555b88de5</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Recommendation</ContentTypeAlias>
+            <SortOrder>1</SortOrder>
+            <Text>Recommendation</Text>
+            <UniqueId>bb5a0ad4-4da5-5636-6f7d-0fbae6b851e6</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Recommendation</ContentTypeAlias>

@@ -338,7 +338,7 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>f17b608a-ee25-47cd-8804-43f7647d65e3</UniqueId>
-            <Alias>translatedBy</Alias>
+            <Alias>translatorLocation</Alias>
             <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>

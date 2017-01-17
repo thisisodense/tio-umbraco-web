@@ -17,5 +17,5 @@
     <Alias>Layout</Alias>
     <MasterPagePath>~/masterpages/Layout.master</MasterPagePath>
     <ParentTemplateId>0</ParentTemplateId>
-    <Id>1053</Id>
+    <Id>1060</Id>
 </Template>

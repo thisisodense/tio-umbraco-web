@@ -105,7 +105,7 @@
             <Mandatory>false</Mandatory>
             <Name>Adresse</Name>
             <SortOrder>1</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -116,7 +116,7 @@
             <Mandatory>false</Mandatory>
             <Name>Categories</Name>
             <SortOrder>4</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -127,7 +127,7 @@
             <Mandatory>false</Mandatory>
             <Name>Email</Name>
             <SortOrder>14</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -138,7 +138,7 @@
             <Mandatory>false</Mandatory>
             <Name>Fotograf</Name>
             <SortOrder>18</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>74896a14-fdd0-414e-aba1-5a902b91021d</UniqueId>
@@ -148,7 +148,7 @@
             <Mandatory>false</Mandatory>
             <Name>FotografURL</Name>
             <SortOrder>19</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>d74f3c06-9188-23ad-eb79-5f7116168238</UniqueId>
@@ -169,7 +169,7 @@
             <Mandatory>false</Mandatory>
             <Name>Geo location</Name>
             <SortOrder>3</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -180,7 +180,7 @@
             <Mandatory>false</Mandatory>
             <Name>Hashtags</Name>
             <SortOrder>15</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -191,7 +191,7 @@
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
             <SortOrder>17</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -202,7 +202,7 @@
             <Mandatory>false</Mandatory>
             <Name>Korrekturlæst og færdig</Name>
             <SortOrder>6</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -213,7 +213,7 @@
             <Mandatory>false</Mandatory>
             <Name>LongDescription</Name>
             <SortOrder>9</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -224,7 +224,7 @@
             <Mandatory>false</Mandatory>
             <Name>LongDescriptionEnglish</Name>
             <SortOrder>10</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -246,7 +246,7 @@
             <Mandatory>false</Mandatory>
             <Name>OpeningHours</Name>
             <SortOrder>16</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -257,7 +257,7 @@
             <Mandatory>false</Mandatory>
             <Name>PhoneNumber</Name>
             <SortOrder>13</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -290,7 +290,7 @@
             <Mandatory>false</Mandatory>
             <Name>ShortDescription</Name>
             <SortOrder>7</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -301,7 +301,7 @@
             <Mandatory>false</Mandatory>
             <Name>ShortDescriptionEnglish</Name>
             <SortOrder>8</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -322,7 +322,7 @@
             <Mandatory>false</Mandatory>
             <Name>Tags</Name>
             <SortOrder>2</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -333,7 +333,7 @@
             <Mandatory>false</Mandatory>
             <Name>Title</Name>
             <SortOrder>0</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -344,7 +344,7 @@
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
             <SortOrder>11</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>13f2f114-f25d-1c88-a9d6-912328b1f565</UniqueId>
@@ -354,7 +354,7 @@
             <Mandatory>false</Mandatory>
             <Name>Url</Name>
             <SortOrder>12</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -365,22 +365,22 @@
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
             <SortOrder>5</SortOrder>
-            <TabCaption>Location</TabCaption>
+            <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>
         <Tab>
             <ContentTypeAlias>Location</ContentTypeAlias>
-            <SortOrder>2</SortOrder>
-            <Text>Info</Text>
-            <UniqueId>932b6f97-53cd-3ff2-fadb-955347271692</UniqueId>
+            <SortOrder>1</SortOrder>
+            <Text>Content</Text>
+            <UniqueId>e9410766-8013-6ca2-6443-388ce5cdba65</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Location</ContentTypeAlias>
-            <SortOrder>1</SortOrder>
-            <Text>Location</Text>
-            <UniqueId>e9410766-8013-6ca2-6443-388ce5cdba65</UniqueId>
+            <SortOrder>2</SortOrder>
+            <Text>Info</Text>
+            <UniqueId>932b6f97-53cd-3ff2-fadb-955347271692</UniqueId>
         </Tab>
         <Tab>
             <ContentTypeAlias>Location</ContentTypeAlias>

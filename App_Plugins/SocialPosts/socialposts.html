@@ -6,7 +6,7 @@
        {{subheader}}
     </p>
     <p>Læs anbefalingen på: www.thisisodense.dk/{{id}}</p>
-    <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.address}} | {{price}} kr.</p>
+    <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.address}} | {{price}} kr.</p>
     <p>-------</p>
     <p>
         {{headlineEnglish}}
@@ -14,17 +14,17 @@
         {{subheaderEnglish}}
     </p>
     <p>Read more: http://www.thisisodense.dk/en/{{id}}</p>
-    <p>{{eventTypeEN}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.address}} | {{price}} kr.</p>
+    <p>{{eventTypeEN}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.address}} | {{price}} kr.</p>
     <h2>FB-opslagstekst</h2>
     <p>**SLET* http://www.thisisodense.dk/{{id}} *SLET**</p>
     <p ng-bind-html="summary"></p>
     <p>-------</p>
     <p>{{headline}}</p>
-    <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.title}}, {{location.address}} | {{price}} kr.</p>
+    <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.title}}, {{locationRecommendation.address}} | {{price}} kr.</p>
     <p>Arrangør: {{organizer}}</p>
     <p>{{linkToEvent}}</p>
     <p>
-        Skrevet af {{writerName}}, der er skribent på This Is Odense. Læs alle vores fem anbefalinger på www.thisisodense.dk
+        Skrevet af {{writerRecommendation}}, der er skribent på This Is Odense. Læs alle vores fem anbefalinger på www.thisisodense.dk
     </p>
     <br />
     <p>▼▼▼ ENGLISH ▼▼▼</p>
@@ -32,14 +32,14 @@
     <p ng-bind-html="summaryEnglish"></p>
     <p>-------</p>
     <p>{{headlineEnglish}}</p>
-    <p>{{eventTypeEN}} |{{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{location.title}}, {{location.address}} | {{price}} kr.</p>
+    <p>{{eventTypeEN}} |{{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.title}}, {{locationRecommendation.address}} | {{price}} kr.</p>
     <p>Organizer: {{organizer}}</p>
     <p>{{linkToEvent}}</p>
-    <p>Translated by {{translatorName}}. Read all our five weekly recommendations at www.thisisodense.dk/en</p>
+    <p>Translated by {{translatorRecommendation}}. Read all our five weekly recommendations at www.thisisodense.dk/en</p>
     <h2>IG-opslagstekst</h2>
     <p ng-bind-html="summaryForInstagram"></p>
     <p>
-        Oplev {{headline}} fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}. {{organizer}} åbner dørene på {{location.title}} kl. {{doorsOpen}}.
+        Oplev {{headline}} fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}. {{organizer}} åbner dørene på {{locationRecommendation.title}} kl. {{doorsOpen}}.
     </p>
-    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/{{id}} {{location.hashtags}} #odense #thisisodense #mitodense</p>
+    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/{{id}} {{locationRecommendation.hashtags}} #odense #thisisodense #mitodense</p>
 </div>

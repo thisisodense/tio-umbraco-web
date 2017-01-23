@@ -40,20 +40,20 @@
             $scope.summary = findProperty(properties, 'summary');
             $scope.summaryEnglish = findProperty(properties, 'summaryEnglish');
 
-            var writerId = findProperty(properties, 'writer');
+            var writerId = findProperty(properties, 'writerRecommendation');
             contentResource.getById(writerId).then(function (writer) {
-                $scope.writerName = writer.name;
+                $scope.writerRecommendation = writer.name;
             });
 
-            var translatorId = findProperty(properties, 'translator');
+            var translatorId = findProperty(properties, 'translatorRecommendation');
 
             if (translatorId) {
                 contentResource.getById(translatorId).then(function (translator) {
-                    $scope.translatorName = translator.name;
+                    $scope.translatorRecommendation = translator.name;
                 });
             }
 
-            var locationId = findProperty(properties, 'location');
+            var locationId = findProperty(properties, 'locationRecommendation');
             contentResource.getById(locationId).then(function (location) {
                 var locationProperties = contentEditingHelper.getAllProps(location);
    

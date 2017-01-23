@@ -35,9 +35,9 @@
                 $scope.categories.push(categories.config.items[categoryIds[categoryId]].value);
             }
 
-            var writerId = findProperty(properties, 'writer');
+            var writerId = findProperty(properties, 'writerLocation');
             contentResource.getById(writerId).then(function (writer) {
-                $scope.writerName = writer.name;
+                $scope.writerLocation = writer.name;
             });
           
         });

@@ -4,7 +4,7 @@
         <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Image Cropper</Name>
+    <Name>Image Cropper (1)</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Ntext</DataBaseDataType>
@@ -28,6 +28,11 @@
     "alias": "recommendationCrop",&#xD;
     "width": 714,&#xD;
     "height": 264&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "facebookCrop",&#xD;
+    "width": 800,&#xD;
+    "height": 420&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

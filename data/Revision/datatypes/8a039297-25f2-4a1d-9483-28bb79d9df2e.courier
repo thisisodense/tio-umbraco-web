@@ -60,7 +60,7 @@
     "header": "Slut dato"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "location",&#xD;
+    "alias": "locationRecommendation",&#xD;
     "isSystem": 0,&#xD;
     "header": "Sted"&#xD;
   },&#xD;
@@ -70,7 +70,7 @@
     "header": "Arrangør"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "writer",&#xD;
+    "alias": "writerRecommendation",&#xD;
     "isSystem": 0,&#xD;
     "header": "Skribent"&#xD;
   },&#xD;
@@ -95,10 +95,10 @@
             <SortOrder>7</SortOrder>
             <Value>{&#xD;
   "allowBulkPublish": true,&#xD;
-  "allowBulkUnpublish": true,&#xD;
+  "allowBulkUnpublish": false,&#xD;
   "allowBulkCopy": true,&#xD;
-  "allowBulkMove": true,&#xD;
-  "allowBulkDelete": true&#xD;
+  "allowBulkMove": false,&#xD;
+  "allowBulkDelete": false&#xD;
 }</Value>
         </DataTypePrevalue>
     </Prevalues>

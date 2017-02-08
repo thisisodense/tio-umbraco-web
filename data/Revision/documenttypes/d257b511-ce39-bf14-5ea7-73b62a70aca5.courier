@@ -1,15 +1,5 @@
 ﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>8a039297-25f2-4a1d-9483-28bb79d9df2e</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 8a039297-25f2-4a1d-9483-28bb79d9df2e</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-    </Dependencies>
+    <Dependencies />
     <ItemId>
         <Id>d257b511-ce39-bf14-5ea7-73b62a70aca5</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>

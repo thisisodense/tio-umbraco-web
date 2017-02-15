@@ -1,0 +1,56 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>ee4901a8-91bb-449d-97f1-5984e2ee9e28</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Dropdown Blog Categories</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.DropDownMultiple</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>0</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>Opinions</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>1</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>Longreads</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>2</Alias>
+            <SortOrder>3</SortOrder>
+            <Value>Lists</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>3</Alias>
+            <SortOrder>4</SortOrder>
+            <Value>Guides</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>4</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>Debates</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>5</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>Conversations</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>6</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>Guests</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>7</Alias>
+            <SortOrder>8</SortOrder>
+            <Value>Stories</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>ee4901a8-91bb-449d-97f1-5984e2ee9e28</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

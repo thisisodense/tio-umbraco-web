@@ -21,28 +21,10 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: 9e47630e-c2df-431c-ba01-c4c65148b98d</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: c281c13f-8c09-4b8e-848b-576d865155a8</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -63,6 +45,24 @@
             <Name>Datatype: ec3491d1-75dc-4484-86e9-4bc040089c08</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ee4901a8-91bb-449d-97f1-5984e2ee9e28</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ee4901a8-91bb-449d-97f1-5984e2ee9e28</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>fd78c753-1ea0-49ca-948e-b80777f0c22f</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: fd78c753-1ea0-49ca-948e-b80777f0c22f</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>827414b6-c2a8-5007-93e3-6849de92e3d5</Id>
@@ -80,15 +80,14 @@
     <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
     <Properties>
         <ContentTypeProperty>
-            <UniqueId>2c93704a-d1e4-27d0-9deb-cce08c18a323</UniqueId>
+            <UniqueId>74cdc803-407c-42c0-abdc-f1e2906d9d8b</UniqueId>
             <Alias>blogKategori</Alias>
-            <DataTypeDefinitionId>c281c13f-8c09-4b8e-848b-576d865155a8</DataTypeDefinitionId>
+            <DataTypeDefinitionId>ee4901a8-91bb-449d-97f1-5984e2ee9e28</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Blog Kategori</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>f060efdc-e668-42ab-a50a-ca35b3c4c78f</UniqueId>
@@ -107,7 +106,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -117,7 +116,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>14</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -128,7 +127,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -138,7 +137,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -158,7 +157,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Long Description English</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -178,17 +177,17 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Short Description English</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>5770425c-b8b3-467b-8393-5dd93419267e</UniqueId>
+            <UniqueId>e9b609df-f444-429d-8570-631f5fdfda15</UniqueId>
             <Alias>tagsBlog</Alias>
-            <DataTypeDefinitionId>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</DataTypeDefinitionId>
+            <DataTypeDefinitionId>fd78c753-1ea0-49ca-948e-b80777f0c22f</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Tags</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -198,7 +197,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

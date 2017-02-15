@@ -3,19 +3,19 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>0cb8264f-0485-4ab7-b11e-3faf42a3e402</Id>
+                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 0cb8264f-0485-4ab7-b11e-3faf42a3e402</Name>
+            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+                <Id>6a758873-a6a0-8fdd-b940-255ab89dda0c</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
+            <Name>Document type: LocationRepository</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -48,6 +48,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>d257b511-ce39-bf14-5ea7-73b62a70aca5</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: RecommendationRepository</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>ec3491d1-75dc-4484-86e9-4bc040089c08</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -71,57 +80,24 @@
     <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
     <Properties>
         <ContentTypeProperty>
-            <UniqueId>12a75f1a-ac5c-9ff6-f42d-69c17e9d4682</UniqueId>
-            <Alias>days</Alias>
-            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
+            <Alias>blogHeadline</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Dage</Name>
-            <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>cf244898-83be-bcc7-4892-e19c82ee223a</UniqueId>
-            <Alias>endDate</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Næste slutdato</Name>
-            <SortOrder>9</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>a6a5f4a8-6e52-9588-286d-ef12af71b17b</UniqueId>
-            <Alias>eventType</Alias>
-            <DataTypeDefinitionId>0cb8264f-0485-4ab7-b11e-3faf42a3e402</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Primære type oplevelse</Name>
-            <SortOrder>7</SortOrder>
+            <Name>Title</Name>
+            <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>2c93704a-d1e4-27d0-9deb-cce08c18a323</UniqueId>
-            <Alias>festivalKategori</Alias>
+            <Alias>blogKategori</Alias>
             <DataTypeDefinitionId>c281c13f-8c09-4b8e-848b-576d865155a8</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Festival Kategori</Name>
+            <Name>Blog Kategori</Name>
             <SortOrder>6</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
-            <Alias>festivalName</Alias>
-            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Title</Name>
-            <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -133,61 +109,6 @@
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
             <SortOrder>18</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>25bb9d2f-ceb4-f38c-845a-c8ebd31b0b1f</UniqueId>
-            <Alias>linkToEvent</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Link festivalens hjemmeside</Name>
-            <SortOrder>12</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>c1c3874c-131f-c1b3-2c85-8d94855b0eb2</UniqueId>
-            <Alias>location</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Primære location</Name>
-            <SortOrder>5</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>e4f7a236-f1bf-e139-6d10-47ee589ef531</UniqueId>
-            <Alias>organizer</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Organizer</Name>
-            <SortOrder>4</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>92bc348f-69a5-08b1-e8fd-e5d34846e7e1</UniqueId>
-            <Alias>price</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Pris for partoutbillet</Name>
-            <SortOrder>10</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>87593280-1cc8-14d7-82dc-205e8be09730</UniqueId>
-            <Alias>startDate</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Næste startdato</Name>
-            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -236,17 +157,6 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>5b4c44e2-f1da-370e-6105-25b2e4ce0789</UniqueId>
-            <Alias>ticketUrl</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description>Indsæt direkte link til billetsalget</Description>
-            <Mandatory>false</Mandatory>
-            <Name>Ticket Url</Name>
-            <SortOrder>11</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>219d507d-fe24-eab8-2396-1852846c6920</UniqueId>
             <Alias>translator</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
@@ -258,24 +168,13 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>e215647e-3878-2023-9f55-4f6fb368afc4</UniqueId>
-            <Alias>weekNumber</Alias>
-            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Week</Name>
-            <SortOrder>2</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>0ced46f9-e27d-daba-9187-ee7ebb29b361</UniqueId>
             <Alias>writer</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
-            <SortOrder>1</SortOrder>
+            <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -292,5 +191,8 @@
     <PathGuids>-1,827414b6-c2a8-5007-93e3-6849de92e3d5</PathGuids>
     <AllowedChildDocumentTypes />
     <AllowedTemplates />
-    <MasterDocumentTypes />
+    <MasterDocumentTypes>
+        <string>LocationRepository</string>
+        <string>RecommendationRepository</string>
+    </MasterDocumentTypes>
 </DocumentType>

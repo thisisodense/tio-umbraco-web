@@ -21,6 +21,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -34,6 +43,15 @@
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: c281c13f-8c09-4b8e-848b-576d865155a8</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -89,7 +107,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
-            <SortOrder>2</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -99,7 +117,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -110,7 +128,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -120,38 +138,57 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>68b335cc-5640-4b5c-ac7b-3522d54ce0f4</UniqueId>
-            <Alias>subheaderBlog</Alias>
-            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <UniqueId>f2d68cb1-58ba-4b24-a023-85fe186626a5</UniqueId>
+            <Alias>longdescriptionBlog</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Underoverskrift</Name>
+            <Name>Lang beskrivelse</Name>
             <SortOrder>3</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>61b04067-4db9-8ffb-6eb5-6c521f017514</UniqueId>
-            <Alias>subheaderEnglish</Alias>
-            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <UniqueId>4538902d-93f9-4c67-b651-d043126a6b01</UniqueId>
+            <Alias>longdescriptionEnglishBlog</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Subheader English</Name>
-            <SortOrder>8</SortOrder>
+            <Name>Long Description English</Name>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>66510e4d-fc35-4b1b-b96d-731dc5e4e1e5</UniqueId>
-            <Alias>subheaderEnglishBlog</Alias>
+            <UniqueId>338952be-11dd-461e-a393-deb6c97e3a57</UniqueId>
+            <Alias>shortdescriptionBlog</Alias>
             <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Subheader English</Name>
-            <SortOrder>9</SortOrder>
+            <Name>Kort beskrivelse</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>1b9f80a6-4a96-4b57-8fc4-ee31545549d0</UniqueId>
+            <Alias>shortdescriptionEnglishBlog</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Short Description English</Name>
+            <SortOrder>10</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>5770425c-b8b3-467b-8393-5dd93419267e</UniqueId>
+            <Alias>tagsBlog</Alias>
+            <DataTypeDefinitionId>9de8e4b7-e502-47e6-b92d-5e6f12fec9b9</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Tags</Name>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -161,7 +198,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>

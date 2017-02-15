@@ -140,6 +140,16 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>e24d3f73-5c92-4c56-8d52-311524f9155a</UniqueId>
+            <Alias>imageGuest</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>ImageGuest</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>bf29a851-4dce-4b20-b828-fd51f0852054</UniqueId>
             <Alias>klarTilKorrektur</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>

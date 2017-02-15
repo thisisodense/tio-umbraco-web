@@ -12,15 +12,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>6a758873-a6a0-8fdd-b940-255ab89dda0c</Id>
-                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Document type: LocationRepository</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -43,15 +34,6 @@
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
             <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>d257b511-ce39-bf14-5ea7-73b62a70aca5</Id>
-                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Document type: RecommendationRepository</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -97,7 +79,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Blog Kategori</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -108,7 +90,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>18</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -119,7 +101,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader</Name>
-            <SortOrder>13</SortOrder>
+            <SortOrder>3</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -130,7 +112,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Subheader English</Name>
-            <SortOrder>16</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -141,7 +123,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Beskrivelse</Name>
-            <SortOrder>14</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -152,7 +134,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Description English</Name>
-            <SortOrder>17</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -163,7 +145,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -191,8 +173,5 @@
     <PathGuids>-1,827414b6-c2a8-5007-93e3-6849de92e3d5</PathGuids>
     <AllowedChildDocumentTypes />
     <AllowedTemplates />
-    <MasterDocumentTypes>
-        <string>LocationRepository</string>
-        <string>RecommendationRepository</string>
-    </MasterDocumentTypes>
+    <MasterDocumentTypes />
 </DocumentType>

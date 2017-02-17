@@ -18,7 +18,7 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>2</SortOrder>
-            <Value>50</Value>
+            <Value>5000</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>layouts</Alias>

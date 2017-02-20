@@ -1,7 +1,7 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
-        <Id>8a039297-25f2-4a1d-9483-28bb79d9df2e</Id>
+        <Id>5459c3eb-9cd3-4f3c-ae7e-e8932a4f7520</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
     <Name>List View - RecommendationRepository</Name>
@@ -18,7 +18,7 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>2</SortOrder>
-            <Value>50</Value>
+            <Value>5000</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>layouts</Alias>
@@ -60,7 +60,7 @@
     "header": "Slut dato"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "location",&#xD;
+    "alias": "locationRecommendation",&#xD;
     "isSystem": 0,&#xD;
     "header": "Sted"&#xD;
   },&#xD;
@@ -70,7 +70,7 @@
     "header": "Arrangør"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "writer",&#xD;
+    "alias": "writerRecommendation",&#xD;
     "isSystem": 0,&#xD;
     "header": "Skribent"&#xD;
   },&#xD;
@@ -96,12 +96,12 @@
             <Value>{&#xD;
   "allowBulkPublish": true,&#xD;
   "allowBulkUnpublish": true,&#xD;
-  "allowBulkCopy": true,&#xD;
-  "allowBulkMove": true,&#xD;
-  "allowBulkDelete": true&#xD;
+  "allowBulkCopy": false,&#xD;
+  "allowBulkMove": false,&#xD;
+  "allowBulkDelete": false&#xD;
 }</Value>
         </DataTypePrevalue>
     </Prevalues>
-    <UniqueID>8a039297-25f2-4a1d-9483-28bb79d9df2e</UniqueID>
+    <UniqueID>5459c3eb-9cd3-4f3c-ae7e-e8932a4f7520</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

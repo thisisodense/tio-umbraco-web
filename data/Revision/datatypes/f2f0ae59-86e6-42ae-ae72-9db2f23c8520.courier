@@ -18,21 +18,11 @@
         <DataTypePrevalue>
             <Alias>pageSize</Alias>
             <SortOrder>2</SortOrder>
-            <Value>50</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>orderBy</Alias>
-            <SortOrder>3</SortOrder>
-            <Value>VersionDate</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>orderDirection</Alias>
-            <SortOrder>4</SortOrder>
-            <Value>desc</Value>
+            <Value>5000</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>layouts</Alias>
-            <SortOrder>5</SortOrder>
+            <SortOrder>3</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "name": "List",&#xD;
@@ -52,7 +42,7 @@
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
-            <SortOrder>6</SortOrder>
+            <SortOrder>4</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "alias": "placesToGoIn2016",&#xD;
@@ -67,14 +57,24 @@
 ]</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>name</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>desc</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
             <Alias>bulkActionPermissions</Alias>
             <SortOrder>7</SortOrder>
             <Value>{&#xD;
   "allowBulkPublish": true,&#xD;
-  "allowBulkUnpublish": true,&#xD;
+  "allowBulkUnpublish": false,&#xD;
   "allowBulkCopy": true,&#xD;
-  "allowBulkMove": true,&#xD;
-  "allowBulkDelete": true&#xD;
+  "allowBulkMove": false,&#xD;
+  "allowBulkDelete": false&#xD;
 }</Value>
         </DataTypePrevalue>
     </Prevalues>

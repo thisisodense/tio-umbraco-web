@@ -1,0 +1,20 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Blog post - Guest writer Blog - TrueFalse</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Integer</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.TrueFalse</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>default</Alias>
+            <SortOrder>1</SortOrder>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

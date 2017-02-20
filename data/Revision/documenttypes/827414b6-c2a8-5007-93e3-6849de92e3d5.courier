@@ -3,10 +3,19 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>0cb8264f-0485-4ab7-b11e-3faf42a3e402</Id>
+                <Id>2313327f-4a68-4c4f-89f8-f124def9bde1</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 0cb8264f-0485-4ab7-b11e-3faf42a3e402</Name>
+            <Name>Datatype: 2313327f-4a68-4c4f-89f8-f124def9bde1</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>4133101e-448f-4645-a526-bc1b8d4e31ed</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 4133101e-448f-4645-a526-bc1b8d4e31ed</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -30,10 +39,10 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>c281c13f-8c09-4b8e-848b-576d865155a8</Id>
+                <Id>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: c281c13f-8c09-4b8e-848b-576d865155a8</Name>
+            <Name>Datatype: a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
         <Dependency>
@@ -54,12 +63,30 @@
             <Name>Datatype: ec3491d1-75dc-4484-86e9-4bc040089c08</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ee4901a8-91bb-449d-97f1-5984e2ee9e28</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: ee4901a8-91bb-449d-97f1-5984e2ee9e28</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>fd78c753-1ea0-49ca-948e-b80777f0c22f</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: fd78c753-1ea0-49ca-948e-b80777f0c22f</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>827414b6-c2a8-5007-93e3-6849de92e3d5</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Festival</Name>
+    <Name>Blog post</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Icon>icon-flag-alt</Icon>
@@ -71,59 +98,44 @@
     <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
     <Properties>
         <ContentTypeProperty>
-            <UniqueId>12a75f1a-ac5c-9ff6-f42d-69c17e9d4682</UniqueId>
-            <Alias>days</Alias>
-            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <UniqueId>74cdc803-407c-42c0-abdc-f1e2906d9d8b</UniqueId>
+            <Alias>blogKategori</Alias>
+            <DataTypeDefinitionId>ee4901a8-91bb-449d-97f1-5984e2ee9e28</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Dage</Name>
-            <SortOrder>2</SortOrder>
+            <Name>Blog Kategori</Name>
+            <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>cf244898-83be-bcc7-4892-e19c82ee223a</UniqueId>
-            <Alias>endDate</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
+            <UniqueId>3d03279d-36a6-4503-a0af-90e219c963c4</UniqueId>
+            <Alias>guestWriterBlog</Alias>
+            <DataTypeDefinitionId>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Næste slutdato</Name>
-            <SortOrder>8</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
+            <Name>Guest writer Blog</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>a6a5f4a8-6e52-9588-286d-ef12af71b17b</UniqueId>
-            <Alias>eventType</Alias>
-            <DataTypeDefinitionId>0cb8264f-0485-4ab7-b11e-3faf42a3e402</DataTypeDefinitionId>
+            <UniqueId>f060efdc-e668-42ab-a50a-ca35b3c4c78f</UniqueId>
+            <Alias>headlineBlog</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Primære type oplevelse</Name>
-            <SortOrder>6</SortOrder>
+            <Mandatory>true</Mandatory>
+            <Name>Overskrift</Name>
+            <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>2c93704a-d1e4-27d0-9deb-cce08c18a323</UniqueId>
-            <Alias>festivalKategori</Alias>
-            <DataTypeDefinitionId>c281c13f-8c09-4b8e-848b-576d865155a8</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Festival Kategori</Name>
-            <SortOrder>5</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
-            <Alias>festivalName</Alias>
+            <UniqueId>cc8d1488-c6ce-4165-9ddb-af34c3e6b1ac</UniqueId>
+            <Alias>headlineEnglishBlog</Alias>
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Festival name</Name>
-            <SortOrder>0</SortOrder>
+            <Name>Headline English</Name>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>f5bfa267-e55b-275f-e46f-62f8371dc5b0</UniqueId>
@@ -132,150 +144,139 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>18</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>25bb9d2f-ceb4-f38c-845a-c8ebd31b0b1f</UniqueId>
-            <Alias>linkToEvent</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Link festivalens hjemmeside</Name>
-            <SortOrder>11</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>c1c3874c-131f-c1b3-2c85-8d94855b0eb2</UniqueId>
-            <Alias>location</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Primære location</Name>
-            <SortOrder>4</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>e4f7a236-f1bf-e139-6d10-47ee589ef531</UniqueId>
-            <Alias>organizer</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Organizer</Name>
-            <SortOrder>3</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>92bc348f-69a5-08b1-e8fd-e5d34846e7e1</UniqueId>
-            <Alias>price</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Pris for partoutbillet</Name>
-            <SortOrder>9</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>87593280-1cc8-14d7-82dc-205e8be09730</UniqueId>
-            <Alias>startDate</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Næste startdato</Name>
-            <SortOrder>7</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>9d0e8e83-4798-b900-88c2-a90e9f8fde5c</UniqueId>
-            <Alias>subheader</Alias>
-            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Subheader</Name>
             <SortOrder>13</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>61b04067-4db9-8ffb-6eb5-6c521f017514</UniqueId>
-            <Alias>subheaderEnglish</Alias>
+            <UniqueId>e24d3f73-5c92-4c56-8d52-311524f9155a</UniqueId>
+            <Alias>imageGuest</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>ImageGuest</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>bf29a851-4dce-4b20-b828-fd51f0852054</UniqueId>
+            <Alias>klarTilKorrektur</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til korrektur</Name>
+            <SortOrder>7</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>23b37e9b-6a22-40a0-b26d-a5eb4ca01a97</UniqueId>
+            <Alias>klarTilOversaettelse</Alias>
+            <DataTypeDefinitionId>2313327f-4a68-4c4f-89f8-f124def9bde1</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Klar til oversættelse</Name>
+            <SortOrder>8</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>21d0fe48-085b-407e-8c69-e03abaf9ec48</UniqueId>
+            <Alias>linkToGuestWriterBlog</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Link to guest writer Blog</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>f2d68cb1-58ba-4b24-a023-85fe186626a5</UniqueId>
+            <Alias>longdescriptionBlog</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Lang beskrivelse</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>4538902d-93f9-4c67-b651-d043126a6b01</UniqueId>
+            <Alias>longdescriptionEnglishBlog</Alias>
+            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Long Description English</Name>
+            <SortOrder>12</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>4aa7e146-36cf-4033-944a-a8e50e2ad079</UniqueId>
+            <Alias>nameOfGuestWriterBlog</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Name of guest writer Blog</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>338952be-11dd-461e-a393-deb6c97e3a57</UniqueId>
+            <Alias>shortdescriptionBlog</Alias>
             <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Subheader English</Name>
-            <SortOrder>16</SortOrder>
+            <Name>Kort beskrivelse</Name>
+            <SortOrder>2</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>dc90a61e-440d-ccb3-c13a-412c8601ef30</UniqueId>
-            <Alias>summary</Alias>
-            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <UniqueId>1b9f80a6-4a96-4b57-8fc4-ee31545549d0</UniqueId>
+            <Alias>shortdescriptionEnglishBlog</Alias>
+            <DataTypeDefinitionId>ec3491d1-75dc-4484-86e9-4bc040089c08</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Beskrivelse</Name>
-            <SortOrder>14</SortOrder>
+            <Name>Short Description English</Name>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>4f86ef12-70bc-3aa7-adf3-8be80cf64e3d</UniqueId>
-            <Alias>summaryEnglish</Alias>
-            <DataTypeDefinitionId>ca90c950-0aff-4e72-b976-a30b1ac57dad</DataTypeDefinitionId>
+            <UniqueId>e9b609df-f444-429d-8570-631f5fdfda15</UniqueId>
+            <Alias>tagsBlog</Alias>
+            <DataTypeDefinitionId>fd78c753-1ea0-49ca-948e-b80777f0c22f</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Description English</Name>
-            <SortOrder>17</SortOrder>
+            <Name>Tags</Name>
+            <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>5b4c44e2-f1da-370e-6105-25b2e4ce0789</UniqueId>
-            <Alias>ticketUrl</Alias>
-            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
-            <Description>Indsæt direkte link til billetsalget</Description>
-            <Mandatory>false</Mandatory>
-            <Name>Ticket Url</Name>
-            <SortOrder>10</SortOrder>
-            <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>219d507d-fe24-eab8-2396-1852846c6920</UniqueId>
-            <Alias>translator</Alias>
+            <Alias>translatorBlog</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>15</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>e215647e-3878-2023-9f55-4f6fb368afc4</UniqueId>
-            <Alias>weekNumber</Alias>
-            <DataTypeDefinitionId>2e6d3631-066e-44b8-aec4-96f09099b2b5</DataTypeDefinitionId>
+            <UniqueId>8bb9e830-f811-4c80-8997-831df2e728ad</UniqueId>
+            <Alias>udgivelsesdato</Alias>
+            <DataTypeDefinitionId>4133101e-448f-4645-a526-bc1b8d4e31ed</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Week</Name>
-            <SortOrder>1</SortOrder>
+            <Name>Udgivelsesdato</Name>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>0ced46f9-e27d-daba-9187-ee7ebb29b361</UniqueId>
-            <Alias>writer</Alias>
+            <Alias>writerBlog</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
-            <SortOrder>12</SortOrder>
+            <SortOrder>0</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -286,6 +287,12 @@
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
             <UniqueId>d4914fff-0068-2a1d-0214-29b5057cbf5f</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <SortOrder>2</SortOrder>
+            <Text>Guest Writer</Text>
+            <UniqueId>a1910b11-2dda-4ea9-983a-23e9c0e1d3cf</UniqueId>
         </Tab>
     </Tabs>
     <ParentContainerId xsi:nil="true" />

@@ -3,10 +3,10 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>8a039297-25f2-4a1d-9483-28bb79d9df2e</Id>
+                <Id>5459c3eb-9cd3-4f3c-ae7e-e8932a4f7520</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
-            <Name>Datatype: 8a039297-25f2-4a1d-9483-28bb79d9df2e</Name>
+            <Name>Datatype: 5459c3eb-9cd3-4f3c-ae7e-e8932a4f7520</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
     </Dependencies>

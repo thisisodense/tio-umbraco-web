@@ -5,7 +5,7 @@
         <br />
        {{subheader}}
     </p>
-    <p>Læs anbefalingen på: www.thisisodense.dk/{{id}}</p>
+    <p>Læs anbefalingen på: www.thisisodense.dk/da/{{id}}/{{urlDanish}}</p>
     <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.address}} | {{price}} kr.</p>
     <p>-------</p>
     <p>
@@ -13,10 +13,10 @@
         <br />
         {{subheaderEnglish}}
     </p>
-    <p>Read more: http://www.thisisodense.dk/en/{{id}}</p>
+    <p>Read more: http://www.thisisodense.dk/en/{{id}}/{{urlEnglish}}</p>
     <p>{{eventTypeEN}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.address}} | {{price}} kr.</p>
     <h2>FB-opslagstekst</h2>
-    <p>**SLET* http://www.thisisodense.dk/{{id}} *SLET**</p>
+    <p>**SLET* http://www.thisisodense.dk/da/{{id}}/{{urlDanish}} *SLET**</p>
     <p ng-bind-html="summary"></p>
     <p>-------</p>
     <p>{{headline}}</p>
@@ -41,5 +41,5 @@
     <p>
         Oplev {{headline}} fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}. {{organizer}} åbner dørene på {{locationRecommendation.title}} kl. {{doorsOpen}}.
     </p>
-    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/{{id}} {{locationRecommendation.hashtags}} #odense #thisisodense #mitodense</p>
+    <p>Læs hele anbefalingen på: http://www.thisisodense.dk/da/{{id}}/{{urlDanish}} {{locationRecommendation.hashtags}} #odense #thisisodense #mitodense</p>
 </div>

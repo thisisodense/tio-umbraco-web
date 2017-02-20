@@ -415,6 +415,26 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>8d3207f6-3064-456f-ac9b-eb764bd8c08f</UniqueId>
+            <Alias>urlDanish</Alias>
+            <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Url danish</Name>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Info</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>40e993a8-ee9f-40a8-9362-fa529ae814d2</UniqueId>
+            <Alias>urlEnglish</Alias>
+            <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Url english</Name>
+            <SortOrder>4</SortOrder>
+            <TabCaption>Info</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>41e3e0ec-faac-6578-e6b5-af61849dab08</UniqueId>
             <Alias>useOpeningHours</Alias>
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>

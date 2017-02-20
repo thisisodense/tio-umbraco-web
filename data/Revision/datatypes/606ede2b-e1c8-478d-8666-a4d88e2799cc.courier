@@ -33,11 +33,6 @@
     "alias": "facebookCrop",&#xD;
     "width": 800,&#xD;
     "height": 420&#xD;
-  },&#xD;
-  {&#xD;
-    "alias": "miniatureCrop",&#xD;
-    "height": 47,&#xD;
-    "width": 72&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

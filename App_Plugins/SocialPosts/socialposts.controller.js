@@ -57,7 +57,7 @@
             contentResource.getById(locationId).then(function (location) {
                 var locationProperties = contentEditingHelper.getAllProps(location);
    
-                $scope.location = {
+                $scope.locationRecommendation = {
                     title: findProperty(locationProperties, 'title'),
                     url: findProperty(locationProperties, 'url'),
                     address: findProperty(locationProperties, 'address'),

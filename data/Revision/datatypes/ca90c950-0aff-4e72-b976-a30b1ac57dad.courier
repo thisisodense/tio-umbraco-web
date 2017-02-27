@@ -1,14 +1,5 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>1049</Id>
-                <ProviderId>e0472596-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <ForceHashCheck>false</ForceHashCheck>
-        </Dependency>
-    </Dependencies>
+    <Dependencies />
     <ItemId>
         <Id>ca90c950-0aff-4e72-b976-a30b1ac57dad</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
@@ -20,9 +11,37 @@
     <PropertyEditorAlias>Umbraco.TinyMCEv3</PropertyEditorAlias>
     <Prevalues>
         <DataTypePrevalue>
-            <Alias />
-            <SortOrder>0</SortOrder>
-            <Value>,code,undo,redo,cut,copy,mcepasteword,stylepicker,bold,italic,bullist,numlist,outdent,indent,mcelink,unlink,mceinsertanchor,mceimage,umbracomacro,mceinserttable,umbracoembed,mcecharmap,|1|1,2,3,|0|500,400||true|</Value>
+            <Alias>editor</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>{&#xD;
+  "toolbar": [&#xD;
+    "code",&#xD;
+    "removeformat",&#xD;
+    "styleselect",&#xD;
+    "bold",&#xD;
+    "italic",&#xD;
+    "alignleft",&#xD;
+    "aligncenter",&#xD;
+    "alignright",&#xD;
+    "bullist",&#xD;
+    "numlist",&#xD;
+    "outdent",&#xD;
+    "indent",&#xD;
+    "link",&#xD;
+    "umbmediapicker",&#xD;
+    "umbmacro",&#xD;
+    "umbembeddialog"&#xD;
+  ],&#xD;
+  "stylesheets": [],&#xD;
+  "dimensions": {&#xD;
+    "height": 500&#xD;
+  },&#xD;
+  "maxImageSize": 1000&#xD;
+}</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>hideLabel</Alias>
+            <SortOrder>2</SortOrder>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>ca90c950-0aff-4e72-b976-a30b1ac57dad</UniqueID>

@@ -72,7 +72,7 @@
     <Properties>
         <ContentTypeProperty>
             <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
-            <Alias>festivalName</Alias>
+            <Alias>headline</Alias>
             <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>

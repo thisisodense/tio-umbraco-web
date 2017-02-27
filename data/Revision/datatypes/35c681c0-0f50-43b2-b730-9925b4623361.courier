@@ -4,26 +4,41 @@
         <Id>35c681c0-0f50-43b2-b730-9925b4623361</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>List View - FestivalRepositoryTest</Name>
+    <Name>List View - FestivalRepositoryTest (1)</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
     <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
     <Prevalues>
         <DataTypePrevalue>
-            <Alias>pageSize</Alias>
+            <Alias>displayAtTabNumber</Alias>
             <SortOrder>1</SortOrder>
+            <Value>1</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>pageSize</Alias>
+            <SortOrder>2</SortOrder>
             <Value>50</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
-            <Alias>orderBy</Alias>
-            <SortOrder>2</SortOrder>
-            <Value>Name</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>orderDirection</Alias>
+            <Alias>layouts</Alias>
             <SortOrder>3</SortOrder>
-            <Value>asc</Value>
+            <Value>[&#xD;
+  {&#xD;
+    "name": "List",&#xD;
+    "path": "views/propertyeditors/listview/layouts/list/list.html",&#xD;
+    "icon": "icon-list",&#xD;
+    "isSystem": 1,&#xD;
+    "selected": true&#xD;
+  },&#xD;
+  {&#xD;
+    "name": "Grid",&#xD;
+    "path": "views/propertyeditors/listview/layouts/grid/grid.html",&#xD;
+    "icon": "icon-thumbnails-small",&#xD;
+    "isSystem": 1,&#xD;
+    "selected": true&#xD;
+  }&#xD;
+]</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
@@ -35,16 +50,36 @@
     "header": "Uge"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "startDate",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Startdato"&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "eventType",&#xD;
     "isSystem": 0,&#xD;
     "header": "Type"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "createDate",&#xD;
+    "isSystem": 1&#xD;
   }&#xD;
 ]</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>createDate</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>desc</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>bulkActionPermissions</Alias>
+            <SortOrder>7</SortOrder>
+            <Value>{&#xD;
+  "allowBulkPublish": true,&#xD;
+  "allowBulkUnpublish": false,&#xD;
+  "allowBulkCopy": true,&#xD;
+  "allowBulkMove": false,&#xD;
+  "allowBulkDelete": false&#xD;
+}</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>35c681c0-0f50-43b2-b730-9925b4623361</UniqueID>

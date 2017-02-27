@@ -158,7 +158,7 @@
             <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Skribent siden</Name>
+            <Name>Medlem siden</Name>
             <SortOrder>5</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />

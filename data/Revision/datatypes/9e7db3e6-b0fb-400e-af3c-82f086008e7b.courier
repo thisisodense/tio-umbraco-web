@@ -16,8 +16,8 @@
             <Value>[&#xD;
   {&#xD;
     "alias": "miniatureCrop",&#xD;
-    "width": 72,&#xD;
-    "height": 47&#xD;
+    "width": 144,&#xD;
+    "height": 144&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

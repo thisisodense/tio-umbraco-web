@@ -4,7 +4,7 @@
         <Id>fd78c753-1ea0-49ca-948e-b80777f0c22f</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>WebTagsBlog</Name>
+    <Name>WebTagsLongread</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
@@ -13,7 +13,7 @@
         <DataTypePrevalue>
             <Alias>group</Alias>
             <SortOrder>1</SortOrder>
-            <Value>WebTagsBlog</Value>
+            <Value>WebTagsLongread</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>storageType</Alias>

@@ -3,6 +3,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>4133101e-448f-4645-a526-bc1b8d4e31ed</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 4133101e-448f-4645-a526-bc1b8d4e31ed</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -196,7 +205,7 @@
         <ContentTypeProperty>
             <UniqueId>c4f39f17-3202-492c-bdfb-a1f85853630d</UniqueId>
             <Alias>udgivelsesdato</Alias>
-            <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>
+            <DataTypeDefinitionId>4133101e-448f-4645-a526-bc1b8d4e31ed</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Udgivelsesdato</Name>

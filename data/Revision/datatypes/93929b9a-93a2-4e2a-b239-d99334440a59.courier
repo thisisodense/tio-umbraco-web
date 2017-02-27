@@ -7,9 +7,29 @@
     <Name>Media Picker</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <DataBaseDataType>Integer</DataBaseDataType>
-    <PropertyEditorAlias>Umbraco.MediaPicker</PropertyEditorAlias>
-    <Prevalues />
+    <DataBaseDataType>Nvarchar</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.MultipleMediaPicker</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>multiPicker</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>1</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>onlyImages</Alias>
+            <SortOrder>2</SortOrder>
+            <Value>0</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>disableFolderSelect</Alias>
+            <SortOrder>3</SortOrder>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>startNodeId</Alias>
+            <SortOrder>4</SortOrder>
+            <Value />
+        </DataTypePrevalue>
+    </Prevalues>
     <UniqueID>93929b9a-93a2-4e2a-b239-d99334440a59</UniqueID>
     <ParentContainerId xsi:nil="true" />
 </DataType>

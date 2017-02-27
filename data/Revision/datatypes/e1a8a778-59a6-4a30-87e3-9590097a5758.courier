@@ -42,17 +42,17 @@
         <DataTypePrevalue>
             <Alias>showOpenButton</Alias>
             <SortOrder>5</SortOrder>
-            <Value>0</Value>
+            <Value>1</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>showEditButton</Alias>
             <SortOrder>6</SortOrder>
-            <Value>0</Value>
+            <Value>1</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>showPathOnHover</Alias>
             <SortOrder>7</SortOrder>
-            <Value>0</Value>
+            <Value>1</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>e1a8a778-59a6-4a30-87e3-9590097a5758</UniqueID>

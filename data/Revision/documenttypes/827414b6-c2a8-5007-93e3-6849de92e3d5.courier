@@ -59,7 +59,7 @@
         <Id>827414b6-c2a8-5007-93e3-6849de92e3d5</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Festival</Name>
+    <Name>Longread</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Icon>icon-flag-alt</Icon>
@@ -248,7 +248,7 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>219d507d-fe24-eab8-2396-1852846c6920</UniqueId>
-            <Alias>translator</Alias>
+            <Alias>translatorBlog</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
@@ -270,7 +270,7 @@
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>0ced46f9-e27d-daba-9187-ee7ebb29b361</UniqueId>
-            <Alias>writer</Alias>
+            <Alias>writerBlog</Alias>
             <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>

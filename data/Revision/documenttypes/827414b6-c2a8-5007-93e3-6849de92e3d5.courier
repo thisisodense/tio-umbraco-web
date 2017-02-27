@@ -81,6 +81,15 @@
             <Name>Datatype: ee4901a8-91bb-449d-97f1-5984e2ee9e28</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>fd78c753-1ea0-49ca-948e-b80777f0c22f</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: fd78c753-1ea0-49ca-948e-b80777f0c22f</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>827414b6-c2a8-5007-93e3-6849de92e3d5</Id>
@@ -135,7 +144,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
-            <SortOrder>8</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -145,7 +154,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Image</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>12</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -156,7 +165,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til korrektur</Name>
-            <SortOrder>6</SortOrder>
+            <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -166,7 +175,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Klar til oversættelse</Name>
-            <SortOrder>7</SortOrder>
+            <SortOrder>8</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -196,7 +205,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Beskrivelse</Name>
-            <SortOrder>5</SortOrder>
+            <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -207,9 +216,19 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Description English</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>1c8b8d1f-9be0-4177-8901-e326ca43ea1f</UniqueId>
+            <Alias>tags</Alias>
+            <DataTypeDefinitionId>fd78c753-1ea0-49ca-948e-b80777f0c22f</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Tags</Name>
+            <SortOrder>5</SortOrder>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>066d351a-ac22-420f-abee-9a6034392602</UniqueId>
@@ -218,7 +237,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

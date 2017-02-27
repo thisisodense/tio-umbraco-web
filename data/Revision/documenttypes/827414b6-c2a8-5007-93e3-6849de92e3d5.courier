@@ -144,7 +144,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Headline English</Name>
-            <SortOrder>9</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
@@ -237,7 +237,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>9</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

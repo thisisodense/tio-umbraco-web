@@ -30,6 +30,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>bf46c11b-0f78-4290-8579-649b5556ed81</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -70,6 +79,16 @@
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
     <Properties>
+        <ContentTypeProperty>
+            <UniqueId>a1410ce5-d1f3-4757-bda0-50486430a8cc</UniqueId>
+            <Alias>guestWriter</Alias>
+            <DataTypeDefinitionId>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Guest writer</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>24d294fc-8ddb-e12f-48c4-dbe26a0b1841</UniqueId>
             <Alias>headline</Alias>
@@ -121,6 +140,26 @@
             <Name>Klar til oversættelse</Name>
             <SortOrder>6</SortOrder>
             <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>a3098ee1-3af7-4d94-b0b5-bbcef6b52d58</UniqueId>
+            <Alias>linkToGuestWriter</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Link to guest writer</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>ba477c76-640c-47e9-9527-024f576be972</UniqueId>
+            <Alias>nameOfGuestWriter</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Name of guest writer</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Guest Writer</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>dc90a61e-440d-ccb3-c13a-412c8601ef30</UniqueId>
@@ -192,6 +231,12 @@
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
             <UniqueId>d4914fff-0068-2a1d-0214-29b5057cbf5f</UniqueId>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Longread</ContentTypeAlias>
+            <SortOrder>2</SortOrder>
+            <Text>Guest Writer</Text>
+            <UniqueId>e5e39b93-0cdd-4b67-b9a8-87cade13a295</UniqueId>
         </Tab>
     </Tabs>
     <ParentContainerId xsi:nil="true" />

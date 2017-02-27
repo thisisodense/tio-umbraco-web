@@ -64,7 +64,7 @@
     <Resources />
     <Icon>icon-flag-alt</Icon>
     <Thumbnail>folder.png</Thumbnail>
-    <Alias>Festival</Alias>
+    <Alias>Longread</Alias>
     <Description />
     <IsContainer>false</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
@@ -188,7 +188,7 @@
     </Properties>
     <Tabs>
         <Tab>
-            <ContentTypeAlias>Festival</ContentTypeAlias>
+            <ContentTypeAlias>Longread</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
             <UniqueId>d4914fff-0068-2a1d-0214-29b5057cbf5f</UniqueId>

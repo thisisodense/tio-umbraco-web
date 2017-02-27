@@ -4,7 +4,7 @@
         <Id>ee4901a8-91bb-449d-97f1-5984e2ee9e28</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Dropdown Blog Categories</Name>
+    <Name>Dropdown Longread Categories</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>

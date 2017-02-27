@@ -18,6 +18,15 @@
             <Name>Datatype: ca90c950-0aff-4e72-b976-a30b1ac57dad</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>f9ac0be6-a256-4b74-934d-579069515621</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: f9ac0be6-a256-4b74-934d-579069515621</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>652a26b7-8fca-b6c6-0863-836ac8d82746</Id>
@@ -26,11 +35,13 @@
     <Name>Writer</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>Writer</Alias>
-    <AllowedChildDocumentTypes />
-    <AllowedTemplates />
-    <Description />
     <Icon>icon-user</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>Writer</Alias>
+    <Description />
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>652a26b7-8fca-b6c6-0863-836ac8d82746</UniqueId>
     <Properties>
         <ContentTypeProperty>
             <UniqueId>bb5e8e1c-701b-5b0b-f5b0-81000696fd9d</UniqueId>
@@ -75,6 +86,16 @@
             <SortOrder>7</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>edb724ce-933f-4789-a1e1-14ce625f37ea</UniqueId>
+            <Alias>miniature</Alias>
+            <DataTypeDefinitionId>f9ac0be6-a256-4b74-934d-579069515621</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Miniature</Name>
+            <SortOrder>10</SortOrder>
+            <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>bd14458d-3f03-ae0e-d699-d41a4ac5c806</UniqueId>
@@ -168,11 +189,9 @@
             <UniqueId>79693134-9272-8111-34cd-a246e7203707</UniqueId>
         </Tab>
     </Tabs>
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>652a26b7-8fca-b6c6-0863-836ac8d82746</UniqueId>
-    <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,652a26b7-8fca-b6c6-0863-836ac8d82746</PathGuids>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <MasterDocumentTypes />
 </DocumentType>

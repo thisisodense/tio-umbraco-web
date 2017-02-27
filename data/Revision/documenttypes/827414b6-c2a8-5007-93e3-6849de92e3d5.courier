@@ -216,7 +216,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Description English</Name>
-            <SortOrder>10</SortOrder>
+            <SortOrder>11</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -237,7 +237,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Translator</Name>
-            <SortOrder>11</SortOrder>
+            <SortOrder>10</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

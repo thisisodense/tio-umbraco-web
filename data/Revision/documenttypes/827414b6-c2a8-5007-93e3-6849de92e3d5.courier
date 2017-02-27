@@ -176,15 +176,14 @@
             <Validation />
         </ContentTypeProperty>
         <ContentTypeProperty>
-            <UniqueId>0ced46f9-e27d-daba-9187-ee7ebb29b361</UniqueId>
-            <Alias>writer</Alias>
-            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <UniqueId>5633a731-a35e-4ee9-b407-bc42a165106a</UniqueId>
+            <Alias>writerLongread</Alias>
+            <DataTypeDefinitionId>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Writer</Name>
             <SortOrder>1</SortOrder>
             <TabCaption>Content</TabCaption>
-            <Validation />
         </ContentTypeProperty>
     </Properties>
     <Tabs>

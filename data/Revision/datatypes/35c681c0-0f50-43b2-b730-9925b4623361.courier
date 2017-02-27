@@ -78,7 +78,7 @@
   "allowBulkUnpublish": false,&#xD;
   "allowBulkCopy": true,&#xD;
   "allowBulkMove": false,&#xD;
-  "allowBulkDelete": false&#xD;
+  "allowBulkDelete": true&#xD;
 }</Value>
         </DataTypePrevalue>
     </Prevalues>

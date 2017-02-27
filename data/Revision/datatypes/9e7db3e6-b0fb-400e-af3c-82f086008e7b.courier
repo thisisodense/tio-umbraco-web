@@ -1,0 +1,27 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>9e7db3e6-b0fb-400e-af3c-82f086008e7b</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Miniature Cropper</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Ntext</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.ImageCropper</PropertyEditorAlias>
+    <Prevalues>
+        <DataTypePrevalue>
+            <Alias>crops</Alias>
+            <SortOrder>1</SortOrder>
+            <Value>[&#xD;
+  {&#xD;
+    "alias": "miniatureCrop",&#xD;
+    "width": 72,&#xD;
+    "height": 47&#xD;
+  }&#xD;
+]</Value>
+        </DataTypePrevalue>
+    </Prevalues>
+    <UniqueID>9e7db3e6-b0fb-400e-af3c-82f086008e7b</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

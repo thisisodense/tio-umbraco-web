@@ -50,13 +50,13 @@
     "header": "Uge"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "eventType",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Type"&#xD;
-  },&#xD;
-  {&#xD;
     "alias": "createDate",&#xD;
     "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "categoriesLongread",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Kategori"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

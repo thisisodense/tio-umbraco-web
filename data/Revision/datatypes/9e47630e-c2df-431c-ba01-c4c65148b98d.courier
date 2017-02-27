@@ -4,7 +4,7 @@
         <Id>9e47630e-c2df-431c-ba01-c4c65148b98d</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Textbox 40</Name>
+    <Name>Textbox 60</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Nvarchar</DataBaseDataType>
@@ -13,7 +13,7 @@
         <DataTypePrevalue>
             <Alias>limit</Alias>
             <SortOrder>1</SortOrder>
-            <Value>40</Value>
+            <Value>60</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>9e47630e-c2df-431c-ba01-c4c65148b98d</UniqueID>

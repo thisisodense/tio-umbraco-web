@@ -112,7 +112,7 @@
             <DataTypeDefinitionId>ee4901a8-91bb-449d-97f1-5984e2ee9e28</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Categories</Name>
+            <Name>Kategori</Name>
             <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>

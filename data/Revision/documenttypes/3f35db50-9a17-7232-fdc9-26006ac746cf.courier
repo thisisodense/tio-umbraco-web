@@ -14,23 +14,23 @@
         <Id>3f35db50-9a17-7232-fdc9-26006ac746cf</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Festival repository [test]</Name>
+    <Name>Longread repository</Name>
     <ItemType>Item</ItemType>
     <Resources />
+    <Icon>icon-flag-alt</Icon>
+    <Thumbnail>folder.png</Thumbnail>
     <Alias>FestivalRepositoryTest</Alias>
+    <Description />
+    <IsContainer>true</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>3f35db50-9a17-7232-fdc9-26006ac746cf</UniqueId>
+    <Properties />
+    <Tabs />
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,3f35db50-9a17-7232-fdc9-26006ac746cf</PathGuids>
     <AllowedChildDocumentTypes>
         <string>Festival</string>
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
-    <Description />
-    <Icon>icon-flag-alt</Icon>
-    <Properties />
-    <Tabs />
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>3f35db50-9a17-7232-fdc9-26006ac746cf</UniqueId>
     <MasterDocumentTypes />
-    <AllowAtRoot>false</AllowAtRoot>
-    <IsContainer>true</IsContainer>
-    <ParentContainerId xsi:nil="true" />
-    <PathGuids>-1,3f35db50-9a17-7232-fdc9-26006ac746cf</PathGuids>
 </DocumentType>

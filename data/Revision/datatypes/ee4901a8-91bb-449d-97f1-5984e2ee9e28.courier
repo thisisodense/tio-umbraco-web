@@ -50,6 +50,11 @@
             <SortOrder>8</SortOrder>
             <Value>Stories</Value>
         </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>8</Alias>
+            <SortOrder>9</SortOrder>
+            <Value>Essays</Value>
+        </DataTypePrevalue>
     </Prevalues>
     <UniqueID>ee4901a8-91bb-449d-97f1-5984e2ee9e28</UniqueID>
     <ParentContainerId xsi:nil="true" />

@@ -1,5 +1,14 @@
 ﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies />
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ed0bcb2c-ebd4-4363-b8ba-0be6bd08f44f</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
     <ItemId>
         <Id>93929b9a-93a2-4e2a-b239-d99334440a59</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
@@ -25,7 +34,7 @@
         <DataTypePrevalue>
             <Alias>startNodeId</Alias>
             <SortOrder>4</SortOrder>
-            <Value />
+            <Value>ed0bcb2c-ebd4-4363-b8ba-0be6bd08f44f</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>93929b9a-93a2-4e2a-b239-d99334440a59</UniqueID>

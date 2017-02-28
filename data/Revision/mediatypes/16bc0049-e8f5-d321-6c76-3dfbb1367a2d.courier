@@ -32,12 +32,12 @@
     <IsContainer>true</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>16bc0049-e8f5-d321-6c76-3dfbb1367a2d</UniqueId>
-    <AllowedChildMediaTypes />
     <Properties>
         <ContentTypeProperty>
             <UniqueId>735fb031-d955-0b82-d68d-b2e6c690aaa8</UniqueId>
             <Alias>umbracoBytes</Alias>
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Size</Name>
             <SortOrder>3</SortOrder>
@@ -47,6 +47,7 @@
             <UniqueId>1bd732af-715a-a03e-fd7b-98bd67917a6c</UniqueId>
             <Alias>umbracoExtension</Alias>
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Type</Name>
             <SortOrder>1</SortOrder>
@@ -56,6 +57,7 @@
             <UniqueId>553cb792-b25b-2f8f-0e35-a3ab8f84ee75</UniqueId>
             <Alias>umbracoFile</Alias>
             <DataTypeDefinitionId>84c6b441-31df-4ffe-b67e-67d5bc3ae65a</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Upload image</Name>
             <SortOrder>2</SortOrder>
@@ -65,6 +67,7 @@
             <UniqueId>e8145ddd-c1de-80ee-cc83-6ae95e3674b7</UniqueId>
             <Alias>umbracoHeight</Alias>
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Height</Name>
             <SortOrder>0</SortOrder>
@@ -74,6 +77,7 @@
             <UniqueId>2d022ec0-f59d-85d9-04b9-b369a0f93543</UniqueId>
             <Alias>umbracoWidth</Alias>
             <DataTypeDefinitionId>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataTypeDefinitionId>
+            <Description />
             <Mandatory>false</Mandatory>
             <Name>Width</Name>
             <SortOrder>4</SortOrder>
@@ -90,4 +94,6 @@
     </Tabs>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,16bc0049-e8f5-d321-6c76-3dfbb1367a2d</PathGuids>
+    <AllowedChildMediaTypes />
+    <MasterMediaTypes />
 </MediaType>

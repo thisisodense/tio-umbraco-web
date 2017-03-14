@@ -111,9 +111,13 @@
     </li>
     
     <li class="deployOutput deployList deployProblems" ng-switch-when="errors">
-        <unhandled-deploy-exception message="error.currentActivity" exception="error.description" stack="error.exception" additional-errors="error.errors" />
-
-        <button prevent-default class="umb-era-button -blue" ng-click="package(currentTask.id)">Retry</button>
+        <unhandled-deploy-exception message="error.currentActivity" 
+                                    exception="error.description" 
+                                    stack="error.exception" 
+                                    additional-errors="error.errors"
+                                    is-handled="error.isHandled" />
+        <br/>
+        <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()" ng-hide="isDialog === true">Reload queue</button>
     </li>
 
     <li ng-switch-when="empty">
@@ -126,10 +130,11 @@
 
     <li class="deployOutput deployProblems" ng-switch-when="exception">
         
-        <unhandled-deploy-exception isLocalEnvironment="user.isLocalEnvironment" 
+        <unhandled-deploy-exception is-local-environment="user.isLocalEnvironment" 
                                     message="error.message" 
                                     exception="error.exceptionMessage" 
-                                    stack="error.stackTrace" />
+                                    stack="error.stackTrace"
+                                    is-handled="error.isHandled" />
         <br/>
         <button prevent-default class="umb-era-button -blue" ng-click="reloadQueue()" ng-hide="isDialog === true">Reload queue</button>
     </li>

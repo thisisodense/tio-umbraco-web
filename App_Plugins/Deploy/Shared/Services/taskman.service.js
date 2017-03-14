@@ -1,5 +1,5 @@
 angular.module("umbraco.services").factory("taskManService",
-	function ($timeout, $rootScope, deployService) {
+	function ($timeout, $rootScope, deployService, $q) {
 
 	    var subscribers = [];
 
@@ -13,7 +13,7 @@ angular.module("umbraco.services").factory("taskManService",
                     $timeout(function () {
                         
                         //only perform the http request if the user is logged in
-                        deployService.taskStatus(listener.taskId).then(function (response) {
+                        deployService.taskStatus(listener.taskId, listener.canceler).then(function (response) {
 
                             response = response.data;
 
@@ -64,6 +64,9 @@ angular.module("umbraco.services").factory("taskManService",
                 throw "listener parameter is empty";
             }
             
+            //cancel any current requests
+            listener.canceler.resolve();
+
             listener.active = false;
 
             var index = _.indexOf(subscribers, listener);
@@ -91,6 +94,8 @@ angular.module("umbraco.services").factory("taskManService",
              */
             wait: function() {
                 var listener = {
+                    //used to cancel any listening requests when stopped
+                    canceler: $q.defer(),
                     taskId: undefined,
                     active: false,
                     start: function () {
@@ -121,6 +126,8 @@ angular.module("umbraco.services").factory("taskManService",
                 }
 
                 var listener = {
+                    //used to cancel any listening requests when stopped
+                    canceler: $q.defer(),
                     taskId: taskId,
                     active: false,
                     start: function() {

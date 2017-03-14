@@ -36,23 +36,28 @@
                 //Handles errors and shows in the UI
                 function handleError(err) {
 
-                    deploying = false;
-
-                    if (err.status === 500) {
-                        //this is a ysod/unhandled exception
-                        scope.error = {
-                            message: err.data.Message,
-                            exceptionMessage: err.data.ExceptionMessage,
-                            stackTrace: err.data.StackTrace
-                        }
-                        scope.deploystep = "exception";
+                    if (err.status === 0 && err.config.timeout && !err.data) {
+                        //This is due to being canceled, we basically want to ignore this
                     }
                     else {
-                        scope.deploystep = "errors";
-                        scope.error = err.data ? err.data : err;
-                    }
+                        deploying = false;
 
-                    //TODO: Should we clear the queue here?
+                        if (err.status === 500) {
+                            //this is a ysod/unhandled exception
+                            scope.error = {
+                                message: err.data.Message,
+                                exceptionMessage: err.data.ExceptionMessage,
+                                stackTrace: err.data.StackTrace
+                            }
+                            scope.deploystep = "exception";
+                        }
+                        else {
+                            scope.deploystep = "errors";
+                            scope.error = err.data ? err.data : err;
+                        }
+
+                        //TODO: Should we clear the queue here?    
+                    }
                 }
 
                 /**
@@ -244,6 +249,7 @@
                                 }
 
                                 break;
+                            case "Umbraco.Courier.Core.Tasks.SequentialRevisionTaskList":
                             case "Umbraco.Courier.Core.Tasks.ExtractionTask":
 
                                 //we are done extracting / deploying to a target, we will just show the done page

@@ -181,23 +181,23 @@
         line-height: 45px;
         color: white; }
     .placeHeader .mapCategory.Eating {
-      background-color: #005F74; }
+      background-color: #096073; }
       .placeHeader .mapCategory.Eating .fa:before {
         content: "\f0f5"; }
     .placeHeader .mapCategory.Drinking {
-      background-color: #DFBA3D; }
+      background-color: #DEB94C; }
       .placeHeader .mapCategory.Drinking .fa:before {
         content: "\f000"; }
     .placeHeader .mapCategory.Culture {
-      background-color: #7B0046; }
+      background-color: #7A0045; }
       .placeHeader .mapCategory.Culture .fa:before {
         content: "\f001"; }
     .placeHeader .mapCategory.Shopping {
-      background-color: #F15E58; }
+      background-color: #EF5C5B; }
       .placeHeader .mapCategory.Shopping .fa:before {
         content: "\f07a"; }
     .placeHeader .mapCategory.Sights {
-      background-color: #B0CE65; }
+      background-color: #B0CD6E; }
       .placeHeader .mapCategory.Sights .fa:before {
         content: "\f18c"; }
 

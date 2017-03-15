@@ -44,18 +44,23 @@ angular.module("umbraco").controller("Concorde.RestoreDialogController", functio
     //Handles errors and shows in the UI
     function handleError(err) {
 
-        if (err.status === 500) {
-            //this is a ysod/unhandled exception
-            $scope.error = {
-                message: err.data.Message,
-                exceptionMessage: err.data.ExceptionMessage,
-                stackTrace: err.data.StackTrace
-            }
-            $scope.step = "exception";
+        if (err.status === 0 && err.config.timeout && !err.data) {
+            //This is due to being canceled, we basically want to ignore this
         }
         else {
-            $scope.step = "errors";
-            $scope.error = err.data;
+            if (err.status === 500) {
+                //this is a ysod/unhandled exception
+                $scope.error = {
+                    message: err.data.Message,
+                    exceptionMessage: err.data.ExceptionMessage,
+                    stackTrace: err.data.StackTrace
+                }
+                $scope.step = "exception";
+            }
+            else {
+                $scope.step = "errors";
+                $scope.error = err.data;
+            }
         }
     }
 

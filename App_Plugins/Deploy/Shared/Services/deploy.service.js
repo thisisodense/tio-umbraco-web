@@ -142,12 +142,22 @@
         },
 
         //share services
-        taskStatus : function(sessionId){
+        taskStatus : function(sessionId, canceler){
             if(sessionId){
-        	   return $http.get(baseUrl + "TaskStatus?id=" + sessionId);
+                if (canceler) {
+                    return $http.get(baseUrl + "TaskStatus?id=" + sessionId, { timeout: canceler.promise });
+                }
+                else {
+                    return $http.get(baseUrl + "TaskStatus?id=" + sessionId);
+                }
             }
             else {
-               return $http.get(baseUrl + "CurrentTaskStatus");
+                if (canceler) {
+                    return $http.get(baseUrl + "CurrentTaskStatus", { timeout: canceler.promise });
+                }
+                else {
+                    return $http.get(baseUrl + "CurrentTaskStatus");
+                }
             }
         },
         

@@ -107,17 +107,6 @@
     <UniqueId>eb2b7af9-3813-f9d6-156d-413dae271244</UniqueId>
     <Properties>
         <ContentTypeProperty>
-            <UniqueId>27f5a647-871f-196d-6a67-498c2fbdcaec</UniqueId>
-            <Alias>doorsOpen</Alias>
-            <DataTypeDefinitionId>147725c0-5daa-4f97-a6d0-5da8ecf29092</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Doors open</Name>
-            <SortOrder>3</SortOrder>
-            <TabCaption>Info</TabCaption>
-            <Validation />
-        </ContentTypeProperty>
-        <ContentTypeProperty>
             <UniqueId>04028593-bfa8-39b7-61ce-f8f57efd1e98</UniqueId>
             <Alias>endDate</Alias>
             <DataTypeDefinitionId>5046194e-4237-453c-a547-15db3a07c4e1</DataTypeDefinitionId>

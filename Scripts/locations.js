@@ -64,7 +64,7 @@ $(document).ready(function () {
 
         var ctaLayer = new google.maps.KmlLayer({
             // Kvarterer.kmz is also in the assets folder
-            url: 'https://www.thisisodense.dk/content/tiomap.kmz',
+            url: window.location.origin + '/content/tiomap.kmz',
             preserveViewport: true
         });
         ctaLayer.setMap(map);

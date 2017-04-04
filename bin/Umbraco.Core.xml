@@ -9821,7 +9821,7 @@
             Removes a type.
             </summary>
             <param name="value">The type to remove.</param>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support removing types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support removing types, or
             the type is not a valid type for the resolver.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.RemoveType``1">
@@ -9829,7 +9829,7 @@
             Removes a type.
             </summary>
             <typeparam name="T">The type to remove.</typeparam>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support removing types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support removing types, or
             the type is not a valid type for the resolver.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.AddTypes(System.Collections.Generic.IEnumerable{System.Type})">
@@ -9838,7 +9838,7 @@
             </summary>
             <param name="types">The types to add.</param>
             <remarks>The types are appended at the end of the list.</remarks>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or
             a type is not a valid type for the resolver, or a type is already in the collection of types.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.AddType(System.Type)">
@@ -9847,7 +9847,7 @@
             </summary>
             <param name="value">The type to add.</param>
             <remarks>The type is appended at the end of the list.</remarks>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or
             the type is not a valid type for the resolver, or the type is already in the collection of types.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.AddType``1">
@@ -9856,7 +9856,7 @@
             </summary>
             <typeparam name="T">The type to add.</typeparam>
             <remarks>The type is appended at the end of the list.</remarks>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support adding types, or
             the type is not a valid type for the resolver, or the type is already in the collection of types.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.Clear">
@@ -9877,7 +9877,7 @@
             </summary>
             <param name="index">The zero-based index at which the type should be inserted.</param>
             <param name="value">The type to insert.</param>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or
             the type is not a valid type for the resolver, or the type is already in the collection of types.</exception>
             <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index"/> is out of range.</exception>
         </member>
@@ -9886,7 +9886,7 @@
             Inserts a type at the beginning of the list.
             </summary>
             <param name="value">The type to insert.</param>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or
             the type is not a valid type for the resolver, or the type is already in the collection of types.</exception>
         </member>
         <member name="M:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.InsertType``1(System.Int32)">
@@ -9909,7 +9909,7 @@
             </summary>
             <param name="existingType">The existing type before which to insert.</param>
             <param name="value">The type to insert.</param>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or
             one of the types is not a valid type for the resolver, or the existing type is not in the collection,
             or the new type is already in the collection of types.</exception>
         </member>
@@ -9919,7 +9919,7 @@
             </summary>
             <typeparam name="TExisting">The existing type before which to insert.</typeparam>
             <typeparam name="T">The type to insert.</typeparam>
-            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or 
+            <exception cref="T:System.InvalidOperationException">the resolver does not support inserting types, or
             one of the types is not a valid type for the resolver, or the existing type is not in the collection,
             or the new type is already in the collection of types.</exception>
         </member>
@@ -10012,7 +10012,7 @@
             <summary>
             Gets or sets the default type weight.
             </summary>
-            <remarks>Determines the weight of types that do not have a <c>WeightAttribute</c> set on 
+            <remarks>Determines the weight of types that do not have a <c>WeightAttribute</c> set on
             them, when calling <c>GetSortedValues</c>.</remarks>
         </member>
         <member name="P:Umbraco.Core.ObjectResolution.ManyObjectsResolverBase`2.Values">
@@ -17181,10 +17181,24 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.ContentTypeBaseRepository`1.HasContainerInPath(System.String)">
+            <summary>
+            Given the path of a content item, this will return true if the content item exists underneath a list view content item
+            </summary>
+            <param name="contentPath"></param>
+            <returns></returns>
+        </member>
         <member name="T:Umbraco.Core.Persistence.Repositories.ContentTypeRepository">
             <summary>
             Represents a repository for doing CRUD operations for <see cref="T:Umbraco.Core.Models.IContentType"/>
             </summary>
+        </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.IContentTypeRepository.HasContainerInPath(System.String)">
+            <summary>
+            Given the path of a content item, this will return true if the content item exists underneath a list view content item
+            </summary>
+            <param name="contentPath"></param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Core.Persistence.Repositories.IContentTypeRepository.GetByQuery(Umbraco.Core.Persistence.Querying.IQuery{Umbraco.Core.Models.PropertyType})">
             <summary>
@@ -17259,6 +17273,13 @@
             Override the delete method so that we can ensure that all related content type's are updated as part of the overall transaction
             </summary>
             <param name="entity"></param>
+        </member>
+        <member name="M:Umbraco.Core.Persistence.Repositories.DataTypeDefinitionRepository.GetPreValueAsString(System.Int32)">
+            <summary>
+            Gets a specific PreValue by its Id
+            </summary>
+            <param name="preValueId">Id of the PreValue to retrieve the value from</param>
+            <returns>PreValue as a string</returns>
         </member>
         <member name="M:Umbraco.Core.Persistence.Repositories.DataTypeDefinitionRepository.DisposeResources">
             <summary>
@@ -21238,7 +21259,7 @@
             Publishes a single piece of Content
             </summary>
             <param name="content"><see cref="T:Umbraco.Core.Models.IContent"/> to publish</param>
-            <param name="userId">Id of the User issueing the publish operation</param>        
+            <param name="userId">Id of the User issueing the publish operation</param>
         </member>
         <member name="M:Umbraco.Core.Publishing.PublishingStrategy.Publish(Umbraco.Core.Models.IContent,System.Int32)">
             <summary>
@@ -21249,36 +21270,36 @@
             <returns>True if the publish operation was successfull and not cancelled, otherwise false</returns>
         </member>
         <member name="M:Umbraco.Core.Publishing.PublishingStrategy.PublishWithChildrenInternal(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.IContent},System.Int32,System.Boolean)">
-            <summary>
-            Publishes a list of content items
-            </summary>
-            <param name="content"></param>
-            <param name="userId"></param>
-            <param name="includeUnpublishedDocuments">
-            By default this is set to true which means that it will publish any content item in the list that is completely unpublished and
-            not visible on the front-end. If set to false, this will only publish content that is live on the front-end but has new versions
-            that have yet to be published.
-            </param>        
-            <returns></returns>
-            <remarks>
+             <summary>
+             Publishes a list of content items
+             </summary>
+             <param name="content"></param>
+             <param name="userId"></param>
+             <param name="includeUnpublishedDocuments">
+             By default this is set to true which means that it will publish any content item in the list that is completely unpublished and
+             not visible on the front-end. If set to false, this will only publish content that is live on the front-end but has new versions
+             that have yet to be published.
+             </param>
+             <returns></returns>
+             <remarks>
             
-            This method becomes complex once we start to be able to cancel events or stop publishing a content item in any way because if a
-            content item is not published then it's children shouldn't be published either. This rule will apply for the following conditions:
-            * If a document fails to be published, do not proceed to publish it's children if:
-            ** The document does not have a publish version
-            ** The document does have a published version but the includeUnpublishedDocuments = false
+             This method becomes complex once we start to be able to cancel events or stop publishing a content item in any way because if a
+             content item is not published then it's children shouldn't be published either. This rule will apply for the following conditions:
+             * If a document fails to be published, do not proceed to publish it's children if:
+             ** The document does not have a publish version
+             ** The document does have a published version but the includeUnpublishedDocuments = false
             
-            In order to do this, we will order the content by level and begin by publishing each item at that level, then proceed to the next
-            level and so on. If we detect that the above rule applies when the document publishing is cancelled we'll add it to the list of 
-            parentsIdsCancelled so that it's children don't get published.
+             In order to do this, we will order the content by level and begin by publishing each item at that level, then proceed to the next
+             level and so on. If we detect that the above rule applies when the document publishing is cancelled we'll add it to the list of
+             parentsIdsCancelled so that it's children don't get published.
             
-            Its important to note that all 'root' documents included in the list *will* be published regardless of the rules mentioned
-            above (unless it is invalid)!! By 'root' documents we are referring to documents in the list with the minimum value for their 'level'. 
-            In most cases the 'root' documents will only be one document since under normal circumstance we only publish one document and 
-            its children. The reason we have to do this is because if a user is publishing a document and it's children, it is implied that
-            the user definitely wants to publish it even if it has never been published before.
+             Its important to note that all 'root' documents included in the list *will* be published regardless of the rules mentioned
+             above (unless it is invalid)!! By 'root' documents we are referring to documents in the list with the minimum value for their 'level'.
+             In most cases the 'root' documents will only be one document since under normal circumstance we only publish one document and
+             its children. The reason we have to do this is because if a user is publishing a document and it's children, it is implied that
+             the user definitely wants to publish it even if it has never been published before.
             
-            </remarks>
+             </remarks>
         </member>
         <member name="M:Umbraco.Core.Publishing.PublishingStrategy.CheckCancellingOfChildPublishing(Umbraco.Core.Models.IContent,System.Collections.Generic.List{System.Int32},System.Boolean)">
             <summary>
@@ -21289,7 +21310,7 @@
             <param name="includeUnpublishedDocuments"></param>
             <remarks>
             See remarks on method: PublishWithChildrenInternal
-            </remarks> 
+            </remarks>
         </member>
         <member name="M:Umbraco.Core.Publishing.PublishingStrategy.PublishWithChildren(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.IContent},System.Int32)">
             <summary>
@@ -23613,10 +23634,24 @@
             </summary>
             <param name="contentTypes"></param>
         </member>
+        <member name="M:Umbraco.Core.Services.ContentTypeServiceBase.HasContainerInPath(System.String)">
+            <summary>
+            Given the path of a content item, this will return true if the content item exists underneath a list view content item
+            </summary>
+            <param name="contentPath"></param>
+            <returns></returns>
+        </member>
         <member name="T:Umbraco.Core.Services.IContentTypeService">
             <summary>
             Defines the ContentTypeService, which is an easy access to operations involving <see cref="T:Umbraco.Core.Models.IContentType"/>
             </summary>
+        </member>
+        <member name="M:Umbraco.Core.Services.IContentTypeService.HasContainerInPath(System.String)">
+            <summary>
+            Given the path of a content item, this will return true if the content item exists underneath a list view content item
+            </summary>
+            <param name="contentPath"></param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Core.Services.IContentTypeService.ValidateComposition(Umbraco.Core.Models.IContentTypeComposition)">
             <summary>

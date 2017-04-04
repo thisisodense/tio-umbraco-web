@@ -4461,9 +4461,6 @@
             <summary>
             The password value
             </summary>
-            <remarks>
-            This 
-            </remarks>
         </member>
         <member name="P:Umbraco.Web.Models.ChangingPasswordModel.OldPassword">
             <summary>
@@ -9253,19 +9250,7 @@
             <param name="localizedText"></param>
             <param name="contentTypeService"></param>
         </member>
-        <member name="M:Umbraco.Web.Models.Mapping.ContentModelMapper.GetPublishedDate(Umbraco.Core.Models.IContent,Umbraco.Core.ApplicationContext)">
-            <summary>
-            Gets the published date value for the IContent object
-            </summary>
-            <param name="content"></param>
-            <param name="applicationContext"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper.ActionButtonsResolver">
-            <summary>
-            Creates the list of action buttons allowed for this user - Publish, Send to publish, save, unpublish returned as the button's 'letter'
-            </summary>
-        </member>
+        <!-- Badly formed XML comment ignored for member "T:Umbraco.Web.Models.Mapping.ContentModelMapper.ActionButtonsResolver" -->
         <member name="T:Umbraco.Web.Models.Mapping.OwnerResolver`1">
             <summary>
             Maps the Owner for IContentBase
@@ -11521,6 +11506,16 @@
             Indicates that the url provider should determine automatically whether to return relative or absolute urls.
             </summary>
         </member>
+        <member name="P:Umbraco.Web.Search.ExamineSearcherModel.Error">
+            <summary>
+            If the index is not healthy this represents the index error state
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Search.ExamineSearcherModel.IsHealthy">
+            <summary>
+            If the index can be open/read
+            </summary>
+        </member>
         <member name="P:Umbraco.Web.Search.ExamineIndexerModel.DocumentCount">
             <summary>
             The number of docs in the index
@@ -11550,6 +11545,14 @@
             <summary>
             Extension methods for the LuceneIndexer
             </summary>
+        </member>
+        <member name="M:Umbraco.Web.Search.ExamineExtensions.IsHealthy(Examine.LuceneEngine.Providers.LuceneIndexer,System.Exception@)">
+            <summary>
+            Checks if the index can be read/opened
+            </summary>
+            <param name="indexer"></param>
+            <param name="ex">The exception returned if there was an error</param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Web.Search.ExamineExtensions.GetIndexDocumentCount(Examine.LuceneEngine.Providers.LuceneIndexer)">
             <summary>
@@ -19613,6 +19616,13 @@
             <summary>
             If the test is true, the string valueIfTrue will be returned, otherwise the valueIfFalse will be returned.
             </summary>
+        </member>
+        <member name="M:Umbraco.Web.UmbracoHelper.GetPreValueAsString(System.Int32)">
+            <summary>
+            Gets a specific PreValue by its Id
+            </summary>
+            <param name="id">Id of the PreValue to retrieve the value from</param>
+            <returns>PreValue as a string</returns>
         </member>
         <member name="M:Umbraco.Web.UmbracoHelper.CreateEncryptedRouteString(System.String,System.String,System.String,System.Object)">
             <summary>

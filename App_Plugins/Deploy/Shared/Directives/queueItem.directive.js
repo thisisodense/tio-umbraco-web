@@ -28,7 +28,7 @@
                     }
 
                     scope.nodeName = scope.currentNode.name;
-                    scope.hasChildren = scope.currentNode.hasChildren;
+                    scope.hasChildren = scope.currentNode.hasChildren || scope.currentNode.metaData.isContainer;
 
                     //deploying root will always include everything
                     if (scope.currentNode.id === '-1') {

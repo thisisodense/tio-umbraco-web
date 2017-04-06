@@ -64,7 +64,7 @@ $(document).ready(function () {
 
         var ctaLayer = new google.maps.KmlLayer({
             // Kvarterer.kmz is also in the assets folder
-            url: window.location.origin + '/content/tiomap.kmz',
+            url: 'https://www.dropbox.com/s/sye0y1j2wg2r7it/tiomap.kmz',
             preserveViewport: true
         });
         ctaLayer.setMap(map);

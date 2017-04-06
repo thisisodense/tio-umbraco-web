@@ -170,7 +170,9 @@
                     //fb_iframe_widget_fluid is added in same situation, but only for mobile devices (tablets, phones)
                     //By removing those classes FB.XFBML.parse() will reset the plugin widths.
                     $('.fb-page').removeClass('fb_iframe_widget fb_iframe_widget_fluid');
-                    FB.XFBML.parse();
+                    if (window.FB !== undefined) {
+                       FB.XFBML.parse();
+                    }
                 }, 300);
             }
         }).resize();

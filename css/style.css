@@ -36,8 +36,8 @@ font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;}
 
 /**umb_name:Top navigation*/
-.topNavigation{font-size: 50pt;
-line-height: 80%;
+.topNavigation{font-size: 14pt;
+line-height: 100%;
 font-weight: bold;
 font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;

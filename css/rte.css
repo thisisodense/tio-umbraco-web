@@ -10,5 +10,6 @@ text-transform: uppercase;}
 
 
 /**umb_name:Subheader*/
-h2{font-size: 200%;
-font-weight: bold;}
+h2{font-size: 300%;
+font-weight: bold;
+font-family: 'Open Sans Condensed', sans-serif;}

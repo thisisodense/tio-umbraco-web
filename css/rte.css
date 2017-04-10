@@ -1,10 +1,10 @@
 
 
 /**umb_name:Header*/
-h1{font-size: 50pt;
-line-height: 50pt;
-font-weight: bold;
-letter-spacing: 2px;
+h1{font-size: 30pt;
+line-height: 30pt;
+font-weight: 700;
+letter-spacing: 5px;
 font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;}
 

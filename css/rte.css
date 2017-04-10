@@ -2,4 +2,6 @@
 
 /**umb_name:Header*/
 h1{font-size: 300%;
-font-weight: bold;}
+font-weight: bold;
+font-family: 'BenchNine', sans-serif;
+text-transform: uppercase;}

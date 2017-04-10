@@ -95,13 +95,12 @@
         <Id>827414b6-c2a8-5007-93e3-6849de92e3d5</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Longread</Name>
+    <Name>Article</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Icon>icon-flag-alt</Icon>
     <Thumbnail>folder.png</Thumbnail>
-    <Alias>Longread</Alias>
-    <Description />
+    <Alias>Article</Alias>
     <IsContainer>false</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>827414b6-c2a8-5007-93e3-6849de92e3d5</UniqueId>
@@ -274,13 +273,13 @@
     </Properties>
     <Tabs>
         <Tab>
-            <ContentTypeAlias>Longread</ContentTypeAlias>
+            <ContentTypeAlias>Article</ContentTypeAlias>
             <SortOrder>1</SortOrder>
             <Text>Content</Text>
             <UniqueId>d4914fff-0068-2a1d-0214-29b5057cbf5f</UniqueId>
         </Tab>
         <Tab>
-            <ContentTypeAlias>Longread</ContentTypeAlias>
+            <ContentTypeAlias>Article</ContentTypeAlias>
             <SortOrder>2</SortOrder>
             <Text>Guest Writer</Text>
             <UniqueId>e5e39b93-0cdd-4b67-b9a8-87cade13a295</UniqueId>

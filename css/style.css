@@ -6,4 +6,6 @@ line-height: 20pt;
 font-family: Georgia,Times,Times New Roman,serif;}
 
 /**umb_name:Subheader*/
-.Subheader{}
+h2{font-size: 200%;
+font-weight: bold;
+font-family: 'Open Sans Condensed', sans-serif;}

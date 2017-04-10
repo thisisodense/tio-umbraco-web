@@ -11,4 +11,8 @@ font-weight: bold;
 font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Header*/
-.Header{}
+h1{font-size: 350%;
+font-weight: bold;
+letter-spacing: 2px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;}

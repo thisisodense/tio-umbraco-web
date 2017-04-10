@@ -28,6 +28,7 @@ font-style: none;}
 /**umb_name:Strong*/
 strong{font-size: 50pt;
 line-height: 50pt;
+font-weight: bold;
 letter-spacing: 2px;
 font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;}

@@ -20,4 +20,5 @@ line-height: 20pt;
 font-family: Georgia,Times,Times New Roman,serif;}
 
 /**umb_name:Info arrow*/
-.InfoArrow{font-family: 'Open Sans', sans-serif;}
+.InfoArrow{font-family: 'Open Sans', sans-serif;
+text-decoration:  none;}

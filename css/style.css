@@ -8,10 +8,8 @@ font-weight: bold;
 font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Header*/
-.hed{font-size: 50pt;
-line-height: 50pt;
+.hed{font-size: 300%;
 font-weight: bold;
-letter-spacing: 2px;
 font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;}
 

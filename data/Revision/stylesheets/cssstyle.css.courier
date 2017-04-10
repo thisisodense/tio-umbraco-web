@@ -1,0 +1,20 @@
+﻿<Stylesheet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>/css/style.css</Id>
+        <ProviderId>e0472596-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>/css/style.css</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>/css/style.css</ExtractToPath>
+            <Name>/css/style.css</Name>
+            <PackageFromPath>/css/style.css</PackageFromPath>
+            <TemporaryStoragePath>/css/style.css</TemporaryStoragePath>
+        </Resource>
+    </Resources>
+    <FileName>/css/style.css</FileName>
+    <Id>0</Id>
+    <Properties />
+</Stylesheet>

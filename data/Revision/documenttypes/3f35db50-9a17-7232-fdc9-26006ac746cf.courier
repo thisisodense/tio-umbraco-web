@@ -1,26 +1,15 @@
 ﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Dependencies>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>35c681c0-0f50-43b2-b730-9925b4623361</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: 35c681c0-0f50-43b2-b730-9925b4623361</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-    </Dependencies>
+    <Dependencies />
     <ItemId>
         <Id>3f35db50-9a17-7232-fdc9-26006ac746cf</Id>
         <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Longread repository</Name>
+    <Name>Article repository</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Icon>icon-flag-alt</Icon>
     <Thumbnail>folder.png</Thumbnail>
-    <Alias>LongreadRepository</Alias>
-    <Description />
+    <Alias>ArticleRepository</Alias>
     <IsContainer>true</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>3f35db50-9a17-7232-fdc9-26006ac746cf</UniqueId>
@@ -29,7 +18,7 @@
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,3f35db50-9a17-7232-fdc9-26006ac746cf</PathGuids>
     <AllowedChildDocumentTypes>
-        <string>Longread</string>
+        <string>Article</string>
     </AllowedChildDocumentTypes>
     <AllowedTemplates />
     <MasterDocumentTypes />

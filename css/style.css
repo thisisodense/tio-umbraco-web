@@ -1,9 +1,7 @@
 
 
 /**umb_name:Paragraph*/
-p{font-size: 20pt;
-line-height: 20pt;
-font-family: 'Open Sans Condensed', sans-serif;}
+p{font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Subheader*/
 h2{font-size: 200%;

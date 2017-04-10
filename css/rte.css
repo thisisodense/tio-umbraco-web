@@ -11,8 +11,10 @@ text-transform: uppercase;}
 
 
 /**umb_name:Subheader*/
-h2{font-size: 200%;
-font-weight: bold;
+h2{font-size: 20pt;
+line-height: 20pt;
+font-weight: 700;
+letter-spacing: 5px;
 font-family: 'Open Sans Condensed', sans-serif;}
 
 }}

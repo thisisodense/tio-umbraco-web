@@ -21,7 +21,7 @@ font-family: Georgia,Times,Times New Roman,serif;}
 /**umb_name:Info arrow*/
 .info{font-family: 'Open Sans', sans-serif;
 text-decoration:  none;
-font-style: none;}
+font-style: inherit;}
 
 
 

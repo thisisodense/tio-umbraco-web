@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @RenderSection("meta", required: false)
     <title>This Is Odense \ @Umbraco.GetDictionaryValue("Sker der noget i Odense?") / @ViewBag.Title</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<meta name="description" content="@Umbraco.GetDictionaryValue("Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.")" />
     <meta name="google-site-verification" content="KWuVtTgiI6bFBjvqOlEcprkQFgInsv1hVF2dDtlh-0Y" />
     <meta name="p:domain_verify" content="7c5681ad9a1afde465ff7dabacbb9f21" />
@@ -43,6 +43,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Content/images/apple_icon_114x114_png)")" />
     <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/Content/images/apple_icon_144x144_png)")" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
     @Html.Hidden("IsEnglish", Site.IsEnglish)

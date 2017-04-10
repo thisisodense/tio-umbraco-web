@@ -19,4 +19,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;}
 
 /**umb_name:Text*/
-.Text{}
+.Georgia{font-size: 14pt;
+line-height: 20pt;
+font-family: Georgia,Times,Times New Roman,serif;}

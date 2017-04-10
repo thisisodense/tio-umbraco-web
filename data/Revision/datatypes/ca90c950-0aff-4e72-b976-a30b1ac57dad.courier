@@ -33,7 +33,8 @@
     "umbembeddialog"&#xD;
   ],&#xD;
   "stylesheets": [&#xD;
-    "H1"&#xD;
+    "H1",&#xD;
+    "style"&#xD;
   ],&#xD;
   "dimensions": {&#xD;
     "height": 500&#xD;

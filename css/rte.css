@@ -17,8 +17,6 @@ font-family: 'Open Sans Condensed', sans-serif;}
 }}
 
 /**umb_name:Paragraph*/
-p{p {
-	font-size: 12pt;
-	line-height: 20pt;
-	font-family: Georgia,Times,Times New Roman,serif; 
-}}
+p{font-size: 12pt;
+line-height: 20pt;
+font-family: Georgia,Times,Times New Roman,serif;}}

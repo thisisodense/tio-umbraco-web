@@ -23,7 +23,6 @@
             $scope.endDate = findProperty(properties, 'endDate');
             $scope.startTime = findProperty(properties, 'startTime');
             $scope.endTime = findProperty(properties, 'endTime');
-            $scope.doorsOpen = findProperty(properties, 'doorsOpen');
             $scope.urlEnglish = findProperty(properties, 'urlEnglish');
             $scope.urlDanish = findProperty(properties, 'urlDanish');
             $scope.summaryForInstagram = findProperty(properties, 'summaryForInstagram');

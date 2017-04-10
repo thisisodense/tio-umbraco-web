@@ -38,7 +38,7 @@ text-transform: uppercase;}
 /**umb_name:Top navigation*/
 .topNavigation{font-size: 14pt;
 line-height: 100%;
-font-weight: 700;
+font-weight: bold;
 letter-spacing: 1px;
 font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;

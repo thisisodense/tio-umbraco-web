@@ -1,0 +1,15 @@
+﻿<DataType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>ebce5eb9-0da5-4a5b-924a-5a691a47f882</Id>
+        <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>List View - ArticleRepository</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DataBaseDataType>Ntext</DataBaseDataType>
+    <PropertyEditorAlias>Umbraco.ListView</PropertyEditorAlias>
+    <Prevalues />
+    <UniqueID>ebce5eb9-0da5-4a5b-924a-5a691a47f882</UniqueID>
+    <ParentContainerId xsi:nil="true" />
+</DataType>

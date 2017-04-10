@@ -1,4 +1,6 @@
 
 
 /**umb_name:Paragraph*/
-.Paragraph{}
+p{font-size: 14pt;
+line-height: 20pt;
+font-family: Georgia,Times,Times New Roman,serif;}

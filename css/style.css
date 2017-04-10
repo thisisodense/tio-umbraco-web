@@ -49,4 +49,7 @@ float: left;}
 .navigation{margin-bottom: 10px;}
 
 /**umb_name:Image description*/
-.ImageDescription{}
+.ImageDescription{font-size: 10pt;
+line-height: 10pt;
+font-weight: 300;
+font-family: 'Open Sans Condensed', sans-serif;}

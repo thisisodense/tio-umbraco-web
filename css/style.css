@@ -822,9 +822,9 @@ a:active, a:link, a:visited {
 .fb-page { margin: 0 auto;}
 
 /**umb_name:Category Picker*/
-.category-picker {
-  font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
-  margin-top: 5px; }
+.category-picker{font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
+margin-top: 5px;}
 
 /**umb_name:Category Picker A*/
   .category-picker a {

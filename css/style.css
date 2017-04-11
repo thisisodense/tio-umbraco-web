@@ -692,6 +692,11 @@ text-transform: uppercase;
 vertical-align: top;
 float: left;}
 
+/**umb_name:Top navigation Li*/
+    .topNavigation li {
+        display: inline-block;
+    }
+
 /**umb_name:Top navigation Li Active*/
         .topNavigation li.active a {
             text-decoration: none;

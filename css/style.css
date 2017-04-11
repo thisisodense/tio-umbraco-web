@@ -680,10 +680,8 @@ a:active, a:link, a:visited {
     }
 
 /**umb_name:Navigation*/
-.navigation {
-    margin-bottom: -7px;
-    margin-top: 15px;
-}
+.navigation{margin-bottom: 12px;
+margin-top: 15px;}
 
 /**umb_name:Top navigation*/
 .topNavigation{font-size: 20pt;

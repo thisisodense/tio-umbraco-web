@@ -176,11 +176,8 @@ article img {
 }
 
 /**umb_name:Link Container h2*/
-    .linkContainer h2 {
-        float: left;
-        font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
-        font-size: 27px;
-    }
+.linkContainer h2{float: left;
+font-size: 27px;}
 
 /**umb_name:Link Container h3*/
     .linkContainer h3 {

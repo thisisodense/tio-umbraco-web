@@ -68,9 +68,11 @@ article {
     margin-top: 20px;
 }
 
-/**umb_name:Page header*/
+/**umb_name:Article Image*/
 article img {
         cursor: pointer;
+        max-width: 714px;
+        width: 100%;
     }
 
 /**umb_name:Guest Writer InfoArrow*/

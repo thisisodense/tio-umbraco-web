@@ -4,7 +4,7 @@
         <Id>733b3e26-a8f0-4a98-8872-e3d6a1bdc824</Id>
         <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Longread - Klar til korrektur - TrueFalse</Name>
+    <Name>Article - Klar til korrektur - TrueFalse</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <DataBaseDataType>Integer</DataBaseDataType>

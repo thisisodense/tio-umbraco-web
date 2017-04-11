@@ -1,0 +1,33 @@
+
+
+/**umb_name:Header*/
+h1{font-size: 30pt;
+line-height: 30pt;
+font-weight: 700;
+letter-spacing: 1px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;}
+
+
+
+/**umb_name:Subheader*/
+h2{font-size: 20pt;
+line-height: 20pt;
+font-weight: 700;
+font-family: 'Open Sans Condensed', sans-serif;}
+
+}}
+
+}
+
+/**umb_name:Text*/
+.readmore{font-size: 14pt;
+line-height: 20pt;
+font-family: Georgia,Times,Times New Roman,serif;}
+
+/**umb_name:Image description*/
+.ImageDescription{font-size: 10pt;
+line-height: 10pt;
+font-weight: 300;
+font-family: 'Open Sans Condensed', sans-serif;
+text-align: center;}

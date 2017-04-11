@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+/**umb_name:Subheader*/
+h2{font-size: 200%;
+font-weight: bold;
+font-family: 'Open Sans Condensed', sans-serif;}
+
+/**umb_name:Header*/
+h1{font-size: 30pt;
+line-height: 30pt;
+font-weight: 700;
+letter-spacing: 1px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;}
+
+/**umb_name:Text*/
+.readmore{font-size: 14pt;
+line-height: 20pt;
+font-family: Georgia,Times,Times New Roman,serif;}
+
+/**umb_name:Info arrow*/
+.info{font-family: 'Open Sans', sans-serif;
+text-decoration:  none;
+font-style: inherit;
+color: #999;}
+
+
+
+
+
+/**umb_name:Page header*/
+article .desc .hed{font-size: 40pt;
+line-height: 40pt;
+font-weight: 700;
+letter-spacing: 5px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;}
+
+/**umb_name:Top navigation*/
+.topNavigation{font-size: 20pt;
+line-height: 15pt;
+font-weight: 700;
+letter-spacing: 3px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;
+vertical-align: top;
+float: left;}
+
+/**umb_name:Navigation*/
+.navigation{margin-bottom: 12px;}
+
+/**umb_name:Image description*/
+.ImageDescription{font-size: 10pt;
+line-height: 10pt;
+font-weight: 300;
+font-family: 'Open Sans Condensed', sans-serif;
+text-align: center;}
+
+/**umb_name:Paragraph*/
+.readmore p{line-height: 20pt;}
+
+/**umb_name:div*/
+.readmore div{line-height: 20pt;}
+
+/**umb_name:Underoverskrift*/
+.placeHeader .desc .des{font-size: 14pt;
+line-height: 16pt;
+font-weight: 300;
+letter-spacing: 2px;
+font-family: 'Open Sans Condensed', sans-serif;}
+
+/**umb_name:Category*/
+.category-picker .category{font-size: 13pt;
+line-height: 100%;
+font-weight: 400;
+font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;}

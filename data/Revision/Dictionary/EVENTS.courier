@@ -27,11 +27,11 @@
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>EVENTS</Value>
+            <Value>Ugeguide</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>EVENTS</Value>
+            <Value>Events</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

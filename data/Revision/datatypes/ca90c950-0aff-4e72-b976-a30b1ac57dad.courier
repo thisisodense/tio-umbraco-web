@@ -32,7 +32,10 @@
     "umbmacro",&#xD;
     "umbembeddialog"&#xD;
   ],&#xD;
-  "stylesheets": [],&#xD;
+  "stylesheets": [&#xD;
+    "H1",&#xD;
+    "rte"&#xD;
+  ],&#xD;
   "dimensions": {&#xD;
     "height": 500&#xD;
   },&#xD;

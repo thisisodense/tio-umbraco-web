@@ -70,9 +70,13 @@ article {
 
 /**umb_name:Article Image*/
 article img {
-        cursor: pointer;
         max-width: 714px;
         width: 100%;
+    }
+
+/**umb_name:Article Image*/
+.articleImg {
+        cursor: pointer;
     }
 
 /**umb_name:Guest Writer InfoArrow*/

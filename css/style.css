@@ -692,26 +692,6 @@ text-transform: uppercase;
 vertical-align: top;
 float: left;}
 
-/**umb_name:Top navigation*/
-.topNavigation{font-size: 20pt;
-line-height: 15pt;
-font-weight: 700;
-letter-spacing: 3px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
-vertical-align: top;
-float: left;}
-
-/**umb_name:Top navigation*/
-.topNavigation{font-size: 20pt;
-line-height: 15pt;
-font-weight: 700;
-letter-spacing: 3px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
-vertical-align: top;
-float: left;}
-
 /**umb_name:Top navigation A*/
     .topNavigation a {
         font-size: 20pt;

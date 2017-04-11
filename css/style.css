@@ -686,20 +686,16 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Top navigation*/
-.topNavigation {
-    float: left;
-}
+.topNavigation{float: left;
+font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Top navigation*/
-    .topNavigation li {
-        display: inline-block;
-    }
+.topNavigation{float: left;
+font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Top navigation*/
-        .topNavigation li.active a {
-            text-decoration: none;
-            color: black;
-        }
+.topNavigation{float: left;
+font-family: 'Open Sans Condensed', sans-serif;}
 
 /**umb_name:Top navigation A*/
     .topNavigation a {

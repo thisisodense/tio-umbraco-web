@@ -24,15 +24,13 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /**umb_name:Body*/
-body {
-    line-height: 1;
-    margin-top: 10px;
-    font-size: 10pt;
-    line-height: 12pt;
-    color: #232323;
-    background-color: #fff;
-    font-family: 'Trebuchet MS';
-}
+body{line-height: 1;
+margin-top: 10px;
+font-size: 10pt;
+line-height: 12pt;
+color: #232323;
+background-color: #fff;
+font-family: Georgia,Times,Times New Roman,serif;}
 
 /**umb_name:Left*/
 .left {

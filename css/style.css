@@ -824,6 +824,8 @@ a:active, a:link, a:visited {
 /**umb_name:Category Picker*/
 .category-picker{font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;
+font-size: 12pt;
+padding-top: 6px;
 margin-top: 5px;}
 
 /**umb_name:Category Picker A*/

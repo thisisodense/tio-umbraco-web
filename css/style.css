@@ -687,15 +687,30 @@ a:active, a:link, a:visited {
 
 /**umb_name:Top navigation*/
 .topNavigation{float: left;
-font-family: 'Open Sans Condensed', sans-serif;}
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 20pt;
+line-height: 15pt;
+font-weight: 700;
+letter-spacing: 3px;
+text-transform: uppercase;}
 
 /**umb_name:Top navigation*/
 .topNavigation{float: left;
-font-family: 'Open Sans Condensed', sans-serif;}
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 20pt;
+line-height: 15pt;
+font-weight: 700;
+letter-spacing: 3px;
+text-transform: uppercase;}
 
 /**umb_name:Top navigation*/
 .topNavigation{float: left;
-font-family: 'Open Sans Condensed', sans-serif;}
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 20pt;
+line-height: 15pt;
+font-weight: 700;
+letter-spacing: 3px;
+text-transform: uppercase;}
 
 /**umb_name:Top navigation A*/
     .topNavigation a {

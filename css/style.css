@@ -16,12 +16,14 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+/**umb_name:Body*/
 body {
     line-height: 1;
     margin-top: 10px;
@@ -32,72 +34,87 @@ body {
     font-family: 'Trebuchet MS';
 }
 
+/**umb_name:Left*/
 .left {
     float: left;
 }
 
+/**umb_name:Right*/
 .right {
     float: right;
 }
 
+/**umb_name:List*/
 ol, ul {
     list-style: none;
 }
 
+/**umb_name:Quotes*/
 blockquote, q {
     quotes: none;
 }
 
-    blockquote:before, blockquote:after,
-    q:before, q:after {
+/**umb_name:Blockquote*/
+blockquote:before, blockquote:after, q:before, q:after {
         content: '';
         content: none;
     }
 
+/**umb_name:Table*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+/**umb_name:Article*/
 article {
     margin-top: 20px;
 }
 
-    article img {
+/**umb_name:Page header*/
+article img {
         cursor: pointer;
     }
 
+/**umb_name:Guest Writer InfoArrow*/
     article.guestWriter .info.arrow {
         display: block;
     }
 
+/**umb_name:Guest Writer*/
     article.guestWriter {
         background-color: #f1f1f1;
         border-radius: 2px;
         padding: 10px;
     }
 
+/**umb_name:Guest Writer Image*/
         article.guestWriter img {
             margin-bottom: 0;
         }
 
+/**umb_name:Guest Writer AddThis*/
         article.guestWriter .addthisevent-drop {
             background-color: #f1f1f1;
             margin-bottom: 0;
         }
 
-            article.guestWriter .addthisevent-drop:hover {
-                background-color: #f1f1f1;
-            }
+/**umb_name:Guest Writer AddThis Hover*/
+        article.guestWriter .addthisevent-drop:hover {
+            background-color: #f1f1f1;
+        }
 
+/**umb_name:Top*/
     article .top {
         position:relative;
     }
 
+/**umb_name:No P padding*/
     article .no-p-padding p {
         padding:0 !important;
     }
 
+/**umb_name:Description*/
     article .desc {
         width: 90%;
         min-height: 60px;
@@ -106,6 +123,7 @@ article {
         cursor:pointer;
     }
 
+/**umb_name:Description P*/
         article .desc p {
             margin: 0;
             display: block;
@@ -116,6 +134,7 @@ article {
             line-height: 110%;
         }
 
+/**umb_name:Description Header*/
         article .desc .hed {
             width: 100%;
             min-height: 27px;
@@ -129,6 +148,7 @@ article {
             text-transform: uppercase;
         }
 
+/**umb_name:Description Subheader*/
         article .desc .des {
             width: 83%;
             min-height: 28px;
@@ -138,6 +158,7 @@ article {
             font-size: 13px;
         }
 
+/**umb_name:Page size*/
 .content {
     width: 714px;
     margin-left: auto;
@@ -146,16 +167,19 @@ article {
     position: relative;
 }
 
+/**umb_name:Link Container*/
 .linkContainer {
     text-align: left;
 }
 
+/**umb_name:Link Container h2*/
     .linkContainer h2 {
         float: left;
         font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
         font-size: 27px;
     }
 
+/**umb_name:Link Container h3*/
     .linkContainer h3 {
         float: left;
         font-size: 23px;
@@ -163,53 +187,65 @@ article {
         margin-left: 4px;
     }
 
+/**umb_name:Link Container Links*/
     .linkContainer .links a {
         float: left;
     }
 
+/**umb_name:Horizontal Row Big Space*/
 hr.bigspace {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
+/**umb_name:Link Container Links Image*/
 .linkContainer .links img {
     float: left;
     padding-right: 5px;
 }
 
+/**umb_name:Link Container Link1*/
 .linkContainer .links .link1 {
     width: 146px;
 }
 
+/**umb_name:Link Container Link2*/
 .linkContainer .links .link2 {
     width: 109px;
 }
 
+/**umb_name:Link Container Link3*/
 .linkContainer .links .link3 {
     width: 100px;
 }
 
+/**umb_name:Link Container Link4*/
 .linkContainer .links .link4 {
     width: 115px;
 }
 
+/**umb_name:Link Container Link5*/
 .linkContainer .links .link5 {
     width: 109px;
 }
 
+/**umb_name:Link Container Link6*/
 .linkContainer .links .link6 {
     width: 119px;
 }
 
+/**umb_name:Hide*/
 .hide {
     display: none;
 }
 
+/**umb_name:H1*/
 h1 {
     font-size: 20pt;
     text-transform: uppercase;
 }
 
+/**umb_name:H2*/
 h2 {
     font-size: 24pt;
     margin-bottom: 10px;
@@ -217,12 +253,14 @@ h2 {
     text-transform: uppercase;
 }
 
+/**umb_name:H3*/
 h3 {
     font-weight: bold;
     margin: 10px 0;
     text-transform: uppercase;
 }
 
+/**umb_name:Header*/
 .header {
     float: left;
     width: 625px;
@@ -230,38 +268,44 @@ h3 {
     display: none;
 }
 
+/**umb_name:Article Image*/
 img.articleImg {
     max-width: 100%;
     margin: 0 0 10px 0;
     display: inline !important;
 }
 
-    img.articleImg.writerImg {
+/**umb_name:Article Writer Image*/
+img.articleImg.writerImg {
         max-height: 300px;
         max-width: 300px;
         float: right;
         padding-left: 10px;
     }
 
+/**umb_name:Content Image*/
 .content img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-
+/**umb_name:Info*/
 .info {
   font-style: italic;
 }
 
+/**umb_name:Info Link*/
 .info a:visited, .info a:link {
     text-decoration: none;
 }
 
+/**umb_name:Info Hover*/
 .info a:hover {
     text-decoration: underline;
 }
 
+/**umb_name:>TIP*/
 .tip {
     font-size: 18pt;
     font-weight: bold;
@@ -276,35 +320,42 @@ img.articleImg {
     -webkit-transform: rotate(-20deg); /* Safari and Chrome */
 }
 
+/**umb_name:Flag*/
 .flag {
     float: right;
     margin-top: -5px;
 }
 
+/**umb_name:Footer*/
 footer {
     text-align: center;
     margin: 30px 0;
 }
 
+/**umb_name:Writers*/
 .writers {
     margin-top:10px;
 }
 
+/**umb_name:Writer*/
 .writer {
     width:33%;
     float:left;
     position:relative;
 }
 
+/**umb_name:Writer Image*/
 .writer img {
     width:100%;
 }
 
+/**umb_name:Writer Background*/
 .writerBackground {
     word-wrap: break-word;
     padding-bottom:10px;
 }
 
+/**umb_name:Writer Name*/
 .writerName {
     font-size: 1.5em;
     width: 100%;
@@ -312,19 +363,23 @@ footer {
     text-transform:uppercase;
 }
 
+/**umb_name:Writer of the Week*/
 .writerOfWeek {
     font-style: italic;
 }
 
+/**umb_name:Writer Title*/
 .writerTitle {
     padding:10px 0 5px 0;
     text-transform:uppercase;
 }
 
+/**umb_name:Writer Details*/
 .writerDetails p {
     padding:10px 0 10px 0;
 }
 
+/**umb_name:Writer Content*/
 .writerContent {
     font-size: 10pt;
     color:whitesmoke;
@@ -335,17 +390,7 @@ footer {
     text-overflow:ellipsis;
 }
 
-.writerOverlay .readmorelink {
-    color:whitesmoke;
-    padding-right:5px;
-}
-
- .readmorelinkActive {
-    color:whitesmoke !important;
-    padding-right:5px;
-    float:right;
- }
-
+/**umb_name:Writer Overlay*/
 .writerOverlay {
     opacity:0;
     background-color:#00C4AE;
@@ -360,63 +405,76 @@ footer {
     transition: opacity 0.5s ease-in-out;
 }
 
+/**umb_name:Writer Overlay Hover*/
 .writerOverlay:hover {
     opacity:0.8;
     cursor: pointer;
 }
 
+/**umb_name:Writer Overlay ReadMore Link*/
+.writerOverlay .readmorelink {
+    color:whitesmoke;
+    padding-right:5px;
+}
 
-/*.date {
-    display: block;
-    float: left;
-    width: 55px;
-    height: 55px;
-    border: 2px solid black;
-    padding: 7px 5px 5px 7px;
-    cursor: pointer;
-}*/
+/**umb_name:Readmore Link*/
+ .readmorelinkActive {
+    color:whitesmoke !important;
+    padding-right:5px;
+    float:right;
+ }
 
+/**umb_name:A Link Active Visited*/
 a:active, a:link, a:visited {
     color: black;
 }
 
+/**umb_name:Read More Link*/
 .readmorelink {
     float: right;
 }
 
+/**umb_name:Read Less Link*/
 .readlesslink {
     float: right;
 }
 
+/**umb_name:Links Active Visited*/
 .readmore {
     position: relative;
 }
 
-    .readmore div, .readmore p {
+/**umb_name:Read More Div P*/
+.readmore div, .readmore p {
         line-height: 12pt;
     }
 
+/**umb_name:Read More Hide*/
     .readmore.hide {
         display: none;
     }
 
+/**umb_name:Read More P*/
     .readmore p {
         padding: 10px 0 10px 0;
     }
 
+/**umb_name:First Article*/
 .firstArticle {
     background-color: #F22E52;
 }
 
+/**umb_name:Second Article*/
 .secondArticle {
     background-color: #FCB215;
 }
 
+/**umb_name:Mobile AddThis Drop*/
 .mobile .addthisevent-drop {
     display: none;
 }
 
-/*Addthis*/
+/**umb_name:AddThis*/
 .addthisevent-drop {
     float: left;
     display: inline-block;
@@ -429,13 +487,9 @@ a:active, a:link, a:visited {
     font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
     color: #333 !important;
     font-size: 15px;
-    /*border:1px solid #cfcfcf;
-    -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.15);
-    -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.15);
-    box-shadow:1px 1px 3px rgba(0,0,0,0.15);
-    -webkit-border-radius:2px;border-radius:2px;*/
 }
 
+/**umb_name:AddThis Sharing Toolbox*/
     .addthis_sharing_toolbox {
         position: absolute;
         right: 0;
@@ -444,14 +498,17 @@ a:active, a:link, a:visited {
         z-index:10000;
     }
     
+/**umb_name:AddThis Drop Hover*/
     .addthisevent-drop:hover {
         background-color: #f4f4f4;
     }
 
+/**umb_name:AddThis Drop*/
     .addthisevent-drop:active {
         top: 1px;
     }
 
+/**umb_name:AddThis Drop Date*/
     .addthisevent-drop .date {
         width: 100%;
         height: 60px;
@@ -459,6 +516,7 @@ a:active, a:link, a:visited {
         position: relative;
     }
 
+/**umb_name:AddThis Drop Date Month*/
         .addthisevent-drop .date .mon {
             display: block;
             text-align: center;
@@ -470,6 +528,7 @@ a:active, a:link, a:visited {
             text-transform: uppercase;
         }
 
+/**umb_name:AddThis Drop Date Day*/
         .addthisevent-drop .date .day {
             display: block;
             text-align: center;
@@ -480,6 +539,7 @@ a:active, a:link, a:visited {
             line-height: 100%;
         }
 
+/**umb_name:AddThis Drop Date Border Right 1*/
         .addthisevent-drop .date .bdr1 {
             width: 1px;
             height: 50px;
@@ -490,6 +550,7 @@ a:active, a:link, a:visited {
             right: -3px;
         }
 
+/**umb_name:AddThis Drop Date Border Right 2*/
         .addthisevent-drop .date .bdr2 {
             width: 1px;
             height: 50px;
@@ -500,10 +561,12 @@ a:active, a:link, a:visited {
             right: -4px;
         }
 
+/**umb_name:AddThis Selected*/
 .addthisevent-selected {
     background-color: #f4f4f4;
 }
 
+/**umb_name:AddThis Dropdown*/
 .addthisevent_dropdown {
     width: 280px;
     position: absolute;
@@ -520,6 +583,7 @@ a:active, a:link, a:visited {
     box-shadow: 1px 3px 6px rgba(0,0,0,0.15);
 }
 
+/**umb_name:AddThis Dropdown Span*/
     .addthisevent_dropdown span {
         display: block;
         line-height: 110%;
@@ -530,6 +594,7 @@ a:active, a:link, a:visited {
         padding: 8px 10px 9px 15px;
     }
 
+/**umb_name:AddThis Dropdown Span Hover*/
         .addthisevent_dropdown span:hover {
             background: #f4f4f4;
             color: #6d84b4;
@@ -537,14 +602,17 @@ a:active, a:link, a:visited {
             font-size: 14px;
         }
 
+/**umb_name:AddThis Span*/
 .addthisevent span {
     display: none !important;
 }
 
+/**umb_name:AddThis Display None*/
 .addthisevent-drop ._url, .addthisevent-drop ._start, .addthisevent-drop ._end, .addthisevent-drop ._summary, .addthisevent-drop ._description, .addthisevent-drop ._location, .addthisevent-drop ._organizer, .addthisevent-drop ._organizer_email, .addthisevent-drop ._facebook_event, .addthisevent-drop ._all_day_event {
     display: none !important;
 }
 
+/**umb_name:AddThis Dropdown Copy X*/
 .addthisevent_dropdown .copyx {
     height: 21px;
     display: block;
@@ -552,6 +620,7 @@ a:active, a:link, a:visited {
     cursor: default;
 }
 
+/**umb_name:AddThis Dropdown Border Left Top*/
 .addthisevent_dropdown .brx {
     width: 180px;
     height: 1px;
@@ -563,6 +632,7 @@ a:active, a:link, a:visited {
     top: 9px;
 }
 
+/**umb_name:AddThis Dropdown FRS*/
 .addthisevent_dropdown .frs {
     position: absolute;
     top: 3px;
@@ -580,18 +650,22 @@ a:active, a:link, a:visited {
     color: #cacaca;
 }
 
+/**umb_name:AddThis Dropdown FRS Hover*/
     .addthisevent_dropdown .frs:hover {
         color: #6d84b4;
     }
 
+/**umb_name:AddThis Hidden*/
 .addthisevent {
     visibility: hidden;
 }
 
+/**umb_name:AddThis Counter Bubble Style*/
 .addthis_counter.addthis_bubble_style {
     font-size: 11px;
 }
 
+/**umb_name:AddThis Toolbox*/
 .addthis_toolbox {
     position: absolute;
     right: 0px;
@@ -599,6 +673,7 @@ a:active, a:link, a:visited {
     z-index:5000;
 }
 
+/**umb_name:Facebook Like*/
 .fb-like {
     left: 45%;
     position: absolute !important;
@@ -606,31 +681,38 @@ a:active, a:link, a:visited {
     bottom: 0px;
 }
 
+/**umb_name:Facebook Comments iFrame*/
 .fb-comments iframe {
     width: 100% !important;
 }
 
+/**umb_name:Facebook Comments*/
 .fb-comments {
     width: 100% !important;
 }
 
+/**umb_name:Facebook Comments Span*/
     .fb-comments > span {
         width: 100% !important;
     }
 
+/**umb_name:Navigation*/
 .navigation {
     margin-bottom: -7px;
     margin-top: 15px;
 }
 
+/**umb_name:Top navigation*/
 .topNavigation {
     float: left;
 }
 
+/**umb_name:Top navigation*/
     .topNavigation li {
         display: inline-block;
     }
 
+/**umb_name:Top navigation*/
         .topNavigation li.active a {
             text-decoration: none;
             color: black;

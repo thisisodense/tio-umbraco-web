@@ -40,7 +40,7 @@ text-transform: uppercase;}
 
 /**umb_name:Top navigation*/
 .topNavigation{font-size: 20pt;
-line-height: 100%;
+line-height: 15pt;
 font-weight: 700;
 letter-spacing: 3px;
 font-family: 'Open Sans Condensed', sans-serif;

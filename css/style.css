@@ -289,9 +289,7 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Info*/
-.info {
-  font-style: italic;
-}
+.info{font-style: none;}
 
 /**umb_name:Info Link*/
 .info a:visited, .info a:link {

@@ -827,7 +827,8 @@ text-transform: uppercase;
 letter-spacing: 1px;
 font-size: 12pt;
 padding-top: 6px;
-margin-top: 5px;}
+margin-top: 5px;
+margin-bottom: 5px;}
 
 /**umb_name:Category Picker A*/
   .category-picker a {

@@ -831,7 +831,9 @@ margin-top: 5px;}
     display: inline-block; }
 
 /**umb_name:Category Picker Category*/
-.category-picker .category{cursor: pointer;
+.category-picker .category{font-size: 12pt;
+padding-top: 6px;
+cursor: pointer;
 text-decoration: none;}
 
 /**umb_name:Category Picker Category Hover*/

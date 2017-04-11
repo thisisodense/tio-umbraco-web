@@ -305,20 +305,7 @@ img.articleImg.writerImg {
     text-decoration: underline;
 }
 
-/**umb_name:>TIP*/
-.tip {
-    font-size: 18pt;
-    font-weight: bold;
-    width: 200px;
-    top: 165px;
-    left: -50px;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Safari and Chrome */
-}
+
 
 /**umb_name:Flag*/
 .flag {
@@ -1090,3 +1077,16 @@ a:active, a:link, a:visited {
 /**umb_name:Place Header Map Category Sights Before*/
       .placeHeader .mapCategory.Sights .fa:before {
         content: "\f18c"; }
+
+/**umb_name:TIP*/
+.tip{font-size: 18pt;
+font-weight: bold;
+width: 200px;
+top: 165px;
+left: -50px;
+position: absolute;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+transform: rotate(-20deg);
+-ms-transform: rotate(-20deg); /* IE 9 */
+-webkit-transform: rotate(-20deg); /* Safari and Chrome */}

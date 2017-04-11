@@ -718,36 +718,42 @@ a:active, a:link, a:visited {
             color: black;
         }
 
+/**umb_name:Top navigation A*/
     .topNavigation a {
         font-size: 20pt;
         text-transform: uppercase;
         color: darkgrey;
         text-decoration: none;
     }
-
+/**umb_name:Top navigation A Hover*/
         .topNavigation a:hover {
             color: black;
         }
 
+/**umb_name:Top navigation A First Child*/
         .topNavigation a:first-child {
             margin-right: 5px;
         }
 
-/* Landscape phones and down */
 
 @media (max-width: 480px) {
-    .topNavigation a {
+	
+/**umb_name:Top navigation A 480px*/
+	.topNavigation a {
         font-size: 18pt;
     }
 
+/**umb_name:Logo 480px*/
     .logo {
         max-width: 300px;
     }
 
+/**umb_name:Link Container H3 480px*/
     .linkContainer h3 {
         line-height: 20px;
     }
 
+/**umb_name:Link Container Links 480px*/
     .linkContainer .links .link1,
     .linkContainer .links .link2,
     .linkContainer .links .link3,
@@ -758,37 +764,46 @@ a:active, a:link, a:visited {
         margin-bottom: 5px;
     }
 
+/**umb_name:Top Desc Des 480px*/
     .top .desc .des {
         font-size: 11px;
     }
 
+/**umb_name:Writer 480px*/
     .writer {
         width:100% !important;
     }
 }
 
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+	
+/**umb_name:Writer 768px*/
     .writer {
         width:50%;
     }
+	
+/**umb_name:Logo 768px*/
     .logo {
         width: 180px;
     }
 
+/**umb_name:AddThis Display None 768px*/
     .addthis_sharing_toolbox {
         display: none;
     }
 
+/**umb_name:Content 768px*/
     .content {
         width: auto;
         margin: 0 10px 0 10px;
     }
 
+/**umb_name:Tip Display None 768px*/
     .tip {
         display: none;
     }
 
+/**umb_name:Logo 768px*/
     .info {
         font-size: 12px;
         margin: 5px 0;

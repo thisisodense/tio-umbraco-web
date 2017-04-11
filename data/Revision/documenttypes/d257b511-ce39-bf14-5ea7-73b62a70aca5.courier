@@ -20,6 +20,7 @@
     <Icon>icon-calendar-alt</Icon>
     <Thumbnail>folder.png</Thumbnail>
     <Alias>RecommendationRepository</Alias>
+    <Description />
     <IsContainer>true</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>d257b511-ce39-bf14-5ea7-73b62a70aca5</UniqueId>

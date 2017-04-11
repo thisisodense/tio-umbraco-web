@@ -838,51 +838,62 @@ a:active, a:link, a:visited {
 /**umb_name:Facebook Page*/
 .fb-page { margin: 0 auto;}
 
+/**umb_name:Category Picker*/
 .category-picker {
   font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
   margin-top: 5px; }
+
+/**umb_name:Category Picker A*/
   .category-picker a {
     display: inline-block; }
+
+/**umb_name:Category Picker Category*/
   .category-picker .category {
     font-size: 12pt;
     padding-top: 6px;
     cursor: pointer;
     text-decoration: none; }
+
+/**umb_name:Category Picker Category Hover*/
     .category-picker .category:hover {
       text-decoration: underline; }
+
+/**umb_name:Category Picker Current*/
     .category-picker .category.current {
       text-decoration: underline; }
+
     @media (max-width: 768px) {
+/**umb_name:Category Picker Category 768px*/
       .category-picker .category {
         font-size: 12pt; } }
+
     @media (max-width: 480px) {
+/**umb_name:Category Picker Category 480px*/
       .category-picker .category {
         font-size: 10pt;
         padding-top: 5px; } }
 
+/**umb_name:Map*/
 .map {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+/**umb_name:Applied Filter*/
 .appliedFilter {
   margin-top: 60px; }
 
+/**umb_name:Target Id*/
 #target {
   max-width: 714px; }
 
+/**umb_name:Place*/
 .place {
   position: relative;
   cursor: pointer;
   margin: 0;
-  /*&:hover {
-        .placeHeader, .placeInfo, .readmore.hide {
-            background-color: whitesmoke;
-        }
+ }
 
-        &:before {
-            //visibility: visible;
-        }
-    }*/ }
+/**umb_name:Place Before*/
   .place:before {
     position: absolute;
     top: 0;
@@ -894,32 +905,51 @@ a:active, a:link, a:visited {
     padding: 2px 0;
     line-height: 1px;
     border-right: 3px solid whitesmoke; }
+
+/**umb_name:Place Article Image*/
   .place .articleImg {
     margin-top: 5px; }
+
+/**umb_name:Place Info Read More*/
   .place .placeInfo, .place .readmore {
     margin-bottom: 5px; }
+
+/**umb_name:Place Read More*/
   .place .readmore {
     float: right;
     width: 100%; }
+
+/**umb_name:Place Show Read More*/
   .place.show .readmore {
     display: none; }
+
+/**umb_name:Place Show Read More Hide*/
   .place.show .readmore.hide {
     display: block;
     margin-top: -5px; }
+
+/**umb_name:Place Opening Hours*/
   .place .openingHours {
     clear: both;
     margin-top: 10px;
     margin-bottom: 10px; }
+
+/**umb_name:Place Opening Hours Day*/
     .place .openingHours .day {
       color: #666;
       min-width: 70px;
       display: inline-block; }
+
+/**umb_name:Place Opening Time After*/
     .place .openingHours .time:after {
       display: inline-block;
       content: "|"; }
+
+/**umb_name:Place Opening Time After*/
     .place .openingHours .time:last-child:after {
       content: ""; }
 
+/**umb_name:Place Header*/
 .placeHeader {
   width: 100%;
   min-height: 27px;
@@ -932,20 +962,30 @@ a:active, a:link, a:visited {
   color: #333;
   text-transform: uppercase;
   position: relative; }
+
+/**umb_name:Place Header AddThis Toolbox*/
   .placeHeader .addthis_toolbox {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 11px;
     bottom: -3px; }
+
+/**umb_name:Place Header AddThis Toolbox Simple*/
   .placeHeader .addthis_toolbox.simple {
     bottom: -8px; }
+
+/**umb_name:Place Header Description*/
   .placeHeader .desc {
     width: 90%;
     min-height: 60px;
     float: left; }
+
     @media (max-width: 768px) {
+/**umb_name:Place Header Description 768px*/		
       .placeHeader .desc {
         -ms-word-wrap: break-word;
         word-wrap: break-word; } }
+
+/**umb_name:Place Header Description P*/
     .placeHeader .desc p {
       margin: 0;
       display: block;
@@ -954,6 +994,8 @@ a:active, a:link, a:visited {
       color: #666;
       padding: 7px 0 0 10px;
       line-height: 110%; }
+
+/**umb_name:Place Header Description Header*/
     .placeHeader .desc .hed {
       width: 100%;
       min-height: 27px;
@@ -965,6 +1007,8 @@ a:active, a:link, a:visited {
       line-height: 100%;
       color: #333;
       text-transform: uppercase; }
+
+/**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
       width: 83%;
       min-height: 28px;
@@ -972,117 +1016,77 @@ a:active, a:link, a:visited {
       overflow: hidden;
       text-transform: uppercase;
       font-size: 13px; }
+
       @media (max-width: 768px) {
+/**umb_name:Place Header Description Subheader 768px*/
         .placeHeader .desc .des {
           width: 100%; } }
+
       @media (max-width: 480px) {
+/**umb_name:Place Header Description Subheader 480px*/
         .placeHeader .desc .des {
           font-size: 11px; } }
+
+/**umb_name:Place Header Description Simple*/
   .placeHeader .desc.simple {
     min-height: 20px; }
+
+/**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {
     width: 10%;
     height: 47px;
     float: left;
     margin-top: 12px;
     border-radius: 2px; }
+
+/**umb_name:Place Header Map Category FA*/
     .placeHeader .mapCategory .fa {
       display: block;
       text-align: center; }
+
+/**umb_name:Place Header Map Category FA Before*/
       .placeHeader .mapCategory .fa:before {
         display: inline-block;
         font-size: 20px;
         line-height: 45px;
         color: white; }
+
+/**umb_name:Place Header Map Category Eating*/
     .placeHeader .mapCategory.Eating {
       background-color: #096073; }
+
+/**umb_name:Place Header Map Category Eating Before*/
       .placeHeader .mapCategory.Eating .fa:before {
         content: "\f0f5"; }
+
+/**umb_name:Place Header Map Category Drinking*/
     .placeHeader .mapCategory.Drinking {
       background-color: #DEB94C; }
+
+/**umb_name:Place Header Map Category Drinking Before*/
       .placeHeader .mapCategory.Drinking .fa:before {
         content: "\f000"; }
+
+/**umb_name:Place Header Map Category Culture*/
     .placeHeader .mapCategory.Culture {
       background-color: #7A0045; }
+
+/**umb_name:Place Header Map Category Culture Before*/
       .placeHeader .mapCategory.Culture .fa:before {
         content: "\f001"; }
+
+/**umb_name:Place Header Map Category Shopping*/
     .placeHeader .mapCategory.Shopping {
       background-color: #EF5C5B; }
+
+/**umb_name:Place Header Map Category Shopping Before*/
       .placeHeader .mapCategory.Shopping .fa:before {
         content: "\f07a"; }
+
+/**umb_name:Place Header Map Category Sights*/
     .placeHeader .mapCategory.Sights {
       background-color: #B0CD6E; }
+
+/**umb_name:Place Header Map Category Sights Before*/
       .placeHeader .mapCategory.Sights .fa:before {
         content: "\f18c"; }
-
-/**umb_name:Subheader*/
-h2{font-size: 200%;
-font-weight: bold;
-font-family: 'Open Sans Condensed', sans-serif;}
-
-/**umb_name:Header*/
-h1{font-size: 30pt;
-line-height: 30pt;
-font-weight: 700;
-letter-spacing: 1px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;}
-
-/**umb_name:Text*/
-.readmore{font-size: 14pt;
-line-height: 20pt;
-font-family: Georgia,Times,Times New Roman,serif;}
-
-/**umb_name:Info arrow*/
-.info{font-family: 'Open Sans', sans-serif;
-text-decoration:  none;
-font-style: inherit;
-color: #999;}
-
-/**umb_name:Page header*/
-article .desc .hed{font-size: 40pt;
-line-height: 40pt;
-font-weight: 700;
-letter-spacing: 5px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;}
-
-/**umb_name:Top navigation*/
-.topNavigation{font-size: 20pt;
-line-height: 15pt;
-font-weight: 700;
-letter-spacing: 3px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
-vertical-align: top;
-float: left;}
-
-/**umb_name:Navigation*/
-.navigation{margin-bottom: 12px;}
-
-/**umb_name:Image description*/
-.ImageDescription{font-size: 10pt;
-line-height: 10pt;
-font-weight: 300;
-font-family: 'Open Sans Condensed', sans-serif;
-text-align: center;}
-
-/**umb_name:Paragraph*/
-.readmore p{line-height: 20pt;}
-
-/**umb_name:div*/
-.readmore div{line-height: 20pt;}
-
-/**umb_name:Underoverskrift*/
-.placeHeader .desc .des{font-size: 14pt;
-line-height: 16pt;
-font-weight: 300;
-letter-spacing: 2px;
-font-family: 'Open Sans Condensed', sans-serif;}
-
-/**umb_name:Category*/
-.category-picker .category{font-size: 13pt;
-line-height: 100%;
-font-weight: 400;
-font-family: 'Open Sans', sans-serif;
-text-transform: uppercase;}

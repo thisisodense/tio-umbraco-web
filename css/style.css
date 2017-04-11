@@ -692,6 +692,12 @@ text-transform: uppercase;
 vertical-align: top;
 float: left;}
 
+/**umb_name:Top navigation Li Active*/
+        .topNavigation li.active a {
+            text-decoration: none;
+            color: black;
+        }
+
 /**umb_name:Top navigation A*/
     .topNavigation a {
         font-size: 20pt;

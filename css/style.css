@@ -850,6 +850,12 @@ float: left;}
             .top .desc .des {
                 width: 100%;
             }
+	
+/**umb_name:AddThis Drop Date Day 736px*/
+        .addthisevent-drop .date .day {
+            font-size: 28px;
+        }
+	
 }
 
 /**umb_name:Facebook Like Box*/

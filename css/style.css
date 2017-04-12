@@ -462,18 +462,17 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:AddThis*/
-.addthisevent-drop {
-    float: left;
-    display: inline-block;
-    position: relative;
-    width: 10%;
-    z-index: 500;
-    cursor: pointer;
-    background: #ffffff;
-    padding-bottom: 5px;
-    color: #333 !important;
-    font-size: 15px;
-}
+.addthisevent-drop{float: left;
+display: inline-block;
+position: relative;
+width: 10%;
+z-index: 500;
+cursor: pointer;
+background: #ffffff;
+padding-bottom: 5px;
+color: #333 !important;
+font-family: Georgia,Times,Times New Roman,serif;
+font-size: 15px;}
 
 /**umb_name:AddThis Sharing Toolbox*/
     .addthis_sharing_toolbox {

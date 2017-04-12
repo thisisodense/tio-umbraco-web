@@ -426,7 +426,7 @@ a:active, a:link, a:visited {
 .readmorelink, .readmorelink a:visited, .readmorelink a:link {
     float: right;
 	font-family: 'Open Sans', sans-serif;
-	padding-top:5px;
+	padding: 5px 0px 0px 0px;
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;

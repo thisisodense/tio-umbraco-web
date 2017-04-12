@@ -438,9 +438,12 @@ a:active, a:link, a:visited {
 .readlesslink, .readlesslink a:visited, .readlesslink a:link {
     float: right;
 	font-family: 'Open Sans', sans-serif;
+	padding: 5px 0px 2px 0px;
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 
 /**umb_name:Read More Link Hover*/

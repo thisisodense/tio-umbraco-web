@@ -462,7 +462,7 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:AddThis*/
-.addthisevent-drop{float: left;
+.addthisevent-drop {float: left;
 display: inline-block;
 position: relative;
 width: 10%;
@@ -470,6 +470,7 @@ z-index: 500;
 cursor: pointer;
 background: #ffffff;
 padding-bottom: 5px;
+font-family: Georgia,Times,Times New Roman,serif;
 color: #333 !important;
 font-size: 15px;}
 
@@ -479,17 +480,20 @@ font-size: 15px;}
         right: 0;
         bottom: 5px;
         font-size:10pt;
+		font-family: Georgia,Times,Times New Roman,serif;
         z-index:10000;
     }
     
 /**umb_name:AddThis Drop Hover*/
     .addthisevent-drop:hover {
         background-color: #f4f4f4;
+		font-family: Georgia,Times,Times New Roman,serif;
     }
 
 /**umb_name:AddThis Drop*/
     .addthisevent-drop:active {
         top: 1px;
+		font-family: Georgia,Times,Times New Roman,serif;
     }
 
 /**umb_name:AddThis Drop Date*/
@@ -498,6 +502,7 @@ font-size: 15px;}
         height: 60px;
         float: left;
         position: relative;
+		font-family: Georgia,Times,Times New Roman,serif;
     }
 
 /**umb_name:AddThis Drop Date Month*/
@@ -532,6 +537,7 @@ font-size: 15px;}
             background: #eaeaea;
             position: absolute;
             z-index: 100;
+			font-family: Georgia,Times,Times New Roman,serif;
             top: 5px;
             right: -3px;
         }
@@ -543,6 +549,7 @@ font-size: 15px;}
             background: #fff;
             position: absolute;
             z-index: 100;
+			font-family: Georgia,Times,Times New Roman,serif;
             top: 5px;
             right: -4px;
         }
@@ -550,6 +557,7 @@ font-size: 15px;}
 /**umb_name:AddThis Selected*/
 .addthisevent-selected {
     background-color: #f4f4f4;
+	font-family: Georgia,Times,Times New Roman,serif;
 }
 
 /**umb_name:AddThis Dropdown*/
@@ -560,6 +568,7 @@ font-size: 15px;}
     padding: 6px 0px 0px 0px;
     background: #fff;
     text-align: left;
+	font-family: Georgia,Times,Times New Roman,serif;
     display: none;
     margin-top: -2px;
     margin-left: -1px;
@@ -574,6 +583,7 @@ font-size: 15px;}
         display: block;
         line-height: 110%;
         background: #fff;
+		font-family: Georgia,Times,Times New Roman,serif;
         text-decoration: none;
         font-size: 14px;
         color: #6d84b4;
@@ -584,6 +594,7 @@ font-size: 15px;}
         .addthisevent_dropdown span:hover {
             background: #f4f4f4;
             color: #6d84b4;
+			font-family: Georgia,Times,Times New Roman,serif;
             text-decoration: none;
             font-size: 14px;
         }
@@ -601,6 +612,7 @@ font-size: 15px;}
 /**umb_name:AddThis Dropdown Copy X*/
 .addthisevent_dropdown .copyx {
     height: 21px;
+	font-family: Georgia,Times,Times New Roman,serif;
     display: block;
     position: relative;
     cursor: default;
@@ -613,6 +625,7 @@ font-size: 15px;}
     overflow: hidden;
     background: #e0e0e0;
     position: absolute;
+	font-family: Georgia,Times,Times New Roman,serif;
     z-index: 100;
     left: 10px;
     top: 9px;
@@ -631,6 +644,7 @@ font-size: 15px;}
     z-index: 101;
     line-height: 110%;
     background: #fff;
+	font-family: Georgia,Times,Times New Roman,serif;
     text-decoration: none;
     font-size: 10px;
     color: #cacaca;
@@ -639,6 +653,7 @@ font-size: 15px;}
 /**umb_name:AddThis Dropdown FRS Hover*/
     .addthisevent_dropdown .frs:hover {
         color: #6d84b4;
+		font-family: Georgia,Times,Times New Roman,serif;
     }
 
 /**umb_name:AddThis Hidden*/
@@ -649,6 +664,7 @@ font-size: 15px;}
 /**umb_name:AddThis Counter Bubble Style*/
 .addthis_counter.addthis_bubble_style {
     font-size: 11px;
+	font-family: Georgia,Times,Times New Roman,serif;
 }
 
 /**umb_name:AddThis Toolbox*/
@@ -657,6 +673,7 @@ font-size: 15px;}
     right: 0px;
     bottom: 5px;
     z-index:5000;
+	font-family: Georgia,Times,Times New Roman,serif;
 }
 
 /**umb_name:Facebook Like*/

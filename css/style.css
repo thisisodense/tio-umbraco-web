@@ -372,8 +372,7 @@ footer {
 
 /**umb_name:Writer of the Week*/
 .writerOfWeek {
-    font-style: italic;
-	margin: 0px 10px 0px 0px;
+    font-style: inherit;
 }
 
 /**umb_name:Writer Title*/

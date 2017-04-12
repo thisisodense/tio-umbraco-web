@@ -48,7 +48,7 @@ a:hover {
 }
 
 /**umb_name:Left link*/
-a .left {
+a:link .left, a:active .left, a:visited .left {
 	font-family: 'Open Sans', sans-serif;
 	padding: 5px 0px 2px 0px;
 	text-transform: uppercase;

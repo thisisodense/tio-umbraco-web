@@ -55,6 +55,7 @@ a:hover {
 /**umb_name:Right*/
 .right {
     float: right;
+	margin: 0 0 0 10px;
 }
 
 /**umb_name:List*/

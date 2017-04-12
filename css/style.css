@@ -474,20 +474,6 @@ font-family: Georgia,Times,Times New Roman,serif;
 color: #333 !important;
 font-size: 15px;}
 
-/**umb_name:AddThis Span*/
-.addthisevent-drop span {float: left;
-display: inline-block;
-position: relative;
-width: 10%;
-z-index: 500;
-cursor: pointer;
-background: #ffffff;
-padding-bottom: 5px;
-font-family: Georgia,Times,Times New Roman,serif;
-color: #333 !important;
-font-size: 15px;}
-
-
 /**umb_name:AddThis Sharing Toolbox*/
     .addthis_sharing_toolbox {
         position: absolute;

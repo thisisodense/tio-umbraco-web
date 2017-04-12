@@ -318,6 +318,13 @@ img.articleImg.writerImg {
     margin-right: auto;
 }
 
+/**umb_name:Info Arrow*/
+.info arrow {
+    margin: 0 10px 0 10px;
+}
+
+	
+
 /**umb_name:Info*/
 .info, .info a:visited, .info a:link, .readmore div,.readmore div a:visited, .readmore div a:link {
     text-decoration: none;

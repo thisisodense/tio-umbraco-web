@@ -463,7 +463,7 @@ a:active, a:link, a:visited {
 		text-decoration: none;	
     }
 
-/**umb_name:Read More Link Hover*/
+/**umb_name:Read More Div Hover*/
 .readmore div a:hover {
     color: #00c8ab;
 }

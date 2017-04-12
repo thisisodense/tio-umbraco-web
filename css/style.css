@@ -36,6 +36,7 @@ a:link, a:active, a:visited {
     text-decoration: none;
     color: black;
 	font-family: 'Open Sans', sans-serif;
+	color: #999;
 }
 
 /**umb_name:A Hover*/

@@ -474,6 +474,12 @@ font-family: Georgia,Times,Times New Roman,serif;
 color: #333 !important;
 font-size: 15px;}
 
+/**umb_name:AddThis*/
+#atedrop1 {
+font-family: Georgia,Times,Times New Roman,serif;
+}
+
+
 /**umb_name:AddThis Sharing Toolbox*/
     .addthis_sharing_toolbox {
         position: absolute;

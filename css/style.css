@@ -300,15 +300,8 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Info*/
-.info {
+.info, .info a:visited, .info a:link {
 	font-style: none;
-    text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	color: #999;
-}
-
-/**umb_name:Info Link*/
-.info a:visited, .info a:link {
     text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	color: #999;

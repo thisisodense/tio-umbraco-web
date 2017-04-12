@@ -373,6 +373,9 @@ footer {
 /**umb_name:Writer of the Week*/
 .writerOfWeek {
     font-style: inherit;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
 }
 
 /**umb_name:Writer Title*/

@@ -456,8 +456,20 @@ a:active, a:link, a:visited {
     position: relative;
 }
 
-/**umb_name:Read More Div P*/
-.readmore div, .readmore p {
+/**umb_name:Read More Div*/
+.readmore div {
+        line-height: 20pt;
+		font-size: 13pt;
+		text-decoration: none;	
+    }
+
+/**umb_name:Read More Link Hover*/
+.readmore div a:hover {
+    color: #00c8ab;
+}
+
+/**umb_name:Read More P*/
+.readmore p {
         line-height: 20pt;
 		font-size: 13pt;
     }

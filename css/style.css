@@ -457,7 +457,7 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Read More Div*/
-.readmore div {
+.readmore div,.readmore div a:visited, .readmore div a:link {
         line-height: 20pt;
 		font-size: 13pt;
 		text-decoration: none;	

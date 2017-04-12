@@ -431,6 +431,7 @@ a:active, a:link, a:visited {
 	font-style: inherit;
 	text-transform: uppercase;
 	font-weight: 600;
+	letter-spacing: 2px;
 }
 
 /**umb_name:Read Less Link*/

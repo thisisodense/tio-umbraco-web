@@ -450,7 +450,7 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Link to event Hover*/
-.left a:link {
+.left a:visited, .left a:link {
     color: #00c8ab;
 }
 

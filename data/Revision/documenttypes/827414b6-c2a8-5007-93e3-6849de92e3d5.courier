@@ -116,6 +116,26 @@
             <TabCaption>Content</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
+            <UniqueId>e2c34163-73aa-472a-a964-81224aae267a</UniqueId>
+            <Alias>fotograf</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Fotograf</Name>
+            <SortOrder>13</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e70f1f74-edd9-4740-9d52-5ac80f757d64</UniqueId>
+            <Alias>fotografURL</Alias>
+            <DataTypeDefinitionId>9e47630e-c2df-431c-ba01-c4c65148b98d</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>FotografURL</Name>
+            <SortOrder>14</SortOrder>
+            <TabCaption>Content</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
             <UniqueId>a1410ce5-d1f3-4757-bda0-50486430a8cc</UniqueId>
             <Alias>guestWriter</Alias>
             <DataTypeDefinitionId>a62c9ce4-742a-4b37-ba5e-ddd64e584ef4</DataTypeDefinitionId>

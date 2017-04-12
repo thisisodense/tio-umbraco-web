@@ -1,0 +1,21 @@
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>FestivalRepositoryTest1</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>FestivalRepositoryTest</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/FestivalRepositoryTest1.cshtml</ExtractToPath>
+            <Name>~/views/FestivalRepositoryTest1.cshtml</Name>
+            <PackageFromPath>~/views/FestivalRepositoryTest1.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/FestivalRepositoryTest1.cshtml</TemporaryStoragePath>
+        </Resource>
+    </Resources>
+    <Alias>FestivalRepositoryTest1</Alias>
+    <MasterPagePath>~/masterpages/FestivalRepositoryTest1.master</MasterPagePath>
+    <ParentTemplateId>0</ParentTemplateId>
+    <Id>2504</Id>
+</Template>

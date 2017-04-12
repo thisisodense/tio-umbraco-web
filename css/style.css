@@ -31,6 +31,18 @@ color: #232323;
 background-color: #fff;
 font-family: Georgia,Times,Times New Roman,serif;}
 
+/**umb_name:A*/
+a:link, a:active, a:visited {
+    text-decoration: none;
+}
+
+
+/**umb_name:A Hover*/
+a:hover {
+    color: #00c8ab;
+}
+
+
 /**umb_name:Left*/
 .left {
     float: left;
@@ -448,12 +460,6 @@ a:active, a:link, a:visited {
 .readmorelink a:hover, .readlesslink a:hover {
     color: #00c8ab;
 }
-
-/**umb_name:Link to event Hover*/
-.left a:visited, .left a:link {
-    color: #00c8ab;
-}
-
 
 /**umb_name:Links Active Visited*/
 .readmore {

@@ -1,0 +1,131 @@
+﻿@using TIO.Core.Models;
+@using TIO.Mvc.Core;
+@using Library.Tools;
+@using Const = TIO.Core.Models;
+
+@inherits BaseViewPage<ArticleModel>
+
+
+
+@helper GetWriterName()
+{
+    if (!Model.IsDetails)
+    {
+            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
+    }
+}
+
+@helper GetTranslatorName()
+{
+    if (Model.TranslatorId > 0 && Site.IsEnglish)
+    {
+            <span>| @Umbraco.GetDictionaryValue("Oversat af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.TranslatorId, name = Model.TranslatorName.ToSeoUrl() })">@Model.TranslatorName</a></span>
+    }
+}
+
+<article>
+    <div class="top">
+        <div class="addthis_sharing_toolbox"
+             data-title="@Model.Headline"
+             data-media="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.Image)"
+             data-url="@Url.Action(Const.Constants.Controllers.Article.NAME,
+                                         Const.Constants.Controllers.Article.Actions.ARTICLE,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Headline.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+             addthis:url="@Url.Action(Const.Constants.Controllers.Article.NAME,
+                                         Const.Constants.Controllers.Article.Actions.ARTICLE,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Headline.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+             addthis:title="@Model.Headline">
+        </div>
+        <div class="desc">
+            <strong class="hed">@Model.Headline</strong>
+        </div>
+        <br style="clear:both" />
+    </div>
+
+    <img class="articleImg" src="@Model.Image" alt="@Model.Headline" title="@Model.Headline" />
+
+    <div class="info arrow">
+        @Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) 
+        @GetWriterName()
+        @GetTranslatorName()
+    </div>
+
+    @if (!Model.IsDetails)
+    {
+        <div class="readmorelink">
+            <a href="javascript:void(0)">@Umbraco.GetDictionaryValue("Læs mere")</a>
+        </div>
+    }
+    <br style="clear:both;" />
+    @if ((Site.IsEnglish && !string.IsNullOrWhiteSpace(Model.Summary)) || !Site.IsEnglish)
+    {
+        <div class="readmore @(Model.IsDetails ? "" : "hide")">
+            @Html.Raw(Model.Summary)
+
+            <div class="fb-comments"
+                 data-width="714px"
+                 data-height="100"
+                 data-href="@Url.Action(Const.Constants.Controllers.Article.NAME,
+                                         Const.Constants.Controllers.Article.Actions.ARTICLE,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Headline.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)"
+                 data-numposts="5"
+                 data-colorscheme="light">
+            </div>
+            <br style="clear:both" /><br />
+
+            <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Article.NAME,
+                                         Const.Constants.Controllers.Article.Actions.ARTICLE,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Headline.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
+
+            @if (Model.IsDetails)
+            {
+                <a class="right" href="\">@Umbraco.GetDictionaryValue("Til forsiden")</a>
+            }
+            else
+            {
+                <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
+            }
+
+            <br style="clear:both" />
+        </div>
+    }
+    else
+    {
+        if (Model.IsDetails)
+        {
+            <div class="readmore @(Model.IsDetails ? "" : "hide")">
+                <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Article.NAME,
+                                         Const.Constants.Controllers.Article.Actions.ARTICLE,
+                                         new
+                                         {
+                                           id = Model.Id,
+                                           name = Model.Headline.ToSeoUrl()
+                                         },
+                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
+                <a class="right" href="\">@Umbraco.GetDictionaryValue("Til forsiden")</a>
+                <br style="clear:both" />
+            </div>
+        }
+    }
+</article>
+<hr />

@@ -1,0 +1,25 @@
+﻿@using System.Web.Optimization;
+@using Models = TIO.Core.Models
+@using Library.Tools
+
+@inherits  TIO.Mvc.Core.BaseViewPage<TIO.Core.Models.ArticlesModel>
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<nav class="category-picker">
+    @foreach(var tag in Model.Tags)
+    {
+        @Html.ActionLink(tag.Text, "articles", "articles", 
+               new { tagId = tag.Id, tag = tag.Text.ToSeoUrl() }, 
+               new { @class = "category" })
+
+        if (Model.Tags.Last().GetHashCode() != tag.GetHashCode())
+        {
+            <text>//</text>
+        }
+}
+</nav>
+<hr />
+@Html.DisplayFor(model => model.Articles)

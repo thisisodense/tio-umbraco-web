@@ -479,10 +479,11 @@ a:active, a:link, a:visited {
 		text-decoration: underline;
     }
 
-/**umb_name:Read More P Link*/
+/**umb_name:Read More P Hover*/
 .readmore p a:hover {
         font-family: Georgia,Times,Times New Roman,serif;
 		text-decoration: underline;
+	    color: #00c8ab;
     }
 
 /**umb_name:Read More Hide*/

@@ -423,19 +423,16 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Read More Link*/
-.readmorelink {
+.readmorelink, .readmorelink a:visited, .readmorelink a:link, .readlesslink, .readlesslink a:visited, .readlesslink a:link, {
     float: right;
 	font-family: 'Open Sans', sans-serif;
 	text-decoration:  none;
 	font-style: inherit;
 }
 
-/**umb_name:Read Less Link*/
-.readlesslink {
-    float: right;
-	font-family: 'Open Sans', sans-serif;
-	text-decoration:  none;
-	font-style: inherit;
+/**umb_name:Info Hover*/
+.readmorelink a:hover, .readlesslink a:hover {
+    text-decoration: underline;
 }
 
 /**umb_name:Links Active Visited*/

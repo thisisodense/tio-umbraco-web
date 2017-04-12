@@ -788,11 +788,6 @@ float: left;}
     .top .desc .des {
         font-size: 13px;
     }
-
-/**umb_name:AddThis Drop Date Day 480px*/
-        .addthisevent-drop .date .day {
-            font-size: 25px;
-        }
 	
 /**umb_name:Writer 480px*/
     .writer {
@@ -800,63 +795,63 @@ float: left;}
     }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
 	
-/**umb_name:Writer 736px*/
+/**umb_name:Writer 768px*/
     .writer {
         width:50%;
     }
 	
-/**umb_name:Logo 736px*/
+/**umb_name:Logo 768px*/
     .logo {
         width: 180px;
     }
 
-/**umb_name:AddThis Display None 736px*/
+/**umb_name:AddThis Display None 768px*/
     .addthis_sharing_toolbox {
         display: none;
     }
 
-/**umb_name:Content 736px*/
+/**umb_name:Content 768px*/
     .content {
         width: auto;
         margin: 0 10px 0 10px;
     }
 
-/**umb_name:Tip Display None 736px*/
+/**umb_name:Tip Display None 768px*/
     .tip {
         display: none;
     }
 
-/**umb_name:Info 736px*/
+/**umb_name:Info 768px*/
     .info {
         font-size: 12px;
         margin: 5px 0;
     }
 
-/**umb_name:Facebook Comments 736px*/
+/**umb_name:Facebook Comments 768px*/
     .fb-comments {
         display: none !important;
     }
 
-/**umb_name:Top 736px*/
+/**umb_name:Top 768px*/
     .top {
         padding-bottom: 5px;
         margin-bottom: 5px;
     }
 
-/**umb_name:Top Description 736px*/
+/**umb_name:Top Description 768px*/
         .top .desc {
             width: 90%;
             word-wrap: break-word;
         }
 
-/**umb_name:Top Description Subheader 736px*/
+/**umb_name:Top Description Subheader 768px*/
             .top .desc .des {
                 width: 100%;
             }
 	
-/**umb_name:AddThis Drop Date Day 736px*/
+/**umb_name:AddThis Drop Date Day 768px*/
         .addthisevent-drop .date .day {
             font-size: 25px;
         }
@@ -894,8 +889,8 @@ text-decoration: none;}
     .category-picker .category.current {
       text-decoration: underline; }
 
-    @media (max-width: 736px) {
-/**umb_name:Category Picker Category 736px*/
+    @media (max-width: 768px) {
+/**umb_name:Category Picker Category 768px*/
       .category-picker .category {
         font-size: 12pt; } }
 
@@ -1010,8 +1005,8 @@ text-decoration: none;}
     min-height: 60px;
     float: left; }
 
-    @media (max-width: 736px) {
-/**umb_name:Place Header Description 736px*/		
+    @media (max-width: 768px) {
+/**umb_name:Place Header Description 768px*/		
       .placeHeader .desc {
         -ms-word-wrap: break-word;
         word-wrap: break-word; } }
@@ -1048,8 +1043,8 @@ text-decoration: none;}
       text-transform: uppercase;
       font-size: 13px; }
 
-      @media (max-width: 736px) {
-/**umb_name:Place Header Description Subheader 736px*/
+      @media (max-width: 768px) {
+/**umb_name:Place Header Description Subheader 768px*/
         .placeHeader .desc .des {
           width: 100%; } }
 

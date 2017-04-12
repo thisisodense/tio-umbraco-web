@@ -728,7 +728,7 @@ font-size: 15px;}
 line-height: 15pt;
 font-weight: 700;
 letter-spacing: 3px;
-font-family: 'Open Sans Condensed', sans-serif !important;
+font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;
 vertical-align: top;
 float: left;}
@@ -748,6 +748,7 @@ float: left;}
     .topNavigation a {
         font-size: 20pt;
         text-transform: uppercase;
+		font-family: 'Open Sans Condensed', sans-serif;
         color: darkgrey;
         text-decoration: none;
     }

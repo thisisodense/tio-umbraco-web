@@ -444,6 +444,7 @@ a:active, a:link, a:visited {
 /**umb_name:Read More Link Hover*/
 .readmorelink a:hover, .readlesslink a:hover {
     color: #00c8ab;
+	font-weight: 700;
 }
 
 /**umb_name:Links Active Visited*/

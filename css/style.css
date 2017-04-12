@@ -439,7 +439,8 @@ a:active, a:link, a:visited {
 
 /**umb_name:Read More Div P*/
 .readmore div, .readmore p {
-        line-height: 12pt;
+        line-height: 20pt;
+	font-size: 14pt;
     }
 
 /**umb_name:Read More Hide*/

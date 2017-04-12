@@ -305,6 +305,8 @@ img.articleImg.writerImg {
 /**umb_name:Info Link*/
 .info a:visited, .info a:link {
     text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
 }
 
 /**umb_name:Info Hover*/

@@ -53,9 +53,9 @@ a:hover {
 }
 
 /**umb_name:Right*/
-.right {
+.right, .right a:active, .right a:visible, .right a:visited {
     float: right;
-	padding: 0px 10px 0px 0px !important;
+	padding: 0px 10px 0px 0px;
 }
 
 /**umb_name:List*/

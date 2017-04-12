@@ -300,18 +300,16 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Info*/
-.info, .info a:visited, .info a:link {
+.info, .info a:visited, .info a:link, .readmore div,.readmore div a:visited, .readmore div a:link {
     text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
 }
 
 /**umb_name:Info Hover*/
-.info a:hover {
+.info a:hover, .readmore div a:hover {
     color: #00c8ab;
 }
-
-
 
 /**umb_name:Flag*/
 .flag {
@@ -454,18 +452,6 @@ a:active, a:link, a:visited {
 /**umb_name:Links Active Visited*/
 .readmore {
     position: relative;
-}
-
-/**umb_name:Read More Div*/
-.readmore div,.readmore div a:visited, .readmore div a:link {
-        line-height: 20pt;
-		font-size: 13pt;
-		text-decoration: none;	
-    }
-
-/**umb_name:Read More Div Hover*/
-.readmore div a:hover {
-    color: #00c8ab;
 }
 
 /**umb_name:Read More P*/

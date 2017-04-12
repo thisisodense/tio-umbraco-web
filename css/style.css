@@ -508,7 +508,7 @@ font-size: 15px;}
             font-size: 11px;
             color: #bf5549;
             font-weight: bold;
-			font-family: Georgia,Times,Times New Roman,serif;
+			font-family: Georgia,Times,Times New Roman,serif !important;
             line-height: 110%;
             text-transform: uppercase;
         }
@@ -520,7 +520,7 @@ font-size: 15px;}
             padding: 0px 0px 8px 0px;
             font-size: 30px;
             font-weight: bold;
-			font-family: Georgia,Times,Times New Roman,serif;
+			font-family: Georgia,Times,Times New Roman,serif !important;
             color: #333;
             line-height: 100%;
         }

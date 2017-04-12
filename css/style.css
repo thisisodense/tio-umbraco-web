@@ -716,8 +716,8 @@ font-size: 15px;}
     }
 
 /**umb_name:Navigation*/
-.navigation{margin-bottom: 12px;
-margin-top: 15px;}
+.navigation{
+        margin: 15px 10px 12px 10px;}
 
 /**umb_name:Top navigation*/
 .topNavigation{font-size: 20pt;

@@ -789,6 +789,11 @@ float: left;}
         font-size: 13px;
     }
 
+/**umb_name:AddThis Drop Date Day 480px*/
+        .addthisevent-drop .date .day {
+            font-size: 25px;
+        }
+	
 /**umb_name:Writer 480px*/
     .writer {
         width:100% !important;

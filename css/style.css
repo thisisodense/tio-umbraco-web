@@ -457,8 +457,13 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Read More Link Hover*/
-.readmorelink a:hover, .readlesslink a:hover {
-    color: #00c8ab !important;
+.readmorelink a:hover {
+    color: #00c8ab;
+}
+
+/**umb_name:Read Less Link Hover*/
+.readlesslink a:hover {
+    color: #00c8ab;
 }
 
 /**umb_name:Links Active Visited*/

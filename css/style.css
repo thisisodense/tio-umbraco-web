@@ -51,8 +51,6 @@ a:hover {
 a .left {
 	font-family: 'Open Sans', sans-serif;
 	padding: 5px 0px 2px 0px;
-	text-decoration:  none;
-	font-style: inherit;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;

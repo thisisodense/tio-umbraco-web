@@ -428,6 +428,7 @@ a:active, a:link, a:visited {
 	font-family: 'Open Sans', sans-serif;
 	text-decoration:  none;
 	font-style: inherit;
+	text-transform: uppercase;
 }
 
 /**umb_name:Read Less Link*/
@@ -436,6 +437,7 @@ a:active, a:link, a:visited {
 	font-family: 'Open Sans', sans-serif;
 	text-decoration:  none;
 	font-style: inherit;
+	text-transform: uppercase;
 }
 
 /**umb_name:Read More Link Hover*/

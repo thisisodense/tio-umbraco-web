@@ -430,6 +430,7 @@ a:active, a:link, a:visited {
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 /**umb_name:Read Less Link*/
@@ -444,7 +445,6 @@ a:active, a:link, a:visited {
 /**umb_name:Read More Link Hover*/
 .readmorelink a:hover, .readlesslink a:hover {
     color: #00c8ab;
-	font-weight: 700;
 }
 
 /**umb_name:Links Active Visited*/

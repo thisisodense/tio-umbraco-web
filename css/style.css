@@ -476,7 +476,7 @@ font-size: 15px;}
 
 /**umb_name:Add This Date*/
 div .addthisevent-drop #atedrop1 {
-    font-family: font-family: Georgia,Times,Times New Roman,serif;
+    font-family: Georgia,Times,Times New Roman,serif;
 }
 
 
@@ -526,6 +526,7 @@ div .addthisevent-drop #atedrop1 {
             padding: 0px 0px 8px 0px;
             font-size: 30px;
             font-weight: bold;
+			
             color: #333;
             line-height: 100%;
         }

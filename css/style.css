@@ -34,6 +34,7 @@ font-family: Georgia,Times,Times New Roman,serif;}
 /**umb_name:A*/
 a:link, a:active, a:visited {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -426,11 +427,6 @@ footer {
     padding-right:5px;
     float:right;
  }
-
-/**umb_name:A Link Active Visited*/
-a:active, a:link, a:visited {
-    color: black;
-}
 
 /**umb_name:Read More Link*/
 .readmorelink, .readmorelink a:visited, .readmorelink a:link {

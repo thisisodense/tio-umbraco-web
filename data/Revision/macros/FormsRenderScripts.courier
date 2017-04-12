@@ -1,16 +1,23 @@
-﻿<Macro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>FormsRenderScripts</Id>
         <ProviderId>2ab40e30-e292-11df-85ca-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>FormsRenderScripts</Name>
+    <Name>Render Forms Scripts</Name>
     <ItemType>Item</ItemType>
-    <Resources />
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</ExtractToPath>
+            <Name>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</Name>
+            <PackageFromPath>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</TemporaryStoragePath>
+        </Resource>
+    </Resources>
     <Alias>FormsRenderScripts</Alias>
     <CacheByPage>false</CacheByPage>
     <CachePersonalized>false</CachePersonalized>
-    <DLRScript />
+    <DLRScript>~/Views/MacroPartials/RenderUmbracoFormScripts.cshtml</DLRScript>
     <Properties />
     <RefreshRate>0</RefreshRate>
     <RenderContent>true</RenderContent>

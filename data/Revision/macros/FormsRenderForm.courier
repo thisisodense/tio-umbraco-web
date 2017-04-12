@@ -1,18 +1,25 @@
-﻿<Macro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies />
     <ItemId>
         <Id>FormsRenderForm</Id>
         <ProviderId>2ab40e30-e292-11df-85ca-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>FormsRenderForm</Name>
+    <Name>Insert form</Name>
     <ItemType>Item</ItemType>
-    <Resources />
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/Views/MacroPartials/InsertUmbracoForm.cshtml</ExtractToPath>
+            <Name>~/Views/MacroPartials/InsertUmbracoForm.cshtml</Name>
+            <PackageFromPath>~/Views/MacroPartials/InsertUmbracoForm.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/Views/MacroPartials/InsertUmbracoForm.cshtml</TemporaryStoragePath>
+        </Resource>
+    </Resources>
     <Alias>FormsRenderForm</Alias>
     <CacheByPage>false</CacheByPage>
     <CachePersonalized>false</CachePersonalized>
-    <DLRScript />
+    <DLRScript>~/Views/MacroPartials/InsertUmbracoForm.cshtml</DLRScript>
     <Properties />
     <RefreshRate>0</RefreshRate>
     <RenderContent>true</RenderContent>
-    <UseInEditor>false</UseInEditor>
+    <UseInEditor>true</UseInEditor>
 </Macro>

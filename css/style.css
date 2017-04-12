@@ -471,7 +471,7 @@ cursor: pointer;
 background: #ffffff;
 padding-bottom: 5px;
 color: #333 !important;
-font-family: Georgia,Times,Times New Roman,serif;
+font-family: Georgia,Times,Times New Roman,serif !important;
 font-size: 15px;}
 
 /**umb_name:AddThis Sharing Toolbox*/

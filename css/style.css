@@ -473,13 +473,6 @@ padding-bottom: 5px;
 color: #333 !important;
 font-size: 15px;}
 
-
-/**umb_name:Add This Date*/
-div .addthisevent-drop #atedrop1 {
-    font-family: Georgia,Times,Times New Roman,serif;
-}
-
-
 /**umb_name:AddThis Sharing Toolbox*/
     .addthis_sharing_toolbox {
         position: absolute;

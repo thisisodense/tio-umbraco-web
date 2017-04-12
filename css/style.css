@@ -473,7 +473,7 @@ a:active, a:link, a:visited {
 		padding: 10px 0 10px 0;
     }
 
-/**umb_name:Read More P*/
+/**umb_name:Read More P Link*/
 .readmore p a:link, .readmore p a:active, .readmore p a:visited {
         font-family: Georgia,Times,Times New Roman,serif;
 		text-decoration: underline;

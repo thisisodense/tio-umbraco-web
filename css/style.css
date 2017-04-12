@@ -70,7 +70,7 @@ article {
 
 /**umb_name:Article Image*/
 article img {
-        max-width: 714px;
+        max-width: 630px;
         width: 100%;
     }
 
@@ -169,7 +169,7 @@ article img {
 
 /**umb_name:Page size*/
 .content {
-    width: 714px;
+    width: 630px;
     margin-left: auto;
     margin-right: auto;
     min-height: 500px;
@@ -885,7 +885,7 @@ text-decoration: none;}
 
 /**umb_name:Target Id*/
 #target {
-  max-width: 714px; }
+  max-width: 630px; }
 
 /**umb_name:Place*/
 .place {

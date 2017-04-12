@@ -449,6 +449,12 @@ a:active, a:link, a:visited {
     color: #00c8ab;
 }
 
+/**umb_name:Link to event Link Hover*/
+.left a:hover {
+    color: #00c8ab;
+}
+
+
 /**umb_name:Links Active Visited*/
 .readmore {
     position: relative;

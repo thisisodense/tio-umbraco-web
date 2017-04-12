@@ -423,7 +423,15 @@ a:active, a:link, a:visited {
 }
 
 /**umb_name:Read More Link*/
-.readmorelink, .readmorelink a:visited, .readmorelink a:link, .readlesslink, .readlesslink a:visited, .readlesslink a:link, {
+.readmorelink, .readmorelink a:visited, .readmorelink a:link {
+    float: right;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration:  none;
+	font-style: inherit;
+}
+
+/**umb_name:Read Less Link*/
+.readlesslink, .readlesslink a:visited, .readlesslink a:link {
     float: right;
 	font-family: 'Open Sans', sans-serif;
 	text-decoration:  none;

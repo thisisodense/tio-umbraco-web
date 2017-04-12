@@ -443,7 +443,7 @@ a:active, a:link, a:visited {
 
 /**umb_name:Read More Link Hover*/
 .readmorelink a:hover, .readlesslink a:hover {
-    text-decoration: underline;
+    color: #00c8ab;
 }
 
 /**umb_name:Links Active Visited*/

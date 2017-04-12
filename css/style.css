@@ -470,16 +470,18 @@ a:active, a:link, a:visited {
 .readmore p {
         line-height: 20pt;
 		font-size: 13pt;
+		padding: 10px 0 10px 0;
+    }
+
+/**umb_name:Read More P*/
+.readmore p a:link, .readmore p a:active, .readmore p a:visited {
+        font-family: Georgia,Times,Times New Roman,serif;
+		text-decoration: underline;
     }
 
 /**umb_name:Read More Hide*/
     .readmore.hide {
         display: none;
-    }
-
-/**umb_name:Read More P*/
-    .readmore p {
-        padding: 10px 0 10px 0;
     }
 
 /**umb_name:First Article*/

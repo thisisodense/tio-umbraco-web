@@ -728,7 +728,7 @@ font-size: 15px;}
 line-height: 15pt;
 font-weight: 700;
 letter-spacing: 3px;
-font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif !important;
 text-transform: uppercase;
 vertical-align: top;
 float: left;}

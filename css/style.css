@@ -430,7 +430,7 @@ a:active, a:link, a:visited {
 	font-style: inherit;
 }
 
-/**umb_name:Info Hover*/
+/**umb_name:Read More Link Hover*/
 .readmorelink a:hover, .readlesslink a:hover {
     text-decoration: underline;
 }

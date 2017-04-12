@@ -308,7 +308,7 @@ img.articleImg.writerImg {
 
 /**umb_name:Info Hover*/
 .info a:hover {
-    text-decoration: underline;
+    color: #00c8ab;
 }
 
 

@@ -156,10 +156,11 @@ article img {
 /**umb_name:Description Subheader*/
         article .desc .des {
             width: 83%;
-            min-height: 28px;
+            min-height: 20px;
             display: block;
             overflow: hidden;
             text-transform: uppercase;
+			padding: 0px 0px 5px 0px;
 			font-size: 13pt;
 			line-height: 100%;
 			font-weight: 300;

@@ -17,7 +17,7 @@
   {&#xD;
     "alias": "locationCrop",&#xD;
     "width": 680,&#xD;
-    "height": 280&#xD;
+    "height": 300&#xD;
   },&#xD;
   {&#xD;
     "alias": "writerCrop",&#xD;
@@ -27,7 +27,7 @@
   {&#xD;
     "alias": "recommendationCrop",&#xD;
     "width": 680,&#xD;
-    "height": 280&#xD;
+    "height": 300&#xD;
   },&#xD;
   {&#xD;
     "alias": "facebookCrop",&#xD;

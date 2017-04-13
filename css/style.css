@@ -777,10 +777,6 @@ float: left;}
         color: darkgrey;
         text-decoration: none;
     }
-/**umb_name:Top navigation A Hover*/
-        .topNavigation a:hover {
-            color: black;
-        }
 
 /**umb_name:Top navigation A First Child*/
 .topNavigation a:first-child {margin-right: 0px;}

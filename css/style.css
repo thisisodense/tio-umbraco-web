@@ -299,7 +299,8 @@ h3 {
 
 /**umb_name:Article Image*/
 img.articleImg {
-    max-width: 100%;
+	max-width: 680px;
+    width: 100%;
     margin: 0 10px 10px 10px;
     display: inline !important;
 }
@@ -315,6 +316,8 @@ img.articleImg.writerImg {
 /**umb_name:Content Image*/
 .content img {
     display: block;
+	max-width: 680px;
+    width: 100%;
     margin: 0 10px 10px 10px;
 }
 

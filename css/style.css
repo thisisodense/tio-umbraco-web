@@ -761,12 +761,12 @@ text-align: center;
 
 /**umb_name:Facebook Comments*/
 .fb-comments {
-    max-width: 660px !important;
+	padding-left: 0px !important;
 }
 
 /**umb_name:Facebook Comments Span*/
     .fb-comments > span {
-    max-width: 660px !important;
+	padding-left: 0px !important;
     }
 
 /**umb_name:Navigation*/

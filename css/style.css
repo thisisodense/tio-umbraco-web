@@ -763,7 +763,7 @@ text-align: center;
 }
 
 /**umb_name:Facebook Comments Events*/
-.readmore div fb-comments fb_iframe_widget {
+.readmore div > fb-comments > fb_iframe_widget > span {
     display: none !important;
 }
 

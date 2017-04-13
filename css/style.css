@@ -756,6 +756,7 @@ text-align: center;
 /**umb_name:Facebook Comments iFrame*/
 .fb-comments iframe {
     max-width: 668px !important;
+	padding-left: 0px !important;
 }
 
 /**umb_name:Facebook Comments*/

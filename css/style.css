@@ -755,18 +755,17 @@ text-align: center;
 
 /**umb_name:Facebook Comments iFrame*/
 .fb-comments iframe {
-    width: 100%;
+    max-width: 660px !important;
 }
 
 /**umb_name:Facebook Comments*/
 .fb-comments {
-    width: 100%;
-	margin-right: 10px;
+    max-width: 660px !important;
 }
 
 /**umb_name:Facebook Comments Span*/
     .fb-comments > span {
-        width: 100%;
+    max-width: 660px !important;
     }
 
 /**umb_name:Navigation*/

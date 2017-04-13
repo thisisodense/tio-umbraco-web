@@ -70,7 +70,7 @@
             }
             
             <a class="flag" href="@newLangUrl">
-                <img src="@Url.Content("~/Content/images/" + (Site.IsEnglish ? "dk" : "en") + ".png")" />
+                <img src="@Url.Content("http://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
             </a>
             <ul class="topNavigation">
                 <li class="@Html.IsActive(Url.Action("Recommendations", "Recommendations"))"><a href="@Url.Action("Recommendations", "Recommendations")">@Umbraco.GetDictionaryValue("EVENTS")</a></li>

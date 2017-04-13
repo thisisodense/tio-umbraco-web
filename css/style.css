@@ -479,13 +479,15 @@ footer {
 .readmorelink, .readmorelink a:visited, .readmorelink a:link, .readlesslink, .readlesslink a:visited, .readlesslink a:link {
     float: right;
 	font-family: 'Open Sans', sans-serif;
-	padding: 5px 0px 2px 0px;
+	padding: 6px 3px 6px 3px;
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: black;
+	color: white;
+	text-align: center;
+	background: #00c8ab;
 }
 
 /**umb_name:Links Active Visited*/

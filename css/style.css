@@ -790,7 +790,7 @@ float: left;}
     }
 
 /**umb_name:Article Image 480px*/
-article img {
+article img, img.articleImg {
         margin:0 0 0 0;
     }
 	

@@ -476,7 +476,7 @@ footer {
  }
 
 /**umb_name:Read More Link*/
-.readmorelink, .readmorelink a:visited, .readmorelink a:link, .readlesslink, .readlesslink a:visited, .readlesslink a:link {
+.readmorelink, .readlesslink {
     float: right;
 	font-family: 'Open Sans', sans-serif;
 	padding: 6px 3px 6px 3px;
@@ -490,6 +490,22 @@ footer {
 	text-align: center;
 	background: #00c8ab;
 }
+
+/**umb_name:Read More Link A*/
+.readmorelink a:visited, .readmorelink a:link, .readlesslink a:visited, .readlesslink a:link {
+    float: right;
+	font-family: 'Open Sans', sans-serif;
+	padding: 6px 3px 6px 3px;
+	margin-top: 10px;
+	text-decoration:  none;
+	font-style: inherit;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+	text-align: center;
+}
+
 
 /**umb_name:Links Active Visited*/
 .readmore {

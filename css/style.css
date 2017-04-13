@@ -898,14 +898,15 @@ article img, img.articleImg, content img {
 	letter-spacing: 1px;
 	font-size: 12pt;
 	padding-top: 6px;
-	margin-top: 5px;
 	padding-bottom: 15px;
+	margin: 5px 10px 0 10px;
 }
 
 /**umb_name:Category Picker A*/
   .category-picker a {
     display: inline-block;
   	color: black;
+	margin: 0 0 0 0;
   }
 
 /**umb_name:Category Picker Category*/

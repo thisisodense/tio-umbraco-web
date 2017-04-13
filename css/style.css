@@ -491,7 +491,7 @@ footer {
 /**umb_name:Read More Link A*/
 .readmorelink a:visited, .readmorelink a:link, .readlesslink a:visited, .readlesslink a:link {
 	font-family: 'Open Sans', sans-serif;
-	padding: 7px 12px 7px 12px;
+	padding: 7px 20px 7px 20px;
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;

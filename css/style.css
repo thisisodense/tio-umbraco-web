@@ -49,8 +49,7 @@ a:hover {
 .left {
     float: right;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 7px !important;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;

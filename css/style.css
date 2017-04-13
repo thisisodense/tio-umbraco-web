@@ -776,10 +776,11 @@ float: left;}
 		font-family: 'Open Sans Condensed', sans-serif;
         color: darkgrey;
         text-decoration: none;
+		margin-left: 0px;
     }
 
 /**umb_name:Top navigation A First Child*/
-.topNavigation a:first-child {margin-right: 0px;}
+.topNavigation a:first-child {margin-left: 10px;}
 
 
 @media (max-width: 480px) {

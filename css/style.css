@@ -1083,7 +1083,8 @@ text-decoration: none;}
     width: 10%;
     height: 47px;
     float: left;
-    margin-top: 12px;}
+    margin-top: 12px;
+  border-radius: 0px;}
 
 /**umb_name:Place Header Map Category FA*/
     .placeHeader .mapCategory .fa {

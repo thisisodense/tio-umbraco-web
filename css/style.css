@@ -315,7 +315,7 @@ img.articleImg.writerImg {
 /**umb_name:Content Image*/
 .content img {
     display: block;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
 }
 
 /**umb_name:Info Arrow*/

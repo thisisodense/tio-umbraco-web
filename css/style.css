@@ -164,8 +164,8 @@ article img {
             display: block;
             font-weight: 900;
             overflow: hidden;
-            margin-bottom: 0px;
-            font-size: 49px;
+            margin-bottom: 3px;
+            font-size: 33px;
             line-height: 100%;
             color: #333;
 			font-family: 'Open Sans Condensed', sans-serif;
@@ -882,13 +882,13 @@ article img, img.articleImg, content img {
         margin-bottom: 5px;
     }
 
-/**umb_name:Top Description 768px*/
+/**umb_name:Top Header 768px*/
         .top .desc {
             width: 90%;
             word-wrap: break-word;
         }
 
-/**umb_name:Top Description Subheader 768px*/
+/**umb_name:Top Subheader 768px*/
             .top .desc .des {
                 width: 100%;
             }
@@ -1030,7 +1030,8 @@ text-decoration: none;}
   line-height: 100%;
   color: #333;
   text-transform: uppercase;
-  position: relative; }
+  position: relative; 
+}
 
 /**umb_name:Place Header AddThis Toolbox*/
   .placeHeader .addthis_toolbox {
@@ -1065,16 +1066,18 @@ text-decoration: none;}
 
 /**umb_name:Place Header Description Header*/
     .placeHeader .desc .hed {
-      width: 100%;
-      min-height: 27px;
-      display: block;
-      font-weight: 900;
-      overflow: hidden;
-      margin-bottom: 3px;
-      font-size: 27px;
-      line-height: 100%;
-      color: #333;
-      text-transform: uppercase; }
+            width: 100%;
+            min-height: 27px;
+            display: block;
+            font-weight: 900;
+            overflow: hidden;
+            margin-bottom: 3px;
+            font-size: 33px;
+            line-height: 100%;
+            color: #333;
+			font-family: 'Open Sans Condensed', sans-serif;
+			letter-spacing: 3px;
+            text-transform: uppercase; }
 
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {

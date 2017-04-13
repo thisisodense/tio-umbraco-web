@@ -572,19 +572,19 @@ text-align: center;
 /**umb_name:AddThis Drop Date Month*/
         .addthisevent-drop .date .mon {
             display: block;
-            padding: 9px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
             font-size: 11px;
             color: #ffffff;
             font-weight: 700;
 			letter-spacing: 2px;
-            line-height: 110%;
+            line-height: 100%;
             text-transform: uppercase;
         }
 
 /**umb_name:AddThis Drop Date Day*/
         .addthisevent-drop .date .day {
             display: block;
-            padding: 0px 0px 8px 0px;
+            padding: 0px 0px 0px 0px;
             font-size: 34px;
 			color: #ffffff;
             font-weight: 700;

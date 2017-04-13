@@ -536,7 +536,6 @@ font-family: 'Open Sans', sans-serif;
 color: #333 !important;
 font-size: 15px;
 margin-top: 12px;
-border-radius: 2px;
 }
 
 /**umb_name:AddThis Sharing Toolbox*/
@@ -1114,8 +1113,7 @@ text-decoration: none;}
     width: 10%;
     height: 47px;
     float: left;
-    margin-top: 12px;
-    border-radius: 2px; }
+    margin-top: 12px;}
 
 /**umb_name:Place Header Map Category FA*/
     .placeHeader .mapCategory .fa {

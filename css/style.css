@@ -477,7 +477,6 @@ footer {
 
 /**umb_name:Read More Link*/
 .readmorelink, .readlesslink {
-    float: right;
 	font-family: 'Open Sans', sans-serif;
 	margin: 13px 0px 4px 0px;
 	text-decoration:  none;

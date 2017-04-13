@@ -49,12 +49,12 @@ a:hover {
 .left {
     float: right;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 	margin-top: 5px;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
-	padding: 3px 10px 3px 10px;
+	padding: 3px 20px 3px 20px;
 	text-decoration:  none;
 	color: white !important;
 	background: #ff0000;

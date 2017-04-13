@@ -58,6 +58,11 @@ a:hover {
 /**umb_name:Right*/
 .right {
     float: right;
+		font-family: 'Open Sans', sans-serif;
+	padding: 5px 0px 2px 0px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 
 /**umb_name:List*/

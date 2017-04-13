@@ -157,14 +157,13 @@ article img {
 
 /**umb_name:Description P*/
         article .desc p {
-            margin: 0;
-            display: block;
-            text-align: left;
-            padding: 0px 0px 0px 18px;
-            font-size: 12px;
-            color: #666;
-            line-height: 110%;
-        }
+      margin: 0;
+      display: block;
+      text-align: left;
+      font-size: 12px;
+      color: #666;
+      padding: 7px 0 0 10px;
+      line-height: 110%; }
 
 /**umb_name:Description Header*/
         article .desc .hed {
@@ -177,10 +176,10 @@ article img {
             font-size: 33px;
             line-height: 100%;
             color: #333;
-			font-family: 'Open Sans Condensed', sans-serif;
-			letter-spacing: 3px;
-            text-transform: uppercase;
-        }
+            font-family: 'Open Sans Condensed', sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase; }
+
 
 /**umb_name:Description Subheader*/
         article .desc .des {
@@ -189,12 +188,12 @@ article img {
             display: block;
             overflow: hidden;
             text-transform: uppercase;
-			padding: 0px 0px 7px 0px;
-			font-size: 13pt;
-			line-height: 100%;
-			font-weight: 300;
-			letter-spacing: 2px;
-			font-family: 'Open Sans Condensed', sans-serif;
+            padding: 0px 0px 7px 0px;
+            font-size: 13pt;
+            line-height: 100%;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-family: 'Open Sans Condensed', sans-serif;
         }
 
 /**umb_name:Page size*/
@@ -801,7 +800,7 @@ article img, img.articleImg, content img {
         margin-bottom: 5px;
     }
 
-/**umb_name:Top Desc Des 480px*/
+/**umb_name:Top Subheader 480px*/
     .top .desc .des {
         font-size: 13pt;
     }
@@ -848,8 +847,8 @@ article img, img.articleImg, content img {
 
 /**umb_name:Top Header 768px*/
         .top .desc {
-            width: 90%;
-            word-wrap: break-word;
+         -ms-word-wrap: break-word;
+        word-wrap: break-word; 
         }
 	
 /**umb_name:AddThis Drop Date Day 768px*/
@@ -1002,10 +1001,13 @@ text-decoration: none;}
   .placeHeader .desc {
     width: 90%;
     min-height: 60px;
-    float: left; }
+    float: left; 
+    position: relative;
+    cursor:pointer; 
+  }
 
     @media (max-width: 768px) {
-/**umb_name:Place Header Description 768px*/		
+/**umb_name:Place Header Description 768px*/
       .placeHeader .desc {
         -ms-word-wrap: break-word;
         word-wrap: break-word; } }
@@ -1031,8 +1033,8 @@ text-decoration: none;}
             font-size: 33px;
             line-height: 100%;
             color: #333;
-			font-family: 'Open Sans Condensed', sans-serif;
-			letter-spacing: 3px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            letter-spacing: 3px;
             text-transform: uppercase; }
 
 /**umb_name:Place Header Description Subheader*/
@@ -1042,16 +1044,16 @@ text-decoration: none;}
             display: block;
             overflow: hidden;
             text-transform: uppercase;
-			padding: 0px 0px 7px 0px;
-			font-size: 13pt;
-			line-height: 100%;
-			font-weight: 300;
-			letter-spacing: 2px;
-			font-family: 'Open Sans Condensed', sans-serif;
+            padding: 0px 0px 7px 0px;
+            font-size: 13pt;
+            line-height: 100%;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-family: 'Open Sans Condensed', sans-serif;
 	}
 
       @media (max-width: 480px) {
-/**umb_name:Place Header Description Subheader 480px*/
+/**umb_name:Place Subheader 480px*/
         .placeHeader .desc .des {
           font-size: 13pt; } }
 

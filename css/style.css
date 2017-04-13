@@ -747,7 +747,8 @@ text-align: center;
 
 /**umb_name:Facebook Like*/
 .fb-like {
-    position: absolute !important;
+    display: none;
+	position: absolute !important;
     z-index: 501;
     bottom: 0px;
 }

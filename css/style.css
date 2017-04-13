@@ -476,7 +476,7 @@ footer {
  }
 
 /**umb_name:Read More Link*/
-.readmorelink, .readlesslink {
+.readmorelink {
 	font-family: 'Open Sans', sans-serif;
 	margin: 21px 0px 0px 0px;
 	text-decoration:  none;
@@ -488,7 +488,7 @@ footer {
 	text-align: center;
 }
 
-/**umb_name:Read More Link*/
+/**umb_name:Read Less Link*/
 .readlesslink {
 	display: none;
 }

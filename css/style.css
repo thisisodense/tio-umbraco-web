@@ -324,7 +324,6 @@ margin: 0 0 0 0 !important;
 /**umb_name:Logo Link*/
 img.logo a:link, img.logo a:active, img.logo a:visited {
 margin: initial;
-	    width: 100px;
     }
 
 /**umb_name:Article Image*/

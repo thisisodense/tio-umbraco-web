@@ -306,7 +306,7 @@ margin: 0 0 0 0 !important;
 img.articleImg {
 	max-width: 680px;
     width: 100%;
-    margin: 0 10px 10px 10px;
+    margin: 0 0 10px 0;
     display: inline !important;
 }
 
@@ -323,7 +323,7 @@ img.articleImg.writerImg {
     display: block;
 	max-width: 680px;
     width: 100%;
-    margin: 0 10px 10px 10px;
+    margin: 0 0 10px 0;
 }
 
 /**umb_name:Info Arrow*/

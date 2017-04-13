@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 
 /**umb_name:Body*/
 body{line-height: 1;
-margin-top: 10px;
+margin-top: 0px;
 font-size: 10pt;
 line-height: 12pt;
 color: #232323;

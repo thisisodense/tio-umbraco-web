@@ -91,12 +91,12 @@ article {
 article img {
         max-width: 680px;
         width: 100%;
-		margin: 0 10px 0 10px 0;
     }
 
 /**umb_name:Article Image*/
 .articleImg {
         cursor: pointer;
+		margin: 0 10px 0 10px 0;
     }
 
 /**umb_name:Guest Writer InfoArrow*/

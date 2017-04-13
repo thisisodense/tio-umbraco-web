@@ -780,7 +780,7 @@ float: left;}
     }
 
 /**umb_name:Top navigation A First Child*/
-.topNavigation a:first-child {margin-left: 10px;}
+.topNavigation a:first-child {margin-right: 10px;}
 
 
 @media (max-width: 480px) {

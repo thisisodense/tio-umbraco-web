@@ -322,8 +322,8 @@ margin: 0 0 0 0 !important;
     }
 
 /**umb_name:Logo Link*/
-a img.logo {
-margin: 100px;
+a.logo {
+margin: 0 0 0 0 !important;
     }
 
 /**umb_name:Article Image*/

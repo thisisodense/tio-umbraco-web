@@ -545,6 +545,7 @@ font-family: 'Open Sans', sans-serif;
 color: #333 !important;
 font-size: 15px;
 margin-top: 12px;
+text-align: center; 
 }
 
 /**umb_name:AddThis Sharing Toolbox*/
@@ -572,7 +573,6 @@ margin-top: 12px;
 /**umb_name:AddThis Drop Date Month*/
         .addthisevent-drop .date .mon {
             display: block;
-            text-align: center;
             padding: 9px 0px 0px 0px;
             font-size: 11px;
             color: #ffffff;

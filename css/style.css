@@ -490,7 +490,7 @@ footer {
 
 /**umb_name:Read Less Link*/
 .readlesslink {
-	display: none;
+	display: none !important;
 }
 
 

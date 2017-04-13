@@ -762,6 +762,11 @@ text-align: center;
     width: 100% !important;
 }
 
+/**umb_name:Facebook Comments Events*/
+.readmore div .fb-comments {
+    display: none !important;
+}
+
 /**umb_name:Facebook Comments Span*/
     .fb-comments > span {
         width: 100% !important;

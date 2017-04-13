@@ -802,12 +802,7 @@ margin-left: 10px;
 
 /**umb_name:Top*/
     article .top {
-  	width: 100%;
-  	min-height: 27px;
-  	display: block;
-  	overflow: hidden;
-  	padding-top: 10px;
- 	position: relative; 
+
 }
     }
 	

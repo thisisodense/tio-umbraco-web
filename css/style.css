@@ -321,6 +321,11 @@ img.logo {
 margin: 0 0 0 0 !important;
     }
 
+/**umb_name:Logo*/
+img.logo a:link, img.logo a:active, img.logo a:visited {
+margin: 0 0 0 0 !important;
+    }
+
 /**umb_name:Article Image*/
 img.articleImg {
 	max-width: 680px;

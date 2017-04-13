@@ -353,7 +353,7 @@ img.articleImg.writerImg {
 /**umb_name:Flag*/
 .flag a:link, .flag a:active, .flag a:visited {
     float: right;
-    margin-top: -5px;
+	margin: 0 10px 5px 10px;
 }
 
 /**umb_name:Footer*/

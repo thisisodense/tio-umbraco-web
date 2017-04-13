@@ -500,7 +500,7 @@ footer {
 
 
 /**umb_name:Read More Link A*/
-.readmorelink a:visited, .readmorelink a:link, .readlesslink a:visited, .readlesslink a:link {
+.readmorelink a:visited, .readmorelink a:link {
 	font-family: 'Open Sans', sans-serif;
 	padding: 7px 20px 7px 20px;
 	text-decoration:  none;

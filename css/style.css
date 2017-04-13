@@ -479,7 +479,7 @@ footer {
 .readmorelink, .readlesslink {
     float: right;
 	font-family: 'Open Sans', sans-serif;
-	margin-top: 13px;
+	margin: 13px 0px 4px 0px;
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;

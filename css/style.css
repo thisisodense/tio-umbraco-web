@@ -537,6 +537,7 @@ footer {
 .readmore p a:link, .readmore p a:active, .readmore p a:visited {
         font-family: Georgia,Times,Times New Roman,serif;
 		text-decoration: underline;
+		margin: 0 0 0 0;
     }
 
 /**umb_name:Read More P Hover*/

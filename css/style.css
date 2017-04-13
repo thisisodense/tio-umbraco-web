@@ -756,7 +756,9 @@ letter-spacing: 3px;
 font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;
 vertical-align: top;
-float: left;}
+float: left;
+margin-left: 10px;
+}
 
 /**umb_name:Top navigation Li*/
     .topNavigation li {

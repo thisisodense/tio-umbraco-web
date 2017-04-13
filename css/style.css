@@ -1027,10 +1027,6 @@ text-decoration: none;}
     font-size: 11px;
     bottom: -3px; }
 
-/**umb_name:Place Header AddThis Toolbox Simple*/
-  .placeHeader .addthis_toolbox.simple {
-    bottom: -8px; }
-
 /**umb_name:Place Header Description*/
   .placeHeader .desc {
     width: 90%;
@@ -1087,10 +1083,6 @@ text-decoration: none;}
 /**umb_name:Place Header Description Subheader 480px*/
         .placeHeader .desc .des {
           font-size: 13px; } }
-
-/**umb_name:Place Header Description Simple*/
-  .placeHeader .desc.simple {
-    min-height: 20px; }
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {

@@ -950,6 +950,11 @@ text-decoration: none;}
   margin: 0;
  }
 
+/**umb_name:Place Article Image*/
+  .place .articleImg {
+    margin-top: 0px; }
+
+
 /**umb_name:Place Before*/
   .place:before {
     position: absolute;

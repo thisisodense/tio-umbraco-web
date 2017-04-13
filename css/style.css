@@ -325,12 +325,18 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Info*/
-.info, .info a:visited, .info a:link, .readmore div,.readmore div a:visited, .readmore div a:link {
+.info, .info a:visited, .info a:link, .readmore div, .readmore div a:visited, .readmore div a:link {
     text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
+	margin: 0 0 0 0;
+}
+
+/**umb_name:Info Readmore*/
+.readmore div, .readmore div a:visited, .readmore div a:link {
 	margin: 0 10px 0 10px;
 }
+
 
 /**umb_name:Info Hover*/
 .info a:hover, .readmore div a:hover {

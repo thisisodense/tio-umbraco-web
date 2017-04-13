@@ -351,11 +351,19 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Flag*/
-.flag, .flag img, .flag img a:link, .flag img a:active, .flag img a:visited {
+.flag {
     float: right;
 	height: 20px;
 	width: auto;
 	margin: 1px 10px 0px 0px !important;
+}
+
+/**umb_name:Flag Link*/
+.flag img, .flag img a:link, .flag img a:active, .flag img a:visited {
+    float: right;
+	height: 20px;
+	width: auto;
+	margin: 0px 0px 0px 0px !important;
 }
 
 /**umb_name:Footer*/

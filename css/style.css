@@ -315,8 +315,7 @@ img.articleImg.writerImg {
 /**umb_name:Content Image*/
 .content img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 10px 0 10px;
 }
 
 /**umb_name:Info Arrow*/
@@ -790,8 +789,8 @@ float: left;}
     }
 
 /**umb_name:Article Image 480px*/
-article img, img.articleImg {
-        margin:0 0 0 0;
+article img, img.articleImg, content img {
+        margin: 0 0 0 0;
     }
 	
 /**umb_name:Link Container H3 480px*/

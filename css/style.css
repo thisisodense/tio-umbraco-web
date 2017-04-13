@@ -354,6 +354,7 @@ img.articleImg.writerImg {
 .flag, .flag img, .flag img a:link, .flag img a:active, .flag img a:visited {
     float: right;
 	height: 20px;
+	width: auto;
 	margin: 0 10px 0px 10px;
 }
 

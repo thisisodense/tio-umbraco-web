@@ -853,11 +853,6 @@ article img, img.articleImg, content img {
         width: 180px;
     }
 
-/**umb_name:AddThis Display None 768px*/
-    .addthis_sharing_toolbox {
-        display: none;
-    }
-
 /**umb_name:Content 768px*/
     .content {
         width: auto;

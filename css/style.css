@@ -892,25 +892,30 @@ article img, img.articleImg, content img {
 .fb-page { margin: 0 auto;}
 
 /**umb_name:Category Picker*/
-.category-picker{font-family: 'Open Sans', sans-serif;
-text-transform: uppercase;
-letter-spacing: 1px;
-font-size: 12pt;
-padding-top: 6px;
-margin-top: 5px;
-padding-bottom: 15px;}
+.category-picker{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12pt;
+	padding-top: 6px;
+	margin-top: 5px;
+	padding-bottom: 15px;
+}
 
 /**umb_name:Category Picker A*/
   .category-picker a {
-    display: inline-block; }
+    display: inline-block;
+  	color: black;
+  }
 
 /**umb_name:Category Picker Category*/
-.category-picker .category{cursor: pointer;
-text-decoration: none;}
+.category-picker .category{
+	cursor: pointer;
+	text-decoration: none;}
 
 /**umb_name:Category Picker Category Hover*/
     .category-picker .category:hover {
-      text-decoration: underline; }
+      text-decoration: none; }
 
 /**umb_name:Category Picker Current*/
     .category-picker .category.current {

@@ -322,7 +322,7 @@ margin: 0 0 0 0 !important;
     }
 
 /**umb_name:Logo Link*/
-img.logo a:link, img.logo a:active, img.logo a:visited {
+a img.logo {
 margin: 100px;
     }
 

@@ -603,7 +603,7 @@ text-align: center;
 .addthisevent_dropdown {
     width: 280px;
     position: absolute;
-	z-index:1000;
+	z-index:10000;
     padding: 6px 0px 0px 0px;
     background: #fff;
     text-align: left;

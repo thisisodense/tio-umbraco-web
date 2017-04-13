@@ -791,11 +791,11 @@ float: left;}
         font-size: 18pt;
     }
 
-/**umb_name:Logo 480px*/
-    .logo {
-        max-width: 300px;
+/**umb_name:Top*/
+    article .top {
+		margin: 0 10px 0 10px;
     }
-
+	
 /**umb_name:Article Image 480px*/
 article img, img.articleImg, content img {
         margin: 0 0 0 0;

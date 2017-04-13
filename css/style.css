@@ -42,7 +42,7 @@ a:link, a:active, a:visited {
 
 /**umb_name:A Hover*/
 a:hover {
-    color: #00c8ab;
+    color: #00c8ab !important;
 }
 
 /**umb_name:Left*/

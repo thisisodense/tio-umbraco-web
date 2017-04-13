@@ -297,6 +297,11 @@ h3 {
     display: none;
 }
 
+/**umb_name:Logo*/
+.logo {
+margin: 0 0 0 0;
+    }
+
 /**umb_name:Article Image*/
 img.articleImg {
 	max-width: 680px;

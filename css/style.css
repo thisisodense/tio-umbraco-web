@@ -128,8 +128,17 @@ article img {
 
 /**umb_name:Top*/
     article .top {
-        position:relative;
-		margin: 0 0 0 0;
+  width: 100%;
+  min-height: 27px;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding-top: 10px;
+  font-size: 27px;
+  line-height: 100%;
+  color: #333;
+  text-transform: uppercase;
+  position: relative; 
     }
 
 /**umb_name:No P padding*/

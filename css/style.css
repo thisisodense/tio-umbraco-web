@@ -351,10 +351,9 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Flag*/
-.flag, .flag a:link, .flag a:active, .flag a:visited {
+.flag img, .flag img a:link, .flag img a:active, .flag img a:visited {
     float: right;
 	height: 20px;
-	padding: 0 0 0 0;
 	margin: 0 10px 5px 10px;
 }
 

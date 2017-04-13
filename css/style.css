@@ -354,6 +354,7 @@ img.articleImg.writerImg {
 .flag {
     float: right;
     margin-top: -5px;
+	vertical-align: top;
 }
 
 /**umb_name:Footer*/

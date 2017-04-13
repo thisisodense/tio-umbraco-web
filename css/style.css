@@ -91,6 +91,7 @@ article {
 article img {
         max-width: 680px;
         width: 100%;
+		margin: 0 10px 0 10px 0;
     }
 
 /**umb_name:Article Image*/
@@ -789,6 +790,11 @@ float: left;}
         max-width: 300px;
     }
 
+/**umb_name:Article Image 480px*/
+article img {
+        margin:0 0 0 0;
+    }
+	
 /**umb_name:Link Container H3 480px*/
     .linkContainer h3 {
         line-height: 20px;

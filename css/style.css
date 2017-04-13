@@ -355,7 +355,7 @@ img.articleImg.writerImg {
     float: right;
 	height: 20px;
 	width: auto;
-	margin: 1px 0px 0px 0px;
+	margin: 1px 0px 0px 0px !important;
 }
 
 /**umb_name:Footer*/

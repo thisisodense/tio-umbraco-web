@@ -495,11 +495,12 @@ footer {
 	text-decoration:  none;
 	font-style: inherit;
 	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1px;
+	font-weight: 700;
+	letter-spacing: 2px;
 	color: white;
 	text-align: center;
 	background: #00c8ab;
+	font-size: 11px;
 }
 
 

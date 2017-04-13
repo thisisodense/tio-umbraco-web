@@ -832,7 +832,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Top Desc Des 480px*/
     .top .desc .des {
-        font-size: 13px;
+        font-size: 13pt;
     }
 	
 /**umb_name:Writer 480px*/
@@ -1082,7 +1082,7 @@ text-decoration: none;}
       @media (max-width: 480px) {
 /**umb_name:Place Header Description Subheader 480px*/
         .placeHeader .desc .des {
-          font-size: 13px; } }
+          font-size: 13pt; } }
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {

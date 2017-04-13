@@ -880,11 +880,6 @@ article img, img.articleImg, content img {
             width: 90%;
             word-wrap: break-word;
         }
-
-/**umb_name:Top Subheader 768px*/
-            .top .desc .des {
-                width: 100%;
-            }
 	
 /**umb_name:AddThis Drop Date Day 768px*/
         .addthisevent-drop .date .day {
@@ -1086,11 +1081,6 @@ text-decoration: none;}
 			letter-spacing: 2px;
 			font-family: 'Open Sans Condensed', sans-serif;
 	}
-
-      @media (max-width: 768px) {
-/**umb_name:Place Header Description Subheader 768px*/
-        .placeHeader .desc .des {
-          width: 100%; } }
 
       @media (max-width: 480px) {
 /**umb_name:Place Header Description Subheader 480px*/

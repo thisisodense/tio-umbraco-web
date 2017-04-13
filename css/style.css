@@ -538,11 +538,11 @@ footer {
 	float: left;
 width: 10%;
 height: 47px;
+margin-top: 12px;
 cursor: pointer;
 background: #ff0000;
 font-family: 'Open Sans', sans-serif;
 color: #333 !important;
-margin-top: 12px;
 text-align: center; 
 }
 
@@ -566,6 +566,7 @@ text-align: center;
         height: 47px;
         float: left;
         position: relative;
+		margin-top: 6px;
     }
 
 /**umb_name:AddThis Drop Date Month*/

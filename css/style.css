@@ -561,11 +561,6 @@ margin-top: 12px;
         background-color: #00c8ab;
     }
 
-/**umb_name:AddThis Drop*/
-    .addthisevent-drop:active {
-        top: 1px;
-    }
-
 /**umb_name:AddThis Drop Date*/
     .addthisevent-drop .date {
         width: 100%;

@@ -318,12 +318,12 @@ h3 {
 
 /**umb_name:Logo*/
 img.logo {
-margin: 0 0 0 0 !important;
+margin: 0 0 20px 0 !important;
     }
 
 /**umb_name:Logo Link*/
 a.logo {
-margin: 0 0 20px 0 !important;
+margin: 0 0 0 0 !important;
     }
 
 /**umb_name:Article Image*/

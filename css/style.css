@@ -740,7 +740,6 @@ text-align: center;
 
 /**umb_name:Facebook Like*/
 .fb-like {
-    left: 45%;
     position: absolute !important;
     z-index: 501;
     bottom: 0px;

@@ -759,16 +759,6 @@ text-align: center;
 	padding-left: 0px !important;
 }
 
-/**umb_name:Facebook Comments*/
-.fb-comments {
-	padding-left: 0px !important;
-}
-
-/**umb_name:Facebook Comments Span*/
-    .fb-comments > span {
-	padding-left: 0px !important;
-    }
-
 /**umb_name:Navigation*/
 .navigation{
         margin: 15px 0px 12px 0px;}

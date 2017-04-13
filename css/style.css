@@ -880,12 +880,6 @@ article img, img.articleImg, content img {
         display: none !important;
     }
 
-/**umb_name:Top 768px*/
-    .top {
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-    }
-
 /**umb_name:Top Header 768px*/
         .top .desc {
             width: 90%;

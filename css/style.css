@@ -263,32 +263,33 @@ hr.bigspace {
 
 /**umb_name:Link Container Link1*/
 .linkContainer .links .link1 {
-    width: 20px;
+    width: 50px;
 }
 
 /**umb_name:Link Container Link2*/
 .linkContainer .links .link2 {
-    width: 20px;
+    width: 50px;
 }
 
 /**umb_name:Link Container Link3*/
 .linkContainer .links .link3 {
-    width: 20px;
+    width: 50px;
 }
 
 /**umb_name:Link Container Link4*/
 .linkContainer .links .link4 {
-    width: 20px;
+    width: 50px;
 }
 
 /**umb_name:Link Container Link5*/
 .linkContainer .links .link5 {
-    width: 20px;
+    width: 50px;
 }
 
 /**umb_name:Link Container Link6*/
 .linkContainer .links .link6 {
-    width: 20px;
+    width: 50px;
+	height: auto;
 }
 
 /**umb_name:Hide*/

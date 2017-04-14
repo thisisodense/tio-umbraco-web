@@ -222,8 +222,7 @@ article img {
 
 /**umb_name:Link Container h2*/
 .linkContainer h2
-{float: left;
-font-weight: 900;
+{font-weight: 900;
             font-size: 33px;
             color: #333;
             font-family: 'Open Sans Condensed', sans-serif;

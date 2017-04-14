@@ -60,6 +60,12 @@ a:hover {
 	font-size: 11px;
 }
 
+/**umb_name:Link til begivenhed*/
+.left a:hover {
+    color: white !important;
+	background: #00c8ab;	
+}
+
 /**umb_name:Right*/
 .right {
     float: right;

@@ -233,7 +233,6 @@ font-weight: 900;
 
 /**umb_name:Link Container h3*/
     .linkContainer h3 {
-        float: left;
 text-transform: uppercase;
             font-size: 13pt;
             font-weight: 300;

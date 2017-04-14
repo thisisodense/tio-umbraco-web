@@ -547,6 +547,12 @@ footer {
     position: relative;
 }
 
+/**umb_name:Read More Center*/
+.place div.readmore {
+    text-align: center;
+	margin: 22px 0px 0px 0px;
+}
+
 /**umb_name:Read More P*/
 .readmore p {
         line-height: 20pt;

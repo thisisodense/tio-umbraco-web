@@ -263,32 +263,32 @@ hr.bigspace {
 
 /**umb_name:Link Container Link1*/
 .linkContainer .links .link1 {
-    width: 146px;
+    width: 20px;
 }
 
 /**umb_name:Link Container Link2*/
 .linkContainer .links .link2 {
-    width: 109px;
+    width: 20px;
 }
 
 /**umb_name:Link Container Link3*/
 .linkContainer .links .link3 {
-    width: 100px;
+    width: 20px;
 }
 
 /**umb_name:Link Container Link4*/
 .linkContainer .links .link4 {
-    width: 115px;
+    width: 20px;
 }
 
 /**umb_name:Link Container Link5*/
 .linkContainer .links .link5 {
-    width: 109px;
+    width: 20px;
 }
 
 /**umb_name:Link Container Link6*/
 .linkContainer .links .link6 {
-    width: 119px;
+    width: 20px;
 }
 
 /**umb_name:Hide*/
@@ -839,7 +839,7 @@ article img, img.articleImg, content img {
     .linkContainer .links .link4,
     .linkContainer .links .link5,
     .linkContainer .links .link6 {
-        width: 150px;
+        width: 20px;
         margin-bottom: 5px;
     }
 

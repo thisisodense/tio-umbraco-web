@@ -550,7 +550,7 @@ footer {
 /**umb_name:Read More Center*/
 .place div.readmore {
     text-align: center;
-	margin: 22px 0px 0px 0px;
+	margin: 22px 0px 25px 0px;
 }
 
 /**umb_name:Read More P*/
@@ -1004,7 +1004,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Info Read More*/
   .place .placeInfo, .place .readmore {
-    margin-bottom: 5px; }
+    margin-bottom: -25px; }
 
 /**umb_name:Place Read More*/
   .place .readmore {

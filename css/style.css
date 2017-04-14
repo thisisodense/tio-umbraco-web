@@ -966,8 +966,8 @@ article img, img.articleImg, content img {
 
 /**umb_name:Map*/
 .map {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin: 10px 0px 10px 0px !important;
+}
 
 /**umb_name:Applied Filter*/
 .appliedFilter {

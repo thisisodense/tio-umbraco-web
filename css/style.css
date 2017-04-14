@@ -839,7 +839,8 @@ article img, img.articleImg, content img {
     .linkContainer .links .link4,
     .linkContainer .links .link5,
     .linkContainer .links .link6 {
-        width: 20px;
+        width: 50px;
+		height: auto;
         margin-bottom: 5px;
     }
 

@@ -228,6 +228,7 @@ font-weight: 900;
             color: #333;
             font-family: 'Open Sans Condensed', sans-serif;
             letter-spacing: 3px;
+	margin-bottom: 0px;
 	line-height: 100%;
             text-transform: uppercase;
 }

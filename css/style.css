@@ -257,7 +257,6 @@ hr.bigspace {
 
 /**umb_name:Link Container Links Image*/
 .linkContainer .links img {
-    float: left;
     padding-right: 30px;
 }
 

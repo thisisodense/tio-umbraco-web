@@ -61,7 +61,7 @@ a:hover {
 }
 
 /**umb_name:Link til begivenhed*/
-.left a:hover {
+a.left a:hover {
     color: white !important;
 	background: #00c8ab;	
 }

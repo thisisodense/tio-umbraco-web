@@ -193,7 +193,7 @@ article img {
 
 /**umb_name:Description Subheader*/
         article .desc .des {
-            width: 83%;
+            width: 82%;
             min-height: 20px;
             display: block;
             overflow: hidden;
@@ -1096,7 +1096,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
-            width: 83%;
+            width: 82%;
             min-height: 20px;
             display: block;
             overflow: hidden;

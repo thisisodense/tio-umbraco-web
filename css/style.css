@@ -1040,7 +1040,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Opening Hours Day*/
     .place .openingHours .day {
-      color: #666;
+      color: black;
       min-width: 70px;
       display: inline-block; }
 

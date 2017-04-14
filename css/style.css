@@ -1002,7 +1002,9 @@ article img, img.articleImg, content img {
 /**umb_name:Place Read More*/
   .place .readmore {
     float: right;
-    width: 100%; }
+    width: 100%;
+  text-align: center;
+      margin: 23px 0px 0px 0px;}
 
 /**umb_name:Place Show Read More*/
   .place.show .readmore {

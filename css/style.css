@@ -1042,7 +1042,8 @@ article img, img.articleImg, content img {
     .place .openingHours .day {
       color: black;
       min-width: 70px;
-      display: inline-block; }
+      display: inline-block;
+	margin-right: 10px;}
 
 /**umb_name:Place Opening Time After*/
     .place .openingHours .time:after {

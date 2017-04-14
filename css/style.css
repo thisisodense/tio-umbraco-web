@@ -183,7 +183,7 @@ article img {
             font-weight: 900;
             overflow: hidden;
             margin-bottom: 3px;
-            font-size: 33px;
+            font-size: 36px;
             line-height: 100%;
             color: #333;
             font-family: 'Open Sans Condensed', sans-serif;
@@ -199,11 +199,12 @@ article img {
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
-            font-size: 13pt;
-            line-height: 100%;
-            font-weight: 300;
-            letter-spacing: 2px;
-            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 11pt;
+            line-height: 130%;
+			margin-top: -2px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: 'Open Sans', sans-serif;
         }
 
 /**umb_name:Page size*/
@@ -850,7 +851,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Top Subheader 480px*/
     .top .desc .des {
-        font-size: 13pt;
+        font-size: 11pt;
     }
 	
 /**umb_name:Writer 480px*/
@@ -1084,7 +1085,7 @@ article img, img.articleImg, content img {
             font-weight: 900;
             overflow: hidden;
             margin-bottom: 3px;
-            font-size: 33px;
+            font-size: 36px;
             line-height: 100%;
             color: #333;
             font-family: 'Open Sans Condensed', sans-serif;
@@ -1099,17 +1100,18 @@ article img, img.articleImg, content img {
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
-            font-size: 13pt;
-            line-height: 100%;
-            font-weight: 300;
-            letter-spacing: 2px;
-            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 11pt;
+            line-height: 130%;
+			margin-top: -2px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: 'Open Sans', sans-serif;
 	}
 
       @media (max-width: 480px) {
 /**umb_name:Place Subheader 480px*/
         .placeHeader .desc .des {
-          font-size: 13pt; } }
+          font-size: 11pt; } }
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {

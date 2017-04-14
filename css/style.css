@@ -552,6 +552,7 @@ footer {
         line-height: 20pt;
 		font-size: 13pt;
 		padding: 10px 10px 10px 10px;
+		text-align: left;
     }
 
 /**umb_name:Read More P Link*/
@@ -1004,6 +1005,14 @@ article img, img.articleImg, content img {
     float: right;
     width: 100%;
 }
+
+/**umb_name:Place Read More*/
+  div.readmore {
+    float: right;
+    width: 100%;
+}
+  text-align: center;
+      margin: 23px 0px 0px 0px;
 
 /**umb_name:Place Show Read More*/
   .place.show .readmore {

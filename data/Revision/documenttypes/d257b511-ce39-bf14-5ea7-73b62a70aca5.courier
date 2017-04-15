@@ -12,15 +12,6 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
-                <Id>aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
                 <Id>bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Id>
                 <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -70,26 +61,6 @@
             <Mandatory>false</Mandatory>
             <Name>WeekDescriptionEN</Name>
             <SortOrder>4</SortOrder>
-            <TabCaption>Week pitch</TabCaption>
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>f64e7790-1574-4c8a-a69f-33d587526e81</UniqueId>
-            <Alias>weekPitchDA</Alias>
-            <DataTypeDefinitionId>aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Ugebeskrivelse</Name>
-            <SortOrder>1</SortOrder>
-            <TabCaption>Week pitch</TabCaption>
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>5179e9ee-e4e9-4573-a4b7-ac70998c0bb5</UniqueId>
-            <Alias>weekPitchEN</Alias>
-            <DataTypeDefinitionId>aaeb0b61-7d8b-4d16-8ae9-d0a6a0a220be</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>week pitch EN</Name>
-            <SortOrder>2</SortOrder>
             <TabCaption>Week pitch</TabCaption>
         </ContentTypeProperty>
     </Properties>

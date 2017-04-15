@@ -410,11 +410,20 @@ img.articleImg.writerImg {
 
 /**umb_name:Footer*/
 footer {
-    text-align: center;
 	text-transform: uppercase;
+	text-align: center;
+    font-size: 12pt;
+	line-height: 12pt;
 	letter-spacing: 1px;
-	font-size: 10pt;
-    margin: 30px 0;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    margin-top: 25px;
 }
 
 /**umb_name:Writers*/

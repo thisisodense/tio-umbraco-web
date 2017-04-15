@@ -488,7 +488,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
     line-height: 16pt;
     font-weight: 700;
     font-family: 'Open Sans Condensed', sans-serif !important;
-	color: black;
+	color: darkgrey;
 	text-transform: uppercase;
 	margin-left: 0px;
 }

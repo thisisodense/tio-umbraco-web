@@ -412,7 +412,7 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Footer*/
-footer {
+.footerlinks {
 	text-transform: uppercase;
 	text-align: center;
     font-size: 12pt;

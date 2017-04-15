@@ -504,6 +504,11 @@ a.writerOfWeek, span.writerOfWeek {
     text-transform: uppercase !important;
 }
 
+/**umb_name:Writer Display None*/
+.displaynone {
+    display:none !important;
+}
+
 /**umb_name:Writer Title*/
 .writerTitle {
     padding:10px 0 5px 0;

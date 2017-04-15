@@ -85,7 +85,7 @@
 			<img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek">
 	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA")) // 
 				<a href="@Umbraco.Content("http://www.thisisodense.dk/writer/" + @Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek"))">
-				@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")"</a>
+				@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")</a>
 			</p>
 		</div>
         <br class="@Html.Hide(Url.Action("Locations", "Locations"))" style="clear:both;" />

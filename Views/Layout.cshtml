@@ -75,7 +75,7 @@
             <ul class="topNavigation">
                 <li class="@Html.IsActive(Url.Action("Recommendations", "Recommendations"))"><a href="@Url.Action("Recommendations", "Recommendations")">@Umbraco.GetDictionaryValue("EVENTS")</a></li>
                 <li class="@Html.IsActive(Url.Action("Articles", "Articles"))"><a href="@Url.Action("Articles", "Articles", new { tagId = String.Empty })">@Umbraco.GetDictionaryValue("BLOG")</a></li>
-                <li id="places" class="@Html.IsActive(Url.Action("Locations", "Locations"))"><a href="@Url.Action("Locations", "Locations", new { tagId = String.Empty })">@Umbraco.GetDictionaryValue("PLACES")</a></li>
+                <li id="places" class="@Html.IsActive(Url.Action("Locations", "place"))"><a href="@Url.Action("Locations", "Locations", new { tagId = String.Empty })">@Umbraco.GetDictionaryValue("PLACES")</a></li>
             </ul>
             <br style="clear:both;" />
         </div>

@@ -427,12 +427,6 @@ img.articleImg.writerImg {
 	padding: 10px 10px 0px 10px;
 }
 
-/**umb_name:Footer Link*/
-footer a:link, footer a:visited, footer a:active {
-	color: black;
-    padding: 10px 10px 10px 10px;
-}
-
 /**umb_name:Writers*/
 .writers {
     margin-top:10px;

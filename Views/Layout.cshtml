@@ -84,8 +84,7 @@
 			<p class="writerOfWeek">
 			<img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek">
 
-@{ string ugebeskrivelse = Url.Action(Html.GetRouteDataValue<string>("action"),
-                                 Html.GetRouteDataValue<string>("controller"),
+@{ string ugebeskrivelse = @Model.Content(
                                  new
                                  {
                                      beskrivelse = (Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("weekPitchDA") : @Umbraco.Content(1682).GetPropertyValue("weekPitchEN")),

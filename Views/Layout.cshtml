@@ -83,9 +83,9 @@
         <div style="float:right" class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Location", "Location"),Url.Action("Articles", "Articles"),Url.Action("Article"),Url.Action("Recommendation", "Recommendation"),Url.Action("Writer", "Writer"))">
 			<p class="writerOfWeek">
 			<a href="@Url.Content("/writer/" + @Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek"))"><img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek"></a>
-	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA")) // 
+	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA")) 
 				<a href="@Url.Content("/writer/" + @Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek"))">
-				@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")</a>
+				// @Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")</a>
 				<div class="displaynone">@RenderSection("writername", false)</div>
 			</p>
 		</div>

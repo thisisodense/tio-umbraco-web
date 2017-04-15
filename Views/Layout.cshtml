@@ -85,7 +85,7 @@
 			<a href="@Url.Content("/writer/" + @Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek"))"><img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek"></a>
 	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA")) 
 				<a href="@Url.Content("/writer/" + @Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek"))">
-				&nbsp;&nbsp;// @Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")</a>
+				&nbsp;// @Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetPropertyValue("name")</a>
 				<div class="displaynone">@RenderSection("writername", false)</div>
 			</p>
 		</div>

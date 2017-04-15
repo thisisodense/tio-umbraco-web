@@ -219,6 +219,7 @@ article img {
 /**umb_name:Link Container*/
 .linkContainer {
     text-align: left;
+	background-color: initial;
 }
 
 /**umb_name:Link Container h2*/
@@ -418,6 +419,7 @@ footer {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     background-color: yellow;
+	color: black;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;

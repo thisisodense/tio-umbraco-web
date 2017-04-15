@@ -465,6 +465,7 @@ img.writerOfWeek {
     float: left;
     margin-right: 14px;
     padding-top: 1px;
+	filter: grayscale(100%);
 }
 
 /**umb_name:Writer of the Week text*/

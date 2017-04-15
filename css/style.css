@@ -993,7 +993,8 @@ article img, img.articleImg, content img {
 	text-align:center; 
 	background-color:#e9ebee; 
 	border: 5px solid #e9ebee; 
-	border-width: 5px 0; 
+	border-width: 5px 0;
+	margin: 10px -10px -10px -10px;
 }
 
 /**umb_name:Facebook Page*/

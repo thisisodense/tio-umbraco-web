@@ -482,6 +482,14 @@ p.writerOfWeek {
     margin-top: 20px;
 }
 
+/**umb_name:Writer of the Week text*/
+p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
+    font-size: 13pt;
+    line-height: 16pt;
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
 /**umb_name:Writer of the Week Name*/
 a.writerOfWeek, span.writerOfWeek {
     font-size: 13pt;

@@ -220,6 +220,7 @@ article img {
 .linkContainer {
     text-align: left;
 	background-color: white;
+	margin-left: 0px;
 }
 
 /**umb_name:Link Container h2*/

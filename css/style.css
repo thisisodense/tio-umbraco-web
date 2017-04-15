@@ -492,6 +492,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
 	color: black;
 	text-transform: uppercase;
 	margin-left: 0px;
+	margin-right: 0px;
 	letter-spacing: 1px;
 }
 

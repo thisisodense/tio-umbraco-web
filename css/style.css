@@ -492,6 +492,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
 	color: darkgrey;
 	text-transform: uppercase;
 	margin-left: 0px;
+	letter-spacing: 1px;
 }
 
 /**umb_name:Writer of the Week Name*/

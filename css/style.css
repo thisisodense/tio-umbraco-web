@@ -452,8 +452,8 @@ footer {
 .writerOfWeek {
     font-style: inherit;
 	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	color: black;
+	font-family: 'Open Sans Condensed', sans-serif !important;
+	color: black !important;
 }
 
 /**umb_name:Writer of the Week IMG*/
@@ -487,9 +487,9 @@ a.writerOfWeek, span.writerOfWeek {
     font-size: 13pt;
     line-height: 16pt;
     font-weight: 300;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif !important;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 /**umb_name:Writer Title*/

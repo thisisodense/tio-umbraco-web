@@ -83,7 +83,7 @@
         <div style="float:right" class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Location", "Location"),Url.Action("Articles", "Articles"),Url.Action("Article"),Url.Action("Recommendation", "Recommendation"))">
 			<p class="writerOfWeek">
 			<img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek">
-	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("weekPitchEN") : @Umbraco.Content(1682).GetPropertyValue("weekPitchDA"))
+	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA"))
 				</br>@RenderSection("writername", false)</br>
 			</p>
 		</div>

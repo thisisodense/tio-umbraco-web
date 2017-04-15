@@ -412,19 +412,24 @@ img.articleImg.writerImg {
 }
 
 /**umb_name:Footer*/
-.footerlinks, .footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
+.footerlinks {
 	text-transform: uppercase;
 	text-align: center;
-    font-size: 12pt;
 	line-height: 12pt;
-	letter-spacing: 1px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
     background-color: yellow;
-	color: black !important;
     margin-bottom: 3px;
     margin-top: 20px;
 	padding: 20px 10px 20px 10px;
+}
+
+/**umb_name:Footerlinks*/
+.footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
+	text-transform: uppercase;
+    font-size: 12pt;
+	letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+	color: black !important;
 }
 
 /**umb_name:Writers*/

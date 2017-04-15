@@ -82,7 +82,7 @@
         <hr style="margin-top:9px;" class="@Html.Hide(Url.Action("Locations", "Locations"))" />
         <div style="float:right" class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Articles", "Articles"))">
 			<p class="writerOfWeek">
-			<img src="@Url.GetCropUrl(Model.Content, "image", "miniatureCrop")" class="writerOfWeek">
+			<img src="@Url.GetCropUrl(Umbraco.Content(4529), "image", "miniatureCrop")" class="writerOfWeek">
 				 @Umbraco.GetDictionaryValue("Ugebeskrivelse") 
 				</br>@RenderSection("writername", false)
 			</p>

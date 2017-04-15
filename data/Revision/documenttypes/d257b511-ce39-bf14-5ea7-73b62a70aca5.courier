@@ -27,15 +27,6 @@
             <Name>Datatype: bf88329f-ee8b-4cee-96e7-20bbfd0e0951</Name>
             <ForceHashCheck>true</ForceHashCheck>
         </Dependency>
-        <Dependency>
-            <IsChild>false</IsChild>
-            <ItemId>
-                <Id>f9ac0be6-a256-4b74-934d-579069515621</Id>
-                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
-            </ItemId>
-            <Name>Datatype: f9ac0be6-a256-4b74-934d-579069515621</Name>
-            <ForceHashCheck>true</ForceHashCheck>
-        </Dependency>
     </Dependencies>
     <ItemId>
         <Id>d257b511-ce39-bf14-5ea7-73b62a70aca5</Id>
@@ -59,16 +50,6 @@
             <Mandatory>false</Mandatory>
             <Name>Ugens redaktør</Name>
             <SortOrder>0</SortOrder>
-            <TabCaption>Week pitch</TabCaption>
-        </ContentTypeProperty>
-        <ContentTypeProperty>
-            <UniqueId>96ad849f-878d-4bcd-9b9c-3b271c3389a4</UniqueId>
-            <Alias>editorPicture</Alias>
-            <DataTypeDefinitionId>f9ac0be6-a256-4b74-934d-579069515621</DataTypeDefinitionId>
-            <Description />
-            <Mandatory>false</Mandatory>
-            <Name>Editor picture</Name>
-            <SortOrder>3</SortOrder>
             <TabCaption>Week pitch</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

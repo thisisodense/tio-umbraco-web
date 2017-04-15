@@ -80,7 +80,7 @@
             <br style="clear:both;" />
         </div>
         <hr style="margin-top:9px;" class="@Html.Hide(Url.Action("Locations", "Locations"))" />
-        <div style="float:right" class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Location", "Location"),Url.Action("Articles", "Articles"),Url.Action("Article"),Url.Action("Recommendation", "Recommendation"))">
+        <div style="float:right" class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Location", "Location"),Url.Action("Articles", "Articles"),Url.Action("Article"),Url.Action("Recommendation", "Recommendation"),Url.Action("Writer", "Writer"))">
 			<p class="writerOfWeek">
 			<img src="@Umbraco.Content(@Umbraco.Content(1682).GetPropertyValue("editorOfTheWeek")).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek">
 	@Url.Content(Site.IsEnglish ? @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionEN") : @Umbraco.Content(1682).GetPropertyValue("WeekDescriptionDA")) // 

@@ -519,7 +519,11 @@ a.writerOfWeek, span.writerOfWeek {
 
 /**umb_name:Writer Details*/
 .writerDetails p {
-    padding:10px 0 10px 0;
+	    line-height: 20pt;
+		font-size: 13pt;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+		font-family: Georgia,Times,Times New Roman,serif;
 }
 
 /**umb_name:Writer Content*/

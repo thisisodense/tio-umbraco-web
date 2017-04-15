@@ -220,8 +220,8 @@ article img {
 .linkContainer {
     text-align: left;
 	background-color: white;
-	margin-left: 0px;
-    margin-right: 0px;
+	margin-left: -10px;
+    margin-right: -10px;
 }
 
 /**umb_name:Link Container h2*/
@@ -424,7 +424,7 @@ footer {
 	color: black;
     margin-bottom: 3px;
     margin-top: 20px;
-	padding-top: 10px;
+	padding: 10px 10px 0px 10px;
 }
 
 /**umb_name:Footer Link*/
@@ -997,7 +997,7 @@ article img, img.articleImg, content img {
 	background-color:#e9ebee; 
 	border: 5px solid #e9ebee; 
 	border-width: 5px 0;
-	margin: 0px 0px 0px 0px;
+	margin: 0px -10px 0px -10px;
 }
 
 /**umb_name:Facebook Page*/

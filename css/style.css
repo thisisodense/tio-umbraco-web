@@ -456,6 +456,7 @@ footer {
 	color: black;
 }
 
+/**umb_name:Writer of the Week IMG*/
 img.writerOfWeek {
     width: 20%;
     height: 94px;
@@ -466,6 +467,7 @@ img.writerOfWeek {
     padding-top: 1px;
 }
 
+/**umb_name:Writer of the Week text*/
 p.writerOfWeek {
     font-size: 13pt;
     line-height: 16pt;
@@ -480,7 +482,8 @@ p.writerOfWeek {
     margin-top: 20px;
 }
 
-a.writerOfWeek {
+/**umb_name:Writer of the Week Name*/
+a.writerOfWeek, span.writerOfWeek {
     font-size: 13pt;
     line-height: 16pt;
     font-weight: 300;

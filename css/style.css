@@ -426,6 +426,11 @@ footer {
     margin-top: 20px;
 }
 
+footer a {
+	color: black;
+    margin: 10px 10px 10px 10px;
+}
+
 /**umb_name:Writers*/
 .writers {
     margin-top:10px;

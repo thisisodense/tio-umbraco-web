@@ -427,7 +427,7 @@ footer {
 }
 
 /**umb_name:Footer Link*/
-footer a:link {
+footer a:link, footer a:visited, footer a:active {
 	color: black;
     margin: 10px 10px 10px 10px;
 }

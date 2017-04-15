@@ -421,7 +421,7 @@ img.articleImg.writerImg {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     background-color: yellow;
-	color: black;
+	color: black !important;
     margin-bottom: 3px;
     margin-top: 20px;
 	padding: 10px 10px 10px 10px;

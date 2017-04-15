@@ -251,6 +251,11 @@ text-transform: uppercase;
         float: left;
     }
 
+/**umb_name:Horizontal Row Display None*/
+hr {
+    display: none;
+}
+
 /**umb_name:Horizontal Row Big Space*/
 hr.bigspace {
     margin-top: 30px;

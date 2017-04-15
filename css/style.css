@@ -472,7 +472,7 @@ p.writerOfWeek {
     font-size: 13pt;
     line-height: 16pt;
     font-weight: 300;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif !important;
     background-color: yellow;
     padding-left: 10px;
     padding-right: 10px;

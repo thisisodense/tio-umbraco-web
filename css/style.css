@@ -490,6 +490,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
     font-family: 'Open Sans Condensed', sans-serif !important;
 	color: black;
 	text-transform: uppercase;
+	margin-left: 0px;
 }
 
 /**umb_name:Writer of the Week Name*/

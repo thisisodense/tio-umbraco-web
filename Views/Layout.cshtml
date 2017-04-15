@@ -84,7 +84,7 @@
 			<p class="writerOfWeek">
 			<img src="http://i.imgur.com/M9JE9qp.jpg" class="writerOfWeek">
 				Påske. Derfor skal du først og fremmest læse og blive klog af Pil Lindgreens anbefaling om, hvad gammel kirkemusik er og kan, Very Quiet Easter, mørk, mørkere, påske. Alt er noget og alt er mere end man tror, når først man digger det, og det gør Pil. Og så er der fest på havnen hos Dynamo og TinCanCompany, når Tanter gæster byen med eksistentielt nycirkus og efterfølgende fest. Helt passende til Langfredag er der smuk, depri-musik med Blue Foundation på Posten og Into the Deep Dub Night på hhv. Odense Musikbibliotek og Teater Momentum. Og skal det bare være helt uden arrangement, så anbefaler Johanne sit favorit-forårs-spot til indtagelse af øl men stadig med skoene på. Læs anbefalingerne i fuld længde herunder. Rigtig god påske fra This Is Odense <3 // 
-				</br>@RenderSection("writername", false)
+				</br>@RenderSection("writername", false)</br>@Html.Raw(item.GetProperty("about").Value)
 			</p>
 		</div>
         <br class="@Html.Hide(Url.Action("Locations", "Locations"))" style="clear:both;" />

@@ -84,7 +84,7 @@
 			<p class="writerOfWeek">
 			<img src="@Umbraco.Content(1234).GetCropUrl("image", "miniatureCrop")" class="writerOfWeek">
 				 @Umbraco.GetDictionaryValue("Ugebeskrivelse") 
-				</br>@RenderSection("writername", false)
+				</br>@RenderSection("writername", false)</br>@Umbraco.Content(1682).GetPropertyvalue("editorOfTheWeek")
 			</p>
 		</div>
         <br class="@Html.Hide(Url.Action("Locations", "Locations"))" style="clear:both;" />

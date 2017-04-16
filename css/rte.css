@@ -4,7 +4,7 @@ h1{
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
-    line-height: 15pt;
+    line-height: 200%;
     font-weight: 700;
     letter-spacing: 3px;}
 
@@ -12,8 +12,7 @@ h1{
 h2{font-weight: 900;
             margin-bottom: 3px;
             font-size: 36px;
-            line-height: 100%;
-            color: #333;
+            line-height: 200%;
             font-family: 'Open Sans Condensed', sans-serif;
             letter-spacing: 3px;
             text-transform: uppercase;}
@@ -33,16 +32,16 @@ h4{
             font-weight: bold;}
 
 /**umb_name:Info text*/
-.infoText{
+h5{
             font-size: 12pt;
             line-height: 12pt;
 			color: darkgrey;
             font-family: 'Open Sans', sans-serif;}
 
 /**umb_name:Image description*/
-.ImageDescription{
+h6{
 	font-size: 13pt;
 	text-align: center;
     line-height: 16pt;
     font-weight: 300;
-    font-family: 'Open Sans Condensed', sans-serif !important;}
+    font-family: 'Open Sans Condensed', sans-serif}

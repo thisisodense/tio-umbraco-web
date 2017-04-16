@@ -303,10 +303,12 @@ h1{
 h2{font-weight: 900;
             margin-bottom: 3px;
             font-size: 36px;
-            line-height: 200%;
+            line-height: 130%;
             font-family: 'Open Sans Condensed', sans-serif;
             letter-spacing: 3px;
-            text-transform: uppercase;}
+            text-transform: uppercase;
+			padding-top: 36px;
+			padding-bottom: 10px;}
 
 /**umb_name:Subheader*/
 h3{text-transform: uppercase;

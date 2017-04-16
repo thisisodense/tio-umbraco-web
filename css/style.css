@@ -723,6 +723,7 @@ p {
     .readmore.hide {
         display: none;
 		margin-top: 0px !important;
+		margin-bottom: 20px;
     }
 
 /**umb_name:First Article*/

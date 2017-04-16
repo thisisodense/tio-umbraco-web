@@ -20,11 +20,11 @@ h2{text-transform: uppercase;
             letter-spacing: 0px;
             font-family: 'Open Sans', sans-serif;}
 
-}}
-
-}
-
-
+/**umb_name:Paragraph header*/
+h3{
+            font-size: 14pt;
+            line-height: 130%;
+            font-weight: bold;}
 
 /**umb_name:Image description*/
 .ImageDescription{font-size: 13pt;

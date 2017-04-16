@@ -394,7 +394,13 @@ img.articleImg.writerImg {
 	margin: 0px 0px 0px 0px !important;
 }
 
+
 /**umb_name:Footer*/
+.footer {
+display: inline-block;
+}
+
+/**umb_name:Footerlinks*/
 .footerlinks {
 	text-transform: uppercase;
 	text-align: center;
@@ -405,7 +411,7 @@ img.articleImg.writerImg {
 	padding: 20px 10px 20px 10px;
 }
 
-/**umb_name:Footerlinks*/
+/**umb_name:Footerlinks A*/
 .footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
 	text-transform: uppercase;
     font-size: 12pt;

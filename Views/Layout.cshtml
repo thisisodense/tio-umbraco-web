@@ -83,7 +83,7 @@
         <div style="float:right">
             @RenderSection("writername", false)
 		</div>
-        <br class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Recommendation", "Recommendation"),Url.Action("Articles", "Articles"),Url.Action("Article", "Article")Url.Action("Writer", "Writer"),)" style="clear:both;" />
+        <br class="@Html.Hide(Url.Action("Locations", "Locations"),Url.Action("Recommendation", "Recommendation"),Url.Action("Articles", "Articles"),Url.Action("Article", "Article")Url.Action("", "Writer"),)" style="clear:both;" />
         @RenderBody()
         <footer>
             <div class="footerlinks"><a href="@Url.Action("About", "About")">Om This Is Odense</a> // <a href="https://twitter.com/ThisIsOdense" target="_blank">Twitter</a> // <a href="http://instagram.com/thisisodense" target="_blank">Instagram</a> // <a href="https://www.facebook.com/ThisIsOdense" target="_blank">Facebook</a> // <a href="@Url.Action("Tips", "Recommendations")" target="_blank">@Umbraco.GetDictionaryValue("TIP OS!")</a>

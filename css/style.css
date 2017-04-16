@@ -299,7 +299,9 @@ h1{
     font-weight: 700;
     letter-spacing: 3px;
 	padding-top: 20px;
-			padding-bottom: 20px;}
+			padding-bottom: 20px;
+margin-left: 10px;
+			margin-right: 10px;}
 
 /**umb_name:Header*/
 h2{font-weight: 900;
@@ -310,7 +312,9 @@ h2{font-weight: 900;
             letter-spacing: 3px;
             text-transform: uppercase;
 			padding-top: 36px;
-			padding-bottom: 10px;}
+			padding-bottom: 10px;
+margin-left: 10px;
+			margin-right: 10px;}
 
 /**umb_name:Subheader*/
 h3{text-transform: uppercase;
@@ -318,14 +322,18 @@ h3{text-transform: uppercase;
             line-height: 130%;
             font-weight: 400;
             letter-spacing: 0px;
-            font-family: 'Open Sans', sans-serif;}
+            font-family: 'Open Sans', sans-serif;
+margin-left: 10px;
+			margin-right: 10px;}
 
 /**umb_name:Paragraph header*/
 h4{
             font-size: 14pt;
             line-height: 130%;
             font-weight: bold;
-font-family: Georgia,Times,Times New Roman,serif;}
+font-family: Georgia,Times,Times New Roman,serif;
+			margin-left: 10px;
+			margin-right: 10px;}
 
 /**umb_name:Info text*/
 h5{
@@ -333,7 +341,9 @@ h5{
             line-height: 12pt;
 			color: darkgrey;
             font-family: 'Open Sans', sans-serif;
-font-weight: 300;}
+font-weight: 300;
+margin-left: 10px;
+			margin-right: 10px;}
 
 /**umb_name:Image description*/
 h6{
@@ -341,7 +351,9 @@ h6{
 	text-align: center;
     line-height: 13pt;
     font-weight: 300;
-    font-family: 'Open Sans Condensed', sans-serif}
+    font-family: 'Open Sans Condensed', sans-serif;
+	margin-left: 10px;
+		margin-right: 10px;}
 
 /**umb_name:Header Umbraco*/
 .header {

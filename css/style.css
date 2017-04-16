@@ -1064,7 +1064,6 @@ article img, img.articleImg, content img {
 	letter-spacing: 1px;
 	font-size: 12pt;
 	line-height: 14pt;
-	background-color: yellow;
     margin-bottom: 3px;
     margin-top: 0px;
 	padding: 4px 10px 10px 10px;
@@ -1079,10 +1078,19 @@ article img, img.articleImg, content img {
 
 /**umb_name:Category Picker Category*/
 .category-picker .category {
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 13pt;
-	font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    background-color: yellow;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 20px 7px 20px;
+    text-decoration: none;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    font-size: 11px;
 }
 
 /**umb_name:Category Picker Category Hover*/

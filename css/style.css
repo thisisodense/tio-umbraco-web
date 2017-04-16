@@ -173,7 +173,7 @@ article img {
       text-align: left;
       font-size: 12px;
       color: #666;
-      padding: 7px 10px 0 10px;
+      padding: 0px 10px 0 10px;
       line-height: 110%; }
 
 /**umb_name:Description Header*/
@@ -183,6 +183,7 @@ article img {
             display: block;
             font-weight: 900;
             overflow: hidden;
+			margin-top: 10px;
             margin-bottom: 3px;
             font-size: 36px;
             line-height: 100%;

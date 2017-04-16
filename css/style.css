@@ -1059,9 +1059,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Category Picker*/
 .category-picker{
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	font-size: 0pt;
 	line-height: 14pt;
     margin-bottom: 3px;

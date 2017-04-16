@@ -274,7 +274,7 @@ hr.bigspace {
 
 /**umb_name:Link Container LinkIMG*/
 .linkContainer .links .linkimg {
-    width: 40px;
+    width: 40px !important;
 	height: auto;
 }
 
@@ -386,8 +386,8 @@ img.articleImg {
 
 /**umb_name:Article Writer Image*/
 img.articleImg.writerImg {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 300px !important;
+        max-width: 300px !important;
         float: right;
         padding-left: 10px;
     }
@@ -395,9 +395,9 @@ img.articleImg.writerImg {
 /**umb_name:Content Image*/
 .content img {
     display: block;
-	max-width: 680px;
-    width: 100%;
-	height: auto;
+	max-width: 680px !important;
+    width: 100% !important;
+	height: auto !important;
     margin: 0 0 10px 0;
 }
 
@@ -520,8 +520,8 @@ a#writers {
 
 /**umb_name:Writer of the Week IMG*/
 img.writerOfWeek {
-    width: 20%;
-    height: 94px;
+    width: 20% !important;
+    height: 94px !important;
     object-fit: cover;
     object-position: center;
     float: left;

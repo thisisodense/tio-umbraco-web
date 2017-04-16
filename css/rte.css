@@ -1,7 +1,15 @@
-
+/**umb_name:Top Menu*/
+h1{
+	font-size: 20pt;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    line-height: 15pt;
+    font-weight: 700;
+    letter-spacing: 3px;}
 
 /**umb_name:Header*/
-h1{font-weight: 900;
+h2{font-weight: 900;
             margin-bottom: 3px;
             font-size: 36px;
             line-height: 100%;
@@ -10,10 +18,8 @@ h1{font-weight: 900;
             letter-spacing: 3px;
             text-transform: uppercase;}
 
-
-
 /**umb_name:Subheader*/
-h2{text-transform: uppercase;
+h3{text-transform: uppercase;
             font-size: 11pt;
             line-height: 130%;
             font-weight: 400;
@@ -21,7 +27,7 @@ h2{text-transform: uppercase;
             font-family: 'Open Sans', sans-serif;}
 
 /**umb_name:Paragraph header*/
-h3{
+h4{
             font-size: 14pt;
             line-height: 130%;
             font-weight: bold;}

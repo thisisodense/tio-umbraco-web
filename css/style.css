@@ -395,9 +395,9 @@ img.articleImg.writerImg {
 /**umb_name:Content Image*/
 .content img {
     display: block;
-	max-width: 680px !important;
-    width: 100% !important;
-	height: auto !important;
+	max-width: 680px;
+    width: 100%;
+	height: auto;
     margin: 0 0 10px 0;
 }
 

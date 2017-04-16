@@ -23,7 +23,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /**umb_name:Body*/
-body{line-height: 1;
+body{
+	line-height: 1;
 margin-top: 0px;
 font-size: 10pt;
 line-height: 12pt;
@@ -534,7 +535,7 @@ img.writerOfWeek {
 /**umb_name:Writer of the Week text*/
 p.writerOfWeek {
     font-size: 13pt;
-    line-height: 16pt;
+    line-height: 20pt;
     font-weight: 300;
     font-family: 'Open Sans Condensed', sans-serif !important;
     background-color: yellow;

@@ -670,6 +670,15 @@ a.writerOfWeek, span.writerOfWeek {
     position: relative;
 }
 
+/**umb_name:Read More P*/
+p {
+        line-height: 20pt;
+		font-size: 13pt;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+		font-weight: 300;
+    }
+
 /**umb_name:Read More Center*/
 .place div.readmore {
     text-align: center;

@@ -397,6 +397,7 @@ img.articleImg.writerImg {
     display: block;
 	max-width: 680px;
     width: 100%;
+	height: auto;
     margin: 0 0 10px 0;
 }
 

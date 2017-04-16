@@ -1013,9 +1013,12 @@ article img, img.articleImg, content img {
   }
 
 /**umb_name:Category Picker Category*/
-.category-picker .category{
+.category-picker .category {
 	cursor: pointer;
-	text-decoration: none;}
+	text-decoration: none;
+	font-size: 13pt;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
 
 /**umb_name:Category Picker Category Hover*/
     .category-picker .category:hover {
@@ -1028,13 +1031,12 @@ article img, img.articleImg, content img {
     @media (max-width: 680px) {
 /**umb_name:Category Picker Category 680px*/
       .category-picker .category {
-        font-size: 12pt; } }
+        font-size: 13pt; } }
 
     @media (max-width: 480px) {
 /**umb_name:Category Picker Category 480px*/
       .category-picker .category {
-        font-size: 11pt;
-        padding-top: 5px; } }
+        font-size: 13pt; } }
 
 /**umb_name:Map*/
 .map {

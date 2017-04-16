@@ -722,6 +722,7 @@ p {
 /**umb_name:Read More Hide*/
     .readmore.hide {
         display: none;
+		margin-top: 0px !important;
     }
 
 /**umb_name:First Article*/

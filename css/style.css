@@ -1062,9 +1062,9 @@ article img, img.articleImg, content img {
 	letter-spacing: 0px;
 	font-size: 0pt;
 	line-height: 14pt;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
     margin-top: 0px;
-	padding: 4px 10px 10px 10px;
+	padding: 4px 10px 0px 10px;
 }
 
 /**umb_name:Category Picker A*/

@@ -558,7 +558,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
 }
 
 /**umb_name:Writer of the Week Name*/
-a.writerOfWeek, span.writerOfWeek {
+a.writerOfWeek {
     font-size: 13pt;
     line-height: 16pt;
     font-weight: 300;

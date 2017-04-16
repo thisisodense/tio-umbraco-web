@@ -295,9 +295,11 @@ h1{
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
-    line-height: 200%;
+    line-height: 100%;
     font-weight: 700;
-    letter-spacing: 3px;}
+    letter-spacing: 3px;
+	padding-top: 20px;
+			padding-bottom: 20px;}
 
 /**umb_name:Header*/
 h2{font-weight: 900;

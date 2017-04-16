@@ -26,8 +26,17 @@ h3{
             line-height: 130%;
             font-weight: bold;}
 
+/**umb_name:Info text*/
+.infoText{
+            font-size: 12pt;
+            line-height: 12pt;
+			color: darkgrey;
+            font-family: 'Open Sans', sans-serif;}
+
 /**umb_name:Image description*/
-.ImageDescription{font-size: 13pt;
+.ImageDescription{
+	font-size: 13pt;
+	text-align: center;
     line-height: 16pt;
     font-weight: 300;
     font-family: 'Open Sans Condensed', sans-serif !important;}

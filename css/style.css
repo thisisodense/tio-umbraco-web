@@ -412,6 +412,13 @@ img.articleImg.writerImg {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 	color: black !important;
+	display: inline-block;
+    line-height: 18pt;
+}
+
+/**umb_name:Footerlinks Hover*/
+.footerlinks a:hover {
+    color: #00c8ab !important;
 }
 
 /**umb_name:Writers*/

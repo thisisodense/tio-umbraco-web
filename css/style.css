@@ -571,7 +571,6 @@ a.writerOfWeek {
 span.writerOfWeek {
     font-family: 'Open Sans', sans-serif !important;
 	color: darkgrey !important;
-	margin-bottom: -10px;
 }
 
 /**umb_name:Writer Display None*/

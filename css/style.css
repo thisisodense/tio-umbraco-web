@@ -289,28 +289,53 @@ hr.bigspace {
     display: none;
 }
 
-/**umb_name:H1*/
-h1{font-size: 40pt;
-line-height: 40pt;
-font-weight: 700;
-letter-spacing: 5px;
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;}
-
-/**umb_name:H2*/
-h2 {
-    font-size: 24pt;
-    margin-bottom: 10px;
-    line-height: 0.8;
+/**umb_name:Top Menu*/
+h1{
+	font-size: 20pt;
     text-transform: uppercase;
-}
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    line-height: 15pt;
+    font-weight: 700;
+    letter-spacing: 3px;}
 
-/**umb_name:H3*/
-h3 {
-    font-weight: bold;
-    margin: 10px 0;
-    text-transform: uppercase;
-}
+/**umb_name:Header*/
+h2{font-weight: 900;
+            margin-bottom: 3px;
+            font-size: 36px;
+            line-height: 100%;
+            font-family: 'Open Sans Condensed', sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;}
+
+/**umb_name:Subheader*/
+h3{text-transform: uppercase;
+            font-size: 11pt;
+            line-height: 130%;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: 'Open Sans', sans-serif;}
+
+/**umb_name:Paragraph header*/
+h4{
+            font-size: 14pt;
+            line-height: 130%;
+            font-weight: bold;}
+
+/**umb_name:Info text*/
+h5{
+            font-size: 12pt;
+            line-height: 12pt;
+			color: darkgrey;
+            font-family: 'Open Sans', sans-serif;}
+
+/**umb_name:Image description*/
+h6{
+	font-size: 13pt;
+	text-align: center;
+    line-height: 16pt;
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif}
 
 /**umb_name:Header*/
 .header {

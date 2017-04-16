@@ -1079,6 +1079,7 @@ article img, img.articleImg, content img {
     cursor: pointer;
     background-color: yellow;
     margin-right: 10px;
+	margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     padding: 7px 20px 7px 20px;
     text-decoration: none;

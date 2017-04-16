@@ -63,3 +63,13 @@ h6{
     font-family: 'Open Sans Condensed', sans-serif;
 	margin-left: 10px;
 		margin-right: 10px;}
+
+/**umb_name:Content Text*/
+p {
+        font-family: Georgia,Times,Times New Roman,serif;
+	line-height: 20pt;
+		font-size: 13pt;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+		font-weight: 300;
+    }

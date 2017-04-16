@@ -94,7 +94,8 @@ table {
 
 /**umb_name:Article*/
 article {
-    margin-top: 20px;
+    margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 /**umb_name:Article Image*/
@@ -233,7 +234,7 @@ article img {
 	margin-left: 10px;
 	line-height: 100%;
             text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 /**umb_name:Link Container h3*/
@@ -538,7 +539,7 @@ p.writerOfWeek {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 12px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
     margin-top: 25px;
 }
 
@@ -669,6 +670,15 @@ a.writerOfWeek, span.writerOfWeek {
 .readmore {
     position: relative;
 }
+
+/**umb_name:Read More P*/
+p {
+        line-height: 20pt;
+		font-size: 13pt;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+		font-weight: 300;
+    }
 
 /**umb_name:Read More Center*/
 .place div.readmore {
@@ -1056,7 +1066,7 @@ article img, img.articleImg, content img {
 	line-height: 14pt;
 	background-color: yellow;
     margin-bottom: 3px;
-    margin-top: 37px;
+    margin-top: 0px;
 	padding: 4px 10px 10px 10px;
 }
 

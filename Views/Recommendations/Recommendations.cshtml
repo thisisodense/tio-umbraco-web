@@ -1,4 +1,5 @@
 ﻿@using Library.Tools;
+@using Models = TIO.Core.Models;
 
 @inherits  TIO.Mvc.Core.BaseViewPage<TIO.Core.Models.RecommendationsModel>
 
@@ -7,17 +8,11 @@
 }
 
 @section writername {
-    @if (Model.Recommendations.Any())
-    {
-        if (!Model.HaveGuestWriter)
-        {
-            <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action("Writer", "Writer", new { id = Model.MainWriterId, name = Model.MainWriterName.ToSeoUrl() })">@Model.MainWriterName</a>
-        }
-        else
-        {
-            <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.GuestRecommendation.WriterUrl">@Model.GuestRecommendation.WriterName</a>
-        }
-    }
+    <p class="writerOfWeek">
+        <a href="@Url.Action(Models.Constants.Controllers.Writer.NAME, Models.Constants.Controllers.Writer.Actions.WRITER, new { id = Model.ThisWeeksEditorId, name = Model.ThisWeeksEditorName.ToSeoUrl() })"><img src="@Model.ThisWeeksEdtiorPhoto" class="writerOfWeek"></a>
+        @(Site.IsEnglish ? Model.WeekDescriptionEN : Model.WeekDescription)
+        <a href="@Url.Action(Models.Constants.Controllers.Writer.NAME, Models.Constants.Controllers.Writer.Actions.WRITER, new { id = Model.ThisWeeksEditorId, name = Model.ThisWeeksEditorName.ToSeoUrl() })">@Model.ThisWeeksEditorName</a>
+    </p>
 }
 
 @Html.DisplayFor(model => model.Recommendations, new { RecommendationModel = Model })

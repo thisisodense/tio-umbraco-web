@@ -9,10 +9,7 @@
 
 @helper GetWriterName()
 {
-    if (!Model.IsDetails)
-    {
-            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
-    }
+    <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
 }
 
 @helper GetTranslatorName()
@@ -58,6 +55,7 @@
         @Umbraco.GetDictionaryValue(string.Join(",", Model.Categories)) 
         @GetWriterName()
         @GetTranslatorName()
+        <span>| @Model.PublishDate.ToLongDateString()</span> 
     </div>
 
     @if (!Model.IsDetails)

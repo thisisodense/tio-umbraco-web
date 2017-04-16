@@ -295,7 +295,7 @@ h1{
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
-    line-height: 15pt;
+    line-height: 200%;
     font-weight: 700;
     letter-spacing: 3px;}
 
@@ -303,7 +303,7 @@ h1{
 h2{font-weight: 900;
             margin-bottom: 3px;
             font-size: 36px;
-            line-height: 100%;
+            line-height: 200%;
             font-family: 'Open Sans Condensed', sans-serif;
             letter-spacing: 3px;
             text-transform: uppercase;}
@@ -337,7 +337,7 @@ h6{
     font-weight: 300;
     font-family: 'Open Sans Condensed', sans-serif}
 
-/**umb_name:Header*/
+/**umb_name:Header Umbraco*/
 .header {
     float: left;
     width: 625px;

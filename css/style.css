@@ -1161,7 +1161,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Info Read More*/
   .place .placeInfo, .place .readmore {
-    margin-bottom: -25px; }
+    margin-bottom: -10px; }
 
 /**umb_name:Place Read More*/
   .place .readmore {

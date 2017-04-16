@@ -567,6 +567,11 @@ a.writerOfWeek {
     text-transform: uppercase !important;
 }
 
+/**umb_name:Writer of the Week Name*/
+span.writerOfWeek {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 /**umb_name:Writer Display None*/
 .displaynone {
     display:none !important;

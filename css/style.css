@@ -436,8 +436,8 @@ img.articleImg.writerImg {
 /**umb_name:Flag Link*/
 .flag img, .flag img a:link, .flag img a:active, .flag img a:visited {
     float: right;
-	height: 20px;
-	width: auto;
+	height: 20px !important;
+	width: auto !important;
 	margin: 0px 0px 0px 0px !important;
 }
 

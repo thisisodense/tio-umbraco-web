@@ -1252,7 +1252,7 @@ article img, img.articleImg, content img {
       text-align: left;
       font-size: 12px;
       color: #666;
-      padding: 7px 10px 0 10px;
+      padding: 0px 10px 0 10px;
       line-height: 110%; }
 
 /**umb_name:Place Header Description Header*/
@@ -1297,7 +1297,7 @@ article img, img.articleImg, content img {
     width: 10%;
     height: 47px;
     float: left;
-    margin-top: 12px;
+    margin-top: 5px;
   border-radius: 0px;}
 
 /**umb_name:Place Header Map Category FA*/

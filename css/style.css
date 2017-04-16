@@ -397,7 +397,7 @@ img.articleImg.writerImg {
 
 /**umb_name:Footer*/
 .footer {
-display: inline-block;
+display: inline-block !important;
 }
 
 /**umb_name:Footerlinks*/

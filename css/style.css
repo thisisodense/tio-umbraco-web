@@ -303,7 +303,7 @@ h1{
 h2{font-weight: 900;
             margin-bottom: 3px;
             font-size: 36px;
-            line-height: 130%;
+            line-height: 100%;
             font-family: 'Open Sans Condensed', sans-serif;
             letter-spacing: 3px;
             text-transform: uppercase;

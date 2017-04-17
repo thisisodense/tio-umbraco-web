@@ -8,26 +8,26 @@
 
 @helper  GetOccurs(RecommendationModel model)
 {
-if (!Model.IsCurrent)
-{
-        <text>
-            @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
-            @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
-            @if (Model.EndDate.HasValue && Model.EndDate != Model.StartDate)
-            {
-                <text>
-                    -
-                    @Html.FirstCharToUpper(Model.EndDate.Value.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Value.Day)
-                    @string.Format("{0}.", Model.EndDate.Value.ToString("MMMM").Substring(0, 3))
-                </text>
-            }
-            @Model.StartDate.Year
-        </text>
-}
-else
-{
-        <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime.HasValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
-}
+    if (!Model.IsCurrent)
+    {
+            <text>
+                @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
+                @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
+                @if (Model.EndDate != DateTime.MinValue && Model.EndDate != Model.StartDate)
+                {
+                    <text>
+                        -
+                        @Html.FirstCharToUpper(Model.EndDate.Value.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Value.Day)
+                        @string.Format("{0}.", Model.EndDate.Value.ToString("MMMM").Substring(0, 3))
+                    </text>
+                }
+                @Model.StartDate.Year
+            </text>
+    }
+    else
+    {
+            <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime != DateTime.MinValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
+    }
 }
 
 @helper GetTicketsUrlText(RecommendationModel model)
@@ -78,7 +78,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                     <span class="day">@Model.GetDate().Day</span>
                 </div>
                 <span class="_start">@Model.StartDate.ToLocalTime().Date.ToShortDateString() @Model.StartTime.ToLongTimeString()</span>
-                <span class="_end">@(Model.EndDate.HasValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime.HasValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
+                <span class="_end">@(Model.EndDate != DateTime.MinValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime != DateTime.MinValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
                 <span class="_zonecode">40</span>
                 <span class="_summary">@Model.HeadLine</span>
                 <span class="_description">@Model.SubHeader</span>

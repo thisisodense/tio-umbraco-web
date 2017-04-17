@@ -31,7 +31,4 @@
     
     <meta property="og:type" content="article" />
 }
-@section writername {
-    <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Skrevet af"): </span><a href="@Url.Action("Writer", "Writer", new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })"> @Model.WriterName</a>
-}
 @Html.DisplayForModel()

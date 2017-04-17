@@ -472,6 +472,7 @@ font-size: 0pt;
     color: black;
     text-align: center;
     font-size: 11px;
+	display: inline-block;
 }
 
 /**umb_name:Footerlinks Hover*/

@@ -26,7 +26,7 @@
     }
     else
     {
-            <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime != DateTime.MinValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
+            <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime.HasValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
     }
 }
 

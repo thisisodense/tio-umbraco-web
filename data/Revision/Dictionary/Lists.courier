@@ -27,11 +27,11 @@
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Lister</Value>
+            <Value>Liste</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Lists</Value>
+            <Value>List</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

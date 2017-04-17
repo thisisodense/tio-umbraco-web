@@ -27,11 +27,11 @@
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Longreads</Value>
+            <Value>Longread</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Longreads</Value>
+            <Value>Longread</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

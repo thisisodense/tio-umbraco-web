@@ -17,8 +17,8 @@
                 {
                     <text>
                         -
-                        @Html.FirstCharToUpper(Model.EndDate.Value.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Value.Day)
-                        @string.Format("{0}.", Model.EndDate.Value.ToString("MMMM").Substring(0, 3))
+                        @Html.FirstCharToUpper(Model.EndDate.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Day)
+                        @string.Format("{0}.", Model.EndDate.ToString("MMMM").Substring(0, 3))
                     </text>
                 }
                 @Model.StartDate.Year
@@ -78,7 +78,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                     <span class="day">@Model.GetDate().Day</span>
                 </div>
                 <span class="_start">@Model.StartDate.ToLocalTime().Date.ToShortDateString() @Model.StartTime.ToLongTimeString()</span>
-                <span class="_end">@(Model.EndDate != DateTime.MinValue ? Model.EndDate.Value.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime != DateTime.MinValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
+                <span class="_end">@(Model.EndDate != DateTime.MinValue ? Model.EndDate.ToLocalTime().Date.ToShortDateString() : Model.StartDate.ToLocalTime().Date.ToShortDateString()) @(Model.EndTime != DateTime.MinValue ? Model.EndTime.Value.ToLongTimeString() : "")</span>
                 <span class="_zonecode">40</span>
                 <span class="_summary">@Model.HeadLine</span>
                 <span class="_description">@Model.SubHeader</span>

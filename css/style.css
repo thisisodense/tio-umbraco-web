@@ -257,7 +257,7 @@ text-transform: uppercase;
 /**umb_name:Link Container Links*/
     .linkContainer .links {
         float: left;
-		margin: right: 3px;
+		margin-right: 3px;
 		margin-bottom: 10px;
     }
 

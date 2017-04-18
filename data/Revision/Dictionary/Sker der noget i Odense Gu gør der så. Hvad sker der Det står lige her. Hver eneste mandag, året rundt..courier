@@ -1,4 +1,4 @@
-﻿<DictionaryItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Dependencies>
         <Dependency>
             <IsChild>false</IsChild>
@@ -31,7 +31,7 @@
         </Translation>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.</Value>
+            <Value>This Is Odense er din insiderguide til Odenses bedste steder og oplevelser.</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

@@ -512,6 +512,7 @@ a#writers {
 /**umb_name:Writer Image*/
 .writer img {
     width:100%;
+	margin-bottom: 0px;
 }
 
 /**umb_name:Writer Background*/

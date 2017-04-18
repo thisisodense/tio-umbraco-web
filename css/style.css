@@ -255,6 +255,12 @@ text-transform: uppercase;
     }
 
 /**umb_name:Link Container Links*/
+    .linkContainer .links {
+        float: left;
+		margin: right: 3px;
+    }
+
+/**umb_name:Link Container Links*/
     .linkContainer .links a {
         float: left;
     }
@@ -272,8 +278,6 @@ hr.bigspace {
 
 /**umb_name:Link Container Links Image*/
 .linkContainer .links img {
-    padding-right: 30px;
-	margin-bottom: 30px;
 }
 
 /**umb_name:Link Container LinkIMG*/

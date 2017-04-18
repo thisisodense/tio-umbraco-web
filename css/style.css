@@ -258,6 +258,7 @@ text-transform: uppercase;
     .linkContainer .links {
         float: left;
 		margin: right: 3px;
+		margin-bottom: 10px;
     }
 
 /**umb_name:Link Container Links*/

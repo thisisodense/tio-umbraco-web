@@ -974,7 +974,11 @@ margin-left: 2px;
     position: inherit !important;
 }
 
-.fb-page.fb_iframe_widget
+/**umb_name:Facebook Comments iFrame 5*/
+.fb-page.fb_iframe_widget {
+    text-align: center;
+}
+
 
 /**umb_name:Navigation*/
 .navigation{

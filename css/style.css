@@ -968,10 +968,6 @@ margin-left: 2px;
 .fb_iframe_widget span {
     width: 100% !important;}
 
-/**umb_name:Facebook Comments iFrame 4*/
-.fb_iframe_widget iframe {
-    position: inherit !important;
-}
 
 /**umb_name:Navigation*/
 .navigation{

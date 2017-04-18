@@ -39,7 +39,7 @@ a:link, a:active, a:visited {
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
 	margin: 0 10px 0 10px;'
-	word-break: break-word;
+	word-break: break-all;
 }
 
 /**umb_name:A Hover*/

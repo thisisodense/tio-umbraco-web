@@ -1,3 +1,9 @@
+img {
+        max-width: 680px !important;
+        width: 100% !important;
+		height: auto !important;
+    }
+
 /**umb_name:Top Menu*/
 h1{
 	font-size: 20pt;

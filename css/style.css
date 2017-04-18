@@ -964,15 +964,17 @@ text-align: center;
 margin-left: 2px;
 }
 
+/**umb_name:Facebook Page iFrame 3*/
 .fb_iframe_widget span {
     width: 100% !important;
-	    text-align: center;
 }
 
 /**umb_name:Facebook Comments iFrame 4*/
 .fb_iframe_widget iframe {
     position: inherit !important;
 }
+
+.fb-page.fb_iframe_widget
 
 /**umb_name:Navigation*/
 .navigation{

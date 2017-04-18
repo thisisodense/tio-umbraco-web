@@ -956,8 +956,8 @@ text-align: center;
 }	
 
 /**umb_name:Facebook Comments padding*/
-	._2pi8 {
-    padding-left: 0px;}
+._2pi8 {
+    padding-left: 0px !important;}
 
 /**umb_name:Navigation*/
 .navigation{

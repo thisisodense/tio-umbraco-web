@@ -223,8 +223,8 @@ article img {
 
 /**umb_name:Link Container*/
 .linkContainer {
-    text-align: left;
 	background-color: white;
+		text-align: left;
 }
 
 /**umb_name:Link Container h2*/
@@ -239,6 +239,7 @@ article img {
 	line-height: 100%;
             text-transform: uppercase;
 	margin-top: -20px;
+
 }
 
 /**umb_name:Link Container h3*/
@@ -251,6 +252,12 @@ text-transform: uppercase;
 		margin-top: 0px;
 		margin-bottom: 0px;
             font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+/**umb_name:Link Container Links*/
+    .linkContainer .links {
+		margin-bottom: 10px;
+		display: inline-block;
     }
 
 /**umb_name:Link Container Links*/
@@ -271,7 +278,6 @@ hr.bigspace {
 
 /**umb_name:Link Container Links Image*/
 .linkContainer .links img {
-    padding-right: 30px;
 }
 
 /**umb_name:Link Container LinkIMG*/
@@ -286,7 +292,6 @@ hr.bigspace {
 	height: auto;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
-	margin-bottom: 30px;
 }
 
 /**umb_name:Hide*/
@@ -964,10 +969,35 @@ text-align: center;
 margin-left: 2px;
 }
 
+/**umb_name:Facebook Like Box*/
+.fb-like-box-w { 
+	text-align:center; 
+	background-color:#e9ebee; 
+	border: 5px solid #e9ebee; 
+	border-width: 5px 0;
+	margin: 0px 0px 0px 0px;
+}
+
+/**umb_name:Facebook Page*/
+.fb-page { margin: 0 auto;}
+
+/**umb_name:Facebook Page iFrame 3*/
+.fb-page.fb_iframe_widget span {
+    width: 100% !important;
+	display: block;
+}
+
 /**umb_name:Facebook Comments iFrame 4*/
 .fb_iframe_widget iframe {
     position: inherit !important;
 }
+
+/**umb_name:Facebook Comments iFrame 5*/
+.fb-page.fb_iframe_widget {
+    text-align: center;
+}
+
+
 
 /**umb_name:Navigation*/
 .navigation{
@@ -1086,6 +1116,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Facebook Like Box 680px*/
 .fb-like-box-w {
+	background-color: black;
     border: 0px !important;
     border-width: 0px 0 !important;
     margin: 0px 0px 0px 0px;
@@ -1099,17 +1130,7 @@ article img, img.articleImg, content img {
 	
 }
 
-/**umb_name:Facebook Like Box*/
-.fb-like-box-w { 
-	text-align:center; 
-	background-color:#e9ebee; 
-	border: 5px solid #e9ebee; 
-	border-width: 5px 0;
-	margin: 0px 0px 0px 0px;
-}
 
-/**umb_name:Facebook Page*/
-.fb-page { margin: 0 auto;}
 
 /**umb_name:Category Picker*/
 .category-picker{

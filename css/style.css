@@ -950,18 +950,19 @@ text-align: center;
     bottom: 0px;
 }
 
-/**umb_name:Facebook Comments iFrame*/
+/**umb_name:Facebook Comments iFrame 1*/
 .fb-comments iframe {
     max-width: 676px !important;
 }	
-
+/**umb_name:Facebook Comments iFrame 2*/
 .fb-comments.fb_iframe_widget {
 margin-left: 2px;
 }
-
+/**umb_name:Facebook Comments iFrame 3*/
 .fb_iframe_widget span {
     width: 100% !important;}
 
+/**umb_name:Facebook Comments iFrame 4*/
 .fb_iframe_widget iframe {
     position: inherit;
 }

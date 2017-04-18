@@ -967,6 +967,7 @@ margin-left: 2px;
 /**umb_name:Facebook Page iFrame 3*/
 .fb-page.fb_iframe_widget span {
     width: 100% !important;
+	display: block;
 }
 
 /**umb_name:Facebook Comments iFrame 4*/

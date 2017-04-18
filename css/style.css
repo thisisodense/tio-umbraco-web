@@ -402,6 +402,14 @@ img.articleImg.writerImg {
     margin: 0 0 10px 0;
 }
 
+/**umb_name:Content Image P*/
+.content p img[style] {
+	max-width: 680px !important;
+    width: 100% !important;
+	height: auto !important;
+}
+
+
 /**umb_name:Info Arrow*/
 .info.arrow {
     margin: 5px 10px 0 10px;

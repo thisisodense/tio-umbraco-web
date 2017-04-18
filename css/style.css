@@ -484,6 +484,7 @@ display: inline-block !important;
 font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;
+	text-align: right;
 }
 
 /**umb_name:Footerlinks A*/

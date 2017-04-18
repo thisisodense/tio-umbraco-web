@@ -954,7 +954,11 @@ text-align: center;
 .fb-comments iframe {
     max-width: 668px !important;
 }	
-	
+
+/**umb_name:Facebook Comments padding*/
+	._2pi8 {
+    padding-left: 0px;}
+
 /**umb_name:Navigation*/
 .navigation{
         margin: 42px 0px 42px 0px;}
@@ -1069,6 +1073,7 @@ article img, img.articleImg, content img {
     .fb-comments {
         display: none !important;
     }
+
 
 /**umb_name:Top Header 680px*/
         .top .desc {

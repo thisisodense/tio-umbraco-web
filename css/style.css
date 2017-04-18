@@ -408,6 +408,7 @@ img.articleImg.writerImg {
 	max-width: 680px !important;
     width: 100% !important;
 	height: auto !important;
+	margin-bottom: 0px;
 }
 
 
@@ -494,6 +495,7 @@ font-size: 0pt;
 /**umb_name:Writers*/
 .writers {
     margin-top:10px;
+	margin-bottom: 20px;
 }
 
 a#writers {
@@ -510,6 +512,7 @@ a#writers {
 /**umb_name:Writer Image*/
 .writer img {
     width:100%;
+	margin-bottom: 0px;
 }
 
 /**umb_name:Writer Background*/

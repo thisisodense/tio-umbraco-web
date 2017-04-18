@@ -72,6 +72,13 @@ a:hover {
 	letter-spacing: 1px;
 }
 
+/**umb_name:Farvet tip-knap*/
+a.tips 
+{
+    background-color: #00c4ae !important;
+    color: white !important;
+}
+
 /**umb_name:List*/
 ol, ul {
     list-style: none;

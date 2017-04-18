@@ -225,8 +225,6 @@ article img {
 .linkContainer {
 	background-color: white;
 		text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /**umb_name:Link Container h2*/
@@ -258,9 +256,8 @@ text-transform: uppercase;
 
 /**umb_name:Link Container Links*/
     .linkContainer .links {
-        float: left;
-		margin-right: 3px;
 		margin-bottom: 10px;
+		display: inline-block;
     }
 
 /**umb_name:Link Container Links*/

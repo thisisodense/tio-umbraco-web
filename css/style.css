@@ -224,7 +224,9 @@ article img {
 /**umb_name:Link Container*/
 .linkContainer {
 	background-color: white;
-		text-align: left;
+		text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /**umb_name:Link Container h2*/

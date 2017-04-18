@@ -306,7 +306,10 @@ h1{
 	padding-top: 20px;
 			padding-bottom: 20px;
 margin-left: 10px;
-			margin-right: 10px;}
+			margin-right: 10px;
+	         -ms-word-wrap: break-word;
+        word-wrap: break-word;
+}
 
 /**umb_name:Header*/
 h2{font-weight: 900;
@@ -319,7 +322,9 @@ h2{font-weight: 900;
 			padding-top: 36px;
 			padding-bottom: 10px;
 margin-left: 10px;
-			margin-right: 10px;}
+			margin-right: 10px;
+         -ms-word-wrap: break-word;
+        word-wrap: break-word;}
 
 /**umb_name:Subheader*/
 h3{text-transform: uppercase;

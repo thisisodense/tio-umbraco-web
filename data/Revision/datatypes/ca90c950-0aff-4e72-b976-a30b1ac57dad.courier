@@ -37,14 +37,15 @@
     "rte"&#xD;
   ],&#xD;
   "dimensions": {&#xD;
-    "height": 500&#xD;
+    "height": 680&#xD;
   },&#xD;
-  "maxImageSize": 680&#xD;
+  "maxImageSize": 681&#xD;
 }</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>hideLabel</Alias>
             <SortOrder>2</SortOrder>
+            <Value>1</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>ca90c950-0aff-4e72-b976-a30b1ac57dad</UniqueID>

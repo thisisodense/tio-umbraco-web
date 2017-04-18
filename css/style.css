@@ -962,6 +962,10 @@ margin-left: 2px;
 .fb_iframe_widget span {
     width: 100% !important;}
 
+.fb_iframe_widget iframe {
+    position: inherit;
+}
+
 /**umb_name:Navigation*/
 .navigation{
         margin: 42px 0px 42px 0px;}

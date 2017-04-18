@@ -46,7 +46,17 @@
 </head>
 <body>
     @Html.Hidden("IsEnglish", Site.IsEnglish)
-    <div class="content">
+    
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+ 	 		if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.8&appId=193086360756011";
+  			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<div class="content">
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Url.Content("http://www.thisisodense.dk/media/" + (
 		Site.IsEnglish ? "/97954/forsidebillede4" : "/97946/forsidebillede2") + ".png")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	
 			<div class="navigation">

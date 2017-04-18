@@ -306,7 +306,10 @@ h1{
 	padding-top: 20px;
 			padding-bottom: 20px;
 margin-left: 10px;
-			margin-right: 10px;}
+			margin-right: 10px;
+	         -ms-word-wrap: break-word;
+        word-wrap: break-word;
+}
 
 /**umb_name:Header*/
 h2{font-weight: 900;
@@ -319,7 +322,9 @@ h2{font-weight: 900;
 			padding-top: 36px;
 			padding-bottom: 10px;
 margin-left: 10px;
-			margin-right: 10px;}
+			margin-right: 10px;
+         -ms-word-wrap: break-word;
+        word-wrap: break-word;}
 
 /**umb_name:Subheader*/
 h3{text-transform: uppercase;
@@ -349,7 +354,7 @@ h5{
 font-weight: 300;
 margin-left: 10px;
 			margin-right: 10px;
-margin-bottom: 10px;}
+			margin-bottom: 10px;}
 
 /**umb_name:Image description*/
 h6{
@@ -950,11 +955,20 @@ text-align: center;
     bottom: 0px;
 }
 
-/**umb_name:Facebook Comments iFrame*/
+/**umb_name:Facebook Comments iFrame 1*/
 .fb-comments iframe {
-    max-width: 668px !important;
+    max-width: 676px !important;
 }	
-	
+/**umb_name:Facebook Comments iFrame 2*/
+.fb-comments.fb_iframe_widget {
+margin-left: 2px;
+}
+
+/**umb_name:Facebook Comments iFrame 4*/
+.fb_iframe_widget iframe {
+    position: inherit !important;
+}
+
 /**umb_name:Navigation*/
 .navigation{
         margin: 42px 0px 42px 0px;}
@@ -1066,9 +1080,17 @@ article img, img.articleImg, content img {
     }
 
 /**umb_name:Facebook Comments 680px*/
-    .fb-comments {
-        display: none !important;
+.fb-comments iframe {
+	width: 98% !important;
     }
+
+/**umb_name:Facebook Like Box 680px*/
+.fb-like-box-w {
+    background-color: white !important;
+    border: 0px !important;
+    border-width: 0px 0 !important;
+    margin: 0px 0px 0px 0px;
+}
 
 /**umb_name:Top Header 680px*/
         .top .desc {

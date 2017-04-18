@@ -1082,6 +1082,14 @@ article img, img.articleImg, content img {
 	width: 95vw !important;
     }
 
+/**umb_name:Facebook Like Box 680px*/
+.fb-like-box-w {
+    text-align: inherit;
+    background-color: white;
+    border: 0px solid #e9ebee;
+    border-width: 0px 0;
+    margin: 0px 0px 0px 0px;
+}
 
 /**umb_name:Top Header 680px*/
         .top .desc {

@@ -971,7 +971,7 @@ margin-left: 2px;
 
 /**umb_name:Facebook Comments iFrame 4*/
 .fb_iframe_widget iframe {
-
+    position: inherit !important;
 }
 
 /**umb_name:Facebook Comments iFrame 5*/

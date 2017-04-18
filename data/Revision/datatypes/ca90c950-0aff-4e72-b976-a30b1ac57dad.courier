@@ -39,13 +39,13 @@
   "dimensions": {&#xD;
     "height": 680&#xD;
   },&#xD;
-  "maxImageSize": 681&#xD;
+  "maxImageSize": null&#xD;
 }</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>hideLabel</Alias>
             <SortOrder>2</SortOrder>
-            <Value>1</Value>
+            <Value>0</Value>
         </DataTypePrevalue>
     </Prevalues>
     <UniqueID>ca90c950-0aff-4e72-b976-a30b1ac57dad</UniqueID>

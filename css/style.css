@@ -408,6 +408,7 @@ img.articleImg.writerImg {
 	max-width: 680px !important;
     width: 100% !important;
 	height: auto !important;
+	margin-bottom: 0px;
 }
 
 

@@ -225,6 +225,7 @@ article img {
 .linkContainer {
     text-align: left;
 	background-color: white;
+		text-align: center;
 }
 
 /**umb_name:Link Container h2*/
@@ -239,7 +240,7 @@ article img {
 	line-height: 100%;
             text-transform: uppercase;
 	margin-top: -20px;
-	text-align: center;
+
 }
 
 /**umb_name:Link Container h3*/

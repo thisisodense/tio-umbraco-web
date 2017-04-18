@@ -964,6 +964,18 @@ text-align: center;
 margin-left: 2px;
 }
 
+/**umb_name:Facebook Like Box*/
+.fb-like-box-w { 
+	text-align:center; 
+	background-color:#e9ebee; 
+	border: 5px solid #e9ebee; 
+	border-width: 5px 0;
+	margin: 0px 0px 0px 0px;
+}
+
+/**umb_name:Facebook Page*/
+.fb-page { margin: 0 auto;}
+
 /**umb_name:Facebook Page iFrame 3*/
 .fb-page.fb_iframe_widget span {
     width: 100% !important;
@@ -979,6 +991,7 @@ margin-left: 2px;
 .fb-page.fb_iframe_widget {
     text-align: center;
 }
+
 
 
 /**umb_name:Navigation*/
@@ -1112,17 +1125,7 @@ article img, img.articleImg, content img {
 	
 }
 
-/**umb_name:Facebook Like Box*/
-.fb-like-box-w { 
-	text-align:center; 
-	background-color:#e9ebee; 
-	border: 5px solid #e9ebee; 
-	border-width: 5px 0;
-	margin: 0px 0px 0px 0px;
-}
 
-/**umb_name:Facebook Page*/
-.fb-page { margin: 0 auto;}
 
 /**umb_name:Category Picker*/
 .category-picker{

@@ -16,7 +16,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @RenderSection("meta", required: false)
-    <title>This Is Odense \ @Umbraco.GetDictionaryValue("Sker der noget i Odense?") / @ViewBag.Title</title>
+    <title>@Umbraco.GetDictionaryValue("Sker der noget i Odense?")</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 	<meta name="description" content="@Umbraco.GetDictionaryValue("Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.")" />
@@ -85,14 +85,15 @@
 		</div>
         @RenderBody()
         <footer>
-            <div class="footerlinks"><a href="@Url.Action("About", "About")">Om This Is Odense</a> // 
-				<a href="https://twitter.com/ThisIsOdense" target="_blank">Twitter</a> // 
-				<a href="http://instagram.com/thisisodense" target="_blank">Instagram</a> // 
-				<a href="https://www.facebook.com/ThisIsOdense" target="_blank">Facebook</a> // 
-				<a href="@Url.Action("Articles", "Articles")" >Blog</a> // 
-				<a href="@Url.Action("Locations", "Locations")" >@Umbraco.GetDictionaryValue("Byguide")</a> //
-				<a href="@Url.Action("Recommendations", "Recommendations")" >Events</a> //
-				<a href="@Url.Action("Tips", "Recommendations")" target="_blank">@Umbraco.GetDictionaryValue("TIP OS!")</a>
+            <div class="footerlinks">
+				<a href="@Url.Action("About", "About")">Om This Is Odense</a>
+				<a href="@Url.Action("Tips", "Recommendations")" class="tips" target="_blank">@Umbraco.GetDictionaryValue("TIP OS!")</a>
+				<br>
+				<a href="@Url.Action("Recommendations", "Recommendations")" >Events</a>
+				<a href="@Url.Action("Articles", "Articles")" >Blog</a>
+				<a href="@Url.Action("Locations", "Locations")" >@Umbraco.GetDictionaryValue("Byguide")</a>
+				<a href="http://instagram.com/thisisodense" target="_blank">Instagram</a>
+				<a href="https://www.facebook.com/ThisIsOdense" target="_blank">Facebook</a>	
             </div><br style="clear:both;" />
             <hr class="bigspace" />
             <div class="linkContainer">

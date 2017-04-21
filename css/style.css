@@ -975,6 +975,7 @@ text-align: center;
 /**umb_name:Facebook Comments iFrame 2*/
 .fb-comments.fb_iframe_widget {
 margin-left: 2px;
+	max-width: 680px;
 }
 
 /**umb_name:Facebook Like Box*/

@@ -494,14 +494,15 @@ font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;
 	text-align: right;
+	margin-top: 18px;
 }
 
 /**umb_name:Footerlinks A*/
 .footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
     cursor: pointer;
     background-color: yellow;
-    margin-right: 10px;
-    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     padding: 7px 20px 7px 20px;
@@ -514,6 +515,12 @@ font-size: 0pt;
     text-align: center;
     font-size: 11px;
 	display: inline-block;
+}
+
+/**umb_name:Footerlinks A Red*/
+a.red {
+    background-color: red !important;
+    color: white !important;
 }
 
 /**umb_name:Footerlinks Hover*/

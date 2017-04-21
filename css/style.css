@@ -232,20 +232,29 @@ article img {
 .linkContainer {
 	background-color: white;
 		text-align: left;
+	max-width: 680px;
 }
 
 /**umb_name:Link Container h2*/
 .linkContainer h2
-{font-weight: 900;
-            font-size: 33px;
-            color: #333;
-            font-family: 'Open Sans Condensed', sans-serif;
-            letter-spacing: 3px;
-	margin-bottom: 0px;
-	margin-left: 10px;
-	line-height: 100%;
-            text-transform: uppercase;
-	margin-top: -20px;
+{    cursor: pointer;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    max-width: 680px;
+    padding: 10px 0px;
 
 }
 
@@ -485,14 +494,15 @@ font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;
 	text-align: right;
+	margin-top: 18px;
 }
 
 /**umb_name:Footerlinks A*/
 .footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
     cursor: pointer;
     background-color: yellow;
-    margin-right: 10px;
-    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     padding: 7px 20px 7px 20px;
@@ -505,6 +515,12 @@ font-size: 0pt;
     text-align: center;
     font-size: 11px;
 	display: inline-block;
+}
+
+/**umb_name:Footerlinks A Red*/
+a.red {
+    background-color: red !important;
+    color: white !important;
 }
 
 /**umb_name:Footerlinks Hover*/
@@ -975,6 +991,11 @@ text-align: center;
 /**umb_name:Facebook Comments iFrame 2*/
 .fb-comments.fb_iframe_widget {
 margin-left: 2px;
+}
+
+/**umb_name:Facebook Comments iFrame 2b*/
+.fb-comments.fb_iframe_widget span {
+	max-width: 680px;
 }
 
 /**umb_name:Facebook Like Box*/

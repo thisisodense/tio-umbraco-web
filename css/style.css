@@ -232,20 +232,29 @@ article img {
 .linkContainer {
 	background-color: white;
 		text-align: left;
+	max-width: 680px;
 }
 
 /**umb_name:Link Container h2*/
 .linkContainer h2
-{font-weight: 900;
-            font-size: 33px;
-            color: #333;
-            font-family: 'Open Sans Condensed', sans-serif;
-            letter-spacing: 3px;
-	margin-bottom: 0px;
-	margin-left: 10px;
-	line-height: 100%;
-            text-transform: uppercase;
-	margin-top: -20px;
+{    cursor: pointer;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    display: inline-block;
+    width: 100%;
+    max-width: 680px;
+    padding: 10px 0px;
 
 }
 

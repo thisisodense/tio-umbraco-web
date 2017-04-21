@@ -1014,6 +1014,7 @@ margin-left: 2px;
 .fb-page.fb_iframe_widget span {
     width: 100% !important;
 	display: block;
+	text-align: center !important;
 }
 
 /**umb_name:Facebook Comments iFrame 4*/

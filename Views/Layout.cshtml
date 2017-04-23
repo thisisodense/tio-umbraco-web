@@ -89,15 +89,6 @@
 				Random rand = new Random();
 				string bannernummer = "bannerCrop"+ rand.Next(1,7);
 			
-				string forsidebillede = "97954/forsidebillede4";
-                if (currentUrl.IndexOf("/articles", StringComparison.InvariantCultureIgnoreCase) > -1)
-                {
-                    forsidebillede = "97946/forsidebillede2";
-                }
-                else if (currentUrl.IndexOf("/places", StringComparison.InvariantCultureIgnoreCase) > -1)
-                {
-                    forsidebillede = "97954/forsidebillede4";
-                }
             }
 <div class="content">
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(1063).GetCropUrl(bannernummer, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	

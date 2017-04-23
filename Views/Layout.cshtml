@@ -45,6 +45,26 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
+			
+			<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '550180138336430',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+			
     @Html.Hidden("IsEnglish", Site.IsEnglish)
 		<div class="content">
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Url.Content("http://www.thisisodense.dk/media/" + (

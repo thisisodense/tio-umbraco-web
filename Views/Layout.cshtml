@@ -89,7 +89,7 @@
 				Random rand = new Random();
 				rand.Next(1,9);
 			
-				string bannernummer = "bannerCrop"+ 1;
+				string bannernummer = "bannerCrop"+ rand;
 			
 			
 			
@@ -104,7 +104,6 @@
                 }
             }
 <div class="content">
-	rand.Next(1,9)
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(1063).GetCropUrl(bannernummer, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	
 			<div class="navigation">
 

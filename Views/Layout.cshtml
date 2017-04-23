@@ -67,11 +67,11 @@
 			
     @Html.Hidden("IsEnglish", Site.IsEnglish)
 @{ string currentUrl = Request.RawUrl;
-                if (currentUrl.IndexOf("active", @Html.IsActive(Url.Action("Recommendations", "Recommendations"))) > -1)
+                if (currentUrl.IndexOf("/articles", StringComparison.InvariantCultureIgnoreCase) > -1)
                 {
                     forsidebillede = "/97954/forsidebillede4";
                 }
-                else if (currentUrl.IndexOf("active", @Html.IsActive(Url.Action("Articles", "Articles"))) > -1)
+                else if (currentUrl.IndexOf("/places", StringComparison.InvariantCultureIgnoreCase) > -1)
                 {
                     forsidebillede = "/97954/forsidebillede2";
                 }

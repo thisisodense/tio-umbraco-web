@@ -66,12 +66,12 @@
 </script>
 			
     @Html.Hidden("IsEnglish", Site.IsEnglish)
-@{ string forsidebillede = "/97954/forsidebillede4";
-                if (IndexOf("active", @Html.IsActive(Url.Action("Recommendations", "Recommendations"))) > -1)
+@{ string currentUrl = Request.RawUrl;
+                if (currentUrl.IndexOf("active", @Html.IsActive(Url.Action("Recommendations", "Recommendations"))) > -1)
                 {
                     forsidebillede = "/97954/forsidebillede4";
                 }
-                else if (IndexOf("active", @Html.IsActive(Url.Action("Articles", "Articles"))) > -1)
+                else if (currentUrl.IndexOf("active", @Html.IsActive(Url.Action("Articles", "Articles"))) > -1)
                 {
                     forsidebillede = "/97954/forsidebillede2";
                 }

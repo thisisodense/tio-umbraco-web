@@ -85,6 +85,7 @@
                     newLangUrl = currentUrl.Replace("/en/", "/da/", StringComparison.InvariantCultureIgnoreCase);
                 }
 				
+				string bannernummer = (Math.floor(Math.random() * 4) + 1);
 				string forsidebillede = "97954/forsidebillede4";
                 if (currentUrl.IndexOf("/articles", StringComparison.InvariantCultureIgnoreCase) > -1)
                 {
@@ -96,7 +97,7 @@
                 }
             }
 <div class="content">			
-        <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(@Umbraco.Content(1063).GetPropertyValue("bannerCrop" + (Math.floor(Math.random() * 4) + 1))).GetCropUrl("image", "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	
+        <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(@Umbraco.Content(1063).GetPropertyValue("bannerCrop" + bannernummer)).GetCropUrl("image", "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	
 			<div class="navigation">
 
             <a class="flag" href="@newLangUrl">

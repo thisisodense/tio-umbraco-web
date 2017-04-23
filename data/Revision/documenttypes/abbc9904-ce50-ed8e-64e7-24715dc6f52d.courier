@@ -3,6 +3,15 @@
         <Dependency>
             <IsChild>false</IsChild>
             <ItemId>
+                <Id>606ede2b-e1c8-478d-8666-a4d88e2799cc</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 606ede2b-e1c8-478d-8666-a4d88e2799cc</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
                 <Id>Recommendations</Id>
                 <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
             </ItemId>
@@ -17,20 +26,23 @@
     <Name>Home</Name>
     <ItemType>Item</ItemType>
     <Resources />
-    <Alias>Recommendations</Alias>
-    <AllowedChildDocumentTypes>
-        <string>FestivalRepositoryTest</string>
-        <string>LocationRepository</string>
-        <string>RecommendationRepository</string>
-        <string>WriterRepository</string>
-    </AllowedChildDocumentTypes>
-    <AllowedTemplates>
-        <string>Recommendations</string>
-    </AllowedTemplates>
-    <DefaultTemplate>Recommendations</DefaultTemplate>
-    <Description />
     <Icon>icon-home</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>Recommendations</Alias>
+    <IsContainer>false</IsContainer>
+    <AllowAtRoot>true</AllowAtRoot>
+    <UniqueId>abbc9904-ce50-ed8e-64e7-24715dc6f52d</UniqueId>
     <Properties>
+        <ContentTypeProperty>
+            <UniqueId>a43056c3-9ba9-42c2-9e16-f41456ac6a93</UniqueId>
+            <Alias>bannerCrop</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>BannerCrop</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Top banner</TabCaption>
+        </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>f5b8129d-16fe-bc01-39fe-5952236836fb</UniqueId>
             <Alias>description</Alias>
@@ -61,12 +73,24 @@
             <Text>Meta</Text>
             <UniqueId>890fb0f0-85cd-f757-dc19-2d64cefebb50</UniqueId>
         </Tab>
+        <Tab>
+            <ContentTypeAlias>Recommendations</ContentTypeAlias>
+            <SortOrder>1</SortOrder>
+            <Text>Top banner</Text>
+            <UniqueId>f1becebf-ec73-4ada-b486-ce18484debf4</UniqueId>
+        </Tab>
     </Tabs>
-    <Thumbnail>folder.png</Thumbnail>
-    <UniqueId>abbc9904-ce50-ed8e-64e7-24715dc6f52d</UniqueId>
-    <MasterDocumentTypes />
-    <AllowAtRoot>true</AllowAtRoot>
-    <IsContainer>false</IsContainer>
     <ParentContainerId xsi:nil="true" />
     <PathGuids>-1,abbc9904-ce50-ed8e-64e7-24715dc6f52d</PathGuids>
+    <AllowedChildDocumentTypes>
+        <string>festivalRepositoryTest</string>
+        <string>LocationRepository</string>
+        <string>RecommendationRepository</string>
+        <string>WriterRepository</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates>
+        <string>Recommendations</string>
+    </AllowedTemplates>
+    <DefaultTemplate>Recommendations</DefaultTemplate>
+    <MasterDocumentTypes />
 </DocumentType>

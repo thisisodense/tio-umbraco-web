@@ -35,12 +35,42 @@
     <Properties>
         <ContentTypeProperty>
             <UniqueId>5c72dd49-b573-46f9-8628-ca5be4ac35e4</UniqueId>
-            <Alias>bannerCrop</Alias>
+            <Alias>bannerCrop1</Alias>
             <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>BannerCrop</Name>
+            <Name>BannerCrop1</Name>
             <SortOrder>0</SortOrder>
+            <TabCaption>Top banner</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>b20d9985-56f9-41b5-abf9-674808503df9</UniqueId>
+            <Alias>bannerCrop2</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>BannerCrop2</Name>
+            <SortOrder>1</SortOrder>
+            <TabCaption>Top banner</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>f692bd5b-a44a-4932-9ee7-7c708c9b59c3</UniqueId>
+            <Alias>bannerCrop3</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>BannerCrop3</Name>
+            <SortOrder>2</SortOrder>
+            <TabCaption>Top banner</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e8c2c183-5d75-4b59-9462-b6f68675495b</UniqueId>
+            <Alias>bannerCrop4</Alias>
+            <DataTypeDefinitionId>606ede2b-e1c8-478d-8666-a4d88e2799cc</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>BannerCrop4</Name>
+            <SortOrder>3</SortOrder>
             <TabCaption>Top banner</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

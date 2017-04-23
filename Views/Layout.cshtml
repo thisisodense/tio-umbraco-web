@@ -86,9 +86,12 @@
                 }
 				
 				
-			decimal d = 3.12M; 
-
-			string bannernummer = d.Math.Floor();
+				Random rand = new Random();
+				rand.Next(1,9);
+			
+				string bannernummer = "bannerCrop"+ 1;
+			
+			
 			
 				string forsidebillede = "97954/forsidebillede4";
                 if (currentUrl.IndexOf("/articles", StringComparison.InvariantCultureIgnoreCase) > -1)

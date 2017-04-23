@@ -66,7 +66,8 @@
 </script>
 			
     @Html.Hidden("IsEnglish", Site.IsEnglish)
-@{ string currentUrl = Request.RawUrl;
+@{ string forsidebillede = "/97954/forsidebillede4";
+	string currentUrl = Request.RawUrl;
                 if (currentUrl.IndexOf("/articles", StringComparison.InvariantCultureIgnoreCase) > -1)
                 {
                     forsidebillede = "/97954/forsidebillede4";

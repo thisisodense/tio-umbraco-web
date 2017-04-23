@@ -38,6 +38,11 @@
     "alias": "miniatureCrop",&#xD;
     "width": 132,&#xD;
     "height": 132&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "bannerCrop",&#xD;
+    "width": 680,&#xD;
+    "height": 430&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

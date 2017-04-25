@@ -806,7 +806,8 @@ width: 11%;
     font-family: 'Open Sans', sans-serif;
     color: #333 !important;
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
+	background-clip: padding-box;
 }
 
 /**umb_name:AddThis Sharing Toolbox*/
@@ -1408,6 +1409,7 @@ article img, img.articleImg, content img {
     vertical-align: middle;
 	      float: inherit;
 	  border-radius: 0px;
+	  background-clip: padding-box;
   }
 
 /**umb_name:Place Header Map Category FA*/

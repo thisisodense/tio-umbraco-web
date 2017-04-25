@@ -795,7 +795,7 @@ p {
 
 /**umb_name:AddThis*/
 .addthisevent-drop {
-width: 12%;
+width: 10%;
     height: auto;
     border-top: 5px solid white;
     border-bottom: 12px solid white;
@@ -1100,6 +1100,10 @@ article img, img.articleImg, content img {
     .top .desc .des {
         font-size: 11pt;
     }
+
+/**umb_name:Top Subheader 480px*/
+.addthisevent-drop {
+    width: 12%;}
 	
 /**umb_name:Writer 480px*/
     .writer {
@@ -1154,6 +1158,10 @@ article img, img.articleImg, content img {
          -ms-word-wrap: break-word;
         word-wrap: break-word; 
         }
+	
+	/**umb_name:Top Subheader 680px*/
+.addthisevent-drop {
+    width: 11%;}
 	
 }
 

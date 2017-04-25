@@ -1103,7 +1103,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Top Subheader 480px*/
 .addthisevent-drop {
-    width: 12%;}
+    width: 12% !important;}
 	
 /**umb_name:Writer 480px*/
     .writer {

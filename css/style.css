@@ -1338,7 +1338,9 @@ article img, img.articleImg, content img {
     min-height: 60px;
     cursor:pointer;
     display: table-cell;
-    cursor:pointer; 
+    cursor:pointer;
+	width: inherit;
+    float: inherit;
   }
 
     @media (max-width: 680px) {

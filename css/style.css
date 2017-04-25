@@ -151,9 +151,8 @@ article img {
     article .top {
   width: 100%;
   min-height: 27px;
-  display: block;
+  display: table;
   font-weight: 900;
-  overflow: hidden;
   padding-top: 0px;
   font-size: 27px;
   line-height: 100%;
@@ -169,11 +168,9 @@ article img {
 
 /**umb_name:Description*/
     article .desc {
-        width: 90%;
         min-height: 60px;
-        float: left;
-        position: relative;
         cursor:pointer;
+		display: table-cell
     }
 
 /**umb_name:Description P*/
@@ -575,7 +572,7 @@ a#writers {
 
 /**umb_name:Writer of the Week IMG*/
 img.writerOfWeek {
-    width: 20% !important;
+    width: 22% !important;
     height: 94px !important;
     object-fit: cover;
     object-position: center;
@@ -798,15 +795,19 @@ p {
 
 /**umb_name:AddThis*/
 .addthisevent-drop {
-	float: left;
-width: 10%;
-height: 47px;
-margin-top: 4px;
-cursor: pointer;
-background: #ff0000;
-font-family: 'Open Sans', sans-serif;
-color: #333 !important;
-text-align: center; 
+width: 11%;
+    height: auto;
+    border-top: 5px solid white;
+    border-bottom: 11px solid white;
+    margin-bottom: 10px;
+    display: table-cell;
+    cursor: pointer;
+    background: #ff0000;
+    font-family: 'Open Sans', sans-serif;
+    color: #333 !important;
+    text-align: center;
+    vertical-align: middle;
+	background-clip: padding-box;
 }
 
 /**umb_name:AddThis Sharing Toolbox*/
@@ -826,11 +827,8 @@ text-align: center;
 
 /**umb_name:AddThis Drop Date*/
     .addthisevent-drop .date {
-        width: 100%;
-        height: 47px;
-        float: left;
-        position: relative;
-		margin-top: 6px;
+vertical-align: middle;
+    text-align: center;
     }
 
 /**umb_name:AddThis Drop Date Month*/
@@ -1103,6 +1101,14 @@ article img, img.articleImg, content img {
     .top .desc .des {
         font-size: 11pt;
     }
+
+/**umb_name:AddThis Drop Dato 480px*/
+.addthisevent-drop {
+    width: 12% !important;}
+	
+/**umb_name:Place Header Map Category 480px*/
+  .placeHeader .mapCategory {
+    width: 12% !important;}
 	
 /**umb_name:Writer 480px*/
     .writer {
@@ -1157,6 +1163,7 @@ article img, img.articleImg, content img {
          -ms-word-wrap: break-word;
         word-wrap: break-word; 
         }
+
 	
 }
 
@@ -1312,15 +1319,14 @@ article img, img.articleImg, content img {
 .placeHeader {
   width: 100%;
   min-height: 27px;
-  display: block;
+  display: table;
   font-weight: 900;
-  overflow: hidden;
   padding-top: 0px;
   font-size: 27px;
   line-height: 100%;
   color: #333;
   text-transform: uppercase;
-  position: relative; 
+  position: relative;  
 }
 
 /**umb_name:Place Header AddThis Toolbox*/
@@ -1330,11 +1336,12 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Description*/
   .placeHeader .desc {
-    width: 90%;
     min-height: 60px;
-    float: left; 
-    position: relative;
-    cursor:pointer; 
+    cursor:pointer;
+    display: table-cell;
+    cursor:pointer;
+	width: inherit;
+    float: inherit;
   }
 
     @media (max-width: 680px) {
@@ -1392,20 +1399,26 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {
-    width: 10%;
-    height: 47px;
-    float: left;
-    margin-top: 5px;
-  border-radius: 0px;}
+    width: 11%;
+    height: auto;
+    border-top: 5px solid white;
+    border-bottom: 11px solid white;
+    margin-bottom: 10px;
+    display: table-cell;
+	  text-align: center;
+    vertical-align: middle;
+	      float: inherit;
+	  border-radius: 0px;
+	  background-clip: padding-box;
+  }
 
 /**umb_name:Place Header Map Category FA*/
     .placeHeader .mapCategory .fa {
-      display: block;
-      text-align: center; }
+      vertical-align: middle;
+    text-align: center; }
 
 /**umb_name:Place Header Map Category FA Before*/
       .placeHeader .mapCategory .fa:before {
-        display: inline-block;
         font-size: 20px;
         line-height: 45px;
         color: white; }

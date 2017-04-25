@@ -610,6 +610,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
 	margin-left: 0px;
 	margin-right: 0px;
 	letter-spacing: 1px;
+	word-break: normal;
 }
 
 /**umb_name:Writer of the Week Name*/

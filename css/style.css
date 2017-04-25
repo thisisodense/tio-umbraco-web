@@ -151,9 +151,8 @@ article img {
     article .top {
   width: 100%;
   min-height: 27px;
-  display: block;
+  display: table;
   font-weight: 900;
-  overflow: hidden;
   padding-top: 0px;
   font-size: 27px;
   line-height: 100%;
@@ -798,15 +797,18 @@ p {
 
 /**umb_name:AddThis*/
 .addthisevent-drop {
-	float: left;
 width: 10%;
-height: 47px;
-margin-top: 4px;
-cursor: pointer;
-background: #ff0000;
-font-family: 'Open Sans', sans-serif;
-color: #333 !important;
-text-align: center; 
+    height: auto;
+    border-top: 4px solid white;
+    border-bottom: 11px solid white;
+    margin-bottom: 10px;
+    display: table-cell;
+    cursor: pointer;
+    background: #ff0000;
+    font-family: 'Open Sans', sans-serif;
+    color: #333 !important;
+    text-align: center;
+    vertical-align: middle; 
 }
 
 /**umb_name:AddThis Sharing Toolbox*/
@@ -826,11 +828,8 @@ text-align: center;
 
 /**umb_name:AddThis Drop Date*/
     .addthisevent-drop .date {
-        width: 100%;
-        height: 47px;
-        float: left;
-        position: relative;
-		margin-top: 6px;
+vertical-align: middle;
+    text-align: center;
     }
 
 /**umb_name:AddThis Drop Date Month*/

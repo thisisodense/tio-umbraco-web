@@ -1108,7 +1108,7 @@ article img, img.articleImg, content img {
 	
 /**umb_name:Place Header Map Category 480px*/
   .placeHeader .mapCategory {
-    width: 12%;}
+    width: 12% !important;}
 	
 /**umb_name:Writer 480px*/
     .writer {

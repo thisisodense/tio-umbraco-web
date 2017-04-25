@@ -1407,6 +1407,7 @@ article img, img.articleImg, content img {
 	  text-align: center;
     vertical-align: middle;
 	      float: inherit;
+	  border-radius: 0px;
   }
 
 /**umb_name:Place Header Map Category FA*/

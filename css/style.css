@@ -799,7 +799,7 @@ p {
 .addthisevent-drop {
 width: 12%;
     height: auto;
-    border-top: 4px solid white;
+    border-top: 5px solid white;
     border-bottom: 11px solid white;
     margin-bottom: 10px;
     display: table-cell;

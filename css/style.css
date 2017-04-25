@@ -168,11 +168,9 @@ article img {
 
 /**umb_name:Description*/
     article .desc {
-        width: 100%;
         min-height: 60px;
-        float: left;
-        position: relative;
         cursor:pointer;
+		display:table-cell
     }
 
 /**umb_name:Description P*/

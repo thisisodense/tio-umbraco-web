@@ -168,7 +168,7 @@ article img {
 
 /**umb_name:Description*/
     article .desc {
-        width: 90%;
+        width: 88%;
         min-height: 60px;
         float: left;
         position: relative;
@@ -797,7 +797,7 @@ p {
 
 /**umb_name:AddThis*/
 .addthisevent-drop {
-width: 10%;
+width: 12%;
     height: auto;
     border-top: 4px solid white;
     border-bottom: 11px solid white;
@@ -1329,7 +1329,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Description*/
   .placeHeader .desc {
-    width: 90%;
+    width: 88%;
     min-height: 60px;
     float: left; 
     position: relative;
@@ -1391,7 +1391,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {
-    width: 10%;
+    width: 12%;
     height: 47px;
     float: left;
     margin-top: 5px;

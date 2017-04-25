@@ -170,7 +170,7 @@ article img {
     article .desc {
         min-height: 60px;
         cursor:pointer;
-		display:table-cell
+		display: table-cell
     }
 
 /**umb_name:Description P*/

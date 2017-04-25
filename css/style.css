@@ -168,7 +168,7 @@ article img {
 
 /**umb_name:Description*/
     article .desc {
-        width: 88%;
+        width: 100%;
         min-height: 60px;
         float: left;
         position: relative;

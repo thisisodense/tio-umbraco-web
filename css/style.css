@@ -200,16 +200,19 @@ article img {
             text-transform: uppercase; }
 
 article .desc strong.hed {
-    margin-bottom: 5px;
+	padding-bottom: 5px;
+    padding-left: 10px;
+    display: table-cell;
 }
 
 article .desc p strong.hed {
-    margin-bottom: 3px;
+	padding-left: 0px;
+	padding-bottom: 3px;
 }
 
 /**umb_name:Description Subheader*/
         article .desc .des {
-            width: 82%;
+            width: 100%;
             min-height: 20px;
             display: block;
             overflow: hidden;
@@ -822,7 +825,7 @@ width: 11%;
     .addthis_sharing_toolbox {
         position: absolute;
         right: 0;
-        bottom: 5px;
+            bottom: -32px;
         font-size:10pt;
         z-index:10000;
 		margin-right: 5px;
@@ -1335,6 +1338,7 @@ article img, img.articleImg, content img {
   color: #333;
   text-transform: uppercase;
   position: relative;  
+	overflow: visible;
 }
 
 /**umb_name:Place Header AddThis Toolbox*/
@@ -1375,7 +1379,7 @@ article img, img.articleImg, content img {
             display: block;
             font-weight: 900;
             overflow: hidden;
-            margin-bottom: 3px;
+            margin-bottom: 0px;
 		margin-top: 0px;
             font-size: 36px;
             line-height: 100%;
@@ -1386,7 +1390,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
-            width: 82%;
+            width: 100%;
             min-height: 20px;
             display: block;
             overflow: hidden;

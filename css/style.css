@@ -199,6 +199,13 @@ article img {
             letter-spacing: 3px;
             text-transform: uppercase; }
 
+article .desc strong.hed {
+    margin-bottom: 5px;
+}
+
+article .desc p strong.hed {
+    margin-bottom: 3px;
+}
 
 /**umb_name:Description Subheader*/
         article .desc .des {
@@ -610,6 +617,7 @@ p.writerOfWeek a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
 	margin-left: 0px;
 	margin-right: 0px;
 	letter-spacing: 1px;
+	word-break: normal;
 }
 
 /**umb_name:Writer of the Week Name*/

@@ -1378,7 +1378,7 @@ article img, img.articleImg, content img {
             display: block;
             font-weight: 900;
             overflow: hidden;
-            margin-bottom: 3px;
+            margin-bottom: 0px;
 		margin-top: 0px;
             font-size: 36px;
             line-height: 100%;

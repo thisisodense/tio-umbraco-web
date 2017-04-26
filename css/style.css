@@ -203,6 +203,10 @@ article .desc strong.hed {
     margin-bottom: 5px;
 }
 
+article .desc p strong.hed {
+    margin-bottom: 3px;
+}
+
 /**umb_name:Description Subheader*/
         article .desc .des {
             width: 82%;

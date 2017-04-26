@@ -1396,7 +1396,7 @@ article img, img.articleImg, content img {
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
-            font-size: 11pt;
+            font-size: 15px;
             line-height: 130%;
 			margin-top: -2px;
             font-weight: 400;
@@ -1407,7 +1407,7 @@ article img, img.articleImg, content img {
       @media (max-width: 480px) {
 /**umb_name:Place Subheader 480px*/
         .placeHeader .desc .des {
-          font-size: 11pt; } }
+          font-size: 15px; } }
 
 /**umb_name:Place Header Map Category*/
   .placeHeader .mapCategory {

@@ -202,7 +202,7 @@ article img {
 article .desc strong.hed {
 	padding-bottom: 5px;
     padding-left: 10px;
-    display: table-row;
+    display: table-cell;
 }
 
 article .desc p strong.hed {

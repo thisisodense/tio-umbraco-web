@@ -1338,6 +1338,7 @@ article img, img.articleImg, content img {
   color: #333;
   text-transform: uppercase;
   position: relative;  
+	overflow: visible;
 }
 
 /**umb_name:Place Header AddThis Toolbox*/

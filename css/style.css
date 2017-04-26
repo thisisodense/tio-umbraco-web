@@ -199,6 +199,9 @@ article img {
             letter-spacing: 3px;
             text-transform: uppercase; }
 
+article .desc strong.hed {
+    margin-bottom: 5px;
+}
 
 /**umb_name:Description Subheader*/
         article .desc .des {

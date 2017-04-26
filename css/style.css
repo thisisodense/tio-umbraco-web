@@ -213,7 +213,7 @@ article .desc p strong.hed {
 /**umb_name:Description Subheader*/
         article .desc .des {
             width: 100%;
-            display: block;
+            display: table-cell;
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
@@ -1390,7 +1390,7 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
             width: 100%;
-            display: block;
+            display: table-cell;
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;

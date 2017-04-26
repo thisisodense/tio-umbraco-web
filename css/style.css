@@ -187,7 +187,7 @@ article img {
         article .desc .hed {
             width: 100%;
             min-height: 27px;
-            display: block;
+            display: table-row;
             font-weight: 900;
             overflow: hidden;
 			margin-top: 0px;
@@ -202,7 +202,7 @@ article img {
 article .desc strong.hed {
 	padding-bottom: 5px;
     padding-left: 10px;
-    display: table-cell;
+    display: table-row;
 }
 
 article .desc p strong.hed {
@@ -213,7 +213,7 @@ article .desc p strong.hed {
 /**umb_name:Description Subheader*/
         article .desc .des {
             width: 100%;
-            display: table-cell;
+            display: table-row;
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
@@ -1375,7 +1375,7 @@ article img, img.articleImg, content img {
     .placeHeader .desc .hed {
             width: 100%;
             min-height: 27px;
-            display: block;
+            display: table-row;
             font-weight: 900;
             overflow: hidden;
             margin-bottom: 0px;
@@ -1390,7 +1390,7 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
             width: 100%;
-            display: table-cell;
+            display: table-row;
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;

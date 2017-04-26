@@ -207,6 +207,8 @@ article .desc strong.hed {
 
 article .desc p strong.hed {
     margin-bottom: 3px;
+	margin-left: 0px;
+    width: 100%;
 }
 
 /**umb_name:Description Subheader*/

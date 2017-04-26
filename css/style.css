@@ -825,7 +825,7 @@ width: 11%;
     .addthis_sharing_toolbox {
         position: absolute;
         right: 0;
-        bottom: 5px;
+            bottom: -32px;
         font-size:10pt;
         z-index:10000;
 		margin-right: 5px;

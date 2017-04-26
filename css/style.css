@@ -201,6 +201,8 @@ article img {
 
 article .desc strong.hed {
     margin-bottom: 5px;
+	    margin-left: 10px;
+    width: 86%;
 }
 
 article .desc p strong.hed {

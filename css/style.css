@@ -170,7 +170,7 @@ article img {
     article .desc {
         min-height: 60px;
         cursor:pointer;
-		display: table-cell
+		display: table-cell;
     }
 
 /**umb_name:Description P*/
@@ -1390,7 +1390,7 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Description Subheader*/
     .placeHeader .desc .des {
             width: 100%;
-            display: table-des;
+            display: table-cell;
             overflow: hidden;
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;

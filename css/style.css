@@ -1173,6 +1173,7 @@ article img, img.articleImg, content img {
         .top .desc {
          -ms-word-wrap: break-word;
         word-wrap: break-word; 
+    word-break: break-word;
         }
 
 	
@@ -1360,7 +1361,8 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Description 680px*/
       .placeHeader .desc {
         -ms-word-wrap: break-word;
-        word-wrap: break-word; } }
+        word-wrap: break-word; 
+    word-break: break-word;} }
 
 /**umb_name:Place Header Description P*/
     .placeHeader .desc p {

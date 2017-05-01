@@ -91,10 +91,18 @@
 			
             }
 
-$('.mapCategory.Shopping').each(function() {
-  var link = $(this).html();
-  $(this).contents().wrap('<a href="example.com/script.php?id='+link+'"></a>');
-});
+function makeMapCategoriesClickable(){
+    var cells = document.getElementsByTagName('div')
+    for (var i = 0, cell; cell = cells[i]; i++){
+        if (cell.className != 'mapCategory.Shopping') continue
+        var caseId = cell.innerHTML
+        cell.innerHTML = ''
+        var link = document.createElement('a')
+        link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
+        link.appendChild(document.createTextNode(caseId))
+        cell.appendChild(link)
+    }
+}
 
 <div class="content">
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(1072).GetCropUrl(bannernummer, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	

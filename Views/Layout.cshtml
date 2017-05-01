@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
-<body>
+<body onload="makeMapCategoriesClickable()">
 			
 			<script>
   window.fbAsyncInit = function() {
@@ -63,6 +63,19 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+
+(function makeMapCategoriesClickable(){
+    var cells = document.getElementsByTagName('div')
+    for (var i = 0, cell; cell = cells[i]; i++){
+        if (cell.className != 'mapCategory.Shopping') continue
+        var caseId = cell.innerHTML
+        cell.innerHTML = ''
+        var link = document.createElement('a')
+        link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
+        link.appendChild(document.createTextNode(caseId))
+        cell.appendChild(link)}});
+
+
 </script>
 			
     @Html.Hidden("IsEnglish", Site.IsEnglish)
@@ -90,19 +103,6 @@
 				string bannernummer = "bannerCrop"+ rand.Next(1,7);
 			
             }
-
-function makeMapCategoriesClickable(){
-    var cells = document.getElementsByTagName('div')
-    for (var i = 0, cell; cell = cells[i]; i++){
-        if (cell.className != 'mapCategory.Shopping') continue
-        var caseId = cell.innerHTML
-        cell.innerHTML = ''
-        var link = document.createElement('a')
-        link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
-        link.appendChild(document.createTextNode(caseId))
-        cell.appendChild(link)
-    }
-}
 
 <div class="content">
         <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(1072).GetCropUrl(bannernummer, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	

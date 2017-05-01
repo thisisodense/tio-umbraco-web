@@ -34,6 +34,16 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+			(function makeMapCategoriesClickable(){
+    var cells = document.getElementsByTagName('div')
+    for (var i = 0, cell; cell = cells[i]; i++){
+        if (cell.data-test != 'Shopping') continue
+        var caseId = cell.data-test
+        cell.innerHTML = ''
+        var link = document.createElement('a')
+        link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
+        link.appendChild(document.createTextNode(caseId))
+        cell.appendChild(link)}});
     </script>
     <link rel="icon" type="image/png" href="@Url.Content("~/favicon.png")" />
     @*<link rel="alternate" type="application/rss+xml" title="Rss feed" href="@(Site.IsEnglish ? "/en/feed" : "/feed")" />*@
@@ -43,6 +53,9 @@
     <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/Content/images/apple_icon_144x144_png)")" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+			
+			
+			
 </head>
 <body onload="makeMapCategoriesClickable()">
 			
@@ -63,18 +76,6 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-
-(function makeMapCategoriesClickable(){
-    var cells = document.getElementsByTagName('div')
-    for (var i = 0, cell; cell = cells[i]; i++){
-        if (cell.data-test != 'Shopping') continue
-        var caseId = cell.data-test
-        cell.innerHTML = ''
-        var link = document.createElement('a')
-        link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
-        link.appendChild(document.createTextNode(caseId))
-        cell.appendChild(link)}});
-
 
 </script>
 			

@@ -67,8 +67,8 @@
 (function makeMapCategoriesClickable(){
     var cells = document.getElementsByTagName('div')
     for (var i = 0, cell; cell = cells[i]; i++){
-        if (cell.className != 'mapCategory.Shopping') continue
-        var caseId = cell.innerHTML
+        if (cell.data-test != 'Shopping') continue
+        var caseId = cell.data-test
         cell.innerHTML = ''
         var link = document.createElement('a')
         link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId

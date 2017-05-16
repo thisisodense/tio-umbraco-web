@@ -57,11 +57,6 @@
 	display: block;
 }
 
-
-.error {
-    margin: 10px;
-}
-
 /* Seperator arrow */
 
 .seperator-arrow {
@@ -327,6 +322,11 @@
 
 
 /*RESTORE*/
+
+.restore .error {
+    margin: 10px;
+}
+
 .restore .cta {
 	padding: 0;
 	border: none;

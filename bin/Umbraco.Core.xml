@@ -11194,6 +11194,146 @@
             This abstract class just wraps the 'real' IFileSystem object passed in to its constructor.
             </remarks>
         </member>
+        <member name="T:Umbraco.Core.IO.IFileSystem">
+            <summary>
+            Provides methods allowing the manipulation of files within an Umbraco application.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetDirectories(System.String)">
+            <summary>
+            Gets all directories matching the given path.
+            </summary>
+            <param name="path">The path to the directories.</param>
+            <returns>
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/> representing the matched directories.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.DeleteDirectory(System.String)">
+            <summary>
+            Deletes the specified directory.
+            </summary>
+            <param name="path">The name of the directory to remove.</param>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.DeleteDirectory(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified directory and, if indicated, any subdirectories and files in the directory.
+            </summary>
+            <remarks>Azure blob storage has no real concept of directories so deletion is always recursive.</remarks>
+            <param name="path">The name of the directory to remove.</param>
+            <param name="recursive">Whether to remove directories, subdirectories, and files in path.</param>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.DirectoryExists(System.String)">
+            <summary>
+            Determines whether the specified directory exists.
+            </summary>
+            <param name="path">The directory to check.</param>
+            <returns>
+            <c>True</c> if the directory exists and the user has permission to view it; otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.AddFile(System.String,System.IO.Stream)">
+            <summary>
+            Adds a file to the file system.
+            </summary>
+            <param name="path">The path to the given file.</param>
+            <param name="stream">The <see cref="T:System.IO.Stream"/> containing the file contents.</param>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.AddFile(System.String,System.IO.Stream,System.Boolean)">
+            <summary>
+            Adds a file to the file system.
+            </summary>
+            <param name="path">The path to the given file.</param>
+            <param name="stream">The <see cref="T:System.IO.Stream"/> containing the file contents.</param>
+            <param name="overrideIfExists">Whether to override the file if it already exists.</param>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetFiles(System.String)">
+            <summary>
+            Gets all files matching the given path.
+            </summary>
+            <param name="path">The path to the files.</param>
+            <returns>
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/> representing the matched files.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetFiles(System.String,System.String)">
+            <summary>
+            Gets all files matching the given path and filter.
+            </summary>
+            <param name="path">The path to the files.</param>
+            <param name="filter">A filter that allows the querying of file extension. <example>*.jpg</example></param>
+            <returns>
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/> representing the matched files.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.OpenFile(System.String)">
+            <summary>
+            Gets a <see cref="T:System.IO.Stream"/> representing the file at the gieven path.
+            </summary>
+            <param name="path">The path to the file.</param>
+            <returns>
+            <see cref="T:System.IO.Stream"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.DeleteFile(System.String)">
+            <summary>
+            Deletes the specified file.
+            </summary>
+            <param name="path">The name of the file to remove.</param>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>
+            <c>True</c> if the file exists and the user has permission to view it; otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetRelativePath(System.String)">
+            <summary>
+            Returns the application relative path to the file.
+            </summary>
+            <param name="fullPathOrUrl">The full path or url.</param>
+            <returns>
+            The <see cref="T:System.String"/> representing the relative path.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetFullPath(System.String)">
+            <summary>
+            Gets the full qualified path to the file.
+            </summary>
+            <param name="path">The file to return the full path for.</param>
+            <returns>
+            The <see cref="T:System.String"/> representing the full path.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetUrl(System.String)">
+            <summary>
+            Returns the application relative url to the file.
+            </summary>
+            <param name="path">The path to return the url for.</param>
+            <returns>
+            <see cref="T:System.String"/> representing the relative url.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetLastModified(System.String)">
+            <summary>
+            Gets the last modified date/time of the file, expressed as a UTC value.
+            </summary>
+            <param name="path">The path to the file.</param>
+            <returns>
+            <see cref="T:System.DateTimeOffset"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Core.IO.IFileSystem.GetCreated(System.String)">
+            <summary>
+            Gets the created date/time of the file, expressed as a UTC value.
+            </summary>
+            <param name="path">The path to the file.</param>
+            <returns>
+            <see cref="T:System.DateTimeOffset"/>.
+            </returns>
+        </member>
         <member name="F:Umbraco.Core.MacroErrorBehaviour.Inline">
             <summary>
             Default umbraco behavior - show an inline error within the
@@ -26960,6 +27100,15 @@
             Deletes the section
             </summary>        
         </member>
+        <member name="M:Umbraco.Core.Services.IPackagingService.FetchPackageFile(System.Guid,System.Version,System.Int32)">
+            <summary>
+            This will fetch an Umbraco package file from the package repository and return the relative file path to the downloaded package file
+            </summary>
+            <param name="packageId"></param>
+            <param name="umbracoVersion"></param>
+            <param name="userId">The current user id performing the operation</param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Core.Services.IPackagingService.ImportContent(System.Xml.Linq.XElement,System.Int32,System.Int32,System.Boolean)">
             <summary>
             Imports and saves package xml as <see cref="T:Umbraco.Core.Models.IContent"/>
@@ -29202,6 +29351,15 @@
             Represents the Packaging Service, which provides import/export functionality for the Core models of the API
             using xml representation. This is primarily used by the Package functionality.
             </summary>
+        </member>
+        <member name="M:Umbraco.Core.Services.PackagingService.FetchPackageFile(System.Guid,System.Version,System.Int32)">
+            <summary>
+            This will fetch an Umbraco package file from the package repository and return the relative file path to the downloaded package file
+            </summary>
+            <param name="packageId"></param>
+            <param name="umbracoVersion"></param>
+            /// <param name="userId">The current user id performing the operation</param>
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Core.Services.PackagingService.Export(Umbraco.Core.Models.IContent,System.Boolean,System.Boolean)">
             <summary>

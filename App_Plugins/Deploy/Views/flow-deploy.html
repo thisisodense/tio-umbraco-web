@@ -142,29 +142,33 @@
 
     <li class="deployOutput deployList" ng-switch-when="collect">
         <h5 class="umb-infobox-title">Ready to transfer changes to {{environment.destination}}</h5>
-
-        <p>
+        
+        <p ng-if="deploymentItemCount <= 100">
             The following changes need to be included for everything to function
             properly, this can be due to dependencies, references and the structure of your website.
         </p>
+        <p ng-if="deploymentItemCount > 100">
+          There are over 100 changes needed to be included for everything to function properly, 
+          this can be due to dependencies, references and the structure of your website.
+        </p>
+      
+        <button class="umb-era-button -blue" prevent-default ng-click="deploy(currentTask.id)">Transfer everything now</button>
+        <br />
+        <small>This will transfer {{deploymentInfo.deployment.length}} changes to the {{environment.destination}} workspace </small>
 
         <hr />
-
+      
+      <div ng-if="deploymentItemCount <= 100">
         <div ng-repeat="(key, value) in deploymentInfo.deployment">
-            <p><strong>{{providerName(key).name}}</strong></p>
-            <ul>
-                <li ng-repeat="item in value">
-                    {{item.Name}}
-                </li>
-            </ul>
+          <p><strong>{{providerName(key).name}}</strong></p>
+          <ul>
+            <li ng-repeat="item in value">
+              {{item.Name}}
+            </li>
+          </ul>
         </div>
-
-
-        <button class="umb-era-button -blue" prevent-default ng-click="deploy(currentTask.id)">Transfer everything now</button>
-
-        <br />
-
-        <small>This will transfer {{deploymentInfo.deployment.length}} changes to the {{environment.destination}} workspace </small>
+      </div>
+        
     </li>
 
 

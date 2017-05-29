@@ -281,6 +281,15 @@
 
                         scope.deploymentInfo = response.data;
 
+                        //get the number of elements being transfered
+                        var arrays = Object.values(scope.deploymentInfo.deployment);
+                        var arrayLengths = _.map(arrays, function (i) { return i.length; });
+                        var sum = 0;
+                        for (var i = 0; i < arrayLengths.length; i++) {
+                            sum += arrayLengths[i];
+                        }
+                        scope.deploymentItemCount = sum;
+
                         //iterate through all the returned data for better view
                         var notallowed = [];
                         angular.forEach(response.data.notAllowed, function (value, key) {

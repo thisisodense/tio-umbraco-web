@@ -18,20 +18,20 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Guides</Id>
+        <Id>Essays</Id>
         <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Guides</Name>
+    <Name>Essays</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Guide</Value>
+            <Value>Essay</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Guide</Value>
+            <Value>Essay</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

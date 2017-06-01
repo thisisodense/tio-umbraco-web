@@ -18,20 +18,20 @@
         </Dependency>
     </Dependencies>
     <ItemId>
-        <Id>Guides</Id>
+        <Id>Stories</Id>
         <ProviderId>d8e6ad86-e73a-11df-9492-0800200c9a66</ProviderId>
     </ItemId>
-    <Name>Guides</Name>
+    <Name>Stories</Name>
     <ItemType>Item</ItemType>
     <Resources />
     <Translations>
         <Translation>
             <CultureAlias>da</CultureAlias>
-            <Value>Guide</Value>
+            <Value>Historie</Value>
         </Translation>
         <Translation>
             <CultureAlias>en</CultureAlias>
-            <Value>Guide</Value>
+            <Value>Story</Value>
         </Translation>
     </Translations>
 </DictionaryItem>

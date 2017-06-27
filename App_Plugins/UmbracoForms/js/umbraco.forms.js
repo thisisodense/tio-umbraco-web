@@ -1882,20 +1882,53 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.WorkflowsControl
             update: function (e, ui) {
                 var wfGuids = [];
                 var wfcount = 0;
+
+                //Gets the submitted or approved workflow type from a rel attribute
                 var state = ui.item.parent().attr("rel");
-                ui.item.parent().children().each(function () {
-                    if ($(this).attr("rel") != null) {
-                        wfGuids[wfcount] = $(this).attr("rel");
-                        wfcount++;
+
+                //Get the previous position of item & new position
+                var newIndex = ui.item.sortable.dropindex;
+                var originalIndex = ui.item.sortable.index;
+
+                //Make a copy - as modifying the bound $workflows freaks the UI sort order
+                $scope.workflowCopy = angular.copy($scope.workflows);
+
+                // A move has happened...
+                if (originalIndex > -1) {
+                    //Get the item we moved
+                    //So we can reinsert it at its new position
+                    var movedElement = $scope.workflowCopy[originalIndex];
+
+                    //Delete one item at its original position
+                    $scope.workflowCopy.splice(originalIndex, 1);
+
+                    //At new position don't delete any items, but insert our new item
+                    $scope.workflowCopy.splice(newIndex, 0, movedElement);
+                }
+
+                //So rather than using the DOM as previous - use the actual data bound
+                //We can foreach & check for the state matches the property 'executesOn'
+                //Then push new item into the wfGuids array
+                angular.forEach($scope.workflowCopy, function(value, key) {
+
+                    if(value.executesOn === state){
+                        //Push the GUID of the workflow into the simple string array
+                        this.push(value.id);
                     }
+
+                }, wfGuids);
+
+                //Push the updated order of GUIDs to the server
+                workflowResource.updateSortOrder(state, wfGuids).then(function () {
+                    //We should notify the user that the sort order got updated
+                    notificationsService.success("Success", "The sort order of workflows has been updated");
                 });
 
-                workflowResource.updateSortOrder(state,wfGuids).then(function () {
 
-
-                });
-
-            },
+                // $scope.$apply(function(){
+                    
+                // });
+            }
         };
 
         $scope.deleteWorkflow = function (workflow) {
@@ -1931,6 +1964,15 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.WorkflowsControl
             data.form = $routeParams.id;
             data.add = true;
 
+            //Before we open the dialog 
+            //Get the total number of items found in $scope.workflows currently
+            //As its a zero based index that is used for sortOrder on the workflow objects
+            //We can pass the direct number of items as the sortOrder count that needs to be set on this item
+            var countOfItems = $scope.workflows.length;
+
+            //Append it to the JSON data object we pass into the dialog
+            data.newSortOrder = countOfItems;
+
             dialogService.open({
                 template: '/app_plugins/UmbracoForms/Backoffice/Form/dialogs/workflow.html',
                 show: true,
@@ -1952,7 +1994,7 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.Dialogs.Workflow
 	function ($scope, $routeParams, workflowResource, dialogService, notificationsService, $window) {
 
 	    if ($scope.dialogData.workflow) {
-	        //edit
+	        //edit exisiting workflow
 	        $scope.workflow = $scope.dialogData.workflow;
 	        workflowResource.getAllWorkflowTypesWithSettings()
 	            .then(function (resp) {
@@ -1960,21 +2002,8 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.Dialogs.Workflow
 	                setTypeAndSettings();
 	            });
 
-	        //workflowResource.getByGuid($scope.dialogData.workflow)
-            //.then(function (response) {
-
-            //    $scope.workflow = response.data;
-
-            //    workflowResource.getAllWorkflowTypesWithSettings()
-            //        .then(function (resp) {
-            //            $scope.types = resp.data;
-            //            setTypeAndSettings();
-            //        });
-                
-            //});
-
 	    } else {
-	        //create
+	        //creating a new workflow
 	        workflowResource.getScaffold()
 	            .then(function(response) {
 	                $scope.loaded = true;
@@ -1982,6 +2011,10 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.Dialogs.Workflow
 	                $scope.workflow.executesOn = $scope.dialogData.state;
 	                $scope.workflow.form = $scope.dialogData.form;
 	                $scope.workflow.active = true;
+
+					//Pull through the new sortOrder that this item should be given
+					//As we save the item/JSON down to disk when we save the item in this dialog
+					$scope.workflow.sortOrder = $scope.dialogData.newSortOrder;
 
 	                workflowResource.getAllWorkflowTypesWithSettings()
 	                    .then(function(resp) {
@@ -2886,110 +2919,14 @@ angular.module("umbraco").controller("UmbracoForms.Editors.PreValueSource.EditCo
     };
 
 	});
-angular.module("umbraco").controller("UmbracoForms.FormPickerController", function ($scope, $http, formResource) {
-
-    //Used to minipulate the Form Object we get back into the simpler form object needed here
-    function massageFormDataObject(form) {
-
-        var fields = [];
-        var fieldSummary = '';
-
-        //Not sure how to get these fields without this ugly nested loop?
-        //For each page in the object
-        for (var pageIndex = 0; pageIndex < form.pages.length; pageIndex++) {
-
-            //For each page it will have one or more fieldsets nested
-            for (var fieldsetIndex = 0; fieldsetIndex < form.pages[pageIndex].fieldSets.length; fieldsetIndex++)
-            {
-
-                //for each fieldset it will have a container
-                for (var containerIndex = 0; containerIndex < form.pages[pageIndex].fieldSets[fieldsetIndex].containers.length; containerIndex++)
-                {
-
-                    //For each container will have one or more fields
-                    for (var fieldIndex = 0; fieldIndex < form.pages[pageIndex].fieldSets[fieldsetIndex].containers[containerIndex].fields.length; fieldIndex++)
-                    {
-                        var field = form.pages[pageIndex].fieldSets[fieldsetIndex].containers[containerIndex].fields[fieldIndex];
-
-                        //Push the field we find into our new array of just fields only
-                        fields.push(field);
-                    }
-                }
-            }
-        }
-
-        //Build up field summary
-        //Example: Name, Age, Location, Left column and one additional fields
-        //Example: Name, Age Location and Left column
-
-        var currentFieldItem = null;
-
-        //Check that we have 4 fields or less
-        if (fields.length <= 4) {
-
-            //Loop over first 4 items in fields array
-            for (var i = 0; i < fields.length; i++) {
-
-                //Get the current field object in the loop out of array
-                currentFieldItem = fields[i];
-
-                //Set the string fieldSummary with the name of the field aka caption
-                //If we are not the last item in the array prefix with a comma
-                //Otherwise it's an 'and
-                if (i !== fields.length - 1) {
-                    fieldSummary += currentFieldItem.caption;
-
-                    if (i !== fields.length - 2) {
-                        fieldSummary += ', ';
-                    }
-
-                }
-                else {
-                    fieldSummary += ' and ' + currentFieldItem.caption;
-                }
-            }
-        }
-        else {
-            //Loop over first four items & then append a count of the remaining fields we have
-            for (var x = 0; x < 4; x++) {
-
-                //Get the current field object in the loop out of array
-                currentFieldItem = fields[x];
-
-                //Set the string fieldSummary with the name of the field aka caption
-                fieldSummary += currentFieldItem.caption;
-
-                //If we are NOT the last item use a comma
-                //Otherwise it's a comma
-                if (x !== fields.length - 1) {
-                    fieldSummary += ', ';
-                }
-            }
-
-            //
-            //More than 4 records use - Name, Age, Location, Left column and one additional fiels
-            //TODO: Need to use word numbers :'(
-            var countExtraFields = fields.length - 4;
-            fieldSummary += 'and ' + countExtraFields + ' additional fields';
-        }
-
-        var pages = form.pages.length;
-        var summary = pages + ' page form with ' + fields.length + ' fields';
-
-        return {
-            id: form.id,
-            name: form.name,
-            fields: fieldSummary,
-            summary: summary,
-            workflows: form.workflows.length
-        };
-    };
+angular.module("umbraco").controller("UmbracoForms.FormPickerController", function ($scope, $http, formPickerResource, notificationsService) {
 
     $scope.loading = true;
     var selectedForm = null;
 
-    formResource.getOverView().then(function (response) {
-        $scope.forms  = response.data;
+    formPickerResource.getFormsForPicker().then(function (response) {
+
+        $scope.forms  = response;
         $scope.loading = false;
         
         //Only do this is we have a value saved
@@ -3007,24 +2944,42 @@ angular.module("umbraco").controller("UmbracoForms.FormPickerController", functi
                 //So this means we do not have access to it, but need to show the form name in the UI
 
                 //Go fetch that specific form by the GUID we have saved
-                formResource.getByGuid($scope.model.value).then(function (response) {
+                formPickerResource.getPickedForm($scope.model.value).then(function (response) {
 
-                    var form = response.data;
+                    var form = response;
 
-                    //Add the form to the collection of forms - change to same format as API response
+                    // //Add the form to the collection of forms
                     //Push the item into the array/collection of forms so it can still be selected as a radio button option
-                    var formToPush = massageFormDataObject(form);
-                    $scope.forms.push(formToPush);
+                    $scope.forms.push(form);
+
+                },function(err) {
+                    //The 500 err will get caught by UmbRequestHelper & show the stacktrace in YSOD dialog if in debug or generic red error to see logs
+
+                    //Got an error from the HTTP API call
+                    //Most likely cause is the picked/saved form no longer exists & has been deleted
+                    //Need to bubble this up in the UI next to prop editor to make it super obvious
+
+                    //Using Angular Copy - otherwise the data binding will be updated
+                    //So the error message wont make sense, if the user then updates/picks a new form as the model.value will update too
+                    var currentValue = angular.copy($scope.model.value);
+
+                    //Put something in the prop editor UI - some kind of red div or text
+                    $scope.error = "The saved/picked form with id '" + currentValue + "' no longer exists. Pick another form below or clear out the old saved form";
                 });
             }
         }
 
     },
     function (err) {
+        //Error callback from - getting all Forms
+        //Unsure what exception/error we would encounter
+        //Would be just an empty collection if we cant find/get any
+
         $scope.error = "An Error has occured while loading!";
         $scope.loading = false;
     });
 
+    //Simple click function to clear out the currently selected/saved value
     $scope.clear = function () {
         $scope.model.value = null;
     }
@@ -3179,6 +3134,37 @@ function formResource($http) {
 }
 
 angular.module('umbraco.resources').factory('formResource', formResource);
+
+/**
+    * @ngdoc service
+    * @name umbraco.resources.formPickerResource
+    * @description Used for picking Umbraco Forms with the Form Picker Property Editor
+    **/
+function formPickerResource($http, umbRequestHelper) {
+    //the factory object returned
+
+    //TODO: Use the same way way in core to register URLs in Global Umbraco.Sys.ServerVariables
+    var apiRoot = "backoffice/UmbracoForms/FormPicker/";
+
+    return {
+       
+        getFormsForPicker : function(){
+            return umbRequestHelper.resourcePromise(
+                $http.get(apiRoot + 'GetFormsForPicker'),
+                "Failed to retrieve Forms to pick"
+            );
+        },
+
+        getPickedForm: function (id) {
+             return umbRequestHelper.resourcePromise(
+                $http.get(apiRoot + "GetPickedForm?formGuid=" + id),
+                "The picked/saved form with id '" + id + "' does not exist"
+            );
+        }
+    };
+}
+
+angular.module('umbraco.resources').factory('formPickerResource', formPickerResource);
 
 /**
     * @ngdoc service
@@ -4519,8 +4505,13 @@ angular.module("umbraco.directives")
                 }
 
                 scope.deletePrevalue = function (idx) {
-                    scope.prevalues.splice(idx, 1);
-                    updateModel();
+
+                    var result = confirm("Are you sure you want to delete this?");
+
+                    if(result === true){
+                        scope.prevalues.splice(idx, 1);
+                        updateModel();
+                    }
                 };
 
                 scope.addPrevalue = function () {
@@ -4794,6 +4785,7 @@ function formService(preValueSourceResource) {
 
 			var newField = {
 				caption: "",
+				alias:"",
 				id: generateGUID(),
 				settings: {},
 				preValues: [],

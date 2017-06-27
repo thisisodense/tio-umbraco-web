@@ -1,4 +1,8 @@
 ﻿ <div ng-controller="UmbracoForms.FormPickerController">
+     
+     <div ng-if="error" class="alert alert-warning">
+         {{error}}
+     </div>
 
      <div class="radio" ng-repeat="form in forms | orderBy: 'name'">
          <label>

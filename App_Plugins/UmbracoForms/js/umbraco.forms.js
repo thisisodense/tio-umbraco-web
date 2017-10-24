@@ -433,6 +433,10 @@ angular.module("umbraco")
                 $scope.currentVersion = response.data;
             });
 
+            updatesResource.getSavePlainTextPasswordsConfiguration().then(function (response) {
+                $scope.savePlainTextPasswords = response.data.toString() === "true";
+            });
+
 
         };        
 
@@ -3344,6 +3348,10 @@ function updatesResource($http) {
 
         getVersion: function() {
             return $http.get(apiRoot + "GetVersion");
+        },
+
+        getSavePlainTextPasswordsConfiguration: function() {
+            return $http.get(apiRoot + "GetSavePlainTextPasswordsConfiguration");
         }
     };
 }

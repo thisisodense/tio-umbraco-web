@@ -275,7 +275,7 @@
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Places To Go in 2015</Name>
+            <Name>City Guide 2015</Name>
             <SortOrder>1</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
@@ -286,7 +286,7 @@
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>Places To Go in 2016</Name>
+            <Name>City Guide 2016</Name>
             <SortOrder>2</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />

@@ -5,11 +5,23 @@
 
 @inherits BaseViewPage<ArticleModel>
 
-
-
 @helper GetWriterName()
 {
-    <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
+    if (Model.GuestWriter)
+    {
+        if (string.IsNullOrEmpty(Model.LinkToGuestWriter))
+        {
+            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") @Model.NameOfGuestWriter</span>
+        }
+        else
+        {
+            <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Model.LinkToGuestWriter" target="_blank">@Model.NameOfGuestWriter</a></span>
+        }
+    }
+    else
+    {
+        <span>| @Umbraco.GetDictionaryValue("Skrevet af:") <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
+    }
 }
 
 @helper GetTranslatorName()

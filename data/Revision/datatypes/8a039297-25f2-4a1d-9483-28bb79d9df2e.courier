@@ -95,10 +95,10 @@
             <SortOrder>7</SortOrder>
             <Value>{&#xD;
   "allowBulkPublish": true,&#xD;
-  "allowBulkUnpublish": true,&#xD;
-  "allowBulkCopy": true,&#xD;
-  "allowBulkMove": true,&#xD;
-  "allowBulkDelete": true&#xD;
+  "allowBulkUnpublish": false,&#xD;
+  "allowBulkCopy": false,&#xD;
+  "allowBulkMove": false,&#xD;
+  "allowBulkDelete": false&#xD;
 }</Value>
         </DataTypePrevalue>
     </Prevalues>

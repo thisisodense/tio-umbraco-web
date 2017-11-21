@@ -8,14 +8,14 @@
             name: "SocialPosts",
             /*the html file we will load for the editor*/
             editor: {
-                view: "~/App_Plugins/SocialPosts/socialposts.html?v=1"
+                view: "~/App_Plugins/SocialPosts/socialposts.html?v=10"
             }
         }
     ]
     ,
     //array of files we want to inject into the application on app_start
     javascript: [
-		'~/App_Plugins/SocialPosts/dictionany.resource.js?v=1',
-        '~/App_Plugins/SocialPosts/socialposts.controller.js?v=1'
+		'~/App_Plugins/SocialPosts/dictionany.resource.js?v=10',
+        '~/App_Plugins/SocialPosts/socialposts.controller.js?v=10'
     ]
 }

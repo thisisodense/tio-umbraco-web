@@ -2,9 +2,9 @@
     <a href="https://developers.facebook.com/tools/debug/sharing/?q=http%3A%2F%2Fwww.thisisodense.dk%2Fda%2F{{id}}%2F{{urlDanish}}" class="btn umb-button__button" style="background-color:#d9631e; color: #fff; border-color:#d9631e;" target="_blank">Facebook scrape</a>
     <h2>FB-billedetekst</h2>
     <p>
-       {{headline}}
+        {{headline}}
         <br />
-       {{subheader}}
+        {{subheader}}
     </p>
     <p>Læs anbefalingen på: http://www.thisisodense.dk/da/{{id}}/{{urlDanish}}</p>
     <p>{{eventType}} | {{startDate | date:'dd MMM'}} {{endDate ? '- ' + (endDate | date:'dd MMM') : ''}} | {{startTime | date:'HH:mm'}} {{endTime ? '- ' + (endTime | date:'HH:mm') : ''}} | {{locationRecommendation.address}} | {{price}} kr.</p>
@@ -38,9 +38,11 @@
     <p>{{linkToEvent}}</p>
     <p>Translated by {{translatorRecommendation}}. Read all our four weekly recommendations at www.thisisodense.dk/en</p>
     <h2>IG-opslagstekst</h2>
+    <p ng-bind-html="headline"></p>
     <p ng-bind-html="summaryForInstagram"></p>
-    <p>
-        Oplev {{headline}} fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}. {{organizer}} åbner dørene på {{locationRecommendation.title}} kl. {{doorsOpen}}.
-    </p>
+
+    <p>Sted: {{locationRecommendation.title}}, {{locationRecommendation.address}}<br>
+    Tidspunkt: Fra kl. {{startTime}} {{endTime ? 'til kl.' + (endTime | date:'HH:mm') : ''}}<br>
+    Arrangør: {{organizer}}</p>
     <p>Læs hele anbefalingen på: http://www.thisisodense.dk/da/{{id}}/{{urlDanish}} {{locationRecommendation.hashtags}} #odense #thisisodense #mitodense</p>
 </div>

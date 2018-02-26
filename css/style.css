@@ -138,17 +138,13 @@ article img {
 
 /**umb_name:Guest Writer AddThis*/
         article.guestWriter .addthisevent-drop {
-            background-color: #ff0000 !important;
+            background-color: #ff0000;
             margin-bottom: 0;
         }
 
 /**umb_name:Guest Writer AddThis Hover*/
         article.guestWriter .addthisevent-drop:hover {
-            background-color: #00c8ab !important;
-        }
-
 /**umb_name:Top*/
-    article .top {
   width: 100%;
   min-height: 27px;
   display: table;

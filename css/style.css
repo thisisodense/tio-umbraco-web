@@ -128,7 +128,7 @@ article img {
     article.guestWriter {
         background-color: #f1f1f1;
         border-radius: 2px;
-        padding: 10px;
+        padding: 10px 10px 40px 10px;
     }
 
 /**umb_name:Guest Writer Image*/

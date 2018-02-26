@@ -126,7 +126,7 @@ article img {
 
 /**umb_name:Guest Writer*/
     article.guestWriter {
-        background: linear-gradient(#f1f1f1,#f1f1f1, white);
+        background: linear-gradient(yellow,yellow, white);
         border-radius: 2px;
         padding: 10px 10px 10px 10px;
     }
@@ -140,15 +140,15 @@ article img {
         article.guestWriter .addthisevent-drop {
             background-color: #ff0000 !important;
             margin-bottom: 0;
-			border-top: 5px solid #f1f1f1;
-    border-bottom: 11px solid #f1f1f1;
+			border-top: 5px solid yellow;
+    border-bottom: 11px solid yellow;
         }
 
 /**umb_name:Guest Writer AddThis Hover*/
         article.guestWriter .addthisevent-drop:hover {
             background-color: #00c8ab !important;
-						border-top: 5px solid #f1f1f1;
-    border-bottom: 11px solid #f1f1f1;
+						border-top: 5px solid yellow;
+    border-bottom: 11px solid yellow;
         }
 
 /**umb_name:Top*/

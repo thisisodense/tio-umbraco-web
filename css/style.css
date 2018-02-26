@@ -126,9 +126,9 @@ article img {
 
 /**umb_name:Guest Writer*/
     article.guestWriter {
-        background-color: #f1f1f1;
+        background: linear-gradient(#f1f1f1,#f1f1f1, white);
         border-radius: 2px;
-        padding: 10px 10px 40px 10px;
+        padding: 10px 10px 10px 10px;
     }
 
 /**umb_name:Guest Writer Image*/

@@ -74,7 +74,7 @@
         <DataTypePrevalue>
             <Alias>orderBy</Alias>
             <SortOrder>5</SortOrder>
-            <Value>name</Value>
+            <Value>placesToGoIn2016</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>orderDirection</Alias>

@@ -277,7 +277,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>City Guide 2018 (tidl. 16)</Name>
-            <SortOrder>2</SortOrder>
+            <SortOrder>4</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>
@@ -298,7 +298,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>CityGuide 2016 (ny)</Name>
-            <SortOrder>4</SortOrder>
+            <SortOrder>2</SortOrder>
             <TabCaption>Info</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>

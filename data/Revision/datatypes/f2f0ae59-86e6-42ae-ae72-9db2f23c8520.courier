@@ -21,18 +21,8 @@
             <Value>50</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
-            <Alias>orderBy</Alias>
-            <SortOrder>3</SortOrder>
-            <Value>VersionDate</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
-            <Alias>orderDirection</Alias>
-            <SortOrder>4</SortOrder>
-            <Value>desc</Value>
-        </DataTypePrevalue>
-        <DataTypePrevalue>
             <Alias>layouts</Alias>
-            <SortOrder>5</SortOrder>
+            <SortOrder>3</SortOrder>
             <Value>[&#xD;
   {&#xD;
     "name": "List",&#xD;
@@ -52,19 +42,44 @@
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>includeProperties</Alias>
-            <SortOrder>6</SortOrder>
+            <SortOrder>4</SortOrder>
             <Value>[&#xD;
-  {&#xD;
-    "alias": "placesToGoIn2016",&#xD;
-    "isSystem": 0,&#xD;
-    "header": "Byguide 2016"&#xD;
-  },&#xD;
   {&#xD;
     "alias": "updateDate",&#xD;
     "header": "Last edited",&#xD;
     "isSystem": 1&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "cityGuide2015",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "2015"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "cityGuide2016",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "2016"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "cityGuide2017",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "2017"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "cityGuide2018",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "2018"&#xD;
   }&#xD;
 ]</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderBy</Alias>
+            <SortOrder>5</SortOrder>
+            <Value>name</Value>
+        </DataTypePrevalue>
+        <DataTypePrevalue>
+            <Alias>orderDirection</Alias>
+            <SortOrder>6</SortOrder>
+            <Value>desc</Value>
         </DataTypePrevalue>
         <DataTypePrevalue>
             <Alias>bulkActionPermissions</Alias>

@@ -92,7 +92,6 @@
     <Icon>icon-folder</Icon>
     <Thumbnail>folder.png</Thumbnail>
     <Alias>Location</Alias>
-    <Description />
     <IsContainer>false</IsContainer>
     <AllowAtRoot>false</AllowAtRoot>
     <UniqueId>50d229f0-2612-30a4-25f7-e4ff7bec943a</UniqueId>
@@ -118,6 +117,26 @@
             <SortOrder>4</SortOrder>
             <TabCaption>Content</TabCaption>
             <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>e4bdc0a4-a519-4dd9-99b7-9aca408200ea</UniqueId>
+            <Alias>cityGuide2017</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>City Guide 2017</Name>
+            <SortOrder>3</SortOrder>
+            <TabCaption>Info</TabCaption>
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>4a96757e-7089-4b47-9eca-60d21a7d84d1</UniqueId>
+            <Alias>cityGuide2018</Alias>
+            <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>CityGuide 2018</Name>
+            <SortOrder>4</SortOrder>
+            <TabCaption>Info</TabCaption>
         </ContentTypeProperty>
         <ContentTypeProperty>
             <UniqueId>351b87e1-d7b7-4d60-fd87-ee83077c3960</UniqueId>
@@ -157,7 +176,7 @@
             <Description />
             <Mandatory>false</Mandatory>
             <Name>Tidligere anbefalet af TIO</Name>
-            <SortOrder>3</SortOrder>
+            <SortOrder>5</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
         </ContentTypeProperty>

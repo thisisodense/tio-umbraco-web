@@ -276,7 +276,7 @@
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>City Guide 2016</Name>
+            <Name>City Guide 2018 (tidl. 16)</Name>
             <SortOrder>2</SortOrder>
             <TabCaption>Info</TabCaption>
             <Validation />
@@ -297,7 +297,7 @@
             <DataTypeDefinitionId>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</DataTypeDefinitionId>
             <Description />
             <Mandatory>false</Mandatory>
-            <Name>CityGuide 2018</Name>
+            <Name>CityGuide 2016 (ny)</Name>
             <SortOrder>4</SortOrder>
             <TabCaption>Info</TabCaption>
         </ContentTypeProperty>

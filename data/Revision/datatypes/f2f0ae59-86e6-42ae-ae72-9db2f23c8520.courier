@@ -50,24 +50,29 @@
     "isSystem": 1&#xD;
   },&#xD;
   {&#xD;
-    "alias": "placesToGoIn2015",&#xD;
+    "alias": "placesToGoIn2016",&#xD;
+    "isSystem": 0,&#xD;
+    "header": "Offentliggør (tidl. 16)"&#xD;
+  },&#xD;
+  {&#xD;
+    "alias": "cityGuide2015",&#xD;
     "isSystem": 0,&#xD;
     "header": "2015"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "placesToGoIn2016",&#xD;
+    "alias": "cityGuide2016",&#xD;
     "isSystem": 0,&#xD;
-    "header": "2018 (tidl. 16)"&#xD;
+    "header": "2016"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "placesToGoIn2017",&#xD;
+    "alias": "cityGuide2017",&#xD;
     "isSystem": 0,&#xD;
     "header": "2017"&#xD;
   },&#xD;
   {&#xD;
-    "alias": "placesToGoIn2018",&#xD;
+    "alias": "cityGuide2018",&#xD;
     "isSystem": 0,&#xD;
-    "header": "2016 (ny)"&#xD;
+    "header": "2018"&#xD;
   }&#xD;
 ]</Value>
         </DataTypePrevalue>

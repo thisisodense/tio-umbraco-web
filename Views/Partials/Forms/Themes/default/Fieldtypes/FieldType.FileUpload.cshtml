@@ -1,0 +1,20 @@
+@using Umbraco.Forms.Mvc
+
+@model Umbraco.Forms.Mvc.Models.FieldViewModel
+
+<input type="file" class="@Html.GetFormFieldClass(Model.FieldTypeName)" name="@Model.Name" id="@Model.Id" multiple
+       @if (Model.Mandatory) { <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text> } />
+
+@if (Model.Values != null && Model.Values.Any())
+{
+    <p>
+        <strong>Current File/s:</strong><br />
+        @foreach (string filePath in Model.Values)
+        {
+            var fileName = filePath.Split('/').Last();
+
+            <a>@fileName</a><br />
+            <input type="hidden" name="@(Model.Name)_file_@(fileName)" value="@filePath" />
+        }
+    </p>
+}

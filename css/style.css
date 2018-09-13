@@ -152,6 +152,7 @@ article img {
         }
 
 /**umb_name:Top*/
+    article .top {
   width: 100%;
   min-height: 27px;
   display: table;

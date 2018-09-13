@@ -1,0 +1,24 @@
+{
+  "UseInEditor": true,
+  "CacheDuration": 0,
+  "CacheByPage": false,
+  "CacheByMember": false,
+  "DontRender": false,
+  "ControlType": null,
+  "ControlAssembly": null,
+  "ScriptPath": "~/Views/MacroPartials/InsertUmbracoForm.cshtml",
+  "XsltPath": null,
+  "Properties": [],
+  "Udi": "umb://macro/5b3e476526df4863a9d7e12a3d3e1787",
+  "Dependencies": [
+    {
+      "Udi": "umb://partial-view-macro/InsertUmbracoForm.cshtml",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Name": "Insert Form (Legacy)",
+  "Alias": "FormsRenderForm",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MacroArtifact",
+  "__version": "2.0.14"
+}

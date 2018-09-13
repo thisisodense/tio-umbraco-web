@@ -1,0 +1,35 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>f2f0ae59-86e6-42ae-ae72-9db2f23c8520</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: f2f0ae59-86e6-42ae-ae72-9db2f23c8520</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>6a758873-a6a0-8fdd-b940-255ab89dda0c</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Location repository</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Icon>icon-folder</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Alias>LocationRepository</Alias>
+    <IsContainer>true</IsContainer>
+    <AllowAtRoot>false</AllowAtRoot>
+    <UniqueId>6a758873-a6a0-8fdd-b940-255ab89dda0c</UniqueId>
+    <Properties />
+    <Tabs />
+    <ParentContainerId xsi:nil="true" />
+    <PathGuids>-1,6a758873-a6a0-8fdd-b940-255ab89dda0c</PathGuids>
+    <AllowedChildDocumentTypes>
+        <string>Location</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates />
+    <MasterDocumentTypes />
+</DocumentType>

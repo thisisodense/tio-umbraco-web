@@ -1,0 +1,21 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 1,
+  "PreValues": {
+    "bulkActionPermissions": "{\r\n  \"allowBulkPublish\": true,\r\n  \"allowBulkUnpublish\": true,\r\n  \"allowBulkCopy\": true,\r\n  \"allowBulkMove\": true,\r\n  \"allowBulkDelete\": true\r\n}",
+    "displayAtTabNumber": "1",
+    "includeProperties": "[\r\n  {\r\n    \"alias\": \"weekNumber\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Uge\"\r\n  },\r\n  {\r\n    \"alias\": \"startDate\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Start dato\"\r\n  },\r\n  {\r\n    \"alias\": \"endDate\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Slut dato\"\r\n  },\r\n  {\r\n    \"alias\": \"title\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Sted\"\r\n  },\r\n  {\r\n    \"alias\": \"organizer\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Arrangør\"\r\n  },\r\n  {\r\n    \"alias\": \"name\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Skribent\"\r\n  },\r\n  {\r\n    \"alias\": \"createDate\",\r\n    \"isSystem\": 1\r\n  }\r\n]",
+    "layouts": "[\r\n  {\r\n    \"name\": \"List\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/list/list.html\",\r\n    \"icon\": \"icon-list\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  },\r\n  {\r\n    \"name\": \"Grid\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/grid/grid.html\",\r\n    \"icon\": \"icon-thumbnails-small\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  }\r\n]",
+    "orderBy": "createDate",
+    "orderDirection": "desc",
+    "pageSize": "50",
+    "tabName": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/8a03929725f24a1d948328bb79d9df2e",
+  "Dependencies": [],
+  "Name": "List View - RecommendationRepository",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

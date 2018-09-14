@@ -1,0 +1,76 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-calendar-alt",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": true,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/eb2b7af93813f9d6156d413dae271244"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "d9fef03e-cf9b-426a-98b6-4e4b970d8742",
+      "Name": "Week pitch",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "4b4db29a-c585-4310-93f3-073184236e78",
+          "Alias": "editorOfTheWeek",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Ugens redaktør",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "c57cb785-aeaf-4464-95d1-9202928730cb",
+          "Alias": "weekDescriptionDA",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "WeekDescriptionDA",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "f1293e41-225b-4d9e-aad3-aa1283f8d30b",
+          "Alias": "weekDescriptionEN",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "WeekDescriptionEN",
+          "SortOrder": 4,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/d257b511ce39bf145ea773b62a70aca5",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/eb2b7af93813f9d6156d413dae271244",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "Name": "Recommendation repository",
+  "Alias": "RecommendationRepository",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

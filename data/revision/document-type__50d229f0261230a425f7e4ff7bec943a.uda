@@ -1,0 +1,383 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-folder",
+  "Thumbnail": "folder.png",
+  "Description": "Location",
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "5e4fa6d3-aeaf-4f69-9fcb-65424cc96734",
+      "Name": "SocialPosts",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "361770ac-fc17-43bd-a104-cd96d9f8fe79",
+          "Alias": "socialPostsForLocations",
+          "DataType": "umb://data-type/40aff69c4bdd4fa1833bbdb3080422a9",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "SocialPostsForLocations",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "932b6f97-53cd-3ff2-fadb-955347271692",
+      "Name": "Info",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "1ab41399-56b8-59bb-5589-7ff2e976a092",
+          "Alias": "placesToGoIn2016",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Offentliggør",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "39c3fc58-6dd8-4168-b994-ab788021d168",
+          "Alias": "cityGuide2018",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "City Guide 2018",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "4a96757e-7089-4b47-9eca-60d21a7d84d1",
+          "Alias": "cityGuide2016",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "CityGuide 2016",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "566f74d7-f559-d34d-087e-ef9cc54f280e",
+          "Alias": "oldid",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "OldId",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "a774b74d-bd62-a6e7-833c-2276e75c681e",
+          "Alias": "cityGuide2015",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "City Guide 2015",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "d74f3c06-9188-23ad-eb79-5f7116168238",
+          "Alias": "fromRecommendation",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Tidligere anbefalet af TIO",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "e4bdc0a4-a519-4dd9-99b7-9aca408200ea",
+          "Alias": "cityGuide2017",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "City Guide 2017",
+          "SortOrder": 4,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "e9410766-8013-6ca2-6443-388ce5cdba65",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "12a906ea-f173-48dd-e110-09a271ae3c22",
+          "Alias": "phonenumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "PhoneNumber",
+          "SortOrder": 13,
+          "Validation": ""
+        },
+        {
+          "Key": "13dcba17-c67f-d9b3-5703-ecde9a4d9dc3",
+          "Alias": "categories",
+          "DataType": "umb://data-type/c281c13f8c094b8e848b576d865155a8",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Categories",
+          "SortOrder": 4,
+          "Validation": ""
+        },
+        {
+          "Key": "13f2f114-f25d-1c88-a9d6-912328b1f565",
+          "Alias": "url",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Url",
+          "SortOrder": 12,
+          "Validation": ""
+        },
+        {
+          "Key": "21316abc-82e6-bf48-8561-b0c88ef9d16f",
+          "Alias": "shortdescriptionenglish",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "ShortDescriptionEnglish",
+          "SortOrder": 8,
+          "Validation": ""
+        },
+        {
+          "Key": "3070c7d9-e8f5-513f-cddc-a1dfa1c75558",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "31b55700-8861-d392-3540-7dd9f7ff098e",
+          "Alias": "longdescriptionenglish",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "LongDescriptionEnglish",
+          "SortOrder": 10,
+          "Validation": ""
+        },
+        {
+          "Key": "351b87e1-d7b7-4d60-fd87-ee83077c3960",
+          "Alias": "email",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Email",
+          "SortOrder": 14,
+          "Validation": ""
+        },
+        {
+          "Key": "49c433e8-57d1-9d83-207d-b9a5fe07c50a",
+          "Alias": "geoLocation",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Geo location",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "6e553f75-0e98-b254-7915-eb0f55465048",
+          "Alias": "tags",
+          "DataType": "umb://data-type/9de8e4b7e50247e6b92d5e6f12fec9b9",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Tags",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "74896a14-fdd0-414e-aba1-5a902b91021d",
+          "Alias": "fotografURL",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "FotografURL",
+          "SortOrder": 19,
+          "Validation": null
+        },
+        {
+          "Key": "74d3623b-cbb7-9ebc-a154-9950ac55081c",
+          "Alias": "shortdescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "ShortDescription",
+          "SortOrder": 7,
+          "Validation": ""
+        },
+        {
+          "Key": "8c64eae0-4f2f-6413-f52c-33b66457b3c6",
+          "Alias": "address",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Adresse",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "8d45f6e0-8438-e30f-96be-3b1591ef211b",
+          "Alias": "hashtags",
+          "DataType": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Hashtags",
+          "SortOrder": 15,
+          "Validation": ""
+        },
+        {
+          "Key": "948d7eca-346d-47d3-aa60-5fdddf58026d",
+          "Alias": "fotograf",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Fotograf",
+          "SortOrder": 18,
+          "Validation": null
+        },
+        {
+          "Key": "a64a5920-5900-e4d7-52f8-96f3c9bad4b6",
+          "Alias": "korrekturlaestOgFaerdig",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Korrekturlæst og færdig",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "ab23c7da-72eb-9af8-694e-3f838e418c33",
+          "Alias": "image",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Image",
+          "SortOrder": 17,
+          "Validation": ""
+        },
+        {
+          "Key": "cced01f6-7119-4155-750b-13c1537e852e",
+          "Alias": "longdescription",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "LongDescription",
+          "SortOrder": 9,
+          "Validation": ""
+        },
+        {
+          "Key": "db638a68-13d9-9da5-3129-63c02e1e62bb",
+          "Alias": "writerLocation",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Writer",
+          "SortOrder": 5,
+          "Validation": ""
+        },
+        {
+          "Key": "e5aa4eb3-6660-b707-4799-fed4c30197c8",
+          "Alias": "openinghours",
+          "DataType": "umb://data-type/6c72d03dc4d84d0991d5969b29b9642c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "OpeningHours",
+          "SortOrder": 16,
+          "Validation": ""
+        },
+        {
+          "Key": "f17b608a-ee25-47cd-8804-43f7647d65e3",
+          "Alias": "translatorLocation",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Translator",
+          "SortOrder": 11,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/50d229f0261230a425f7e4ff7bec943a",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/40aff69c4bdd4fa1833bbdb3080422a9",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/6c72d03dc4d84d0991d5969b29b9642c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9de8e4b7e50247e6b92d5e6f12fec9b9",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c281c13f8c094b8e848b576d865155a8",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Location",
+  "Alias": "Location",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

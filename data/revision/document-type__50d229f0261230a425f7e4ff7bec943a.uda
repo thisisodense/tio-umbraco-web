@@ -73,6 +73,16 @@
           "Validation": ""
         },
         {
+          "Key": "60bfc602-9cad-4fe8-acaf-c2841b2e0af0",
+          "Alias": "cityGuide2019",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "City Guide 2019",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
           "Key": "a774b74d-bd62-a6e7-833c-2276e75c681e",
           "Alias": "cityGuide2015",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",

@@ -79,7 +79,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "City Guide 2019",
-          "SortOrder": 7,
+          "SortOrder": 6,
           "Validation": null
         },
         {
@@ -99,7 +99,7 @@
           "Description": "",
           "Mandatory": false,
           "Name": "Tidligere anbefalet af TIO",
-          "SortOrder": 6,
+          "SortOrder": 7,
           "Validation": ""
         },
         {

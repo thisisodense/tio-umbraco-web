@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Søn",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "4d7b68a7-6f4d-4671-94f0-0d618e1bee8c",
+      "Value": "Søn",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "4d7b68a7-6f4d-4671-94f0-0d618e1bee8c",
+      "Value": "Sun",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/4d7b68a76f4d467194f00d618e1bee8c",
+  "Udi": "umb://dictionary-item/4d7b68a76f4d467194f00d618e1bee8c",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

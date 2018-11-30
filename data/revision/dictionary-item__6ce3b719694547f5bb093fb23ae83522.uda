@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Opinions",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "6ce3b719-6945-47f5-bb09-3fb23ae83522",
+      "Value": "Meninger",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "6ce3b719-6945-47f5-bb09-3fb23ae83522",
+      "Value": "Opinions",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/6ce3b719694547f5bb093fb23ae83522",
+  "Udi": "umb://dictionary-item/6ce3b719694547f5bb093fb23ae83522",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

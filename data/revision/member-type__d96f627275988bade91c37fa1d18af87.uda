@@ -1,0 +1,133 @@
+{
+  "Icon": "icon-user",
+  "Thumbnail": "icon-user",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0756729d-d665-46e3-b84a-37aceaa614f8",
+      "Name": "Membership",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "063dfcdc-a103-a5fa-8114-09760c0d4a00",
+          "Alias": "umbracoMemberLockedOut",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Locked Out",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "077bb565-48c8-c37d-0b31-feb0d07824ef",
+          "Alias": "umbracoMemberLastLogin",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Login Date",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "55f85b5e-b3c8-a788-4807-4ea239bd9723",
+          "Alias": "umbracoMemberFailedPasswordAttempts",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Failed Password Attempts",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "98266fcb-1c4c-3069-bc45-d9892ea3aaf0",
+          "Alias": "umbracoMemberLastLockoutDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Lockout Date",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "a25a5fb8-b106-41d0-87ee-318c2487de72",
+          "Alias": "umbracoMemberComments",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Comments",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "b9074e2d-4798-5d11-02b3-31c0594651d7",
+          "Alias": "umbracoMemberLastPasswordChangeDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Password Change Date",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "ea3d09c7-108f-3187-795a-fa2078dbcc17",
+          "Alias": "umbracoMemberApproved",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Approved",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [
+    {
+      "Key": "6fb566a4-ccdb-46d0-8059-3c9eff893b81",
+      "Alias": "umbracoMemberPasswordRetrievalQuestion",
+      "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Description": null,
+      "Mandatory": false,
+      "Name": "Password Question",
+      "SortOrder": 1,
+      "Validation": null
+    },
+    {
+      "Key": "ddd25877-efaf-47ed-88e6-fbaa85390f8f",
+      "Alias": "umbracoMemberPasswordRetrievalAnswer",
+      "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Description": null,
+      "Mandatory": false,
+      "Name": "Password Answer",
+      "SortOrder": 0,
+      "Validation": null
+    }
+  ],
+  "Udi": "umb://member-type/d96f627275988bade91c37fa1d18af87",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Member",
+  "Alias": "Member",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberTypeArtifact",
+  "__version": "2.0.14"
+}

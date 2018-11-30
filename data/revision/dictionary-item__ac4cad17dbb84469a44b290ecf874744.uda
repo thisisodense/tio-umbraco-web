@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Debates",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ac4cad17-dbb8-4469-a44b-290ecf874744",
+      "Value": "Debat",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "ac4cad17-dbb8-4469-a44b-290ecf874744",
+      "Value": "Debate",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/ac4cad17dbb84469a44b290ecf874744",
+  "Udi": "umb://dictionary-item/ac4cad17dbb84469a44b290ecf874744",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.RadioButtonList",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/bb5f57c9ce2b4bb9b6974caca783a805",
+  "Dependencies": [],
+  "Name": "Radiobox",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

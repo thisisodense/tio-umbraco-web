@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "My.SocialPosts",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/9da275052fb0448da47707b0780a9243",
+  "Dependencies": [],
+  "Name": "SocialPosts",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

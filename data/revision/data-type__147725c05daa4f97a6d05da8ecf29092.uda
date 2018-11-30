@@ -1,0 +1,23 @@
+{
+  "EditorAlias": "TimePIcker",
+  "DatabaseType": 1,
+  "PreValues": {
+    "disableFocus": null,
+    "disableMouse": null,
+    "minuteStep": null,
+    "modal": "1",
+    "modalBackdrop": "1",
+    "secondStep": null,
+    "showInputs": null,
+    "showMeridian": "1",
+    "showSeconds": null,
+    "widget": "0"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/147725c05daa4f97a6d05da8ecf29092",
+  "Dependencies": [],
+  "Name": "Time",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

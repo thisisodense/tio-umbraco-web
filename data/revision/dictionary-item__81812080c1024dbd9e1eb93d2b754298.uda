@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Lists",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "81812080-c102-4dbd-9e1e-b93d2b754298",
+      "Value": "Liste",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "81812080-c102-4dbd-9e1e-b93d2b754298",
+      "Value": "List",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/81812080c1024dbd9e1eb93d2b754298",
+  "Udi": "umb://dictionary-item/81812080c1024dbd9e1eb93d2b754298",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

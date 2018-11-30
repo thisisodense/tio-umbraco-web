@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Link til sted",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "c51cb4bb-3f7d-45e0-882c-cc6be29d68a7",
+      "Value": "Link to place",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "c51cb4bb-3f7d-45e0-882c-cc6be29d68a7",
+      "Value": "Link til sted",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/c51cb4bb3f7d45e0882ccc6be29d68a7",
+  "Udi": "umb://dictionary-item/c51cb4bb3f7d45e0882ccc6be29d68a7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

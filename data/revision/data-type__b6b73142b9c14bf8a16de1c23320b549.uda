@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.Tags",
+  "DatabaseType": 1,
+  "PreValues": {
+    "group": "default",
+    "storageType": "Csv"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+  "Dependencies": [],
+  "Name": "Tags",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

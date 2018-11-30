@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.NoEdit",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+  "Dependencies": [],
+  "Name": "Label",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

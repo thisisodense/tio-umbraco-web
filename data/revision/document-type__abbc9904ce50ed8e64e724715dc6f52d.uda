@@ -1,0 +1,162 @@
+{
+  "DefaultTemplate": "umb://template/5b1806051188363d8a05bcd3f550063e",
+  "AllowedTemplates": [
+    "umb://template/5b1806051188363d8a05bcd3f550063e"
+  ],
+  "Icon": "icon-home",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/6a758873a6a08fddb940255ab89dda0c",
+    "umb://document-type/d257b511ce39bf145ea773b62a70aca5",
+    "umb://document-type/d345db8a5d74934045e0c98960c1b5fa"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "2fed5a01-a54b-4c65-a172-055b13cf27db",
+      "Name": "Top banner",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "5c72dd49-b573-46f9-8628-ca5be4ac35e4",
+          "Alias": "bannerCrop1",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop1",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "712fcaf8-ee34-41f6-b379-650a6da6b20f",
+          "Alias": "bannerCrop6",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop6",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "7222c600-14ed-464c-98bf-2f161f1c2b86",
+          "Alias": "bannerCrop7",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop7",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "b20d9985-56f9-41b5-abf9-674808503df9",
+          "Alias": "bannerCrop2",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop2",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "d0373c24-aaef-48a0-954d-7ae9965c59da",
+          "Alias": "bannerCrop5",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop5",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "e8c2c183-5d75-4b59-9462-b6f68675495b",
+          "Alias": "bannerCrop4",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop4",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "f692bd5b-a44a-4932-9ee7-7c708c9b59c3",
+          "Alias": "bannerCrop3",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "BannerCrop3",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "890fb0f0-85cd-f757-dc19-2d64cefebb50",
+      "Name": "Meta",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "487ec995-e37a-24b9-8e26-022d768d9735",
+          "Alias": "header",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "#header",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "f5b8129d-16fe-bc01-39fe-5952236836fb",
+          "Alias": "description",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Description",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/abbc9904ce50ed8e64e724715dc6f52d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6a758873a6a08fddb940255ab89dda0c",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/d257b511ce39bf145ea773b62a70aca5",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/d345db8a5d74934045e0c98960c1b5fa",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/5b1806051188363d8a05bcd3f550063e",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Home",
+  "Alias": "Recommendations",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

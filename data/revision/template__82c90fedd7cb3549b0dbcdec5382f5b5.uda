@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/Recommendation.cshtml",
+  "Master": "umb://template/ee51a8af2ab03300b5942363b29558c7",
+  "Udi": "umb://template/82c90fedd7cb3549b0dbcdec5382f5b5",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/ee51a8af2ab03300b5942363b29558c7",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/Recommendation.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Recommendation",
+  "Alias": "Recommendation",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

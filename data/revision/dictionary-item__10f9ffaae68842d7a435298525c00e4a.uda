@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Sted",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "10f9ffaa-e688-42d7-a435-298525c00e4a",
+      "Value": "Location",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "10f9ffaa-e688-42d7-a435-298525c00e4a",
+      "Value": "Sted",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/10f9ffaae68842d7a435298525c00e4a",
+  "Udi": "umb://dictionary-item/10f9ffaae68842d7a435298525c00e4a",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

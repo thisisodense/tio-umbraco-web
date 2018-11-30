@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Culture",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "69a7d91d-901d-477c-a1e2-7cb5e1a7f192",
+      "Value": "Culture",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "69a7d91d-901d-477c-a1e2-7cb5e1a7f192",
+      "Value": "Culture",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/69a7d91d901d477ca1e27cb5e1a7f192",
+  "Udi": "umb://dictionary-item/69a7d91d901d477ca1e27cb5e1a7f192",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

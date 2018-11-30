@@ -1,0 +1,276 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-flag-alt",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "d4914fff-0068-2a1d-0214-29b5057cbf5f",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "066d351a-ac22-420f-abee-9a6034392602",
+          "Alias": "translatorLongread",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Translator",
+          "SortOrder": 9,
+          "Validation": null
+        },
+        {
+          "Key": "1c8b8d1f-9be0-4177-8901-e326ca43ea1f",
+          "Alias": "tags",
+          "DataType": "umb://data-type/fd78c7531ea049ca948eb80777f0c22f",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Tags",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "24d294fc-8ddb-e12f-48c4-dbe26a0b1841",
+          "Alias": "headline",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Overskrift",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "3a49d6d7-5929-4e96-9817-11fcdf2b8c9d",
+          "Alias": "klarTilOversaettelse",
+          "DataType": "umb://data-type/bf46c11b0f7842908579649b5556ed81",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Klar til oversættelse",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "4f86ef12-70bc-3aa7-adf3-8be80cf64e3d",
+          "Alias": "summaryEnglish",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Description English",
+          "SortOrder": 11,
+          "Validation": ""
+        },
+        {
+          "Key": "5633a731-a35e-4ee9-b407-bc42a165106a",
+          "Alias": "writerLongread",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Writer",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "76bbd6fb-6d83-4bae-bb4c-e0514a64f08b",
+          "Alias": "categoriesLongread",
+          "DataType": "umb://data-type/ee4901a891bb449d97f15984e2ee9e28",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Kategori",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "b5f9d827-edf3-4a0f-bb0a-246d73684a18",
+          "Alias": "klarTilKorrektur",
+          "DataType": "umb://data-type/733b3e26a8f04a988872e3d6a1bdc824",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Klar til korrektur",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "c4f39f17-3202-492c-bdfb-a1f85853630d",
+          "Alias": "udgivelsesdato",
+          "DataType": "umb://data-type/4133101e448f4645a526bc1b8d4e31ed",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Udgivelsesdato",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "c97fd34b-44fd-4dd6-b528-61348ee32efd",
+          "Alias": "headlineEnglish",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Headline English",
+          "SortOrder": 10,
+          "Validation": null
+        },
+        {
+          "Key": "dc90a61e-440d-ccb3-c13a-412c8601ef30",
+          "Alias": "summary",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Beskrivelse",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "e215647e-3878-2023-9f55-4f6fb368afc4",
+          "Alias": "weekNumber",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Week",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "e2c34163-73aa-472a-a964-81224aae267a",
+          "Alias": "fotograf",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Fotograf",
+          "SortOrder": 13,
+          "Validation": null
+        },
+        {
+          "Key": "e70f1f74-edd9-4740-9d52-5ac80f757d64",
+          "Alias": "fotografURL",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "FotografURL",
+          "SortOrder": 14,
+          "Validation": null
+        },
+        {
+          "Key": "f5bfa267-e55b-275f-e46f-62f8371dc5b0",
+          "Alias": "image",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Image",
+          "SortOrder": 12,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "e5e39b93-0cdd-4b67-b9a8-87cade13a295",
+      "Name": "Guest Writer",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "a1410ce5-d1f3-4757-bda0-50486430a8cc",
+          "Alias": "guestWriter",
+          "DataType": "umb://data-type/a62c9ce4742a4b37ba5eddd64e584ef4",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Guest writer",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "a3098ee1-3af7-4d94-b0b5-bbcef6b52d58",
+          "Alias": "linkToGuestWriter",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Link to guest writer",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "ba477c76-640c-47e9-9527-024f576be972",
+          "Alias": "nameOfGuestWriter",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Name of guest writer",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/827414b6c2a8500793e36849de92e3d5",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/4133101e448f4645a526bc1b8d4e31ed",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/733b3e26a8f04a988872e3d6a1bdc824",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a62c9ce4742a4b37ba5eddd64e584ef4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bf46c11b0f7842908579649b5556ed81",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ee4901a891bb449d97f15984e2ee9e28",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/fd78c7531ea049ca948eb80777f0c22f",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Article",
+  "Alias": "Article",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

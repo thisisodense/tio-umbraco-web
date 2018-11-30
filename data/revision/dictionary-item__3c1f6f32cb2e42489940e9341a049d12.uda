@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Conversations",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "3c1f6f32-cb2e-4248-9940-e9341a049d12",
+      "Value": "Samtale",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "3c1f6f32-cb2e-4248-9940-e9341a049d12",
+      "Value": "Conversation",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/3c1f6f32cb2e42489940e9341a049d12",
+  "Udi": "umb://dictionary-item/3c1f6f32cb2e42489940e9341a049d12",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleMediaPicker",
+  "DatabaseType": 1,
+  "PreValues": {
+    "multiPicker": "1"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/7e3962ccce204ffcb6615897a894ba7e",
+  "Dependencies": [],
+  "Name": "Multiple Media Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

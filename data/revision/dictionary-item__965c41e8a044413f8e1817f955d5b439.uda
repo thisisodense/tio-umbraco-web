@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Udstilling",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "965c41e8-a044-413f-8e18-17f955d5b439",
+      "Value": "Exhibition",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "965c41e8-a044-413f-8e18-17f955d5b439",
+      "Value": "Udstilling",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/965c41e8a044413f8e1817f955d5b439",
+  "Udi": "umb://dictionary-item/965c41e8a044413f8e1817f955d5b439",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Ugebeskrivelse",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "2723d8dd-5a4a-49b0-8b2c-e1838385ff1e",
+      "Value": "Påske. Derfor skal du først og fremmest læse og blive klog af Pil Lindgreens anbefaling om, hvad gammel kirkemusik er og kan, Very Quiet Easter, mørk, mørkere, påske. Alt er noget og alt er mere end man tror, når først man digger det, og det gør Pil. Og så er der fest på havnen hos Dynamo og TinCanCompany, når Tanter gæster byen med eksistentielt nycirkus og efterfølgende fest. Helt passende til Langfredag er der smuk, depri-musik med Blue Foundation på Posten og Into the Deep Dub Night på hhv. Odense Musikbibliotek og Teater Momentum. Og skal det bare være helt uden arrangement, så anbefaler Johanne sit favorit-forårs-spot til indtagelse af øl men stadig med skoene på. Læs anbefalingerne i fuld længde herunder. Rigtig god påske fra This Is Odense <3",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "2723d8dd-5a4a-49b0-8b2c-e1838385ff1e",
+      "Value": "Easter. Therefore, you must first read and become wise by Arrow Lindgreens recommendation about what the old church music is and can be, Very Quiet Easter, dark, darker, Easter. Everything is anything and everything is more than you think once you digger, and it makes Arrow. And then there is celebration at the harbor at Dynamo and TinCanCompany when aunts guests town with existential circus and subsequent celebration. Quite appropriate for Good Friday is beautiful, Depri music by Blue Foundation on entry and Into the Deep Dub Night respectively. Odense Music Library and Theater Momentum. And it should just be entirely without event, so recommend Johanne his favorite spring insult to beer consumption but still with shoes on. Read the recommendations in full below. Happy Easter from This Is Odense <3",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/2723d8dd5a4a49b08b2ce1838385ff1e",
+  "Udi": "umb://dictionary-item/2723d8dd5a4a49b08b2ce1838385ff1e",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

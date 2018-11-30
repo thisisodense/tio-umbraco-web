@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Døre åbnes",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "84c7ce6c-69e9-4f55-8f75-8632c4b9da01",
+      "Value": "Door closes",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "84c7ce6c-69e9-4f55-8f75-8632c4b9da01",
+      "Value": "Døre åbnes",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/84c7ce6c69e94f558f758632c4b9da01",
+  "Udi": "umb://dictionary-item/84c7ce6c69e94f558f758632c4b9da01",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

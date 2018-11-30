@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Sker der noget i Odense?",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "40422cbd-be8c-47a9-9275-fb89d04caffc",
+      "Value": "Your Insider Guide to the Best Places and Events in Odense",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "40422cbd-be8c-47a9-9275-fb89d04caffc",
+      "Value": "Din insiderguide til Odenses bedste steder og oplevelser",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/40422cbdbe8c47a99275fb89d04caffc",
+  "Udi": "umb://dictionary-item/40422cbdbe8c47a99275fb89d04caffc",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

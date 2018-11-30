@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Link til begivenhed",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "46b836b1-2a0c-4efe-bdec-a7cdb412275e",
+      "Value": "Link to the event",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "46b836b1-2a0c-4efe-bdec-a7cdb412275e",
+      "Value": "Link til begivenhed",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/46b836b12a0c4efebdeca7cdb412275e",
+  "Udi": "umb://dictionary-item/46b836b12a0c4efebdeca7cdb412275e",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

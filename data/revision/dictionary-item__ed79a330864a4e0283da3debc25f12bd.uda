@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Arrangør",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ed79a330-864a-4e02-83da-3debc25f12bd",
+      "Value": "Organizer",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "ed79a330-864a-4e02-83da-3debc25f12bd",
+      "Value": "Arrangør",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/ed79a330864a4e0283da3debc25f12bd",
+  "Udi": "umb://dictionary-item/ed79a330864a4e0283da3debc25f12bd",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

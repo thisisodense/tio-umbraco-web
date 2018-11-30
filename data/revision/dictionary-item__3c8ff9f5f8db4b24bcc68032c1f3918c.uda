@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Festival",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "3c8ff9f5-f8db-4b24-bcc6-8032c1f3918c",
+      "Value": "Festival",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "3c8ff9f5-f8db-4b24-bcc6-8032c1f3918c",
+      "Value": "Festival",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/3c8ff9f5f8db4b24bcc68032c1f3918c",
+  "Udi": "umb://dictionary-item/3c8ff9f5f8db4b24bcc68032c1f3918c",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

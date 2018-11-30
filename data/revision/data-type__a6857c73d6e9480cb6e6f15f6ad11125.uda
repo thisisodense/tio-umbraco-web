@@ -1,0 +1,23 @@
+{
+  "EditorAlias": "Umbraco.ContentPickerAlias",
+  "DatabaseType": 2,
+  "PreValues": {
+    "showEditButton": "0",
+    "showOpenButton": "0",
+    "showPathOnHover": "0",
+    "startNodeId": "umb://document/839e9afe938349aebbb3c146159da157"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/a6857c73d6e9480cb6e6f15f6ad11125",
+  "Dependencies": [
+    {
+      "Udi": "umb://document/839e9afe938349aebbb3c146159da157",
+      "Ordering": false,
+      "Mode": 1
+    }
+  ],
+  "Name": "Content Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

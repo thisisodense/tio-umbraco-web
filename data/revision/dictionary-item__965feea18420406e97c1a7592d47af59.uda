@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Hvornår",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "965feea1-8420-406e-97c1-a7592d47af59",
+      "Value": "When",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "965feea1-8420-406e-97c1-a7592d47af59",
+      "Value": "Hvornår",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/965feea18420406e97c1a7592d47af59",
+  "Udi": "umb://dictionary-item/965feea18420406e97c1a7592d47af59",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

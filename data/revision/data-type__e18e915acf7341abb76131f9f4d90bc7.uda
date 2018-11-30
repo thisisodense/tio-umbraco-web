@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.RelatedLinks",
+  "DatabaseType": 0,
+  "PreValues": {
+    "max": "0"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/e18e915acf7341abb76131f9f4d90bc7",
+  "Dependencies": [],
+  "Name": "List View - Related links",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

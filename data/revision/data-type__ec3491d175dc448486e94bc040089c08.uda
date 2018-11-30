@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "CharLimitText",
+  "DatabaseType": 1,
+  "PreValues": {
+    "limit": "140"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/ec3491d175dc448486e94bc040089c08",
+  "Dependencies": [],
+  "Name": "Textbox 140",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

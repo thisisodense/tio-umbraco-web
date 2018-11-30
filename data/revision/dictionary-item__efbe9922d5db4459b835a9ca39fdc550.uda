@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Byguide",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "efbe9922-d5db-4459-b835-a9ca39fdc550",
+      "Value": "BYGUIDE",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "efbe9922-d5db-4459-b835-a9ca39fdc550",
+      "Value": "CITY GUIDE",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/efbe9922d5db4459b835a9ca39fdc550",
+  "Udi": "umb://dictionary-item/efbe9922d5db4459b835a9ca39fdc550",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

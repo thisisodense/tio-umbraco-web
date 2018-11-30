@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Guides",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "0ebbccd3-4251-4d5c-bc0c-cc8deabbee68",
+      "Value": "Guide",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "0ebbccd3-4251-4d5c-bc0c-cc8deabbee68",
+      "Value": "Guide",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/0ebbccd342514d5cbc0ccc8deabbee68",
+  "Udi": "umb://dictionary-item/0ebbccd342514d5cbc0ccc8deabbee68",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

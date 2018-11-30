@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Sport",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "cdeaff91-04ef-4a19-b47f-8ea4b1e89ef8",
+      "Value": "Sport",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "cdeaff91-04ef-4a19-b47f-8ea4b1e89ef8",
+      "Value": "Sport",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/cdeaff9104ef4a19b47f8ea4b1e89ef8",
+  "Udi": "umb://dictionary-item/cdeaff9104ef4a19b47f8ea4b1e89ef8",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

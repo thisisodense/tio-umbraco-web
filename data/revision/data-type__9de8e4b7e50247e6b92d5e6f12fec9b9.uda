@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.Tags",
+  "DatabaseType": 1,
+  "PreValues": {
+    "group": "WebTags",
+    "storageType": "Csv"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/9de8e4b7e50247e6b92d5e6f12fec9b9",
+  "Dependencies": [],
+  "Name": "WebTags",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

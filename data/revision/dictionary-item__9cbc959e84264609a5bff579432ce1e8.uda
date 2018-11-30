@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Ugens skribent er",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "9cbc959e-8426-4609-a5bf-f579432ce1e8",
+      "Value": "This week's editor is",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "9cbc959e-8426-4609-a5bf-f579432ce1e8",
+      "Value": "Ugens redaktør er",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/9cbc959e84264609a5bff579432ce1e8",
+  "Udi": "umb://dictionary-item/9cbc959e84264609a5bff579432ce1e8",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

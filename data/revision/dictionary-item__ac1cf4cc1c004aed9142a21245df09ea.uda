@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Longreads",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ac1cf4cc-1c00-4aed-9142-a21245df09ea",
+      "Value": "Longread",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "ac1cf4cc-1c00-4aed-9142-a21245df09ea",
+      "Value": "Longread",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/ac1cf4cc1c004aed9142a21245df09ea",
+  "Udi": "umb://dictionary-item/ac1cf4cc1c004aed9142a21245df09ea",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

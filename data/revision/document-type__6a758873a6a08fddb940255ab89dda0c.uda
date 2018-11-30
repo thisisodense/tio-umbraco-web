@@ -1,0 +1,28 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-folder",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": true,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/50d229f0261230a425f7e4ff7bec943a"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/6a758873a6a08fddb940255ab89dda0c",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/50d229f0261230a425f7e4ff7bec943a",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "Name": "Location repository",
+  "Alias": "LocationRepository",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

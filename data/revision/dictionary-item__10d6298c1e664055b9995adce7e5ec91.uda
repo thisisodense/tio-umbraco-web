@@ -1,0 +1,28 @@
+{
+  "ItemKey": "Konference og messe",
+  "ParentId": "675357e8-3e52-4e6f-be8e-a8f73a615a20",
+  "Translations": [
+    {
+      "Key": "10d6298c-1e66-4055-b999-5adce7e5ec91",
+      "Value": "Konference/messe",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "10d6298c-1e66-4055-b999-5adce7e5ec91",
+      "Value": "Conference and trade fair",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/10d6298c1e664055b9995adce7e5ec91",
+  "Udi": "umb://dictionary-item/10d6298c1e664055b9995adce7e5ec91",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/675357e83e524e6fbe8ea8f73a615a20",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

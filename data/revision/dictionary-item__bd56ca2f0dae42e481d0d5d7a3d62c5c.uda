@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Stories",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "bd56ca2f-0dae-42e4-81d0-d5d7a3d62c5c",
+      "Value": "Historie",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "bd56ca2f-0dae-42e4-81d0-d5d7a3d62c5c",
+      "Value": "Story",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/bd56ca2f0dae42e481d0d5d7a3d62c5c",
+  "Udi": "umb://dictionary-item/bd56ca2f0dae42e481d0d5d7a3d62c5c",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

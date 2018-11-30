@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 1,
+  "PreValues": {
+    "includeProperties": "[{\"alias\":\"email\",\"isSystem\":1},{\"alias\":\"username\",\"isSystem\":1},{\"alias\":\"updateDate\",\"header\":\"Last edited\",\"isSystem\":1}]",
+    "orderBy": "Name",
+    "orderDirection": "asc",
+    "pageSize": "10"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/aa2c52a0ce874e65a47c7df09358585d",
+  "Dependencies": [],
+  "Name": "List View - Members",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

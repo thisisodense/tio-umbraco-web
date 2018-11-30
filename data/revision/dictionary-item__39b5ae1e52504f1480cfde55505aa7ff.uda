@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Comedy",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "39b5ae1e-5250-4f14-80cf-de55505aa7ff",
+      "Value": "Comedy",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "39b5ae1e-5250-4f14-80cf-de55505aa7ff",
+      "Value": "Comedy",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/39b5ae1e52504f1480cfde55505aa7ff",
+  "Udi": "umb://dictionary-item/39b5ae1e52504f1480cfde55505aa7ff",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

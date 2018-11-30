@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Teater",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "900dc7f6-558a-4d68-8725-daa1eecfe383",
+      "Value": "Theatre",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "900dc7f6-558a-4d68-8725-daa1eecfe383",
+      "Value": "Teater",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/900dc7f6558a4d688725daa1eecfe383",
+  "Udi": "umb://dictionary-item/900dc7f6558a4d688725daa1eecfe383",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

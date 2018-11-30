@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Ugens gæsteanbefaling er skrevet af",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "5e9461d4-e888-4674-bec3-61365c355e2c",
+      "Value": "This week’s guest recommendation is wirtten by",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "5e9461d4-e888-4674-bec3-61365c355e2c",
+      "Value": "Ugens gæsteanbefaling er skrevet af",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/5e9461d4e8884674bec361365c355e2c",
+  "Udi": "umb://dictionary-item/5e9461d4e8884674bec361365c355e2c",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

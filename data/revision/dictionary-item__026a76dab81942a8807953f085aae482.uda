@@ -1,0 +1,22 @@
+{
+  "ItemKey": "#header",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "026a76da-b819-42a8-8079-53f085aae482",
+      "Value": "header",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "026a76da-b819-42a8-8079-53f085aae482",
+      "Value": "hovede",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/026a76dab81942a8807953f085aae482",
+  "Udi": "umb://dictionary-item/026a76dab81942a8807953f085aae482",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

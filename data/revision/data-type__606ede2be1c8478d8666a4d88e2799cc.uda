@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.ImageCropper",
+  "DatabaseType": 0,
+  "PreValues": {
+    "crops": "[\r\n  {\r\n    \"alias\": \"locationCrop\",\r\n    \"width\": 680,\r\n    \"height\": 300\r\n  },\r\n  {\r\n    \"alias\": \"writerCrop\",\r\n    \"width\": 238,\r\n    \"height\": 357\r\n  },\r\n  {\r\n    \"alias\": \"recommendationCrop\",\r\n    \"width\": 680,\r\n    \"height\": 300\r\n  },\r\n  {\r\n    \"alias\": \"facebookCrop\",\r\n    \"width\": 800,\r\n    \"height\": 420\r\n  },\r\n  {\r\n    \"alias\": \"miniatureCrop\",\r\n    \"width\": 145,\r\n    \"height\": 145\r\n  },\r\n  {\r\n    \"alias\": \"bannerCrop\",\r\n    \"width\": 680,\r\n    \"height\": 430\r\n  }\r\n]"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+  "Dependencies": [],
+  "Name": "Image Cropper (1)",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

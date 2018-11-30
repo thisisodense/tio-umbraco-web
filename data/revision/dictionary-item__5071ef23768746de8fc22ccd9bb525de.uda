@@ -1,0 +1,22 @@
+{
+  "ItemKey": "TIP OS!",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "5071ef23-7687-46de-8fc2-2ccd9bb525de",
+      "Value": "TIP US!",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "5071ef23-7687-46de-8fc2-2ccd9bb525de",
+      "Value": "TIP OS!",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/5071ef23768746de8fc22ccd9bb525de",
+  "Udi": "umb://dictionary-item/5071ef23768746de8fc22ccd9bb525de",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

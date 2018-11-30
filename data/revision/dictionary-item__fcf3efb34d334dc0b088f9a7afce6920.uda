@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Sights, Parks, Nature & Activities",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "fcf3efb3-4d33-4dc0-b088-f9a7afce6920",
+      "Value": "Sights, Parks, Nature & Activities",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "fcf3efb3-4d33-4dc0-b088-f9a7afce6920",
+      "Value": "Sights, Parks & Activities",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/fcf3efb34d334dc0b088f9a7afce6920",
+  "Udi": "umb://dictionary-item/fcf3efb34d334dc0b088f9a7afce6920",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

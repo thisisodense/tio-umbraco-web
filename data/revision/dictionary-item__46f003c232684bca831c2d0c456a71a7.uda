@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Guests",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "46f003c2-3268-4bca-831c-2d0c456a71a7",
+      "Value": "Gæster",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "46f003c2-3268-4bca-831c-2d0c456a71a7",
+      "Value": "Guest",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/46f003c232684bca831c2d0c456a71a7",
+  "Udi": "umb://dictionary-item/46f003c232684bca831c2d0c456a71a7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Ubolt.OpeningHours",
+  "DatabaseType": 0,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/6c72d03dc4d84d0991d5969b29b9642c",
+  "Dependencies": [],
+  "Name": "OpeningHours",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

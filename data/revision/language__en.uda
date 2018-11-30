@@ -1,0 +1,9 @@
+{
+  "IsoCode": "en",
+  "Alias": "en",
+  "Udi": "umb://language/en",
+  "Dependencies": [],
+  "Name": "en",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.LanguageArtifact",
+  "__version": "2.0.14"
+}

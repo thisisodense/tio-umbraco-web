@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Køb billet her",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "8222b921-871a-4384-bb3d-1b8a02ed413a",
+      "Value": "Buy tickets here",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "8222b921-871a-4384-bb3d-1b8a02ed413a",
+      "Value": "Køb billet her",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/8222b921871a4384bb3d1b8a02ed413a",
+  "Udi": "umb://dictionary-item/8222b921871a4384bb3d1b8a02ed413a",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

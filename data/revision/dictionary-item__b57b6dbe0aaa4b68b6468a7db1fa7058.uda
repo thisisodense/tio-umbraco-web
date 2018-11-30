@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Concert",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "b57b6dbe-0aaa-4b68-b646-8a7db1fa7058",
+      "Value": "Concert",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "b57b6dbe-0aaa-4b68-b646-8a7db1fa7058",
+      "Value": "Koncert",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/b57b6dbe0aaa4b68b6468a7db1fa7058",
+  "Udi": "umb://dictionary-item/b57b6dbe0aaa4b68b6468a7db1fa7058",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

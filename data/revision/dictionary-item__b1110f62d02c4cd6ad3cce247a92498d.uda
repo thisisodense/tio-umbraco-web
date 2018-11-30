@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Tor",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "b1110f62-d02c-4cd6-ad3c-ce247a92498d",
+      "Value": "Tor",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "b1110f62-d02c-4cd6-ad3c-ce247a92498d",
+      "Value": "Thu",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/b1110f62d02c4cd6ad3cce247a92498d",
+  "Udi": "umb://dictionary-item/b1110f62d02c4cd6ad3cce247a92498d",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

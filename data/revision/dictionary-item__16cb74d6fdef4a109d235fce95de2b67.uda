@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Skrevet af:",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "16cb74d6-fdef-4a10-9d23-5fce95de2b67",
+      "Value": "Skrevet af:",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "16cb74d6-fdef-4a10-9d23-5fce95de2b67",
+      "Value": "Written by:",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/16cb74d6fdef4a109d235fce95de2b67",
+  "Udi": "umb://dictionary-item/16cb74d6fdef4a109d235fce95de2b67",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

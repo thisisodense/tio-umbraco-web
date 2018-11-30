@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "CharLimitInput",
+  "DatabaseType": 1,
+  "PreValues": {
+    "limit": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/9be58c0ed0834fcca1e8d34be2214c1b",
+  "Dependencies": [],
+  "Name": "Location - Fotograf - Limited Textbox Single Line",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

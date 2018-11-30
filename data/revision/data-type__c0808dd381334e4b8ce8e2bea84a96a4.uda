@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 1,
+  "PreValues": {
+    "includeProperties": "[\r\n  {\r\n    \"alias\": \"sortOrder\",\r\n    \"header\": \"Sort order\",\r\n    \"isSystem\": 1\r\n  },\r\n  {\r\n    \"alias\": \"updateDate\",\r\n    \"header\": \"Last edited\",\r\n    \"isSystem\": 1\r\n  },\r\n  {\r\n    \"alias\": \"owner\",\r\n    \"header\": \"Created by\",\r\n    \"isSystem\": 1\r\n  }\r\n]",
+    "orderBy": "VersionDate",
+    "orderDirection": "asc",
+    "pageSize": "50"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/c0808dd381334e4b8ce8e2bea84a96a4",
+  "Dependencies": [],
+  "Name": "List View - Content",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

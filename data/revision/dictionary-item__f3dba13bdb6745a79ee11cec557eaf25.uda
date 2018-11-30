@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Til forsiden",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "f3dba13b-db67-45a7-9ee1-1cec557eaf25",
+      "Value": "Front page",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "f3dba13b-db67-45a7-9ee1-1cec557eaf25",
+      "Value": "Til forsiden",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/f3dba13bdb6745a79ee11cec557eaf25",
+  "Udi": "umb://dictionary-item/f3dba13bdb6745a79ee11cec557eaf25",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

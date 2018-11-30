@@ -1,0 +1,22 @@
+{
+  "EditorAlias": "Umbraco.DropDownMultiple",
+  "DatabaseType": 1,
+  "PreValues": {
+    "0": "Opinions",
+    "1": "Longreads",
+    "2": "Lists",
+    "3": "Guides",
+    "4": "Debates",
+    "5": "Conversations",
+    "6": "Guests",
+    "7": "Stories",
+    "8": "Essays"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/ee4901a891bb449d97f15984e2ee9e28",
+  "Dependencies": [],
+  "Name": "Dropdown Article Categories",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,20 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 1,
+  "PreValues": {
+    "bulkActionPermissions": "{\r\n  \"allowBulkPublish\": true,\r\n  \"allowBulkUnpublish\": false,\r\n  \"allowBulkCopy\": true,\r\n  \"allowBulkMove\": false,\r\n  \"allowBulkDelete\": true\r\n}",
+    "displayAtTabNumber": "1",
+    "includeProperties": "[\r\n  {\r\n    \"alias\": \"weekNumber\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Uge\"\r\n  },\r\n  {\r\n    \"alias\": \"createDate\",\r\n    \"isSystem\": 1\r\n  },\r\n  {\r\n    \"alias\": \"categoriesLongread\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Kategori\"\r\n  },\r\n  {\r\n    \"alias\": \"writerLongread\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Skribent\"\r\n  }\r\n]",
+    "layouts": "[\r\n  {\r\n    \"name\": \"List\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/list/list.html\",\r\n    \"icon\": \"icon-list\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  },\r\n  {\r\n    \"name\": \"Grid\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/grid/grid.html\",\r\n    \"icon\": \"icon-thumbnails-small\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  }\r\n]",
+    "orderBy": "updateDate",
+    "orderDirection": "desc",
+    "pageSize": "50"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/7b8d5bef148945f8a6b10216dc9d637c",
+  "Dependencies": [],
+  "Name": "List View - ArticleRepository",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

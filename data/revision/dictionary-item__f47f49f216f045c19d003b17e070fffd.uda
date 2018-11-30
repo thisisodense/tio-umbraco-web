@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Pris",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "f47f49f2-16f0-45c1-9d00-3b17e070fffd",
+      "Value": "Price",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "f47f49f2-16f0-45c1-9d00-3b17e070fffd",
+      "Value": "Pris",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/f47f49f216f045c19d003b17e070fffd",
+  "Udi": "umb://dictionary-item/f47f49f216f045c19d003b17e070fffd",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Læs mere",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "5cf6abb8-3603-4435-ba73-a350efa125fd",
+      "Value": "Read more",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "5cf6abb8-3603-4435-ba73-a350efa125fd",
+      "Value": "Læs mere",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/5cf6abb836034435ba73a350efa125fd",
+  "Udi": "umb://dictionary-item/5cf6abb836034435ba73a350efa125fd",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

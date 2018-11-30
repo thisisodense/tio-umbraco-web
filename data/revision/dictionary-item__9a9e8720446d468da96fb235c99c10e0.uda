@@ -1,0 +1,22 @@
+{
+  "ItemKey": "EVENTS",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "9a9e8720-446d-468d-a96f-b235c99c10e0",
+      "Value": "Ugeguide",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "9a9e8720-446d-468d-a96f-b235c99c10e0",
+      "Value": "Events",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/9a9e8720446d468da96fb235c99c10e0",
+  "Udi": "umb://dictionary-item/9a9e8720446d468da96fb235c99c10e0",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

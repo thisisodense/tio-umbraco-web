@@ -1,0 +1,28 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-flag-alt",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": true,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/827414b6c2a8500793e36849de92e3d5"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/3f35db509a177232fdc926006ac746cf",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/827414b6c2a8500793e36849de92e3d5",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "Name": "Article repository",
+  "Alias": "ArticleRepository",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

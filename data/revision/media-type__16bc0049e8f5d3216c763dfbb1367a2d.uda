@@ -1,0 +1,87 @@
+{
+  "Icon": "icon-picture",
+  "Thumbnail": "icon-picture",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": true,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "79ed4d07-254a-42cf-8fa9-ebe1c116a596",
+      "Name": "Image",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "1bd732af-715a-a03e-fd7b-98bd67917a6c",
+          "Alias": "umbracoExtension",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Type",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "2d022ec0-f59d-85d9-04b9-b369a0f93543",
+          "Alias": "umbracoWidth",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Width",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "553cb792-b25b-2f8f-0e35-a3ab8f84ee75",
+          "Alias": "umbracoFile",
+          "DataType": "umb://data-type/84c6b44131df4ffeb67e67d5bc3ae65a",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Upload image",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "735fb031-d955-0b82-d68d-b2e6c690aaa8",
+          "Alias": "umbracoBytes",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Size",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "e8145ddd-c1de-80ee-cc83-6ae95e3674b7",
+          "Alias": "umbracoHeight",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Height",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://media-type/16bc0049e8f5d3216c763dfbb1367a2d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/84c6b44131df4ffeb67e67d5bc3ae65a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Image",
+  "Alias": "Image",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MediaTypeArtifact",
+  "__version": "2.0.14"
+}

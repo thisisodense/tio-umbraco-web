@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Drinking",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "e89e5885-59ee-4a92-b209-b4c861aa0174",
+      "Value": "Drinking",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "e89e5885-59ee-4a92-b209-b4c861aa0174",
+      "Value": "Drinking",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/e89e588559ee4a92b209b4c861aa0174",
+  "Udi": "umb://dictionary-item/e89e588559ee4a92b209b4c861aa0174",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

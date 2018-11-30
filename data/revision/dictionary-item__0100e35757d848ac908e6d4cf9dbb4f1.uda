@@ -1,0 +1,22 @@
+{
+  "ItemKey": "BLOG",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "0100e357-57d8-48ac-908e-6d4cf9dbb4f1",
+      "Value": "BLOG",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "0100e357-57d8-48ac-908e-6d4cf9dbb4f1",
+      "Value": "BLOG",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/0100e35757d848ac908e6d4cf9dbb4f1",
+  "Udi": "umb://dictionary-item/0100e35757d848ac908e6d4cf9dbb4f1",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

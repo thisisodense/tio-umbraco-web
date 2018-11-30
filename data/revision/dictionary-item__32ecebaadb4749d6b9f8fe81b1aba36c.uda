@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Eating",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "32ecebaa-db47-49d6-b9f8-fe81b1aba36c",
+      "Value": "Eating",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "32ecebaa-db47-49d6-b9f8-fe81b1aba36c",
+      "Value": "Eating",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/32ecebaadb4749d6b9f8fe81b1aba36c",
+  "Udi": "umb://dictionary-item/32ecebaadb4749d6b9f8fe81b1aba36c",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

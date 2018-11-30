@@ -1,0 +1,18 @@
+{
+  "EditorAlias": "Umbraco.DropDownMultiple",
+  "DatabaseType": 1,
+  "PreValues": {
+    "1": "Eating",
+    "2": "Culture",
+    "3": "Shopping",
+    "4": "Sights, Parks, Nature & Activities",
+    "5": "Drinking"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/c281c13f8c094b8e848b576d865155a8",
+  "Dependencies": [],
+  "Name": "Dropdown Location Categories",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

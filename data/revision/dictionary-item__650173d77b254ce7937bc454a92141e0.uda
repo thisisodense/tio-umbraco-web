@@ -1,0 +1,22 @@
+{
+  "ItemKey": "ANDRE WEBSIDER OG GUIDES TIL OPLEVELSER I ODENSE",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "650173d7-7b25-4ce7-937b-c454a92141e0",
+      "Value": "OTHER WEBSITES AND GUIDES TO EVENTS IN ODENSE",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "650173d7-7b25-4ce7-937b-c454a92141e0",
+      "Value": "ANDRE WEBSIDER OG GUIDES TIL OPLEVELSER I ODENSE",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/650173d77b254ce7937bc454a92141e0",
+  "Udi": "umb://dictionary-item/650173d77b254ce7937bc454a92141e0",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "This Is Odenses 5 anbefalinger er skrevet af",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "f5196d1f-7da9-464f-a057-59ac4bb9f4ec",
+      "Value": "This Is Odenses 5 recommendations are written by",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "f5196d1f-7da9-464f-a057-59ac4bb9f4ec",
+      "Value": "This Is Odenses 5 anbefalinger er skrevet af",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/f5196d1f7da9464fa05759ac4bb9f4ec",
+  "Udi": "umb://dictionary-item/f5196d1f7da9464fa05759ac4bb9f4ec",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.MemberPicker",
+  "DatabaseType": 2,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/2b24165f97824aa3b4591de4a4d21f60",
+  "Dependencies": [],
+  "Name": "Member Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

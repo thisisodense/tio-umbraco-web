@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Essays",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "80356727-3a8d-4b82-98cd-cdd03de43ab3",
+      "Value": "Essay",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "80356727-3a8d-4b82-98cd-cdd03de43ab3",
+      "Value": "Essay",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/803567273a8d4b8298cdcdd03de43ab3",
+  "Udi": "umb://dictionary-item/803567273a8d4b8298cdcdd03de43ab3",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Lør",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "2e6ba753-6cbf-4492-8df6-ec16289c39d7",
+      "Value": "Lør",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "2e6ba753-6cbf-4492-8df6-ec16289c39d7",
+      "Value": "Sat",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/2e6ba7536cbf44928df6ec16289c39d7",
+  "Udi": "umb://dictionary-item/2e6ba7536cbf44928df6ec16289c39d7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

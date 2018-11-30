@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "My.SocialPostsForLocations",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/40aff69c4bdd4fa1833bbdb3080422a9",
+  "Dependencies": [],
+  "Name": "SocialPostForLocations",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

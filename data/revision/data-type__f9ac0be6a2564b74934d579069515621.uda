@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.ImageCropper",
+  "DatabaseType": 0,
+  "PreValues": {
+    "crops": "[\r\n  {\r\n    \"alias\": \"miniatureCrop\",\r\n    \"width\": 144,\r\n    \"height\": 144\r\n  }\r\n]"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f9ac0be6a2564b74934d579069515621",
+  "Dependencies": [],
+  "Name": "Miniature Cropper",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

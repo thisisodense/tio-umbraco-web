@@ -1,0 +1,458 @@
+{
+  "DefaultTemplate": "umb://template/82c90fedd7cb3549b0dbcdec5382f5b5",
+  "AllowedTemplates": [
+    "umb://template/5b1806051188363d8a05bcd3f550063e",
+    "umb://template/82c90fedd7cb3549b0dbcdec5382f5b5"
+  ],
+  "Icon": "icon-article",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "71906cad-7be8-e5b3-8acd-20e5a0c3d923",
+      "Name": "Guest Writer",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "27c9a25a-6491-88a2-1b77-40d046709d2b",
+          "Alias": "nameOfGuestWriter",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Name of guest writer",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "296c5bbf-c970-492b-7d6d-4c93051f81ed",
+          "Alias": "linkToGuestWriter",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Link to guest writer",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "f26c40cd-0f47-b288-8c27-68dcbd8e4334",
+          "Alias": "guestWriter",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Guest writer",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "8035df0d-3889-12b2-c811-8bb555b88de5",
+      "Name": "Info",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "0a1758e6-c275-8bff-a721-648e21a7f83a",
+          "Alias": "oldId",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "OldId",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "1bfed7b1-dc07-d38c-92b9-a6c2588f9975",
+          "Alias": "oldimage",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "OldImage",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "40e993a8-ee9f-40a8-9362-fa529ae814d2",
+          "Alias": "urlEnglish",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Url english",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "41e3e0ec-faac-6578-e6b5-af61849dab08",
+          "Alias": "useOpeningHours",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Brug stedets faste åbningstider i stedet for start- og sluttid",
+          "Mandatory": false,
+          "Name": "Use opening hours",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "8d3207f6-3064-456f-ac9b-eb764bd8c08f",
+          "Alias": "urlDanish",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Url danish",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "9f7a2d96-5f09-a510-4a1f-896159dd87fb",
+      "Name": "SocialPosts",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "2595c527-b7fe-cd99-9c85-e1fae4c84471",
+          "Alias": "socialposts",
+          "DataType": "umb://data-type/9da275052fb0448da47707b0780a9243",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "SocialPosts",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "bb5a0ad4-4da5-5636-6f7d-0fbae6b851e6",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "04028593-bfa8-39b7-61ce-f8f57efd1e98",
+          "Alias": "endDate",
+          "DataType": "umb://data-type/5046194e4237453ca54715db3a07c4e1",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "End date",
+          "SortOrder": 8,
+          "Validation": ""
+        },
+        {
+          "Key": "084cb584-8df8-0678-efe4-fe1e241b59b6",
+          "Alias": "price",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Price",
+          "SortOrder": 11,
+          "Validation": ""
+        },
+        {
+          "Key": "0ce7ec58-e1d2-4abf-dae6-f55dd0aa4cc0",
+          "Alias": "klarTilOversaettelse",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Klar til oversættelse",
+          "SortOrder": 19,
+          "Validation": ""
+        },
+        {
+          "Key": "1a1398de-512b-bd26-722e-ef7961607867",
+          "Alias": "summaryEnglish",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Recommendation English",
+          "SortOrder": 21,
+          "Validation": ""
+        },
+        {
+          "Key": "238763a3-3239-f847-c1cd-0d588cbbc1aa",
+          "Alias": "ticketUrl",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Indsæt direkte link til billetsalget",
+          "Mandatory": false,
+          "Name": "Ticket Url",
+          "SortOrder": 12,
+          "Validation": ""
+        },
+        {
+          "Key": "2e813411-cd32-c33e-f4d0-9c2bb8111b7a",
+          "Alias": "weekNumber",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Week",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "3bfb4300-16a9-ff64-5b60-4cfa0de08e06",
+          "Alias": "startDate",
+          "DataType": "umb://data-type/5046194e4237453ca54715db3a07c4e1",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Start date",
+          "SortOrder": 7,
+          "Validation": ""
+        },
+        {
+          "Key": "5683a0b2-83c8-be0e-eea7-ece614a01870",
+          "Alias": "summaryForInstagram",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Indsæt et uddrag af anbefalingen. Instagram tillader kun op til 2.000 tegn.",
+          "Mandatory": false,
+          "Name": "Uddrag til Instagram",
+          "SortOrder": 17,
+          "Validation": ""
+        },
+        {
+          "Key": "5791a913-7b91-5c45-e74f-50b3f1f0d1d7",
+          "Alias": "klarTilKorrektur",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Klar til korrektur",
+          "SortOrder": 18,
+          "Validation": ""
+        },
+        {
+          "Key": "5d545547-a388-fe5a-1a52-dcc1c5db315c",
+          "Alias": "translatorRecommendation",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Translator",
+          "SortOrder": 20,
+          "Validation": ""
+        },
+        {
+          "Key": "6080b0e6-3af5-5b18-726c-127d412a15cd",
+          "Alias": "endTime",
+          "DataType": "umb://data-type/147725c05daa4f97a6d05da8ecf29092",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "End time",
+          "SortOrder": 10,
+          "Validation": ""
+        },
+        {
+          "Key": "77ceb0a0-bf8f-f96b-fc85-d2554b6f420b",
+          "Alias": "linkToEvent",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Link to event",
+          "SortOrder": 13,
+          "Validation": ""
+        },
+        {
+          "Key": "86f56b7a-8207-9428-e07c-60fe588db61e",
+          "Alias": "subheader",
+          "DataType": "umb://data-type/ec3491d175dc448486e94bc040089c08",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Underoverskrift",
+          "SortOrder": 14,
+          "Validation": ""
+        },
+        {
+          "Key": "9c9faedd-f68f-e4a9-8ab0-20b50347e280",
+          "Alias": "eventType",
+          "DataType": "umb://data-type/0cb8264f04854ab7b11e3faf42a3e402",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Event type",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "a7d8b1c2-bb13-d4fe-3779-a45b55fb7215",
+          "Alias": "headlineEnglish",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Headline English",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "a7ef59a1-83df-a9c8-1888-698e23025135",
+          "Alias": "headline",
+          "DataType": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Overskrift",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "b3e6efb1-b3ff-813e-ec7a-a6eb2434367f",
+          "Alias": "summary",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Anbefaling",
+          "SortOrder": 16,
+          "Validation": ""
+        },
+        {
+          "Key": "c89743a0-7175-74d2-3b63-3eb0cca4163b",
+          "Alias": "locationRecommendation",
+          "DataType": "umb://data-type/e1a8a77859a64a3087e39590097a5758",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Location",
+          "SortOrder": 5,
+          "Validation": ""
+        },
+        {
+          "Key": "cd6d7633-2a61-ec41-7480-8ef02b3ef429",
+          "Alias": "image",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Image",
+          "SortOrder": 22,
+          "Validation": ""
+        },
+        {
+          "Key": "ced881e8-da2d-a859-355f-43b9127157c9",
+          "Alias": "startTime",
+          "DataType": "umb://data-type/147725c05daa4f97a6d05da8ecf29092",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Start Time",
+          "SortOrder": 9,
+          "Validation": ""
+        },
+        {
+          "Key": "da8a914c-e1d6-d3df-0cd6-f8f863be7cc8",
+          "Alias": "writerRecommendation",
+          "DataType": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Writer",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "e6024fe2-e0cf-cb7a-5365-8861d960d235",
+          "Alias": "subheaderEnglish",
+          "DataType": "umb://data-type/ec3491d175dc448486e94bc040089c08",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Subheader English",
+          "SortOrder": 15,
+          "Validation": ""
+        },
+        {
+          "Key": "f4b56c1e-46f8-4890-bdaa-ca5b59662a17",
+          "Alias": "organizer",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Organizer",
+          "SortOrder": 4,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/eb2b7af93813f9d6156d413dae271244",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cb8264f04854ab7b11e3faf42a3e402",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/147725c05daa4f97a6d05da8ecf29092",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/5046194e4237453ca54715db3a07c4e1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9da275052fb0448da47707b0780a9243",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9e47630ec2df431cba01c4c65148b98d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bf88329fee8b4cee96e720bbfd0e0951",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/e1a8a77859a64a3087e39590097a5758",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ec3491d175dc448486e94bc040089c08",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/5b1806051188363d8a05bcd3f550063e",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/82c90fedd7cb3549b0dbcdec5382f5b5",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Recommendation",
+  "Alias": "Recommendation",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

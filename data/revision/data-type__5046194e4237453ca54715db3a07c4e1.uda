@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.Date",
+  "DatabaseType": 3,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/5046194e4237453ca54715db3a07c4e1",
+  "Dependencies": [],
+  "Name": "Date Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

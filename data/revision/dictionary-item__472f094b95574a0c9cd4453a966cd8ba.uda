@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Rss feed for ThisIsOdense, 5 nye anbefalinger om ugen",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "472f094b-9557-4a0c-9cd4-453a966cd8ba",
+      "Value": "Rss feed for ThisIsOdense, 5 new recommendations a week",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "472f094b-9557-4a0c-9cd4-453a966cd8ba",
+      "Value": "Rss feed for ThisIsOdense, 5 nye anbefalinger om ugen",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/472f094b95574a0c9cd4453a966cd8ba",
+  "Udi": "umb://dictionary-item/472f094b95574a0c9cd4453a966cd8ba",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "PLACES",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "8c9c65b4-7f97-4d48-8607-171fea620ac7",
+      "Value": "Byguide",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "8c9c65b4-7f97-4d48-8607-171fea620ac7",
+      "Value": "City guide",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/8c9c65b47f974d488607171fea620ac7",
+  "Udi": "umb://dictionary-item/8c9c65b47f974d488607171fea620ac7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

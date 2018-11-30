@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.Date",
+  "DatabaseType": 3,
+  "PreValues": {
+    "format": "YYYY-MM-DD"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/9a0fd71b9f3340b7a8bc8005e8654fdc",
+  "Dependencies": [],
+  "Name": "Recommendation - doorsOpen - Date",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

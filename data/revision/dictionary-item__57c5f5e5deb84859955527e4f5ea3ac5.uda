@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Andet",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "57c5f5e5-deb8-4859-9555-27e4f5ea3ac5",
+      "Value": "Other",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "57c5f5e5-deb8-4859-9555-27e4f5ea3ac5",
+      "Value": "Andet",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/57c5f5e5deb84859955527e4f5ea3ac5",
+  "Udi": "umb://dictionary-item/57c5f5e5deb84859955527e4f5ea3ac5",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

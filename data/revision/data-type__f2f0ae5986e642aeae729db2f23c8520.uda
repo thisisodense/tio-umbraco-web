@@ -1,0 +1,20 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 1,
+  "PreValues": {
+    "bulkActionPermissions": "{\r\n  \"allowBulkPublish\": true,\r\n  \"allowBulkUnpublish\": true,\r\n  \"allowBulkCopy\": true,\r\n  \"allowBulkMove\": true,\r\n  \"allowBulkDelete\": true\r\n}",
+    "displayAtTabNumber": "1",
+    "includeProperties": "[\r\n  {\r\n    \"alias\": \"updateDate\",\r\n    \"header\": \"Last edited\",\r\n    \"isSystem\": 1\r\n  },\r\n  {\r\n    \"alias\": \"placesToGoIn2016\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"Offentliggør\"\r\n  },\r\n  {\r\n    \"alias\": \"cityGuide2015\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"2015\"\r\n  },\r\n  {\r\n    \"alias\": \"cityGuide2016\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"2016\"\r\n  },\r\n  {\r\n    \"alias\": \"cityGuide2017\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"2017\"\r\n  },\r\n  {\r\n    \"alias\": \"cityGuide2018\",\r\n    \"isSystem\": 0,\r\n    \"header\": \"2018\"\r\n  }\r\n]",
+    "layouts": "[\r\n  {\r\n    \"name\": \"List\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/list/list.html\",\r\n    \"icon\": \"icon-list\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  },\r\n  {\r\n    \"name\": \"Grid\",\r\n    \"path\": \"views/propertyeditors/listview/layouts/grid/grid.html\",\r\n    \"icon\": \"icon-thumbnails-small\",\r\n    \"isSystem\": 1,\r\n    \"selected\": true\r\n  }\r\n]",
+    "orderBy": "placesToGoIn2016",
+    "orderDirection": "desc",
+    "pageSize": "50"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f2f0ae5986e642aeae729db2f23c8520",
+  "Dependencies": [],
+  "Name": "List View - LocationRepository",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

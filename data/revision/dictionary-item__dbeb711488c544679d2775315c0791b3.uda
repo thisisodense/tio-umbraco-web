@@ -1,0 +1,22 @@
+{
+  "ItemKey": "recommendations",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "dbeb7114-88c5-4467-9d27-75315c0791b3",
+      "Value": "anbefalinger",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "dbeb7114-88c5-4467-9d27-75315c0791b3",
+      "Value": "recommendations",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/dbeb711488c544679d2775315c0791b3",
+  "Udi": "umb://dictionary-item/dbeb711488c544679d2775315c0791b3",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,171 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-user",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "79693134-9272-8111-34cd-a246e7203707",
+      "Name": "Info",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "90993a9e-6461-4bfa-e864-b8046e0864c6",
+          "Alias": "oldId",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "OldId",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "b8c8bcdf-01aa-2c69-3901-476ee0166d2e",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "366a30fd-31a9-b130-db0a-85b813e29fdc",
+          "Alias": "interests",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Interests",
+          "SortOrder": 7,
+          "Validation": ""
+        },
+        {
+          "Key": "3c73ce88-c168-a478-1d5f-5f024c1533fa",
+          "Alias": "personligtLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Personligt link",
+          "SortOrder": 4,
+          "Validation": ""
+        },
+        {
+          "Key": "46423181-dc5e-e73f-44c7-ba4b240b110e",
+          "Alias": "email",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Email",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "4fa882b1-c175-a0b4-d064-7de8baaa16cc",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "687b5f5e-71d3-009c-57d4-6b1147c47461",
+          "Alias": "writerVideo",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "Indsæt link til din video fra facebooksiden",
+          "Mandatory": false,
+          "Name": "Video",
+          "SortOrder": 8,
+          "Validation": ""
+        },
+        {
+          "Key": "917ec55f-c87e-f30f-8312-a243e19afbcf",
+          "Alias": "show",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Show",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "bb5e8e1c-701b-5b0b-f5b0-81000696fd9d",
+          "Alias": "background",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Background",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "bd14458d-3f03-ae0e-d699-d41a4ac5c806",
+          "Alias": "name",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Name",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "da51fb44-c86d-f26b-7e23-40b909d8ec38",
+          "Alias": "writerSince",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Medlem siden",
+          "SortOrder": 5,
+          "Validation": ""
+        },
+        {
+          "Key": "ff69ff2b-9c01-afef-66ec-69a8f6e4fe0f",
+          "Alias": "image",
+          "DataType": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Image",
+          "SortOrder": 9,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/652a26b78fcab6c60863836ac8d82746",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/606ede2be1c8478d8666a4d88e2799cc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Writer",
+  "Alias": "Writer",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

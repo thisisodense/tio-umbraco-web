@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.FolderBrowser",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/fd9f14476c614a7c95955aa39147d318",
+  "Dependencies": [],
+  "Name": "Folder Browser",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

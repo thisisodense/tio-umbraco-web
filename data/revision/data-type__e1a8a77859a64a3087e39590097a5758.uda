@@ -1,0 +1,20 @@
+{
+  "EditorAlias": "Umbraco.MultiNodeTreePicker",
+  "DatabaseType": 1,
+  "PreValues": {
+    "filter": "Location",
+    "maxNumber": "1",
+    "minNumber": "0",
+    "showEditButton": "0",
+    "showOpenButton": "0",
+    "showPathOnHover": "0",
+    "startNode": "{\r\n  \"type\": \"content\",\r\n  \"id\": \"umb://document/842cef78e8b644749d950a6d2c60fa95\"\r\n}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/e1a8a77859a64a3087e39590097a5758",
+  "Dependencies": [],
+  "Name": "MultiNode TreePicker - Location",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

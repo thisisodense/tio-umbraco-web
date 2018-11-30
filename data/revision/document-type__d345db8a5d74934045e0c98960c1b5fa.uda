@@ -1,0 +1,44 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-users",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/652a26b78fcab6c60863836ac8d82746"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [
+    {
+      "Key": "b3f53ed4-aeae-28d5-6747-2db3e2142735",
+      "Alias": "about",
+      "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Description": "",
+      "Mandatory": false,
+      "Name": "About",
+      "SortOrder": 0,
+      "Validation": ""
+    }
+  ],
+  "Udi": "umb://document-type/d345db8a5d74934045e0c98960c1b5fa",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/652a26b78fcab6c60863836ac8d82746",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "Name": "Writer repository",
+  "Alias": "WriterRepository",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

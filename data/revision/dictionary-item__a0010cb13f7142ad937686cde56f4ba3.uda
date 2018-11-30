@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Shopping",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "a0010cb1-3f71-42ad-9376-86cde56f4ba3",
+      "Value": "Shopping",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "a0010cb1-3f71-42ad-9376-86cde56f4ba3",
+      "Value": "Shopping",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/a0010cb13f7142ad937686cde56f4ba3",
+  "Udi": "umb://dictionary-item/a0010cb13f7142ad937686cde56f4ba3",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

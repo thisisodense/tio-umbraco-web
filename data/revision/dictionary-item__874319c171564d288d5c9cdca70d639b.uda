@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Find vej",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "874319c1-7156-4d28-8d5c-9cdca70d639b",
+      "Value": "Directions",
+      "LanguageIsoCode": "en"
+    },
+    {
+      "Key": "874319c1-7156-4d28-8d5c-9cdca70d639b",
+      "Value": "Find vej",
+      "LanguageIsoCode": "da"
+    }
+  ],
+  "Name": "umb://dictionary-item/874319c171564d288d5c9cdca70d639b",
+  "Udi": "umb://dictionary-item/874319c171564d288d5c9cdca70d639b",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

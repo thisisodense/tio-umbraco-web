@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Man",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "187a8a4c-960a-4720-bfd0-19097d5e44d5",
+      "Value": "Man",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "187a8a4c-960a-4720-bfd0-19097d5e44d5",
+      "Value": "Mon",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/187a8a4c960a4720bfd019097d5e44d5",
+  "Udi": "umb://dictionary-item/187a8a4c960a4720bfd019097d5e44d5",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

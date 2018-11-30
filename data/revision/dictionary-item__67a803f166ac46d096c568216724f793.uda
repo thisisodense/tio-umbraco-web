@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Oversat af",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "67a803f1-66ac-46d0-96c5-68216724f793",
+      "Value": "Oversat af",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "67a803f1-66ac-46d0-96c5-68216724f793",
+      "Value": "Translated by",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/67a803f166ac46d096c568216724f793",
+  "Udi": "umb://dictionary-item/67a803f166ac46d096c568216724f793",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

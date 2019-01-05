@@ -499,7 +499,7 @@ display: inline-block !important;
 }
 
 /**umb_name:Paging*/
-nav.paging {
+.paging {
 font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;

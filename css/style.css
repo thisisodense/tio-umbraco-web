@@ -495,12 +495,17 @@ img.articleImg.writerImg {
 nav {display: inline-block !important;
 max-width: 680px !important;
 width: 100% !important;
-    line-height: 14pt;
+}
+
+/**umb_name:Paging*/
+nav.paging {
+	    line-height: 14pt;
 	text-align: right;
-	margin-top: 18px;}
+	margin-top: 18px;
+}
 
 /**umb_name:Next A*/
-.next a:active , .next a:visited, .next a:link, {
+a.next a:active , a.next a:visited, a.next a:link, {
     cursor: pointer;
     background-color: black;
     margin-right: 0px;

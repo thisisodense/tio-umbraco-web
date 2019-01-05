@@ -506,7 +506,7 @@ font-size: 0pt;
 }
 
 /**umb_name:Paging A*/
-a.next a:active, a.next a:visited, a.next a:link{
+a.next:active, a.next:visited, a.next:link{
     cursor: pointer;
     background-color: black;
     margin-right: 0px;

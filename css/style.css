@@ -549,7 +549,7 @@ font-size: 0pt;
 }
 
 /**umb_name:Footerlinks A*/
-.footerlinks a:active, .footerlinks a:visited, .footerlinks a:link{
+.footerlinks a:active, .footerlinks a:visited, .footerlinks a:link {
     cursor: pointer;
     background-color: yellow;
     margin-right: 0px;

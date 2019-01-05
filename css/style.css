@@ -491,6 +491,44 @@ img.articleImg.writerImg {
 	margin: 0px 0px 0px 0px !important;
 }
 
+/**umb_name:Nav*/
+nav{display: inline-block !important;
+max-width: 680px !important;
+width: 100% !important;}
+
+/**umb_name:Paging*/
+.paging {
+font-size: 0pt;
+    letter-spacing: 0px;
+    line-height: 14pt;
+	text-align: right;
+	margin-top: 18px;
+}
+
+/**umb_name:Paging A*/
+.paging a:active, .paging a:visited, .paging a:link{
+    cursor: pointer;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 20px 7px 20px;
+    text-decoration: none;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+	display: inline-block;
+}
+
+/**umb_name:Paging Hover*/
+.paging a:hover {
+    color: #00c8ab !important;
+}
 
 /**umb_name:Footer*/
 footer {

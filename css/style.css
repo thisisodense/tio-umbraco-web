@@ -528,7 +528,7 @@ font-size: 0pt;
 }
 
 /**umb_name:Paging Hover*/
-nav.paging .next a:hover {
+.paging a:hover {
     color: #00c8ab !important;
 }
 

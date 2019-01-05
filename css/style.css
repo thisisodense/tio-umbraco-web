@@ -492,8 +492,8 @@ img.articleImg.writerImg {
 }
 
 
-/**umb_name:Next*/
-.next {
+/**umb_name:Paging*/
+.paging {
 font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;
@@ -501,8 +501,8 @@ font-size: 0pt;
 	margin-top: 18px;
 }
 
-/**umb_name:Next A*/
-.next a:active, .next a:visited, .next a:link{
+/**umb_name:Paging A*/
+.paging a:active, .paging a:visited, .paging a:link{
     cursor: pointer;
     background-color: black;
     margin-right: 0px;
@@ -521,8 +521,8 @@ font-size: 0pt;
 	display: inline-block;
 }
 
-/**umb_name:Next Hover*/
-.next a:hover {
+/**umb_name:Paging Hover*/
+.paging a:hover {
     color: #00c8ab !important;
 }
 

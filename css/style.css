@@ -505,7 +505,7 @@ nav.paging {
 }
 
 /**umb_name:Next A*/
-a.next a:active , a.next a:visited, a.next a:link {
+.next a:active , .next a:visited, .next a:link {
     cursor: pointer;
     background-color: black;
     margin-right: 0px;
@@ -545,7 +545,7 @@ a.previous:active , a.previous:visited, a.previous:link {
 }
 
 /**umb_name:Paging Hover*/
-a.next a:hover, a.previous a:hover {
+.next a:hover, .previous a:hover {
     color: #00c8ab !important;
 }
 

@@ -505,8 +505,8 @@ font-size: 0pt;
 	margin-top: 18px;
 }
 
-/**umb_name:Paging A*/
-a.next:active, a.next:visited, a.next:link{
+/**umb_name:Next A*/
+a.next:active , a.next:visited, a.next:link, {
     cursor: pointer;
     background-color: black;
     margin-right: 0px;
@@ -525,8 +525,28 @@ a.next:active, a.next:visited, a.next:link{
 	display: inline-block;
 }
 
+/**umb_name:Previous A*/
+a.previous:active , a.previous:visited, a.previous:link, {
+    cursor: pointer;
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 20px 7px 20px;
+    text-decoration: none;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    font-size: 11px;
+	display: inline-block;
+}
+
 /**umb_name:Paging Hover*/
-a.next a:hover {
+a.next a:hover, a.previous a:hover {
     color: #00c8ab !important;
 }
 

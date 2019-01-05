@@ -491,12 +491,7 @@ img.articleImg.writerImg {
 	margin: 0px 0px 0px 0px !important;
 }
 
-/**umb_name:Nav Paging*/
-nav {
-display: inline-block !important;
-	    max-width: 680px !important;
-    width: 100% !important;
-}
+
 
 /**umb_name:Paging*/
 .paging {
@@ -1532,3 +1527,8 @@ backface-visibility: hidden;
 transform: rotate(-20deg);
 -ms-transform: rotate(-20deg); /* IE 9 */
 -webkit-transform: rotate(-20deg); /* Safari and Chrome */}
+
+/**umb_name:Nav*/
+nav{display: inline-block !important;
+max-width: 680px !important;
+width: 100% !important;}

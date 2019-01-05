@@ -505,7 +505,7 @@ nav.paging {
 }
 
 /**umb_name:Next A*/
-a.next:active , .next a:visited, a.next:link {
+a.next:active , a.next:visited, a.next:link {
     cursor: pointer;
     background-color: black;
     margin-right: 0px;

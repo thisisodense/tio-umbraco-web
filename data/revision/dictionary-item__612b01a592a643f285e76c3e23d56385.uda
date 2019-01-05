@@ -1,0 +1,27 @@
+{
+  "ItemKey": "Næste",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "612b01a5-92a6-43f2-85e7-6c3e23d56385",
+      "Value": "",
+      "LanguageIsoCode": "en-US"
+    },
+    {
+      "Key": "612b01a5-92a6-43f2-85e7-6c3e23d56385",
+      "Value": "Næste",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "612b01a5-92a6-43f2-85e7-6c3e23d56385",
+      "Value": "Next",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/612b01a592a643f285e76c3e23d56385",
+  "Udi": "umb://dictionary-item/612b01a592a643f285e76c3e23d56385",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,27 @@
+{
+  "ItemKey": "Forrige",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "82003698-25f9-4927-a00c-465d86af59e6",
+      "Value": "",
+      "LanguageIsoCode": "en-US"
+    },
+    {
+      "Key": "82003698-25f9-4927-a00c-465d86af59e6",
+      "Value": "Forrige",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "82003698-25f9-4927-a00c-465d86af59e6",
+      "Value": "Previous",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/8200369825f94927a00c465d86af59e6",
+  "Udi": "umb://dictionary-item/8200369825f94927a00c465d86af59e6",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

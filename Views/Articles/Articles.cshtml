@@ -23,3 +23,23 @@
 </nav>
 <hr />
 @Html.DisplayFor(model => model.Articles)
+<nav class="paging">
+    @if (Model.DisablePreviousButton == false)
+    {
+       @Html.ActionLink(Umbraco.GetDictionaryValue("Forrige"),
+       Models.Constants.Controllers.Articles.Actions.ARTICLES,
+       Models.Constants.Controllers.Articles.NAME,
+       new { Page = Model.Page - 1 },
+       new { @class = "previous"})
+    }
+    @if (Model.DisableNextButton == false)
+    {
+        @Html.ActionLink(Umbraco.GetDictionaryValue("Næste"),
+        Models.Constants.Controllers.Articles.Actions.ARTICLES,
+        Models.Constants.Controllers.Articles.NAME,
+        new { Page = Model.Page + 1 },
+        new { @class = "next"})
+
+    }
+
+</nav>

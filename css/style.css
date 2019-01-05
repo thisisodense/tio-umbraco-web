@@ -499,7 +499,7 @@ display: inline-block !important;
 }
 
 /**umb_name:Paging*/
-.paging {
+nav.paging {
 font-size: 0pt;
     letter-spacing: 0px;
     line-height: 14pt;
@@ -508,7 +508,7 @@ font-size: 0pt;
 }
 
 /**umb_name:Paging A*/
-.paging a:active, .paging a:visited, .paging a:link{
+nav.paging .next a:active, nav.paging .next a:visited, nav.paging .next a:link{
     cursor: pointer;
     background-color: black;
     margin-right: 0px;
@@ -528,7 +528,7 @@ font-size: 0pt;
 }
 
 /**umb_name:Paging Hover*/
-.paging a:hover {
+nav.paging .next a:hover {
     color: #00c8ab !important;
 }
 

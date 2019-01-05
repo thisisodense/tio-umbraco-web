@@ -491,6 +491,12 @@ img.articleImg.writerImg {
 	margin: 0px 0px 0px 0px !important;
 }
 
+/**umb_name:Nav Paging*/
+nav {
+display: inline-block !important;
+	    max-width: 680px !important;
+    width: 100% !important;
+}
 
 /**umb_name:Paging*/
 .paging {

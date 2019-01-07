@@ -3,7 +3,7 @@
   "DatabaseType": 1,
   "PreValues": {
     "group": "WebTags",
-    "storageType": "Json"
+    "storageType": "Csv"
   },
   "Parent": null,
   "Udi": "umb://data-type/9de8e4b7e50247e6b92d5e6f12fec9b9",

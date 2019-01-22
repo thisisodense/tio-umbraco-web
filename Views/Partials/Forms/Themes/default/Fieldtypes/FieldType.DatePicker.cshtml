@@ -19,4 +19,4 @@
 }
 
 <input type="hidden" name="@Model.Name" id="@Model.Id" class="datepickerfieldshadow" value="@val" />
-<input type="text" class="@Html.GetFormFieldClass(Model.FieldTypeName) text datepickerfield"  name="@Model.Name" id="@(Model.Id)_1" value="@val" @{if (Model.Mandatory) { <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text> }} />
+<input type="text" class="@Html.GetFormFieldClass(Model.FieldTypeName) text datepickerfield"  name="@Model.Name" id="@(Model.Id)_1" autocomplete="off" value="@val" @{if (Model.Mandatory) { <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text> }} />

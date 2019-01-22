@@ -59,20 +59,21 @@
         @if (Model.RenderScriptFiles)
         {
             @* Render the scripts.cshtml file to included standard conditionals and validation logic *@
-        Html.RenderPartial(formScriptView);
+            Html.RenderPartial(formScriptView);
 
 
             @* Render required css files needed by fields on the current page*@
-            foreach (var css in Html.GetThemeCssFiles(Model))
+
+            if (Model.UseClientDependency)
             {
-                if (Model.UseClientDependency)
+                foreach (var css in Html.GetThemeCssFiles(Model))
                 {
                     Html.RequiresCss(css.Value);
                 }
-                else
-                {
-                    <link rel="stylesheet" href="@Url.Content(css.Value)" />
-                }
+            }
+            else
+            {
+                @Html.RenderFormsStylesheets(Url, Model)
             }
 
         }

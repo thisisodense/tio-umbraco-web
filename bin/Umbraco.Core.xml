@@ -16470,6 +16470,11 @@
             implementation to that of the database's DTO as sql: [tableName].[columnName].
             </summary>
         </member>
+        <member name="T:Umbraco.Core.Persistence.Migrations.Upgrades.TargetVersionSevenFourteenZero.UpdateMemberGroupPickerData">
+            <summary>
+            Migrates member group picker properties from NVarchar to NText. See https://github.com/umbraco/Umbraco-CMS/issues/3268.
+            </summary>
+        </member>
         <member name="T:Umbraco.Core.Persistence.Migrations.Upgrades.TargetVersionSevenTwelveZero.SetDefaultTagsStorageType">
             <summary>
             Set the default storageType for the tags datatype to "CSV" to ensure backwards compatibilty since the default is going to be JSON in new versions

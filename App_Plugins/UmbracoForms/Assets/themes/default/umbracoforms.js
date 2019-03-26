@@ -30,14 +30,20 @@
 
         var formItem = e.form;
 
-        dependencyCheck(formItem.formId);
+        var forms = $('.umbraco-forms-form');
 
-        var form = $('#umbraco_form_' + formItem.formId + ' .umbraco-forms-page');
-        var conditions = new UmbracoFormsConditions(form,
-            formItem.fieldSetConditions,
-            formItem.fieldConditions,
-            formItem.recordValues);
-        conditions.watch();
+        forms.each(function(i, form){
+            dependencyCheck(form);
+
+            var page = $(this).find('.umbraco-forms-page');
+            var conditions = new UmbracoFormsConditions(page,
+                formItem.fieldSetConditions,
+                formItem.fieldConditions,
+                formItem.recordValues);
+            conditions.watch();
+        });
+        
+       
     }
 
     /** Configures the jquery validation for Umbraco forms */
@@ -57,6 +63,13 @@
                         valid = true;
                     }
                 });
+                
+                if(!valid){
+                    $("input", $(element).closest(".checkboxlist, .radiobuttonlist")).each(function (i) {
+
+                       $(this).addClass("input-validation-error");
+                    });
+                }
                 return valid;
             });
 
@@ -90,9 +103,9 @@
 
     /**
     * method to determine if Umbraco Forms can run and has the required dependencies loaded
-    * @param {String} formId the id of the form
+    * @param {Form Element} formEl the element of the form
     */
-    function dependencyCheck(formId) {
+    function dependencyCheck(formEl) {
         //Only perform check if the global 'Umbraco.Sys' is null/undefined
         //If present means we are in backoffice & that this is being rendered as a macro preview
         //We do not need to perform this check here
@@ -103,8 +116,6 @@
 
             //Select the wrapping div around the form 
             //umbraco_form_GUID
-            var formEl = document.getElementById("umbraco_form_" + formId);
-
             var errorElement = document.createElement("div");
             errorElement.className = "umbraco-forms missing-library";
             errorElement.style.color = "#fff";
@@ -113,6 +124,7 @@
             errorElement.style.margin = "10px 0";
             var errorMessage = "";
 
+            
             //Ensure umbracoForm is not null
             if (formEl) {
 
@@ -170,20 +182,21 @@
         //Iterates through all the form elements found on the page to update the registered value
         function populateFieldValues(page, formValues) {
 
-            $("select", page).each(function () {
+            var $page = $(page);
+            $page.find("select").each(function () {
                 formValues[$(this).attr("id")] = $("option[value='" + $(this).val() + "']", $(this)).text();
             });
 
-            $("textarea", page).each(function () {
+            $page.find("textarea").each(function () {
                 formValues[$(this).attr("id")] = $(this).val();
             });
 
             // clear out all saved checkbox values to we can safely append
-            $("input[type=checkbox]", page).each(function () {
+            $page.find("input[type=checkbox]").each(function () {
                 formValues[$(this).attr("name")] = null;
             });
 
-            $("input", page).each(function () {
+            $page.find("input").each(function () {
 
                 if ($(this).attr('type') === "text" || $(this).attr("type") === "hidden") {
                     formValues[$(this).attr("id")] = $(this).val();
@@ -262,7 +275,7 @@
         self.watch = function () {
 
             //subscribe to change events
-            $("input, textarea, select", self.form).change(function () {
+            $(self.form).find("input, textarea, select").change(function () {
                 populateFieldValues(self.form, self.values);
 
                 //process the conditions
@@ -380,8 +393,8 @@
                     }else{
                         success =    cachedResult;
                     }
-           
-                    visible = !(success ^ show);
+
+                var visible = !(success ^ show);
                 return visible;
             }
 
@@ -404,13 +417,13 @@
 
             for (fsId in self.fieldsetConditions) {
                 if (self.fieldsetConditions.hasOwnProperty(fsId)) {
-                    handleCondition($("#" + fsId), fsId, self.fieldsetConditions[fsId], "Fieldset");
+                    handleCondition(self.form.find("#" + fsId), fsId, self.fieldsetConditions[fsId], "Fieldset");
                 }
             }
 
             for (fieldId in self.fieldConditions) {
                 if (self.fieldConditions.hasOwnProperty(fieldId)) {
-                    handleCondition($("#" + fieldId).closest(".umbraco-forms-field"),
+                    handleCondition(self.form.find("#" + fieldId).closest(".umbraco-forms-field"),
                         fieldId,
                         self.fieldConditions[fieldId],
                         "Field");

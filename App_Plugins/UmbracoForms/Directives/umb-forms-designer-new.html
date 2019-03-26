@@ -246,15 +246,14 @@
                     <span ng-if="!$last">and</span>
                 </span>
             </div>
-
-            <div class="umb-forms-workflow-flow" ng-if="form.manualApproval">
+            <div class="umb-forms-workflow-flow" ng-if="form.manualApproval || (form.formWorkflows.onApprove | filter:{isDeleted:'false'}).length > 0">
                 <span class="umb-forms-workflow-preview">
                     <span class="umb-forms__page-number"><i class="icon-thumb-up"></i></span>
                     On
                 </span>
 
                 <span class="umb-forms-workflow-preview">
-                    <strong>&nbsp; Approve &rarr;</strong>
+                    <strong>&nbsp; Approve <span ng-show="!form.manualApproval">(automatic)</span> &rarr;</strong>
                 </span>
 
                 <span class="umb-forms-workflow-preview" ng-repeat="workflow in form.formWorkflows.onApprove | filter:{isDeleted:'false'}">

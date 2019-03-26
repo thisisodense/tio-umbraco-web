@@ -217,6 +217,10 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.File",
 
 		var umbracoVersion = Umbraco.Sys.ServerVariables.application.version;
 
+		$scope.clear = function() {
+			$scope.setting.value = undefined;
+		};
+		
 	    $scope.openMediaPicker = function() {
 
 			var compareOptions = {
@@ -255,7 +259,13 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.File",
             //Rather than a for loop, use underscore.js
 	        var umbracoFileProp = _.findWhere(item.properties, {alias: "umbracoFile"});
 
-            $scope.setting.value = umbracoFileProp.value;
+			if(typeof umbracoFileProp.value === 'object'){
+				$scope.setting.value = umbracoFileProp.value.src;
+			}else{
+				$scope.setting.value = umbracoFileProp.value;
+			}
+	        
+            
         }
 	});
 

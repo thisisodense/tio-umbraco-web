@@ -25,7 +25,6 @@
         }
 
         moment.locale(e.umbracoFormsLocale.name);
-
         var datePickerFields = document.getElementsByClassName('datepickerfield');
         for (var i = 0; i < datePickerFields.length; i++) {
             var field = datePickerFields[i];
@@ -36,13 +35,14 @@
                 i18n: e.umbracoFormsLocale.locales,
                 format: "LL",
                 onSelect: function (date) {
-                    setShadow(currentId.replace("_1", ""), date);
+                    setShadow(this, date);
                 },
                 minDate: new Date('1753-01-01T00:00:00') //Min value of datetime in SQL Server CE
             });
         }
 
-        function setShadow(id, date) {
+        function setShadow(pickaday, date) {
+            var id = pickaday._o.field.id.replace("_1", "");
             var value = moment(date).format('YYYY-MM-DD');
             var field = document.getElementById(id);
             field.value = value;

@@ -45,6 +45,7 @@
             @Html.HiddenFor(x => Model.FormName, new {id=(string)null})
             @Html.HiddenFor(x => Model.RecordId, new {id=(string)null})
             @Html.HiddenFor(x => Model.PreviousClicked, new {id=(string)null})
+            @Html.HiddenFor(x => Model.Theme, new {id=(string)null})
 
             @* These 2 cannot use the htmlhelper *@
             <input type="hidden" name="FormStep" value="@Model.FormStep" />

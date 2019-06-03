@@ -194,8 +194,8 @@
                                         <span>{{ field | momentDateTimeZone : 'LLL' }}</span>
                                     </div>
                                     <div ng-switch-default>
-                                        <a class="umb-table-body__link" href="" ng-click="vm.viewEntryDetails(records.schema, row, $event)" ng-if="$index === 0">{{ field | truncate:20:true }}</a>
-                                        <span ng-if="$index > 0">{{ field | truncate:20:true }}</span>
+                                        <a class="umb-table-body__link" href="" ng-click="vm.viewEntryDetails(records.schema, row, $event)" ng-if="$index === 0"> {{(field || "&#x3C;Empty&#x3E;") | truncate:20:true }}</a>
+                                        <span ng-if="$index > 0">{{(field || "&#x3C;Empty&#x3E;") | truncate:20:true }}</span>
                                     </div>
                                 </div>
 

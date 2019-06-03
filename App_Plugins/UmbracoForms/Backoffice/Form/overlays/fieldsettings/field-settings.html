@@ -172,8 +172,9 @@
                                 <select ng-model="rule.field"
                                         ng-options="field.id as field.caption for field in vm.fieldConditions"
                                         ng-change="vm.conditionFieldSelected(rule.field, rule)"
-                                        ng-init="vm.conditionFieldSelected(rule.field, rule)">
-                                    <option value="">Select field</option>
+                                        ng-init="vm.conditionFieldSelected(rule.field, rule)"
+                                        required>
+                                    <option value="" hidden>Select field</option>
                                 </select>
                             </div>
 

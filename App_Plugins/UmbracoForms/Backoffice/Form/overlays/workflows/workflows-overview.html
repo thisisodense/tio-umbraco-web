@@ -66,9 +66,9 @@
 
     </div>
 
-    <div class="umb-forms-workflows-divider" ng-if="model.manualApproval"></div>
+    <div class="umb-forms-workflows-divider"></div>
 
-    <div class="umb-forms-workflows" ng-if="model.manualApproval">
+    <div class="umb-forms-workflows">
 
         <div class="umb-forms-workflow -not-clickable">
 
@@ -78,7 +78,7 @@
 
             <div class="umb-forms-workflow__name-wrapper">
                 <div class="umb-forms-workflow__name">On Approve</div>
-                <div class="umb-forms-workflow__description">These workflows will run if an entry needs approval</div>
+                <div class="umb-forms-workflow__description">These workflows will run when the entry is approved<span ng-show="!model.manualApproval"> (this happends automatically after submit with the current settings)</span>.</div>
             </div>
 
         </div>

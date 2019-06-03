@@ -217,6 +217,10 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.File",
 
 		var umbracoVersion = Umbraco.Sys.ServerVariables.application.version;
 
+		$scope.clear = function() {
+			$scope.setting.value = undefined;
+		};
+		
 	    $scope.openMediaPicker = function() {
 
 			var compareOptions = {
@@ -255,7 +259,13 @@ angular.module("umbraco").controller("UmbracoForms.SettingTypes.File",
             //Rather than a for loop, use underscore.js
 	        var umbracoFileProp = _.findWhere(item.properties, {alias: "umbracoFile"});
 
-            $scope.setting.value = umbracoFileProp.value;
+			if(typeof umbracoFileProp.value === 'object'){
+				$scope.setting.value = umbracoFileProp.value.src;
+			}else{
+				$scope.setting.value = umbracoFileProp.value;
+			}
+	        
+            
         }
 	});
 
@@ -1831,11 +1841,11 @@ angular.module("umbraco").controller("UmbracoForms.Editors.Form.EntriesControlle
 	        $scope.loadRecords($scope.filter, false);
 
 	        //Show success notification that action excuted
-	        notificationsService.success("Excuted Action", "Successfully excuted action " + action.name);
+	        notificationsService.success("Excuted Action", "Successfully executed action " + action.name);
 
 	    }, function (err) {
 	        //Error Function - so get an error response from API
-	        notificationsService.error("Excuted Action", "Failed to excute action " + action.name + " due to error: " + err);
+	        notificationsService.error("Excuted Action", "Failed to execute action " + action.name + " due to error: " + err);
 	    });
 
 

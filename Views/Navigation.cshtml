@@ -10,8 +10,7 @@ Html.GetRouteDataValue<string>
     new
     {
         lang = (Site.IsEnglish ? "da" : "en"),
-        id = Html.GetRouteDataValue<string>
-        ("id")
+        id = Html.GetRouteDataValue<string>("id")
     });
 
     string currentUrl = Request.RawUrl;

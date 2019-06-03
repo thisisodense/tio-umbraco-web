@@ -17,12 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @RenderSection("meta", required: false)
     <title>@(ViewBag.Title != null ? ViewBag.Title : Umbraco.GetDictionaryValue("Sker der noget i Odense?"))</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-	<meta name="description" content="@Umbraco.GetDictionaryValue("Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.")" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <meta name="description" content="@Umbraco.GetDictionaryValue("Sker der noget i Odense? Gu gør der så. Hvad sker der? Det står lige her. Hver eneste mandag, året rundt.")" />
     <meta name="google-site-verification" content="KWuVtTgiI6bFBjvqOlEcprkQFgInsv1hVF2dDtlh-0Y" />
     <meta name="p:domain_verify" content="7c5681ad9a1afde465ff7dabacbb9f21" />
-	@RenderSection("styles", required: false)
+    @RenderSection("styles", required: false)
     @Scripts.Render(Models.Constants.Js.Moderinzr)
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -42,140 +42,118 @@
     <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Content/images/apple_icon_114x114_png)")" />
     <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/Content/images/apple_icon_144x144_png)")" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-			
-			
-			
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+
 </head>
 <body>
-			
-			<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '550180138336430',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '550180138336430',
+                xfbml: true,
+                version: 'v2.9'
+            });
+            FB.AppEvents.logPageView();
+        };
 
-</script>
-			
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
     @Html.Hidden("IsEnglish", Site.IsEnglish)
-		@{
-                string newLangUrl = Url.Action(Html.GetRouteDataValue<string>("action"),
-                                 Html.GetRouteDataValue<string>("controller"),
-                                 new
-                                 {
-                                     lang = (Site.IsEnglish ? "da" : "en"),
-                                     id = Html.GetRouteDataValue<string>("id")
-                                 });
 
-                string currentUrl = Request.RawUrl;
-                if (currentUrl.IndexOf("/da/", StringComparison.InvariantCultureIgnoreCase) > -1)
-                {
-                    newLangUrl = currentUrl.Replace("/da/", "/en/", StringComparison.InvariantCultureIgnoreCase);
-                }
-                else if (currentUrl.IndexOf("/en/", StringComparison.InvariantCultureIgnoreCase) > -1)
-                {
-                    newLangUrl = currentUrl.Replace("/en/", "/da/", StringComparison.InvariantCultureIgnoreCase);
-                }
-				
-				
-				Random rand = new Random();
-				string bannernummer = "bannerCrop"+ rand.Next(1,7);
-			
-            }
-
-<div class="content">
-        <div><a class="logo" href="@Url.Action("Recommendations", "Recommendations")"><img src="@Umbraco.Content(1072).GetCropUrl(bannernummer, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" /></a></div>	
-			<div class="navigation">
-
-            <a class="flag" href="@newLangUrl">
-                <img src="@Url.Content("http://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
+    <div class="content">
+        <div>
+            <a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
+                @RenderSection("topImage", true)
             </a>
-            <ul class="topNavigation">
-                <li class="@Html.IsActive(Url.Action("Recommendations", "Recommendations"))"><a href="@Url.Action("Recommendations", "Recommendations")">@Umbraco.GetDictionaryValue("EVENTS")</a></li>
-                <li class="@Html.IsActive(Url.Action("Articles", "Articles"))"><a href="@Url.Action("Articles", "Articles", new { tagId = String.Empty })">@Umbraco.GetDictionaryValue("BLOG")</a></li>
-                <li id="places" class="@Html.IsActive(Url.Action("Locations", "Locations"))"><a href="@Url.Action("Locations", "Locations", new { tagId = String.Empty })">@Umbraco.GetDictionaryValue("PLACES")</a></li>
-		    </ul>
-            <br style="clear:both;" />
         </div>
+        @RenderSection("navigation", false)
         <div style="float:right">
             @RenderSection("writername", false)
-		</div>
+        </div>
         @RenderBody()
         <footer>
             <div class="footerlinks">
-				<a href="@Url.Action("Recommendations", "Recommendations")" >Events</a>
-				<a href="@Url.Action("Articles", "Articles")" >@Umbraco.GetDictionaryValue("Artikler")</a>
-				<a href="@Url.Action("Locations", "Locations")" >@Umbraco.GetDictionaryValue("Byguide")</a>
-				<a href="@Url.Action("About", "About")">Om This Is Odense</a>
-				<br>
-				<a href="https://twitter.com/ThisIsOdense" class="red" target="_blank">Twitter</a>
-				<a href="http://instagram.com/thisisodense" class="red" target="_blank">Instagram</a>
-				<a href="https://www.facebook.com/ThisIsOdense" class="red" target="_blank">Facebook</a>	
-				<a href="@Url.Action("Tips", "Recommendations")" class="tips" target="_blank">@Umbraco.GetDictionaryValue("TIP OS!")</a>
+                <a href="@Url.Action("Recommendations", "Recommendations")">Events</a>
+                <a href="@Url.Action("Articles", "Articles")">@Umbraco.GetDictionaryValue("Artikler")</a>
+                <a href="@Url.Action("Locations", "Locations")">@Umbraco.GetDictionaryValue("Byguide")</a>
+                <a href="@Url.Action("About", "About")">Om This Is Odense</a>
+                <br>
+                <a href="https://twitter.com/ThisIsOdense" class="red" target="_blank">Twitter</a>
+                <a href="http://instagram.com/thisisodense" class="red" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/ThisIsOdense" class="red" target="_blank">Facebook</a>
+                <a href="@Url.Action("Tips", "Recommendations")" class="tips" target="_blank">@Umbraco.GetDictionaryValue("TIP OS!")</a>
             </div><br style="clear:both;" />
             <hr class="bigspace" />
             <div class="linkContainer">
                 <h2>@Umbraco.GetDictionaryValue("SE OGSÅ")</h2>
                 <br style="clear:both;" />
-                <div class="links"><a class="linkimg" href="http://ontheplate.dk/" target="_blank">
-                        <img src="@Url.Content("~/Content/Images/ontheplate.jpg")" title="On The Plate Odense" alt="On The Plate Odense"></a>
-					<a class="linktext" href="http://ontheplate.dk/" target="_blank">
+                <div class="links">
+                    <a class="linkimg" href="http://ontheplate.dk/" target="_blank">
+                        <img src="@Url.Content("~/Content/Images/ontheplate.jpg")" title="On The Plate Odense" alt="On The Plate Odense">
+                    </a>
+                    <a class="linktext" href="http://ontheplate.dk/" target="_blank">
                         On The Plate Odense
-                    </a></div>
-                    <div class="links"><a class="linkimg" href="http://oplev.odense.dk" target="_blank">
+                    </a>
+                </div>
+                <div class="links">
+                    <a class="linkimg" href="http://oplev.odense.dk" target="_blank">
                         <img src="@Url.Content("~/Content/Images/oplevodense.png")" title="Oplev Odense" alt="Oplev Odense" />
                     </a>
-					<a class="linktext" href="http://oplev.odense.dk" target="_blank">
+                    <a class="linktext" href="http://oplev.odense.dk" target="_blank">
                         Oplev Odense
-                    </a></div>
-                    <div class="links">
+                    </a>
+                </div>
+                <div class="links">
                     <a class="linkimg" href="https://apps.odense.dk/odenserundt/" target="_blank">
                         <img src="@Url.Content("http://www.thisisodense.dk/media/97949/175x175bb.jpg")" title="In Medias Res - Magasin for unge om byliv og kultur i Odense" alt="In Medias Res - Magasin for unge om byliv og kultur i Odense" />
                     </a>
-					<a class="linktext" href="https://apps.odense.dk/odenserundt/" target="_blank">
-						Odense Rundt
-                    </a></div>
-                    <div class="links">
+                    <a class="linktext" href="https://apps.odense.dk/odenserundt/" target="_blank">
+                        Odense Rundt
+                    </a>
+                </div>
+                <div class="links">
                     <a class="linkimg" href="http://www.visitodense.com/ln-int/funen/events/whats-odense" target="_blank">
                         <img src="@Url.Content("~/Content/Images/visitodense_0.png")" title="Visit Odense" alt="Visit Odense" />
                     </a>
-					<a class="linktext" href="http://www.visitodense.com/ln-int/funen/events/whats-odense" target="_blank">
+                    <a class="linktext" href="http://www.visitodense.com/ln-int/funen/events/whats-odense" target="_blank">
                         Visit Odense
-                    </a></div>
-                    <div class="links">
+                    </a>
+                </div>
+                <div class="links">
                     <a class="linkimg" href="http://lydiodense.dk/" target="_blank">
                         <img src="@Url.Content("~/Content/Images/lydiodense.png")" title="Lyd i Odense" alt="Lyd i Odense" />
                     </a>
-					<a class="linktext" href="http://lydiodense.dk/" target="_blank">
-                    	Lyd i Odense
-                    </a></div>
-                    <div class="links">
+                    <a class="linktext" href="http://lydiodense.dk/" target="_blank">
+                        Lyd i Odense
+                    </a>
+                </div>
+                <div class="links">
                     <a class="linkimg" href="http://livemusicodense.com/" target="_blank">
                         <img src="@Url.Content("http://www.thisisodense.dk/media/5851/12715667_1569265746727357_241684151271062218_n-1.jpg")" title="Live Music Odense" alt="Live Music Odense" />
                     </a>
-					<a class="linktext" href="http://livemusicodense.com/" target="_blank">
+                    <a class="linktext" href="http://livemusicodense.com/" target="_blank">
                         Live Music Odense
-                    </a></div>
-                    <br style="clear:both;" />
+                    </a>
                 </div>
+                <br style="clear:both;" />
             </div>
-            <hr class="bigspace" />
-            <div class="fb-like-box-w">
-                <div class="fb-page" data-width="500" data-href="https://www.facebook.com/ThisIsOdense" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ThisIsOdense" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ThisIsOdense">This Is Odense</a></blockquote></div>
-            </div>
-        </footer>
+    </div>
+    <hr class="bigspace" />
+    <div class="fb-like-box-w">
+        <div class="fb-page" data-width="500" data-href="https://www.facebook.com/ThisIsOdense" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ThisIsOdense" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ThisIsOdense">This Is Odense</a></blockquote></div>
+    </div>
+    </footer>
     </div>
 
     @Scripts.Render(Models.Constants.Js.Jquery, Models.Constants.Js.General, Models.Constants.Js.JqueryUI)
@@ -198,7 +176,7 @@
                 //    var $value = $(value);
                 //    var span = $value.find("span:first");
                 //    var iframe = $value.find("iframe");
-                //    var height = (span.css("height").replace("px", "") - 50) + "px";				
+                //    var height = (span.css("height").replace("px", "") - 50) + "px";
                 //    span.css("height", height);
                 //    iframe.css("height", height);
                 //    debugger;

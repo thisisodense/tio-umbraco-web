@@ -1,12 +1,16 @@
 ﻿@using Models = TIO.Core.Models;
 @using Library.Tools;
-@using System.Web.Optimization;
+@using Library.Mvc.Extensions;
 
 
 @inherits TIO.Mvc.Core.BaseViewPage<Models.ArticleModel>
 @{
     Layout = "~/Views/Layout.cshtml";
     ViewBag.Title = Model.Headline;
+}
+
+@section topImage {
+    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
 }
 
 @section meta {
@@ -24,5 +28,9 @@
     }
 
     <meta property="og:type" content="article" />
+}
+
+@section navigation {
+    @Html.Partial("Navigation")
 }
 @Html.DisplayForModel()

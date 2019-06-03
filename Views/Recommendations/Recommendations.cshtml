@@ -1,5 +1,6 @@
 ﻿@using Library.Tools;
 @using Models = TIO.Core.Models;
+@using Library.Mvc.Extensions;
 
 @inherits  TIO.Mvc.Core.BaseViewPage<TIO.Core.Models.RecommendationsModel>
 
@@ -13,6 +14,14 @@
         @(Site.IsEnglish ? Model.WeekDescriptionEN : Model.WeekDescription)
         <a href="@Url.Action(Models.Constants.Controllers.Writer.NAME, Models.Constants.Controllers.Writer.Actions.WRITER, new { id = Model.ThisWeeksEditorId, name = Model.ThisWeeksEditorName.ToSeoUrl() })">@Model.ThisWeeksEditorName</a>
     </p>
+}
+
+@section topImage {
+    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+}
+
+@section navigation {
+    @Html.Partial("Navigation")
 }
 
 @Html.DisplayFor(model => model.Recommendations, new { RecommendationModel = Model })

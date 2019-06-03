@@ -1,0 +1,91 @@
+﻿
+@using Models = TIO.Core.Models;
+@using Controllers = TIO.Core.Models.Constants.Controllers;
+@using Library.Tools;
+@using Library.Mvc.Extensions;
+
+@inherits TIO.Mvc.Core.BaseViewPage<Models.WriterModel>
+@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = " - " + Model.Name;
+}
+
+@section scripts {
+}
+
+@section styles {
+}
+
+@section meta {
+    @*<meta property="og:title" content="@Model.Title" />
+        <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
+        <meta property="fb:app_id" content="550180138336430" />
+        <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
+        <meta property="og:image" content="@Model.Image" />
+        <meta property="og:type" content="article" />*@
+}
+
+@section topImage {
+    <img src="@Model.DetailImage" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+}
+
+@{
+    string newLangUrl = Url.Action(Html.GetRouteDataValue<string>
+("action"),
+Html.GetRouteDataValue<string>
+    ("controller"),
+    new
+    {
+        lang = (Site.IsEnglish ? "da" : "en"),
+        id = Html.GetRouteDataValue<string>
+        ("id")
+    });
+
+    string currentUrl = Request.RawUrl;
+    if (currentUrl.IndexOf("/da/", StringComparison.InvariantCultureIgnoreCase) > -1)
+    {
+        newLangUrl = currentUrl.Replace("/da/", "/en/", StringComparison.InvariantCultureIgnoreCase);
+    }
+    else if (currentUrl.IndexOf("/en/", StringComparison.InvariantCultureIgnoreCase) > -1)
+    {
+        newLangUrl = currentUrl.Replace("/en/", "/da/", StringComparison.InvariantCultureIgnoreCase);
+    }
+}
+
+<article class="writerArciveBackground">@Html.Raw(Model.Background.Substring(0, 200))... @Model.Name</article>
+
+<div class="navigation">
+    <a class="flag" href="@newLangUrl">
+        <img src="@Url.Content(" http://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
+    </a>
+    <ul class="topNavigation">
+        <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations })">@Model.NumberOfRecommendation @Umbraco.GetDictionaryValue("RECOMMENDATIONS")</a></li>
+        <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles })">@Model.NumberOfArticles @Umbraco.GetDictionaryValue("ARTICLES")</a></li>
+        <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations })">@Model.NumberOfLocations @Umbraco.GetDictionaryValue("FAVORITEPLACE")</a></li>
+    </ul>
+</div>
+
+@Html.DisplayFor(x => x.Archive)
+<nav class="paging">
+    @if (Model.DisablePreviousButton == false)
+    {
+        @Html.ActionLink(Umbraco.GetDictionaryValue("Forrige"),
+        Models.Constants.Controllers.WriterArchive.Actions.INDEX,
+        Models.Constants.Controllers.WriterArchive.NAME,
+        new { Page = Model.Page - 1 },
+        new { @class = "previous"})
+    }
+    @if (Model.DisableNextButton == false)
+    {
+        @Html.ActionLink(Umbraco.GetDictionaryValue("Næste"),
+        Models.Constants.Controllers.WriterArchive.Actions.INDEX,
+        Models.Constants.Controllers.WriterArchive.NAME,
+        new { Page = Model.Page + 1 },
+        new { @class = "next"})
+
+    }
+
+</nav>
+
+
+

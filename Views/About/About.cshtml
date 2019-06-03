@@ -1,10 +1,19 @@
 ﻿@using Models = TIO.Core.Models
-@using System.Web.Optimization;
+@using System.Web.Optimization
+@using Library.Mvc.Extensions;
 
 @inherits  TIO.Mvc.Core.BaseViewPage<TIO.Core.Models.WritersModel>
 
 @section scripts {
     @Scripts.Render(Models.Constants.Js.General)
+}
+
+@section topImage {
+    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+}
+
+@section navigation {
+    @Html.Partial("Navigation")
 }
 
 @{
@@ -14,5 +23,5 @@
 <div class="writers">
     <a href="javascript:void(-1);" id="writers" name="writers"></a>
     @Html.DisplayFor(model => model.Writers)
-    <br style="clear:both"/>
+    <br style="clear:both" />
 </div>

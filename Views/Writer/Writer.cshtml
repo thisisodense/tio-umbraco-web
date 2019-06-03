@@ -1,5 +1,7 @@
 ﻿
 @using Models = TIO.Core.Models;
+@using Controllers = TIO.Core.Models.Constants.Controllers;
+@using Library.Tools;
 
 @inherits TIO.Mvc.Core.BaseViewPage<Models.WriterModel>
 @{
@@ -15,11 +17,19 @@
 
 @section meta {
     @*<meta property="og:title" content="@Model.Title" />
-    <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
-    <meta property="fb:app_id" content="550180138336430" />
-    <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
-    <meta property="og:image" content="@Model.Image" />
-    <meta property="og:type" content="article" />*@
+        <meta property="og:description" content="@Html.Raw(Model.LongDescription)" />
+        <meta property="fb:app_id" content="550180138336430" />
+        <meta property="og:url" content="@Url.Action(Models.Constants.Controllers.Location.NAME, Models.Constants.Controllers.Location.Actions.LOCATION, new { id = Model.Id, name = Model.Title.ToSeoUrl() }, Request.Url.Scheme)" />
+        <meta property="og:image" content="@Model.Image" />
+        <meta property="og:type" content="article" />*@
+}
+
+@section topImage {
+    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+}
+
+@section navigation {
+    @Html.Partial("Navigation")
 }
 
 <article class="writerDetails">
@@ -33,7 +43,21 @@
     </div>
     <img class="articleImg" src="@Model.DetailImage" alt="@Model.Name" />
     <div class="placeInfo">
-        <div class="info arrow">Skribent siden @Model.WriterSince | @Model.NumberOfRecommendation anbefalinger</div>
+        <div class="info arrow">
+            Skribent siden @Model.WriterSince |
+            @Html.ActionLink(string.Format("{0} anbefalinger", Model.NumberOfRecommendation),
+                Controllers.WriterArchive.Actions.INDEX,
+                Controllers.WriterArchive.NAME,
+                new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations }, new { }) |
+            @Html.ActionLink(string.Format("{0} artikler", Model.NumberOfArticles),
+                Controllers.WriterArchive.Actions.INDEX,
+                Controllers.WriterArchive.NAME,
+                new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }, new { }) |
+            @Html.ActionLink(string.Format("{0} yndlingssteder", Model.NumberOfLocations),
+               Controllers.WriterArchive.Actions.INDEX,
+               Controllers.WriterArchive.NAME,
+               new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }, new { })
+        </div>
     </div>
     <br />
     @Html.Raw(Model.Background)

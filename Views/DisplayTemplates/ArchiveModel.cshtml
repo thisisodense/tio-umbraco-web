@@ -1,0 +1,29 @@
+﻿@using TIO.Core.Models;
+@using TIO.Mvc.Core;
+@using Library.Tools;
+@using Const = TIO.Core.Models.Constants;
+@using FILTER = TIO.Core.Models.Constants.Controllers.WriterArchive.FILTER;
+
+@inherits BaseViewPage<ArchiveModel>
+@{
+    string url = "";
+    switch (Model.Filter)
+    {
+        case FILTER.Recommendations:
+            url = Url.Action(Const.Controllers.Recommendation.Actions.RECOMMENDATION, Const.Controllers.Recommendation.NAME, new { id = Model.Id });
+            break;
+        case FILTER.Articles:
+            url = Url.Action(Const.Controllers.Article.Actions.ARTICLE, Const.Controllers.Article.NAME, new { id = Model.Id });
+            break;
+        case FILTER.Locations:
+            url = Url.Action(Const.Controllers.Location.Actions.LOCATION, Const.Controllers.Location.NAME, new { id = Model.Id });
+            break;
+    }
+}
+<a href="@url">
+    <article class="achive">
+        <img src="@Model.Image" />
+        <h1>@Model.Headline</h1>
+        <h2>@Model.SubHeader</h2>
+    </article>
+</a>

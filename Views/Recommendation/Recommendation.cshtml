@@ -1,5 +1,6 @@
 ﻿@using Library.Tools;
 @using Models = TIO.Core.Models;
+@using Library.Mvc.Extensions;
 
 @inherits TIO.Mvc.Core.BaseViewPage<Models.RecommendationModel>
 @{
@@ -22,8 +23,16 @@
     <meta property="og:type" content="article" />
 }
 
+@section navigation {
+    @Html.Partial("Navigation")
+}
+
+@section topImage {
+    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+}
+
 @section writername {
-    @if(false)
+    @if (false)
     {
         if (Model != null && !Model.IsGuestWriter)
         {
@@ -31,7 +40,7 @@
         }
         else
         {
-        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
+            <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
         }
     }
 }

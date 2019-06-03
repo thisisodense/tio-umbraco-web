@@ -1,0 +1,38 @@
+﻿@using Library.Mvc.Extensions;
+
+@inherits TIO.Mvc.Core.ThisIsOdenseTemplatePage
+
+@{
+    string newLangUrl = Url.Action(Html.GetRouteDataValue<string>
+("action"),
+Html.GetRouteDataValue<string>
+    ("controller"),
+    new
+    {
+        lang = (Site.IsEnglish ? "da" : "en"),
+        id = Html.GetRouteDataValue<string>
+        ("id")
+    });
+
+    string currentUrl = Request.RawUrl;
+    if (currentUrl.IndexOf("/da/", StringComparison.InvariantCultureIgnoreCase) > -1)
+    {
+        newLangUrl = currentUrl.Replace("/da/", "/en/", StringComparison.InvariantCultureIgnoreCase);
+    }
+    else if (currentUrl.IndexOf("/en/", StringComparison.InvariantCultureIgnoreCase) > -1)
+    {
+        newLangUrl = currentUrl.Replace("/en/", "/da/", StringComparison.InvariantCultureIgnoreCase);
+    }
+}
+
+<div class="navigation">
+    <a class="flag" href="@newLangUrl">
+        <img src="@Url.Content(" http://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
+    </a>
+    <ul class="topNavigation">
+        <li class="@Html.IsActive(Url.Action(" Recommendations", "Recommendations" ))"><a href="@Url.Action(" Recommendations", "Recommendations" )">@Umbraco.GetDictionaryValue("EVENTS")</a></li>
+        <li class="@Html.IsActive(Url.Action(" Articles", "Articles" ))"><a href="@Url.Action(" Articles", "Articles" , new { tagId=String.Empty })">@Umbraco.GetDictionaryValue("BLOG")</a></li>
+        <li id="places" class="@Html.IsActive(Url.Action(" Locations", "Locations" ))"><a href="@Url.Action(" Locations", "Locations" , new { tagId=String.Empty })">@Umbraco.GetDictionaryValue("PLACES")</a></li>
+    </ul>
+    <br style="clear:both;" />
+</div>

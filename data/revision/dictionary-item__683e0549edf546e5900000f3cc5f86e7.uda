@@ -1,0 +1,22 @@
+{
+  "ItemKey": "FAVORITEPLACE",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "683e0549-edf5-46e5-9000-00f3cc5f86e7",
+      "Value": "YNDLINGSSTEDER",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "683e0549-edf5-46e5-9000-00f3cc5f86e7",
+      "Value": "FAVORITEPLACES",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/683e0549edf546e5900000f3cc5f86e7",
+  "Udi": "umb://dictionary-item/683e0549edf546e5900000f3cc5f86e7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

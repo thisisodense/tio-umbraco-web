@@ -759,6 +759,72 @@ span.writerArciveBackground {
 	color: darkgrey !important;
 }
 
+/**umb_name:Archive*/
+.achive {
+    font-style: inherit;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif !important;
+	color: black !important;
+}
+
+/**umb_name:Archive IMG*/
+img.achive {
+    width: 22% !important;
+    height: 94px !important;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+    margin-right: 14px;
+    padding-top: 5px;
+	margin-bottom: 0px;
+}
+
+/**umb_name:Archive text*/
+p.achive {
+    font-size: 13pt;
+    line-height: 20pt;
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    background-color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 26px;
+    margin-top: 0px;
+	min-height: 102px;
+}
+
+/**umb_name:Archive text*/
+p.achive a:link, p.achive a:active, p.achive a:visited {
+    font-size: 13pt;
+    line-height: 16pt;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+	color: black;
+	text-transform: uppercase;
+	margin-left: 0px;
+	margin-right: 0px;
+	letter-spacing: 1px;
+	word-break: normal;
+}
+
+/**umb_name:Archive Name*/
+a.achive {
+    font-size: 13pt;
+    line-height: 16pt;
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase !important;
+}
+
+/**umb_name:Archive Name*/
+span.achive {
+    font-family: 'Open Sans', sans-serif !important;
+	color: darkgrey !important;
+}
+
 
 /**umb_name:Writer Display None*/
 .displaynone {

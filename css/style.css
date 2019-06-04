@@ -230,6 +230,62 @@ article .desc p strong.hed {
             font-family: 'Open Sans', sans-serif;
         }
 
+
+/**umb_name:Article archive*/
+    article .achive {
+        min-height: 60px;
+        cursor:pointer;
+    }
+
+/**umb_name:Article archive P*/
+        article .achive p {
+      margin: 0;
+      display: block;
+      text-align: left;
+      font-size: 12px;
+      color: #666;
+      padding: 0px 10px 0 10px;
+      line-height: 110%; }
+
+/**umb_name:Article archive Header*/
+        article .achive .hed {
+            width: 100%;
+            min-height: 27px;
+            font-weight: 900;
+            overflow: hidden;
+			margin-top: 0px;
+            margin-bottom: 3px;
+            font-size: 36px;
+            line-height: 100%;
+            color: #333;
+            font-family: 'Open Sans Condensed', sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase; }
+
+article .achive strong.hed {
+	padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+article .achive p strong.hed {
+	padding-left: 0px;
+	padding-bottom: 3px;
+}
+
+/**umb_name:Article archive Subheader*/
+        article .achive .des {
+            width: 100%;
+            overflow: hidden;
+            text-transform: uppercase;
+            padding: 0px 0px 7px 0px;
+            font-size: 15px;
+            line-height: 130%;
+			margin-top: -3px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
 /**umb_name:Page size*/
 .content {
     width: 680px;

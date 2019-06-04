@@ -838,6 +838,7 @@ img.achive {
     margin-right: 14px;
     padding-top: 5px;
 	margin-bottom: 0px;
+	filter: grayscale(100%);
 }
 
 /**umb_name:Archive text*/

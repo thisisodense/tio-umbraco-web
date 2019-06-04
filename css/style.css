@@ -264,7 +264,6 @@ article .desc p strong.hed {
 
 article .achive strong.hed {
 	padding-bottom: 5px;
-    padding-left: 10px;
 }
 
 article .achive p strong.hed {
@@ -279,7 +278,7 @@ article .achive p strong.hed {
             text-transform: uppercase;
             padding: 0px 0px 7px 0px;
             font-size: 15px;
-            line-height: 130%;
+            line-height: 16pt !important;
 			margin-top: -3px;
             font-weight: 400;
             letter-spacing: 0px;

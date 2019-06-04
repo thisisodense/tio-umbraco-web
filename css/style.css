@@ -705,7 +705,7 @@ span.writerOfWeek {
     font-style: inherit;
 	text-decoration: none;
 	font-family: 'Open Sans Condensed', sans-serif !important;
-	color: black !important;
+	color: white !important;
 }
 
 
@@ -715,7 +715,7 @@ p.writerArciveBackground {
     line-height: 20pt;
     font-weight: 300;
     font-family: 'Open Sans Condensed', sans-serif !important;
-    background-color: yellow;
+    background-color: #00c8ab;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -725,17 +725,22 @@ p.writerArciveBackground {
 }
 
 /**umb_name:Writer Archive Background text*/
-p.writerArciveBackground a:link, p.writerOfWeek a:active, p.writerOfWeek a:visited {
+p.writerArciveBackground a:link, p.writerArciveBackground a:active, p.writerArciveBackground a:visited {
     font-size: 13pt;
     line-height: 16pt;
     font-weight: 700;
     font-family: 'Open Sans Condensed', sans-serif !important;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 	margin-left: 0px;
 	margin-right: 0px;
 	letter-spacing: 1px;
 	word-break: normal;
+}
+
+/**umb_name:Writer Archive Background text*/
+p.writerArciveBackground a:hover {
+	color: black !important;
 }
 
 /**umb_name:Writer Archive Background Name*/

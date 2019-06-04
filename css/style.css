@@ -467,6 +467,12 @@ img.logo {
 margin: 0 0 42px 0 !important;
     }
 
+/**umb_name:Logo Writer*/
+img.logowriter {
+margin: 0 0 42px 0 !important;
+filter: brightness(70%) sepia(100%) hue-rotate(118deg) saturate(180%) contrast(120%);
+    }
+
 /**umb_name:Logo Link*/
 a.logo {
 margin: 0 0 0 0 !important;

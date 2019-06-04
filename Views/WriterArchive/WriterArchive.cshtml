@@ -52,7 +52,11 @@ Html.GetRouteDataValue<string>
     }
 }
 
-<article class="writerArciveBackground">@Html.Raw(Model.Background.Substring(0, 200))... @Model.Name</article>
+<article class="writerArciveBackground">
+    <p class="writerArciveBackground">
+        @Html.Raw(Model.Background.Substring(0, 200))... @Model.Name
+    </p>
+</article>
 
 <div class="navigation">
     <a class="flag" href="@newLangUrl">

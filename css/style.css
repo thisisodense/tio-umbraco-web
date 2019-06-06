@@ -1303,6 +1303,17 @@ float: left;
 margin-left: 10px;
 }
 
+/**umb_name:Archive navigation*/
+.archiveNavigation{font-size: 20pt;
+line-height: 15pt;
+font-weight: 700;
+letter-spacing: 3px;
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;
+vertical-align: top;
+margin-left: 10px;
+}
+
 /**umb_name:Top navigation Li*/
     .topNavigation li {
         display: inline-block;

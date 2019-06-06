@@ -1303,10 +1303,22 @@ float: left;
 margin-left: 10px;
 }
 
+/**umb_name:Top navigation archive*/
+.topNavigation.archive {
+    float: none;
+    width: 50%;
+}
+
 /**umb_name:Top navigation Li*/
     .topNavigation li {
         display: inline-block;
     }
+
+    /**umb_name:Top navigation archive Li*/
+.topNavigation.archive li {
+    display: inline-block;
+    margin-top: 10px;
+}
 
 /**umb_name:Top navigation Li Active*/
         .topNavigation li.active a {

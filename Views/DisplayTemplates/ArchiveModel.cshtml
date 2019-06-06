@@ -20,10 +20,15 @@
             break;
     }
 }
-<a href="@url">
+<div style="float:right">
     <article class="achive">
-        <img src="@Model.Image" />
-        <h1>@Model.Headline</h1>
-        <h2>@Model.SubHeader</h2>
+        <p class="achive">
+            <a href="@url">
+                <img src="@Model.Image" class="achive">
+                    <strong class="hed">@Model.Headline</strong>
+                    <br>
+                    <span class="des">@Model.SubHeader</span>
+                </a>
+        </p>
     </article>
-</a>
+</div>

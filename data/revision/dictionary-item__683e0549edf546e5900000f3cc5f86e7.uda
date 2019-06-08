@@ -4,12 +4,12 @@
   "Translations": [
     {
       "Key": "683e0549-edf5-46e5-9000-00f3cc5f86e7",
-      "Value": "STAMSTEDER",
+      "Value": "stamsteder",
       "LanguageIsoCode": "da"
     },
     {
       "Key": "683e0549-edf5-46e5-9000-00f3cc5f86e7",
-      "Value": "FAVORITEPLACES",
+      "Value": "favoriteplaces",
       "LanguageIsoCode": "en"
     }
   ],

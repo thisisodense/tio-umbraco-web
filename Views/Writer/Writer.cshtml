@@ -47,15 +47,15 @@
     <div class="placeInfo">
         <div class="info arrow">
             Skribent siden @Model.WriterSince |
-            @Html.ActionLink(string.Format("{0} anbefalinger", Model.NumberOfRecommendation),
+            @Html.ActionLink(string.Format("{0} {1}", Model.NumberOfRecommendation, Umbraco.GetDictionaryValue("RECOMMENDATIONS")),
                 Controllers.WriterArchive.Actions.INDEX,
                 Controllers.WriterArchive.NAME,
                 new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations }, new { }) |
-            @Html.ActionLink(string.Format("{0} artikler", Model.NumberOfArticles),
+            @Html.ActionLink(string.Format("{0} {1}", Model.NumberOfArticles, Umbraco.GetDictionaryValue("ARTICLES")),
                 Controllers.WriterArchive.Actions.INDEX,
                 Controllers.WriterArchive.NAME,
                 new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }, new { }) |
-            @Html.ActionLink(string.Format("{0} yndlingssteder", Model.NumberOfLocations),
+            @Html.ActionLink(string.Format("{0} {1}", Model.NumberOfLocations, Umbraco.GetDictionaryValue("FAVORITEPLACE")),
                Controllers.WriterArchive.Actions.INDEX,
                Controllers.WriterArchive.NAME,
                new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations }, new { })

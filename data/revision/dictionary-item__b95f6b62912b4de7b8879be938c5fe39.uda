@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Week events",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/b95f6b62912b4de7b8879be938c5fe39",
+  "Udi": "umb://dictionary-item/b95f6b62912b4de7b8879be938c5fe39",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

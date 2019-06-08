@@ -84,7 +84,7 @@
         @RenderBody()
         <footer>
             <div class="footerlinks">
-                <a href="@Url.Action("Recommendations", "Recommendations")">Events</a>
+                <a href="@Url.Action("Recommendations", "Recommendations")">@Umbraco.GetDictionaryValue("Week events")</a>
                 <a href="@Url.Action("Articles", "Articles")">@Umbraco.GetDictionaryValue("Artikler")</a>
                 <a href="@Url.Action("Locations", "Locations")">@Umbraco.GetDictionaryValue("Byguide")</a>
                 <a href="@Url.Action("About", "About")">Om This Is Odense</a>

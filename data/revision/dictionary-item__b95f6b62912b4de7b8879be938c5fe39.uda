@@ -1,7 +1,18 @@
 {
   "ItemKey": "Week events",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "b95f6b62-912b-4de7-b887-9be938c5fe39",
+      "Value": "Ugens events",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "b95f6b62-912b-4de7-b887-9be938c5fe39",
+      "Value": "This week's events",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/b95f6b62912b4de7b8879be938c5fe39",
   "Udi": "umb://dictionary-item/b95f6b62912b4de7b8879be938c5fe39",
   "Dependencies": [],

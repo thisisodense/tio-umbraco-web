@@ -15,7 +15,9 @@
 }
 
 @section topImage {
-    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+    <a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
+        <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+    </a>
 }
 
 @section menu {

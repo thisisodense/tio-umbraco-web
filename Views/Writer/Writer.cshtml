@@ -25,7 +25,9 @@
 }
 
 @section topImage {
+<a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
     <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+</a>
 }
 
 @section navigation {
@@ -56,7 +58,7 @@
             @Html.ActionLink(string.Format("{0} yndlingssteder", Model.NumberOfLocations),
                Controllers.WriterArchive.Actions.INDEX,
                Controllers.WriterArchive.NAME,
-               new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }, new { })
+               new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations }, new { })
         </div>
     </div>
     <br />

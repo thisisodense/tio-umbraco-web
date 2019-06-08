@@ -26,7 +26,9 @@
 }
 
 @section topImage {
+<a class="logo" href="@Url.Action(Models.Constants.Controllers.Writer.Actions.WRITER, Models.Constants.Controllers.Writer.NAME, new { id = Model.Id })">
     <img src="@Model.DetailImage" alt="ThisIsOdense" title="ThisIsOdense" class="logowriter" />
+</a>
 }
 
 @{
@@ -54,7 +56,7 @@ Html.GetRouteDataValue<string>
 
 <article class="writerArciveBackground">
     <div class="writerArciveBackground">
-        @Html.Raw(Model.Background.Substring(0, 200))... @Model.Name
+        @Html.Raw(Model.Background.Substring(0, 200))... <a href="@Url.Action(Models.Constants.Controllers.Writer.Actions.WRITER, Models.Constants.Controllers.Writer.NAME, new { id = Model.Id })" style="text-transform:uppercase"><strong>@Model.Name</strong></a>
     </div>
 </article>
 
@@ -65,7 +67,7 @@ Html.GetRouteDataValue<string>
     <ul class="topNavigation archive">
         <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations })">@Model.NumberOfRecommendation @Umbraco.GetDictionaryValue("RECOMMENDATIONS")</a></li>
         <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Articles })">@Model.NumberOfArticles @Umbraco.GetDictionaryValue("ARTICLES")</a></li>
-        <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations })">@Model.NumberOfLocations @Umbraco.GetDictionaryValue("FAVORITEPLACE")</a></li>
+        <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Locations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations })">@Model.NumberOfLocations @Umbraco.GetDictionaryValue("FAVORITEPLACE")</a></li>
     </ul>
     <br style="clear:both;">
 </div>

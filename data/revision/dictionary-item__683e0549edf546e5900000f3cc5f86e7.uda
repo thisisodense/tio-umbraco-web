@@ -4,7 +4,7 @@
   "Translations": [
     {
       "Key": "683e0549-edf5-46e5-9000-00f3cc5f86e7",
-      "Value": "YNDLINGSSTEDER",
+      "Value": "STAMSTEDER",
       "LanguageIsoCode": "da"
     },
     {
@@ -18,5 +18,5 @@
   "Dependencies": [],
   "Alias": null,
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
-  "__version": "2.0.14"
+  "__version": "2.0.15"
 }

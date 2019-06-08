@@ -56,7 +56,11 @@ Html.GetRouteDataValue<string>
 
 <article class="writerArciveBackground">
     <div class="writerArciveBackground">
-        @Html.Raw(Model.Background.Substring(0, 200))... <a href="@Url.Action(Models.Constants.Controllers.Writer.Actions.WRITER, Models.Constants.Controllers.Writer.NAME, new { id = Model.Id })" class="writerArciveBackground"><strong>@Model.Name</strong></a>
+        @if (Model.Background.Length > 0)
+        {
+            @Html.Raw(Model.Background.Substring(0, 200) + "...")
+        }
+        <a href="@Url.Action(Models.Constants.Controllers.Writer.Actions.WRITER, Models.Constants.Controllers.Writer.NAME, new { id = Model.Id })" class="writerArciveBackground"><strong>@Model.Name</strong></a>
     </div>
 </article>
 

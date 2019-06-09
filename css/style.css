@@ -652,6 +652,19 @@ a.red {
     color: white !important;
 }
 
+/**umb_name:Footerlinks A Black*/
+a.black {
+    background-color: black !important;
+    color: white !important;
+}
+
+/**umb_name:Footerlinks A White*/
+a.white {
+    background-color: white !important;
+    color: black !important;
+	margin-bottom: 0px !important;
+}
+
 /**umb_name:Footerlinks Hover*/
 .footerlinks a:hover {
     color: #00c8ab !important;
@@ -908,6 +921,12 @@ span.achive {
 		text-align: left;
 		font-family: Georgia,Times,Times New Roman,serif;
 }
+
+/**umb_name:Article Writer Details*/
+article.writerDetails {
+    margin-bottom: 0 !important;
+}
+
 
 /**umb_name:Writer Content*/
 .writerContent {

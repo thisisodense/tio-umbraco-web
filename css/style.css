@@ -774,6 +774,22 @@ span.writerOfWeek {
 	color: darkgrey !important;
 }
 
+/**umb_name:Bottom Writer Box*/
+.BottomWriterBox {
+    font-style: inherit;
+    text-decoration: none;
+    color: black;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+    margin-bottom: 26px;
+    float: right;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+
 /**umb_name:Writer Archive Background*/
 .writerArciveBackground {
     font-style: inherit;

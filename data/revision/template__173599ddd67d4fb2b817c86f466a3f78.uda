@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/deleteThis.cshtml",
+  "Master": null,
+  "Udi": "umb://template/173599ddd67d4fb2b817c86f466a3f78",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/deleteThis.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "delete this",
+  "Alias": "deleteThis",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.15"
+}

@@ -1356,6 +1356,12 @@ margin-left: 10px;
     margin-top: 10px;
 }
 
+    /**umb_name:Top navigation locationarchive Li*/
+.topNavigation.locationarchive li {
+    display: inline-block;
+    margin-top: 2px;
+}
+
 /**umb_name:Top navigation Li Active*/
         .topNavigation li.active a {
             text-decoration: none;

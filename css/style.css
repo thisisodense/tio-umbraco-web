@@ -789,8 +789,8 @@ span.writerOfWeek {
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
-/**umb_name:Bottom Writer Box*/
-.LocationWriterBox {
+/**umb_name:Location Writer Box*/
+.locationWriterBox {
     font-style: inherit;
     text-decoration: none;
     color: black;

@@ -1,0 +1,11 @@
+{
+  "ItemKey": "anbefalede",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/d1a4a943158f4cb8a09d187a1161023f",
+  "Udi": "umb://dictionary-item/d1a4a943158f4cb8a09d187a1161023f",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

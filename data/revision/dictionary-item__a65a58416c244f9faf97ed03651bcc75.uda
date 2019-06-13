@@ -1,7 +1,18 @@
 {
   "ItemKey": "Flere af mine yndlingssteder",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "a65a5841-6c24-4f9f-af97-ed03651bcc75",
+      "Value": "Flere af mine yndlingssteder",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "a65a5841-6c24-4f9f-af97-ed03651bcc75",
+      "Value": "More of my favourite places",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/a65a58416c244f9faf97ed03651bcc75",
   "Udi": "umb://dictionary-item/a65a58416c244f9faf97ed03651bcc75",
   "Dependencies": [],

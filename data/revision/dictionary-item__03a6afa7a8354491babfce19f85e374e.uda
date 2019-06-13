@@ -1,7 +1,18 @@
 {
-  "ItemKey": "▸ Se hele holdet bag",
+  "ItemKey": "Se hele holdet bag",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "03a6afa7-a835-4491-babf-ce19f85e374e",
+      "Value": "▸ Se hele holdet bag",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "03a6afa7-a835-4491-babf-ce19f85e374e",
+      "Value": "▸ See the whole team behind",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/03a6afa7a8354491babfce19f85e374e",
   "Udi": "umb://dictionary-item/03a6afa7a8354491babfce19f85e374e",
   "Dependencies": [],

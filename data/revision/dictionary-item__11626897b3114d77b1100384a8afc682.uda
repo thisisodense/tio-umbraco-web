@@ -1,7 +1,18 @@
 {
   "ItemKey": "UGEN EFTER",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "11626897-b311-4d77-b110-0384a8afc682",
+      "Value": "UGEN EFTER ▸",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "11626897-b311-4d77-b110-0384a8afc682",
+      "Value": "THE WEEK AFTER ▸",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/11626897b3114d77b1100384a8afc682",
   "Udi": "umb://dictionary-item/11626897b3114d77b1100384a8afc682",
   "Dependencies": [],

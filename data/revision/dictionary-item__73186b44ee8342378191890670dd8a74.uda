@@ -1,7 +1,18 @@
 {
   "ItemKey": "SKREVETAF",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "73186b44-ee83-4237-8191-890670dd8a74",
+      "Value": "SKREVET AF",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "73186b44-ee83-4237-8191-890670dd8a74",
+      "Value": "WRITTEN BY",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/73186b44ee8342378191890670dd8a74",
   "Udi": "umb://dictionary-item/73186b44ee8342378191890670dd8a74",
   "Dependencies": [],

@@ -1,0 +1,11 @@
+{
+  "ItemKey": "SKREVETAF",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/73186b44ee8342378191890670dd8a74",
+  "Udi": "umb://dictionary-item/73186b44ee8342378191890670dd8a74",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

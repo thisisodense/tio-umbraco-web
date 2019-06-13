@@ -1,0 +1,11 @@
+{
+  "ItemKey": "UGE",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/6a2454ab829c408a9bec662817e251e2",
+  "Udi": "umb://dictionary-item/6a2454ab829c408a9bec662817e251e2",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

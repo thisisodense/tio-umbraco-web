@@ -1,0 +1,11 @@
+{
+  "ItemKey": "UGEN EFTER",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/11626897b3114d77b1100384a8afc682",
+  "Udi": "umb://dictionary-item/11626897b3114d77b1100384a8afc682",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Flere af mine yndlingssteder",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/a65a58416c244f9faf97ed03651bcc75",
+  "Udi": "umb://dictionary-item/a65a58416c244f9faf97ed03651bcc75",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

@@ -1,0 +1,11 @@
+{
+  "ItemKey": "anbefalinger af",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/f6438eeef5cb48f28956e24aff789dfb",
+  "Udi": "umb://dictionary-item/f6438eeef5cb48f28956e24aff789dfb",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.15"
+}

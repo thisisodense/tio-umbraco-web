@@ -793,7 +793,7 @@ span.writerOfWeek {
 .locationWriterBox {
     font-style: inherit;
     text-decoration: none;
-    color: black;
+    color: black !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;

@@ -1,7 +1,18 @@
 {
   "ItemKey": "UGE",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "6a2454ab-829c-408a-9bec-662817e251e2",
+      "Value": "UGE",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "6a2454ab-829c-408a-9bec-662817e251e2",
+      "Value": "WEEK",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/6a2454ab829c408a9bec662817e251e2",
   "Udi": "umb://dictionary-item/6a2454ab829c408a9bec662817e251e2",
   "Dependencies": [],

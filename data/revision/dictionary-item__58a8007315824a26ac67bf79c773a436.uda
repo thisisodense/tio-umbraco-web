@@ -1,7 +1,18 @@
 {
   "ItemKey": "Mine andre anbefalinger",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "58a80073-1582-4a26-ac67-bf79c773a436",
+      "Value": "Mine andre anbefalinger",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "58a80073-1582-4a26-ac67-bf79c773a436",
+      "Value": "My other recommendations",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/58a8007315824a26ac67bf79c773a436",
   "Udi": "umb://dictionary-item/58a8007315824a26ac67bf79c773a436",
   "Dependencies": [],

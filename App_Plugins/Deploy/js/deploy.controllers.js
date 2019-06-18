@@ -339,6 +339,7 @@ angular.module('umbraco.deploy')
                 restoreNodes = [
                     {
                         id: $scope.currentNode.id,
+                        udi: $scope.currentNode.udi,
                         includeDescendants: true
                     }
                 ];

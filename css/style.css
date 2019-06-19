@@ -624,6 +624,7 @@ font-size: 0pt;
     line-height: 14pt;
 	text-align: right;
 	margin-top: 18px;
+	margin-bottom: 6px;
 }
 
 /**umb_name:Footerlinks A*/
@@ -656,6 +657,8 @@ a.red {
 a.black {
     background-color: black !important;
     color: white !important;
+	margin: 0px !important;
+	margin-top: 10px !important;
 }
 
 /**umb_name:Footerlinks A White*/
@@ -663,6 +666,7 @@ a.white {
     background-color: white !important;
     color: black !important;
 	margin-bottom: 0px !important;
+	margin-top: 10px !important;
 }
 
 /**umb_name:Footerlinks Hover*/
@@ -784,9 +788,23 @@ span.writerOfWeek {
     margin-left: 0px !important;
     margin-right: 0px !important;
     margin-top: 10px !important;
-    margin-bottom: 26px;
-    float: right;
     font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+/**umb_name:Bottom Writer Box Strong*/
+.BottomWriterBox strong {
+    text-transform: uppercase;
+}
+
+/**umb_name:Bottom Writer Box P*/
+.BottomWriterBox p {
+    padding: 0px !important;
+    color: black;
+}
+
+/**umb_name:Bottom Writer Box Footerlinks*/
+.BottomWriterBox .footerlinks {
+    margin: 0px !important;
 }
 
 /**umb_name:Location Writer Box*/

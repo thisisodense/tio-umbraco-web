@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Se hele holdet bag",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "395f0e34-b0e4-42b4-96eb-29ebe3690cb8",
+      "Value": "▸ Se hele holdet bag",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "395f0e34-b0e4-42b4-96eb-29ebe3690cb8",
+      "Value": "▸ See the whole team behind",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/395f0e34b0e442b496eb29ebe3690cb8",
+  "Udi": "umb://dictionary-item/395f0e34b0e442b496eb29ebe3690cb8",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

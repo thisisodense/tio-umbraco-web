@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Mine andre anbefalinger",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "7a24afcc-ba3b-4721-8df0-9acc2717f675",
+      "Value": "Mine andre anbefalinger",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "7a24afcc-ba3b-4721-8df0-9acc2717f675",
+      "Value": "My other recommendations",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/7a24afccba3b47218df09acc2717f675",
+  "Udi": "umb://dictionary-item/7a24afccba3b47218df09acc2717f675",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

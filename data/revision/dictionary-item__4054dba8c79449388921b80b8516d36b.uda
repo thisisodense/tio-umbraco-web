@@ -1,0 +1,22 @@
+{
+  "ItemKey": "SKREVETAF",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "4054dba8-c794-4938-8921-b80b8516d36b",
+      "Value": "SKREVET AF",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "4054dba8-c794-4938-8921-b80b8516d36b",
+      "Value": "WRITTEN BY",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/4054dba8c79449388921b80b8516d36b",
+  "Udi": "umb://dictionary-item/4054dba8c79449388921b80b8516d36b",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

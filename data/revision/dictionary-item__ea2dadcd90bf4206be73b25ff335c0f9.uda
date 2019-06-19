@@ -1,0 +1,22 @@
+{
+  "ItemKey": "anbefalinger af",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ea2dadcd-90bf-4206-be73-b25ff335c0f9",
+      "Value": "anbefalinger af",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "ea2dadcd-90bf-4206-be73-b25ff335c0f9",
+      "Value": "recommendations of",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/ea2dadcd90bf4206be73b25ff335c0f9",
+  "Udi": "umb://dictionary-item/ea2dadcd90bf4206be73b25ff335c0f9",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

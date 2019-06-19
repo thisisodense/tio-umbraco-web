@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Mere om mig",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "6ca9898f-17bf-4bf2-b21b-a3dd07d49e43",
+      "Value": "Mere om mig",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "6ca9898f-17bf-4bf2-b21b-a3dd07d49e43",
+      "Value": "More about me",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/6ca9898f17bf4bf2b21ba3dd07d49e43",
+  "Udi": "umb://dictionary-item/6ca9898f17bf4bf2b21ba3dd07d49e43",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

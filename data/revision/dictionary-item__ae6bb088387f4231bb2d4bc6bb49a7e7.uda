@@ -1,0 +1,22 @@
+{
+  "ItemKey": "UGE",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ae6bb088-387f-4231-bb2d-4bc6bb49a7e7",
+      "Value": "UGE",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "ae6bb088-387f-4231-bb2d-4bc6bb49a7e7",
+      "Value": "WEEK",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/ae6bb088387f4231bb2d4bc6bb49a7e7",
+  "Udi": "umb://dictionary-item/ae6bb088387f4231bb2d4bc6bb49a7e7",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "UGEN EFTER",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "b11855d4-bc46-4dd0-8264-96d7f00681c9",
+      "Value": "UGEN EFTER ▸",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "b11855d4-bc46-4dd0-8264-96d7f00681c9",
+      "Value": "THE WEEK AFTER ▸",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/b11855d4bc464dd0826496d7f00681c9",
+  "Udi": "umb://dictionary-item/b11855d4bc464dd0826496d7f00681c9",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

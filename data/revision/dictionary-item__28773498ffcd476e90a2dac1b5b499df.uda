@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Se hvad jeg har skrevet",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "28773498-ffcd-476e-90a2-dac1b5b499df",
+      "Value": "Se hvad jeg har skrevet",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "28773498-ffcd-476e-90a2-dac1b5b499df",
+      "Value": "Look what I have written",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/28773498ffcd476e90a2dac1b5b499df",
+  "Udi": "umb://dictionary-item/28773498ffcd476e90a2dac1b5b499df",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "UGEN FØR",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "ff7e05fb-e325-47f4-92f1-38816a5bd5dc",
+      "Value": "◂ UGEN FØR",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "ff7e05fb-e325-47f4-92f1-38816a5bd5dc",
+      "Value": "◂ THE WEEK BEFORE",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/ff7e05fbe32547f492f138816a5bd5dc",
+  "Udi": "umb://dictionary-item/ff7e05fbe32547f492f138816a5bd5dc",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Vores",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "9e7f62ae-c1e3-42cd-b917-408f68b3561e",
+      "Value": "Vores",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "9e7f62ae-c1e3-42cd-b917-408f68b3561e",
+      "Value": "Our",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/9e7f62aec1e342cdb917408f68b3561e",
+  "Udi": "umb://dictionary-item/9e7f62aec1e342cdb917408f68b3561e",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

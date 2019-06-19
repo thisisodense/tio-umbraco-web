@@ -183,7 +183,7 @@
           "Key": "2e813411-cd32-c33e-f4d0-9c2bb8111b7a",
           "Alias": "weekNumber",
           "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
-          "Description": "test",
+          "Description": "",
           "Mandatory": true,
           "Name": "Week",
           "SortOrder": 0,
@@ -454,5 +454,5 @@
   "Name": "Recommendation",
   "Alias": "Recommendation",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.15"
+  "__version": "2.0.16"
 }

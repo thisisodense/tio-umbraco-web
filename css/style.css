@@ -796,7 +796,7 @@ span.writerOfWeek {
 
 /**umb_name:Bottom Writer Box P*/
 .BottomWriterBox p {
-    padding: 0px;
+    padding: 0px !important;
     color: black;
 }
 

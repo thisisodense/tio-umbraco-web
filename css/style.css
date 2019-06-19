@@ -794,6 +794,12 @@ span.writerOfWeek {
     text-transform: uppercase;
 }
 
+/**umb_name:Bottom Writer Box P*/
+.BottomWriterBox p {
+    padding: 0px;
+    color: black;
+}
+
 /**umb_name:Location Writer Box*/
 .locationWriterBox {
     font-style: inherit;

@@ -799,6 +799,11 @@ span.writerOfWeek {
     color: black;
 }
 
+/**umb_name:Bottom Writer Box Footerlinks*/
+.BottomWriterBox .footerlinks {
+    margin: 0px !important;
+}
+
 /**umb_name:Location Writer Box*/
 .locationWriterBox {
     font-style: inherit;

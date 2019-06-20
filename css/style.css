@@ -816,7 +816,7 @@ span.writerOfWeek {
 /**umb_name:Bottom Writer Box Footerlinks*/
 .BottomWriterBox .footerlinks {
     margin: 0px !important;
-	clear: both;
+    float: right;
 }
 
 /**umb_name:Location Writer Box*/

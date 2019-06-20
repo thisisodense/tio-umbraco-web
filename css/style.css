@@ -792,15 +792,27 @@ span.writerOfWeek {
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
+/**umb_name:Bottom Writer Box Img*/
+.BottomWriterBox img.writerOfWeek {
+    width: 16% !important;
+    height: 142px;
+}
+
 /**umb_name:Bottom Writer Box Strong*/
 .BottomWriterBox strong {
     text-transform: uppercase;
+}
+
+/**umb_name:P Bottom Writer Box*/
+p.BottomWriterBox {
+    min-height: 0px !important;
 }
 
 /**umb_name:Bottom Writer Box P*/
 .BottomWriterBox p {
     padding: 0px !important;
     color: black;
+	min-height: 78px;
 }
 
 /**umb_name:Bottom Writer Box Footerlinks*/

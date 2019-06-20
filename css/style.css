@@ -664,10 +664,11 @@ a.black {
 
 /**umb_name:Footerlinks A White*/
 a.white {
-    background-color: white !important;
-    color: black !important;
+    background-color: #b9b9b9 !important;
+    color: white !important;
 	margin-bottom: 0px !important;
 	margin-top: 10px !important;
+	margin-left: 0px !important;
 }
 
 /**umb_name:Footerlinks Hover*/

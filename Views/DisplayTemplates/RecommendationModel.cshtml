@@ -186,13 +186,13 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                     <a class="white" href="@Url.Action(
                                           Const.Constants.Controllers.Writer.Actions.WRITER,
                                           Const.Constants.Controllers.Writer.NAME,
-                                          new { id = Model.Id, name = Model.WriterName.ToSeoUrl() })">
+                                          new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">
                         @Umbraco.GetDictionaryValue("Mere om mig")
                     </a>
                     <a class="black" href="@Url.Action(
                                           Const.Constants.Controllers.WriterArchive.Actions.INDEX,
                                           Const.Constants.Controllers.WriterArchive.NAME,
-                                          new { id = Model.Id, name = Model.WriterName.ToSeoUrl(),
+                                          new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl(),
                                           filter = Const.Constants.Controllers.WriterArchive.FILTER.Recommendations })">
                         @Umbraco.GetDictionaryValue("Mine andre anbefalinger")
                     </a>

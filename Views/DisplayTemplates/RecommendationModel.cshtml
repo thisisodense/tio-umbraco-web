@@ -213,7 +213,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                     <br>
                     @if (Model.WriterBackground.Length > 0)
                     {
-                        @Html.Raw(Model.WriterBackground.Substring(0, 200) + "...")
+                        @Html.Raw(Model.WriterBackground.Substring(0, 175) + "...")
                     }
                     <div class="footerlinks">
                         <a class="white" href="@Url.Action(

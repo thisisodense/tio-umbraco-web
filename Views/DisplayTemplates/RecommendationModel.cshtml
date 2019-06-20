@@ -174,29 +174,6 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
 
         @if (Model.IsDetails == false)
         {
-            <div class="fb-comments"
-                 data-width="@(Model.IsGuestWriter ? "695px" : "714px")"
-                 data-height="100"
-                 data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
-                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
-                                         new
-                                         {
-                                           id = Model.GetId(),
-                                           name = Model.HeadLine.ToSeoUrl()
-                                         },
-                                         Request.Url.Scheme)"
-                 data-numposts="5"
-                 data-colorscheme="light">
-            </div>
-            <br style="clear:both" /><br />
-            <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
-                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
-                                         new
-                                         {
-                                           id = Model.GetId(),
-                                           name = Model.HeadLine.ToSeoUrl()
-                                         },
-                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
             <br style="clear:both" /><br />
             <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
         }
@@ -242,14 +219,6 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
         {
             <div class="readmore @(Model.IsDetails ? "" : "hide")">
                 <a href="@Model.LinkToEvent" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
-                <div class="fb-like" data-href="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
-                                         Const.Constants.Controllers.Recommendation.Actions.RECOMMENDATION,
-                                         new
-                                         {
-                                           id = Model.GetId(),
-                                           name = Model.HeadLine.ToSeoUrl()
-                                         },
-                                         Request.Url.Scheme)" data-width="50" data-layout="button_count" data-action="like" data-show-faces="true" data-share="fale"></div>
                 <br style="clear:both" />
             </div>
         }

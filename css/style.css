@@ -797,7 +797,7 @@ span.writerOfWeek {
 .BottomWriterBox img.writerOfWeek {
     width: 20% !important;
 	height: 96px !important;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
 }
 
 /**umb_name:Bottom Writer Box Strong*/
@@ -816,6 +816,7 @@ span.writerOfWeek {
 /**umb_name:Bottom Writer Box Footerlinks*/
 .BottomWriterBox .footerlinks {
     margin: 0px !important;
+	clear: both;
 }
 
 /**umb_name:Location Writer Box*/

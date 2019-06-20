@@ -200,15 +200,10 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
             </p>
         </div>
 
-        @if (Model.IsDetails)
-        {
-            <a class="right" href="\">@Umbraco.GetDictionaryValue("Til forsiden")</a>
-        }
-        else
+        @if (Model.IsDetails == false)
         {
             <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
         }
-
         <br style="clear:both" />
     </div>
     }

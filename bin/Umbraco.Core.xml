@@ -3050,6 +3050,11 @@
             Alias for the nested content property editor.
             </summary>
         </member>
+        <member name="F:Umbraco.Core.Constants.PropertyEditors.MultiUrlPickerAlias">
+            <summary>
+            Alias for the multi url picker editor.
+            </summary>
+        </member>
         <member name="F:Umbraco.Core.Constants.PropertyEditors.PreValueKeys.DataValueType">
             <summary>
             Pre-value name used to indicate a field that can be used to override the database field to which data for the associated

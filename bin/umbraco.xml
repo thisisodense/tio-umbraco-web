@@ -2855,6 +2855,19 @@
             Gets the features.
             </summary>
         </member>
+        <member name="M:Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck.GetStatus">
+            <summary>
+            Get the status for this health check
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck.ExecuteAction(Umbraco.Web.HealthCheck.HealthCheckAction)">
+            <summary>
+            Executes the action and returns it's status
+            </summary>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
         <member name="M:Umbraco.Web.HealthCheck.Checks.Security.BaseHttpHeaderCheck.GetStatus">
             <summary>
             Get the status for this health check
@@ -2992,19 +3005,6 @@
             Updates a value in a given configuration file with the given XPath  
             </summary>
             <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck.GetStatus">
-            <summary>
-            Get the status for this health check
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck.ExecuteAction(Umbraco.Web.HealthCheck.HealthCheckAction)">
-            <summary>
-            Executes the action and returns it's status
-            </summary>
-            <param name="action"></param>
             <returns></returns>
         </member>
         <member name="M:Umbraco.Web.HealthCheck.Checks.Permissions.FolderAndFilePermissionsCheck.GetStatus">
@@ -16005,6 +16005,15 @@
             Quickly split filters into different types 
             </summary>
         </member>
+        <member name="T:Umbraco.Web.WebApi.Filters.HttpQueryStringModelBinder">
+            <summary>
+            Allows an Action to execute with an arbitrary number of QueryStrings
+            </summary>
+            <remarks>
+            Just like you can POST an arbitrary number of parameters to an Action, you can't GET an arbitrary number
+            but this will allow you to do it
+            </remarks>
+        </member>
         <member name="T:Umbraco.Web.WebApi.Filters.OutgoingEditorModelEventAttribute">
             <summary>
             Used to emit outgoing editor model events
@@ -16203,15 +16212,6 @@
             <summary>
             Returns true so that other filters can execute along with this one
             </summary>
-        </member>
-        <member name="T:Umbraco.Web.WebApi.Filters.HttpQueryStringFilterAttribute">
-            <summary>
-            Allows an Action to execute with an arbitrary number of QueryStrings
-            </summary>
-            <remarks>
-            Just like you can POST an arbitrary number of parameters to an Action, you can't GET an arbitrary number
-            but this will allow you to do it
-            </remarks>
         </member>
         <member name="T:Umbraco.Web.WebApi.Filters.OutgoingDateTimeFormatAttribute">
             <summary>

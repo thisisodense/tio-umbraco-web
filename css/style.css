@@ -803,16 +803,10 @@ span.writerOfWeek {
     text-transform: uppercase;
 }
 
-/**umb_name:P Bottom Writer Box*/
-p.BottomWriterBox {
-    min-height: 0px !important;
-}
-
 /**umb_name:Bottom Writer Box P*/
 .BottomWriterBox p {
     padding: 0px !important;
     color: black;
-	min-height: 78px;
 }
 
 /**umb_name:Bottom Writer Box Footerlinks*/

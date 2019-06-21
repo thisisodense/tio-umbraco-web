@@ -1,7 +1,18 @@
 {
   "ItemKey": "Medlem siden",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "4518e11b-52af-4287-b39e-a44adf116a7a",
+      "Value": "Medlem siden",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "4518e11b-52af-4287-b39e-a44adf116a7a",
+      "Value": "Member since",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/4518e11b52af4287b39ea44adf116a7a",
   "Udi": "umb://dictionary-item/4518e11b52af4287b39ea44adf116a7a",
   "Dependencies": [],

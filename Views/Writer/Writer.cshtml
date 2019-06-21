@@ -46,7 +46,7 @@
     <img class="articleImg" src="@Model.DetailImage" alt="@Model.Name" />
     <div class="placeInfo">
         <div class="info arrow">
-            Skribent siden @Model.WriterSince |
+            @Umbraco.GetDictionaryValue("Medlem siden") @Model.WriterSince |
             @Html.ActionLink(string.Format("{0} {1}", Model.NumberOfRecommendation, Umbraco.GetDictionaryValue("RECOMMENDATIONS")),
                 Controllers.WriterArchive.Actions.INDEX,
                 Controllers.WriterArchive.NAME,

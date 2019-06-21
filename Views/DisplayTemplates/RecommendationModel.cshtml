@@ -172,7 +172,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
         <br style="clear:both" /><br />
 
 
-        @if (Model.IsDetails == false)
+        @if (Model.IsDetails == false || Model.IsGuestWriter)
         {
             <br style="clear:both" /><br />
             <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
@@ -188,7 +188,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                     </a>
                     <strong>@Umbraco.GetDictionaryValue("Skrevet af") @Model.WriterName</strong>
                     <br>
-                    @if (Model.WriterBackground.Length > 0)
+                    @if (Model.WriterBackground != null && Model.WriterBackground.Length > 0)
                     {
                         @Html.Raw(Model.WriterBackground.Substring(0, 200) + "...")
                     }

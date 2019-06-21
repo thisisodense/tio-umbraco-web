@@ -12,7 +12,7 @@
 
 @section topImage {
 <a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
-    <img src="@Umbraco.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+    <img src="@Helper.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
 </a>
 }
 

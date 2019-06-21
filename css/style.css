@@ -1090,7 +1090,7 @@ p {
 /**umb_name:Read More Center*/
 .place div.readmore {
     text-align: center;
-	margin: 22px 0px 0px 0px;
+	margin: 22px 0px 22px 0px;
 }
 
 /**umb_name:Read More P*/
@@ -1596,7 +1596,7 @@ article img, img.articleImg, content img {
 
 /**umb_name:Map*/
 .map {
-  margin: 10px 0px 33px 0px !important;
+  margin: 10px 0px 0px 0px !important;
 }
 
 /**umb_name:Applied Filter*/

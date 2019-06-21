@@ -1663,7 +1663,7 @@ article img, img.articleImg, content img {
   .place .openingHours {
     clear: both;
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
   color: black !important;
 	  font-size: 13pt !important;
   }

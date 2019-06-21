@@ -61,6 +61,7 @@ a:hover {
 	background: #ff0000;
 	font-size: 11px;
 	margin-top: 25px !important;
+	margin-right: 0px !important;
 }
 
 /**umb_name:Right*/
@@ -625,7 +626,7 @@ font-size: 0pt;
     line-height: 14pt;
 	text-align: right;
 	margin-top: 33px;
-	margin-bottom: 6px;
+	margin-bottom: 7px;
 }
 
 /**umb_name:Footerlinks A*/
@@ -794,8 +795,9 @@ span.writerOfWeek {
 
 /**umb_name:Bottom Writer Box Img*/
 .BottomWriterBox img.writerOfWeek {
-    width: 16% !important;
-    height: 142px !important;
+    width: 20% !important;
+	height: 96px !important;
+    margin-bottom: 31px;
 }
 
 /**umb_name:Bottom Writer Box Strong*/
@@ -807,14 +809,14 @@ span.writerOfWeek {
 .BottomWriterBox p {
     padding: 0px !important;
     color: black;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /**umb_name:Bottom Writer Box Footerlinks*/
 .BottomWriterBox .footerlinks {
     margin: 0px !important;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
 }
 
 /**umb_name:Location Writer Box*/

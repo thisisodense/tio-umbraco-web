@@ -1,0 +1,22 @@
+{
+  "ItemKey": "Sidste uges anbefalinger",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "5f391d66-4659-4416-b277-46785d4908d2",
+      "Value": "Sidste uges anbefalinger",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "5f391d66-4659-4416-b277-46785d4908d2",
+      "Value": "Last week's recommendations",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/5f391d6646594416b27746785d4908d2",
+  "Udi": "umb://dictionary-item/5f391d6646594416b27746785d4908d2",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

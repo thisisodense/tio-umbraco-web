@@ -834,6 +834,52 @@ span.writerOfWeek {
     float: right;
 }
 
+/**umb_name:Bottom Week Box*/
+.BottomWeekBox {
+    font-style: inherit;
+    text-decoration: none;
+    color: black;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+/**umb_name:Bottom Week Box Img*/
+.BottomWeekBox img.writerOfWeek {
+    width: 20% !important;
+	height: 96px !important;
+    margin-bottom: 31px;
+}
+
+/**umb_name:Bottom Week Box Strong*/
+.BottomWeekBox strong {
+    text-transform: uppercase;
+}
+
+/**umb_name:Bottom Week Box P*/
+.BottomWeekBox p {
+    padding: 0px !important;
+    color: black;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/**umb_name:Bottom Week Box Footerlinks*/
+.BottomWeekBox .footerlinks {
+    margin: 0px !important;
+    float: right;
+}
+
+/**umb_name:Bottom Week Box a*/
+.BottomWeekBox a {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 /**umb_name:Location Writer Box*/
 .locationWriterBox {
     font-style: inherit;

@@ -25,9 +25,9 @@
 }
 
 @section topImage {
-<a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
-    <img src="@Helper.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
-</a>
+    <a class="logo" href="@Url.Action("Recommendations", "Recommendations")">
+        <img src="@Helper.TypedContentAtRoot().FirstOrDefault().GetCropUrl(BannerId, "bannerCrop")" alt="ThisIsOdense" title="ThisIsOdense" class="logo" />
+    </a>
 }
 
 @section navigation {
@@ -66,9 +66,12 @@
     @Html.Raw(Model.Interests)
     <br />
     @Html.Raw(Model.WriterVideo)
-    <div style="margin-top:10px;">
-        <a style="float:left" href="@Model.Link">@Umbraco.GetDictionaryValue("Læs mere om") @Model.Name</a>
-        <a style="float:right" href="@Url.Action("About", "About")#writers">Se hele holdet bag TIO</a>
-        <br style="clear:both" />
-    </div>
+    <nav class="paging">
+        <a href="@Model.Link" class="next" target="_blank">@Umbraco.GetDictionaryValue("Mere om mig")</a>
+        <a href="@Url.Action( Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,
+                new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations })" class="next">
+            @Umbraco.GetDictionaryValue("Se hvad jeg har skrevet")
+        </a>
+        <a href="@Url.Action("About", "About")#writers" class="previous" target="_blank">@Umbraco.GetDictionaryValue("Se hele holdet bag")</a>
+    </nav>
 </article>

@@ -1,7 +1,18 @@
 {
   "ItemKey": "udvalgt til byguide",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "71e0921b-ed6a-496d-aae8-bd08ebb88d90",
+      "Value": "er håndplukket til This Is Odenses Byguide i kategorien Shopping. Se hele vores guide til",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "71e0921b-ed6a-496d-aae8-bd08ebb88d90",
+      "Value": "is handpicked for This Is Odenses City Guide in the category Shopping. See our full guide to",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/71e0921bed6a496daae8bd08ebb88d90",
   "Udi": "umb://dictionary-item/71e0921bed6a496daae8bd08ebb88d90",
   "Dependencies": [],

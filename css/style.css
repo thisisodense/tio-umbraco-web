@@ -946,6 +946,9 @@ a.writerArciveBackground {
     font-family: 'Open Sans Condensed', sans-serif !important;
     font-weight: 700;
     text-transform: uppercase !important;
+	text-decoration: none !important;
+    background: none;
+    word-break: normal;
 }
 
 /**umb_name:Writer Archive Background Name*/
@@ -1532,6 +1535,9 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Map Category 480px*/
   .placeHeader .mapCategory {
     width: 12% !important;}
+
+
+	
 	
 /**umb_name:Writer 480px*/
     .writer {
@@ -1887,6 +1893,31 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Map Category Sights Before*/
       .placeHeader .mapCategory.Sights .fa:before {
         content: "\f18c"; }
+
+/**umb_name:Place Bottom*/
+.readmore .placeHeader {
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+/**umb_name:Place Bottom Category*/
+.readmore .mapCategory {
+    border: 0px;
+    width: 20% !important;
+    background-clip: unset;
+}
+
+/**umb_name:Place Bottom Textbox*/
+.readmore .writerArciveBackground {
+    margin-bottom: 0px;
+}
+
+/**umb_name:Place Bottom Text*/
+.placeHeader .writerArciveBackground p {
+    text-transform: none;
+    color: white;
+}
+
 
 /**umb_name:TIP*/
 .tip{font-size: 18pt;

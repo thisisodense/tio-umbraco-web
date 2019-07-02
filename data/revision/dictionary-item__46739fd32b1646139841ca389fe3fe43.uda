@@ -1,7 +1,18 @@
 {
-  "ItemKey": "i odense",
+  "ItemKey": "i",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "46739fd3-2b16-4613-9841-ca389fe3fe43",
+      "Value": "i",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "46739fd3-2b16-4613-9841-ca389fe3fe43",
+      "Value": "in",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/46739fd32b1646139841ca389fe3fe43",
   "Udi": "umb://dictionary-item/46739fd32b1646139841ca389fe3fe43",
   "Dependencies": [],

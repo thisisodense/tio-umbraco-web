@@ -1,0 +1,11 @@
+{
+  "ItemKey": "i odense",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/46739fd32b1646139841ca389fe3fe43",
+  "Udi": "umb://dictionary-item/46739fd32b1646139841ca389fe3fe43",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

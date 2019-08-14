@@ -1,0 +1,22 @@
+{
+  "ItemKey": "eller læs mere i vores",
+  "ParentId": null,
+  "Translations": [
+    {
+      "Key": "c59832b8-1a17-4c1a-97a1-85a785cab1d2",
+      "Value": "eller læs mere i vores",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "c59832b8-1a17-4c1a-97a1-85a785cab1d2",
+      "Value": "or read more in our",
+      "LanguageIsoCode": "en"
+    }
+  ],
+  "Name": "umb://dictionary-item/c59832b81a174c1a97a185a785cab1d2",
+  "Udi": "umb://dictionary-item/c59832b81a174c1a97a185a785cab1d2",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.16"
+}

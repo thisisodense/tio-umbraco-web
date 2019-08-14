@@ -677,6 +677,14 @@ a.white {
 	margin-left: 0px !important;
 }
 
+/**umb_name:Footerlinks A place archive link*/
+a.placearchivelink {
+    background-color: black !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-right: 0px !important;
+}
+
 /**umb_name:Footerlinks Hover*/
 .footerlinks a:hover {
     color: #00c8ab !important;
@@ -826,6 +834,52 @@ span.writerOfWeek {
     float: right;
 }
 
+/**umb_name:Bottom Week Box*/
+.BottomWeekBox {
+    font-style: inherit;
+    text-decoration: none;
+    color: black;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+/**umb_name:Bottom Week Box Img*/
+.BottomWeekBox img.writerOfWeek {
+    width: 20% !important;
+	height: 96px !important;
+    margin-bottom: 31px;
+}
+
+/**umb_name:Bottom Week Box Strong*/
+.BottomWeekBox strong {
+    text-transform: uppercase;
+}
+
+/**umb_name:Bottom Week Box P*/
+.BottomWeekBox p {
+    padding: 0px !important;
+    color: black;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/**umb_name:Bottom Week Box Footerlinks*/
+.BottomWeekBox .footerlinks {
+    margin: 0px !important;
+    float: right;
+}
+
+/**umb_name:Bottom Week Box a*/
+.BottomWeekBox a {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 /**umb_name:Location Writer Box*/
 .locationWriterBox {
     font-style: inherit;
@@ -892,6 +946,9 @@ a.writerArciveBackground {
     font-family: 'Open Sans Condensed', sans-serif !important;
     font-weight: 700;
     text-transform: uppercase !important;
+	text-decoration: none !important;
+    background: none;
+    word-break: normal;
 }
 
 /**umb_name:Writer Archive Background Name*/
@@ -1478,6 +1535,9 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Map Category 480px*/
   .placeHeader .mapCategory {
     width: 12% !important;}
+
+
+	
 	
 /**umb_name:Writer 480px*/
     .writer {
@@ -1833,6 +1893,31 @@ article img, img.articleImg, content img {
 /**umb_name:Place Header Map Category Sights Before*/
       .placeHeader .mapCategory.Sights .fa:before {
         content: "\f18c"; }
+
+/**umb_name:Place Bottom*/
+.readmore .placeHeader {
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+/**umb_name:Place Bottom Category*/
+.readmore .mapCategory {
+    border: 0px;
+    width: 20% !important;
+    background-clip: unset;
+}
+
+/**umb_name:Place Bottom Textbox*/
+.readmore .writerArciveBackground {
+    margin-bottom: 0px;
+}
+
+/**umb_name:Place Bottom Text*/
+.placeHeader .writerArciveBackground p {
+    text-transform: none;
+    color: white;
+}
+
 
 /**umb_name:TIP*/
 .tip{font-size: 18pt;

@@ -68,7 +68,9 @@
                     @Umbraco.GetDictionaryValue(string.Join(",", Model.Categories))
                     | @Model.Address
                     @GetFotografName()
-                    @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")
+                    <a href="@Url.Action(Const.Constants.Controllers.LocationArchive.Actions.LOCATION_ARCHIVE,
+                                         Const.Constants.Controllers.LocationArchive.NAME,
+                                         new { id = Model.Id, name = Model.Title.ToSeoUrl() })">@(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended") : "")</a>
                 </div> 
             </div>
         </div>
@@ -116,7 +118,9 @@ else
                     @GetWriterName()
                     @GetTranslatorName()
                     @GetFotografName()
-                    @(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended")  : "")
+                    <a href="@Url.Action(Const.Constants.Controllers.LocationArchive.Actions.LOCATION_ARCHIVE,
+                                         Const.Constants.Controllers.LocationArchive.NAME,
+                                         new { id = Model.Id, name = Model.Title.ToSeoUrl() })">@(Model.TimesRecommended > 0 ? " | " + Model.TimesRecommended + " " + Umbraco.GetDictionaryValue("Recommended") : "")</a>
                 </div>
                 @if (Model.IsDetails == false)
                 {

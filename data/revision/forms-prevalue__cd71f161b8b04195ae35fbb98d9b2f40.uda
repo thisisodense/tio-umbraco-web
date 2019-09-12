@@ -5,7 +5,7 @@
     "RootNode": "umb://document/b130aed74c314c4fb46d9f4b3709ed30",
     "UseCurrentPage": "True",
     "DocType": "Recommendation",
-    "ListGrandChildren": "True"
+    "ListGrandChildren": "False"
   },
   "FieldPreValueSourceTypeId": "de996870-c45a-11de-8a39-0800200c9a66",
   "Values": null,

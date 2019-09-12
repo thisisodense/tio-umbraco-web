@@ -3,6 +3,7 @@
   "Id": "cd71f161-b8b0-4195-ae35-fbb98d9b2f40",
   "Settings": {
     "RootNode": "umb://document/b130aed74c314c4fb46d9f4b3709ed30",
+    "UseCurrentPage": "True",
     "DocType": "Recommendation",
     "ListGrandChildren": "True"
   },

@@ -2,23 +2,15 @@
   "Alias": "Locations",
   "Id": "e60265bf-1634-4577-b7c9-ce5e346fdd0e",
   "Settings": {
-    "RootNode": "umb://document/842cef78e8b644749d950a6d2c60fa95",
-    "UseCurrentPage": "True",
-    "DocType": "LocationRepository",
-    "ListGrandChildren": "True"
+    "DataTypeId": "umb://data-type/e1a8a77859a64a3087e39590097a5758"
   },
-  "FieldPreValueSourceTypeId": "de996870-c45a-11de-8a39-0800200c9a66",
+  "FieldPreValueSourceTypeId": "ea773caf-fef2-491b-b5b7-6a3552b1a0e2",
   "Values": null,
   "Udi": "umb://forms-prevalue/e60265bf16344577b7c9ce5e346fdd0e",
   "Dependencies": [
     {
-      "Udi": "umb://document/842cef78e8b644749d950a6d2c60fa95",
+      "Udi": "umb://data-type/e1a8a77859a64a3087e39590097a5758",
       "Ordering": true,
-      "Mode": 1
-    },
-    {
-      "Udi": "umb://document-type/6a758873a6a08fddb940255ab89dda0c",
-      "Ordering": false,
       "Mode": 1
     }
   ],

@@ -2,7 +2,7 @@
   "Alias": "Locations",
   "Id": "e60265bf-1634-4577-b7c9-ce5e346fdd0e",
   "Settings": {
-    "RootNode": "umb://document/b130aed74c314c4fb46d9f4b3709ed30",
+    "RootNode": "umb://document/839e9afe938349aebbb3c146159da157",
     "UseCurrentPage": "True",
     "DocType": "Location",
     "ListGrandChildren": "True"
@@ -12,7 +12,7 @@
   "Udi": "umb://forms-prevalue/e60265bf16344577b7c9ce5e346fdd0e",
   "Dependencies": [
     {
-      "Udi": "umb://document/b130aed74c314c4fb46d9f4b3709ed30",
+      "Udi": "umb://document/839e9afe938349aebbb3c146159da157",
       "Ordering": true,
       "Mode": 1
     },

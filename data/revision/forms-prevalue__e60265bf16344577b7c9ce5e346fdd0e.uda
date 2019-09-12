@@ -2,14 +2,14 @@
   "Alias": "Locations",
   "Id": "e60265bf-1634-4577-b7c9-ce5e346fdd0e",
   "Settings": {
-    "DataTypeId": "umb://data-type/aaeb0b617d8b4d168ae9d0a6a0a220be"
+    "DataTypeId": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae"
   },
   "FieldPreValueSourceTypeId": "ea773caf-fef2-491b-b5b7-6a3552b1a0e2",
   "Values": null,
   "Udi": "umb://forms-prevalue/e60265bf16344577b7c9ce5e346fdd0e",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/aaeb0b617d8b4d168ae9d0a6a0a220be",
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
       "Ordering": true,
       "Mode": 1
     }

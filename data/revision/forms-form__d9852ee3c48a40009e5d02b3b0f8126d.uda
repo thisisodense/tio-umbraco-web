@@ -62,12 +62,31 @@
   "CssClass": null,
   "DisableDefaultStylesheet": false,
   "UseClientDependency": false,
-  "WorkflowIds": [],
+  "WorkflowIds": [
+    "0014f024-f2c4-44de-99e6-29ee8114e185"
+  ],
   "DataSource": null,
   "SubmitLabel": "Submit",
   "NextLabel": "Next",
   "PrevLabel": "Previous",
-  "Workflows": null,
+  "Workflows": [
+    {
+      "Id": "0014f024-f2c4-44de-99e6-29ee8114e185",
+      "Name": "Send template email to kristianbanghansen@gmail.com",
+      "Form": "d9852ee3-c48a-4000-9e5d-02b3b0f8126d",
+      "Active": true,
+      "WorkflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+      "ExecutesOn": 3,
+      "Settings": {
+        "Email": "kristianbanghansen@gmail.com",
+        "SenderEmail": "",
+        "Subject": "The Form '{form_name}' was submitted",
+        "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+        "Attachment": ""
+      },
+      "SortOrder": 1
+    }
+  ],
   "Udi": "umb://forms-form/d9852ee3c48a40009e5d02b3b0f8126d",
   "Dependencies": [],
   "Name": "test",

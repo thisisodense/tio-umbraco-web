@@ -7,7 +7,7 @@
 @inherits TIO.Mvc.Core.BaseViewPage<Models.WriterModel>
 @{
     Layout = "~/Views/Layout.cshtml";
-    ViewBag.Title = " - " + Model.Name;
+    ViewBag.Title = Model.Name + " - " + Umbraco.GetDictionaryValue("Mine andre anbefalinger");
 }
 
 @section scripts {

@@ -7,7 +7,7 @@
 @inherits BaseViewPage<LocationArchiveModel>
 @{
     Layout = "~/Views/Layout.cshtml";
-    ViewBag.Title = " - " + Model.Name;
+    ViewBag.Title = Model.Name + " - This Is Odense - " + Umbraco.GetDictionaryValue("Vores") + " " + Umbraco.GetDictionaryValue("recommendations");
 }
 
 @{

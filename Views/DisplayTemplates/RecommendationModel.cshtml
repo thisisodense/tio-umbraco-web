@@ -10,34 +10,34 @@
 {
     if (!Model.IsCurrent)
     {
-            <text>
-                @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
-                @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
-                @if (Model.EndDate != DateTime.MinValue && Model.EndDate != Model.StartDate)
-                {
-                    <text>
-                        -
-                        @Html.FirstCharToUpper(Model.EndDate.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Day)
-                        @string.Format("{0}.", Model.EndDate.ToString("MMMM").Substring(0, 3))
-                    </text>
-                }
-                @Model.StartDate.Year
-            </text>
+        <text>
+            @Html.FirstCharToUpper(Model.StartDate.ToString("dddd")) d. @string.Format("{0}.", Model.StartDate.Day)
+            @string.Format("{0}.", Model.StartDate.ToString("MMMM").Substring(0, 3))
+            @if (Model.EndDate != DateTime.MinValue && Model.EndDate != Model.StartDate)
+            {
+                <text>
+                    -
+                    @Html.FirstCharToUpper(Model.EndDate.ToString("dddd")) d. @string.Format("{0}.", Model.EndDate.Day)
+                    @string.Format("{0}.", Model.EndDate.ToString("MMMM").Substring(0, 3))
+                </text>
+            }
+            @Model.StartDate.Year
+        </text>
     }
     else
     {
-            <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime.HasValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
+        <text>@Umbraco.GetDictionaryValue("Kl.") @Model.StartTime.ToLocalTime().ToString("HH:mm") @(Model.EndTime.HasValue ? " - " + Model.EndTime.Value.ToLocalTime().ToString("HH:mm") : "")</text>
     }
 }
 
 @helper GetTicketsUrlText(RecommendationModel model)
 {
-if (!string.IsNullOrEmpty(model.TicketUrl))
-{
+    if (!string.IsNullOrEmpty(model.TicketUrl))
+    {
         <text>
             | <a href="@Model.TicketUrl" target="_blank">@Umbraco.GetDictionaryValue("Køb billet her")</a>
         </text>
-}
+    }
 }
 
 @helper GetWriterName()
@@ -45,7 +45,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
     <text>|</text>
     if (Model.MainWriter != Model.WriterName)
     {
-        <span>@Umbraco.GetDictionaryValue("Skrevet af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">@Model.WriterName</a></span>
+        <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens gæsteanbefaling er skrevet af"): </span><a target="_blank" href="@Model.WriterUrl"> @Model.WriterName</a>
     }
     else
     {
@@ -57,11 +57,11 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
 {
     if (Model.TranslatorId > 0 && Model.IsEnglish)
     {
-            <span>| @Umbraco.GetDictionaryValue("Oversat af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.TranslatorId, name = Model.TranslatorName.ToSeoUrl() })">@Model.TranslatorName</a></span>
+        <span>| @Umbraco.GetDictionaryValue("Oversat af"): <a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.TranslatorId, name = Model.TranslatorName.ToSeoUrl() })">@Model.TranslatorName</a></span>
     }
 }
 
-@if (false &&!Model.IsDetails && Model.HaveGuestWriter && Model.IsFirstRecommendation)
+@if (false && !Model.IsDetails && Model.HaveGuestWriter && Model.IsFirstRecommendation)
 {
     <div style="float:right;margin-top:10px;margin-bottom:10px;">
         <span class="writerOfWeek">@Umbraco.GetDictionaryValue("Ugens skribent er"): </span><a href="@Url.Action(Const.Constants.Controllers.Writer.Actions.WRITER, Const.Constants.Controllers.Writer.NAME, new { id = Model.MainWriterId, name = Model.MainWriter.ToSeoUrl() })">@Model.MainWriter</a>
@@ -89,8 +89,7 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
                 <span class="_date_format">DD-MM-YYYY</span>
             </div>
         }
-        <div 
-             class="addthis_sharing_toolbox"
+        <div class="addthis_sharing_toolbox"
              data-title="@Model.HeadLine"
              data-media="@(Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + Model.ImageUrl)"
              data-url="@Url.Action(Const.Constants.Controllers.Recommendation.NAME,
@@ -124,18 +123,18 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
     <img class="articleImg" src="@Model.ImageUrl" alt="@Model.HeadLine" title="@Model.HeadLine" />
 
     <div class="info arrow">
-        @(string.IsNullOrEmpty(Model.EventType)?"":Umbraco.GetDictionaryValue(Model.EventType))
+        @(string.IsNullOrEmpty(Model.EventType) ? "" : Umbraco.GetDictionaryValue(Model.EventType))
         | @GetOccurs(Model)
         @if (Model.Location != null)
         {
             <text>|</text>
             <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Address</a>
-    }
-    | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr.
-    @GetTicketsUrlText(Model)
-    @GetWriterName()
-    @GetTranslatorName()
-</div>
+        }
+        | @Umbraco.GetDictionaryValue("Pris"): @Model.Price.ToString("0") Kr.
+        @GetTicketsUrlText(Model)
+        @GetWriterName()
+        @GetTranslatorName()
+    </div>
 
     @if (!Model.IsDetails)
     {
@@ -153,65 +152,65 @@ if (!string.IsNullOrEmpty(model.TicketUrl))
     <br style="clear:both;" />
     @if ((Model.IsEnglish && !string.IsNullOrWhiteSpace(Model.Body)) || !Model.IsEnglish)
     {
-    <div class="readmore @(Model.IsDetails ? "" : "hide")">
-        @if (Model.Location != null)
-        {
-            <div>@Umbraco.GetDictionaryValue("Sted"): <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Title</a></div>
-        }
-        <div>@Umbraco.GetDictionaryValue("Arrangør"): @Model.Organizer</div>
-        @if (Model.DoorOpens.HasValue)
-        {
-            <div>@Umbraco.GetDictionaryValue("Døre åbnes"): @Model.DoorOpens.Value.ToLocalTime().ToString("HH:mm")</div>
-        }
+        <div class="readmore @(Model.IsDetails ? "" : "hide")">
+            @if (Model.Location != null)
+            {
+                <div>@Umbraco.GetDictionaryValue("Sted"): <a href="@Url.Action("Location", "Location", new { id = Model.Location.Id })">@Model.Location.Title</a></div>
+            }
+            <div>@Umbraco.GetDictionaryValue("Arrangør"): @Model.Organizer</div>
+            @if (Model.DoorOpens.HasValue)
+            {
+                <div>@Umbraco.GetDictionaryValue("Døre åbnes"): @Model.DoorOpens.Value.ToLocalTime().ToString("HH:mm")</div>
+            }
 
-        @Html.Raw(Model.Body)
-
-
-
-        <a href="@Model.LinkToEvent" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
-        <br style="clear:both" /><br />
+            @Html.Raw(Model.Body)
 
 
-        @if (Model.IsDetails == false || Model.IsGuestWriter)
-        {
+
+            <a href="@Model.LinkToEvent" class="left" target="_blank">@Umbraco.GetDictionaryValue("Link til begivenhed")</a>
             <br style="clear:both" /><br />
-            <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
-        }
-        else
-        {
-            <div class="BottomWriterBox">
-                <p class="BottomWriterBox">
-                    <a href="@Url.Action(
+
+
+            @if (Model.IsDetails == false || Model.IsGuestWriter)
+            {
+                <br style="clear:both" /><br />
+                <a class="readlesslink" href="#">@Umbraco.GetDictionaryValue("Luk")</a>
+            }
+            else
+            {
+                <div class="BottomWriterBox">
+                    <p class="BottomWriterBox">
+                        <a href="@Url.Action(
                         Const.Constants.Controllers.Writer.Actions.WRITER,
                         Const.Constants.Controllers.Writer.NAME, new { id = Model.WriterId })">
-                        <img src="@Model.WriterImage" class="writerOfWeek">
-                    </a>
-                    <strong>@Umbraco.GetDictionaryValue("Skrevet af") @Model.WriterName</strong>
-                    <br>
-                    @if (Model.WriterBackground != null && Model.WriterBackground.Length > 0)
-                    {
-                        @Html.Raw(Model.WriterBackground.Substring(0, 200) + "...")
-                    }
-                    <div class="footerlinks">
-                        <a class="white" href="@Url.Action(
+                            <img src="@Model.WriterImage" class="writerOfWeek">
+                        </a>
+                        <strong>@Umbraco.GetDictionaryValue("Skrevet af") @Model.WriterName</strong>
+                        <br>
+                        @if (Model.WriterBackground != null && Model.WriterBackground.Length > 0)
+                        {
+                            @Html.Raw(Model.WriterBackground.Substring(0, 200) + "...")
+                        }
+                        <div class="footerlinks">
+                            <a class="white" href="@Url.Action(
                                           Const.Constants.Controllers.Writer.Actions.WRITER,
                                           Const.Constants.Controllers.Writer.NAME,
                                           new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl() })">
-                            @Umbraco.GetDictionaryValue("Mere om mig")
-                        </a>
-                        <a class="black" href="@Url.Action(
+                                @Umbraco.GetDictionaryValue("Mere om mig")
+                            </a>
+                            <a class="black" href="@Url.Action(
                                           Const.Constants.Controllers.WriterArchive.Actions.INDEX,
                                           Const.Constants.Controllers.WriterArchive.NAME,
                                           new { id = Model.WriterId, name = Model.WriterName.ToSeoUrl(),
                                           filter = Const.Constants.Controllers.WriterArchive.FILTER.Recommendations })">
-                            @Umbraco.GetDictionaryValue("Mine andre anbefalinger")
-                        </a>
-                    </div>
-                </p>
-            </div>
-        }
-        <br style="clear:both" />
-    </div>
+                                @Umbraco.GetDictionaryValue("Mine andre anbefalinger")
+                            </a>
+                        </div>
+                    </p>
+                </div>
+            }
+            <br style="clear:both" />
+        </div>
     }
     else
     {

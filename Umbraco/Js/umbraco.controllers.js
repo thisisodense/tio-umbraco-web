@@ -3701,7 +3701,12 @@
                 if (files.length === 1 && $scope.model.selectedImages.length === 0) {
                     var image = $scope.images[$scope.images.length - 1];
                     $scope.target = image;
-                    $scope.target.url = mediaHelper.resolveFile(image);
+                    // handle both entity and full media object
+                    if (image.image) {
+                        $scope.target.url = image.image;
+                    } else {
+                        $scope.target.url = mediaHelper.resolveFile(image);
+                    }
                     selectImage(image);
                 }
             });
@@ -9356,7 +9361,7 @@
                 var passwordProp = _.find(contentEditingHelper.getAllProps($scope.content), function (e) {
                     return e.alias === '_umb_password';
                 });
-                if (passwordProp && passwordProp.value && !passwordProp.value.reset) {
+                if (passwordProp && passwordProp.value && typeof passwordProp.value.reset !== 'undefined' && !passwordProp.value.reset) {
                     //so if the admin is not explicitly resetting the password, flag it for resetting if a new password is being entered
                     passwordProp.value.reset = !passwordProp.value.oldPassword && passwordProp.config.allowManuallyChangingPassword;
                 }
@@ -14958,7 +14963,7 @@
             }
             // Another special case for members, only fields on the base table (cmsMember) can be used for sorting
             if (e.isSystem && $scope.entityType == 'member') {
-                e.allowSorting = e.alias == 'username' || e.alias == 'email';
+                e.allowSorting = e.alias == 'username' || e.alias == 'email' || e.alias == 'updateDate';
             }
             if (e.isSystem) {
                 //localize the header
@@ -15197,7 +15202,7 @@
             // a specific value from one of the methods, so we'll have to try this way. Even though the first method
             // will fire once per every node moved, the destination path will be the same and we need to use that to sync.
             var newPath = null;
-            applySelected(function (selected, index) {
+            var attempt = applySelected(function (selected, index) {
                 return contentResource.move({
                     parentId: target.id,
                     id: getIdCallback(selected[index])
@@ -15233,6 +15238,11 @@
                     });
                 }
             });
+            if (attempt) {
+                attempt.then(function () {
+                    $scope.getContent();
+                });
+            }
         }
         $scope.copy = function () {
             $scope.copyDialog = {};
@@ -15254,7 +15264,7 @@
             };
         };
         function performCopy(target, relateToOriginal) {
-            applySelected(function (selected, index) {
+            var attempt = applySelected(function (selected, index) {
                 return contentResource.copy({
                     parentId: target.id,
                     id: getIdCallback(selected[index]),
@@ -15270,6 +15280,11 @@
                 var key = total === 1 ? 'bulk_copiedItem' : 'bulk_copiedItems';
                 return localizationService.localize(key, [total]);
             });
+            if (attempt) {
+                attempt.then(function () {
+                    $scope.getContent();
+                });
+            }
         }
         function getCustomPropertyValue(alias, properties) {
             var value = '';
@@ -17130,7 +17145,10 @@
                     // Update model on change, i.e. copy/pasted text, plugins altering content
                     editor.on('SetContent', function (e) {
                         if (!e.initial) {
-                            syncContent(editor);
+                            // sync content if editor is dirty
+                            if (!editor.isNotDirty) {
+                                syncContent(editor);
+                            }
                         }
                     });
                     editor.on('ObjectResized', function (e) {

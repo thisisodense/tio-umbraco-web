@@ -1128,31 +1128,6 @@
             <param name="getCacheItem"></param>
             <returns></returns>
         </member>
-        <member name="M:Umbraco.Core.Cache.HttpRuntimeCacheProvider.GetCacheItem(System.String,System.Func{System.Object},System.Nullable{System.TimeSpan},System.Boolean,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback,System.Web.Caching.CacheDependency)">
-            <summary>
-            This overload is here for legacy purposes
-            </summary>
-            <param name="cacheKey"></param>
-            <param name="getCacheItem"></param>
-            <param name="timeout"></param>
-            <param name="isSliding"></param>
-            <param name="priority"></param>
-            <param name="removedCallback"></param>
-            <param name="dependency"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Core.Cache.HttpRuntimeCacheProvider.InsertCacheItem(System.String,System.Func{System.Object},System.Nullable{System.TimeSpan},System.Boolean,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback,System.Web.Caching.CacheDependency)">
-            <summary>
-            This overload is here for legacy purposes
-            </summary>
-            <param name="cacheKey"></param>
-            <param name="getCacheItem"></param>
-            <param name="timeout"></param>
-            <param name="isSliding"></param>
-            <param name="priority"></param>
-            <param name="removedCallback"></param>
-            <param name="dependency"></param>
-        </member>
         <member name="T:Umbraco.Core.Cache.IJsonCacheRefresher">
             <summary>
             A cache refresher that supports refreshing or removing cache based on a custom Json payload

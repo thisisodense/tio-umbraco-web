@@ -2688,7 +2688,7 @@
             <param name="saveModel"></param>
             <returns></returns>
             <remarks>
-            Permission check is done for letter 'R' which is for <see cref="!:ActionRights"/> which the user must have access to to update
+            Permission check is done for letter 'R' which is for <see cref="T:umbraco.BusinessLogic.Actions.ActionRights"/> which the user must have access to to update
             </remarks>
         </member>
         <member name="M:Umbraco.Web.Editors.ContentController.GetDetailedPermissions(System.Int32)">
@@ -2698,7 +2698,7 @@
             <param name="contentId"></param>
             <returns></returns>
             <remarks>
-            Permission check is done for letter 'R' which is for <see cref="!:ActionRights"/> which the user must have access to to view
+            Permission check is done for letter 'R' which is for <see cref="T:umbraco.BusinessLogic.Actions.ActionRights"/> which the user must have access to to view
             </remarks>
         </member>
         <member name="M:Umbraco.Web.Editors.ContentController.GetRecycleBin">
@@ -4122,10 +4122,10 @@
         </member>
         <member name="M:Umbraco.Web.Editors.BackOfficeController.AuthorizeUpgrade">
             <summary>
-            This Action is used by the installer when an upgrade is detected but the admin user is not logged in. We need to 
+            This Action is used by the installer when an upgrade is detected but the admin user is not logged in. We need to
             ensure the user is authenticated before the install takes place so we redirect here to show the standard login screen.
             </summary>
-            <returns></returns>      
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Web.Editors.BackOfficeController.LocalizedText(System.String)">
             <summary>
@@ -4154,10 +4154,10 @@
         </member>
         <member name="M:Umbraco.Web.Editors.BackOfficeController.RenderDefaultOrProcessExternalLoginAsync(System.Func{System.Web.Mvc.ActionResult},System.Func{System.Web.Mvc.ActionResult})">
             <summary>
-            Used by Default and AuthorizeUpgrade to render as per normal if there's no external login info, 
+            Used by Default and AuthorizeUpgrade to render as per normal if there's no external login info,
             otherwise process the external login info.
             </summary>
-            <returns></returns>       
+            <returns></returns>
         </member>
         <member name="M:Umbraco.Web.Editors.BackOfficeController.LegacyTreeJs">
             <summary>
@@ -11173,7 +11173,7 @@
             <summary>
             Tries to find and assign an Umbraco document to a <c>PublishedContentRequest</c>.
             </summary>
-            <param name="docRequest">The <c>PublishedContentRequest</c>.</param>		
+            <param name="docRequest">The <c>PublishedContentRequest</c>.</param>
             <returns>A value indicating whether an Umbraco document was found and assigned.</returns>
             <remarks>If successful, also assigns the template.</remarks>
         </member>

@@ -34,79 +34,82 @@
 
                     </div>
 
-                    <div ng-if="vm.selectable === true">
-                        <div>
-                            <p>This will download the latest changes from <em>{{ vm.restoreWorkspace.Name }}</em> and apply them to your local site. This includes only changes to selected documents and children of these.</p>
-                            <p style="margin-top: 15px; margin-bottom: 30px;">
-                                <strong style="font-weight: bold; color: #000;">Notice:</strong> Downloading and restoring will take a bit of time to do, meanwhile you cannot change or deploy any content.
-                            </p>
-                        </div>
-
-                        <ul class="umb-tree">
-                            <li class="root">
-                                <div>
-                                    <h5>
-                                        <a href="#" class="root-link">
-                                            <i></i>{{vm.sitemap.Name}}
-                                        </a>
-                                    </h5>
-                                </div>
-                                <ul>
-                                    <li ng-repeat="node in vm.sitemap.Children" ng-click="vm.selectNode(node, $event)" style="padding-left: 20px;">
-                                        <div>
-                                            <ins>&nbsp;</ins>
-                                            <i ng-if="!node.selected" class="icon umb-tree-icon sprTree {{ node.Icon }}" ng-click=""></i>
-                                            <i ng-if="node.selected" class="icon icon-check"></i>
-                                            <a href="">{{ node.Name }}</a>
-                                        </div>
-                                        <ul>
-                                            <li ng-repeat="node in node.Children" ng-click="vm.selectNode(node, $event)" style="padding-left: 40px;">
-                                                <div>
-                                                    <ins>&nbsp;</ins>
-                                                    <i ng-if="!node.selected" class="icon umb-tree-icon sprTree {{ node.Icon }}" ng-click=""></i>
-                                                    <i ng-if="node.selected" class="icon icon-check"></i>
-                                                    <a href="">{{ node.Name }}</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <div>
-                            <button ng-click="vm.startRestore(vm.restoreWorkspace)"
-                                    ng-disabled="!vm.restoreWorkspace"
-                                    class="umb-era-button -blue">
-                                Restore from {{ vm.restoreWorkspace.Name }}
-                            </button>
-                        </div>
+                    <div ng-if="vm.restoreWorkspace && vm.restoreNode === null" class="flex items-center" style="margin-bottom: 20px;">
+                        <umb-button
+                            size="xs"
+                            button-style="success"
+                            type="button"
+                            action="vm.pickRemoteNode(vm.restoreWorkspace)"
+                            label="{{vm.pickRemoteNodeLabel}}">
+                        </umb-button>
                     </div>
 
-                    <div ng-if="vm.selectable === false">
+                    <div ng-if="vm.restoreNode !== null" class="flex items-center" style="margin-bottom: 20px;">
+
+                        <div style="margin-right:10px;">
+                            Restore <i ng-if="vm.restoreNode.icon" class="{{vm.restoreNode.icon}}" style="font-size: 18px; vertical-align: bottom; margin-left: 5px;"></i>
+                            {{vm.restoreNode.name}}
+                        </div>
+
+                        <umb-button
+                            ng-if="vm.restoreWorkspace && vm.restoreNodeIsExternal === true"
+                            size="xs"
+                            button-style="link"
+                            type="button"
+                            action="vm.pickRemoteNode(vm.restoreWorkspace)"
+                            label="change">
+                        </umb-button>
+
+                        <umb-button
+                            ng-if="vm.restoreWorkspace && vm.restoreNodeIsExternal === true"
+                            size="xs"
+                            button-style="link"
+                            type="button"
+                            action="vm.pickRemoteNode(vm.restoreWorkspace)"
+                            label="change">
+                        </umb-button>
+                    </div>
+
+                    <div ng-if="vm.restoreNode !== null" class="flex items-center" style="margin-bottom: 20px;">
+
+                        <umb-toggle
+                            checked="vm.includeChildren"
+                            on-click="vm.toggleIncludeChildren()"
+                            show-labels="true"
+                            label-on="Including children"
+                            label-off="Not including children"
+                            label-position="right"
+                        />
+
+                    </div>
+
+                    <div>
                         <div>
-                            <p>You are restoring <em>{{currentNode.name}}</em> and its children.</p>
-                            <p>This will download the latest changes from <em>{{ vm.restoreWorkspace.Name }}</em> and apply them to your local site. This includes changes to content, media, files and all the underlying data such as document types.
-                            </p>
                             <p style="margin-top: 15px; margin-bottom: 30px;">
-                                <strong style="font-weight: bold; color: #000;">Notice:</strong> Downloading and restoring will take a bit of time to do, meanwhile you cannot change or deploy any content.
+                                <strong style="font-weight: bold; color: #000;">Notice:</strong> Restoring large amount of content can take long time to perform, meanwhile you should not change or deploy any content.
                             </p>
                         </div>
 
                         <div>
-
                             <umb-button
                                 type="button"
                                 button-style="success"
                                 action="vm.startRestore(vm.restoreWorkspace)"
-                                label="Restore from {{ vm.restoreWorkspace.Name }}"
-                                disabled="!vm.restoreWorkspace"
+                                label="Restore"
+                                disabled="!vm.restoreWorkspace || vm.restoreNode === null"
                                 state="vm.restoreButtonState">
                             </umb-button>
 
+                            <umb-button
+                                ng-if="vm.restoreWorkspace && vm.restoreNode !== null && vm.restoreNodeIsExternal === false"
+                                type="button"
+                                button-style="link"
+                                action="vm.pickRemoteNode(vm.restoreWorkspace)"
+                                label="Or pick content from {{ vm.restoreWorkspace.Name }}"
+                                state="vm.restoreButtonState">
+                            </umb-button>
                         </div>
                     </div>
-
                 </div>
 
                 <ud-restore-progress
@@ -154,7 +157,6 @@
             <localize key="general_close">Close</localize>
         </a>
     </div>
-
 
 </div>
 

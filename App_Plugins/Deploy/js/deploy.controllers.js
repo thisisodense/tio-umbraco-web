@@ -271,7 +271,7 @@ angular.module('umbraco.deploy')
 (function () {
     "use strict";
 
-    function PartialRestoreDialogController($scope, deploySignalrService, deployService, angularHelper, deployConfiguration, deployHelper) {
+    function PartialRestoreDialogController($scope, deploySignalrService, deployService, angularHelper, deployConfiguration, deployHelper, dialogService) {
 
         var vm = this;
         var timestampFormat = 'MMMM Do YYYY, HH:mm:ss';
@@ -280,70 +280,83 @@ angular.module('umbraco.deploy')
         vm.config = deployConfiguration;
         vm.restoreWorkspace = {};
         vm.restore = {};
-        vm.loading = true;
         vm.restoreButtonState = "init";
+        vm.restoreNode = null;
 
-        vm.selectable = $scope.currentNode.id === "-1";
-        if (vm.selectable === false) {
-            vm.loading = false;
+        // Need to change a few UI of buttons & text copy
+        // Also needed to change/call the remote media tree when opening the new dialog
+        vm.isMediaSection = $scope.currentNode.section.toLowerCase() === "media";
+        vm.pickRemoteNodeLabel = vm.isMediaSection ? "Select media to restore" : "Select content to restore";
+
+
+        vm.toggleIncludeChildren = function() {
+            vm.includeChildren = !vm.includeChildren;
         }
+
         vm.changeDestination = changeDestination;
         vm.startRestore = startRestore;
         vm.resetRestore = resetRestore;
 
-        var nodeUdis = [];
+        vm.pickRemoteNode = pickRemoteNode;
+
+        function resetRestoreNode() {
+            vm.restoreNodeIsExternal = false;
+            vm.restoreNode = null;
+
+            if ($scope.currentNode.id !== "-1") {
+                vm.restoreNode = $scope.currentNode;
+            }
+            vm.includeChildren = true;
+        }
 
         function onInit() {
             // reset restore progress
             resetRestore();
 
-            // set the last workspace to restore from as default
+            // set the last workspace to restore from as default (Most likely live)
             if(vm.config.RestoreWorkspaces) {
-                //var lastWorkspaceIndex = vm.config.Workspaces.length - 1;
-                vm.restoreWorkspace = _.last(vm.config.RestoreWorkspaces);//[lastWorkspaceIndex];
-            }
-
-            if (vm.selectable === true) {
-                vm.loading = true;
-                deployService.getSitemap(vm.restoreWorkspace.Url).then(function(data) {
-                    vm.sitemap = data;
-                    vm.loading = false;
-                });
+                vm.restoreWorkspace = _.last(vm.config.RestoreWorkspaces);
             }
         }
 
         function changeDestination(workspace) {
             vm.restoreWorkspace = workspace;
-            if (vm.selectable === true) {
-                vm.loading = true;
-                deployService.getSitemap(vm.restoreWorkspace.Url).then(function(data) {
-                    vm.sitemap = data;
-                    vm.loading = false;
-                });
-            }
+            resetRestoreNode();
+        }
+
+        function pickRemoteNode(workspace) {
+            var treeAlias = vm.isMediaSection ? "externalMedia" : "externalContent";
+
+            var partialItemPicker = {
+                customTreeParams: "workspace=" + workspace.Url,
+                template: "/App_Plugins/Deploy/views/dialogs/tree-picker.html",
+                treeAlias: treeAlias,
+                callback: function(pickedNode){
+                    // Assign node
+                    vm.restoreNode = pickedNode;
+                }
+            };
+
+            // Can't use treePicker - due to bug in CMS core that appends && to the querystring and thus does not load the WebAPI correctly
+            // /umbraco/backoffice/UmbracoTrees/ApplicationTree/GetApplicationTrees?application=deploy&tree=externalContent&isDialog=true&&workspace=url
+            // dialogService.treePicker(partialItemPicker);
+
+            // Had to implment/copy the tree picker view & controller with fix in deploy
+            // Also fixes CMS core treepicker trying to do an entity lookup with the int ID before passing it back in the callback
+            dialogService.open(partialItemPicker);
         }
 
         function startRestore(workspace) {
 
             var restoreNodes = [];
-
             vm.restoreButtonState = "busy";
-
-            if (vm.selectable === true) {
-                _.each(nodeUdis,
-                    function (o, i) {
-                        restoreNodes.push({ id: o, includeDescendants: true });
-                    });
-
-            } else {
-                restoreNodes = [
-                    {
-                        id: $scope.currentNode.id,
-                        udi: $scope.currentNode.udi,
-                        includeDescendants: true
-                    }
-                ];
-            }
+            restoreNodes = [
+                {
+                    id: vm.restoreNode.id,
+                    udi: vm.restoreNode.udi,
+                    includeDescendants: vm.includeChildren
+                }
+            ];
 
             deployService.partialRestore(workspace.Url, restoreNodes, vm.enableWorkItemLogging)
                 .then(function(data) {
@@ -431,23 +444,6 @@ angular.module('umbraco.deploy')
 
         });
 
-        vm.selectNode = function (node, event) {
-            var newArray = [];
-            if (!node.selected) {
-                node.selected = true;
-                nodeUdis.push(node.Udi);
-            } else {
-                angular.forEach(nodeUdis, function (nodeUdi) {
-                    if (nodeUdi !== node.Udi) {
-                        newArray.push(nodeUdi);
-                    }
-                });
-                node.selected = false;
-                nodeUdis = newArray;
-            }
-            event.stopPropagation();
-        };
-
         // signalR debug heartbeat
         $scope.$on('deploy:heartbeat', function (event, args) {
             if (!deployService.isOurSession(args.sessionId)) return;
@@ -456,14 +452,14 @@ angular.module('umbraco.deploy')
             });
         });
 
+        // Toggle Debug
         vm.showDebug = function () {
             vm.restore.showDebug = !vm.restore.showDebug;
         };
 
+        // debug
         var search = window.location.search;
         vm.enableWorkItemLogging = search === '?ddebug';
-
-        // debug
 
         // beware, MUST correspond to what's in WorkStatus
         var workStatus = ["Unknown", "New", "Executing", "Completed", "Failed", "Cancelled", "TimedOut"];
@@ -682,6 +678,66 @@ angular.module('umbraco.deploy')
     }
     angular.module("umbraco.deploy").controller("UmbracoDeploy.RestoreDialogController", RestoreDialogController);
 })();
+angular.module("umbraco").controller("UmbracoDeploy.TreePickerController",
+    function ($scope, eventsService) {
+
+        var dialogOptions = $scope.dialogOptions;
+        $scope.dialogTreeEventHandler = $({});
+
+        $scope.treeAlias = dialogOptions.treeAlias;
+
+        //create the custom query string param for this tree
+        $scope.customTreeParams = dialogOptions.startNodeId ? "startNodeId=" + dialogOptions.startNodeId : "";
+        $scope.customTreeParams += dialogOptions.customTreeParams ? dialogOptions.customTreeParams : "";
+
+
+        function nodeExpandedHandler(ev, args) {
+            // Left here in case we need logic for when expanding a node...
+        }
+
+        function treeLoadedHandler(ev, args) {
+            // Left here in case we need logic for when tree first loads
+        }
+
+        function nodeSelectHandler(ev, args) {
+            args.event.preventDefault();
+            args.event.stopPropagation();
+
+            eventsService.emit("deploy.treePickerController.select", args);
+
+            select(args.node);
+        }
+
+        /** Method used for selecting a node */
+        function select(node) {
+
+            //if we get the root, we just return a constructed entity, no need for server data
+            if (node.id < 0) {
+                var basicNode = {
+                    alias: null,
+                    icon: "icon-folder",
+                    id: node.id,
+                    name: node.name
+                };
+                $scope.submit(basicNode);
+            }
+            else {
+                // Something that is not -1 aka root
+                $scope.submit(node);
+            }
+        }
+
+        $scope.dialogTreeEventHandler.bind("treeLoaded", treeLoadedHandler);
+        $scope.dialogTreeEventHandler.bind("treeNodeExpanded", nodeExpandedHandler);
+        $scope.dialogTreeEventHandler.bind("treeNodeSelect", nodeSelectHandler);
+
+        $scope.$on('$destroy', function () {
+            $scope.dialogTreeEventHandler.unbind("treeLoaded", treeLoadedHandler);
+            $scope.dialogTreeEventHandler.unbind("treeNodeExpanded", nodeExpandedHandler);
+            $scope.dialogTreeEventHandler.unbind("treeNodeSelect", nodeSelectHandler);
+        });
+    });
+
 angular.module('umbraco.deploy')
     .controller('UmbracoDeploy.AddWorkspaceController',
     [

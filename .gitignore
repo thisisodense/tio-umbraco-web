@@ -51,3 +51,4 @@ App_Plugins/UmbracoForms/[Ii]nstalled
 /data/Revision/media/*
 /data/Revision/mediaproperties/*
 /data/Revision/properties/*
+!media/BlobStorage.web.*.xdt.config

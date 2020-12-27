@@ -4,15 +4,17 @@
   "PreValues": {
     "0": "Koncert",
     "1": "Teater",
-    "10": "Foredrag og debat",
-    "2": "Sport",
-    "3": "Udstilling",
-    "4": "Festival",
-    "5": "Konference og Messe",
-    "6": "Andet",
-    "7": "Comedy",
-    "8": "Film",
-    "9": "Marked"
+    "10": "Marked",
+    "11": "Natur",
+    "12": "Byvandring",
+    "2": "Foredrag og debat",
+    "3": "Sport",
+    "4": "Udstilling",
+    "5": "Festival",
+    "6": "Konference og Messe",
+    "7": "Andet",
+    "8": "Comedy",
+    "9": "Film"
   },
   "Parent": null,
   "Udi": "umb://data-type/0cb8264f04854ab7b11e3faf42a3e402",
@@ -20,5 +22,5 @@
   "Name": "Dropdown event types",
   "Alias": null,
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
-  "__version": "2.0.16"
+  "__version": "2.1.1"
 }

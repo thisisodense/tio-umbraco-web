@@ -1,7 +1,18 @@
 {
   "ItemKey": "Gastronomi",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "898181df-f60b-4c3b-8806-65e50438b6ac",
+      "Value": "Gastronomi",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "898181df-f60b-4c3b-8806-65e50438b6ac",
+      "Value": "Gastronomy",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/898181dff60b4c3b880665e50438b6ac",
   "Udi": "umb://dictionary-item/898181dff60b4c3b880665e50438b6ac",
   "Dependencies": [],

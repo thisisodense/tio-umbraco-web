@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Gastronomi",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/898181dff60b4c3b880665e50438b6ac",
+  "Udi": "umb://dictionary-item/898181dff60b4c3b880665e50438b6ac",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.1.1"
+}

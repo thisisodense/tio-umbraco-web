@@ -1,7 +1,18 @@
 {
   "ItemKey": "Byvandring",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "c2fdf18b-312b-418b-811c-91506606908d",
+      "Value": "Byvandring",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "c2fdf18b-312b-418b-811c-91506606908d",
+      "Value": "City walk",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/c2fdf18b312b418b811c91506606908d",
   "Udi": "umb://dictionary-item/c2fdf18b312b418b811c91506606908d",
   "Dependencies": [],

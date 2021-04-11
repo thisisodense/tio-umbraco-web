@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Natur",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/860e9018484d46ed803e9f3777b3d15b",
+  "Udi": "umb://dictionary-item/860e9018484d46ed803e9f3777b3d15b",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.1.1"
+}

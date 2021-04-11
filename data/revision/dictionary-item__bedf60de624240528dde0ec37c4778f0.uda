@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Arkitektur",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/bedf60de624240528dde0ec37c4778f0",
+  "Udi": "umb://dictionary-item/bedf60de624240528dde0ec37c4778f0",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.1.1"
+}

@@ -1,7 +1,18 @@
 {
   "ItemKey": "Arkitektur",
   "ParentId": null,
-  "Translations": [],
+  "Translations": [
+    {
+      "Key": "bedf60de-6242-4052-8dde-0ec37c4778f0",
+      "Value": "Arkitektur",
+      "LanguageIsoCode": "da"
+    },
+    {
+      "Key": "bedf60de-6242-4052-8dde-0ec37c4778f0",
+      "Value": "Architecture",
+      "LanguageIsoCode": "en"
+    }
+  ],
   "Name": "umb://dictionary-item/bedf60de624240528dde0ec37c4778f0",
   "Udi": "umb://dictionary-item/bedf60de624240528dde0ec37c4778f0",
   "Dependencies": [],

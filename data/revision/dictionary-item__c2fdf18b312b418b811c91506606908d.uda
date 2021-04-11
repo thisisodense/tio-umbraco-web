@@ -1,0 +1,11 @@
+{
+  "ItemKey": "Byvandring",
+  "ParentId": null,
+  "Translations": [],
+  "Name": "umb://dictionary-item/c2fdf18b312b418b811c91506606908d",
+  "Udi": "umb://dictionary-item/c2fdf18b312b418b811c91506606908d",
+  "Dependencies": [],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.1.1"
+}

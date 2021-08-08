@@ -4,12 +4,12 @@
   "Translations": [
     {
       "Key": "5e9461d4-e888-4674-bec3-61365c355e2c",
-      "Value": "This week’s guest recommendation is wirtten by",
+      "Value": "Written by:",
       "LanguageIsoCode": "en"
     },
     {
       "Key": "5e9461d4-e888-4674-bec3-61365c355e2c",
-      "Value": "Ugens gæsteanbefaling er skrevet af",
+      "Value": "Skrevet af:",
       "LanguageIsoCode": "da"
     }
   ],
@@ -18,5 +18,5 @@
   "Dependencies": [],
   "Alias": null,
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
-  "__version": "2.0.14"
+  "__version": "2.1.1"
 }

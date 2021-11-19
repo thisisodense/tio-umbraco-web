@@ -66,7 +66,7 @@ Html.GetRouteDataValue<string>
 
 <div class="navigation">
     <a class="flag" href="@newLangUrl">
-        <img src="@Url.Content("http://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
+        <img src="@Url.Content("https://www.thisisodense.dk/media/" + (Site.IsEnglish ? "97947/dk" : "97948/en") + ".png")" />
     </a>
     <ul class="topNavigation archive">
         <li class="@Html.IsActive(Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations }))"><a href="@Url.Action(Controllers.WriterArchive.Actions.INDEX, Controllers.WriterArchive.NAME,  new { id = Model.Id, name = Model.Name.ToSeoUrl(), filter = Controllers.WriterArchive.FILTER.Recommendations })">@Model.NumberOfRecommendation @Umbraco.GetDictionaryValue("RECOMMENDATIONS")</a></li>
